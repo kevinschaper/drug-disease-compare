@@ -1,0 +1,2102 @@
+{
+  "summary": {
+    "already_mondo": 2701,
+    "kept_umls": 1059,
+    "kept_hp": 512,
+    "kept_ncit": 81,
+    "kept_efo": 39,
+    "lifted_to_mondo": 13,
+    "kept_doid": 7,
+    "hp_to_mondo": 6,
+    "kept_omim": 1,
+    "unresolved": 1
+  },
+  "hp_to_mondo": [
+    {
+      "original": "HP:0000119",
+      "mondo": "MONDO:0002118",
+      "label": "urinary system disorder"
+    },
+    {
+      "original": "HP:0000964",
+      "mondo": "MONDO:0002406",
+      "label": "dermatitis"
+    },
+    {
+      "original": "HP:0001480",
+      "mondo": "MONDO:0000736",
+      "label": "dyschromatosis universalis hereditaria"
+    },
+    {
+      "original": "HP:0004757",
+      "mondo": "MONDO:1030011",
+      "label": "paroxysmal atrial fibrillation"
+    },
+    {
+      "original": "HP:0100534",
+      "mondo": "MONDO:0001439",
+      "label": "episcleritis periodica fugax"
+    },
+    {
+      "original": "HP:0100699",
+      "mondo": "MONDO:0005594",
+      "label": "severe cutaneous adverse reaction"
+    }
+  ],
+  "kept_hp": [
+    {
+      "original": "EFO:0003964",
+      "label": "hip fracture"
+    },
+    {
+      "original": "HP:0000010",
+      "label": "Recurrent urinary tract infections"
+    },
+    {
+      "original": "HP:0000011",
+      "label": "Neurogenic bladder"
+    },
+    {
+      "original": "HP:0000016",
+      "label": "Urinary retention"
+    },
+    {
+      "original": "HP:0000017",
+      "label": "Nocturia"
+    },
+    {
+      "original": "HP:0000020",
+      "label": "Urinary incontinence"
+    },
+    {
+      "original": "HP:0000023",
+      "label": "Inguinal hernia"
+    },
+    {
+      "original": "HP:0000077",
+      "label": "Abnormality of the kidney"
+    },
+    {
+      "original": "HP:0000103",
+      "label": "Polyuria"
+    },
+    {
+      "original": "HP:0000132",
+      "label": "Menorrhagia"
+    },
+    {
+      "original": "HP:0000134",
+      "label": "Female hypogonadism"
+    },
+    {
+      "original": "HP:0000155",
+      "label": "Oral ulcer"
+    },
+    {
+      "original": "HP:0000217",
+      "label": "Xerostomia"
+    },
+    {
+      "original": "HP:0000224",
+      "label": "Hypogeusia"
+    },
+    {
+      "original": "HP:0000225",
+      "label": "Gingival bleeding"
+    },
+    {
+      "original": "HP:0000255",
+      "label": "Acute sinusitis"
+    },
+    {
+      "original": "HP:0000270",
+      "label": "Delayed cranial suture closure"
+    },
+    {
+      "original": "HP:0000282",
+      "label": "Facial edema"
+    },
+    {
+      "original": "HP:0000360",
+      "label": "Tinnitus"
+    },
+    {
+      "original": "HP:0000366",
+      "label": "Nose Deformity"
+    },
+    {
+      "original": "HP:0000371",
+      "label": "Acute otitis media"
+    },
+    {
+      "original": "HP:0000413",
+      "label": "Atresia of the external auditory canal"
+    },
+    {
+      "original": "HP:0000421",
+      "label": "Epistaxis"
+    },
+    {
+      "original": "HP:0000482",
+      "label": "Microcornea"
+    },
+    {
+      "original": "HP:0000495",
+      "label": "Recurrent corneal erosions"
+    },
+    {
+      "original": "HP:0000505",
+      "label": "Impaired Vision"
+    },
+    {
+      "original": "HP:0000573",
+      "label": "Retinal hemorrhage"
+    },
+    {
+      "original": "HP:0000613",
+      "label": "Photophobia"
+    },
+    {
+      "original": "HP:0000616",
+      "label": "Miosis"
+    },
+    {
+      "original": "HP:0000622",
+      "label": "Blurred vision"
+    },
+    {
+      "original": "HP:0000633",
+      "label": "Decreased lacrimation"
+    },
+    {
+      "original": "HP:0000651",
+      "label": "Diplopia"
+    },
+    {
+      "original": "HP:0000708",
+      "label": "Atypical behavior"
+    },
+    {
+      "original": "HP:0000711",
+      "label": "Restlessness"
+    },
+    {
+      "original": "HP:0000712",
+      "label": "Mood Lability"
+    },
+    {
+      "original": "HP:0000713",
+      "label": "Agitation"
+    },
+    {
+      "original": "HP:0000718",
+      "label": "Aggressive behavior"
+    },
+    {
+      "original": "HP:0000736",
+      "label": "Short attention span"
+    },
+    {
+      "original": "HP:0000737",
+      "label": "Irritability"
+    },
+    {
+      "original": "HP:0000738",
+      "label": "Hallucinations"
+    },
+    {
+      "original": "HP:0000741",
+      "label": "Apathy"
+    },
+    {
+      "original": "HP:0000746",
+      "label": "Delusion"
+    },
+    {
+      "original": "HP:0000752",
+      "label": "Hyperactivity"
+    },
+    {
+      "original": "HP:0000786",
+      "label": "Primary amenorrhea"
+    },
+    {
+      "original": "HP:0000790",
+      "label": "Hematuria"
+    },
+    {
+      "original": "HP:0000823",
+      "label": "Delayed puberty"
+    },
+    {
+      "original": "HP:0000832",
+      "label": "Primary hypothyroidism"
+    },
+    {
+      "original": "HP:0000855",
+      "label": "Insulin resistance"
+    },
+    {
+      "original": "HP:0000858",
+      "label": "Irregular menstruation"
+    },
+    {
+      "original": "HP:0000868",
+      "label": "Decreased fertility in females"
+    },
+    {
+      "original": "HP:0000869",
+      "label": "Secondary amenorrhea"
+    },
+    {
+      "original": "HP:0000938",
+      "label": "Osteopenia"
+    },
+    {
+      "original": "HP:0000952",
+      "label": "Jaundice"
+    },
+    {
+      "original": "HP:0000958",
+      "label": "Dry skin"
+    },
+    {
+      "original": "HP:0000961",
+      "label": "Cyanosis"
+    },
+    {
+      "original": "HP:0000969",
+      "label": "Edema"
+    },
+    {
+      "original": "HP:0000975",
+      "label": "Hyperhidrosis"
+    },
+    {
+      "original": "HP:0000978",
+      "label": "Easy Bruising"
+    },
+    {
+      "original": "HP:0000980",
+      "label": "Pallor"
+    },
+    {
+      "original": "HP:0000989",
+      "label": "Pruritus"
+    },
+    {
+      "original": "HP:0001003",
+      "label": "Solar Lentigo"
+    },
+    {
+      "original": "HP:0001007",
+      "label": "Hirsutism"
+    },
+    {
+      "original": "HP:0001056",
+      "label": "Milia"
+    },
+    {
+      "original": "HP:0001065",
+      "label": "Striae"
+    },
+    {
+      "original": "HP:0001075",
+      "label": "Atrophic scars"
+    },
+    {
+      "original": "HP:0001123",
+      "label": "Visual field defect"
+    },
+    {
+      "original": "HP:0001252",
+      "label": "Hypotonia"
+    },
+    {
+      "original": "HP:0001254",
+      "label": "Lethargy"
+    },
+    {
+      "original": "HP:0001257",
+      "label": "Spasticity"
+    },
+    {
+      "original": "HP:0001258",
+      "label": "Spastic paraplegia"
+    },
+    {
+      "original": "HP:0001259",
+      "label": "Coma"
+    },
+    {
+      "original": "HP:0001262",
+      "label": "Somnolence"
+    },
+    {
+      "original": "HP:0001276",
+      "label": "Hypertonia"
+    },
+    {
+      "original": "HP:0001279",
+      "label": "Syncope"
+    },
+    {
+      "original": "HP:0001281",
+      "label": "Tetany"
+    },
+    {
+      "original": "HP:0001289",
+      "label": "Confusion"
+    },
+    {
+      "original": "HP:0001324",
+      "label": "Muscle weakness"
+    },
+    {
+      "original": "HP:0001336",
+      "label": "Myoclonus"
+    },
+    {
+      "original": "HP:0001337",
+      "label": "Tremor"
+    },
+    {
+      "original": "HP:0001371",
+      "label": "contracture"
+    },
+    {
+      "original": "HP:0001382",
+      "label": "Joint hypermobility"
+    },
+    {
+      "original": "HP:0001386",
+      "label": "Joint swelling"
+    },
+    {
+      "original": "HP:0001387",
+      "label": "Joint stiffness"
+    },
+    {
+      "original": "HP:0001395",
+      "label": "Liver Fibrosis"
+    },
+    {
+      "original": "HP:0001410",
+      "label": "Decreased liver function"
+    },
+    {
+      "original": "HP:0001510",
+      "label": "Growth delay"
+    },
+    {
+      "original": "HP:0001518",
+      "label": "Light for dates"
+    },
+    {
+      "original": "HP:0001541",
+      "label": "Ascites"
+    },
+    {
+      "original": "HP:0001609",
+      "label": "Hoarse voice"
+    },
+    {
+      "original": "HP:0001640",
+      "label": "Cardiomegaly"
+    },
+    {
+      "original": "HP:0001649",
+      "label": "Tachycardia"
+    },
+    {
+      "original": "HP:0001657",
+      "label": "Prolonged QT interval"
+    },
+    {
+      "original": "HP:0001662",
+      "label": "Bradycardia"
+    },
+    {
+      "original": "HP:0001681",
+      "label": "Angina pectoris"
+    },
+    {
+      "original": "HP:0001688",
+      "label": "Sinus bradycardia"
+    },
+    {
+      "original": "HP:0001699",
+      "label": "Sudden death"
+    },
+    {
+      "original": "HP:0001705",
+      "label": "Right ventricular outlet tract obstruction"
+    },
+    {
+      "original": "HP:0001712",
+      "label": "Left ventricular hypertrophy"
+    },
+    {
+      "original": "HP:0001714",
+      "label": "Ventricular hypertrophy"
+    },
+    {
+      "original": "HP:0001737",
+      "label": "Pancreatic Cyst"
+    },
+    {
+      "original": "HP:0001742",
+      "label": "Nasal congestion"
+    },
+    {
+      "original": "HP:0001744",
+      "label": "Splenomegaly"
+    },
+    {
+      "original": "HP:0001746",
+      "label": "Asplenia"
+    },
+    {
+      "original": "HP:0001785",
+      "label": "Ankle swelling"
+    },
+    {
+      "original": "HP:0001824",
+      "label": "Weight loss"
+    },
+    {
+      "original": "HP:0001892",
+      "label": "Abnormal bleeding"
+    },
+    {
+      "original": "HP:0001907",
+      "label": "Thromboembolism"
+    },
+    {
+      "original": "HP:0001908",
+      "label": "Hypoplastic anemia"
+    },
+    {
+      "original": "HP:0001944",
+      "label": "Dehydration"
+    },
+    {
+      "original": "HP:0001945",
+      "label": "Fever"
+    },
+    {
+      "original": "HP:0001946",
+      "label": "Ketosis"
+    },
+    {
+      "original": "HP:0001948",
+      "label": "Alkalosis"
+    },
+    {
+      "original": "HP:0001959",
+      "label": "Polydipsia"
+    },
+    {
+      "original": "HP:0001962",
+      "label": "Palpitations"
+    },
+    {
+      "original": "HP:0001974",
+      "label": "Leukocytosis"
+    },
+    {
+      "original": "HP:0001985",
+      "label": "Hypoketotic hypoglycemia"
+    },
+    {
+      "original": "HP:0001987",
+      "label": "Hyperammonemia"
+    },
+    {
+      "original": "HP:0001993",
+      "label": "Ketoacidosis"
+    },
+    {
+      "original": "HP:0001995",
+      "label": "Hyperchloremic acidosis"
+    },
+    {
+      "original": "HP:0001996",
+      "label": "Chronic metabolic acidosis"
+    },
+    {
+      "original": "HP:0002013",
+      "label": "Vomiting"
+    },
+    {
+      "original": "HP:0002015",
+      "label": "Dysphagia"
+    },
+    {
+      "original": "HP:0002017",
+      "label": "Nausea and vomiting"
+    },
+    {
+      "original": "HP:0002018",
+      "label": "Nausea"
+    },
+    {
+      "original": "HP:0002024",
+      "label": "Malabsorption"
+    },
+    {
+      "original": "HP:0002027",
+      "label": "Abdominal pain"
+    },
+    {
+      "original": "HP:0002043",
+      "label": "Esophageal stricture"
+    },
+    {
+      "original": "HP:0002045",
+      "label": "Hypothermia"
+    },
+    {
+      "original": "HP:0002061",
+      "label": "Lower limb spasticity"
+    },
+    {
+      "original": "HP:0002063",
+      "label": "Rigidity"
+    },
+    {
+      "original": "HP:0002067",
+      "label": "Bradykinesia"
+    },
+    {
+      "original": "HP:0002069",
+      "label": "Bilateral tonic-clonic seizure"
+    },
+    {
+      "original": "HP:0002071",
+      "label": "Abnormality of extrapyramidal motor function"
+    },
+    {
+      "original": "HP:0002093",
+      "label": "Respiratory insufficiency"
+    },
+    {
+      "original": "HP:0002094",
+      "label": "Dyspnea"
+    },
+    {
+      "original": "HP:0002098",
+      "label": "Respiratory distress"
+    },
+    {
+      "original": "HP:0002104",
+      "label": "Apnea"
+    },
+    {
+      "original": "HP:0002121",
+      "label": "Absence Seizure"
+    },
+    {
+      "original": "HP:0002140",
+      "label": "Ischemic stroke"
+    },
+    {
+      "original": "HP:0002149",
+      "label": "Hyperuricemia"
+    },
+    {
+      "original": "HP:0002153",
+      "label": "Hyperkalemia"
+    },
+    {
+      "original": "HP:0002157",
+      "label": "Azotemia"
+    },
+    {
+      "original": "HP:0002169",
+      "label": "Clonus"
+    },
+    {
+      "original": "HP:0002170",
+      "label": "Intracranial hemorrhage"
+    },
+    {
+      "original": "HP:0002176",
+      "label": "Spinal cord compression"
+    },
+    {
+      "original": "HP:0002197",
+      "label": "Generalized-onset seizure"
+    },
+    {
+      "original": "HP:0002202",
+      "label": "Pleural effusion"
+    },
+    {
+      "original": "HP:0002239",
+      "label": "Gastrointestinal hemorrhage"
+    },
+    {
+      "original": "HP:0002240",
+      "label": "Hepatomegaly"
+    },
+    {
+      "original": "HP:0002304",
+      "label": "Akinesia"
+    },
+    {
+      "original": "HP:0002305",
+      "label": "Athetosis"
+    },
+    {
+      "original": "HP:0002307",
+      "label": "Drooling"
+    },
+    {
+      "original": "HP:0002315",
+      "label": "Headache"
+    },
+    {
+      "original": "HP:0002353",
+      "label": "EEG abnormality"
+    },
+    {
+      "original": "HP:0002355",
+      "label": "HP:0002355"
+    },
+    {
+      "original": "HP:0002360",
+      "label": "Sleep abnormality"
+    },
+    {
+      "original": "HP:0002373",
+      "label": "Febrile Seizure"
+    },
+    {
+      "original": "HP:0002380",
+      "label": "Fasciculations"
+    },
+    {
+      "original": "HP:0002486",
+      "label": "Myotonia"
+    },
+    {
+      "original": "HP:0002487",
+      "label": "Hyperkinesia"
+    },
+    {
+      "original": "HP:0002573",
+      "label": "Hematochezia"
+    },
+    {
+      "original": "HP:0002584",
+      "label": "Intestinal bleeding"
+    },
+    {
+      "original": "HP:0002591",
+      "label": "Polyphagia"
+    },
+    {
+      "original": "HP:0002607",
+      "label": "Bowel incontinence"
+    },
+    {
+      "original": "HP:0002611",
+      "label": "Cholestatic liver disease"
+    },
+    {
+      "original": "HP:0002625",
+      "label": "Deep venous thrombosis"
+    },
+    {
+      "original": "HP:0002647",
+      "label": "Aortic dissection"
+    },
+    {
+      "original": "HP:0002716",
+      "label": "Lymphadenopathy"
+    },
+    {
+      "original": "HP:0002718",
+      "label": "Recurrent bacterial infections"
+    },
+    {
+      "original": "HP:0002719",
+      "label": "Recurrent infections"
+    },
+    {
+      "original": "HP:0002751",
+      "label": "Kyphoscoliosis"
+    },
+    {
+      "original": "HP:0002756",
+      "label": "Pathologic fracture"
+    },
+    {
+      "original": "HP:0002757",
+      "label": "Recurrent fractures"
+    },
+    {
+      "original": "HP:0002781",
+      "label": "Upper airway obstruction"
+    },
+    {
+      "original": "HP:0002783",
+      "label": "Recurrent lower respiratory tract infections"
+    },
+    {
+      "original": "HP:0002788",
+      "label": "Recurrent upper respiratory tract infections"
+    },
+    {
+      "original": "HP:0002789",
+      "label": "Tachypnea"
+    },
+    {
+      "original": "HP:0002791",
+      "label": "Hypoventilation"
+    },
+    {
+      "original": "HP:0002829",
+      "label": "Arthralgia"
+    },
+    {
+      "original": "HP:0002883",
+      "label": "Hyperventilation"
+    },
+    {
+      "original": "HP:0002901",
+      "label": "Hypocalcemia"
+    },
+    {
+      "original": "HP:0002902",
+      "label": "Hyponatremia"
+    },
+    {
+      "original": "HP:0002910",
+      "label": "Elevated circulating hepatic transaminase concentration"
+    },
+    {
+      "original": "HP:0002918",
+      "label": "Hypermagnesemia"
+    },
+    {
+      "original": "HP:0002953",
+      "label": "Vertebral compression fracture"
+    },
+    {
+      "original": "HP:0003073",
+      "label": "Hypoalbuminemia"
+    },
+    {
+      "original": "HP:0003075",
+      "label": "Hypoproteinemia"
+    },
+    {
+      "original": "HP:0003113",
+      "label": "Hypochloremia"
+    },
+    {
+      "original": "HP:0003119",
+      "label": "Dyslipidemia"
+    },
+    {
+      "original": "HP:0003124",
+      "label": "Hypercholesterolemia"
+    },
+    {
+      "original": "HP:0003201",
+      "label": "Rhabdomyolysis"
+    },
+    {
+      "original": "HP:0003228",
+      "label": "Hypernatremia"
+    },
+    {
+      "original": "HP:0003259",
+      "label": "Elevated circulating creatinine concentration"
+    },
+    {
+      "original": "HP:0003265",
+      "label": "Neonatal hyperbilirubinemia"
+    },
+    {
+      "original": "HP:0003270",
+      "label": "Abdominal distention"
+    },
+    {
+      "original": "HP:0003326",
+      "label": "Myalgia"
+    },
+    {
+      "original": "HP:0003394",
+      "label": "Muscle spasm"
+    },
+    {
+      "original": "HP:0003418",
+      "label": "Back pain"
+    },
+    {
+      "original": "HP:0003419",
+      "label": "Low back pain"
+    },
+    {
+      "original": "HP:0003472",
+      "label": "Hypocalcemic tetany"
+    },
+    {
+      "original": "HP:0003473",
+      "label": "Myasthenias"
+    },
+    {
+      "original": "HP:0003552",
+      "label": "Muscle stiffness"
+    },
+    {
+      "original": "HP:0003750",
+      "label": "Muscle Fatigue"
+    },
+    {
+      "original": "HP:0004305",
+      "label": "Involuntary movements"
+    },
+    {
+      "original": "HP:0004308",
+      "label": "Ventricular arrhythmia"
+    },
+    {
+      "original": "HP:0004322",
+      "label": "Short stature"
+    },
+    {
+      "original": "HP:0004324",
+      "label": "Weight Gain"
+    },
+    {
+      "original": "HP:0004326",
+      "label": "Cachexia"
+    },
+    {
+      "original": "HP:0004360",
+      "label": "Abnormality of acid-base homeostasis"
+    },
+    {
+      "original": "HP:0004372",
+      "label": "Reduced consciousness"
+    },
+    {
+      "original": "HP:0004386",
+      "label": "Gastrointestinal inflammation"
+    },
+    {
+      "original": "HP:0004388",
+      "label": "Microcolon"
+    },
+    {
+      "original": "HP:0004396",
+      "label": "Poor appetite"
+    },
+    {
+      "original": "HP:0004420",
+      "label": "Arterial thrombosis"
+    },
+    {
+      "original": "HP:0004743",
+      "label": "Chronic tubulointerstitial nephritis"
+    },
+    {
+      "original": "HP:0004754",
+      "label": "Permanent atrial fibrillation"
+    },
+    {
+      "original": "HP:0004755",
+      "label": "Supraventricular tachycardia"
+    },
+    {
+      "original": "HP:0004763",
+      "label": "Paroxysmal supraventricular tachycardia"
+    },
+    {
+      "original": "HP:0004787",
+      "label": "Fulminant hepatitis"
+    },
+    {
+      "original": "HP:0004796",
+      "label": "Gastrointestinal obstruction"
+    },
+    {
+      "original": "HP:0004813",
+      "label": "Post-transfusion thrombocytopenia"
+    },
+    {
+      "original": "HP:0004848",
+      "label": "Ph-positive acute lymphoblastic leukemia"
+    },
+    {
+      "original": "HP:0004850",
+      "label": "Recurrent deep vein thrombosis"
+    },
+    {
+      "original": "HP:0004859",
+      "label": "Amegakaryocytic thrombocytopenia"
+    },
+    {
+      "original": "HP:0004870",
+      "label": "Chronic hemolytic anemia"
+    },
+    {
+      "original": "HP:0004900",
+      "label": "Severe lactic acidosis"
+    },
+    {
+      "original": "HP:0004935",
+      "label": "Pulmonary artery atresia"
+    },
+    {
+      "original": "HP:0004952",
+      "label": "Pulmonary arteriovenous fistulas"
+    },
+    {
+      "original": "HP:0005115",
+      "label": "Supraventricular arrhythmia"
+    },
+    {
+      "original": "HP:0005162",
+      "label": "Abnormal left ventricular function"
+    },
+    {
+      "original": "HP:0005202",
+      "label": "Helicobacter pylori infection"
+    },
+    {
+      "original": "HP:0005227",
+      "label": "Adenomatous colonic polyposis"
+    },
+    {
+      "original": "HP:0005230",
+      "label": "Biliary tract obstruction"
+    },
+    {
+      "original": "HP:0005376",
+      "label": "Recurrent Haemophilus influenzae infections"
+    },
+    {
+      "original": "HP:0005381",
+      "label": "Recurrent meningococcal disease"
+    },
+    {
+      "original": "HP:0005406",
+      "label": "Recurrent bacterial skin infections"
+    },
+    {
+      "original": "HP:0005512",
+      "label": "obsolete Impaired neutrophil killing of staphylococci"
+    },
+    {
+      "original": "HP:0005542",
+      "label": "Prolonged whole-blood clotting time"
+    },
+    {
+      "original": "HP:0005616",
+      "label": "Accelerated skeletal maturation"
+    },
+    {
+      "original": "HP:0005986",
+      "label": "Neck Stiffness"
+    },
+    {
+      "original": "HP:0006511",
+      "label": "Laryngospasm"
+    },
+    {
+      "original": "HP:0006682",
+      "label": "Premature ventricular contraction"
+    },
+    {
+      "original": "HP:0006688",
+      "label": "Paroxysmal tachycardia"
+    },
+    {
+      "original": "HP:0006986",
+      "label": "Upper limb spasticity"
+    },
+    {
+      "original": "HP:0007021",
+      "label": "Pain insensitivity"
+    },
+    {
+      "original": "HP:0007185",
+      "label": "Unconsciousness"
+    },
+    {
+      "original": "HP:0007334",
+      "label": "Bilateral tonic-clonic seizure with focal onset"
+    },
+    {
+      "original": "HP:0007359",
+      "label": "Partial Seizure"
+    },
+    {
+      "original": "HP:0007379",
+      "label": "Neoplasm of the genitourinary tract"
+    },
+    {
+      "original": "HP:0007420",
+      "label": "Spontaneous hematomas"
+    },
+    {
+      "original": "HP:0007430",
+      "label": "Generalized edema"
+    },
+    {
+      "original": "HP:0007514",
+      "label": "Edema of hand"
+    },
+    {
+      "original": "HP:0007606",
+      "label": "Multiple cutaneous malignancies"
+    },
+    {
+      "original": "HP:0007906",
+      "label": "Ocular hypertension"
+    },
+    {
+      "original": "HP:0008151",
+      "label": "INR Increased"
+    },
+    {
+      "original": "HP:0008213",
+      "label": "Gonadotropin deficiency"
+    },
+    {
+      "original": "HP:0008221",
+      "label": "Adrenal hyperplasia"
+    },
+    {
+      "original": "HP:0008223",
+      "label": "Compensated hypothyroidism"
+    },
+    {
+      "original": "HP:0008281",
+      "label": "Acute hyperammonemia"
+    },
+    {
+      "original": "HP:0008441",
+      "label": "Epiphysiolysis"
+    },
+    {
+      "original": "HP:0008765",
+      "label": "Auditory hallucination"
+    },
+    {
+      "original": "HP:0009763",
+      "label": "Limb pain"
+    },
+    {
+      "original": "HP:0009798",
+      "label": "Euthyroid goiter"
+    },
+    {
+      "original": "HP:0010307",
+      "label": "Stridor"
+    },
+    {
+      "original": "HP:0010310",
+      "label": "Chylothorax"
+    },
+    {
+      "original": "HP:0010471",
+      "label": "Oligosacchariduria"
+    },
+    {
+      "original": "HP:0010676",
+      "label": "Mechanical ileus"
+    },
+    {
+      "original": "HP:0010741",
+      "label": "Pedal edema"
+    },
+    {
+      "original": "HP:0010783",
+      "label": "Erythema"
+    },
+    {
+      "original": "HP:0010911",
+      "label": "Hyperleucinemia"
+    },
+    {
+      "original": "HP:0011028",
+      "label": "Abnormality of blood circulation"
+    },
+    {
+      "original": "HP:0011029",
+      "label": "Internal hemorrhage"
+    },
+    {
+      "original": "HP:0011105",
+      "label": "Hypervolemia"
+    },
+    {
+      "original": "HP:0011106",
+      "label": "Hypovolemia"
+    },
+    {
+      "original": "HP:0011147",
+      "label": "Typical absence seizure"
+    },
+    {
+      "original": "HP:0011188",
+      "label": "Focal EEG discharges with secondary generalization"
+    },
+    {
+      "original": "HP:0011418",
+      "label": "Vasa Previa"
+    },
+    {
+      "original": "HP:0011423",
+      "label": "Hyperchloremia"
+    },
+    {
+      "original": "HP:0011484",
+      "label": "Posterior synechiae of the anterior chamber"
+    },
+    {
+      "original": "HP:0011499",
+      "label": "Mydriasis"
+    },
+    {
+      "original": "HP:0011703",
+      "label": "Sinus tachycardia"
+    },
+    {
+      "original": "HP:0011712",
+      "label": "Complete right bundle branch block"
+    },
+    {
+      "original": "HP:0011713",
+      "label": "Left bundle branch block"
+    },
+    {
+      "original": "HP:0011717",
+      "label": "Atrioventricular reentrant tachycardia"
+    },
+    {
+      "original": "HP:0011741",
+      "label": "Secondary hyperaldosteronism"
+    },
+    {
+      "original": "HP:0011848",
+      "label": "Abdominal colic"
+    },
+    {
+      "original": "HP:0011854",
+      "label": "Hemoperitoneum"
+    },
+    {
+      "original": "HP:0011855",
+      "label": "Pharyngeal edema"
+    },
+    {
+      "original": "HP:0011885",
+      "label": "eye hemorrhage"
+    },
+    {
+      "original": "HP:0011891",
+      "label": "Post-partum hemorrhage"
+    },
+    {
+      "original": "HP:0011900",
+      "label": "Hypofibrinogenemia"
+    },
+    {
+      "original": "HP:0011967",
+      "label": "Hypocupremia"
+    },
+    {
+      "original": "HP:0011976",
+      "label": "Elevated urinary catecholamine level"
+    },
+    {
+      "original": "HP:0011999",
+      "label": "Paranoia"
+    },
+    {
+      "original": "HP:0012027",
+      "label": "Laryngeal edema"
+    },
+    {
+      "original": "HP:0012051",
+      "label": "Reactive hypoglycemia"
+    },
+    {
+      "original": "HP:0012120",
+      "label": "Methylmalonic aciduria"
+    },
+    {
+      "original": "HP:0012151",
+      "label": "Hemothorax"
+    },
+    {
+      "original": "HP:0012155",
+      "label": "Decreased corneal sensation"
+    },
+    {
+      "original": "HP:0012211",
+      "label": "Abnormal renal physiology"
+    },
+    {
+      "original": "HP:0012228",
+      "label": "Tension-type headache"
+    },
+    {
+      "original": "HP:0012251",
+      "label": "ST segment elevation"
+    },
+    {
+      "original": "HP:0012378",
+      "label": "Fatigue"
+    },
+    {
+      "original": "HP:0012388",
+      "label": "Acute bronchitis"
+    },
+    {
+      "original": "HP:0012390",
+      "label": "Anal fissure"
+    },
+    {
+      "original": "HP:0012398",
+      "label": "Edema Limbs"
+    },
+    {
+      "original": "HP:0012416",
+      "label": "Hypercapnia"
+    },
+    {
+      "original": "HP:0012418",
+      "label": "Hypoxemia"
+    },
+    {
+      "original": "HP:0012432",
+      "label": "Chronic fatigue"
+    },
+    {
+      "original": "HP:0012441",
+      "label": "Sphincter of Oddi dyskinesia"
+    },
+    {
+      "original": "HP:0012442",
+      "label": "Gallbladder dyskinesia"
+    },
+    {
+      "original": "HP:0012450",
+      "label": "Chronic constipation"
+    },
+    {
+      "original": "HP:0012466",
+      "label": "Chronic respiratory acidosis"
+    },
+    {
+      "original": "HP:0012469",
+      "label": "Infantile Spasm"
+    },
+    {
+      "original": "HP:0012514",
+      "label": "Lower limb pain"
+    },
+    {
+      "original": "HP:0012531",
+      "label": "Pain"
+    },
+    {
+      "original": "HP:0012532",
+      "label": "Chronic pain"
+    },
+    {
+      "original": "HP:0012534",
+      "label": "Dysesthesia"
+    },
+    {
+      "original": "HP:0012537",
+      "label": "Food intolerance"
+    },
+    {
+      "original": "HP:0012587",
+      "label": "Gross Hematuria"
+    },
+    {
+      "original": "HP:0012592",
+      "label": "Albuminuria"
+    },
+    {
+      "original": "HP:0012594",
+      "label": "Moderate albuminuria"
+    },
+    {
+      "original": "HP:0012652",
+      "label": "Exercise-induced asthma"
+    },
+    {
+      "original": "HP:0012668",
+      "label": "Vasovagal syncope"
+    },
+    {
+      "original": "HP:0012669",
+      "label": "Carotid sinus syncope"
+    },
+    {
+      "original": "HP:0012701",
+      "label": "Bowel urgency"
+    },
+    {
+      "original": "HP:0012702",
+      "label": "Tenesmus"
+    },
+    {
+      "original": "HP:0012710",
+      "label": "Ingrown nail"
+    },
+    {
+      "original": "HP:0012721",
+      "label": "Venous malformation"
+    },
+    {
+      "original": "HP:0012722",
+      "label": "Heart block"
+    },
+    {
+      "original": "HP:0012735",
+      "label": "Cough"
+    },
+    {
+      "original": "HP:0020071",
+      "label": "Viremia"
+    },
+    {
+      "original": "HP:0020101",
+      "label": "Invasive fungal infection"
+    },
+    {
+      "original": "HP:0020103",
+      "label": "Invasive pulmonary aspergillosis"
+    },
+    {
+      "original": "HP:0020165",
+      "label": "Branch retinal vein occlusion"
+    },
+    {
+      "original": "HP:0020174",
+      "label": "Refractory drug response"
+    },
+    {
+      "original": "HP:0025063",
+      "label": "Scaphoid abdomen"
+    },
+    {
+      "original": "HP:0025085",
+      "label": "Bloody diarrhea"
+    },
+    {
+      "original": "HP:0025095",
+      "label": "Sneeze"
+    },
+    {
+      "original": "HP:0025116",
+      "label": "Fetal distress"
+    },
+    {
+      "original": "HP:0025143",
+      "label": "Chills"
+    },
+    {
+      "original": "HP:0025144",
+      "label": "Shivering"
+    },
+    {
+      "original": "HP:0025169",
+      "label": "Left ventricular systolic dysfunction"
+    },
+    {
+      "original": "HP:0025238",
+      "label": "Foot pain"
+    },
+    {
+      "original": "HP:0025253",
+      "label": "Claustrophobia"
+    },
+    {
+      "original": "HP:0025267",
+      "label": "Snoring"
+    },
+    {
+      "original": "HP:0025269",
+      "label": "Panic attack"
+    },
+    {
+      "original": "HP:0025272",
+      "label": "Melasma"
+    },
+    {
+      "original": "HP:0025328",
+      "label": "Antepartum hemorrhage"
+    },
+    {
+      "original": "HP:0025337",
+      "label": "Red eye"
+    },
+    {
+      "original": "HP:0025388",
+      "label": "Thyroid nodule"
+    },
+    {
+      "original": "HP:0025406",
+      "label": "Asthenia"
+    },
+    {
+      "original": "HP:0025464",
+      "label": "Increased reactive oxygen species production"
+    },
+    {
+      "original": "HP:0025502",
+      "label": "Overweight"
+    },
+    {
+      "original": "HP:0025637",
+      "label": "Vasospasm"
+    },
+    {
+      "original": "HP:0025693",
+      "label": "Pituitary macroadenoma"
+    },
+    {
+      "original": "HP:0030049",
+      "label": "Brain abscess"
+    },
+    {
+      "original": "HP:0030157",
+      "label": "Flank pain"
+    },
+    {
+      "original": "HP:0030166",
+      "label": "Night sweats"
+    },
+    {
+      "original": "HP:0030169",
+      "label": "Gastric varix"
+    },
+    {
+      "original": "HP:0030212",
+      "label": "Collectionism"
+    },
+    {
+      "original": "HP:0030548",
+      "label": "Unaided visual acuity 1.3 LogMAR"
+    },
+    {
+      "original": "HP:0030766",
+      "label": "Ear pain"
+    },
+    {
+      "original": "HP:0030788",
+      "label": "Impacted cerumen"
+    },
+    {
+      "original": "HP:0030812",
+      "label": "Enlarged tonsils"
+    },
+    {
+      "original": "HP:0030828",
+      "label": "Wheezing"
+    },
+    {
+      "original": "HP:0030833",
+      "label": "Neck pain"
+    },
+    {
+      "original": "HP:0030834",
+      "label": "Shoulder pain"
+    },
+    {
+      "original": "HP:0030835",
+      "label": "Elbow pain"
+    },
+    {
+      "original": "HP:0030836",
+      "label": "Wrist pain"
+    },
+    {
+      "original": "HP:0030838",
+      "label": "Hip pain"
+    },
+    {
+      "original": "HP:0030839",
+      "label": "Knee pain"
+    },
+    {
+      "original": "HP:0030840",
+      "label": "Ankle pain"
+    },
+    {
+      "original": "HP:0030858",
+      "label": "Addiction"
+    },
+    {
+      "original": "HP:0030878",
+      "label": "Abnormality on pulmonary function testing"
+    },
+    {
+      "original": "HP:0031057",
+      "label": "Skin fissure"
+    },
+    {
+      "original": "HP:0031088",
+      "label": "Vaginal dryness"
+    },
+    {
+      "original": "HP:0031109",
+      "label": "Agalactia"
+    },
+    {
+      "original": "HP:0031180",
+      "label": "Erythema migrans"
+    },
+    {
+      "original": "HP:0031217",
+      "label": "Hot flashes"
+    },
+    {
+      "original": "HP:0031247",
+      "label": "Whooping cough"
+    },
+    {
+      "original": "HP:0031249",
+      "label": "Parageusia"
+    },
+    {
+      "original": "HP:0031273",
+      "label": "Shock"
+    },
+    {
+      "original": "HP:0031274",
+      "label": "Hypovolemic shock"
+    },
+    {
+      "original": "HP:0031275",
+      "label": "Distributive shock"
+    },
+    {
+      "original": "HP:0031284",
+      "label": "Flushing"
+    },
+    {
+      "original": "HP:0031292",
+      "label": "Skin Abscess"
+    },
+    {
+      "original": "HP:0031354",
+      "label": "Sleep onset insomnia"
+    },
+    {
+      "original": "HP:0031355",
+      "label": "Middle Insomnia"
+    },
+    {
+      "original": "HP:0031356",
+      "label": "Terminal insomnia"
+    },
+    {
+      "original": "HP:0031417",
+      "label": "Rhinorrhea"
+    },
+    {
+      "original": "HP:0031420",
+      "label": "Solar Retinitis"
+    },
+    {
+      "original": "HP:0031469",
+      "label": "Low self-esteem"
+    },
+    {
+      "original": "HP:0031473",
+      "label": "Anger"
+    },
+    {
+      "original": "HP:0031589",
+      "label": "Suicidal ideation"
+    },
+    {
+      "original": "HP:0031609",
+      "label": "Geographic atrophy"
+    },
+    {
+      "original": "HP:0031691",
+      "label": "Severe viral infection"
+    },
+    {
+      "original": "HP:0031843",
+      "label": "Bradyphrenia"
+    },
+    {
+      "original": "HP:0031917",
+      "label": "Digital ulcer"
+    },
+    {
+      "original": "HP:0031943",
+      "label": "Akathisia"
+    },
+    {
+      "original": "HP:0031987",
+      "label": "Diminished ability to concentrate"
+    },
+    {
+      "original": "HP:0032004",
+      "label": "Pruritus vulvae"
+    },
+    {
+      "original": "HP:0032007",
+      "label": "Maceration"
+    },
+    {
+      "original": "HP:0032043",
+      "label": "Odynophagia"
+    },
+    {
+      "original": "HP:0032149",
+      "label": "Breakthrough pain"
+    },
+    {
+      "original": "HP:0032155",
+      "label": "Abdominal Cramp"
+    },
+    {
+      "original": "HP:0032157",
+      "label": "Recurrent genital herpes"
+    },
+    {
+      "original": "HP:0032171",
+      "label": "Bladder pain"
+    },
+    {
+      "original": "HP:0032187",
+      "label": "Anal intraepithelial neoplasia"
+    },
+    {
+      "original": "HP:0032252",
+      "label": "Granuloma"
+    },
+    {
+      "original": "HP:0032257",
+      "label": "Disseminated histoplasmosis"
+    },
+    {
+      "original": "HP:0032408",
+      "label": "Breast mass"
+    },
+    {
+      "original": "HP:0032510",
+      "label": "Tendon pain"
+    },
+    {
+      "original": "HP:0032537",
+      "label": "Delayed fracture healing"
+    },
+    {
+      "original": "HP:0032619",
+      "label": "Perinephric abscess"
+    },
+    {
+      "original": "HP:0032674",
+      "label": "Cutaneous wound"
+    },
+    {
+      "original": "HP:0032940",
+      "label": "Dissociation"
+    },
+    {
+      "original": "HP:0033031",
+      "label": "Hyperpyrexia"
+    },
+    {
+      "original": "HP:0033050",
+      "label": "Pharyngalgia"
+    },
+    {
+      "original": "HP:0033073",
+      "label": "Urate tophus"
+    },
+    {
+      "original": "HP:0033120",
+      "label": "Nummular eczema"
+    },
+    {
+      "original": "HP:0033134",
+      "label": "Abdominal adhesions"
+    },
+    {
+      "original": "HP:0033138",
+      "label": "Right atrial thrombus"
+    },
+    {
+      "original": "HP:0033188",
+      "label": "Cystic acne"
+    },
+    {
+      "original": "HP:0033327",
+      "label": "Nail psoriasis"
+    },
+    {
+      "original": "HP:0033521",
+      "label": "Nasal dryness"
+    },
+    {
+      "original": "HP:0033532",
+      "label": "Decreased cardiac output"
+    },
+    {
+      "original": "HP:0033533",
+      "label": "Increased cardiac output"
+    },
+    {
+      "original": "HP:0033564",
+      "label": "Stasis dermatitis"
+    },
+    {
+      "original": "HP:0033589",
+      "label": "Flatulence"
+    },
+    {
+      "original": "HP:0033630",
+      "label": "Brain fog"
+    },
+    {
+      "original": "HP:0033687",
+      "label": "Short term memory impairment"
+    },
+    {
+      "original": "HP:0033688",
+      "label": "Long term memory impairment"
+    },
+    {
+      "original": "HP:0033705",
+      "label": "Tearfulness"
+    },
+    {
+      "original": "HP:0033714",
+      "label": "Meningiomatosis"
+    },
+    {
+      "original": "HP:0033748",
+      "label": "Hypoesthesia"
+    },
+    {
+      "original": "HP:0033834",
+      "label": "Malaise"
+    },
+    {
+      "original": "HP:0033838",
+      "label": "Dysphoria"
+    },
+    {
+      "original": "HP:0033840",
+      "label": "Postmenopausal bleeding"
+    },
+    {
+      "original": "HP:0033841",
+      "label": "Ocular pruritus"
+    },
+    {
+      "original": "HP:0033844",
+      "label": "Racing thoughts"
+    },
+    {
+      "original": "HP:0034192",
+      "label": "Pulmonary thromboembolism"
+    },
+    {
+      "original": "HP:0034263",
+      "label": "Abnormal vaginal bleeding"
+    },
+    {
+      "original": "HP:0034274",
+      "label": "Gastrointestinal ulcer"
+    },
+    {
+      "original": "HP:0034493",
+      "label": "Tubo-ovarian abscess"
+    },
+    {
+      "original": "HP:0034782",
+      "label": "Obstipation"
+    },
+    {
+      "original": "HP:0034931",
+      "label": "Lumbar spondylosis"
+    },
+    {
+      "original": "HP:0040171",
+      "label": "Decreased serum testosterone concentration"
+    },
+    {
+      "original": "HP:0040181",
+      "label": "Chapped lip"
+    },
+    {
+      "original": "HP:0040184",
+      "label": "Oral bleeding"
+    },
+    {
+      "original": "HP:0040189",
+      "label": "Scaling skin"
+    },
+    {
+      "original": "HP:0040213",
+      "label": "Hypopnea"
+    },
+    {
+      "original": "HP:0040223",
+      "label": "Pulmonary hemorrhage"
+    },
+    {
+      "original": "HP:0040264",
+      "label": "Jaw pain"
+    },
+    {
+      "original": "HP:0040270",
+      "label": "Impaired glucose tolerance"
+    },
+    {
+      "original": "HP:0041093",
+      "label": "Beau's lines"
+    },
+    {
+      "original": "HP:0041166",
+      "label": "spinal fracture"
+    },
+    {
+      "original": "HP:0100247",
+      "label": "Hiccough"
+    },
+    {
+      "original": "HP:0100507",
+      "label": "Reduced blood folate concentration"
+    },
+    {
+      "original": "HP:0100515",
+      "label": "Pollakisuria"
+    },
+    {
+      "original": "HP:0100518",
+      "label": "Dysuria"
+    },
+    {
+      "original": "HP:0100520",
+      "label": "Oliguria"
+    },
+    {
+      "original": "HP:0100533",
+      "label": "Inflammatory abnormality of the eye"
+    },
+    {
+      "original": "HP:0100539",
+      "label": "Periorbital edema"
+    },
+    {
+      "original": "HP:0100543",
+      "label": "Cognitive impairment"
+    },
+    {
+      "original": "HP:0100592",
+      "label": "Peritoneal abscess"
+    },
+    {
+      "original": "HP:0100607",
+      "label": "Dysmenorrhea"
+    },
+    {
+      "original": "HP:0100608",
+      "label": "Metrorrhagia"
+    },
+    {
+      "original": "HP:0100660",
+      "label": "Dyskinesia"
+    },
+    {
+      "original": "HP:0100678",
+      "label": "Skin Wrinkling"
+    },
+    {
+      "original": "HP:0100710",
+      "label": "Impulsivity"
+    },
+    {
+      "original": "HP:0100735",
+      "label": "Hypertensive crisis"
+    },
+    {
+      "original": "HP:0100749",
+      "label": "Chest pain"
+    },
+    {
+      "original": "HP:0100750",
+      "label": "Atelectasis"
+    },
+    {
+      "original": "HP:0100754",
+      "label": "Mania"
+    },
+    {
+      "original": "HP:0100758",
+      "label": "Gangrene"
+    },
+    {
+      "original": "HP:0100790",
+      "label": "Hernia"
+    },
+    {
+      "original": "HP:0100806",
+      "label": "Sepsis"
+    },
+    {
+      "original": "HP:0100809",
+      "label": "Scalp Pain"
+    },
+    {
+      "original": "HP:0100812",
+      "label": "Halitosis"
+    },
+    {
+      "original": "HP:0100832",
+      "label": "Vitreous debris"
+    },
+    {
+      "original": "HP:0100878",
+      "label": "Enlarged uterus"
+    },
+    {
+      "original": "HP:0200026",
+      "label": "Ocular pain"
+    },
+    {
+      "original": "HP:0200034",
+      "label": "Papule"
+    },
+    {
+      "original": "HP:0200039",
+      "label": "Pustule"
+    },
+    {
+      "original": "HP:0200042",
+      "label": "Skin ulcer"
+    },
+    {
+      "original": "HP:0200114",
+      "label": "Metabolic alkalosis"
+    },
+    {
+      "original": "HP:0200118",
+      "label": "Malabsorption of Vitamin B12"
+    },
+    {
+      "original": "HP:0200119",
+      "label": "Acute hepatitis"
+    },
+    {
+      "original": "HP:0410324",
+      "label": "Dust mite allergy"
+    },
+    {
+      "original": "HP:0410330",
+      "label": "Meat Allergy"
+    },
+    {
+      "original": "HP:0500001",
+      "label": "Body odor"
+    },
+    {
+      "original": "HP:0500005",
+      "label": "Anal pain"
+    },
+    {
+      "original": "HP:0500011",
+      "label": "Moon facies"
+    },
+    {
+      "original": "HP:0500017",
+      "label": "Abnormal cardiac catheterization"
+    },
+    {
+      "original": "HP:5200218",
+      "label": "Derealization"
+    },
+    {
+      "original": "HP:5200231",
+      "label": "Hypervigilance"
+    },
+    {
+      "original": "HP:5200233",
+      "label": "Anticipatory anxiety"
+    },
+    {
+      "original": "HP:5200270",
+      "label": "Grandiosity"
+    },
+    {
+      "original": "HP:5200276",
+      "label": "Decreased need for sleep"
+    },
+    {
+      "original": "HP:6000029",
+      "label": "Social anxiety"
+    },
+    {
+      "original": "HP:6000329",
+      "label": "Prolapsed cord"
+    },
+    {
+      "original": "HP:6000383",
+      "label": "Gastric perforation"
+    },
+    {
+      "original": "NCIT:C37967",
+      "label": "Hypercholesterolemia"
+    },
+    {
+      "original": "NCIT:C78587",
+      "label": "Anal pain"
+    },
+    {
+      "original": "NCIT:C96210",
+      "label": "Neuropathic pain"
+    },
+    {
+      "original": "UMLS:C0010046",
+      "label": "Heloma"
+    },
+    {
+      "original": "UMLS:C0080032",
+      "label": "Malignant pleural effusion"
+    },
+    {
+      "original": "UMLS:C0241254",
+      "label": "Mucus in stool"
+    },
+    {
+      "original": "UMLS:C0340288",
+      "label": "Angina pectoris"
+    },
+    {
+      "original": "UMLS:C0521172",
+      "label": "Eschar"
+    },
+    {
+      "original": "UMLS:C1142264",
+      "label": "Rest limb pain"
+    }
+  ],
+  "unresolved": [
+    {
+      "original": "UMLS:C2363741",
+      "label": "UMLS:C2363741"
+    }
+  ]
+}

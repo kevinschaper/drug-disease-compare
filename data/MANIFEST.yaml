@@ -1,0 +1,60 @@
+# Pinned inputs for the MEDIC vs Drug Approvals KP comparison.
+# Regenerate checksums after `just fetch`; commit this file so the comparison is
+# reproducible. The large input files themselves live under data/inputs/ and are
+# gitignored.
+inputs:
+  medic_edges:
+    description: >-
+      Monarch medic-ingest indication edges (drug -> disease, biolink:treats).
+      Built from regulatory label sources (DailyMed + EU/Japan approvals) with
+      LLM-based entity linking and automated QC. Every edge cites PMID:41385096
+      (the MeDIC paper, Nucleic Acids Research 2026;54(D1):D1477-D1487) as a
+      blanket source, not per-edge literature.
+    url: https://github.com/monarch-initiative/medic-ingest/releases/download/2026-06-01/medic_indication_edges.tsv
+    filename: medic_edges.tsv
+    release: "2026-06-01"
+    sha256: 370da1708db2827b7d5f777fbcacb4cf9578b9560becc18bccd18df5d3baf1d0
+
+  dakp_kgx:
+    description: >-
+      Multiomics Drug Approvals KP KGX release (infores:multiomics-drugapprovals).
+      Primary source FAERS adverse-event reports, supported by DailyMed; edges
+      carry clinical_approval_status (approved_for_condition vs off_label_use) and
+      number_of_cases. Predicates: biolink:applied_to_treat (majority),
+      biolink:treats, biolink:contraindicated_in. The zstd tarball expands to
+      edges.jsonl (-> dakp_edges.jsonl) and nodes.jsonl (-> dakp_nodes.jsonl).
+    url: https://kgx-storage.rtx.ai/releases/dakp/2026_04_21/dakp.tar.zst
+    filename: dakp.tar.zst
+    release: "2026_04_21"
+    build_version: dakp_0.5.3_c3f74ab4_2025sep1_4.3.6
+    node_norm_version: "2025sep1"
+    biolink_version: "4.3.6"
+    sha256: a8e351668f58b188bddf9728d60db40fcc12002881e4f04d5dccb8276b08164c
+
+  mondo_graph:
+    description: >-
+      MONDO is-a graph for disease-axis closure, taken from the release KGX
+      nodes/edges. Direct biolink:subclass_of edges between MONDO terms; ancestors
+      and descendants are the transitive closure. Lets a DAKP edge on a grouping
+      disease be reconciled with a MEDIC edge on its subtype (and vice versa).
+    mondo_release: latest
+    edges:
+      url: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo_edges.tsv
+      filename: mondo_edges.tsv
+      sha256: 01e7d924d93fa1cf25027a05c6dbf78e764ac5ee8b1cbe2446b5d187aca4cee5
+    nodes:
+      url: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo_nodes.tsv
+      filename: mondo_nodes.tsv
+      sha256: f7614a7de9748f2d1672bc5885362a281b7edfebb3fc0ccb9975431813cb2c69
+
+  node_normalizer:
+    description: >-
+      SRI Node Normalizer, queried at build time to (a) canonicalize drugs to a
+      single clique-preferred CURIE and (b) de-conflate the disease axis: for each
+      disease CURIE we take the full clique and prefer its MONDO member, falling
+      back to the original term (often HP) only when the clique contains no MONDO.
+      This is what undoes the MONDO/HP same-name conflation MONDO-centrically.
+      Responses are cached to data/nodenorm_cache.json (gitignored).
+    endpoint: https://nodenormalization-sri.renci.org/get_normalized_nodes
+    conflate: true
+    drug_chemical_conflate: true

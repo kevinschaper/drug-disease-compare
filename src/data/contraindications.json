@@ -1,0 +1,7007 @@
+{
+  "summary": {
+    "pairs": 3905
+  },
+  "rows": [
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "HP:0001662",
+      "disease_label": "Bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "MONDO:0008848",
+      "disease_label": "atrioventricular dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "UMLS:C0581377",
+      "disease_label": "Decompensated cardiac failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "MONDO:0000467",
+      "disease_label": "second-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:14577197",
+      "drug_label": "(S,R,R,S)-Nebivolol",
+      "disease": "MONDO:0001823",
+      "disease_label": "sick sinus syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0004981",
+      "disease_label": "atrial fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0008170",
+      "disease_label": "ovarian cancer",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0006981",
+      "disease_label": "subacute bacterial endocarditis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "HP:0002625",
+      "disease_label": "Deep venous thrombosis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0024477",
+      "disease_label": "liver and intrahepatic bile duct neoplasm",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0004989",
+      "disease_label": "breast carcinoma",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0100240",
+      "disease_label": "inherited thrombophilia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0007263",
+      "disease_label": "cardiac rhythm disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "HP:0001907",
+      "disease_label": "Thromboembolism",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "UMLS:C0151950",
+      "disease_label": "Deep thrombophlebitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0000960",
+      "disease_label": "diabetic peripheral angiopathy",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "UMLS:C3650625",
+      "disease_label": "Abnormal uterine bleeding",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0005279",
+      "disease_label": "pulmonary embolism",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0002869",
+      "disease_label": "heart valve disorder",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0020460",
+      "disease_label": "acquired von willebrand syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0002447",
+      "disease_label": "endometrial carcinoma",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0002800",
+      "disease_label": "thrombophlebitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0005231",
+      "disease_label": "hepatitis C virus infection",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0011057",
+      "disease_label": "cerebrovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:1367436",
+      "drug_label": "21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System",
+      "disease": "MONDO:0007254",
+      "disease_label": "breast cancer",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:4YBM839JAC",
+      "drug_label": "21S-Argatroban",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:4YBM839JAC",
+      "drug_label": "21S-Argatroban",
+      "disease": "MONDO:0000605",
+      "disease_label": "hypersensitivity reaction disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:OP35X9610Y",
+      "drug_label": "ACP-001",
+      "disease": "MONDO:0001660",
+      "disease_label": "proliferative diabetic retinopathy",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:OP35X9610Y",
+      "drug_label": "ACP-001",
+      "disease": "MONDO:0004992",
+      "disease_label": "cancer",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:OP35X9610Y",
+      "drug_label": "ACP-001",
+      "disease": "MONDO:0001208",
+      "disease_label": "acute respiratory failure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:OP35X9610Y",
+      "drug_label": "ACP-001",
+      "disease": "MONDO:0004687",
+      "disease_label": "severe nonproliferative diabetic retinopathy",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:24687",
+      "drug_label": "AMYL NITRITE",
+      "disease": "MONDO:0013792",
+      "disease_label": "intracerebral hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:24687",
+      "drug_label": "AMYL NITRITE",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:421707",
+      "drug_label": "Abacavir",
+      "disease": "MONDO:0001711",
+      "disease_label": "hepatic encephalopathy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:421707",
+      "drug_label": "Abacavir",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51041",
+      "drug_label": "Acamprosate",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:151293",
+      "drug_label": "Accuretic",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2379",
+      "drug_label": "Acebutolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2379",
+      "drug_label": "Acebutolol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2379",
+      "drug_label": "Acebutolol",
+      "disease": "MONDO:0008848",
+      "disease_label": "atrioventricular dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2379",
+      "drug_label": "Acebutolol",
+      "disease": "HP:0001662",
+      "disease_label": "Bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31159",
+      "drug_label": "Aceclofenac",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31159",
+      "drug_label": "Aceclofenac",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:46195",
+      "drug_label": "Acetaminophen",
+      "disease": "MONDO:0005359",
+      "disease_label": "drug-induced liver injury",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:46195",
+      "drug_label": "Acetaminophen",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841818",
+      "drug_label": "Acetaminophen; caffeine; dihydrocodeine bitartrate",
+      "disease": "HP:0012416",
+      "disease_label": "Hypercapnia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841818",
+      "drug_label": "Acetaminophen; caffeine; dihydrocodeine bitartrate",
+      "disease": "HP:0004796",
+      "disease_label": "Gastrointestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841818",
+      "drug_label": "Acetaminophen; caffeine; dihydrocodeine bitartrate",
+      "disease": "MONDO:0005087",
+      "disease_label": "respiratory system disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841818",
+      "drug_label": "Acetaminophen; caffeine; dihydrocodeine bitartrate",
+      "disease": "MONDO:0043775",
+      "disease_label": "respiratory paralysis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841818",
+      "drug_label": "Acetaminophen; caffeine; dihydrocodeine bitartrate",
+      "disease": "MONDO:0004568",
+      "disease_label": "paralytic ileus",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841818",
+      "drug_label": "Acetaminophen; caffeine; dihydrocodeine bitartrate",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "MONDO:0001966",
+      "disease_label": "chronic closed-angle glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "MONDO:0005240",
+      "disease_label": "kidney disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "MONDO:0005155",
+      "disease_label": "cirrhosis of liver",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "HP:0012211",
+      "disease_label": "Abnormal renal physiology",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "HP:0001995",
+      "disease_label": "Hyperchloremic acidosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27690",
+      "drug_label": "Acetazolamide",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15366",
+      "drug_label": "Acetic acid",
+      "disease": "EFO:0009472",
+      "disease_label": "tympanic membrane perforation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:24847774",
+      "drug_label": "Acetic acid, glacial; hydrocortisone",
+      "disease": "MONDO:0002595",
+      "disease_label": "vaccinia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:24847774",
+      "drug_label": "Acetic acid, glacial; hydrocortisone",
+      "disease": "MONDO:0004609",
+      "disease_label": "herpes simplex infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:24847774",
+      "drug_label": "Acetic acid, glacial; hydrocortisone",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10866",
+      "drug_label": "Acheta domesticus",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10866",
+      "drug_label": "Acheta domesticus",
+      "disease": "MONDO:0007179",
+      "disease_label": "autoimmune disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10866",
+      "drug_label": "Acheta domesticus",
+      "disease": "MONDO:0005377",
+      "disease_label": "nephrotic syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50173",
+      "drug_label": "Acitretin",
+      "disease": "HP:0012211",
+      "disease_label": "Abnormal renal physiology",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50173",
+      "drug_label": "Acitretin",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16335",
+      "drug_label": "Adenosine",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16335",
+      "drug_label": "Adenosine",
+      "disease": "MONDO:0002267",
+      "disease_label": "obstructive lung disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16335",
+      "drug_label": "Adenosine",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16335",
+      "drug_label": "Adenosine",
+      "disease": "MONDO:0001823",
+      "disease_label": "sick sinus syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16335",
+      "drug_label": "Adenosine",
+      "disease": "MONDO:0000469",
+      "disease_label": "sinoatrial node disorder",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:15C2VL427D",
+      "drug_label": "Aflibercept",
+      "disease": "MONDO:0020283",
+      "disease_label": "uveitis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:15C2VL427D",
+      "drug_label": "Aflibercept",
+      "disease": "MONDO:0043885",
+      "disease_label": "eye infectious disorder",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "MONDO:0019542",
+      "disease_label": "acute liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "HP:0002153",
+      "disease_label": "Hyperkalemia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "MONDO:0015129",
+      "disease_label": "chronic primary adrenal insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:17276",
+      "drug_label": "Aldactazide",
+      "disease": "UMLS:C1565662",
+      "disease_label": "Acute Kidney Insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:3A189DH42V",
+      "drug_label": "Alemtuzumab",
+      "disease": "MONDO:0005109",
+      "disease_label": "HIV infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2567",
+      "drug_label": "Alendronic acid",
+      "disease": "HP:0002901",
+      "disease_label": "Hypocalcemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2567",
+      "drug_label": "Alendronic acid",
+      "disease": "MONDO:0008698",
+      "disease_label": "achalasia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2567",
+      "drug_label": "Alendronic acid",
+      "disease": "EFO:0006818",
+      "disease_label": "stricture",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2567",
+      "drug_label": "Alendronic acid",
+      "disease": "MONDO:0003749",
+      "disease_label": "esophageal disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51141",
+      "drug_label": "Alfuzosin",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51141",
+      "drug_label": "Alfuzosin",
+      "disease": "MONDO:0001711",
+      "disease_label": "hepatic encephalopathy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:601027",
+      "drug_label": "Aliskiren",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:51033608",
+      "drug_label": "Aliskiren mixture with hydrochlorothiazide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:51033608",
+      "drug_label": "Aliskiren mixture with hydrochlorothiazide",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10611",
+      "drug_label": "Allergenic extract- beef liver",
+      "disease": "MONDO:0004849",
+      "disease_label": "pulmonary emphysema",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10611",
+      "drug_label": "Allergenic extract- beef liver",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10611",
+      "drug_label": "Allergenic extract- beef liver",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10611",
+      "drug_label": "Allergenic extract- beef liver",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10611",
+      "drug_label": "Allergenic extract- beef liver",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "MONDO:0024644",
+      "disease_label": "myocardial ischemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "MONDO:0005294",
+      "disease_label": "peripheral vascular disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "MONDO:0043219",
+      "disease_label": "migraine with brainstem aura",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "MONDO:0011057",
+      "disease_label": "cerebrovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "MONDO:0020675",
+      "disease_label": "ischemic bowel disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:520985",
+      "drug_label": "Almotriptan",
+      "disease": "MONDO:0018925",
+      "disease_label": "familial or sporadic hemiplegic migraine",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:66563540",
+      "drug_label": "Alogliptin/metformin",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:66563540",
+      "drug_label": "Alogliptin/metformin",
+      "disease": "MONDO:0000440",
+      "disease_label": "metabolic acidosis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:66563540",
+      "drug_label": "Alogliptin/metformin",
+      "disease": "MONDO:0012819",
+      "disease_label": "diabetic ketoacidosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "EFO:0006818",
+      "disease_label": "stricture",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0005011",
+      "disease_label": "Crohn disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0004235",
+      "disease_label": "diverticulitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0005101",
+      "disease_label": "ulcerative colitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0002105",
+      "disease_label": "toxic megacolon",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "UMLS:C0151664",
+      "disease_label": "Gastrointestinal perforation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "NCIT:C54685",
+      "disease_label": "Tissue Adhesion",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0002203",
+      "disease_label": "constipation disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0000701",
+      "disease_label": "ischemic colitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:253342",
+      "drug_label": "Alosetron",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2611",
+      "drug_label": "Alprazolam",
+      "disease": "MONDO:0005338",
+      "disease_label": "open-angle glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2611",
+      "drug_label": "Alprazolam",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15544",
+      "drug_label": "Alprostadil",
+      "disease": "UMLS:C0037054",
+      "disease_label": "Sickle Cell Trait",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15544",
+      "drug_label": "Alprostadil",
+      "disease": "MONDO:0005059",
+      "disease_label": "leukemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15544",
+      "drug_label": "Alprostadil",
+      "disease": "MONDO:0009693",
+      "disease_label": "plasma cell myeloma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15544",
+      "drug_label": "Alprostadil",
+      "disease": "MONDO:0008231",
+      "disease_label": "Peyronie disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15544",
+      "drug_label": "Alprostadil",
+      "disease": "UMLS:C0269014",
+      "disease_label": "Fibrosis of corpus cavernosum",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15544",
+      "drug_label": "Alprostadil",
+      "disease": "MONDO:0011382",
+      "disease_label": "sickle cell disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:1RXS4UE564",
+      "drug_label": "Alteplase",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:1RXS4UE564",
+      "drug_label": "Alteplase",
+      "disease": "HP:0011029",
+      "disease_label": "Internal hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:1RXS4UE564",
+      "drug_label": "Alteplase",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:1RXS4UE564",
+      "drug_label": "Alteplase",
+      "disease": "HP:0002170",
+      "disease_label": "Intracranial hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:1RXS4UE564",
+      "drug_label": "Alteplase",
+      "disease": "MONDO:0005099",
+      "disease_label": "subarachnoid hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2618",
+      "drug_label": "Amantadine",
+      "disease": "MONDO:0004375",
+      "disease_label": "end stage renal failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:135949",
+      "drug_label": "Ambrisentan",
+      "disease": "MONDO:0002771",
+      "disease_label": "pulmonary fibrosis",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0005377",
+      "disease_label": "nephrotic syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0007179",
+      "disease_label": "autoimmune disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0004849",
+      "disease_label": "pulmonary emphysema",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10385",
+      "drug_label": "Ambrosia artemisiifolia pollen",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51208",
+      "drug_label": "Amdinocillin",
+      "disease": "MONDO:0008919",
+      "disease_label": "systemic primary carnitine deficiency disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51208",
+      "drug_label": "Amdinocillin",
+      "disease": "MONDO:0002520",
+      "disease_label": "hepatic porphyria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51208",
+      "drug_label": "Amdinocillin",
+      "disease": "HP:0012120",
+      "disease_label": "Methylmalonic aciduria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51208",
+      "drug_label": "Amdinocillin",
+      "disease": "MONDO:0011628",
+      "disease_label": "propionic acidemia",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10686",
+      "drug_label": "American chestnut",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10686",
+      "drug_label": "American chestnut",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10686",
+      "drug_label": "American chestnut",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10686",
+      "drug_label": "American chestnut",
+      "disease": "MONDO:0004849",
+      "disease_label": "pulmonary emphysema",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10686",
+      "drug_label": "American chestnut",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:135948",
+      "drug_label": "Amifampridine",
+      "disease": "MONDO:0000775",
+      "disease_label": "drug allergy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "MONDO:0005300",
+      "disease_label": "chronic kidney disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "HP:0002153",
+      "disease_label": "Hyperkalemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "UMLS:C1565662",
+      "disease_label": "Acute Kidney Insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2639",
+      "drug_label": "Amiloride",
+      "disease": "MONDO:0005016",
+      "disease_label": "diabetic kidney disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16586",
+      "drug_label": "Aminocaproic acid",
+      "disease": "MONDO:0001242",
+      "disease_label": "disseminated intravascular coagulation in newborn",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16586",
+      "drug_label": "Aminocaproic acid",
+      "disease": "MONDO:0001243",
+      "disease_label": "disseminated intravascular coagulation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17549",
+      "drug_label": "Aminolevulinic acid",
+      "disease": "MONDO:0019142",
+      "disease_label": "inherited porphyria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2663",
+      "drug_label": "Amiodarone",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2663",
+      "drug_label": "Amiodarone",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2663",
+      "drug_label": "Amiodarone",
+      "disease": "NCIT:C120613",
+      "disease_label": "Marked Sinus Bradycardia by ECG Finding",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2663",
+      "drug_label": "Amiodarone",
+      "disease": "MONDO:0001823",
+      "disease_label": "sick sinus syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2666",
+      "drug_label": "Amitriptyline",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:72734364",
+      "drug_label": "Amlodipine besylate; telmisartan",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2675",
+      "drug_label": "Amoxapine",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:132233",
+      "drug_label": "Amphetamine",
+      "disease": "MONDO:0004425",
+      "disease_label": "hyperthyroidism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:132233",
+      "drug_label": "Amphetamine",
+      "disease": "HP:0000713",
+      "disease_label": "Agitation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:132233",
+      "drug_label": "Amphetamine",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:132233",
+      "drug_label": "Amphetamine",
+      "disease": "MONDO:0002277",
+      "disease_label": "arteriosclerosis disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:132233",
+      "drug_label": "Amphetamine",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:142290",
+      "drug_label": "Anagrelide",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:142290",
+      "drug_label": "Anagrelide",
+      "disease": "UMLS:C4725020",
+      "disease_label": "Moderate Hepatic Insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0007263",
+      "disease_label": "cardiac rhythm disease",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "UMLS:C0151950",
+      "disease_label": "Deep thrombophlebitis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0005098",
+      "disease_label": "stroke disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0000960",
+      "disease_label": "diabetic peripheral angiopathy",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0024477",
+      "disease_label": "liver and intrahepatic bile duct neoplasm",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0005279",
+      "disease_label": "pulmonary embolism",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "HP:0002625",
+      "disease_label": "Deep venous thrombosis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0006981",
+      "disease_label": "subacute bacterial endocarditis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "HP:0001907",
+      "disease_label": "Thromboembolism",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "UMLS:C3650625",
+      "disease_label": "Abnormal uterine bleeding",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0011057",
+      "disease_label": "cerebrovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0005277",
+      "disease_label": "migraine disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0004981",
+      "disease_label": "atrial fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0002800",
+      "disease_label": "thrombophlebitis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0000004",
+      "disease_label": "adrenocortical insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0007254",
+      "disease_label": "breast cancer",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0013144",
+      "disease_label": "hereditary antithrombin deficiency",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0000473",
+      "disease_label": "arterial disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0100240",
+      "disease_label": "inherited thrombophilia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0002869",
+      "disease_label": "heart valve disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0019145",
+      "disease_label": "hereditary thrombophilia due to congenital protein C deficiency",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0020460",
+      "disease_label": "acquired von willebrand syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0004989",
+      "disease_label": "breast carcinoma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0002304",
+      "disease_label": "protein S deficiency",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0004781",
+      "disease_label": "acute myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0100429",
+      "disease_label": "intrahepatic cholestasis of pregnancy",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0002447",
+      "disease_label": "endometrial carcinoma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874151",
+      "drug_label": "Angeliq",
+      "disease": "MONDO:0008170",
+      "disease_label": "ovarian cancer",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:55346",
+      "drug_label": "Anidulafungin",
+      "disease": "MONDO:0009249",
+      "disease_label": "hereditary fructose intolerance",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:72296",
+      "drug_label": "Apixaban",
+      "disease": "MONDO:0000775",
+      "disease_label": "drug allergy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:72296",
+      "drug_label": "Apixaban",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:49821151",
+      "drug_label": "Arformoterol maleate",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10761",
+      "drug_label": "Artemisia douglasiana pollen",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10761",
+      "drug_label": "Artemisia douglasiana pollen",
+      "disease": "MONDO:0004849",
+      "disease_label": "pulmonary emphysema",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10761",
+      "drug_label": "Artemisia douglasiana pollen",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10761",
+      "drug_label": "Artemisia douglasiana pollen",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10761",
+      "drug_label": "Artemisia douglasiana pollen",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:137329",
+      "drug_label": "Asasantin",
+      "disease": "MONDO:0006314",
+      "disease_label": "nasal cavity polyp",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:137329",
+      "drug_label": "Asasantin",
+      "disease": "MONDO:0003014",
+      "disease_label": "rhinitis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:137329",
+      "drug_label": "Asasantin",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15365",
+      "drug_label": "Aspirin",
+      "disease": "MONDO:0006314",
+      "disease_label": "nasal cavity polyp",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15365",
+      "drug_label": "Aspirin",
+      "disease": "MONDO:0003014",
+      "disease_label": "rhinitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15365",
+      "drug_label": "Aspirin",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9938610",
+      "drug_label": "Aspirin mixture with clopidogrel sulfate",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9938610",
+      "drug_label": "Aspirin mixture with clopidogrel sulfate",
+      "disease": "HP:0002170",
+      "disease_label": "Intracranial hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2904",
+      "drug_label": "Atenolol",
+      "disease": "HP:0001688",
+      "disease_label": "Sinus bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2904",
+      "drug_label": "Atenolol",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2904",
+      "drug_label": "Atenolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2904",
+      "drug_label": "Atenolol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2904",
+      "drug_label": "Atenolol",
+      "disease": "MONDO:0008848",
+      "disease_label": "atrioventricular dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2904",
+      "drug_label": "Atenolol",
+      "disease": "MONDO:0000467",
+      "disease_label": "second-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:127342",
+      "drug_label": "Atomoxetine",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:127342",
+      "drug_label": "Atomoxetine",
+      "disease": "MONDO:0001966",
+      "disease_label": "chronic closed-angle glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:127342",
+      "drug_label": "Atomoxetine",
+      "disease": "MONDO:0008233",
+      "disease_label": "pheochromocytoma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:23724775",
+      "drug_label": "Atropine sulfate and diphenoxylate hydrochloride",
+      "disease": "MONDO:0000705",
+      "disease_label": "Clostridium difficile colitis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:23724775",
+      "drug_label": "Atropine sulfate and diphenoxylate hydrochloride",
+      "disease": "MONDO:0006874",
+      "disease_label": "obstructive jaundice",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:124222553",
+      "drug_label": "Atropine sulfate; difenoxin hydrochloride",
+      "disease": "MONDO:0000705",
+      "disease_label": "Clostridium difficile colitis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:124222553",
+      "drug_label": "Atropine sulfate; difenoxin hydrochloride",
+      "disease": "HP:0000952",
+      "disease_label": "Jaundice",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:151392",
+      "drug_label": "Augmentin",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:151392",
+      "drug_label": "Augmentin",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:151392",
+      "drug_label": "Augmentin",
+      "disease": "MONDO:0006874",
+      "disease_label": "obstructive jaundice",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:173924",
+      "drug_label": "Auralgan",
+      "disease": "EFO:0009472",
+      "disease_label": "tympanic membrane perforation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:173924",
+      "drug_label": "Auralgan",
+      "disease": "NCIT:C50437",
+      "disease_label": "Body Substance Discharge",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2922",
+      "drug_label": "Auranofin",
+      "disease": "UMLS:C1368107",
+      "disease_label": "Aplastic bone marrow",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2922",
+      "drug_label": "Auranofin",
+      "disease": "MONDO:0043233",
+      "disease_label": "exfoliative dermatitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2922",
+      "drug_label": "Auranofin",
+      "disease": "MONDO:0002771",
+      "disease_label": "pulmonary fibrosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2922",
+      "drug_label": "Auranofin",
+      "disease": "MONDO:0005313",
+      "disease_label": "necrotizing enterocolitis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:TT0V5JLG5B",
+      "drug_label": "Avacincaptad pegol",
+      "disease": "MONDO:0043885",
+      "disease_label": "eye infectious disorder",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:TT0V5JLG5B",
+      "drug_label": "Avacincaptad pegol",
+      "disease": "MONDO:0020283",
+      "disease_label": "uveitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:261454",
+      "drug_label": "Avalide",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:261454",
+      "drug_label": "Avalide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2038",
+      "drug_label": "Azacitidine",
+      "disease": "MONDO:0000775",
+      "disease_label": "drug allergy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2038",
+      "drug_label": "Azacitidine",
+      "disease": "MONDO:0002691",
+      "disease_label": "liver cancer",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2948",
+      "drug_label": "Azathioprine",
+      "disease": "MONDO:0008383",
+      "disease_label": "rheumatoid arthritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:68845",
+      "drug_label": "Azilsartan medoxomil",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2955",
+      "drug_label": "Azithromycin",
+      "disease": "MONDO:0006874",
+      "disease_label": "obstructive jaundice",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:2955",
+      "drug_label": "Azithromycin",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10343",
+      "drug_label": "Bacillus calmette-guerin substrain tice live antigen",
+      "disease": "MONDO:0005059",
+      "disease_label": "leukemia",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10343",
+      "drug_label": "Bacillus calmette-guerin substrain tice live antigen",
+      "disease": "MONDO:0005062",
+      "disease_label": "lymphoma",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10343",
+      "drug_label": "Bacillus calmette-guerin substrain tice live antigen",
+      "disease": "MONDO:0012268",
+      "disease_label": "AIDS",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0005313",
+      "disease_label": "necrotizing enterocolitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0002105",
+      "disease_label": "toxic megacolon",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0006807",
+      "disease_label": "intestinal perforation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0001561",
+      "disease_label": "pyloric stenosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "UMLS:C0235328",
+      "disease_label": "Obstruction of colon",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0001593",
+      "disease_label": "rectal disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0004568",
+      "disease_label": "paralytic ileus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0002688",
+      "disease_label": "duodenal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "UMLS:C0014860",
+      "disease_label": "Esophageal Perforation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "HP:6000383",
+      "disease_label": "Gastric perforation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0009476",
+      "disease_label": "atresia of small intestine",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "UMLS:C0151664",
+      "disease_label": "Gastrointestinal perforation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "UMLS:C0032320",
+      "disease_label": "Pneumoperitoneum",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0004613",
+      "disease_label": "acute intestinal ischemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "MONDO:0008586",
+      "disease_label": "esophageal atresia/tracheoesophageal fistula",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "HP:0025063",
+      "disease_label": "Scaphoid abdomen",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133326",
+      "drug_label": "Barium sulfate",
+      "disease": "NCIT:C28209",
+      "disease_label": "Obtundation",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:1B56C968OA",
+      "drug_label": "Becaplermin",
+      "disease": "MONDO:0005070",
+      "disease_label": "neoplasm",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:133833",
+      "drug_label": "Benznidazole",
+      "disease": "MONDO:0016006",
+      "disease_label": "Cockayne syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3044",
+      "drug_label": "Benzphetamine",
+      "disease": "MONDO:0002277",
+      "disease_label": "arteriosclerosis disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3044",
+      "drug_label": "Benzphetamine",
+      "disease": "MONDO:0004425",
+      "disease_label": "hyperthyroidism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3044",
+      "drug_label": "Benzphetamine",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3044",
+      "drug_label": "Benzphetamine",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3044",
+      "drug_label": "Benzphetamine",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3077",
+      "drug_label": "Betamethasone",
+      "disease": "MONDO:0019098",
+      "disease_label": "autoimmune thrombocytopenia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3082",
+      "drug_label": "Betaxolol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3082",
+      "drug_label": "Betaxolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3082",
+      "drug_label": "Betaxolol",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3082",
+      "drug_label": "Betaxolol",
+      "disease": "MONDO:0000467",
+      "disease_label": "second-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3082",
+      "drug_label": "Betaxolol",
+      "disease": "MONDO:0008848",
+      "disease_label": "atrioventricular dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3082",
+      "drug_label": "Betaxolol",
+      "disease": "HP:0001688",
+      "disease_label": "Sinus bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0021095",
+      "disease_label": "parkinsonian disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0004425",
+      "disease_label": "hyperthyroidism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0005468",
+      "disease_label": "hypotensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "HP:0001662",
+      "disease_label": "Bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0005027",
+      "disease_label": "epilepsy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3084",
+      "drug_label": "Bethanechol",
+      "disease": "MONDO:0004522",
+      "disease_label": "infectious peritonitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0005300",
+      "disease_label": "chronic kidney disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "UMLS:C3665853",
+      "disease_label": "Oesophageal compression",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0000468",
+      "disease_label": "third-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0000995",
+      "disease_label": "familial periodic paralysis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0009710",
+      "disease_label": "Thomsen and Becker disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17544",
+      "drug_label": "Bicarbonate Ion",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51230",
+      "drug_label": "Bimatoprost",
+      "disease": "MONDO:0005321",
+      "disease_label": "Fuchs' endothelial dystrophy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3127",
+      "drug_label": "Bisoprolol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3127",
+      "drug_label": "Bisoprolol",
+      "disease": "NCIT:C120613",
+      "disease_label": "Marked Sinus Bradycardia by ECG Finding",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3127",
+      "drug_label": "Bisoprolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3127",
+      "drug_label": "Bisoprolol",
+      "disease": "MONDO:0000467",
+      "disease_label": "second-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3127",
+      "drug_label": "Bisoprolol",
+      "disease": "MONDO:0000468",
+      "disease_label": "third-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3127",
+      "drug_label": "Bisoprolol",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59173",
+      "drug_label": "Bivalirudin",
+      "disease": "MONDO:0000605",
+      "disease_label": "hypersensitivity reaction disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59173",
+      "drug_label": "Bivalirudin",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59173",
+      "drug_label": "Bivalirudin",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:215703",
+      "drug_label": "Blephamide",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:215703",
+      "drug_label": "Blephamide",
+      "disease": "MONDO:0020590",
+      "disease_label": "mycobacterial infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:215703",
+      "drug_label": "Blephamide",
+      "disease": "MONDO:0015288",
+      "disease_label": "herpes simplex virus keratitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:215703",
+      "drug_label": "Blephamide",
+      "disease": "MONDO:0002595",
+      "disease_label": "vaccinia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:215703",
+      "drug_label": "Blephamide",
+      "disease": "MONDO:0020944",
+      "disease_label": "fungal infection of eye",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:0Y70779M1F",
+      "drug_label": "Botulinum toxin type B",
+      "disease": "UMLS:C3714514",
+      "disease_label": "Infection",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:177849",
+      "drug_label": "Bremelanotide",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:177849",
+      "drug_label": "Bremelanotide",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:6ZA31Y954Z",
+      "drug_label": "Brodalumab",
+      "disease": "MONDO:0005011",
+      "disease_label": "Crohn disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:XSZ53G39H5",
+      "drug_label": "Brolucizumab",
+      "disease": "MONDO:0043885",
+      "disease_label": "eye infectious disorder",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:XSZ53G39H5",
+      "drug_label": "Brolucizumab",
+      "disease": "MONDO:0020283",
+      "disease_label": "uveitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0024664",
+      "disease_label": "hypertension, pregnancy-induced",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0044013",
+      "disease_label": "puerperal disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0005180",
+      "disease_label": "Parkinson disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0005081",
+      "disease_label": "preeclampsia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0010911",
+      "disease_label": "prolactin-producing pituitary gland adenoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0019933",
+      "disease_label": "acromegaly",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "MONDO:0001754",
+      "disease_label": "eclampsia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3181",
+      "drug_label": "Bromocriptine",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3207",
+      "drug_label": "Budesonide",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3207",
+      "drug_label": "Budesonide",
+      "disease": "MONDO:0004766",
+      "disease_label": "status asthmaticus",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841116",
+      "drug_label": "Budesonide and formoterol fumarate dihydrate",
+      "disease": "MONDO:0004766",
+      "disease_label": "status asthmaticus",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841116",
+      "drug_label": "Budesonide and formoterol fumarate dihydrate",
+      "disease": "MONDO:0011751",
+      "disease_label": "COPD, severe early onset",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3213",
+      "drug_label": "Bumetanide",
+      "disease": "MONDO:0005300",
+      "disease_label": "chronic kidney disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3213",
+      "drug_label": "Bumetanide",
+      "disease": "MONDO:0001548",
+      "disease_label": "hepatic coma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3213",
+      "drug_label": "Bumetanide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3215",
+      "drug_label": "Bupivacaine",
+      "disease": "MONDO:0005468",
+      "disease_label": "hypotensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3215",
+      "drug_label": "Bupivacaine",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3215",
+      "drug_label": "Bupivacaine",
+      "disease": "HP:0031273",
+      "disease_label": "Shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3215",
+      "drug_label": "Bupivacaine",
+      "disease": "MONDO:0007263",
+      "disease_label": "cardiac rhythm disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3215",
+      "drug_label": "Bupivacaine",
+      "disease": "MONDO:0000468",
+      "disease_label": "third-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:53253137",
+      "drug_label": "Bupivacaine plus lidocaine",
+      "disease": "MONDO:0000256",
+      "disease_label": "systemic mycosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3216",
+      "drug_label": "Buprenorphine",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3216",
+      "drug_label": "Buprenorphine",
+      "disease": "HP:0004796",
+      "disease_label": "Gastrointestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3216",
+      "drug_label": "Buprenorphine",
+      "disease": "MONDO:0005087",
+      "disease_label": "respiratory system disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3216",
+      "drug_label": "Buprenorphine",
+      "disease": "MONDO:0043775",
+      "disease_label": "respiratory paralysis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3216",
+      "drug_label": "Buprenorphine",
+      "disease": "MONDO:0004568",
+      "disease_label": "paralytic ileus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3219",
+      "drug_label": "Bupropion",
+      "disease": "MONDO:0005452",
+      "disease_label": "bulimia nervosa",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3219",
+      "drug_label": "Bupropion",
+      "disease": "MONDO:0005351",
+      "disease_label": "anorexia nervosa",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3219",
+      "drug_label": "Bupropion",
+      "disease": "MONDO:0009497",
+      "disease_label": "Kifafa seizure disorder",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:G9WJT6RD29",
+      "drug_label": "Burosumab",
+      "disease": "MONDO:0004375",
+      "disease_label": "end stage renal failure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:G9WJT6RD29",
+      "drug_label": "Burosumab",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28901",
+      "drug_label": "Busulfan",
+      "disease": "MONDO:0011996",
+      "disease_label": "chronic myeloid leukemia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "UMLS:C0264714",
+      "disease_label": "Acute heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "UMLS:C0036685",
+      "disease_label": "Gram-negative sepsis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "MONDO:0010788",
+      "disease_label": "Leber hereditary optic neuropathy",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "UMLS:C0264719",
+      "disease_label": "Acute congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "MONDO:0041403",
+      "disease_label": "toxic amblyopia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "MONDO:0007345",
+      "disease_label": "aorta coarctation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:129696905",
+      "drug_label": "CID 132987570",
+      "disease": "MONDO:0001256",
+      "disease_label": "arteriovenous hemangioma/malformation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63036",
+      "drug_label": "CID 24506",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63036",
+      "drug_label": "CID 24506",
+      "disease": "MONDO:0000328",
+      "disease_label": "hyperphosphatemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63036",
+      "drug_label": "CID 24506",
+      "disease": "HP:0002153",
+      "disease_label": "Hyperkalemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63036",
+      "drug_label": "CID 24506",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63036",
+      "drug_label": "CID 24506",
+      "disease": "HP:0002901",
+      "disease_label": "Hypocalcemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63036",
+      "drug_label": "CID 24506",
+      "disease": "MONDO:0004375",
+      "disease_label": "end stage renal failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:63584",
+      "drug_label": "Cabazitaxel",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3286",
+      "drug_label": "Cabergoline",
+      "disease": "MONDO:0002771",
+      "disease_label": "pulmonary fibrosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3286",
+      "drug_label": "Cabergoline",
+      "disease": "MONDO:0000474",
+      "disease_label": "pericardium disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3286",
+      "drug_label": "Cabergoline",
+      "disease": "MONDO:0002869",
+      "disease_label": "heart valve disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3286",
+      "drug_label": "Cabergoline",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:172944",
+      "drug_label": "Cabotegravir",
+      "disease": "UMLS:C0458074",
+      "disease_label": "Human immunodeficiency virus (HIV) status",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:172944",
+      "drug_label": "Cabotegravir",
+      "disease": "MONDO:0004951",
+      "disease_label": "susceptibility to HIV infection",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:404914",
+      "drug_label": "Caduet",
+      "disease": "UMLS:C0342879",
+      "disease_label": "Primary hypercholesterolemia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:404914",
+      "drug_label": "Caduet",
+      "disease": "UMLS:C1619727",
+      "disease_label": "Decompensated cirrhosis of liver",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:404914",
+      "drug_label": "Caduet",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:404914",
+      "drug_label": "Caduet",
+      "disease": "MONDO:0019542",
+      "disease_label": "acute liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:T9FVH03HMZ",
+      "drug_label": "Calaspargase pegol",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:T9FVH03HMZ",
+      "drug_label": "Calaspargase pegol",
+      "disease": "MONDO:0004982",
+      "disease_label": "pancreatitis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:T9FVH03HMZ",
+      "drug_label": "Calaspargase pegol",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:T9FVH03HMZ",
+      "drug_label": "Calaspargase pegol",
+      "disease": "MONDO:0000831",
+      "disease_label": "thrombotic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50749",
+      "drug_label": "Calcipotriol",
+      "disease": "MONDO:0004937",
+      "disease_label": "hypervitaminosis D",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50749",
+      "drug_label": "Calcipotriol",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17823",
+      "drug_label": "Calcitriol",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17823",
+      "drug_label": "Calcitriol",
+      "disease": "MONDO:0004937",
+      "disease_label": "hypervitaminosis D",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:22984",
+      "drug_label": "Calcium",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3310",
+      "drug_label": "Calcium acetate",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29108",
+      "drug_label": "Calcium cation",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29108",
+      "drug_label": "Calcium cation",
+      "disease": "MONDO:0020598",
+      "disease_label": "malabsorption syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29108",
+      "drug_label": "Calcium cation",
+      "disease": "MONDO:0000190",
+      "disease_label": "ventricular fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29108",
+      "drug_label": "Calcium cation",
+      "disease": "MONDO:0004937",
+      "disease_label": "hypervitaminosis D",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29108",
+      "drug_label": "Calcium cation",
+      "disease": "UMLS:C0012254",
+      "disease_label": "Digitalis toxicity",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29108",
+      "drug_label": "Calcium cation",
+      "disease": "UMLS:C0340861",
+      "disease_label": "Electromechanical dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3312",
+      "drug_label": "Calol",
+      "disease": "MONDO:0000745",
+      "disease_label": "cardiac arrest",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3312",
+      "drug_label": "Calol",
+      "disease": "MONDO:0000190",
+      "disease_label": "ventricular fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3312",
+      "drug_label": "Calol",
+      "disease": "UMLS:C0012254",
+      "disease_label": "Digitalis toxicity",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3312",
+      "drug_label": "Calol",
+      "disease": "UMLS:C0340861",
+      "disease_label": "Electromechanical dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3347",
+      "drug_label": "Candesartan",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:90841",
+      "drug_label": "Cangrelor",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31348",
+      "drug_label": "Capecitabine",
+      "disease": "MONDO:0010130",
+      "disease_label": "dihydropyrimidine dehydrogenase deficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31348",
+      "drug_label": "Capecitabine",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3380",
+      "drug_label": "Captopril",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3387",
+      "drug_label": "Carbamazepine",
+      "disease": "MONDO:0018546",
+      "disease_label": "serotonin syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3387",
+      "drug_label": "Carbamazepine",
+      "disease": "UMLS:C0151773",
+      "disease_label": "Bone marrow depression",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3387",
+      "drug_label": "Carbamazepine",
+      "disease": "MONDO:0008294",
+      "disease_label": "acute intermittent porphyria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3387",
+      "drug_label": "Carbamazepine",
+      "disease": "MONDO:0018547",
+      "disease_label": "acute tricyclic antidepressant poisoning",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:39585",
+      "drug_label": "Carbidopa",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9831783",
+      "drug_label": "Carbidopa; entacapone; levodopa",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9831783",
+      "drug_label": "Carbidopa; entacapone; levodopa",
+      "disease": "MONDO:0005105",
+      "disease_label": "melanoma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9831783",
+      "drug_label": "Carbidopa; entacapone; levodopa",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31355",
+      "drug_label": "Carboplatin",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31355",
+      "drug_label": "Carboplatin",
+      "disease": "MONDO:0000159",
+      "disease_label": "bone marrow failure syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3403",
+      "drug_label": "Carboprost",
+      "disease": "UMLS:C0149959",
+      "disease_label": "Acute pelvic inflammatory disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3403",
+      "drug_label": "Carboprost",
+      "disease": "MONDO:0000922",
+      "disease_label": "pelvic inflammatory disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3403",
+      "drug_label": "Carboprost",
+      "disease": "MONDO:0005267",
+      "disease_label": "heart disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3403",
+      "drug_label": "Carboprost",
+      "disease": "MONDO:0005240",
+      "disease_label": "kidney disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3403",
+      "drug_label": "Carboprost",
+      "disease": "MONDO:0005275",
+      "disease_label": "lung disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3403",
+      "drug_label": "Carboprost",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3419",
+      "drug_label": "Carisoprodol",
+      "disease": "MONDO:0008294",
+      "disease_label": "acute intermittent porphyria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3437",
+      "drug_label": "Carteolol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3437",
+      "drug_label": "Carteolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3437",
+      "drug_label": "Carteolol",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3437",
+      "drug_label": "Carteolol",
+      "disease": "HP:0001688",
+      "disease_label": "Sinus bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3437",
+      "drug_label": "Carteolol",
+      "disease": "UMLS:C0730607",
+      "disease_label": "Severe chronic obstructive pulmonary disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "UMLS:C1609524",
+      "disease_label": "ADHF",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "HP:0001662",
+      "disease_label": "Bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3441",
+      "drug_label": "Carvedilol",
+      "disease": "MONDO:0001823",
+      "disease_label": "sick sinus syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59343",
+      "drug_label": "Cefditoren",
+      "disease": "MONDO:0008919",
+      "disease_label": "systemic primary carnitine deficiency disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59343",
+      "drug_label": "Cefditoren",
+      "disease": "MONDO:0019052",
+      "disease_label": "inborn errors of metabolism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3499",
+      "drug_label": "Cefotetan",
+      "disease": "MONDO:0003664",
+      "disease_label": "hemolytic anemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29007",
+      "drug_label": "Ceftriaxone",
+      "disease": "MONDO:0035344",
+      "disease_label": "acute bilirubin encephalopathy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:29007",
+      "drug_label": "Ceftriaxone",
+      "disease": "MONDO:0024288",
+      "disease_label": "hyperbilirubinemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41423",
+      "drug_label": "Celecoxib",
+      "disease": "MONDO:0005492",
+      "disease_label": "urticaria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41423",
+      "drug_label": "Celecoxib",
+      "disease": "HP:0002239",
+      "disease_label": "Gastrointestinal hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41423",
+      "drug_label": "Celecoxib",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:P85X70RZWS",
+      "drug_label": "Cenobamate",
+      "disease": "MONDO:0000453",
+      "disease_label": "short QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:X8R2D92QP1",
+      "drug_label": "Cerliponase alfa",
+      "disease": "MONDO:0005227",
+      "disease_label": "abscess",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:X8R2D92QP1",
+      "drug_label": "Cerliponase alfa",
+      "disease": "MONDO:0021108",
+      "disease_label": "meningitis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:X8R2D92QP1",
+      "drug_label": "Cerliponase alfa",
+      "disease": "MONDO:0005230",
+      "disease_label": "cellulitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:20604",
+      "drug_label": "Cetacaine",
+      "disease": "MONDO:0015270",
+      "disease_label": "butyrylcholinesterase deficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59224",
+      "drug_label": "Cetrorelix",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3568",
+      "drug_label": "Cevimeline",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3568",
+      "drug_label": "Cevimeline",
+      "disease": "UMLS:C0271105",
+      "disease_label": "Acute iritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3568",
+      "drug_label": "Cevimeline",
+      "disease": "UMLS:C5880014",
+      "disease_label": "Uncontrolled asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3568",
+      "drug_label": "Cevimeline",
+      "disease": "MONDO:0006814",
+      "disease_label": "iritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3568",
+      "drug_label": "Cevimeline",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3568",
+      "drug_label": "Cevimeline",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17698",
+      "drug_label": "Chloramphenicol",
+      "disease": "MONDO:0002258",
+      "disease_label": "pharyngitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17698",
+      "drug_label": "Chloramphenicol",
+      "disease": "MONDO:0005709",
+      "disease_label": "common cold",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17698",
+      "drug_label": "Chloramphenicol",
+      "disease": "MONDO:0005812",
+      "disease_label": "influenza",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:44151386",
+      "drug_label": "Chlordiazepoxide and amitriptyline hydrochloride",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17996",
+      "drug_label": "Chloride ion",
+      "disease": "HP:0003228",
+      "disease_label": "Hypernatremia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17996",
+      "drug_label": "Chloride ion",
+      "disease": "HP:0011423",
+      "disease_label": "Hyperchloremia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "MONDO:0007263",
+      "disease_label": "cardiac rhythm disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "MONDO:0005071",
+      "disease_label": "nervous system disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "MONDO:0001531",
+      "disease_label": "blood coagulation disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "HP:0031274",
+      "disease_label": "Hypovolemic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3636",
+      "drug_label": "Chloroprocaine",
+      "disease": "UMLS:C0221714",
+      "disease_label": "Injection site infection",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3638",
+      "drug_label": "Chloroquine",
+      "disease": "MONDO:0021084",
+      "disease_label": "vision disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3640",
+      "drug_label": "Chlorothiazide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3647",
+      "drug_label": "Chlorpromazine",
+      "disease": "HP:0001259",
+      "disease_label": "Coma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3654",
+      "drug_label": "Chlorthalidone",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:4B33BGI082",
+      "drug_label": "Cholestyramine",
+      "disease": "HP:0005230",
+      "disease_label": "Biliary tract obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:81570",
+      "drug_label": "Chorionic Gonadotropin (Human)",
+      "disease": "MONDO:0000088",
+      "disease_label": "precocious puberty",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:81570",
+      "drug_label": "Chorionic Gonadotropin (Human)",
+      "disease": "MONDO:0005159",
+      "disease_label": "prostate carcinoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31397",
+      "drug_label": "Ciclesonide",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31397",
+      "drug_label": "Ciclesonide",
+      "disease": "MONDO:0004766",
+      "disease_label": "status asthmaticus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31401",
+      "drug_label": "Cilostazol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31401",
+      "drug_label": "Cilostazol",
+      "disease": "HP:0002170",
+      "disease_label": "Intracranial hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31401",
+      "drug_label": "Cilostazol",
+      "disease": "MONDO:0003159",
+      "disease_label": "vascular hemostatic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31401",
+      "drug_label": "Cilostazol",
+      "disease": "MONDO:0005009",
+      "disease_label": "congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31401",
+      "drug_label": "Cilostazol",
+      "disease": "UMLS:C0030922",
+      "disease_label": "Peptic Ulcer Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:48390",
+      "drug_label": "Cinacalcet",
+      "disease": "HP:0002901",
+      "disease_label": "Hypocalcemia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216063",
+      "drug_label": "Cipro HC",
+      "disease": "MONDO:0004609",
+      "disease_label": "herpes simplex infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216063",
+      "drug_label": "Cipro HC",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:404930",
+      "drug_label": "Ciprodex",
+      "disease": "MONDO:0004609",
+      "disease_label": "herpes simplex infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:404930",
+      "drug_label": "Ciprodex",
+      "disease": "MONDO:0002041",
+      "disease_label": "fungal infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27899",
+      "drug_label": "Cisplatin",
+      "disease": "MONDO:0005365",
+      "disease_label": "hearing loss disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27899",
+      "drug_label": "Cisplatin",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27899",
+      "drug_label": "Cisplatin",
+      "disease": "EFO:0007053",
+      "disease_label": "myelosuppression",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3723",
+      "drug_label": "Citalopram",
+      "disease": "MONDO:0002442",
+      "disease_label": "long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3723",
+      "drug_label": "Citalopram",
+      "disease": "MONDO:0019171",
+      "disease_label": "familial long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216066",
+      "drug_label": "Citanest Forte",
+      "disease": "MONDO:0001117",
+      "disease_label": "methemoglobinemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0015129",
+      "disease_label": "chronic primary adrenal insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0000004",
+      "disease_label": "adrenocortical insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0008224",
+      "disease_label": "hyperkalemic periodic paralysis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "UMLS:C0740411",
+      "disease_label": "Delayed gastric emptying",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0100338",
+      "disease_label": "urinary tract infection",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "HP:0002153",
+      "disease_label": "Hyperkalemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "HP:0002157",
+      "disease_label": "Azotemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "HP:0100520",
+      "disease_label": "Oliguria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "EFO:0006818",
+      "disease_label": "stricture",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "MONDO:0005300",
+      "disease_label": "chronic kidney disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "UMLS:C3665853",
+      "disease_label": "Oesophageal compression",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:30769",
+      "drug_label": "Citric acid",
+      "disease": "UMLS:C0085592",
+      "disease_label": "Heat Cramps",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:567361",
+      "drug_label": "Cladribine",
+      "disease": "MONDO:0002251",
+      "disease_label": "hepatitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:567361",
+      "drug_label": "Cladribine",
+      "disease": "MONDO:0018076",
+      "disease_label": "tuberculosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:567361",
+      "drug_label": "Cladribine",
+      "disease": "MONDO:0004992",
+      "disease_label": "cancer",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:567361",
+      "drug_label": "Cladribine",
+      "disease": "MONDO:0005109",
+      "disease_label": "HIV infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "MONDO:0005478",
+      "disease_label": "torsades de pointes",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "MONDO:0006874",
+      "disease_label": "obstructive jaundice",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "HP:0001657",
+      "disease_label": "Prolonged QT interval",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3732",
+      "drug_label": "Clarithromycin",
+      "disease": "HP:0004308",
+      "disease_label": "Ventricular arrhythmia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3738",
+      "drug_label": "Clemastine",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:135738",
+      "drug_label": "Clevidipine",
+      "disease": "MONDO:0002525",
+      "disease_label": "inherited lipid metabolism disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:135738",
+      "drug_label": "Clevidipine",
+      "disease": "MONDO:0042981",
+      "disease_label": "aortic valve stenosis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:3U02EL437C",
+      "drug_label": "Clindamycin",
+      "disease": "MONDO:0000705",
+      "disease_label": "Clostridium difficile colitis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:3U02EL437C",
+      "drug_label": "Clindamycin",
+      "disease": "MONDO:0005101",
+      "disease_label": "ulcerative colitis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:3U02EL437C",
+      "drug_label": "Clindamycin",
+      "disease": "UMLS:C0678202",
+      "disease_label": "Regional enteritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:205919",
+      "drug_label": "Clobetasol",
+      "disease": "MONDO:0002967",
+      "disease_label": "dermatophytosis of scalp or beard",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:205919",
+      "drug_label": "Clobetasol",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:205919",
+      "drug_label": "Clobetasol",
+      "disease": "MONDO:0020590",
+      "disease_label": "mycobacterial infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:205919",
+      "drug_label": "Clobetasol",
+      "disease": "MONDO:0020944",
+      "disease_label": "fungal infection of eye",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:205919",
+      "drug_label": "Clobetasol",
+      "disease": "MONDO:0015288",
+      "disease_label": "herpes simplex virus keratitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:205919",
+      "drug_label": "Clobetasol",
+      "disease": "MONDO:0002595",
+      "disease_label": "vaccinia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3752",
+      "drug_label": "Clomifene",
+      "disease": "UMLS:C0348024",
+      "disease_label": "Thyroid dysfunction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3752",
+      "drug_label": "Clomifene",
+      "disease": "MONDO:0003282",
+      "disease_label": "ovarian cyst",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3752",
+      "drug_label": "Clomifene",
+      "disease": "MONDO:0005495",
+      "disease_label": "adrenal gland disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3752",
+      "drug_label": "Clomifene",
+      "disease": "MONDO:0017611",
+      "disease_label": "pituitary tumor",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3752",
+      "drug_label": "Clomifene",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47780",
+      "drug_label": "Clomipramine",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3756",
+      "drug_label": "Clonazepam",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3756",
+      "drug_label": "Clonazepam",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:37941",
+      "drug_label": "Clopidogrel",
+      "disease": "HP:0002170",
+      "disease_label": "Intracranial hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:37941",
+      "drug_label": "Clopidogrel",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3761",
+      "drug_label": "Clorazepic acid",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3766",
+      "drug_label": "Clozapine",
+      "disease": "MONDO:0001609",
+      "disease_label": "agranulocytosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:72291",
+      "drug_label": "Cobicistat",
+      "disease": "MONDO:0015924",
+      "disease_label": "pulmonary arterial hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:76511460",
+      "drug_label": "Cobicistat/darunavir",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:76511460",
+      "drug_label": "Cobicistat/darunavir",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16714",
+      "drug_label": "Codeine",
+      "disease": "MONDO:0043775",
+      "disease_label": "respiratory paralysis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16714",
+      "drug_label": "Codeine",
+      "disease": "MONDO:0005087",
+      "disease_label": "respiratory system disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16714",
+      "drug_label": "Codeine",
+      "disease": "MONDO:0004568",
+      "disease_label": "paralytic ileus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16714",
+      "drug_label": "Codeine",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16714",
+      "drug_label": "Codeine",
+      "disease": "HP:0012416",
+      "disease_label": "Hypercapnia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16714",
+      "drug_label": "Codeine",
+      "disease": "HP:0004796",
+      "disease_label": "Gastrointestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:183909",
+      "drug_label": "Colchiceine",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:183909",
+      "drug_label": "Colchiceine",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27882",
+      "drug_label": "Colchicine",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27882",
+      "drug_label": "Colchicine",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27882",
+      "drug_label": "Colchicine",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27882",
+      "drug_label": "Colchicine",
+      "disease": "MONDO:0005570",
+      "disease_label": "hematologic disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:27882",
+      "drug_label": "Colchicine",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:44149770",
+      "drug_label": "Colchicine; probenecid",
+      "disease": "MONDO:0008629",
+      "disease_label": "urolithiasis, uric acid, autosomal dominant",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:44149770",
+      "drug_label": "Colchicine; probenecid",
+      "disease": "MONDO:0005570",
+      "disease_label": "hematologic disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:59594",
+      "drug_label": "Colesevelam",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:18680304",
+      "drug_label": "Collagenase (clostridium histolyticum gene colh isoenzyme aux-ii)",
+      "disease": "MONDO:0008231",
+      "disease_label": "Peyronie disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0000922",
+      "disease_label": "pelvic inflammatory disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0001081",
+      "disease_label": "acute cervicitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "UMLS:C0269932",
+      "disease_label": "Puerperal endometritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0002715",
+      "disease_label": "uterine cancer",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "UMLS:C0404990",
+      "disease_label": "endometritis following abortion",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "HP:0100608",
+      "disease_label": "Metrorrhagia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0010200",
+      "disease_label": "Wilson disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0002234",
+      "disease_label": "vaginitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0002654",
+      "disease_label": "uterine disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28694",
+      "drug_label": "Copper",
+      "disease": "MONDO:0008635",
+      "disease_label": "uterine anomalies",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0005298",
+      "disease_label": "osteoporosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0000256",
+      "disease_label": "systemic mycosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0015288",
+      "disease_label": "herpes simplex virus keratitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0019340",
+      "disease_label": "scleroderma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0005009",
+      "disease_label": "congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0004247",
+      "disease_label": "peptic ulcer disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0006640",
+      "disease_label": "adrenal gland hyperfunction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3892",
+      "drug_label": "Corticotropin",
+      "disease": "MONDO:0015129",
+      "disease_label": "chronic primary adrenal insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:16962",
+      "drug_label": "Cortisone",
+      "disease": "MONDO:0000256",
+      "disease_label": "systemic mycosis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0002595",
+      "disease_label": "vaccinia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0020590",
+      "disease_label": "mycobacterial infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0004712",
+      "disease_label": "herpes simplex dermatitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0015288",
+      "disease_label": "herpes simplex virus keratitis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0004609",
+      "disease_label": "herpes simplex infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0018076",
+      "disease_label": "tuberculosis",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0020944",
+      "disease_label": "fungal infection of eye",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0005608",
+      "disease_label": "varicella zoster infection",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:21659",
+      "drug_label": "Cortisporin",
+      "disease": "MONDO:0002041",
+      "disease_label": "fungal infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216244",
+      "drug_label": "Cortisporin-TC",
+      "disease": "MONDO:0004609",
+      "disease_label": "herpes simplex infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216244",
+      "drug_label": "Cortisporin-TC",
+      "disease": "MONDO:0005608",
+      "disease_label": "varicella zoster infection",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0008848",
+      "disease_label": "atrioventricular dissociation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0005009",
+      "disease_label": "congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0007263",
+      "disease_label": "cardiac rhythm disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0004425",
+      "disease_label": "hyperthyroidism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:3996",
+      "drug_label": "Cyclobenzaprine",
+      "disease": "MONDO:0005449",
+      "disease_label": "conduction system disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4024",
+      "drug_label": "Cyclopentolate",
+      "disease": "MONDO:0001686",
+      "disease_label": "anatomical narrow angle borderline glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4024",
+      "drug_label": "Cyclopentolate",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4027",
+      "drug_label": "Cyclophosphamide",
+      "disease": "UMLS:C0151773",
+      "disease_label": "Bone marrow depression",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4027",
+      "drug_label": "Cyclophosphamide",
+      "disease": "UMLS:C0600039",
+      "disease_label": "Urinary outflow obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:40009",
+      "drug_label": "Cycloserine",
+      "disease": "MONDO:0005027",
+      "disease_label": "epilepsy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:40009",
+      "drug_label": "Cycloserine",
+      "disease": "UMLS:C0231403",
+      "disease_label": "Severe anxiety (panic)",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:40009",
+      "drug_label": "Cycloserine",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:40009",
+      "drug_label": "Cycloserine",
+      "disease": "MONDO:0005485",
+      "disease_label": "psychotic disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:40009",
+      "drug_label": "Cycloserine",
+      "disease": "MONDO:0002009",
+      "disease_label": "major depressive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4031",
+      "drug_label": "Cyclosporine",
+      "disease": "MONDO:0043885",
+      "disease_label": "eye infectious disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4031",
+      "drug_label": "Cyclosporine",
+      "disease": "MONDO:0004992",
+      "disease_label": "cancer",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4031",
+      "drug_label": "Cyclosporine",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4031",
+      "drug_label": "Cyclosporine",
+      "disease": "MONDO:0005240",
+      "disease_label": "kidney disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4046",
+      "drug_label": "Cyproheptadine",
+      "disease": "MONDO:0010811",
+      "disease_label": "benign prostatic hyperplasia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4046",
+      "drug_label": "Cyproheptadine",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4046",
+      "drug_label": "Cyproheptadine",
+      "disease": "MONDO:0001561",
+      "disease_label": "pyloric stenosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4046",
+      "drug_label": "Cyproheptadine",
+      "disease": "MONDO:0006679",
+      "disease_label": "bladder neck obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17561",
+      "drug_label": "Cysteine",
+      "disease": "MONDO:0006022",
+      "disease_label": "acidosis disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17561",
+      "drug_label": "Cysteine",
+      "disease": "MONDO:0006932",
+      "disease_label": "pulmonary edema",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17561",
+      "drug_label": "Cysteine",
+      "disease": "MONDO:0004736",
+      "disease_label": "inborn disorder of amino acid metabolism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "MONDO:0001548",
+      "disease_label": "hepatic coma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "HP:0002170",
+      "disease_label": "Intracranial hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "UMLS:C3665900",
+      "disease_label": "Intraspinal bleeding",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "UMLS:C3472181",
+      "disease_label": "Severe dehydration",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "MONDO:0002909",
+      "disease_label": "hyperglycemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "MONDO:0006642",
+      "disease_label": "alcohol withdrawal delirium",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:17234",
+      "drug_label": "D-glucose",
+      "disease": "HP:0001944",
+      "disease_label": "Dehydration",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:70752",
+      "drug_label": "Dabigatran",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:70746",
+      "drug_label": "Dabigatran etexilate",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:34385",
+      "drug_label": "Dalfampridine",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:34385",
+      "drug_label": "Dalfampridine",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:34385",
+      "drug_label": "Dalfampridine",
+      "disease": "UMLS:C5880507",
+      "disease_label": "History of seizure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:PUE0TO3XDR",
+      "drug_label": "Dalteparin",
+      "disease": "MONDO:0018048",
+      "disease_label": "heparin-induced thrombocytopenia",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:PUE0TO3XDR",
+      "drug_label": "Dalteparin",
+      "disease": "UMLS:C0272275",
+      "disease_label": "Heparin-induced thrombocytopenia with thrombosis",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:PUE0TO3XDR",
+      "drug_label": "Dalteparin",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4315",
+      "drug_label": "Danazol",
+      "disease": "MONDO:0019142",
+      "disease_label": "inherited porphyria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4315",
+      "drug_label": "Danazol",
+      "disease": "HP:0001907",
+      "disease_label": "Thromboembolism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4315",
+      "drug_label": "Danazol",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4315",
+      "drug_label": "Danazol",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4315",
+      "drug_label": "Danazol",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:51066",
+      "drug_label": "Dapiprazole",
+      "disease": "MONDO:0006814",
+      "disease_label": "iritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:229223",
+      "drug_label": "Daprodustat",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:LMQ24G57E9",
+      "drug_label": "Daridorexant",
+      "disease": "MONDO:0021107",
+      "disease_label": "narcolepsy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:391960",
+      "drug_label": "Darifenacin",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:391960",
+      "drug_label": "Darifenacin",
+      "disease": "UMLS:C0585136",
+      "disease_label": "Gastric retention",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:391960",
+      "drug_label": "Darifenacin",
+      "disease": "HP:0000016",
+      "disease_label": "Urinary retention",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:367163",
+      "drug_label": "Darunavir",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:367163",
+      "drug_label": "Darunavir",
+      "disease": "MONDO:0005267",
+      "disease_label": "heart disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:367163",
+      "drug_label": "Darunavir",
+      "disease": "MONDO:0015924",
+      "disease_label": "pulmonary arterial hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:367163",
+      "drug_label": "Darunavir",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:AD4J2O47FQ",
+      "drug_label": "Dasiglucagon",
+      "disease": "MONDO:0008233",
+      "disease_label": "pheochromocytoma",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:AD4J2O47FQ",
+      "drug_label": "Dasiglucagon",
+      "disease": "MONDO:0024677",
+      "disease_label": "pancreatic insulinoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49005",
+      "drug_label": "Deferasirox",
+      "disease": "MONDO:0019454",
+      "disease_label": "myelodysplastic syndrome with excess blasts",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:68554",
+      "drug_label": "Deferiprone",
+      "disease": "MONDO:0005492",
+      "disease_label": "urticaria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:68554",
+      "drug_label": "Deferiprone",
+      "disease": "MONDO:0019167",
+      "disease_label": "immunoglobulin A vasculitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4356",
+      "drug_label": "Deferoxamine",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4356",
+      "drug_label": "Deferoxamine",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:4EQZ6YO2HI",
+      "drug_label": "Denosumab",
+      "disease": "HP:0002901",
+      "disease_label": "Hypocalcemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4445",
+      "drug_label": "Desflurane",
+      "disease": "MONDO:0018493",
+      "disease_label": "malignant hyperthermia of anesthesia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4445",
+      "drug_label": "Desflurane",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47781",
+      "drug_label": "Desipramine",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "HP:0001959",
+      "disease_label": "Polydipsia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "MONDO:0006802",
+      "disease_label": "inappropriate ADH syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "HP:0002902",
+      "disease_label": "Hyponatremia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "UMLS:C0746840",
+      "disease_label": "nephropathy salt wasting",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "MONDO:0002269",
+      "disease_label": "gastroenteritis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4450",
+      "drug_label": "Desmopressin",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:BT2LV86QKA",
+      "drug_label": "Deutetrabenazine, (R,S)-rel-",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:BT2LV86QKA",
+      "drug_label": "Deutetrabenazine, (R,S)-rel-",
+      "disease": "MONDO:0007739",
+      "disease_label": "Huntington disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0005113",
+      "disease_label": "bacterial infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0002595",
+      "disease_label": "vaccinia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0004926",
+      "disease_label": "dacryocystitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0004609",
+      "disease_label": "herpes simplex infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0020944",
+      "disease_label": "fungal infection of eye",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0015288",
+      "disease_label": "herpes simplex virus keratitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0006876",
+      "disease_label": "ocular tuberculosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0043541",
+      "disease_label": "viral conjunctivitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0020590",
+      "disease_label": "mycobacterial infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:41879",
+      "drug_label": "Dexamethasone",
+      "disease": "MONDO:0000256",
+      "disease_label": "systemic mycosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:135931",
+      "drug_label": "Dexlansoprazole",
+      "disease": "MONDO:0800337",
+      "disease_label": "acute tubulointerstitial nephritis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:4125253",
+      "drug_label": "Dextran",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:4125253",
+      "drug_label": "Dextran",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:4125253",
+      "drug_label": "Dextran",
+      "disease": "HP:0011900",
+      "disease_label": "Hypofibrinogenemia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:4125253",
+      "drug_label": "Dextran",
+      "disease": "MONDO:0002049",
+      "disease_label": "thrombocytopenia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:4125253",
+      "drug_label": "Dextran",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:800000",
+      "drug_label": "Dianeal PD-2/4.25",
+      "disease": "MONDO:0002412",
+      "disease_label": "disorder of glycogen metabolism",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:800000",
+      "drug_label": "Dianeal PD-2/4.25",
+      "disease": "HP:0004900",
+      "disease_label": "Severe lactic acidosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:53691",
+      "drug_label": "Diatrizoate",
+      "disease": "HP:0002157",
+      "disease_label": "Azotemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:53691",
+      "drug_label": "Diatrizoate",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0007147",
+      "disease_label": "obstructive sleep apnea syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0009688",
+      "disease_label": "myasthenia gravis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0021113",
+      "disease_label": "respiratory failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0001817",
+      "disease_label": "acute closed-angle glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:49575",
+      "drug_label": "Diazepam",
+      "disease": "MONDO:0005338",
+      "disease_label": "open-angle glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4495",
+      "drug_label": "Diazoxide",
+      "disease": "HP:0012051",
+      "disease_label": "Reactive hypoglycemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4495",
+      "drug_label": "Diazoxide",
+      "disease": "MONDO:0005271",
+      "disease_label": "allergic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47381",
+      "drug_label": "Diclofenac",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47381",
+      "drug_label": "Diclofenac",
+      "disease": "MONDO:0002406",
+      "disease_label": "dermatitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47381",
+      "drug_label": "Diclofenac",
+      "disease": "MONDO:0004980",
+      "disease_label": "atopic eczema",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47381",
+      "drug_label": "Diclofenac",
+      "disease": "UMLS:C0043255",
+      "disease_label": "Wounds, Stab",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47381",
+      "drug_label": "Diclofenac",
+      "disease": "MONDO:0002987",
+      "disease_label": "spongiotic dermatitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47381",
+      "drug_label": "Diclofenac",
+      "disease": "MONDO:0005492",
+      "disease_label": "urticaria",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:169438241",
+      "drug_label": "Diclofenac Levomenthol Ester",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9810071",
+      "drug_label": "Diclofenac/Misoprostol",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9810071",
+      "drug_label": "Diclofenac/Misoprostol",
+      "disease": "HP:0002239",
+      "disease_label": "Gastrointestinal hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101085",
+      "drug_label": "Diclofenamide",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101085",
+      "drug_label": "Diclofenamide",
+      "disease": "MONDO:0005002",
+      "disease_label": "chronic obstructive pulmonary disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0009688",
+      "disease_label": "myasthenia gravis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0006896",
+      "disease_label": "peptic esophagitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0005101",
+      "disease_label": "ulcerative colitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0001300",
+      "disease_label": "autonomic neuropathy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0003330",
+      "disease_label": "urinary tract obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0010138",
+      "disease_label": "thyrotoxicosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4514",
+      "drug_label": "Dicyclomine",
+      "disease": "MONDO:0005009",
+      "disease_label": "congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "HP:0002625",
+      "disease_label": "Deep venous thrombosis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0005279",
+      "disease_label": "pulmonary embolism",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0008170",
+      "disease_label": "ovarian cancer",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0100240",
+      "disease_label": "inherited thrombophilia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0007254",
+      "disease_label": "breast cancer",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0004981",
+      "disease_label": "atrial fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0006981",
+      "disease_label": "subacute bacterial endocarditis",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0000960",
+      "disease_label": "diabetic peripheral angiopathy",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0024477",
+      "disease_label": "liver and intrahepatic bile duct neoplasm",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0011057",
+      "disease_label": "cerebrovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0020460",
+      "disease_label": "acquired von willebrand syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:9874560",
+      "drug_label": "Dienogest; estradiol valerate",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "MONDO:0005149",
+      "disease_label": "pulmonary hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "MONDO:0002277",
+      "disease_label": "arteriosclerosis disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "MONDO:0004425",
+      "disease_label": "hyperthyroidism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4530",
+      "drug_label": "Diethylpropion",
+      "disease": "HP:0000713",
+      "disease_label": "Agitation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:39669",
+      "drug_label": "Diflunisal",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31485",
+      "drug_label": "Difluprednate",
+      "disease": "MONDO:0005700",
+      "disease_label": "chickenpox",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31485",
+      "drug_label": "Difluprednate",
+      "disease": "MONDO:0020590",
+      "disease_label": "mycobacterial infectious disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31485",
+      "drug_label": "Difluprednate",
+      "disease": "MONDO:0002595",
+      "disease_label": "vaccinia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31485",
+      "drug_label": "Difluprednate",
+      "disease": "MONDO:0020944",
+      "disease_label": "fungal infection of eye",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31485",
+      "drug_label": "Difluprednate",
+      "disease": "MONDO:0015288",
+      "disease_label": "herpes simplex virus keratitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4551",
+      "drug_label": "Digoxin",
+      "disease": "MONDO:0000190",
+      "disease_label": "ventricular fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0005386",
+      "disease_label": "peripheral arterial disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0006021",
+      "disease_label": "Prinzmetal angina",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "HP:0100806",
+      "disease_label": "Sepsis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "UMLS:C1275835",
+      "disease_label": "History of myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0043219",
+      "disease_label": "migraine with brainstem aura",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0018925",
+      "disease_label": "familial or sporadic hemiplegic migraine",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0005053",
+      "disease_label": "ischemic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "HP:0001681",
+      "disease_label": "Angina pectoris",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4562",
+      "drug_label": "Dihydroergotamine",
+      "disease": "MONDO:0024644",
+      "disease_label": "myocardial ischemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0005310",
+      "disease_label": "atrial flutter",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "UMLS:C0242073",
+      "disease_label": "Pulmonary congestion",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0007174",
+      "disease_label": "Lown-Ganong-Levine syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0005477",
+      "disease_label": "ventricular tachycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0008685",
+      "disease_label": "Wolff-Parkinson-White syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0001823",
+      "disease_label": "sick sinus syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0000190",
+      "disease_label": "ventricular fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0004781",
+      "disease_label": "acute myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0005468",
+      "disease_label": "hypotensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:101278",
+      "drug_label": "Diltiazem",
+      "disease": "MONDO:0004981",
+      "disease_label": "atrial fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64198",
+      "drug_label": "Dimercaprol",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64198",
+      "drug_label": "Dimercaprol",
+      "disease": "UMLS:C1565662",
+      "disease_label": "Acute Kidney Insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216653",
+      "drug_label": "Diovan HCT",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:216653",
+      "drug_label": "Diovan HCT",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4657",
+      "drug_label": "Disopyramide",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4657",
+      "drug_label": "Disopyramide",
+      "disease": "MONDO:0019171",
+      "disease_label": "familial long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4657",
+      "drug_label": "Disopyramide",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4659",
+      "drug_label": "Disulfiram",
+      "disease": "MONDO:0024643",
+      "disease_label": "myocardial disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4659",
+      "drug_label": "Disulfiram",
+      "disease": "MONDO:0005485",
+      "disease_label": "psychotic disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4659",
+      "drug_label": "Disulfiram",
+      "disease": "UMLS:C0151814",
+      "disease_label": "Coronary Occlusion",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4670",
+      "drug_label": "Dobutamine",
+      "disease": "MONDO:0008647",
+      "disease_label": "hypertrophic cardiomyopathy 1",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4672",
+      "drug_label": "Docetaxel",
+      "disease": "MONDO:0001475",
+      "disease_label": "neutropenia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4681",
+      "drug_label": "Dofetilide",
+      "disease": "MONDO:0019171",
+      "disease_label": "familial long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4681",
+      "drug_label": "Dofetilide",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4681",
+      "drug_label": "Dofetilide",
+      "disease": "MONDO:0002442",
+      "disease_label": "long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4681",
+      "drug_label": "Dofetilide",
+      "disease": "MONDO:0100042",
+      "disease_label": "cardiac conduction defect",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4681",
+      "drug_label": "Dofetilide",
+      "disease": "EFO:0005138",
+      "disease_label": "acquired long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4681",
+      "drug_label": "Dofetilide",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0004995",
+      "disease_label": "cardiovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0008698",
+      "disease_label": "achalasia",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0006896",
+      "disease_label": "peptic esophagitis",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0008294",
+      "disease_label": "acute intermittent porphyria",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0001562",
+      "disease_label": "displacement of cardia through esophageal hiatus",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0007721",
+      "disease_label": "hiatus hernia",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0009688",
+      "disease_label": "myasthenia gravis",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0010811",
+      "disease_label": "benign prostatic hyperplasia",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0003330",
+      "disease_label": "urinary tract obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0004568",
+      "disease_label": "paralytic ileus",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0005101",
+      "disease_label": "ulcerative colitis",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0002105",
+      "disease_label": "toxic megacolon",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "MONDO:0001561",
+      "disease_label": "pyloric stenosis",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "UMLS:C2363890",
+      "disease_label": "Intestinal atony",
+      "cases": 0
+    },
+    {
+      "drug": "MESH:C069202",
+      "drug_label": "Donnatal",
+      "disease": "UMLS:C0333276",
+      "disease_label": "Acute hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:18243",
+      "drug_label": "Dopamine",
+      "disease": "MONDO:0008233",
+      "disease_label": "pheochromocytoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:18243",
+      "drug_label": "Dopamine",
+      "disease": "UMLS:C0080203",
+      "disease_label": "Tachyarrhythmia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:18243",
+      "drug_label": "Dopamine",
+      "disease": "MONDO:0000190",
+      "disease_label": "ventricular fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841571",
+      "drug_label": "Dorzolamide hydrochloride and timolol maleate",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841571",
+      "drug_label": "Dorzolamide hydrochloride and timolol maleate",
+      "disease": "HP:0001688",
+      "disease_label": "Sinus bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841571",
+      "drug_label": "Dorzolamide hydrochloride and timolol maleate",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841571",
+      "drug_label": "Dorzolamide hydrochloride and timolol maleate",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841571",
+      "drug_label": "Dorzolamide hydrochloride and timolol maleate",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841571",
+      "drug_label": "Dorzolamide hydrochloride and timolol maleate",
+      "disease": "UMLS:C0730607",
+      "disease_label": "Severe chronic obstructive pulmonary disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0005098",
+      "disease_label": "stroke disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0800425",
+      "disease_label": "coronary artery disease, severe, susceptibility to",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "UMLS:C0018674",
+      "disease_label": "Head Injury",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0004425",
+      "disease_label": "hyperthyroidism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0008233",
+      "disease_label": "pheochromocytoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0002771",
+      "disease_label": "pulmonary fibrosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0006684",
+      "disease_label": "brain edema",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0005279",
+      "disease_label": "pulmonary embolism",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0002076",
+      "disease_label": "pneumothorax",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0005027",
+      "disease_label": "epilepsy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:681848",
+      "drug_label": "Doxapram",
+      "disease": "MONDO:0005009",
+      "disease_label": "congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4710",
+      "drug_label": "Doxepin",
+      "disease": "MONDO:0001966",
+      "disease_label": "chronic closed-angle glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4710",
+      "drug_label": "Doxepin",
+      "disease": "MONDO:0001686",
+      "disease_label": "anatomical narrow angle borderline glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4710",
+      "drug_label": "Doxepin",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4710",
+      "drug_label": "Doxepin",
+      "disease": "HP:0000016",
+      "disease_label": "Urinary retention",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4712",
+      "drug_label": "Doxercalciferol",
+      "disease": "MONDO:0004937",
+      "disease_label": "hypervitaminosis D",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4712",
+      "drug_label": "Doxercalciferol",
+      "disease": "MONDO:0001566",
+      "disease_label": "hypercalcemia disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28748",
+      "drug_label": "Doxorubicin",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28748",
+      "drug_label": "Doxorubicin",
+      "disease": "UMLS:C1998297",
+      "disease_label": "Recent myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50659",
+      "drug_label": "Dronedarone",
+      "disease": "HP:0004754",
+      "disease_label": "Permanent atrial fibrillation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50659",
+      "drug_label": "Dronedarone",
+      "disease": "MONDO:0005254",
+      "disease_label": "symptomatic heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50659",
+      "drug_label": "Dronedarone",
+      "disease": "MONDO:0000465",
+      "disease_label": "atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50659",
+      "drug_label": "Dronedarone",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50659",
+      "drug_label": "Dronedarone",
+      "disease": "MONDO:0001823",
+      "disease_label": "sick sinus syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50659",
+      "drug_label": "Dronedarone",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4717",
+      "drug_label": "Droperidol",
+      "disease": "MONDO:0019171",
+      "disease_label": "familial long QT syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50838",
+      "drug_label": "Drospirenone",
+      "disease": "UMLS:C3650625",
+      "disease_label": "Abnormal uterine bleeding",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50838",
+      "drug_label": "Drospirenone",
+      "disease": "MONDO:0024477",
+      "disease_label": "liver and intrahepatic bile duct neoplasm",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50838",
+      "drug_label": "Drospirenone",
+      "disease": "MONDO:0002974",
+      "disease_label": "cervical cancer",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50838",
+      "drug_label": "Drospirenone",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50838",
+      "drug_label": "Drospirenone",
+      "disease": "UMLS:C0948807",
+      "disease_label": "Hepatic impairment",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50838",
+      "drug_label": "Drospirenone",
+      "disease": "MONDO:0000004",
+      "disease_label": "adrenocortical insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:647208",
+      "drug_label": "Duetact",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:WTT295HSY5",
+      "drug_label": "Dulaglutide",
+      "disease": "MONDO:0015277",
+      "disease_label": "medullary thyroid gland carcinoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:36795",
+      "drug_label": "Duloxetine",
+      "disease": "MONDO:0018546",
+      "disease_label": "serotonin syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:36795",
+      "drug_label": "Duloxetine",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:36795",
+      "drug_label": "Duloxetine",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:23742",
+      "drug_label": "Dyazide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:23742",
+      "drug_label": "Dyazide",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:23742",
+      "drug_label": "Dyazide",
+      "disease": "HP:0002153",
+      "disease_label": "Hyperkalemia",
+      "cases": 0
+    },
+    {
+      "drug": "RXCUI:23742",
+      "drug_label": "Dyazide",
+      "disease": "MONDO:0003019",
+      "disease_label": "potassium deficiency disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0003330",
+      "disease_label": "urinary tract obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0002105",
+      "disease_label": "toxic megacolon",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0004979",
+      "disease_label": "asthma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0008698",
+      "disease_label": "achalasia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0009688",
+      "disease_label": "myasthenia gravis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0004568",
+      "disease_label": "paralytic ileus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "UMLS:C2363890",
+      "disease_label": "Intestinal atony",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "HP:0001649",
+      "disease_label": "Tachycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0010811",
+      "disease_label": "benign prostatic hyperplasia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0005154",
+      "disease_label": "liver disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0005041",
+      "disease_label": "glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0005267",
+      "disease_label": "heart disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0005240",
+      "disease_label": "kidney disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0005101",
+      "disease_label": "ulcerative colitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0001561",
+      "disease_label": "pyloric stenosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0006679",
+      "disease_label": "bladder neck obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:92712",
+      "drug_label": "ENDO-ATROPINE",
+      "disease": "MONDO:0024644",
+      "disease_label": "myocardial ischemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4753",
+      "drug_label": "Echothiophate",
+      "disease": "MONDO:0020283",
+      "disease_label": "uveitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4753",
+      "drug_label": "Echothiophate",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:A3ULP0F556",
+      "drug_label": "Eculizumab",
+      "disease": "MONDO:0005373",
+      "disease_label": "meningococcal infection",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4735",
+      "drug_label": "Edetic acid",
+      "disease": "MONDO:0002251",
+      "disease_label": "hepatitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4735",
+      "drug_label": "Edetic acid",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4735",
+      "drug_label": "Edetic acid",
+      "disease": "MONDO:0005240",
+      "disease_label": "kidney disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4735",
+      "drug_label": "Edetic acid",
+      "disease": "MONDO:0002277",
+      "disease_label": "arteriosclerosis disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85973",
+      "drug_label": "Edoxaban",
+      "disease": "NCIT:C26791",
+      "disease_label": "Hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:251408",
+      "drug_label": "Edrophonium",
+      "disease": "MONDO:0003330",
+      "disease_label": "urinary tract obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:251408",
+      "drug_label": "Edrophonium",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:177453",
+      "drug_label": "Elagolix",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:177453",
+      "drug_label": "Elagolix",
+      "disease": "MONDO:0005298",
+      "disease_label": "osteoporosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "HP:0001681",
+      "disease_label": "Angina pectoris",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0005098",
+      "disease_label": "stroke disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0024644",
+      "disease_label": "myocardial ischemia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0005356",
+      "disease_label": "coronary vasospasm",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0020675",
+      "disease_label": "ischemic bowel disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0043219",
+      "disease_label": "migraine with brainstem aura",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0005294",
+      "disease_label": "peripheral vascular disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0005264",
+      "disease_label": "transient ischemic attack",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0000992",
+      "disease_label": "heart conduction disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0008685",
+      "disease_label": "Wolff-Parkinson-White syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0018925",
+      "disease_label": "familial or sporadic hemiplegic migraine",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0011057",
+      "disease_label": "cerebrovascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "MONDO:0006021",
+      "disease_label": "Prinzmetal angina",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:50922",
+      "drug_label": "Eletriptan",
+      "disease": "UMLS:C1275835",
+      "disease_label": "History of myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0004982",
+      "disease_label": "pancreatitis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0002356",
+      "disease_label": "pancreas disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "HP:0005230",
+      "disease_label": "Biliary tract obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0007079",
+      "disease_label": "alcohol dependence",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "UMLS:C0341491",
+      "disease_label": "Pancreatic duct obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0004565",
+      "disease_label": "intestinal obstruction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "HP:0012450",
+      "disease_label": "Chronic constipation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0002203",
+      "disease_label": "constipation disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "MONDO:0002046",
+      "disease_label": "alcohol abuse",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:85980",
+      "drug_label": "Eluxadoline",
+      "disease": "HP:0012441",
+      "disease_label": "Sphincter of Oddi dyskinesia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:82720",
+      "drug_label": "Empagliflozin",
+      "disease": "MONDO:0004375",
+      "disease_label": "end stage renal failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:82720",
+      "drug_label": "Empagliflozin",
+      "disease": "MONDO:0001106",
+      "disease_label": "kidney failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4786",
+      "drug_label": "Enalaprilat",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4786",
+      "drug_label": "Enalaprilat",
+      "disease": "MONDO:0019623",
+      "disease_label": "hereditary angioedema",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4786",
+      "drug_label": "Enalaprilat",
+      "disease": "UMLS:C1304177",
+      "disease_label": "Idiopathic angioedema",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10904",
+      "drug_label": "English sole",
+      "disease": "MONDO:0005377",
+      "disease_label": "nephrotic syndrome",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10904",
+      "drug_label": "English sole",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10904",
+      "drug_label": "English sole",
+      "disease": "MONDO:0007179",
+      "disease_label": "autoimmune disease",
+      "cases": 0
+    },
+    {
+      "drug": "DRUGBANK:DB10904",
+      "drug_label": "English sole",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:8NZ41MIK1O",
+      "drug_label": "Enoxaparin",
+      "disease": "MONDO:0002049",
+      "disease_label": "thrombocytopenia",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:8NZ41MIK1O",
+      "drug_label": "Enoxaparin",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "UNII:8NZ41MIK1O",
+      "drug_label": "Enoxaparin",
+      "disease": "MONDO:0018048",
+      "disease_label": "heparin-induced thrombocytopenia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "MONDO:0001868",
+      "disease_label": "primary angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "MONDO:0005015",
+      "disease_label": "diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "MONDO:0010138",
+      "disease_label": "thyrotoxicosis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "UMLS:C0542052",
+      "disease_label": "Coronary artery insufficiency",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "MONDO:0001744",
+      "disease_label": "angle-closure glaucoma",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "MONDO:0043510",
+      "disease_label": "brain injury",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "UMLS:C0264732",
+      "disease_label": "Cardiac dilatation",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:28918",
+      "drug_label": "Epinephrine",
+      "disease": "HP:0031273",
+      "disease_label": "Shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47898",
+      "drug_label": "Epirubicin",
+      "disease": "MONDO:0100192",
+      "disease_label": "liver failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47898",
+      "drug_label": "Epirubicin",
+      "disease": "UMLS:C1998297",
+      "disease_label": "Recent myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47898",
+      "drug_label": "Epirubicin",
+      "disease": "MONDO:0004994",
+      "disease_label": "cardiomyopathy",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47898",
+      "drug_label": "Epirubicin",
+      "disease": "HP:0001410",
+      "disease_label": "Decreased liver function",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47898",
+      "drug_label": "Epirubicin",
+      "disease": "MONDO:0005068",
+      "disease_label": "myocardial infarction",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:47898",
+      "drug_label": "Epirubicin",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:31547",
+      "drug_label": "Eplerenone",
+      "disease": "MONDO:0005148",
+      "disease_label": "type 2 diabetes mellitus",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15552",
+      "drug_label": "Epoprostenol",
+      "disease": "MONDO:0006993",
+      "disease_label": "systolic heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15552",
+      "drug_label": "Epoprostenol",
+      "disease": "MONDO:0009937",
+      "disease_label": "pulmonary venoocclusive disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:15552",
+      "drug_label": "Epoprostenol",
+      "disease": "MONDO:0005009",
+      "disease_label": "congestive heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:68992894",
+      "drug_label": "Epoprostenol (sodium)",
+      "disease": "MONDO:0005252",
+      "disease_label": "heart failure",
+      "cases": 0
+    },
+    {
+      "drug": "PUBCHEM.COMPOUND:56841546",
+      "drug_label": "Eprosartan mesylate; hydrochlorothiazide",
+      "disease": "MONDO:0002476",
+      "disease_label": "anuria",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:291902",
+      "drug_label": "Eptifibatide",
+      "disease": "MONDO:0013792",
+      "disease_label": "intracerebral hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:291902",
+      "drug_label": "Eptifibatide",
+      "disease": "MONDO:0005098",
+      "disease_label": "stroke disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:291902",
+      "drug_label": "Eptifibatide",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:291902",
+      "drug_label": "Eptifibatide",
+      "disease": "MONDO:0006846",
+      "disease_label": "malignant hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:291902",
+      "drug_label": "Eptifibatide",
+      "disease": "MONDO:0002243",
+      "disease_label": "hemorrhagic disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64318",
+      "drug_label": "Ergotamine",
+      "disease": "MONDO:0001343",
+      "disease_label": "impaired renal function disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64318",
+      "drug_label": "Ergotamine",
+      "disease": "HP:0100806",
+      "disease_label": "Sepsis",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64318",
+      "drug_label": "Ergotamine",
+      "disease": "MONDO:0005044",
+      "disease_label": "hypertensive disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64318",
+      "drug_label": "Ergotamine",
+      "disease": "MONDO:0005294",
+      "disease_label": "peripheral vascular disease",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:64318",
+      "drug_label": "Ergotamine",
+      "disease": "MONDO:0005010",
+      "disease_label": "coronary artery disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:81579",
+      "drug_label": "Erythropoietin",
+      "disease": "UMLS:C1868885",
+      "disease_label": "Uncontrolled hypertension",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:81579",
+      "drug_label": "Erythropoietin",
+      "disease": "MONDO:0001705",
+      "disease_label": "pure red-cell aplasia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:60799",
+      "drug_label": "Esketamine",
+      "disease": "MONDO:0005385",
+      "disease_label": "vascular disorder",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:60799",
+      "drug_label": "Esketamine",
+      "disease": "MONDO:0013792",
+      "disease_label": "intracerebral hemorrhage",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4856",
+      "drug_label": "Esmolol",
+      "disease": "UMLS:C1609524",
+      "disease_label": "ADHF",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4856",
+      "drug_label": "Esmolol",
+      "disease": "MONDO:0000467",
+      "disease_label": "second-degree atrioventricular block",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4856",
+      "drug_label": "Esmolol",
+      "disease": "UMLS:C0264890",
+      "disease_label": "Severe sinus bradycardia",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4856",
+      "drug_label": "Esmolol",
+      "disease": "MONDO:0800175",
+      "disease_label": "cardiogenic shock",
+      "cases": 0
+    },
+    {
+      "drug": "CHEBI:4856",
+      "drug_label": "Esmolol",
+      "disease": "MONDO:0005149",
+      "disease_label": "pulmonary hypertension",
+      "cases": 0
+    }
+  ]
+}

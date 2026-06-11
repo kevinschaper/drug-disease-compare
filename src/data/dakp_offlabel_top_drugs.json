@@ -1,0 +1,1202 @@
+[
+  {
+    "drug": "UNII:420K487FSG",
+    "drug_label": "Dupilumab",
+    "n": 379,
+    "cases": 9922
+  },
+  {
+    "drug": "CHEBI:42797",
+    "drug_label": "Gabapentin",
+    "n": 324,
+    "cases": 9614
+  },
+  {
+    "drug": "UNII:6GNT3Y5LMF",
+    "drug_label": "LEVOFLOXACIN",
+    "n": 323,
+    "cases": 10871
+  },
+  {
+    "drug": "CHEBI:64356",
+    "drug_label": "Pregabalin",
+    "n": 321,
+    "cases": 8936
+  },
+  {
+    "drug": "UNII:4F4X42SYQ6",
+    "drug_label": "Rituximab",
+    "n": 316,
+    "cases": 16144
+  },
+  {
+    "drug": "CHEBI:41879",
+    "drug_label": "Dexamethasone",
+    "n": 312,
+    "cases": 4327
+  },
+  {
+    "drug": "CHEBI:44185",
+    "drug_label": "Methotrexate",
+    "n": 311,
+    "cases": 6630
+  },
+  {
+    "drug": "CHEBI:63791",
+    "drug_label": "Lenalidomide",
+    "n": 295,
+    "cases": 10911
+  },
+  {
+    "drug": "CHEBI:4031",
+    "drug_label": "Cyclosporine",
+    "n": 291,
+    "cases": 5429
+  },
+  {
+    "drug": "CHEBI:66919",
+    "drug_label": "Ruxolitinib",
+    "n": 287,
+    "cases": 4288
+  },
+  {
+    "drug": "CHEBI:61057",
+    "drug_label": "TACROLIMUS",
+    "n": 284,
+    "cases": 5827
+  },
+  {
+    "drug": "CHEBI:4875",
+    "drug_label": "Etanercept",
+    "n": 283,
+    "cases": 4542
+  },
+  {
+    "drug": "CHEBI:46195",
+    "drug_label": "Acetaminophen",
+    "n": 276,
+    "cases": 6606
+  },
+  {
+    "drug": "CHEBI:47381",
+    "drug_label": "Diclofenac",
+    "n": 274,
+    "cases": 9470
+  },
+  {
+    "drug": "CHEBI:5855",
+    "drug_label": "Ibuprofen",
+    "n": 266,
+    "cases": 8408
+  },
+  {
+    "drug": "CHEBI:29007",
+    "drug_label": "Ceftriaxone",
+    "n": 253,
+    "cases": 4886
+  },
+  {
+    "drug": "CHEBI:119915",
+    "drug_label": "Fentanyl",
+    "n": 252,
+    "cases": 4761
+  },
+  {
+    "drug": "CHEBI:60648",
+    "drug_label": "DOXYCYCLINE",
+    "n": 242,
+    "cases": 3640
+  },
+  {
+    "drug": "UNII:F94OW58Y8V",
+    "drug_label": "AZITHROMYCIN, UNSPECIFIED FORM",
+    "n": 238,
+    "cases": 3815
+  },
+  {
+    "drug": "CHEBI:4026",
+    "drug_label": "cyclophosphamide hydrate",
+    "n": 237,
+    "cases": 8945
+  },
+  {
+    "drug": "UNII:4EQZ6YO2HI",
+    "drug_label": "Denosumab",
+    "n": 233,
+    "cases": 4726
+  },
+  {
+    "drug": "UNII:B72HH48FLU",
+    "drug_label": "Infliximab",
+    "n": 232,
+    "cases": 3753
+  },
+  {
+    "drug": "CHEBI:8378",
+    "drug_label": "Prednisolone",
+    "n": 226,
+    "cases": 1979
+  },
+  {
+    "drug": "UNII:2S9ZZM9Q9V",
+    "drug_label": "Bevacizumab",
+    "n": 226,
+    "cases": 19721
+  },
+  {
+    "drug": "CHEBI:7852",
+    "drug_label": "Oxycodone",
+    "n": 220,
+    "cases": 4362
+  },
+  {
+    "drug": "CHEBI:15365",
+    "drug_label": "Aspirin",
+    "n": 219,
+    "cases": 2048
+  },
+  {
+    "drug": "CHEBI:41423",
+    "drug_label": "Celecoxib",
+    "n": 217,
+    "cases": 4327
+  },
+  {
+    "drug": "CHEBI:51254",
+    "drug_label": "AMOXICILLIN",
+    "n": 211,
+    "cases": 5945
+  },
+  {
+    "drug": "CHEBI:6888",
+    "drug_label": "Methylprednisolone",
+    "n": 209,
+    "cases": 1798
+  },
+  {
+    "drug": "CHEBI:74947",
+    "drug_label": "Thalidomide",
+    "n": 207,
+    "cases": 5088
+  },
+  {
+    "drug": "CHEBI:100241",
+    "drug_label": "Ciprofloxacin",
+    "n": 205,
+    "cases": 2363
+  },
+  {
+    "drug": "CHEBI:7476",
+    "drug_label": "Naproxen",
+    "n": 203,
+    "cases": 6477
+  },
+  {
+    "drug": "UNII:I031V2H011",
+    "drug_label": "Tocilizumab",
+    "n": 203,
+    "cases": 1618
+  },
+  {
+    "drug": "CHEBI:3756",
+    "drug_label": "Clonazepam",
+    "n": 198,
+    "cases": 7934
+  },
+  {
+    "drug": "CHEBI:6437",
+    "drug_label": "Levetiracetam",
+    "n": 186,
+    "cases": 1500
+  },
+  {
+    "drug": "CHEBI:31709",
+    "drug_label": "Iohexol",
+    "n": 185,
+    "cases": 1176
+  },
+  {
+    "drug": "CHEBI:77260",
+    "drug_label": "Omeprazole",
+    "n": 184,
+    "cases": 4331
+  },
+  {
+    "drug": "UNII:90Z2UF0E52",
+    "drug_label": "Mepolizumab",
+    "n": 184,
+    "cases": 569
+  },
+  {
+    "drug": "CHEBI:71200",
+    "drug_label": "Tofacitinib",
+    "n": 183,
+    "cases": 3496
+  },
+  {
+    "drug": "CHEBI:36795",
+    "drug_label": "Duloxetine",
+    "n": 181,
+    "cases": 2760
+  },
+  {
+    "drug": "UNII:NQX9KB6PCL",
+    "drug_label": "Somatotropin",
+    "n": 178,
+    "cases": 965
+  },
+  {
+    "drug": "CHEBI:63611",
+    "drug_label": "Moxifloxacin",
+    "n": 178,
+    "cases": 2240
+  },
+  {
+    "drug": "CHEBI:47426",
+    "drug_label": "Furosemide",
+    "n": 176,
+    "cases": 2624
+  },
+  {
+    "drug": "UNII:2P471X1Z11",
+    "drug_label": "Omalizumab",
+    "n": 174,
+    "cases": 2276
+  },
+  {
+    "drug": "CHEBI:6539",
+    "drug_label": "Lorazepam",
+    "n": 171,
+    "cases": 2613
+  },
+  {
+    "drug": "CHEBI:78540",
+    "drug_label": "Apremilast",
+    "n": 171,
+    "cases": 1667
+  },
+  {
+    "drug": "CHEBI:9123",
+    "drug_label": "Sertraline",
+    "n": 169,
+    "cases": 3017
+  },
+  {
+    "drug": "CHEBI:46081",
+    "drug_label": "Fluconazole",
+    "n": 167,
+    "cases": 1015
+  },
+  {
+    "drug": "CHEBI:3207",
+    "drug_label": "Budesonide",
+    "n": 167,
+    "cases": 2599
+  },
+  {
+    "drug": "CHEBI:3387",
+    "drug_label": "Carbamazepine",
+    "n": 167,
+    "cases": 1643
+  },
+  {
+    "drug": "CHEBI:75722",
+    "drug_label": "Tramadol",
+    "n": 166,
+    "cases": 2220
+  },
+  {
+    "drug": "CHEBI:9667",
+    "drug_label": "Triamcinolone",
+    "n": 163,
+    "cases": 1545
+  },
+  {
+    "drug": "CHEBI:68478",
+    "drug_label": "Everolimus",
+    "n": 163,
+    "cases": 1498
+  },
+  {
+    "drug": "CHEBI:3732",
+    "drug_label": "Clarithromycin",
+    "n": 163,
+    "cases": 2541
+  },
+  {
+    "drug": "CHEBI:6909",
+    "drug_label": "Metronidazole",
+    "n": 162,
+    "cases": 3082
+  },
+  {
+    "drug": "CHEBI:2453",
+    "drug_label": "Acyclovir",
+    "n": 161,
+    "cases": 731
+  },
+  {
+    "drug": "CHEBI:28001",
+    "drug_label": "Vancomycin",
+    "n": 160,
+    "cases": 728
+  },
+  {
+    "drug": "CHEBI:45783",
+    "drug_label": "Imatinib",
+    "n": 158,
+    "cases": 1209
+  },
+  {
+    "drug": "CHEBI:17303",
+    "drug_label": "Morphine",
+    "n": 158,
+    "cases": 1426
+  },
+  {
+    "drug": "CHEBI:3561",
+    "drug_label": "Cetirizine",
+    "n": 157,
+    "cases": 1835
+  },
+  {
+    "drug": "PUBCHEM.COMPOUND:122173801",
+    "drug_label": "Octreotide",
+    "n": 156,
+    "cases": 1506
+  },
+  {
+    "drug": "UNII:LKC0U3A8NJ",
+    "drug_label": "Evolocumab",
+    "n": 155,
+    "cases": 1061
+  },
+  {
+    "drug": "CHEBI:2549",
+    "drug_label": "Albuterol",
+    "n": 152,
+    "cases": 6703
+  },
+  {
+    "drug": "CHEBI:8707",
+    "drug_label": "Quetiapine",
+    "n": 152,
+    "cases": 9472
+  },
+  {
+    "drug": "CHEBI:63631",
+    "drug_label": "Topiramate",
+    "n": 150,
+    "cases": 2399
+  },
+  {
+    "drug": "UNII:E47C0NF7LV",
+    "drug_label": "ENOXAPARIN",
+    "n": 150,
+    "cases": 1411
+  },
+  {
+    "drug": "CHEBI:72296",
+    "drug_label": "Apixaban",
+    "n": 149,
+    "cases": 1415
+  },
+  {
+    "drug": "UNII:884KT10YB7",
+    "drug_label": "(Z)-ranitidine",
+    "n": 148,
+    "cases": 12727
+  },
+  {
+    "drug": "CHEBI:7735",
+    "drug_label": "Olanzapine",
+    "n": 148,
+    "cases": 4656
+  },
+  {
+    "drug": "CHEBI:2668",
+    "drug_label": "Amlodipine",
+    "n": 147,
+    "cases": 757
+  },
+  {
+    "drug": "CHEBI:5801",
+    "drug_label": "Hydroxychloroquine",
+    "n": 146,
+    "cases": 2708
+  },
+  {
+    "drug": "CHEBI:7915",
+    "drug_label": "Pantoprazole",
+    "n": 144,
+    "cases": 1054
+  },
+  {
+    "drug": "CHEBI:6801",
+    "drug_label": "Metformin",
+    "n": 144,
+    "cases": 2050
+  },
+  {
+    "drug": "CHEBI:49575",
+    "drug_label": "Diazepam",
+    "n": 144,
+    "cases": 1366
+  },
+  {
+    "drug": "CHEBI:9168",
+    "drug_label": "Sirolimus",
+    "n": 144,
+    "cases": 619
+  },
+  {
+    "drug": "CHEBI:50275",
+    "drug_label": "Esomeprazole",
+    "n": 142,
+    "cases": 5763
+  },
+  {
+    "drug": "CHEBI:8382",
+    "drug_label": "Prednisone",
+    "n": 141,
+    "cases": 1150
+  },
+  {
+    "drug": "CHEBI:10023",
+    "drug_label": "Voriconazole",
+    "n": 140,
+    "cases": 748
+  },
+  {
+    "drug": "CHEBI:72690",
+    "drug_label": "Pomalidomide",
+    "n": 140,
+    "cases": 1135
+  },
+  {
+    "drug": "UNII:73B0K5S26A",
+    "drug_label": "Belimumab",
+    "n": 139,
+    "cases": 668
+  },
+  {
+    "drug": "CHEBI:6367",
+    "drug_label": "Lamotrigine",
+    "n": 139,
+    "cases": 2373
+  },
+  {
+    "drug": "CHEBI:8499",
+    "drug_label": "Propranolol",
+    "n": 139,
+    "cases": 955
+  },
+  {
+    "drug": "CHEBI:8871",
+    "drug_label": "Risperidone",
+    "n": 138,
+    "cases": 13663
+  },
+  {
+    "drug": "CHEBI:39548",
+    "drug_label": "Atorvastatin",
+    "n": 138,
+    "cases": 791
+  },
+  {
+    "drug": "CHEBI:50730",
+    "drug_label": "Montelukast",
+    "n": 138,
+    "cases": 1957
+  },
+  {
+    "drug": "CHEBI:2948",
+    "drug_label": "Azathioprine",
+    "n": 138,
+    "cases": 1995
+  },
+  {
+    "drug": "CHEBI:85010",
+    "drug_label": "Eltrombopag",
+    "n": 138,
+    "cases": 516
+  },
+  {
+    "drug": "CHEBI:6503",
+    "drug_label": "LISINOPRIL",
+    "n": 134,
+    "cases": 1286
+  },
+  {
+    "drug": "CHEBI:31355",
+    "drug_label": "Carboplatin",
+    "n": 134,
+    "cases": 14082
+  },
+  {
+    "drug": "CHEBI:31236",
+    "drug_label": "Aripiprazole",
+    "n": 133,
+    "cases": 4646
+  },
+  {
+    "drug": "CHEBI:2611",
+    "drug_label": "Alprazolam",
+    "n": 133,
+    "cases": 2785
+  },
+  {
+    "drug": "CHEBI:187893",
+    "drug_label": "Baclofen",
+    "n": 133,
+    "cases": 1456
+  },
+  {
+    "drug": "CHEBI:9139",
+    "drug_label": "Sildenafil",
+    "n": 132,
+    "cases": 818
+  },
+  {
+    "drug": "CHEBI:68579",
+    "drug_label": "Rivaroxaban",
+    "n": 131,
+    "cases": 1169
+  },
+  {
+    "drug": "CHEBI:31348",
+    "drug_label": "Capecitabine",
+    "n": 130,
+    "cases": 1797
+  },
+  {
+    "drug": "CHEBI:9943",
+    "drug_label": "Venlafaxine",
+    "n": 130,
+    "cases": 3191
+  },
+  {
+    "drug": "CHEBI:85993",
+    "drug_label": "Palbociclib",
+    "n": 129,
+    "cases": 767
+  },
+  {
+    "drug": "CHEBI:28864",
+    "drug_label": "Tobramycin",
+    "n": 127,
+    "cases": 2053
+  },
+  {
+    "drug": "CHEBI:52717",
+    "drug_label": "Bortezomib",
+    "n": 127,
+    "cases": 1474
+  },
+  {
+    "drug": "CHEBI:5134",
+    "drug_label": "Fluticasone",
+    "n": 127,
+    "cases": 1447
+  },
+  {
+    "drug": "CHEBI:63607",
+    "drug_label": "Linezolid",
+    "n": 126,
+    "cases": 1224
+  },
+  {
+    "drug": "UNII:PVI5M0M1GW",
+    "drug_label": "Filgrastim",
+    "n": 126,
+    "cases": 654
+  },
+  {
+    "drug": "CHEBI:36791",
+    "drug_label": "Escitalopram",
+    "n": 123,
+    "cases": 1721
+  },
+  {
+    "drug": "CHEBI:7824",
+    "drug_label": "Oxcarbazepine",
+    "n": 122,
+    "cases": 1430
+  },
+  {
+    "drug": "CHEBI:3723",
+    "drug_label": "Citalopram",
+    "n": 122,
+    "cases": 3670
+  },
+  {
+    "drug": "CHEBI:70839",
+    "drug_label": "Dasatinib",
+    "n": 121,
+    "cases": 1182
+  },
+  {
+    "drug": "CHEBI:71219",
+    "drug_label": "Pazopanib",
+    "n": 121,
+    "cases": 1168
+  },
+  {
+    "drug": "CHEBI:3535",
+    "drug_label": "Cephalexin",
+    "n": 120,
+    "cases": 1356
+  },
+  {
+    "drug": "CHEBI:37333",
+    "drug_label": "Gadodiamide",
+    "n": 119,
+    "cases": 431
+  },
+  {
+    "drug": "UNII:7D0YB67S97",
+    "drug_label": "Abatacept",
+    "n": 118,
+    "cases": 1653
+  },
+  {
+    "drug": "CHEBI:6950",
+    "drug_label": "Mirtazapine",
+    "n": 118,
+    "cases": 2780
+  },
+  {
+    "drug": "CHEBI:2682",
+    "drug_label": "Amphotericin B",
+    "n": 118,
+    "cases": 612
+  },
+  {
+    "drug": "UNII:3U02EL437C",
+    "drug_label": "Clindamycin",
+    "n": 118,
+    "cases": 665
+  },
+  {
+    "drug": "CHEBI:135983",
+    "drug_label": "Teriparatide",
+    "n": 118,
+    "cases": 1458
+  },
+  {
+    "drug": "CHEBI:9241",
+    "drug_label": "Spironolactone",
+    "n": 117,
+    "cases": 632
+  },
+  {
+    "drug": "UNII:UMD07X179E",
+    "drug_label": "CERTOLIZUMAB",
+    "n": 117,
+    "cases": 937
+  },
+  {
+    "drug": "CHEBI:37941",
+    "drug_label": "Clopidogrel",
+    "n": 116,
+    "cases": 639
+  },
+  {
+    "drug": "CHEBI:6538",
+    "drug_label": "Loratadine",
+    "n": 115,
+    "cases": 2089
+  },
+  {
+    "drug": "CHEBI:76612",
+    "drug_label": "Ibrutinib",
+    "n": 115,
+    "cases": 2639
+  },
+  {
+    "drug": "CHEBI:3216",
+    "drug_label": "Buprenorphine",
+    "n": 115,
+    "cases": 1344
+  },
+  {
+    "drug": "CHEBI:10125",
+    "drug_label": "Zolpidem",
+    "n": 115,
+    "cases": 3028
+  },
+  {
+    "drug": "CHEBI:114785",
+    "drug_label": "Erlotinib",
+    "n": 114,
+    "cases": 1380
+  },
+  {
+    "drug": "UNII:NWQ5N31VKK",
+    "drug_label": "Daptomycin",
+    "n": 114,
+    "cases": 2755
+  },
+  {
+    "drug": "CHEBI:3515",
+    "drug_label": "Cefuroxime",
+    "n": 113,
+    "cases": 509
+  },
+  {
+    "drug": "CHEBI:5118",
+    "drug_label": "Fluoxetine",
+    "n": 113,
+    "cases": 1371
+  },
+  {
+    "drug": "UNII:DLG4EML025",
+    "drug_label": "Secukinumab",
+    "n": 113,
+    "cases": 496
+  },
+  {
+    "drug": "CHEBI:6375",
+    "drug_label": "Lansoprazole",
+    "n": 112,
+    "cases": 610
+  },
+  {
+    "drug": "CHEBI:133021",
+    "drug_label": "Venetoclax",
+    "n": 111,
+    "cases": 5648
+  },
+  {
+    "drug": "CHEBI:7773",
+    "drug_label": "Ondansetron",
+    "n": 110,
+    "cases": 520
+  },
+  {
+    "drug": "CHEBI:10033",
+    "drug_label": "Warfarin",
+    "n": 110,
+    "cases": 763
+  },
+  {
+    "drug": "UNII:4RA0KN46E0",
+    "drug_label": "Upadacitinib",
+    "n": 110,
+    "cases": 6172
+  },
+  {
+    "drug": "UNII:9013DUQ28K",
+    "drug_label": "Anakinra",
+    "n": 110,
+    "cases": 1198
+  },
+  {
+    "drug": "CHEBI:135949",
+    "drug_label": "Ambrisentan",
+    "n": 109,
+    "cases": 1200
+  },
+  {
+    "drug": "CHEBI:17650",
+    "drug_label": "Hydrocortisone",
+    "n": 109,
+    "cases": 408
+  },
+  {
+    "drug": "CHEBI:7936",
+    "drug_label": "Paroxetine",
+    "n": 109,
+    "cases": 2577
+  },
+  {
+    "drug": "CHEBI:6456",
+    "drug_label": "Lidocaine",
+    "n": 109,
+    "cases": 604
+  },
+  {
+    "drug": "CHEBI:6887",
+    "drug_label": "Methylphenidate",
+    "n": 109,
+    "cases": 923
+  },
+  {
+    "drug": "CHEBI:6904",
+    "drug_label": "Metoprolol",
+    "n": 109,
+    "cases": 1642
+  },
+  {
+    "drug": "CHEBI:28304",
+    "drug_label": "Heparin",
+    "n": 109,
+    "cases": 942
+  },
+  {
+    "drug": "CHEBI:32016",
+    "drug_label": "Pirfenidone",
+    "n": 107,
+    "cases": 1971
+  },
+  {
+    "drug": "CHEBI:50694",
+    "drug_label": "Minocycline",
+    "n": 107,
+    "cases": 816
+  },
+  {
+    "drug": "CHEBI:49005",
+    "drug_label": "Deferasirox",
+    "n": 106,
+    "cases": 7595
+  },
+  {
+    "drug": "CHEBI:6427",
+    "drug_label": "Leuprolide",
+    "n": 105,
+    "cases": 577
+  },
+  {
+    "drug": "CHEBI:38940",
+    "drug_label": "Sunitinib",
+    "n": 105,
+    "cases": 2210
+  },
+  {
+    "drug": "CHEBI:6970",
+    "drug_label": "Mometasone",
+    "n": 105,
+    "cases": 1174
+  },
+  {
+    "drug": "CHEBI:3757",
+    "drug_label": "Clonidine",
+    "n": 103,
+    "cases": 545
+  },
+  {
+    "drug": "CHEBI:6076",
+    "drug_label": "Itraconazole",
+    "n": 102,
+    "cases": 545
+  },
+  {
+    "drug": "CHEBI:600520",
+    "drug_label": "Micafungin",
+    "n": 101,
+    "cases": 244
+  },
+  {
+    "drug": "CHEBI:16469",
+    "drug_label": "Estradiol",
+    "n": 101,
+    "cases": 787
+  },
+  {
+    "drug": "UNII:1RXS4UE564",
+    "drug_label": "Alteplase",
+    "n": 101,
+    "cases": 488
+  },
+  {
+    "drug": "CHEBI:3219",
+    "drug_label": "Bupropion",
+    "n": 100,
+    "cases": 2546
+  },
+  {
+    "drug": "CHEBI:40279",
+    "drug_label": "Allopurinol",
+    "n": 99,
+    "cases": 519
+  },
+  {
+    "drug": "CHEBI:70752",
+    "drug_label": "Dabigatran",
+    "n": 99,
+    "cases": 1032
+  },
+  {
+    "drug": "CHEBI:31705",
+    "drug_label": "Iodixanol",
+    "n": 99,
+    "cases": 401
+  },
+  {
+    "drug": "UNII:DPT0O3T46P",
+    "drug_label": "Pembrolizumab",
+    "n": 98,
+    "cases": 2996
+  },
+  {
+    "drug": "CHEBI:9150",
+    "drug_label": "Simvastatin",
+    "n": 97,
+    "cases": 915
+  },
+  {
+    "drug": "CHEBI:8107",
+    "drug_label": "Phenytoin",
+    "n": 97,
+    "cases": 426
+  },
+  {
+    "drug": "CHEBI:72564",
+    "drug_label": "Temozolomide",
+    "n": 97,
+    "cases": 1429
+  },
+  {
+    "drug": "CHEBI:42355",
+    "drug_label": "Erythromycin",
+    "n": 97,
+    "cases": 413
+  },
+  {
+    "drug": "PUBCHEM.COMPOUND:11431811",
+    "drug_label": "Tiotropium Bromide Monohydrate",
+    "n": 97,
+    "cases": 2155
+  },
+  {
+    "drug": "CHEBI:75998",
+    "drug_label": "Trametinib",
+    "n": 96,
+    "cases": 833
+  },
+  {
+    "drug": "CHEBI:83527",
+    "drug_label": "Desvenlafaxine",
+    "n": 96,
+    "cases": 2079
+  },
+  {
+    "drug": "UNII:31YO63LBSN",
+    "drug_label": "Nivolumab",
+    "n": 96,
+    "cases": 2350
+  },
+  {
+    "drug": "CHEBI:4975",
+    "drug_label": "Famotidine",
+    "n": 96,
+    "cases": 705
+  },
+  {
+    "drug": "CHEBI:71940",
+    "drug_label": "Tadalafil",
+    "n": 96,
+    "cases": 378
+  },
+  {
+    "drug": "CHEBI:6741",
+    "drug_label": "Meloxicam",
+    "n": 95,
+    "cases": 811
+  },
+  {
+    "drug": "CHEBI:70746",
+    "drug_label": "Dabigatran etexilate",
+    "n": 95,
+    "cases": 906
+  },
+  {
+    "drug": "CHEBI:38545",
+    "drug_label": "Rosuvastatin",
+    "n": 94,
+    "cases": 303
+  },
+  {
+    "drug": "CHEBI:72317",
+    "drug_label": "Cabozantinib",
+    "n": 94,
+    "cases": 1182
+  },
+  {
+    "drug": "UNII:FU77B4U5Z0",
+    "drug_label": "Ustekinumab",
+    "n": 94,
+    "cases": 666
+  },
+  {
+    "drug": "UNII:NU90V55F8I",
+    "drug_label": "Sarilumab",
+    "n": 93,
+    "cases": 2774
+  },
+  {
+    "drug": "CHEBI:3766",
+    "drug_label": "Clozapine",
+    "n": 93,
+    "cases": 2763
+  },
+  {
+    "drug": "CHEBI:5613",
+    "drug_label": "Haloperidol",
+    "n": 93,
+    "cases": 1407
+  },
+  {
+    "drug": "UNII:9RV78Q2002",
+    "drug_label": "Vedolizumab",
+    "n": 92,
+    "cases": 349
+  },
+  {
+    "drug": "CHEBI:28077",
+    "drug_label": "Rifampin",
+    "n": 92,
+    "cases": 967
+  },
+  {
+    "drug": "CHEBI:2666",
+    "drug_label": "Amitriptyline",
+    "n": 91,
+    "cases": 888
+  },
+  {
+    "drug": "CHEBI:3892",
+    "drug_label": "Corticotropin",
+    "n": 91,
+    "cases": 1819
+  },
+  {
+    "drug": "CHEBI:39867",
+    "drug_label": "Valproic acid",
+    "n": 90,
+    "cases": 915
+  },
+  {
+    "drug": "CHEBI:31941",
+    "drug_label": "Oxaliplatin",
+    "n": 90,
+    "cases": 2383
+  },
+  {
+    "drug": "CHEBI:5050",
+    "drug_label": "Fexofenadine",
+    "n": 90,
+    "cases": 758
+  },
+  {
+    "drug": "CHEBI:8774",
+    "drug_label": "Ramipril",
+    "n": 89,
+    "cases": 949
+  },
+  {
+    "drug": "CHEBI:28748",
+    "drug_label": "Doxorubicin",
+    "n": 88,
+    "cases": 4691
+  },
+  {
+    "drug": "CHEBI:6129",
+    "drug_label": "Ketorolac",
+    "n": 88,
+    "cases": 373
+  },
+  {
+    "drug": "CHEBI:35854",
+    "drug_label": "Valaciclovir",
+    "n": 88,
+    "cases": 414
+  },
+  {
+    "drug": "CHEBI:30742",
+    "drug_label": "macrogol",
+    "n": 88,
+    "cases": 9846
+  },
+  {
+    "drug": "CHEBI:194186",
+    "drug_label": "Tirzepatide",
+    "n": 87,
+    "cases": 4600
+  },
+  {
+    "drug": "UNII:DQ448MW7KS",
+    "drug_label": "Palivizumab",
+    "n": 87,
+    "cases": 657
+  },
+  {
+    "drug": "CHEBI:8389",
+    "drug_label": "conjugated estrogens",
+    "n": 86,
+    "cases": 419
+  },
+  {
+    "drug": "CHEBI:5790",
+    "drug_label": "Hydromorphone",
+    "n": 86,
+    "cases": 604
+  },
+  {
+    "drug": "CHEBI:31524",
+    "drug_label": "Droxidopa",
+    "n": 84,
+    "cases": 253
+  },
+  {
+    "drug": "CHEBI:63578",
+    "drug_label": "Iopromide",
+    "n": 84,
+    "cases": 274
+  },
+  {
+    "drug": "UNII:SE2KH7T06F",
+    "drug_label": "BB-10901",
+    "n": 84,
+    "cases": 627
+  },
+  {
+    "drug": "UNII:52CMI0WC3Y",
+    "drug_label": "Atezolizumab",
+    "n": 83,
+    "cases": 1507
+  },
+  {
+    "drug": "CHEBI:28918",
+    "drug_label": "Epinephrine",
+    "n": 82,
+    "cases": 215
+  },
+  {
+    "drug": "CHEBI:201441",
+    "drug_label": "GATIFLOXACIN",
+    "n": 81,
+    "cases": 916
+  },
+  {
+    "drug": "CHEBI:4636",
+    "drug_label": "Diphenhydramine",
+    "n": 81,
+    "cases": 471
+  },
+  {
+    "drug": "CHEBI:45863",
+    "drug_label": "Paclitaxel",
+    "n": 80,
+    "cases": 2122
+  },
+  {
+    "drug": "CHEBI:404903",
+    "drug_label": "Ertapenem",
+    "n": 80,
+    "cases": 455
+  },
+  {
+    "drug": "CHEBI:31711",
+    "drug_label": "Iopamidol",
+    "n": 80,
+    "cases": 301
+  },
+  {
+    "drug": "CHEBI:175901",
+    "drug_label": "Gemcitabine",
+    "n": 80,
+    "cases": 2470
+  }
+]

@@ -1,0 +1,17 @@
+# Observable Framework
+/dist/
+**/.observablehq/cache/
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ruff_cache/
+.pytest_cache/
+
+# Large pinned inputs (re-fetch with `just fetch`); checksums pinned in data/MANIFEST.yaml
+/data/inputs/
+
+# Node Normalizer response cache (local build aid; rebuild with `just normalize`)
+/data/nodenorm_cache.json

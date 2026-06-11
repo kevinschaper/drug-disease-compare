@@ -1,0 +1,18 @@
+{
+  "medic_pairs": 15649,
+  "dakp_pairs": 65064,
+  "dakp_onlabel_pairs": 5030,
+  "dakp_offlabel_pairs": 60034,
+  "agree_exact": 3649,
+  "related_hierarchy": 6568,
+  "medic_only": 9436,
+  "dakp_only": 56163,
+  "dakp_only_onlabel": 1678,
+  "dakp_only_offlabel": 54485,
+  "jaccard_all": 0.0474,
+  "jaccard_onlabel": 0.1223,
+  "onlabel_agree": 2254,
+  "medic_share_in_dakp": 0.2332,
+  "dakp_onlabel_share_in_medic": 0.4481,
+  "contraindication_pairs": 3905
+}
