@@ -1,3 +1,8 @@
+---
+sql:
+  pairs: ./data/pairs.parquet
+---
+
 # Disagreements
 
 The drug→disease pairs where the two feeds part ways — the triage queue for
@@ -15,10 +20,22 @@ so their absence from MEDIC is expected, not a disagreement. They are summarized
 drug at the bottom.
 
 ```js
-const medicOnly = await FileAttachment("data/medic_only.json").json();
-const dakpOnly = await FileAttachment("data/dakp_onlabel_only.json").json();
+// DuckDB-WASM slices the per-pair Parquet by bucket.
+const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.map((f) => [f.name, r[f.name]])));
+const medicOnly = toRows(await sql`
+  SELECT drug, drug_label, disease, disease_label, disease_prefix
+  FROM pairs WHERE bucket = 'medic_only' ORDER BY drug_label, disease_label`);
+const dakpOnly = toRows(await sql`
+  SELECT drug, drug_label, disease, disease_label, disease_prefix, CAST(cases AS INTEGER) AS cases
+  FROM pairs WHERE bucket = 'dakp_onlabel_only' ORDER BY cases DESC`);
 const offlabel = await FileAttachment("data/dakp_offlabel_top_drugs.json").json();
+const summary = await FileAttachment("data/summary.json").json();
 const uniq = (rows, k) => new Set(rows.map((r) => r[k])).size;
+const drugCell = (cid, label) => html`<a href="drug?id=${encodeURIComponent(cid)}">${label ?? cid}</a> <span class="small muted">${cid}</span>`;
+const diseaseCell = (cid, label) => html`<a href="disease?id=${encodeURIComponent(cid)}">${label ?? cid}</a> <span class="small muted">${cid}</span>`;
+const dLabel = new Map([...medicOnly, ...dakpOnly].map((r) => [r.drug, r.drug_label]));
+const xLabel = new Map([...medicOnly, ...dakpOnly].map((r) => [r.disease, r.disease_label]));
+const oLabel = new Map(offlabel.map((r) => [r.drug, r.drug_label]));
 ```
 
 <div class="grid grid-cols-2">
@@ -42,9 +59,13 @@ const mSearch = view(Inputs.search(medicOnly, {placeholder: "search by drug or d
 
 ```js
 Inputs.table(mSearch, {
-  columns: ["drug_label", "drug", "disease_label", "disease", "disease_prefix"],
-  header: {drug_label: "Drug", drug: "Drug ID", disease_label: "Disease", disease: "Disease ID", disease_prefix: "Disease space"},
-  sort: "drug_label",
+  columns: ["drug", "disease", "disease_prefix"],
+  header: {drug: "Drug", disease: "Disease", disease_prefix: "Disease space"},
+  format: {
+    drug: (cid) => drugCell(cid, dLabel.get(cid)),
+    disease: (cid) => diseaseCell(cid, xLabel.get(cid)),
+  },
+  sort: "drug",
   rows: 18,
 })
 ```
@@ -59,8 +80,12 @@ const dSearch = view(Inputs.search(dakpOnly, {placeholder: "search by drug or di
 
 ```js
 Inputs.table(dSearch, {
-  columns: ["drug_label", "drug", "disease_label", "disease", "cases"],
-  header: {drug_label: "Drug", drug: "Drug ID", disease_label: "Disease", disease: "Disease ID", cases: "FAERS cases"},
+  columns: ["drug", "disease", "cases"],
+  header: {drug: "Drug", disease: "Disease", cases: "FAERS cases"},
+  format: {
+    drug: (cid) => drugCell(cid, dLabel.get(cid)),
+    disease: (cid) => diseaseCell(cid, xLabel.get(cid)),
+  },
   sort: "cases",
   reverse: true,
   rows: 18,
@@ -70,7 +95,7 @@ Inputs.table(dSearch, {
 ## DAKP off-label-only — expected divergence, by drug
 
 These are not disagreements; shown for context. Top 200 drugs by off-label pair
-count (the full off-label-only set is ${offlabel.reduce((a, d) => a + d.n, 0).toLocaleString()}+ pairs).
+count (the full off-label-only set is ${summary.dakp_only_offlabel.toLocaleString()} pairs).
 
 ```js
 const oSearch = view(Inputs.search(offlabel, {placeholder: "search by drug…"}));
@@ -78,8 +103,11 @@ const oSearch = view(Inputs.search(offlabel, {placeholder: "search by drug…"})
 
 ```js
 Inputs.table(oSearch, {
-  columns: ["drug_label", "drug", "n", "cases"],
-  header: {drug_label: "Drug", drug: "Drug ID", n: "off-label pairs", cases: "FAERS cases"},
+  columns: ["drug", "n", "cases"],
+  header: {drug: "Drug", n: "off-label pairs", cases: "FAERS cases"},
+  format: {
+    drug: (cid) => drugCell(cid, oLabel.get(cid)),
+  },
   sort: "n",
   reverse: true,
   rows: 12,

@@ -91,6 +91,10 @@ class MondoGraph:
         'same disease, adjacent granularity' neighborhood)."""
         return self.ancestors_within(term, max_hops) | self.descendants_within(term, max_hops)
 
+    def children_of(self, term: str) -> set[str]:
+        """Direct is-a children of ``term`` (e.g. top-level areas under the root)."""
+        return set(self._children.get(term, set()))
+
     def label(self, term: str) -> str:
         return self._labels.get(term, term)
 

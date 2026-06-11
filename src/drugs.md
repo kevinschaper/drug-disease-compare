@@ -8,6 +8,7 @@ but low overlap are good places to look for systematic extraction differences.
 
 ```js
 const byDrug = await FileAttachment("data/by_drug.json").json();
+const labelOfDrug = new Map(byDrug.map((d) => [d.drug, d.drug_label]));
 ```
 
 <div class="grid grid-cols-3">
@@ -52,16 +53,21 @@ Plot.plot({
 
 ## Browse drugs
 
+Click a drug to open its detail page.
+
 ```js
-const search = view(Inputs.search(byDrug, {placeholder: "search by drug…"}));
+const drugSearch = view(Inputs.search(byDrug, {placeholder: "search by drug…"}));
 ```
 
 ```js
-Inputs.table(search, {
-  columns: ["drug_label", "drug", "medic", "dakp", "shared", "jaccard"],
-  header: {drug_label: "Drug", drug: "Drug ID", medic: "MEDIC", dakp: "DAKP", shared: "shared", jaccard: "Jaccard"},
+Inputs.table(drugSearch, {
+  columns: ["drug", "medic", "dakp", "shared", "jaccard", "offlabel_only"],
+  header: {drug: "Drug", medic: "MEDIC", dakp: "DAKP", shared: "shared", jaccard: "Jaccard", offlabel_only: "off-label only"},
+  format: {
+    drug: (cid) => html`<a href="drug?id=${encodeURIComponent(cid)}">${labelOfDrug.get(cid) ?? cid}</a> <span class="small muted">${cid}</span>`,
+  },
   sort: "shared",
   reverse: true,
-  rows: 20,
+  rows: 18,
 })
 ```

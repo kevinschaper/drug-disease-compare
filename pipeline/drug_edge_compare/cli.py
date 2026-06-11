@@ -30,6 +30,16 @@ def _write(name: str, obj) -> None:
     click.echo(f"  wrote {path.relative_to(ROOT)} ({path.stat().st_size // 1024} KB)")
 
 
+def _write_parquet(name: str, rows: list[dict]) -> None:
+    """Write a row list as Parquet (queried client-side via DuckDB-WASM)."""
+    import pandas as pd
+
+    ARTIFACTS.mkdir(parents=True, exist_ok=True)
+    path = ARTIFACTS / name
+    pd.DataFrame(rows).to_parquet(path, index=False, compression="zstd")
+    click.echo(f"  wrote {path.relative_to(ROOT)} ({path.stat().st_size // 1024} KB, {len(rows)} rows)")
+
+
 @click.group()
 def cli() -> None:
     """drug-edge-compare pipeline."""
@@ -68,13 +78,16 @@ def build() -> None:
     result = compare.compare(edges, rec, mondo)
 
     click.echo("writing artifacts...")
+    # One per-pair Parquet covers agree/related/medic_only/dakp_onlabel_only as a
+    # `bucket` column; the Disagreements page slices it by bucket and the detail
+    # pages slice it by entity, all via DuckDB-WASM. The small coverage rollups and
+    # reports stay JSON (loaded whole for the browse UIs).
+    _write_parquet("pairs.parquet", result["pairs"])
     _write("summary.json", result["summary"])
-    _write("agree.json", result["agree"])
-    _write("related.json", result["related"])
-    _write("medic_only.json", result["medic_only"])
-    _write("dakp_onlabel_only.json", result["dakp_onlabel_only"])
     _write("dakp_offlabel_top_drugs.json", result["dakp_offlabel_only_top_drugs"])
     _write("by_drug.json", result["by_drug"])
+    _write("by_disease.json", result["by_disease"])
+    _write("disease_areas.json", result["disease_areas"])
     _write("deconflation.json", result["deconflation"])
     _write("contraindications.json", result["contraindications"])
 

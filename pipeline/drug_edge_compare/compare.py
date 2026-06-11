@@ -217,8 +217,44 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph) -> dict:
         d["cases"] += dakp[k]["cases"]
     offlabel_top_drugs = sorted(offlabel_by_drug.values(), key=lambda r: -r["n"])[:200]
 
-    # --- by-drug rollup across both feeds (the browsable coverage table) ---
+    # --- by-drug / by-disease rollups across both feeds (browsable coverage) ---
     by_drug = _by_drug(medic, dakp, agree_keys)
+    by_disease = _by_disease(medic, dakp, agree_keys)
+    # adds a `categories` field to each by_disease row and returns the area rollup
+    disease_areas = _by_disease_area(by_disease, mondo)
+
+    # off-label-only pair counts per entity, for the detail panels (those pairs
+    # are not listed individually, only summarized)
+    offlabel_disease_count: dict[str, int] = defaultdict(int)
+    for k in dakp_only_offlabel:
+        offlabel_disease_count[k[1]] += 1
+    for d in by_drug:
+        d["offlabel_only"] = offlabel_by_drug.get(d["drug"], {}).get("n", 0)
+    for d in by_disease:
+        d["offlabel_only"] = offlabel_disease_count.get(d["disease"], 0)
+
+    # --- per-pair long table for the click-through detail panels ---
+    # Covers the actionable buckets (agree / related / MEDIC-only / DAKP-on-label-only);
+    # off-label-only pairs are excluded here and surfaced as a per-entity count instead.
+    pairs: list[dict] = []
+    for r in agree_rows:
+        pairs.append({"drug": r["drug"], "drug_label": r["drug_label"], "disease": r["disease"],
+                      "disease_label": r["disease_label"], "disease_prefix": r["disease_prefix"],
+                      "bucket": "agree", "status": r["dakp_status"], "cases": r["dakp_cases"], "note": ""})
+    for r in medic_only_rows:
+        pairs.append({"drug": r["drug"], "drug_label": r["drug_label"], "disease": r["disease"],
+                      "disease_label": r["disease_label"], "disease_prefix": r["disease_prefix"],
+                      "bucket": "medic_only", "status": "", "cases": 0, "note": ""})
+    for r in dakp_onlabel_only_rows:
+        pairs.append({"drug": r["drug"], "drug_label": r["drug_label"], "disease": r["disease"],
+                      "disease_label": r["disease_label"], "disease_prefix": r["disease_prefix"],
+                      "bucket": "dakp_onlabel_only", "status": "approved_for_condition",
+                      "cases": r["cases"], "note": ""})
+    for r in related:
+        pairs.append({"drug": r["drug"], "drug_label": r["drug_label"], "disease": r["medic_disease"],
+                      "disease_label": r["medic_disease_label"], "disease_prefix": "MONDO",
+                      "bucket": "related", "status": r["dakp_status"], "cases": 0,
+                      "note": f"≈ DAKP {r['relation']}: {r['dakp_disease_label']} ({r['dakp_disease']})"})
 
     # --- de-conflation report from the disease resolutions actually used ---
     deconflation = _deconflation_report(rec)
@@ -239,6 +275,9 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph) -> dict:
         "dakp_onlabel_only": dakp_onlabel_only_rows,
         "dakp_offlabel_only_top_drugs": offlabel_top_drugs,
         "by_drug": by_drug,
+        "by_disease": by_disease,
+        "disease_areas": disease_areas,
+        "pairs": pairs,
         "deconflation": deconflation,
         "contraindications": {"summary": {"pairs": len(contra)}, "rows": contra_rows[:1000]},
     }
@@ -263,6 +302,91 @@ def _by_drug(medic, dakp, agree_keys) -> list[dict]:
         union = d["medic"] + d["dakp"] - d["shared"]
         d["jaccard"] = round(d["shared"] / union, 4) if union else 0.0
     return sorted(drugs.values(), key=lambda d: (-(d["medic"] + d["dakp"]), d["drug_label"]))
+
+
+def _by_disease(medic, dakp, agree_keys) -> list[dict]:
+    diseases: dict[str, dict] = {}
+
+    def slot(disease, label, prefix):
+        return diseases.setdefault(
+            disease,
+            {"disease": disease, "disease_label": label, "disease_prefix": prefix,
+             "medic": 0, "dakp": 0, "shared": 0},
+        )
+
+    for (_, disease), v in medic.items():
+        slot(disease, v["disease_label"], v["disease_prefix"])["medic"] += 1
+    for (_, disease), v in dakp.items():
+        slot(disease, v["disease_label"], v["disease_prefix"])["dakp"] += 1
+    for _, disease in agree_keys:
+        diseases[disease]["shared"] += 1
+    for d in diseases.values():
+        union = d["medic"] + d["dakp"] - d["shared"]
+        d["jaccard"] = round(d["shared"] / union, 4) if union else 0.0
+    return sorted(diseases.values(), key=lambda d: (-(d["medic"] + d["dakp"]), d["disease_label"]))
+
+
+# MONDO's upper level is axis-based ("disease by body system / process / etiology"),
+# so the recognizable disease areas (nervous system, cancer, infectious, ...) sit one
+# level below these three axes. A few of those children are themselves abstract
+# sub-axes (disease by molecular/genetic/extrinsic mechanism); we expand those one
+# more level so e.g. "infectious disease" and "hereditary disease" surface as areas.
+_AREA_AXES = {"MONDO:7770006", "MONDO:7770007", "MONDO:7770008"}
+_ABSTRACT_SUBAXES = {"MONDO:7770009", "MONDO:7770010", "MONDO:7770011"}
+NON_MONDO_AREA = "(non-MONDO disease)"
+UNCLASSIFIED_AREA = "(unclassified)"
+
+
+def _area_terms(mondo: MondoGraph) -> set[str]:
+    areas: set[str] = set()
+    for axis in _AREA_AXES:
+        for child in mondo.children_of(axis):
+            if child in _ABSTRACT_SUBAXES:
+                areas |= mondo.children_of(child)
+            else:
+                areas.add(child)
+    return areas
+
+
+def _by_disease_area(by_disease: list[dict], mondo: MondoGraph) -> list[dict]:
+    """Roll disease coverage up to recognizable MONDO disease areas.
+
+    Mutates each ``by_disease`` row to add ``categories`` (the area labels it
+    belongs to) so the site can drill the per-disease table down by area. A
+    disease can sit under several areas (MONDO multiple-inheritance); it is
+    counted under each, so area totals can exceed the global pair counts.
+    """
+    top = _area_terms(mondo)
+    areas: dict[str, dict] = {}
+
+    def slot(cid, label):
+        return areas.setdefault(
+            cid, {"area": cid, "label": label, "medic": 0, "dakp": 0, "shared": 0, "diseases": 0}
+        )
+
+    for d in by_disease:
+        if d["disease_prefix"] != "MONDO":
+            members = [(NON_MONDO_AREA, NON_MONDO_AREA)]
+        else:
+            ancestors = mondo.ancestors(d["disease"]) & top
+            if d["disease"] in top:
+                ancestors = ancestors | {d["disease"]}
+            members = (
+                [(c, mondo.label(c)) for c in sorted(ancestors)]
+                if ancestors else [(UNCLASSIFIED_AREA, UNCLASSIFIED_AREA)]
+            )
+        d["categories"] = [label for _, label in members]
+        for cid, label in members:
+            a = slot(cid, label)
+            a["medic"] += d["medic"]
+            a["dakp"] += d["dakp"]
+            a["shared"] += d["shared"]
+            a["diseases"] += 1
+
+    for a in areas.values():
+        union = a["medic"] + a["dakp"] - a["shared"]
+        a["jaccard"] = round(a["shared"] / union, 4) if union else 0.0
+    return sorted(areas.values(), key=lambda a: -(a["medic"] + a["dakp"]))
 
 
 def _deconflation_report(rec: Reconciler) -> dict:
