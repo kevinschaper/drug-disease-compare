@@ -17,8 +17,10 @@ const meta = byDrug.find((d) => d.drug === id);
 const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.map((f) => [f.name, r[f.name]])));
 const detail = id
   ? toRows(await sql`
-      SELECT bucket, disease, disease_label, disease_prefix, status, CAST(cases AS INTEGER) AS cases, note
-      FROM pairs WHERE drug = ${id} ORDER BY bucket, disease_label`)
+      SELECT disease, disease_label, disease_prefix, medic, dakp, dismech,
+             dakp_status, CAST(dakp_cases AS INTEGER) AS cases, CAST(dismech_pubs AS INTEGER) AS pubs,
+             CAST(n_exact AS INTEGER) AS n_exact, note
+      FROM pairs WHERE drug = ${id} ORDER BY n_exact DESC, disease_label`)
   : [];
 const diseaseLabel = new Map(detail.map((r) => [r.disease, r.disease_label]));
 ```
@@ -28,30 +30,30 @@ id
   ? html`<div class="card">
       <h2 style="margin-top:0">${meta?.drug_label ?? id} <span class="small muted">${id}</span></h2>
       ${meta
-        ? html`<div class="small muted">MEDIC ${meta.medic} · DAKP ${meta.dakp} · shared ${meta.shared} ·
-            ${meta.offlabel_only.toLocaleString()} DAKP off-label-only (counted, not listed below)</div>`
+        ? html`<div class="small muted">MEDIC ${meta.medic} · DAKP ${meta.dakp} · dismech ${meta.dismech} ·
+            shared (≥2) ${meta.shared} · ${meta.offlabel.toLocaleString()} DAKP off-label</div>`
         : html`<div class="small muted">No coverage row found for this CURIE.</div>`}
       <div class="small"><a href="drugs">← all drugs</a></div>
     </div>`
   : html`<div class="card">Open a drug from the <a href="drugs">Drug coverage</a> page.</div>`
 ```
 
-Each disease this drug is linked to, in either feed, by bucket — `agree`,
-`related` (a MONDO is-a hop apart), `medic_only`, or `dakp_onlabel_only`. The
-`note` carries the hierarchy relationship for `related` rows. Click a disease to
-cross over to its detail.
+Every disease this drug is linked to, with each feed's membership: **exact**,
+**related** (same drug, a MONDO is-a hop away — see `note`), or blank (absent).
+`n` is how many feeds agree exactly. Click a disease to cross over to its detail.
 
 ```js
 id
   ? Inputs.table(detail, {
-      columns: ["bucket", "disease", "disease_prefix", "status", "cases", "note"],
-      header: {bucket: "Bucket", disease: "Disease", disease_prefix: "Space", status: "DAKP status", cases: "FAERS cases", note: "Hierarchy note"},
+      columns: ["disease", "disease_prefix", "medic", "dakp", "dismech", "dakp_status", "cases", "pubs", "n_exact", "note"],
+      header: {disease: "Disease", disease_prefix: "Space", medic: "MEDIC", dakp: "DAKP", dismech: "dismech", dakp_status: "DAKP status", cases: "FAERS cases", pubs: "dismech PMIDs", n_exact: "n", note: "Hierarchy note"},
       format: {
         disease: (cid) => html`<a href="disease?id=${encodeURIComponent(cid)}">${diseaseLabel.get(cid) ?? cid}</a>`,
       },
-      sort: "bucket",
+      sort: "n_exact",
+      reverse: true,
       rows: 100,
-      width: {note: 280},
+      width,
     })
   : null
 ```

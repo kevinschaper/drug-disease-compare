@@ -1,14 +1,15 @@
 # Disease coverage
 
-Per-disease rollup across both feeds, after MONDO-centric reconciliation. For each
-disease: how many distinct **drugs** MEDIC asserts, how many DAKP asserts (all
-`treats`/`applied_to_treat`), how many they **share** exactly, and the per-disease
-Jaccard. Coverage also rolls up the **MONDO is-a hierarchy** into recognizable
-disease areas you can drill into.
+Per-disease rollup across all three feeds, after MONDO-centric reconciliation. For
+each disease: how many distinct **drugs** each feed asserts, how many are **shared**
+(exact in ≥2 feeds), and the MEDIC↔DAKP per-disease Jaccard. Coverage also rolls up
+the **MONDO is-a hierarchy** into recognizable disease areas you can drill into.
 
 ```js
 const byDisease = await FileAttachment("data/by_disease.json").json();
 const diseaseAreas = await FileAttachment("data/disease_areas.json").json();
+const summary = await FileAttachment("data/summary.json").json();
+const sources = summary.sources;
 const labelOfDisease = new Map(byDisease.map((d) => [d.disease, d.disease_label]));
 ```
 
@@ -18,8 +19,8 @@ const labelOfDisease = new Map(byDisease.map((d) => [d.disease, d.disease_label]
     <span class="big">${byDisease.length.toLocaleString()}</span> across both feeds
   </div>
   <div class="card">
-    <h2>In both feeds</h2>
-    <span class="big">${byDisease.filter((d) => d.medic > 0 && d.dakp > 0).length.toLocaleString()}</span> diseases
+    <h2>In MEDIC & DAKP / in dismech</h2>
+    <span class="big">${byDisease.filter((d) => d.medic > 0 && d.dakp > 0).length.toLocaleString()} / ${byDisease.filter((d) => d.dismech > 0).length.toLocaleString()}</span> diseases
   </div>
   <div class="card">
     <h2>MONDO / non-MONDO</h2>
@@ -57,7 +58,7 @@ Plot.plot({
       y: "label", x: "dakp", fillOpacity: 0, tip: true,
       title: (d) =>
         `${d.label}\nDAKP ${d.dakp.toLocaleString()} pairs\nMEDIC ${d.medic.toLocaleString()} pairs\n` +
-        `shared ${d.shared.toLocaleString()}\nJaccard ${d.jaccard}\n${d.diseases.toLocaleString()} diseases`,
+        `dismech ${d.dismech.toLocaleString()}\nshared(≥2) ${d.shared.toLocaleString()}\nJaccard ${d.jaccard}\n${d.diseases.toLocaleString()} diseases`,
     }),
     Plot.ruleX([0]),
   ],
@@ -92,11 +93,12 @@ Plot.plot({
 
 ```js
 Inputs.table(diseaseAreas, {
-  columns: ["label", "diseases", "medic", "dakp", "shared", "jaccard"],
-  header: {label: "Disease area", diseases: "diseases", medic: "MEDIC", dakp: "DAKP", shared: "shared", jaccard: "Jaccard"},
+  columns: ["label", "diseases", "medic", "dakp", "dismech", "shared", "jaccard"],
+  header: {label: "Disease area", diseases: "diseases", medic: "MEDIC", dakp: "DAKP", dismech: "dismech", shared: "shared (≥2)", jaccard: "Jaccard"},
   sort: "dakp",
   reverse: true,
   rows: 12,
+  width,
 })
 ```
 
@@ -123,37 +125,43 @@ const diseaseSearch = view(Inputs.search(scoped, {placeholder: `search ${scoped.
 
 ```js
 Inputs.table(diseaseSearch, {
-  columns: ["disease", "disease_prefix", "medic", "dakp", "shared", "jaccard", "offlabel_only"],
-  header: {disease: "Disease", disease_prefix: "Space", medic: "MEDIC", dakp: "DAKP", shared: "shared", jaccard: "Jaccard", offlabel_only: "off-label only"},
+  columns: ["disease", "disease_prefix", "medic", "dakp", "dismech", "shared", "jaccard"],
+  header: {disease: "Disease", disease_prefix: "Space", medic: "MEDIC", dakp: "DAKP", dismech: "dismech", shared: "shared (≥2)", jaccard: "MEDIC∩DAKP J"},
   format: {
     disease: (cid) => html`<a href="disease?id=${encodeURIComponent(cid)}">${labelOfDisease.get(cid) ?? cid}</a> <span class="small muted">${cid}</span>`,
   },
   sort: "shared",
   reverse: true,
   rows: 18,
+  width,
 })
 ```
 
-## MEDIC vs DAKP drugs per disease
+## Drugs per disease — pick any two feeds
 
-Each point is a disease: drugs asserted by MEDIC (x) vs by DAKP (y), colored by
-per-disease Jaccard. Diseases far off the diagonal carry very different drug sets
-between the two feeds.
+Each point is a disease: drugs asserted by one feed (x) vs another (y); color is how
+many of that disease's pairs are shared across **≥2 feeds**. Diseases off the diagonal
+carry very different drug sets between the two chosen feeds.
 
 ```js
-const both = byDisease.filter((d) => d.medic > 0 && d.dakp > 0);
+const xSrcD = view(Inputs.select(sources, {label: "x axis", value: sources[0]}));
+const ySrcD = view(Inputs.select(sources, {label: "y axis", value: sources[1] ?? sources[0]}));
+```
+
+```js
+const bothD = byDisease.filter((d) => d[xSrcD] > 0 && d[ySrcD] > 0);
 ```
 
 ```js
 Plot.plot({
   width,
   grid: true,
-  x: {label: "MEDIC drugs per disease", type: "sqrt"},
-  y: {label: "DAKP drugs per disease", type: "sqrt"},
-  color: {label: "Jaccard", scheme: "BuYlRd", domain: [0, 1], legend: true},
+  x: {label: `${xSrcD} drugs per disease`, type: "sqrt"},
+  y: {label: `${ySrcD} drugs per disease`, type: "sqrt"},
+  color: {label: "shared (≥2 feeds)", scheme: "BuYlRd", legend: true},
   marks: [
-    Plot.dot(both, {
-      x: "medic", y: "dakp", r: 3, fill: "jaccard", fillOpacity: 0.7,
+    Plot.dot(bothD, {
+      x: (d) => d[xSrcD], y: (d) => d[ySrcD], r: 3, fill: "shared", fillOpacity: 0.7,
       channels: {disease: "disease_label", shared: "shared"}, tip: true,
     }),
   ],

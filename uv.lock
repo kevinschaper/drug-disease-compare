@@ -54,7 +54,7 @@ wheels = [
 ]
 
 [[package]]
-name = "drug-edge-compare"
+name = "drug-disease-compare"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

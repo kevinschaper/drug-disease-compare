@@ -1,18 +1,60 @@
 {
-  "medic_pairs": 15649,
-  "dakp_pairs": 65064,
+  "sources": [
+    "medic",
+    "dakp",
+    "dismech"
+  ],
+  "source_pairs": {
+    "medic": 15649,
+    "dakp": 65064,
+    "dismech": 1101
+  },
+  "universe": 77857,
+  "agree_2plus": 3830,
+  "agree_all": 127,
+  "combinations": {
+    "dakp": 61291,
+    "medic": 11943,
+    "medic+dakp": 3522,
+    "dismech": 793,
+    "medic+dakp+dismech": 127,
+    "dakp+dismech": 124,
+    "medic+dismech": 57
+  },
+  "pairwise": {
+    "medic+dakp": {
+      "shared": 3649,
+      "jaccard": 0.0474
+    },
+    "medic+dismech": {
+      "shared": 184,
+      "jaccard": 0.0111
+    },
+    "dakp+dismech": {
+      "shared": 251,
+      "jaccard": 0.0038
+    }
+  },
   "dakp_onlabel_pairs": 5030,
   "dakp_offlabel_pairs": 60034,
-  "agree_exact": 3649,
-  "related_hierarchy": 6567,
-  "medic_only": 9436,
-  "dakp_only": 56163,
-  "dakp_only_onlabel": 1678,
-  "dakp_only_offlabel": 54485,
-  "jaccard_all": 0.0474,
-  "jaccard_onlabel": 0.1223,
-  "onlabel_agree": 2254,
-  "medic_share_in_dakp": 0.2332,
-  "dakp_onlabel_share_in_medic": 0.4481,
-  "contraindication_pairs": 3905
+  "medic_vs_dakp_onlabel": {
+    "shared": 2254,
+    "jaccard": 0.1223,
+    "of_dakp_onlabel_in_medic": 0.4481
+  },
+  "contraindication_pairs": 3905,
+  "scope_diseases": {
+    "medic": 3723,
+    "dakp": 1521,
+    "dismech": 1147
+  },
+  "dismech": {
+    "edges": 1101,
+    "supported": 616,
+    "novel": 485,
+    "by_medic": 349,
+    "by_dakp": 555,
+    "scope_diseases": 1147,
+    "gaps_in_scope": 18919
+  }
 }

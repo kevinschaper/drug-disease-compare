@@ -1,6 +1,5 @@
 """End-to-end pipeline test with a seeded Node Normalizer cache (no network)."""
 import json
-from pathlib import Path
 
 import pytest
 
@@ -24,6 +23,7 @@ def rec(tmp_path):
     cache = {
         "CHEBI:1": _clique("CHEBI:1", "DrugOne", type_="biolink:SmallMolecule"),
         "CHEBI:2": _clique("CHEBI:2", "DrugTwo", type_="biolink:SmallMolecule"),
+        "MAXO:1": _clique("MAXO:1", "SupportiveCare", type_="biolink:NamedThing"),  # non-drug
         "MONDO:0000001": _clique("MONDO:0000001", "ParentDisease"),
         "MONDO:0000002": _clique("MONDO:0000002", "ChildDisease"),
         "MONDO:0000003": _clique("MONDO:0000003", "OtherDisease"),
@@ -51,12 +51,19 @@ def rec(tmp_path):
     return Reconciler(nn, mondo), mondo
 
 
-def _edge(source, predicate, subj, obj, status=None, cases=0):
-    rel = {"biolink:treats": "treats", "biolink:applied_to_treat": "treats",
-           "biolink:contraindicated_in": "contraindicated_in"}[predicate]
-    return {"source": source, "relation": rel, "predicate": predicate, "subject": subj,
+_REL = {
+    "biolink:treats": "treats",
+    "biolink:applied_to_treat": "treats",
+    "biolink:treats_or_applied_or_studied_to_treat": "treats",
+    "biolink:contraindicated_in": "contraindicated_in",
+}
+
+
+def _edge(source, predicate, subj, obj, status=None, cases=0, pubs=None):
+    return {"source": source, "relation": _REL[predicate], "predicate": predicate, "subject": subj,
             "object": obj, "original_subject": subj, "original_object": obj,
-            "clinical_approval_status": status, "number_of_cases": cases, "publications": ""}
+            "clinical_approval_status": status, "number_of_cases": cases,
+            "publications": pubs or []}
 
 
 def test_reconcile_disease_axis(rec):
@@ -67,40 +74,50 @@ def test_reconcile_disease_axis(rec):
     kept = reconciler.disease("HP:9999")
     assert kept.canonical == "HP:9999" and kept.kept_hp                        # kept HP
     assert reconciler.drug("CHEBI:1").canonical == "CHEBI:1"
+    assert reconciler.is_drug("CHEBI:1") and not reconciler.is_drug("MAXO:1")  # drug filter
 
 
-def test_status_precedence_and_buckets(rec):
+def test_three_source_membership(rec):
     reconciler, mondo = rec
     edges = [
         _edge("medic", "biolink:treats", "CHEBI:1", "MONDO:0000001"),
         _edge("medic", "biolink:treats", "CHEBI:1", "HP:0001250"),   # -> MONDO:0000003
         _edge("medic", "biolink:treats", "CHEBI:2", "DOID:5"),       # -> MONDO:0000001
         _edge("medic", "biolink:treats", "CHEBI:1", "HP:9999"),      # kept HP
-        # approved beats the off-label edge on the same pair
         _edge("dakp", "biolink:applied_to_treat", "CHEBI:1", "MONDO:0000001", "off_label_use", 2),
         _edge("dakp", "biolink:treats", "CHEBI:1", "MONDO:0000001", "approved_for_condition", 9),
-        # child of MONDO:0000001 -> recovered as hierarchy-related
         _edge("dakp", "biolink:applied_to_treat", "CHEBI:1", "MONDO:0000002", "off_label_use", 3),
         _edge("dakp", "biolink:treats", "CHEBI:1", "HP:9999", "approved_for_condition", 1),
         _edge("dakp", "biolink:contraindicated_in", "CHEBI:2", "MONDO:0000003", None, 5),
+        # dismech: CHEBI:1->M1 (joins all three); CHEBI:2->M1 (medic+dismech); MAXO filtered out
+        _edge("dismech", "biolink:treats_or_applied_or_studied_to_treat", "CHEBI:1", "MONDO:0000001", pubs=["PMID:1", "PMID:2"]),
+        _edge("dismech", "biolink:treats_or_applied_or_studied_to_treat", "CHEBI:2", "DOID:5"),
+        _edge("dismech", "biolink:treats_or_applied_or_studied_to_treat", "MAXO:1", "MONDO:0000001"),
     ]
-    medic, dakp, contra = compare.build_pairs(edges, reconciler)
-    assert dakp[("CHEBI:1", "MONDO:0000001")]["status"] == "approved_for_condition"
-    assert dakp[("CHEBI:1", "MONDO:0000001")]["cases"] == 11
+    treat, contra = compare.build_pairs(edges, reconciler)
+    assert len(treat["dismech"]) == 2  # MAXO subject dropped by the drug filter
+    assert treat["dakp"][("CHEBI:1", "MONDO:0000001")]["status"] == "approved_for_condition"
+    assert treat["dakp"][("CHEBI:1", "MONDO:0000001")]["cases"] == 11
 
     result = compare.compare(edges, reconciler, mondo)
     s = result["summary"]
-    assert s["agree_exact"] == 2          # (CHEBI:1,MONDO:1) and (CHEBI:1,HP:9999)
-    assert s["related_hierarchy"] == 1    # (CHEBI:1,MONDO:2) recovered against MEDIC's MONDO:1
-    assert s["medic_only"] == 2           # (CHEBI:1,MONDO:3) and (CHEBI:2,MONDO:1)
-    assert s["dakp_only"] == 0
+    assert s["sources"] == ["medic", "dakp", "dismech"]
+    assert s["source_pairs"] == {"medic": 4, "dakp": 3, "dismech": 2}
+    assert s["universe"] == 5
+    assert s["agree_all"] == 1          # only (CHEBI:1, MONDO:1) is exact in all three
+    assert s["agree_2plus"] == 3        # + (CHEBI:2,M1) medic+dismech, (CHEBI:1,HP9999) medic+dakp
+    assert s["pairwise"]["medic+dakp"]["shared"] == 2
+    assert s["pairwise"]["medic+dismech"]["shared"] == 2
+    assert s["pairwise"]["dakp+dismech"]["shared"] == 1
     assert s["contraindication_pairs"] == 1
 
     dc = result["deconflation"]["summary"]
-    assert dc.get("hp_to_mondo") == 1
-    assert dc.get("kept_hp") == 1
-    assert dc.get("lifted_to_mondo") == 1
+    assert dc.get("hp_to_mondo") == 1 and dc.get("kept_hp") == 1
 
-    rel = result["related"][0]
-    assert rel["medic_disease"] == "MONDO:0000001" and rel["dakp_disease"] == "MONDO:0000002"
-    assert rel["relation"] == "more_general"   # MEDIC's disease is the parent
+    pairs = {(p["drug"], p["disease"]): p for p in result["pairs"]}
+    # (CHEBI:1, MONDO:2) is DAKP-exact, MEDIC/dismech related via the parent MONDO:1
+    rel = pairs[("CHEBI:1", "MONDO:0000002")]
+    assert rel["dakp"] == "exact" and rel["medic"] == "related" and rel["dismech"] == "related"
+    assert rel["n_exact"] == 1 and "medic≈" in rel["note"]
+    # dismech publication count carried through on the all-three pair
+    assert pairs[("CHEBI:1", "MONDO:0000001")]["dismech_pubs"] == 2

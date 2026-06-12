@@ -20,7 +20,8 @@ ARTIFACTS = ROOT / "src" / "data"
 def _load_edges() -> list[dict]:
     medic = load.load_medic(INPUTS / "medic_edges.tsv")
     dakp = load.load_dakp(INPUTS / "dakp_edges.jsonl")
-    return medic + dakp
+    dismech = load.load_dismech(INPUTS / "dismech_edges.jsonl")
+    return medic + dakp + dismech
 
 
 def _write(name: str, obj) -> None:
@@ -75,13 +76,18 @@ def build() -> None:
     rec = Reconciler(nn, mondo, node_labels)
 
     click.echo("comparing...")
-    result = compare.compare(edges, rec, mondo)
+    # dismech's curated-disease scope (canonicalized), so its absence is only read
+    # as a signal where it actually curates. These come from *all* dismech edges, so
+    # many aren't in the treats-edge cache — batch-warm them before resolving.
+    dismech_disease_curies = load.load_dismech_diseases(INPUTS / "dismech_edges.jsonl")
+    nn.warm(dismech_disease_curies)
+    dismech_scope = {rec.disease(c).canonical for c in dismech_disease_curies}
+    result = compare.compare(edges, rec, mondo, dismech_scope=dismech_scope)
 
     click.echo("writing artifacts...")
-    # One per-pair Parquet covers agree/related/medic_only/dakp_onlabel_only as a
-    # `bucket` column; the Disagreements page slices it by bucket and the detail
-    # pages slice it by entity, all via DuckDB-WASM. The small coverage rollups and
-    # reports stay JSON (loaded whole for the browse UIs).
+    # One per-pair Parquet holds the whole pair universe with a per-source membership
+    # status (exact/related/""); the site slices it by source-combination or entity
+    # via DuckDB-WASM. Small coverage rollups and reports stay JSON.
     _write_parquet("pairs.parquet", result["pairs"])
     _write("summary.json", result["summary"])
     _write("dakp_offlabel_top_drugs.json", result["dakp_offlabel_only_top_drugs"])
@@ -93,11 +99,11 @@ def build() -> None:
 
     s = result["summary"]
     click.echo(
-        f"\npairs: {s['agree_exact']} agree + {s['related_hierarchy']} hierarchy-related | "
-        f"{s['medic_only']} MEDIC-only | {s['dakp_only']} DAKP-only "
-        f"({s['dakp_only_onlabel']} on-label, {s['dakp_only_offlabel']} off-label)\n"
-        f"overlap: all-treats Jaccard {s['jaccard_all']} | "
-        f"on-label-only Jaccard {s['jaccard_onlabel']}\n"
+        f"\nsources: {', '.join(f'{k}={v}' for k, v in s['source_pairs'].items())}\n"
+        f"universe: {s['universe']} pairs | agree(>=2): {s['agree_2plus']} | all: {s['agree_all']}\n"
+        f"combinations: {s['combinations']}\n"
+        f"pairwise: {s['pairwise']}\n"
+        f"dismech: {s.get('dismech')}\n"
         f"de-conflation: {result['deconflation']['summary'].get('hp_to_mondo', 0)} HP->MONDO, "
         f"{result['deconflation']['summary'].get('kept_hp', 0)} kept HP"
     )

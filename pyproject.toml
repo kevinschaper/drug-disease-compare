@@ -1,7 +1,7 @@
 [project]
-name = "drug-edge-compare"
+name = "drug-disease-compare"
 version = "0.1.0"
-description = "Hierarchy-aware comparison of MEDIC vs Drug Approvals KP drug->disease edges, reconciled MONDO-centrically via SRI Node Normalizer cliques"
+description = "Hierarchy- and scope-aware comparison of LLM-mined drug->disease edges across sources (MEDIC, Drug Approvals KP, dismech), reconciled MONDO-centrically via SRI Node Normalizer cliques"
 requires-python = ">=3.11"
 dependencies = [
     "pandas>=2.0",
@@ -15,7 +15,7 @@ dependencies = [
 dev = ["pytest>=8.0", "ruff>=0.6"]
 
 [project.scripts]
-drug-edge-compare = "drug_edge_compare.cli:cli"
+drug-disease-compare = "drug_edge_compare.cli:cli"
 
 [build-system]
 requires = ["hatchling"]

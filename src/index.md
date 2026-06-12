@@ -1,110 +1,127 @@
 # Overview
 
-MEDIC and the Drug Approvals KP (DAKP) are **two independently-built, LLM-assisted
-resources** that mine drug→disease edges. MEDIC reads regulatory drug labels
-(DailyMed plus EU/Japan approvals) and extracts approved **indications**. DAKP draws
-on FAERS adverse-event reports and DailyMed and records how drugs are **applied**,
-including off-label use. Because their source material overlaps, we expect their
-**indication** edges to converge — and where they diverge, the difference is a lead
-worth triaging: a gap in one resource, or an extraction error.
+Three independently-built, LLM-assisted resources mine drug→disease edges:
+**MEDIC** (approved indications from regulatory labels), the **Drug Approvals KP**
+(DAKP — FAERS + DailyMed, including off-label use), and **dismech** (mechanism-driven,
+curated; only its CHEMBL/CHEBI drug→disease edges are used — its MAXO/NCIT medical
+actions are filtered out). Where their indication edges *overlap* we gain confidence;
+where they *diverge* we get a lead to triage.
 
-Both feeds are compared **as peers** in MONDO-centric space. Every drug and disease
-CURIE is re-resolved through the SRI Node Normalizer so the two land in the same
-identifier space; the disease axis prefers the MONDO member of each normalizer
-clique (keeping HP only when no MONDO exists). Matching is **hierarchy-aware** —
-agreement is credited when the two annotate the same disease one MONDO is-a hop
-apart. One caveat dominates the reading of the numbers: **DAKP includes off-label
-use and MEDIC does not**, so DAKP's off-label edges are *expected* to be
-MEDIC-absent and are not errors. The fair comparison is MEDIC vs DAKP **on-label**.
+All feeds are compared **as peers** in MONDO-centric space: every drug/disease CURIE
+is re-resolved through the SRI Node Normalizer (disease axis prefers the MONDO member
+of each clique), and matching is **hierarchy-aware** — a pair counts as *related* when
+a source has the same drug on a disease one–two MONDO is-a hops away. One caveat
+governs the reading: **DAKP includes off-label use; MEDIC and dismech are approved
+indications only**, so DAKP's off-label edges are expected to be absent from the
+others, not errors.
 
 ```js
 const summary = await FileAttachment("data/summary.json").json();
 const fmt = (n) => n.toLocaleString();
+const sources = summary.sources;
 ```
 
 <div class="grid grid-cols-4">
   <div class="card">
-    <h2>Pairs in agreement</h2>
-    <span class="big">${fmt(summary.agree_exact)}</span>
-    exact + ${fmt(summary.related_hierarchy)} via MONDO hierarchy
+    <h2>Pair universe</h2>
+    <span class="big">${fmt(summary.universe)}</span>
+    distinct (drug, disease) pairs across all feeds
   </div>
   <div class="card">
-    <h2>Overlap, on-label</h2>
-    <span class="big">${summary.jaccard_onlabel.toFixed(2)}</span>
-    Jaccard (all-treats ${summary.jaccard_all.toFixed(2)})
+    <h2>Agree (≥2 sources)</h2>
+    <span class="big">${fmt(summary.agree_2plus)}</span>
+    exact in two or more feeds
   </div>
   <div class="card">
-    <h2>of MEDIC, in DAKP</h2>
-    <span class="big">${(summary.medic_share_in_dakp * 100).toFixed(0)}%</span>
-    of MEDIC indications also appear in DAKP
+    <h2>Agree (all three)</h2>
+    <span class="big">${fmt(summary.agree_all)}</span>
+    exact in MEDIC, DAKP and dismech
   </div>
   <div class="card">
-    <h2>of DAKP on-label, in MEDIC</h2>
-    <span class="big">${(summary.dakp_onlabel_share_in_medic * 100).toFixed(0)}%</span>
-    of DAKP's approved-for-condition edges are in MEDIC
+    <h2>Per source</h2>
+    <span class="big">${sources.map((s) => fmt(summary.source_pairs[s])).join(" · ")}</span>
+    <div class="small muted">${sources.join(" · ")} pairs</div>
   </div>
 </div>
 
-## Why on-label is the fair comparison
+## Where the feeds agree
 
-Exact-ID matching across *all* DAKP edges understates agreement badly, because DAKP
-is dominated by off-label use that MEDIC — being label-indications only — could
-never contain. Restricting DAKP to `approved_for_condition` is the apples-to-apples
-view, and the overlap roughly doubles.
+Every (drug, disease) pair by the exact **combination of sources** that assert it.
+DAKP-only dominates (it's mostly off-label use the others don't cover); the
+agreement cells — anything spanning two or three feeds — are the confident core.
 
 ```js
-const overlapRows = [
-  {scope: "all DAKP treats", value: summary.jaccard_all},
-  {scope: "DAKP on-label only", value: summary.jaccard_onlabel},
-];
+const comboRows = Object.entries(summary.combinations)
+  .map(([combo, n]) => ({combo, n, multi: combo.includes("+")}))
+  .sort((a, b) => b.n - a.n);
 ```
 
 ```js
 Plot.plot({
   width,
-  marginLeft: 140,
-  x: {label: "overlap (Jaccard)", domain: [0, Math.max(0.2, summary.jaccard_onlabel * 1.3)], grid: true},
-  y: {label: null},
-  marks: [
-    Plot.barX(overlapRows, {y: "scope", x: "value", fill: "#4269d0"}),
-    Plot.text(overlapRows, {y: "scope", x: "value", text: (d) => d.value.toFixed(3), dx: 18}),
-    Plot.ruleX([0]),
-  ],
-})
-```
-
-## Where every drug→disease pair lands
-
-The union of all `treats`/`applied_to_treat` pairs across both feeds, bucketed.
-**Off-label DAKP-only** is the giant expected-divergence block; the actionable
-disagreements are the much smaller **MEDIC-only** and **DAKP on-label-only** sets.
-
-```js
-const disposition = [
-  {bucket: "agree (exact)", n: summary.agree_exact, kind: "agree"},
-  {bucket: "related (hierarchy)", n: summary.related_hierarchy, kind: "agree"},
-  {bucket: "MEDIC-only", n: summary.medic_only, kind: "disagree"},
-  {bucket: "DAKP-only, on-label", n: summary.dakp_only_onlabel, kind: "disagree"},
-  {bucket: "DAKP-only, off-label", n: summary.dakp_only_offlabel, kind: "expected"},
-];
-```
-
-```js
-Plot.plot({
-  width,
-  marginLeft: 160,
+  marginLeft: 150,
   x: {label: "pairs (log scale)", type: "log", grid: true},
-  y: {label: null, domain: disposition.map((d) => d.bucket)},
-  color: {domain: ["agree", "disagree", "expected"], range: ["#4269d0", "#e15759", "#bab0ac"], legend: true},
+  y: {label: null, domain: comboRows.map((d) => d.combo)},
+  color: {domain: [true, false], range: ["#4269d0", "#bab0ac"], legend: true, tickFormat: (d) => d ? "≥2 sources (agree)" : "single source"},
   marks: [
-    Plot.barX(disposition, {y: "bucket", x: "n", fill: "kind"}),
-    Plot.text(disposition, {y: "bucket", x: "n", text: (d) => d.n.toLocaleString(), dx: 22}),
+    Plot.barX(comboRows, {y: "combo", x: "n", fill: "multi", tip: true,
+      title: (d) => `${d.combo}\n${d.n.toLocaleString()} pairs`}),
+    Plot.text(comboRows, {y: "combo", x: "n", text: (d) => d.n.toLocaleString(), dx: 18, fontSize: 10}),
     Plot.ruleX([1]),
   ],
 })
 ```
 
-The disagreements are where to look for errors: see [disagreements](./diff) for the
-MEDIC-only and DAKP-on-label-only pairs, [drug coverage](./drugs) for a per-drug
-rollup, [de-conflation](./deconflation) for the MONDO/HP normalization audit, and
-[methods](./methods) for exactly what is and isn't compared.
+Comparison is **scope-aware**: a feed's *absence* only counts where it actually
+covers the disease. This matters most for **dismech**, which is disease-centric and
+curates only ~${summary.scope_diseases.dismech.toLocaleString()} diseases so far — so
+its non-overlap is mostly "not curated yet," not disagreement. Read it on its own
+terms on the [dismech lens](./dismech): of its ${summary.dismech.edges.toLocaleString()}
+drug→disease edges, ${(summary.dismech.supported / summary.dismech.edges * 100).toFixed(0)}%
+are corroborated by MEDIC/DAKP and ${summary.dismech.novel.toLocaleString()} are novel.
+
+## Pairwise overlap
+
+Exact-pair agreement between each pair of feeds (Jaccard, and the raw shared count).
+MEDIC↔DAKP is the mature comparison; dismech is small and curated, so it overlaps
+less in absolute terms but is high-provenance (every edge carries literature support).
+
+```js
+const pw = Object.entries(summary.pairwise).map(([k, v]) => ({pair: k, shared: v.shared, jaccard: v.jaccard}));
+```
+
+```js
+Inputs.table(pw, {
+  columns: ["pair", "shared", "jaccard"],
+  header: {pair: "Feed pair", shared: "shared pairs", jaccard: "Jaccard"},
+  sort: "shared",
+  reverse: true,
+})
+```
+
+## The fair MEDIC vs DAKP comparison
+
+DAKP is dominated by off-label use, which MEDIC (label-indications only) can't
+contain. Restricting DAKP to `approved_for_condition` is the apples-to-apples view.
+
+<div class="grid grid-cols-3">
+  <div class="card">
+    <h2>DAKP on-label pairs</h2>
+    <span class="big">${fmt(summary.dakp_onlabel_pairs)}</span>
+    of ${fmt(summary.source_pairs.dakp)} DAKP pairs (rest off-label)
+  </div>
+  <div class="card">
+    <h2>MEDIC ∩ DAKP on-label</h2>
+    <span class="big">${fmt(summary.medic_vs_dakp_onlabel.shared)}</span>
+    Jaccard ${summary.medic_vs_dakp_onlabel.jaccard.toFixed(3)}
+  </div>
+  <div class="card">
+    <h2>of DAKP on-label, in MEDIC</h2>
+    <span class="big">${(summary.medic_vs_dakp_onlabel.of_dakp_onlabel_in_medic * 100).toFixed(0)}%</span>
+    of approved-for-condition pairs are in MEDIC
+  </div>
+</div>
+
+Dig in: [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
+rollups across all three feeds, [disagreements](./diff) for the triage queue,
+[de-conflation](./deconflation) for the MONDO/HP audit, and [methods](./methods).

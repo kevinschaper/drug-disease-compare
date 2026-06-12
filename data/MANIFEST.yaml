@@ -31,6 +31,19 @@ inputs:
     biolink_version: "4.3.6"
     sha256: a8e351668f58b188bddf9728d60db40fcc12002881e4f04d5dccb8276b08164c
 
+  dismech_edges:
+    description: >-
+      Monarch dismech KGX edges (mechanism-driven, curated, LLM-extracted with
+      human validation). Of ~38k edges, the 7,424 treatment->disease edges
+      (predicate biolink:treats_or_applied_or_studied_to_treat) span MAXO medical
+      actions, NCIT, and CHEBI; only the CHEBI drug subset (~1,173 edges, 447
+      drugs) is comparable to MEDIC/DAKP and is kept via the reconciler's drug
+      filter. Edges carry real per-edge publications + supporting_text.
+    url: https://github.com/monarch-initiative/dismech/releases/download/v0.1.30/dismech_edges.jsonl
+    filename: dismech_edges.jsonl
+    release: v0.1.30
+    sha256: 6124e06d394697915f4afc5dbbcac864fa8cff8627d1d69a0af3d65be261ce7e
+
   mondo_graph:
     description: >-
       MONDO is-a graph for disease-axis closure, taken from the release KGX

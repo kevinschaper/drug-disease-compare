@@ -17,6 +17,19 @@ def prefix(curie: str) -> str:
     return curie.split(":", 1)[0]
 
 
+# biolink types that mark a node as a drug/chemical (vs a procedure, gene, disease…)
+DRUG_TYPES = {
+    "biolink:ChemicalEntity", "biolink:SmallMolecule", "biolink:Drug",
+    "biolink:MolecularMixture", "biolink:ChemicalMixture", "biolink:MolecularEntity",
+    "biolink:ComplexMolecularMixture", "biolink:NucleicAcidEntity", "biolink:Polypeptide",
+}
+# prefixes we treat as drug-like when the Node Normalizer can't resolve the CURIE
+DRUG_PREFIXES = {
+    "CHEBI", "DRUGBANK", "RXCUI", "UNII", "PUBCHEM.COMPOUND",
+    "CHEMBL.COMPOUND", "KEGG.COMPOUND", "DrugCentral",
+}
+
+
 @dataclass
 class DrugResolution:
     original: str
@@ -50,6 +63,18 @@ class Reconciler:
             if lbl and lbl != curie:
                 return lbl
         return self.node_labels.get(curie) or clique_label or curie
+
+    def is_drug(self, curie: str) -> bool:
+        """True if the CURIE normalizes to a drug/chemical (not a procedure, etc.).
+
+        Used to keep only the drug subset of feeds whose treatment edges mix drugs
+        with non-drug modalities (e.g. dismech's MAXO medical actions, NCIT
+        procedures). MEDIC/DAKP subjects are all drugs, so this passes them through.
+        """
+        c = self.nn.clique(curie)
+        if c.resolved and c.types:
+            return any(t in DRUG_TYPES for t in c.types)
+        return prefix(curie) in DRUG_PREFIXES
 
     def drug(self, curie: str) -> DrugResolution:
         if curie not in self._drug:

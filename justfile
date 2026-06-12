@@ -1,4 +1,4 @@
-# drug-edge-comparison tasks
+# drug-disease-compare tasks
 
 # List recipes
 default:
@@ -19,6 +19,9 @@ fetch:
     tar --use-compress-program=unzstd -xf dakp.tar.zst
     mv edges.jsonl dakp_edges.jsonl
     mv nodes.jsonl dakp_nodes.jsonl
+    # dismech KGX edges (only its CHEBI drug->disease subset is used downstream)
+    curl -sL -o dismech_edges.jsonl \
+      "https://github.com/monarch-initiative/dismech/releases/download/v0.1.30/dismech_edges.jsonl"
     # MONDO is-a graph for disease-axis closure (release KGX, version-matched to nodenorm cliques)
     curl -sL -o mondo_edges.tsv \
       "https://github.com/monarch-initiative/mondo/releases/latest/download/mondo_edges.tsv"

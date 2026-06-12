@@ -22,6 +22,8 @@ from pathlib import Path
 RELATION = {
     "biolink:treats": "treats",
     "biolink:applied_to_treat": "treats",
+    # dismech ships a single union predicate that already subsumes treats/applied
+    "biolink:treats_or_applied_or_studied_to_treat": "treats",
     "biolink:contraindicated_in": "contraindicated_in",
 }
 
@@ -80,6 +82,56 @@ def load_dakp(edges_path: str | Path) -> list[dict]:
                 }
             )
     return out
+
+
+def load_dismech(edges_path: str | Path) -> list[dict]:
+    """dismech KGX edges.jsonl -> RawEdge dicts (source='dismech', treats only).
+
+    dismech's treatment subjects mix drugs (CHEBI) with non-drug modalities (MAXO
+    medical actions, NCIT procedures); the drug filter is applied downstream via
+    the reconciler. Edges carry real per-edge publications + supporting_text.
+    """
+    out: list[dict] = []
+    with open(edges_path) as f:
+        for line in f:
+            e = json.loads(line)
+            rel = _relation(e["predicate"])
+            if rel != "treats":
+                continue
+            out.append(
+                {
+                    "source": "dismech",
+                    "relation": rel,
+                    "predicate": e["predicate"],
+                    "subject": e["subject"],
+                    "object": e["object"],
+                    "original_subject": e["subject"],
+                    "original_object": e["object"],
+                    "clinical_approval_status": None,
+                    "number_of_cases": None,
+                    "publications": e.get("publications") or [],
+                }
+            )
+    return out
+
+
+def load_dismech_diseases(edges_path: str | Path) -> set[str]:
+    """Every MONDO disease dismech mentions across *any* edge — its curated scope.
+
+    dismech is disease-centric: a disease it hasn't curated yet has no edges, so a
+    missing drug→disease pair there means "not curated", not "disagrees". This set
+    (canonicalized downstream) bounds where dismech's *absence* is a real signal.
+    Restricted to MONDO so HP phenotypes (objects of has_phenotype edges) aren't
+    miscounted as curated diseases.
+    """
+    diseases: set[str] = set()
+    with open(edges_path) as f:
+        for line in f:
+            e = json.loads(line)
+            for end in (e.get("subject", ""), e.get("object", "")):
+                if end.startswith("MONDO:"):
+                    diseases.add(end)
+    return diseases
 
 
 def load_dakp_node_labels(nodes_path: str | Path) -> dict[str, str]:

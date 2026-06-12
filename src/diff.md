@@ -5,29 +5,32 @@ sql:
 
 # Disagreements
 
-The drug→disease pairs where the two feeds part ways — the triage queue for
-potential errors. Each row is one *(drug, disease)* pair in canonical MONDO-centric
-space, after hierarchy-aware matching has already absorbed same-drug pairs that
-differ only by one MONDO is-a hop (those live under [agreement](./#where-every-drug-disease-pair-lands)).
+The drug→disease pairs where a feed stands alone — the triage queue for potential
+errors. Each row is one *(drug, disease)* pair in canonical MONDO-centric space.
+"Only" here means **no other feed asserts it, even as a MONDO is-a neighbor** —
+hierarchy-related and multi-source pairs are confirmed elsewhere, not disagreements.
 
-* **MEDIC-only** — MEDIC asserts an indication DAKP has no record of. Either DAKP
-  hasn't surfaced it, or MEDIC over-extracted from a label.
-* **DAKP on-label-only** — DAKP records an `approved_for_condition` use that MEDIC
-  missed. Either MEDIC under-extracted, or DAKP's approval status is wrong.
+* **MEDIC-only** — MEDIC asserts an indication neither DAKP nor dismech has, **and
+  DAKP covers that disease** (so its absence is a real gap, not uncurated territory).
+* **DAKP on-label-only** — DAKP records an `approved_for_condition` use no other feed
+  has, where MEDIC covers the disease. Either they under-extracted, or DAKP is wrong.
 
-Off-label DAKP-only pairs are **excluded here** — MEDIC is label-indications only,
-so their absence from MEDIC is expected, not a disagreement. They are summarized by
-drug at the bottom.
+This is **scope-aware**: a pair is only "only" where the other broad feed actually
+covers the disease. DAKP off-label pairs are expected to be feed-unique (MEDIC/dismech
+are approved indications only), so they're summarized by drug at the bottom. dismech's
+unique edges have their own [dismech lens](./dismech) (it's too narrow to read here).
 
 ```js
-// DuckDB-WASM slices the per-pair Parquet by bucket.
+// DuckDB-WASM slices the per-pair Parquet by source membership.
 const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.map((f) => [f.name, r[f.name]])));
 const medicOnly = toRows(await sql`
   SELECT drug, drug_label, disease, disease_label, disease_prefix
-  FROM pairs WHERE bucket = 'medic_only' ORDER BY drug_label, disease_label`);
+  FROM pairs WHERE medic = 'exact' AND dakp = '' AND dismech = '' AND dakp_scope
+  ORDER BY drug_label, disease_label`);
 const dakpOnly = toRows(await sql`
-  SELECT drug, drug_label, disease, disease_label, disease_prefix, CAST(cases AS INTEGER) AS cases
-  FROM pairs WHERE bucket = 'dakp_onlabel_only' ORDER BY cases DESC`);
+  SELECT drug, drug_label, disease, disease_label, disease_prefix, CAST(dakp_cases AS INTEGER) AS cases
+  FROM pairs WHERE dakp = 'exact' AND dakp_status = 'approved_for_condition'
+    AND medic = '' AND dismech = '' AND medic_scope ORDER BY dakp_cases DESC`);
 const offlabel = await FileAttachment("data/dakp_offlabel_top_drugs.json").json();
 const summary = await FileAttachment("data/summary.json").json();
 const uniq = (rows, k) => new Set(rows.map((r) => r[k])).size;
@@ -51,7 +54,7 @@ const oLabel = new Map(offlabel.map((r) => [r.drug, r.drug_label]));
   </div>
 </div>
 
-## MEDIC-only — MEDIC asserts, DAKP doesn't
+## MEDIC-only — MEDIC asserts, no other feed does
 
 ```js
 const mSearch = view(Inputs.search(medicOnly, {placeholder: "search by drug or disease…"}));
@@ -67,10 +70,11 @@ Inputs.table(mSearch, {
   },
   sort: "drug",
   rows: 18,
+  width,
 })
 ```
 
-## DAKP on-label-only — DAKP approved-for-condition, MEDIC doesn't have it
+## DAKP on-label-only — DAKP approved-for-condition, no other feed has it
 
 Ranked by `number_of_cases` (FAERS support), highest first.
 
@@ -89,13 +93,14 @@ Inputs.table(dSearch, {
   sort: "cases",
   reverse: true,
   rows: 18,
+  width,
 })
 ```
 
 ## DAKP off-label-only — expected divergence, by drug
 
-These are not disagreements; shown for context. Top 200 drugs by off-label pair
-count (the full off-label-only set is ${summary.dakp_only_offlabel.toLocaleString()} pairs).
+These are not disagreements; shown for context. Top 200 drugs by off-label-only pair
+count (DAKP has ${summary.dakp_offlabel_pairs.toLocaleString()} off-label pairs overall).
 
 ```js
 const oSearch = view(Inputs.search(offlabel, {placeholder: "search by drug…"}));
@@ -111,5 +116,6 @@ Inputs.table(oSearch, {
   sort: "n",
   reverse: true,
   rows: 12,
+  width,
 })
 ```
