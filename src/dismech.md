@@ -18,8 +18,8 @@ exact pair **or** the same drug a MONDO is-a hop away.
 const summary = await FileAttachment("data/summary.json").json();
 const d = summary.dismech;
 const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.map((f) => [f.name, r[f.name]])));
-const backed = (s) => `${s} IN ('exact','related')`;
-const unbacked = (s) => `${s} NOT IN ('exact','related')`;
+// NB: `sql` interpolations are bound *parameters*, not raw SQL — the membership
+// conditions below are written inline as literal SQL, not interpolated.
 ```
 
 <div class="grid grid-cols-4">
@@ -52,10 +52,10 @@ Each dismech drug→disease edge by which broad feed backs it (exact or is-a-rel
 ```js
 const sup = toRows(await sql`
   SELECT
-    CAST(sum(CASE WHEN ${backed("medic")} AND ${backed("dakp")} THEN 1 ELSE 0 END) AS INTEGER) AS both,
-    CAST(sum(CASE WHEN ${backed("medic")} AND ${unbacked("dakp")} THEN 1 ELSE 0 END) AS INTEGER) AS medic_only,
-    CAST(sum(CASE WHEN ${unbacked("medic")} AND ${backed("dakp")} THEN 1 ELSE 0 END) AS INTEGER) AS dakp_only,
-    CAST(sum(CASE WHEN ${unbacked("medic")} AND ${unbacked("dakp")} THEN 1 ELSE 0 END) AS INTEGER) AS novel
+    CAST(sum(CASE WHEN medic IN ('exact','related') AND dakp IN ('exact','related') THEN 1 ELSE 0 END) AS INTEGER) AS both,
+    CAST(sum(CASE WHEN medic IN ('exact','related') AND dakp NOT IN ('exact','related') THEN 1 ELSE 0 END) AS INTEGER) AS medic_only,
+    CAST(sum(CASE WHEN medic NOT IN ('exact','related') AND dakp IN ('exact','related') THEN 1 ELSE 0 END) AS INTEGER) AS dakp_only,
+    CAST(sum(CASE WHEN medic NOT IN ('exact','related') AND dakp NOT IN ('exact','related') THEN 1 ELSE 0 END) AS INTEGER) AS novel
   FROM pairs WHERE dismech = 'exact'`)[0];
 const supRows = [
   {support: "MEDIC + DAKP", n: Number(sup.both)},
@@ -90,7 +90,8 @@ extraction errors. Ranked by **dismech PMID support** (more cited = easier to ch
 ```js
 const novel = toRows(await sql`
   SELECT drug, drug_label, disease, disease_label, disease_prefix, CAST(dismech_pubs AS INTEGER) AS pubs
-  FROM pairs WHERE dismech = 'exact' AND ${unbacked("medic")} AND ${unbacked("dakp")}
+  FROM pairs WHERE dismech = 'exact'
+    AND medic NOT IN ('exact','related') AND dakp NOT IN ('exact','related')
   ORDER BY dismech_pubs DESC, drug_label`);
 const nDrug = new Map(novel.map((r) => [r.drug, r.drug_label]));
 const nDis = new Map(novel.map((r) => [r.disease, r.disease_label]));
