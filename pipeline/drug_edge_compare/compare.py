@@ -20,10 +20,15 @@ pair absent from them is expected, not an error.
 """
 from __future__ import annotations
 
+import json
+import re
 from collections import Counter, defaultdict
 
 from .mondo import MondoGraph
 from .reconcile import Reconciler
+
+# supporting_text entries look like "[PMID:41751547] [SUPPORT] <snippet>"
+_PMID_PREFIX = re.compile(r"^\[(PMID:[^\]]+)\]\s*(.*)$", re.DOTALL)
 
 LINEAGE_HOPS = 2
 APPROVED = "approved_for_condition"
@@ -83,7 +88,22 @@ def build_pairs(edges: list[dict], rec: Reconciler):
             row["status"] = _agg_status(row["status"], e["clinical_approval_status"])
             row["cases"] += int(e["number_of_cases"] or 0)
         elif src == "dismech":
-            row["pubs"] = max(row["pubs"], len(e.get("publications") or []))
+            # aggregate evidence across this pair's dismech edges: ordered PMIDs +
+            # each PMID's supporting-text snippet (for numbered PubMed links on the site)
+            ev = row.setdefault("evidence", {})        # pmid -> snippet
+            order = row.setdefault("pub_order", [])     # PMIDs in first-seen order
+            support = {}
+            for st in e.get("supporting_text") or []:
+                m = _PMID_PREFIX.match(st)
+                if m:
+                    support[m.group(1)] = m.group(2).strip()
+            for p in e.get("publications") or []:
+                if p not in ev:
+                    ev[p] = support.get(p, "")
+                    order.append(p)
+                elif support.get(p) and not ev[p]:
+                    ev[p] = support[p]
+            row["pubs"] = len(order)
 
     for row in treat.get("dakp", {}).values():
         row["status"] = row["status"] or "unspecified"
@@ -163,6 +183,9 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         row["dakp_cases"] = dk["cases"] if dk else 0
         dm = treat["dismech"].get(key) if "dismech" in present else None
         row["dismech_pubs"] = dm["pubs"] if dm else 0
+        row["dismech_evidence"] = json.dumps(
+            [{"pmid": p, "text": dm["evidence"].get(p, "")} for p in dm.get("pub_order", [])],
+            ensure_ascii=False) if dm else ""
         row["note"] = "; ".join(notes)
         pairs.append(row)
     pairs.sort(key=lambda r: (-r["n_exact"], r["drug_label"], r["disease_label"]))

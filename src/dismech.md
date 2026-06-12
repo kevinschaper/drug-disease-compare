@@ -89,22 +89,33 @@ extraction errors. Ranked by **dismech PMID support** (more cited = easier to ch
 
 ```js
 const novel = toRows(await sql`
-  SELECT drug, drug_label, disease, disease_label, disease_prefix, CAST(dismech_pubs AS INTEGER) AS pubs
+  SELECT drug, drug_label, disease, disease_label, disease_prefix,
+         CAST(dismech_pubs AS INTEGER) AS pubs, dismech_evidence AS evidence
   FROM pairs WHERE dismech = 'exact'
     AND medic NOT IN ('exact','related') AND dakp NOT IN ('exact','related')
   ORDER BY dismech_pubs DESC, drug_label`);
 const nDrug = new Map(novel.map((r) => [r.drug, r.drug_label]));
 const nDis = new Map(novel.map((r) => [r.disease, r.disease_label]));
+const pubmed = (json) => {
+  let ev = [];
+  try { ev = json ? JSON.parse(json) : []; } catch (e) { ev = []; }
+  if (!ev.length) return "";
+  return html`${ev.map((e, i) => html`<a href="https://pubmed.ncbi.nlm.nih.gov/${e.pmid.replace("PMID:", "")}" target="_blank" rel="noopener" title=${e.text || e.pmid}>${i + 1}</a>${i < ev.length - 1 ? html` ` : ""}`)}`;
+};
 const novelSearch = view(Inputs.search(novel, {placeholder: `search ${novel.length.toLocaleString()} novel pairs…`}));
 ```
 
+Each PMID is a numbered link to PubMed; **hover a number to read dismech's supporting
+text** for that citation.
+
 ```js
 Inputs.table(novelSearch, {
-  columns: ["drug", "disease", "disease_prefix", "pubs"],
-  header: {drug: "Drug", disease: "Disease", disease_prefix: "Space", pubs: "dismech PMIDs"},
+  columns: ["drug", "disease", "disease_prefix", "evidence"],
+  header: {drug: "Drug", disease: "Disease", disease_prefix: "Space", evidence: "dismech PMIDs (→ PubMed)"},
   format: {
     drug: (cid) => html`<a href="drug?id=${encodeURIComponent(cid)}">${nDrug.get(cid) ?? cid}</a> <span class="small muted">${cid}</span>`,
     disease: (cid) => html`<a href="disease?id=${encodeURIComponent(cid)}">${nDis.get(cid) ?? cid}</a> <span class="small muted">${cid}</span>`,
+    evidence: (json) => pubmed(json),
   },
   sort: "pubs",
   reverse: true,

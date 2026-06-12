@@ -110,6 +110,7 @@ def load_dismech(edges_path: str | Path) -> list[dict]:
                     "clinical_approval_status": None,
                     "number_of_cases": None,
                     "publications": e.get("publications") or [],
+                    "supporting_text": e.get("supporting_text") or [],
                 }
             )
     return out
