@@ -7,7 +7,7 @@ curated; only its CHEMBL/CHEBI drug→disease edges are used — its MAXO/NCIT m
 actions are filtered out). Where their indication edges *overlap* we gain confidence;
 where they *diverge* we get a lead to triage.
 
-All feeds are compared **as peers** in MONDO-centric space: every drug/disease CURIE
+All sources are compared **as peers** in MONDO-centric space: every drug/disease CURIE
 is re-resolved through the SRI Node Normalizer (disease axis prefers the MONDO member
 of each clique), and matching is **hierarchy-aware** — a pair counts as *related* when
 a source has the same drug on a disease one–two MONDO is-a hops away. One caveat
@@ -19,36 +19,95 @@ others, not errors.
 const summary = await FileAttachment("data/summary.json").json();
 const fmt = (n) => n.toLocaleString();
 const sources = summary.sources;
+const nSources = (combo) => combo.split("+").length;
+const support = [1, 2, 3].map((k) => ({
+  sources: k === 1 ? "1 source (unique)" : k === 3 ? "all 3 sources" : `${k} sources`,
+  n: Object.entries(summary.combinations).filter(([c]) => nSources(c) === k)
+    .reduce((a, [, n]) => a + n, 0),
+}));
+const universeN = support.reduce((a, s) => a + s.n, 0);
+support.forEach((s, i) => { s.share = s.n / universeN; s.color = ["#bab0ac", "#6a9bd8", "#13315c"][i]; });
 ```
+
+Every drug→disease pair, grouped by **how many sources assert it**. Most are unique to
+one source — overwhelmingly DAKP's off-label use, which MEDIC and dismech (approved
+indications only) don't carry. **Agreement** (≥2 sources) is the smaller,
+higher-confidence core: ${fmt(summary.agree_2plus)} pairs, ${fmt(summary.agree_all)} of
+them in all three.
 
 <div class="grid grid-cols-4">
   <div class="card">
     <h2>Pair universe</h2>
     <span class="big">${fmt(summary.universe)}</span>
-    distinct (drug, disease) pairs across all feeds
+    distinct (drug, disease) pairs
   </div>
   <div class="card">
-    <h2>Agree (≥2 sources)</h2>
-    <span class="big">${fmt(summary.agree_2plus)}</span>
-    exact in two or more feeds
+    <h2>Unique — 1 source</h2>
+    <span class="big">${fmt(support[0].n)}</span>
+    ${(support[0].share * 100).toFixed(0)}% of pairs
   </div>
   <div class="card">
-    <h2>Agree (all three)</h2>
-    <span class="big">${fmt(summary.agree_all)}</span>
-    exact in MEDIC, DAKP and dismech
+    <h2>Backed by 2 sources</h2>
+    <span class="big">${fmt(support[1].n)}</span>
+    ${(support[1].share * 100).toFixed(1)}% of pairs
   </div>
   <div class="card">
-    <h2>Per source</h2>
-    <span class="big">${sources.map((s) => fmt(summary.source_pairs[s])).join(" · ")}</span>
-    <div class="small muted">${sources.join(" · ")} pairs</div>
+    <h2>Backed by all 3</h2>
+    <span class="big">${fmt(support[2].n)}</span>
+    ${(support[2].share * 100).toFixed(1)}% of pairs
   </div>
 </div>
 
-## Where the feeds agree
+<div class="grid grid-cols-4">
+  <div class="card">
+    <h2>Pairs per source</h2>
+    ${html`<div class="src-counts">${sources.map((s) => html`<div class="src-row"><span class="src-name">${s}</span><span class="src-n">${fmt(summary.source_pairs[s])}</span></div>`)}</div>`}
+  </div>
+</div>
 
-Every (drug, disease) pair by the exact **combination of sources** that assert it.
-DAKP-only dominates (it's mostly off-label use the others don't cover); the
-agreement cells — anything spanning two or three feeds — are the confident core.
+<style>
+.src-counts { margin-top: 0.35rem; }
+.src-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  line-height: 1.7;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 8%, transparent);
+}
+.src-row:last-child { border-bottom: none; }
+.src-name { color: var(--theme-foreground-muted, #6b7280); }
+.src-n { font-weight: 600; font-variant-numeric: tabular-nums; }
+</style>
+
+The same split, to scale — a **log axis** so the small agreement bands stay visible
+(single-source pairs outnumber agreement by ~20×):
+
+```js
+Plot.plot({
+  width,
+  height: 150,
+  marginLeft: 120,
+  x: {label: "pairs (log scale)", type: "log", grid: true},
+  y: {label: null, domain: support.map((s) => s.sources)},
+  color: {type: "identity"},
+  marks: [
+    // x1:1 gives the bar a baseline; without it, barX has no valid left edge on a log scale and won't draw
+    Plot.barX(support, {y: "sources", x1: 1, x2: "n", fill: "color", tip: true,
+      title: (d) => `${d.sources}\n${d.n.toLocaleString()} pairs (${(d.share * 100).toFixed(1)}%)`}),
+    Plot.text(support, {y: "sources", x: "n", text: (d) => `${d.n.toLocaleString()} · ${(d.share * 100).toFixed(1)}%`, dx: 34, fontSize: 11}),
+    Plot.ruleX([1]),
+  ],
+})
+```
+
+## Pairs by source combination
+
+The detail behind the headline: each pair grouped by the **exact set** of sources that
+assert it — an [UpSet-style](https://upset.app/) breakdown. So `medic+dakp` means
+pairs MEDIC and DAKP **both** have but dismech does **not**; `medic` means MEDIC-only.
+Blue bars are agreement (≥2 sources). Log scale, because the single-source buckets dwarf
+the rest.
 
 ```js
 const comboRows = Object.entries(summary.combinations)
@@ -64,7 +123,8 @@ Plot.plot({
   y: {label: null, domain: comboRows.map((d) => d.combo)},
   color: {domain: [true, false], range: ["#4269d0", "#bab0ac"], legend: true, tickFormat: (d) => d ? "≥2 sources (agree)" : "single source"},
   marks: [
-    Plot.barX(comboRows, {y: "combo", x: "n", fill: "multi", tip: true,
+    // x1:1 gives the bars a baseline on the log scale (otherwise they don't draw)
+    Plot.barX(comboRows, {y: "combo", x1: 1, x2: "n", fill: "multi", tip: true,
       title: (d) => `${d.combo}\n${d.n.toLocaleString()} pairs`}),
     Plot.text(comboRows, {y: "combo", x: "n", text: (d) => d.n.toLocaleString(), dx: 18, fontSize: 10}),
     Plot.ruleX([1]),
@@ -72,7 +132,7 @@ Plot.plot({
 })
 ```
 
-Comparison is **scope-aware**: a feed's *absence* only counts where it actually
+Comparison is **scope-aware**: a source's *absence* only counts where it actually
 covers the disease. This matters most for **dismech**, which is disease-centric and
 curates only ~${summary.scope_diseases.dismech.toLocaleString()} diseases so far — so
 its non-overlap is mostly "not curated yet," not disagreement. Read it on its own
@@ -82,7 +142,7 @@ are corroborated by MEDIC/DAKP and ${summary.dismech.novel.toLocaleString()} are
 
 ## Pairwise overlap
 
-Exact-pair agreement between each pair of feeds (Jaccard, and the raw shared count).
+Exact-pair agreement between each pair of sources (Jaccard, and the raw shared count).
 MEDIC↔DAKP is the mature comparison; dismech is small and curated, so it overlaps
 less in absolute terms but is high-provenance (every edge carries literature support).
 
@@ -93,7 +153,7 @@ const pw = Object.entries(summary.pairwise).map(([k, v]) => ({pair: k, shared: v
 ```js
 Inputs.table(pw, {
   columns: ["pair", "shared", "jaccard"],
-  header: {pair: "Feed pair", shared: "shared pairs", jaccard: "Jaccard"},
+  header: {pair: "Source pair", shared: "shared pairs", jaccard: "Jaccard"},
   sort: "shared",
   reverse: true,
 })
@@ -123,5 +183,5 @@ contain. Restricting DAKP to `approved_for_condition` is the apples-to-apples vi
 </div>
 
 Dig in: [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
-rollups across all three feeds, [disagreements](./diff) for the triage queue,
+rollups across all three sources, [disagreements](./diff) for the triage queue,
 [de-conflation](./deconflation) for the MONDO/HP audit, and [methods](./methods).

@@ -10,8 +10,8 @@ dismech is **disease-centric and narrow** — it curates ~1,150 diseases so far,
 only some of those have drug→disease edges yet. So its non-overlap can't be read
 like MEDIC↔DAKP: a missing edge on a disease it hasn't curated means *"not curated"*,
 not *"disagrees"*. This page reads dismech on its own terms — **how well do the broad
-feeds corroborate dismech's drug→disease edges, and what's novel to dismech** (worth a
-look: possibly new and good, possibly wrong). "Supported" = the other feed has the
+sources corroborate dismech's drug→disease edges, and what's novel to dismech** (worth a
+look: possibly new and good, possibly wrong). "Supported" = the other source has the
 exact pair **or** the same drug a MONDO is-a hop away.
 
 ```js
@@ -36,7 +36,7 @@ const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.ma
   <div class="card">
     <h2>Novel to dismech</h2>
     <span class="big">${d.novel.toLocaleString()}</span>
-    no other feed has it — worth a look
+    no other source has it — worth a look
   </div>
   <div class="card">
     <h2>Curated diseases</h2>
@@ -47,7 +47,7 @@ const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.ma
 
 ## How dismech's edges are supported
 
-Each dismech drug→disease edge by which broad feed backs it (exact or is-a-related).
+Each dismech drug→disease edge by which broad source backs it (exact or is-a-related).
 
 ```js
 const sup = toRows(await sql`
@@ -110,7 +110,7 @@ Plot.plot({
 
 ## Novel to dismech — worth a look
 
-dismech edges no other feed asserts (not even a MONDO is-a hop away). These are
+dismech edges no other source asserts (not even a MONDO is-a hop away). These are
 dismech's distinctive, mechanism-driven calls — potentially new and correct, or
 extraction errors. Ranked by **dismech PMID support** (more cited = easier to check).
 

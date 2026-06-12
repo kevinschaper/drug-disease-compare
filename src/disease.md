@@ -38,8 +38,8 @@ id
   : html`<div class="card">Open a disease from the <a href="diseases">Disease coverage</a> page.</div>`
 ```
 
-Every drug linked to this disease, with each feed's membership: **exact**,
-**related** (a MONDO is-a hop away — see `note`), or blank. `n` is how many feeds
+Every drug linked to this disease, with each source's membership: **exact**,
+**related** (a MONDO is-a hop away — see `note`), or blank. `n` is how many sources
 agree exactly. Click a drug to cross over to its detail.
 
 ```js

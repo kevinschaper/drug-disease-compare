@@ -38,9 +38,9 @@ id
   : html`<div class="card">Open a drug from the <a href="drugs">Drug coverage</a> page.</div>`
 ```
 
-Every disease this drug is linked to, with each feed's membership: **exact**,
+Every disease this drug is linked to, with each source's membership: **exact**,
 **related** (same drug, a MONDO is-a hop away — see `note`), or blank (absent).
-`n` is how many feeds agree exactly. Click a disease to cross over to its detail.
+`n` is how many sources agree exactly. Click a disease to cross over to its detail.
 
 ```js
 id

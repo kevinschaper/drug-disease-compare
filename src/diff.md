@@ -5,18 +5,18 @@ sql:
 
 # Disagreements
 
-The drug→disease pairs where a feed stands alone — the triage queue for potential
+The drug→disease pairs where a source stands alone — the triage queue for potential
 errors. Each row is one *(drug, disease)* pair in canonical MONDO-centric space.
-"Only" here means **no other feed asserts it, even as a MONDO is-a neighbor** —
+"Only" here means **no other source asserts it, even as a MONDO is-a neighbor** —
 hierarchy-related and multi-source pairs are confirmed elsewhere, not disagreements.
 
 * **MEDIC-only** — MEDIC asserts an indication neither DAKP nor dismech has, **and
   DAKP covers that disease** (so its absence is a real gap, not uncurated territory).
-* **DAKP on-label-only** — DAKP records an `approved_for_condition` use no other feed
+* **DAKP on-label-only** — DAKP records an `approved_for_condition` use no other source
   has, where MEDIC covers the disease. Either they under-extracted, or DAKP is wrong.
 
-This is **scope-aware**: a pair is only "only" where the other broad feed actually
-covers the disease. DAKP off-label pairs are expected to be feed-unique (MEDIC/dismech
+This is **scope-aware**: a pair is only "only" where the other broad source actually
+covers the disease. DAKP off-label pairs are expected to be source-unique (MEDIC/dismech
 are approved indications only), so they're summarized by drug at the bottom. dismech's
 unique edges have their own [dismech lens](./dismech) (it's too narrow to read here).
 
@@ -54,7 +54,7 @@ const oLabel = new Map(offlabel.map((r) => [r.drug, r.drug_label]));
   </div>
 </div>
 
-## MEDIC-only — MEDIC asserts, no other feed does
+## MEDIC-only — MEDIC asserts, no other source does
 
 ```js
 const mSearch = view(Inputs.search(medicOnly, {placeholder: "search by drug or disease…"}));
@@ -74,7 +74,7 @@ Inputs.table(mSearch, {
 })
 ```
 
-## DAKP on-label-only — DAKP approved-for-condition, no other feed has it
+## DAKP on-label-only — DAKP approved-for-condition, no other source has it
 
 Ranked by `number_of_cases` (FAERS support), highest first.
 

@@ -11,21 +11,21 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
 
 ## The comparison
 
-- **Feeds.** MEDIC (`monarch-initiative/medic-ingest`, approved indications from
+- **Sources.** MEDIC (`monarch-initiative/medic-ingest`, approved indications from
   DailyMed + EU/Japan labels), DAKP (`infores:multiomics-drugapprovals`, FAERS +
   DailyMed including off-label use), and dismech (`monarch-initiative/dismech`,
-  curated/mechanism-driven — its CHEBI drug→disease subset). Adding a feed is one
+  curated/mechanism-driven — its CHEBI drug→disease subset). Adding a source is one
   entry in `SOURCE_ORDER` plus a loader.
 - **Reconciliation.** Every drug/disease CURIE is re-resolved through the SRI Node
-  Normalizer so all feeds share one identifier space. The disease axis is
+  Normalizer so all sources share one identifier space. The disease axis is
   **MONDO-centric**: prefer the MONDO member of each clique, keep HP only when no
   MONDO exists — undoing MONDO/HP same-name conflation.
-- **Per-source membership.** Each (drug, disease) pair records, per feed, a status:
+- **Per-source membership.** Each (drug, disease) pair records, per source, a status:
   `exact`, `related` (same drug ≤2 MONDO is-a hops away), or absent. "Agreement" is a
-  pair exact in ≥2 feeds.
-- **Scope-aware.** A feed's *absence* only counts where it covers the disease. dismech
+  pair exact in ≥2 sources.
+- **Scope-aware.** A source's *absence* only counts where it covers the disease. dismech
   is disease-centric (~1,150 curated diseases), so it's read on its own terms — how
-  many of its edges the broad feeds corroborate, and what's novel to it.
+  many of its edges the broad sources corroborate, and what's novel to it.
 
 See [`src/methods.md`](src/methods.md) for the full methodology.
 

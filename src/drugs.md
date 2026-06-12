@@ -1,8 +1,8 @@
 # Drug coverage
 
-Per-drug rollup across all three feeds, after canonicalizing every drug to its Node
+Per-drug rollup across all three sources, after canonicalizing every drug to its Node
 Normalizer clique-preferred CURIE. For each drug: how many distinct diseases each
-feed asserts (exact pairs), how many are **shared** (exact in ≥2 feeds), and the
+source asserts (exact pairs), how many are **shared** (exact in ≥2 sources), and the
 MEDIC↔DAKP per-drug Jaccard. Drugs with high counts but low overlap are good places
 to look for systematic extraction differences.
 
@@ -16,7 +16,7 @@ const labelOfDrug = new Map(byDrug.map((d) => [d.drug, d.drug_label]));
 <div class="grid grid-cols-3">
   <div class="card">
     <h2>Drugs</h2>
-    <span class="big">${byDrug.length.toLocaleString()}</span> across all feeds
+    <span class="big">${byDrug.length.toLocaleString()}</span> across all sources
   </div>
   <div class="card">
     <h2>In MEDIC & DAKP</h2>
@@ -28,11 +28,11 @@ const labelOfDrug = new Map(byDrug.map((d) => [d.drug, d.drug_label]));
   </div>
 </div>
 
-## Disease counts per drug — pick any two feeds
+## Disease counts per drug — pick any two sources
 
-Each point is a drug: diseases asserted by one feed (x) vs another (y); the scatter is
+Each point is a drug: diseases asserted by one source (x) vs another (y); the scatter is
 inherently a pairwise view, so choose which two. Color is how many of that drug's
-pairs are shared across **≥2 feeds**.
+pairs are shared across **≥2 sources**.
 
 ```js
 const xSrc = view(Inputs.select(sources, {label: "x axis", value: sources[0]}));
@@ -49,7 +49,7 @@ Plot.plot({
   grid: true,
   x: {label: `${xSrc} diseases per drug`, type: "sqrt"},
   y: {label: `${ySrc} diseases per drug`, type: "sqrt"},
-  color: {label: "shared (≥2 feeds)", scheme: "BuYlRd", legend: true},
+  color: {label: "shared (≥2 sources)", scheme: "BuYlRd", legend: true},
   marks: [
     Plot.dot(both, {
       x: (d) => d[xSrc], y: (d) => d[ySrc], r: 3, fill: "shared", fillOpacity: 0.7,

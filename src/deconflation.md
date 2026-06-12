@@ -1,7 +1,7 @@
 # De-conflation
 
 The disease axis is reconciled MONDO-centrically. For every disease CURIE in either
-feed we fetch the full SRI Node Normalizer clique and **prefer its MONDO member**;
+source we fetch the full SRI Node Normalizer clique and **prefer its MONDO member**;
 we keep the original term (typically HP) only when the clique contains no MONDO.
 This undoes node-normalizer collisions where a phenotype and a disease of the same
 name share a clique — e.g. `HP:0001250` (Seizure) ↔ `MONDO:0005027` (epilepsy) —
@@ -27,7 +27,7 @@ const total = Object.values(summary).reduce((a, b) => a + b, 0);
   <div class="card">
     <h2>Disease CURIEs resolved</h2>
     <span class="big">${total.toLocaleString()}</span>
-    distinct, across both feeds
+    distinct, across both sources
   </div>
 </div>
 
@@ -48,7 +48,8 @@ Plot.plot({
   x: {label: "disease CURIEs", type: "log", grid: true},
   y: {label: null, domain: outcomeRows.sort((a, b) => b.n - a.n).map((d) => d.outcome)},
   marks: [
-    Plot.barX(outcomeRows, {y: "outcome", x: "n", fill: "#4269d0"}),
+    // x1:1 gives the bars a baseline on the log scale (otherwise they don't draw)
+    Plot.barX(outcomeRows, {y: "outcome", x1: 1, x2: "n", fill: "#4269d0"}),
     Plot.text(outcomeRows, {y: "outcome", x: "n", text: (d) => d.n.toLocaleString(), dx: 20}),
     Plot.ruleX([1]),
   ],

@@ -1,8 +1,8 @@
 # Disease coverage
 
-Per-disease rollup across all three feeds, after MONDO-centric reconciliation. For
-each disease: how many distinct **drugs** each feed asserts, how many are **shared**
-(exact in ≥2 feeds), and the MEDIC↔DAKP per-disease Jaccard. Coverage also rolls up
+Per-disease rollup across all three sources, after MONDO-centric reconciliation. For
+each disease: how many distinct **drugs** each source asserts, how many are **shared**
+(exact in ≥2 sources), and the MEDIC↔DAKP per-disease Jaccard. Coverage also rolls up
 the **MONDO is-a hierarchy** into recognizable disease areas you can drill into.
 
 ```js
@@ -16,7 +16,7 @@ const labelOfDisease = new Map(byDisease.map((d) => [d.disease, d.disease_label]
 <div class="grid grid-cols-3">
   <div class="card">
     <h2>Diseases</h2>
-    <span class="big">${byDisease.length.toLocaleString()}</span> across both feeds
+    <span class="big">${byDisease.length.toLocaleString()}</span> across both sources
   </div>
   <div class="card">
     <h2>In MEDIC & DAKP / in dismech</h2>
@@ -71,7 +71,7 @@ Plot.plot({
   <span style="color:#13315c">■</span> shared
 </div>
 
-Per-area agreement (Jaccard) — areas where the two feeds converge most vs least.
+Per-area agreement (Jaccard) — areas where the two sources converge most vs least.
 
 ```js
 Plot.plot({
@@ -137,11 +137,11 @@ Inputs.table(diseaseSearch, {
 })
 ```
 
-## Drugs per disease — pick any two feeds
+## Drugs per disease — pick any two sources
 
-Each point is a disease: drugs asserted by one feed (x) vs another (y); color is how
-many of that disease's pairs are shared across **≥2 feeds**. Diseases off the diagonal
-carry very different drug sets between the two chosen feeds.
+Each point is a disease: drugs asserted by one source (x) vs another (y); color is how
+many of that disease's pairs are shared across **≥2 sources**. Diseases off the diagonal
+carry very different drug sets between the two chosen sources.
 
 ```js
 const xSrcD = view(Inputs.select(sources, {label: "x axis", value: sources[0]}));
@@ -158,7 +158,7 @@ Plot.plot({
   grid: true,
   x: {label: `${xSrcD} drugs per disease`, type: "sqrt"},
   y: {label: `${ySrcD} drugs per disease`, type: "sqrt"},
-  color: {label: "shared (≥2 feeds)", scheme: "BuYlRd", legend: true},
+  color: {label: "shared (≥2 sources)", scheme: "BuYlRd", legend: true},
   marks: [
     Plot.dot(bothD, {
       x: (d) => d[xSrcD], y: (d) => d[ySrcD], r: 3, fill: "shared", fillOpacity: 0.7,
