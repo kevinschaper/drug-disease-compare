@@ -81,6 +81,33 @@ Plot.plot({
 })
 ```
 
+<style>
+.ev-pmid { font-variant-numeric: tabular-nums; padding: 0 1px; }
+.ev-tip {
+  position: fixed;
+  z-index: 1000;
+  display: none;
+  max-width: 420px;
+  padding: 0.5rem 0.65rem;
+  font-size: 12.5px;
+  line-height: 1.45;
+  background: var(--theme-background-alt, #f4f5f7);
+  color: var(--theme-foreground, #1b1e23);
+  border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-radius: 7px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+}
+.ev-tip.show { display: block; }
+.ev-tip-pmid {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--theme-foreground-muted, #6b7280);
+}
+</style>
+
 ## Novel to dismech — worth a look
 
 dismech edges no other feed asserts (not even a MONDO is-a hop away). These are
@@ -96,11 +123,39 @@ const novel = toRows(await sql`
   ORDER BY dismech_pubs DESC, drug_label`);
 const nDrug = new Map(novel.map((r) => [r.drug, r.drug_label]));
 const nDis = new Map(novel.map((r) => [r.disease, r.disease_label]));
+
+// One shared, theme-styled tooltip positioned with fixed coords on hover, so it
+// escapes the table's scroll-container clipping (a pure-CSS tooltip would be cut off).
+const evTip = (() => {
+  const el = document.createElement("div");
+  el.className = "ev-tip";
+  document.body.appendChild(el);
+  invalidation.then(() => el.remove());
+  return el;
+})();
+
 const pubmed = (json) => {
   let ev = [];
   try { ev = json ? JSON.parse(json) : []; } catch (e) { ev = []; }
   if (!ev.length) return "";
-  return html`${ev.map((e, i) => html`<a href="https://pubmed.ncbi.nlm.nih.gov/${e.pmid.replace("PMID:", "")}" target="_blank" rel="noopener" title=${e.text || e.pmid}>${i + 1}</a>${i < ev.length - 1 ? html` ` : ""}`)}`;
+  const links = ev.map((e, i) => {
+    const a = html`<a class="ev-pmid" href="https://pubmed.ncbi.nlm.nih.gov/${e.pmid.replace("PMID:", "")}" target="_blank" rel="noopener">${i + 1}</a>`;
+    const text = e.text || e.pmid;
+    a.addEventListener("mouseenter", () => {
+      evTip.innerHTML = "";
+      evTip.append(html`<span class="ev-tip-pmid">${e.pmid}</span>`, document.createTextNode(text));
+      evTip.classList.add("show");
+      const r = a.getBoundingClientRect();
+      const w = evTip.getBoundingClientRect().width;
+      const h = evTip.getBoundingClientRect().height;
+      evTip.style.left = Math.max(8, Math.min(r.left, window.innerWidth - w - 8)) + "px";
+      const below = r.bottom + 6;
+      evTip.style.top = (below + h > window.innerHeight - 8 ? r.top - h - 6 : below) + "px";
+    });
+    a.addEventListener("mouseleave", () => evTip.classList.remove("show"));
+    return a;
+  });
+  return html`${links.flatMap((a, i) => (i ? [document.createTextNode(" "), a] : [a]))}`;
 };
 const novelSearch = view(Inputs.search(novel, {placeholder: `search ${novel.length.toLocaleString()} novel pairs…`}));
 ```
