@@ -1,5 +1,6 @@
 """End-to-end pipeline test with a seeded Node Normalizer cache (no network)."""
 import json
+from types import SimpleNamespace
 
 import pytest
 
@@ -121,3 +122,40 @@ def test_three_source_membership(rec):
     assert rel["n_exact"] == 1 and "medic≈" in rel["note"]
     # dismech publication count carried through on the all-three pair
     assert pairs[("CHEBI:1", "MONDO:0000001")]["dismech_pubs"] == 2
+
+
+class _FakeGrouper:
+    """Maps given canonical drugs to a shared moiety group; everything else to self."""
+
+    def __init__(self, mapping):
+        self.mapping = mapping
+
+    def group(self, clique):
+        gid = self.mapping.get(clique.preferred_id, clique.preferred_id)
+        return SimpleNamespace(group_id=gid, group_label=f"{gid}-moiety")
+
+
+def test_moiety_bridge_is_flagged_not_folded(rec):
+    reconciler, mondo = rec
+    # two *different* canonical drugs on the same disease, one per source: no exact agreement
+    edges = [
+        _edge("medic", "biolink:treats", "CHEBI:1", "MONDO:0000003"),
+        _edge("dakp", "biolink:treats", "CHEBI:2", "MONDO:0000003", "approved_for_condition", 1),
+    ]
+    base = compare.compare(edges, reconciler, mondo)
+    assert base["summary"]["agree_2plus"] == 0
+    assert base["summary"]["moiety"]["enabled"] is False
+    assert base["summary"]["moiety"]["new_agreements"] == 0
+
+    # collapse CHEBI:1 and CHEBI:2 to one moiety -> a flagged bridge, but exact agreement
+    # must stay 0 (we never claim the sources asserted the same thing)
+    g = _FakeGrouper({"CHEBI:1": "MOI:X", "CHEBI:2": "MOI:X"})
+    res = compare.compare(edges, reconciler, mondo, drug_grouper=g)
+    s = res["summary"]
+    assert s["agree_2plus"] == 0                     # UNCHANGED — not folded in
+    assert s["moiety"] == {"enabled": True, "new_agreements": 1,
+                           "agree_with_moiety": 1, "merged_groups": 1}
+    pairs = {(p["drug"], p["disease"]): p for p in res["pairs"]}
+    p1 = pairs[("CHEBI:1", "MONDO:0000003")]
+    assert p1["drug_group"] == "MOI:X" and p1["n_group"] == 2 and p1["n_exact"] == 1
+    assert "dakp via moiety: DrugTwo" in p1["drug_note"]

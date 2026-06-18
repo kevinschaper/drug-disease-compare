@@ -48,6 +48,12 @@
     "dakp": 1521,
     "dismech": 1147
   },
+  "moiety": {
+    "enabled": true,
+    "new_agreements": 295,
+    "agree_with_moiety": 4013,
+    "merged_groups": 119
+  },
   "dismech": {
     "edges": 1101,
     "supported": 616,

@@ -15,3 +15,9 @@ __pycache__/
 
 # Node Normalizer response cache (local build aid; rebuild with `just normalize`)
 /data/nodenorm_cache.json
+
+# Drug-group lookup cache (GSRS/RxNav/OLS; rebuilt on demand during `build`)
+/data/drug_groups_cache.json
+
+# Experiment run outputs (regenerable via experiments/drug_collapse.py)
+/experiments/out/
