@@ -20,7 +20,7 @@ ARTIFACTS = ROOT / "src" / "data"
 
 
 def _load_edges() -> list[dict]:
-    medic = load.load_medic(INPUTS / "medic_edges.tsv")
+    medic = load.load_medic(INPUTS / "medic_edges.jsonl")
     dakp = load.load_dakp(INPUTS / "dakp_edges.jsonl")
     dismech = load.load_dismech(INPUTS / "dismech_edges.jsonl")
     return medic + dakp + dismech

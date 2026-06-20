@@ -10,9 +10,9 @@ fetch:
     set -euo pipefail
     mkdir -p data/inputs
     cd data/inputs
-    # MEDIC indication edges (Monarch medic-ingest release)
-    curl -sL -o medic_edges.tsv \
-      "https://github.com/monarch-initiative/medic-ingest/releases/download/2026-06-01/medic_indication_edges.tsv"
+    # MEDIC indication edges (Monarch medic-ingest release; KGX JSONL, one edge per pair)
+    curl -sL -o medic_edges.jsonl \
+      "https://github.com/monarch-initiative/medic-ingest/releases/download/2026-06-19/medic_indication_edges.jsonl"
     # Drug Approvals KP KGX release (zstd tarball -> edges.jsonl + nodes.jsonl)
     curl -sL -o dakp.tar.zst \
       "https://kgx-storage.rtx.ai/releases/dakp/2026_04_21/dakp.tar.zst"

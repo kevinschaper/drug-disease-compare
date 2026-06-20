@@ -1,8 +1,10 @@
-"""Load the two feeds into a single raw-edge shape.
+"""Load the feeds into a single raw-edge shape.
 
-MEDIC ships a 10-column TSV of indication edges (all ``biolink:treats``); DAKP
-ships KGX JSONL with three predicates and richer provenance. We flatten both to a
-common ``RawEdge`` dict and collapse the predicate to a ``relation`` bucket:
+MEDIC ships KGX JSONL of indication edges (all ``biolink:treats``, one edge per
+drug-disease pair with per-agency FDA/EMA/PMDA provenance); DAKP ships KGX JSONL
+with three predicates and richer provenance; dismech ships KGX JSONL too. We
+flatten all to a common ``RawEdge`` dict and collapse the predicate to a
+``relation`` bucket:
 
     biolink:treats, biolink:applied_to_treat  -> "treats"   (a drug is used on a disease)
     biolink:contraindicated_in                -> "contraindicated_in"
@@ -14,7 +16,6 @@ to compare them against yet.
 """
 from __future__ import annotations
 
-import csv
 import json
 from pathlib import Path
 
@@ -32,27 +33,34 @@ def _relation(predicate: str) -> str | None:
     return RELATION.get(predicate)
 
 
-def load_medic(path: str | Path) -> list[dict]:
-    """MEDIC indication TSV -> list of RawEdge dicts (source='medic')."""
+def load_medic(edges_path: str | Path) -> list[dict]:
+    """MEDIC indication KGX edges.jsonl -> list of RawEdge dicts (source='medic').
+
+    One edge per drug→disease pair; ``sources`` carry per-agency provenance
+    (infores:dailymed / :ema / :pmda as supporting_data_source) and
+    ``supporting_text`` the verbatim ``[FDA]/[EMA]/[PMDA]`` indication text. We keep
+    the supporting_text but compare on the (drug, disease) pair only, as before.
+    """
     out: list[dict] = []
-    with open(path, newline="") as f:
-        for row in csv.DictReader(f, delimiter="\t"):
-            rel = _relation(row["predicate"])
+    with open(edges_path) as f:
+        for line in f:
+            e = json.loads(line)
+            rel = _relation(e["predicate"])
             if rel is None:
                 continue
-            subj, obj = row["subject"], row["object"]
             out.append(
                 {
                     "source": "medic",
                     "relation": rel,
-                    "predicate": row["predicate"],
-                    "subject": subj,
-                    "object": obj,
-                    "original_subject": subj,  # MEDIC TSV carries no pre-norm id
-                    "original_object": obj,
+                    "predicate": e["predicate"],
+                    "subject": e["subject"],
+                    "object": e["object"],
+                    "original_subject": e.get("original_subject", e["subject"]),
+                    "original_object": e.get("original_object", e["object"]),
                     "clinical_approval_status": None,
                     "number_of_cases": None,
-                    "publications": row.get("publications", ""),
+                    "publications": e.get("publications") or [],
+                    "supporting_text": e.get("supporting_text") or [],
                 }
             )
     return out

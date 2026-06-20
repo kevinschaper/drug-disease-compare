@@ -9,16 +9,18 @@ def _write(p: Path, text: str) -> Path:
 
 
 def test_medic_predicate_collapse(tmp_path):
-    tsv = _write(
-        tmp_path / "medic.tsv",
-        "id\tsubject\tpredicate\tobject\n"
-        "u1\tCHEBI:1\tbiolink:treats\tMONDO:1\n"
-        "u2\tCHEBI:2\tbiolink:treats\tMONDO:2\n",
+    jsonl = _write(
+        tmp_path / "medic.jsonl",
+        '{"subject":"CHEBI:1","predicate":"biolink:treats","object":"MONDO:1",'
+        '"publications":["PMID:41385096"],"supporting_text":["[FDA] indicated for ..."]}\n'
+        '{"subject":"CHEBI:2","predicate":"biolink:treats","object":"MONDO:2",'
+        '"original_object":"DOID:9"}\n',
     )
-    edges = load.load_medic(tsv)
+    edges = load.load_medic(jsonl)
     assert len(edges) == 2
     assert all(e["relation"] == "treats" and e["source"] == "medic" for e in edges)
-    assert edges[0]["original_subject"] == "CHEBI:1"  # MEDIC has no pre-norm id
+    assert edges[0]["original_subject"] == "CHEBI:1"        # falls back to subject
+    assert edges[1]["original_object"] == "DOID:9"          # kept pre-norm id when present
 
 
 def test_dakp_predicate_buckets(tmp_path):
