@@ -35,6 +35,12 @@ indications only) don't carry. **Agreement** (≥2 sources) is the smaller,
 higher-confidence core: ${fmt(summary.agree_2plus)} pairs, ${fmt(summary.agree_all)} of
 them in all three.
 
+A further **${fmt(summary.moiety.new_agreements)} pairs** agree only once *same-drug
+variants* (different salts, esters, prodrugs, or just CHEBI-vs-UNII identifiers) are
+collapsed to a shared active moiety. That's our inference, not the sources' — so it's
+**flagged separately, never folded into the count above**; see the recovered list under
+[disagreements](./diff) and the [method](./methods#drug-collapse).
+
 <div class="grid grid-cols-4">
   <div class="card">
     <h2>Pair universe</h2>

@@ -41,6 +41,14 @@ SOURCE_ORDER = ["medic", "dakp", "dismech"]
 DRUG_FILTERED = {"dismech"}
 
 
+def _group_members(gid: dict[str, str]) -> dict[str, set]:
+    """group_id -> set of canonical drugs assigned to it."""
+    members: dict[str, set] = defaultdict(set)
+    for drug, group in gid.items():
+        members[group].add(drug)
+    return members
+
+
 def _agg_status(prev: str | None, status: str | None) -> str:
     """approved beats off-label beats unspecified when a pair has many edges."""
     rank = {APPROVED: 2, OFF_LABEL: 1, None: 0, "unspecified": 0}
@@ -111,7 +119,7 @@ def build_pairs(edges: list[dict], rec: Reconciler):
 
 
 def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
-            dismech_scope: set | None = None) -> dict:
+            dismech_scope: set | None = None, drug_grouper=None) -> dict:
     treat, contra = build_pairs(edges, rec)
     present = [s for s in SOURCE_ORDER if treat.get(s)]
 
@@ -131,6 +139,30 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         for (g, d) in treat[s]:
             src_dd[s][g].add(d)
     neigh_cache: dict[str, set] = {}
+
+    # --- drug-axis collapse (optional, flagged, NEVER folded into exact agreement) ---
+    # Each canonical drug maps to a group_id (its active moiety, ion-guarded). This is
+    # OUR inference, not a source's assertion, so it lives in its own columns: a same-
+    # group match on the same disease is a drug-axis "related"/moiety bridge, surfaced
+    # via n_group + drug_note, and counted only in the separate `moiety` summary block.
+    all_drugs = {k[0] for k in universe}
+    gid: dict[str, str] = {}
+    glabel: dict[str, str] = {}
+    if drug_grouper is not None:
+        for drug in all_drugs:
+            g = drug_grouper.group(rec.nn.clique(drug))
+            gid[drug] = g.group_id
+            glabel[g.group_id] = g.group_label
+    else:
+        gid = {d: d for d in all_drugs}
+    # per source, (group, disease) it asserts exactly, + which canonical drugs back it
+    src_group: dict[str, set] = {s: set() for s in present}
+    src_group_members: dict[str, dict[tuple, set]] = {s: defaultdict(set) for s in present}
+    for s in present:
+        for (g_drug, dis) in treat[s]:
+            grp = gid.get(g_drug, g_drug)
+            src_group[s].add((grp, dis))
+            src_group_members[s][(grp, dis)].add(g_drug)
 
     # disease scope per source: where the source's *absence* is a real signal.
     # broad feeds (MEDIC/DAKP) cover the diseases they assert drugs for; dismech is
@@ -174,6 +206,23 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
             elif st == "related" and nb_label:
                 notes.append(f"{s}≈{nb_label}")
         row["n_exact"] = n_exact
+        # drug-axis collapse signal (flagged, separate from exact/related membership):
+        # how many sources assert this (drug_group, disease) exactly, and which sources
+        # reach it only through a *sibling* drug variant (same moiety, different CURIE).
+        group, disease = gid.get(key[0], key[0]), key[1]
+        row["drug_group"] = group
+        row["drug_group_label"] = glabel.get(group, "")
+        row["n_group"] = sum(1 for s in present if (group, disease) in src_group[s])
+        bridges = []
+        for s in present:
+            gd = (group, disease)
+            if gd in src_group[s] and key not in treat[s]:
+                sibs = sorted(src_group_members[s][gd] - {key[0]})
+                labels = ", ".join((treat[s].get((sib, disease)) or {}).get("drug_label", sib)
+                                   for sib in sibs)
+                if labels:
+                    bridges.append(f"{s} via moiety: {labels}")
+        row["drug_note"] = "; ".join(bridges)
         # in_scope flag per source: is this disease one the source actually covers?
         # lets the UI tell "absent because disagrees" from "absent because uncurated".
         for s in present:
@@ -239,6 +288,23 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         },
         "contraindication_pairs": len(contra),
         "scope_diseases": {s: len(scope[s]) for s in present},
+    }
+
+    # --- drug-collapse (moiety) summary: agreement recovered by treating same-drug
+    # variants as one, held at exact-disease so it's attributable to the drug axis.
+    # Reported ALONGSIDE strict agreement, never merged into it. ---
+    gd_n: Counter = Counter()
+    for s in present:
+        for gd in src_group[s]:
+            gd_n[gd] += 1
+    collapsed_agree = {gd for gd, n in gd_n.items() if n >= 2}
+    strict_agree_gd = {(gid.get(p["drug"], p["drug"]), p["disease"]) for p in pairs if p["n_exact"] >= 2}
+    merged_groups = sum(1 for g, ds in _group_members(gid).items() if len(ds) > 1)
+    summary["moiety"] = {
+        "enabled": drug_grouper is not None,
+        "new_agreements": len(collapsed_agree - strict_agree_gd),
+        "agree_with_moiety": len(collapsed_agree),
+        "merged_groups": merged_groups,
     }
 
     # --- dismech-specific lens (scope-aware) ---

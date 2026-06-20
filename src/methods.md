@@ -68,11 +68,31 @@ No resource is ground truth. A single-source pair (with no exact *or* related ma
 elsewhere) is a **lead to triage** — a coverage gap or an extraction error — not a
 verdict.
 
+## Drug collapse
+
+The Node Normalizer deliberately keeps a prodrug separate from its active moiety, a salt
+from its parent, and a CHEBI record from a UNII record it can't equate — so the *same drug*
+recorded two ways (dabigatran vs dabigatran etexilate; CHEBI- vs UNII-semaglutide;
+ranitidine vs (Z)-ranitidine) reads as a cross-source disagreement. To catch this, each
+canonical drug is also mapped to its **active moiety** (FDA/GSRS, pivoting on UNII), with a
+guard that rejects bare-ion moieties (metal cations, NO — formula < 3 heavy atoms) that
+would over-merge therapeutically distinct products (iron salts, nitrovasodilators).
+
+This collapse is **our inference, not a source's assertion**, so it never rewrites an edge
+or counts as exact agreement. It lives in its own columns (`drug_group`, `n_group`,
+`drug_note`): a same-moiety match on the same disease is a flagged drug-axis bridge, exactly
+parallel to a disease is-a `related`. It recovers cross-source agreements that were
+hidden by identifier mismatch (reported as `moiety.new_agreements` in the summary), surfaced
+on [disagreements](./diff) under "same drug, different identifier." Compared three grouping
+authorities (active moiety, RxNorm ingredient, ChEBI functional parent) before choosing
+active moiety — see `experiments/drug_collapse.py`. Run with `just build` (default) or
+`uv run … cli build --no-drug-collapse` to disable.
+
 ## What this does *not* yet do
 
-- **Drug-axis hierarchy.** Matching is hierarchy-aware on the disease (MONDO) axis
-  only. CHEBI/ATC drug-class relationships are not yet used, so a parent-drug vs
-  child-drug difference reads as a disagreement.
+- **Drug-axis hierarchy.** Collapse handles same-drug *variants* (salt/ester/prodrug/
+  stereoisomer, above) but not true drug-*class* relationships: a CHEBI/ATC parent-class vs
+  child-drug difference still reads as a disagreement.
 - **MEDIC contraindications.** Not in the current indication export, so DAKP's
   contraindications have nothing to compare against ([contraindications](./contraindications)).
 - **Node Normalizer version pinning.** DAKP baked in `node_norm_version 2025sep1`;

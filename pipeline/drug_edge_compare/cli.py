@@ -7,6 +7,7 @@ from pathlib import Path
 import click
 
 from . import compare, load
+from .drug_groups import moiety_grouper
 from .mondo import MondoGraph
 from .nodenorm import NodeNorm
 from .reconcile import Reconciler
@@ -14,6 +15,7 @@ from .reconcile import Reconciler
 ROOT = Path(__file__).resolve().parents[2]
 INPUTS = ROOT / "data" / "inputs"
 CACHE = ROOT / "data" / "nodenorm_cache.json"
+DRUG_GROUP_CACHE = ROOT / "data" / "drug_groups_cache.json"
 ARTIFACTS = ROOT / "src" / "data"
 
 
@@ -58,7 +60,10 @@ def normalize() -> None:
 
 
 @cli.command()
-def build() -> None:
+@click.option("--drug-collapse/--no-drug-collapse", default=True,
+              help="bridge same-drug variants (active moiety, ion-guarded) as a flagged "
+                   "drug-axis signal; never folded into exact agreement")
+def build(drug_collapse: bool) -> None:
     """Load inputs, reconcile via Node Normalizer + MONDO, emit src/data/*.json."""
     click.echo("loading edges...")
     edges = _load_edges()
@@ -82,7 +87,15 @@ def build() -> None:
     dismech_disease_curies = load.load_dismech_diseases(INPUTS / "dismech_edges.jsonl")
     nn.warm(dismech_disease_curies)
     dismech_scope = {rec.disease(c).canonical for c in dismech_disease_curies}
-    result = compare.compare(edges, rec, mondo, dismech_scope=dismech_scope)
+
+    grouper = None
+    clients = None
+    if drug_collapse:
+        click.echo("resolving drug-axis groups (active moiety, ion-guarded; cached)...")
+        clients, grouper = moiety_grouper(DRUG_GROUP_CACHE)
+    result = compare.compare(edges, rec, mondo, dismech_scope=dismech_scope, drug_grouper=grouper)
+    if clients is not None:
+        clients.save()
 
     click.echo("writing artifacts...")
     # One per-pair Parquet holds the whole pair universe with a per-source membership
@@ -101,6 +114,7 @@ def build() -> None:
     click.echo(
         f"\nsources: {', '.join(f'{k}={v}' for k, v in s['source_pairs'].items())}\n"
         f"universe: {s['universe']} pairs | agree(>=2): {s['agree_2plus']} | all: {s['agree_all']}\n"
+        f"moiety: {s.get('moiety')}\n"
         f"combinations: {s['combinations']}\n"
         f"pairwise: {s['pairwise']}\n"
         f"dismech: {s.get('dismech')}\n"

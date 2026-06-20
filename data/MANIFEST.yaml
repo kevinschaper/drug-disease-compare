@@ -71,3 +71,22 @@ inputs:
     endpoint: https://nodenormalization-sri.renci.org/get_normalized_nodes
     conflate: true
     drug_chemical_conflate: true
+
+  drug_groups:
+    description: >-
+      Drug-axis collapse, queried at build time (toggle with cli build
+      --no-drug-collapse). The Node Normalizer keeps a prodrug/salt/stereoisomer
+      separate from its parent, so the same drug recorded two ways reads as a
+      disagreement. Each canonical drug is mapped to its FDA/GSRS active moiety
+      (pivoting on UNII, recovered via RxNorm when a clique lacks one), with an
+      ion guard that rejects moieties of <3 heavy atoms (bare metal cations, NO)
+      to avoid over-merging therapeutically distinct salts. This is a flagged,
+      experiment-derived inference surfaced separately (drug_group / n_group /
+      drug_note), NEVER folded into exact agreement. Compared against RxNorm
+      ingredient and ChEBI functional-parent in experiments/drug_collapse.py;
+      active moiety chosen for coverage + lowest false-merge rate. Responses
+      cached to data/drug_groups_cache.json (gitignored).
+    active_moiety: https://gsrs.ncats.nih.gov/api/v1/substances
+    rxnorm: https://rxnav.nlm.nih.gov/REST
+    chebi_ols: https://www.ebi.ac.uk/ols4/api
+    min_moiety_heavy_atoms: 3
