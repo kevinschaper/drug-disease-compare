@@ -5,15 +5,23 @@
 inputs:
   medic_edges:
     description: >-
-      Monarch medic-ingest indication edges (drug -> disease, biolink:treats).
-      Built from regulatory label sources (DailyMed + EU/Japan approvals) with
-      LLM-based entity linking and automated QC. Every edge cites PMID:41385096
-      (the MeDIC paper, Nucleic Acids Research 2026;54(D1):D1477-D1487) as a
-      blanket source, not per-edge literature.
-    url: https://github.com/monarch-initiative/medic-ingest/releases/download/2026-06-01/medic_indication_edges.tsv
-    filename: medic_edges.tsv
-    release: "2026-06-01"
-    sha256: 370da1708db2827b7d5f777fbcacb4cf9578b9560becc18bccd18df5d3baf1d0
+      Monarch medic-ingest indication edges (drug -> disease, biolink:treats),
+      now KGX JSONL with one edge per drug-disease pair (~10,942 edges). Built from
+      three regulators' approval documents -- FDA (DailyMed), EMA (EPAR), PMDA --
+      each carried as a Biolink RetrievalSource supporting_data_source
+      (infores:dailymed/:ema/:pmda) with verbatim [FDA]/[EMA]/[PMDA] indication text
+      in supporting_text. Diseases normalized to MONDO via MONDO SSSOM exact match;
+      drugs via SRI Node Normalizer (pre-norm ids kept as original_subject/object).
+      Every edge cites PMID:41385096 (the MeDIC paper, Nucleic Acids Research
+      2026;54(D1):D1477-D1487) as a blanket source, not per-edge literature. The
+      TSV export was dropped from releases (local `just export-tsv` only).
+    url: https://github.com/monarch-initiative/medic-ingest/releases/download/2026-06-19/medic_indication_edges.jsonl
+    filename: medic_edges.jsonl
+    release: "2026-06-19"
+    medic_version: "1.3.0"
+    mondo_sssom_version: "v2026-06-02"
+    node_norm_version: "2025sep1"
+    sha256: 8d92b96da800dac9e537558fb3767934d0df3836ebb250eb72ea945087fa319d
 
   dakp_kgx:
     description: >-

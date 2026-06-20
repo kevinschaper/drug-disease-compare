@@ -20,7 +20,7 @@ ARTIFACTS = ROOT / "src" / "data"
 
 
 def _load_edges() -> list[dict]:
-    medic = load.load_medic(INPUTS / "medic_edges.tsv")
+    medic = load.load_medic(INPUTS / "medic_edges.jsonl")
     dakp = load.load_dakp(INPUTS / "dakp_edges.jsonl")
     dismech = load.load_dismech(INPUTS / "dismech_edges.jsonl")
     return medic + dakp + dismech
@@ -102,6 +102,9 @@ def build(drug_collapse: bool) -> None:
     # status (exact/related/""); the site slices it by source-combination or entity
     # via DuckDB-WASM. Small coverage rollups and reports stay JSON.
     _write_parquet("pairs.parquet", result["pairs"])
+    # MEDIC verbatim agency indication text, kept out of pairs.parquet (~14 MB of prose);
+    # the detail pages join it on (drug, disease) on demand.
+    _write_parquet("medic_evidence.parquet", result["medic_evidence"])
     _write("summary.json", result["summary"])
     _write("dakp_offlabel_top_drugs.json", result["dakp_offlabel_only_top_drugs"])
     _write("by_drug.json", result["by_drug"])
