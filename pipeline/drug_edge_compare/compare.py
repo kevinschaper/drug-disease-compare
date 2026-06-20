@@ -27,8 +27,11 @@ from collections import Counter, defaultdict
 from .mondo import MondoGraph
 from .reconcile import Reconciler
 
-# supporting_text entries look like "[PMID:41751547] [SUPPORT] <snippet>"
+# dismech supporting_text entries look like "[PMID:41751547] [SUPPORT] <snippet>"
 _PMID_PREFIX = re.compile(r"^\[(PMID:[^\]]+)\]\s*(.*)$", re.DOTALL)
+# MEDIC supporting_text entries are one per agency: "[FDA] <verbatim indication text>"
+_AGENCY_PREFIX = re.compile(r"^\[(FDA|EMA|PMDA)\]\s*(.*)$", re.DOTALL)
+_AGENCY_ORDER = ("FDA", "EMA", "PMDA")
 
 LINEAGE_HOPS = 2
 APPROVED = "approved_for_condition"
@@ -95,6 +98,13 @@ def build_pairs(edges: list[dict], rec: Reconciler):
         if src == "dakp":
             row["status"] = _agg_status(row["status"], e["clinical_approval_status"])
             row["cases"] += int(e["number_of_cases"] or 0)
+        elif src == "medic":
+            # verbatim approving-agency indication text, kept per agency (FDA/EMA/PMDA)
+            ev = row.setdefault("medic_evidence", {})
+            for st in e.get("supporting_text") or []:
+                m = _AGENCY_PREFIX.match(st)
+                if m and m.group(1) not in ev:
+                    ev[m.group(1)] = m.group(2).strip()
         elif src == "dismech":
             # aggregate evidence across this pair's dismech edges: ordered PMIDs +
             # each PMID's supporting-text snippet (for numbered PubMed links on the site)
@@ -342,6 +352,21 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
     # off-label-only (DAKP off-label, not exact in any other source): summarize by drug
     offlabel_top_drugs = _offlabel_top_drugs(pairs, present)
 
+    # MEDIC verbatim approving-agency indication text, per (drug, disease) pair. Emitted
+    # as its own table (it's ~14 MB of label prose, too big to inline in pairs.parquet);
+    # the detail pages join it on demand.
+    medic_evidence_rows = []
+    if "medic" in present:
+        for (drug, dis), row in treat["medic"].items():
+            ev = row.get("medic_evidence")
+            if ev:
+                medic_evidence_rows.append({
+                    "drug": drug, "disease": dis,
+                    "evidence": json.dumps(
+                        [{"agency": a, "text": ev[a]} for a in _AGENCY_ORDER if a in ev],
+                        ensure_ascii=False),
+                })
+
     deconflation = _deconflation_report(rec)
     contra_rows = sorted(
         ({"drug": v["drug"], "drug_label": v["drug_label"], "disease": k[1],
@@ -359,6 +384,7 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         "dakp_offlabel_only_top_drugs": offlabel_top_drugs,
         "deconflation": deconflation,
         "contraindications": {"summary": {"pairs": len(contra)}, "rows": contra_rows[:1000]},
+        "medic_evidence": medic_evidence_rows,
     }
 
 
