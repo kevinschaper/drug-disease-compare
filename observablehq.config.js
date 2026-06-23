@@ -18,6 +18,7 @@ export default {
     {name: "Disease coverage", path: "/diseases"},
     {name: "dismech lens", path: "/dismech"},
     {name: "Disagreements", path: "/diff"},
+    {name: "Off-label (FAERS)", path: "/offlabel"},
     {name: "De-conflation", path: "/deconflation"},
     {name: "Contraindications", path: "/contraindications"},
     {name: "Methods", path: "/methods"},

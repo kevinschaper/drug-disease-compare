@@ -1,50 +1,48 @@
 # Overview
 
-Three independently-built, LLM-assisted resources mine drug→disease edges:
-**MEDIC** (approved indications from regulatory labels), the **Drug Approvals KP**
-(DAKP — FAERS + DailyMed, including off-label use), and **dismech** (mechanism-driven,
-curated; only its CHEMBL/CHEBI drug→disease edges are used — its MAXO/NCIT medical
-actions are filtered out). Where their indication edges *overlap* we gain confidence;
-where they *diverge* we get a lead to triage.
+Three independently-built, LLM-assisted resources mine drug→disease **indications**:
+**MEDIC** (approved indications from FDA / EMA / PMDA labels), **DAKP** (the Drug
+Approvals KP — its `approved_for_condition` edges, from DailyMed / Drugs@FDA), and
+**dismech** (mechanism-driven, curated; only its CHEBI drug→disease subset). Where their
+indications *overlap* we gain confidence; where they *diverge* we get a lead to triage.
 
-All sources are compared **as peers** in MONDO-centric space: every drug/disease CURIE
-is re-resolved through the SRI Node Normalizer (disease axis prefers the MONDO member
-of each clique), and matching is **hierarchy-aware** — a pair counts as *related* when
-a source has the same drug on a disease one–two MONDO is-a hops away. One caveat
-governs the reading: **DAKP includes off-label use; MEDIC and dismech are approved
-indications only**, so DAKP's off-label edges are expected to be absent from the
-others, not errors.
+DAKP also carries a large volume of **FAERS off-label use** — *observed* real-world use,
+not approvals. That is **excluded from the headline** here (it isn't an indication) and
+read separately on the [off-label view](./offlabel). Everything below is the
+**indication-grade** comparison: MEDIC, DAKP-approved, and dismech.
+
+All sources are compared **as peers** in MONDO-centric space: every CURIE is re-resolved
+through the SRI Node Normalizer (the disease axis prefers the MONDO member of each
+clique), and matching is **hierarchy-aware** — a pair counts as *related* when a source
+has the same drug on a disease one–two MONDO is-a hops away.
 
 ```js
 const summary = await FileAttachment("data/summary.json").json();
+const ind = summary.indication;
+const off = summary.offlabel;
 const fmt = (n) => n.toLocaleString();
-const sources = summary.sources;
-const nSources = (combo) => combo.split("+").length;
+const sources = ind.sources;
+const nSources = (combo) => combo.split(" + ").length;
 const support = [1, 2, 3].map((k) => ({
   sources: k === 1 ? "1 source (unique)" : k === 3 ? "all 3 sources" : `${k} sources`,
-  n: Object.entries(summary.combinations).filter(([c]) => nSources(c) === k)
+  n: Object.entries(ind.combinations).filter(([c]) => nSources(c) === k)
     .reduce((a, [, n]) => a + n, 0),
 }));
 const universeN = support.reduce((a, s) => a + s.n, 0);
 support.forEach((s, i) => { s.share = s.n / universeN; s.color = ["#bab0ac", "#6a9bd8", "#13315c"][i]; });
 ```
 
-Every drug→disease pair, grouped by **how many sources assert it**. Most are unique to
-one source — overwhelmingly DAKP's off-label use, which MEDIC and dismech (approved
-indications only) don't carry. **Agreement** (≥2 sources) is the smaller,
-higher-confidence core: ${fmt(summary.agree_2plus)} pairs, ${fmt(summary.agree_all)} of
-them in all three.
-
-A further **${fmt(summary.moiety.new_agreements)} pairs** agree only once *same-drug
-variants* (different salts, esters, prodrugs, or just CHEBI-vs-UNII identifiers) are
-collapsed to a shared active moiety. That's our inference, not the sources' — so it's
-**flagged separately, never folded into the count above**; see the recovered list under
-[disagreements](./diff) and the [method](./methods#drug-collapse).
+Every indication pair, grouped by **how many sources assert it**. **Agreement** (≥2
+sources) is the higher-confidence core: ${fmt(ind.agree_2plus)} pairs, ${fmt(ind.agree_all)}
+of them in all three. The flagship comparison, MEDIC ↔ DAKP-approved, shares
+**${fmt(summary.medic_vs_dakp_onlabel.shared)}** pairs (Jaccard
+${summary.medic_vs_dakp_onlabel.jaccard.toFixed(3)}; ${(summary.medic_vs_dakp_onlabel.of_dakp_onlabel_in_medic * 100).toFixed(0)}%
+of DAKP-approved pairs are in MEDIC).
 
 <div class="grid grid-cols-4">
   <div class="card">
-    <h2>Pair universe</h2>
-    <span class="big">${fmt(summary.universe)}</span>
+    <h2>Indication universe</h2>
+    <span class="big">${fmt(ind.universe)}</span>
     distinct (drug, disease) pairs
   </div>
   <div class="card">
@@ -67,7 +65,7 @@ collapsed to a shared active moiety. That's our inference, not the sources' — 
 <div class="grid grid-cols-4">
   <div class="card">
     <h2>Pairs per source</h2>
-    ${html`<div class="src-counts">${sources.map((s) => html`<div class="src-row"><span class="src-name">${s}</span><span class="src-n">${fmt(summary.source_pairs[s])}</span></div>`)}</div>`}
+    ${html`<div class="src-counts">${sources.map((s) => html`<div class="src-row"><span class="src-name">${s}</span><span class="src-n">${fmt(ind.source_pairs[s])}</span></div>`)}</div>`}
   </div>
 </div>
 
@@ -86,8 +84,7 @@ collapsed to a shared active moiety. That's our inference, not the sources' — 
 .src-n { font-weight: 600; font-variant-numeric: tabular-nums; }
 </style>
 
-The same split, to scale — a **log axis** so the small agreement bands stay visible
-(single-source pairs outnumber agreement by ~20×):
+The same split, to scale — a **log axis** so the smaller agreement bands stay visible:
 
 ```js
 Plot.plot({
@@ -98,7 +95,7 @@ Plot.plot({
   y: {label: null, domain: support.map((s) => s.sources)},
   color: {type: "identity"},
   marks: [
-    // x1:1 gives the bar a baseline; without it, barX has no valid left edge on a log scale and won't draw
+    // x1:1 gives the bar a baseline; without it, barX has no valid left edge on a log scale
     Plot.barX(support, {y: "sources", x1: 1, x2: "n", fill: "color", tip: true,
       title: (d) => `${d.sources}\n${d.n.toLocaleString()} pairs (${(d.share * 100).toFixed(1)}%)`}),
     Plot.text(support, {y: "sources", x: "n", text: (d) => `${d.n.toLocaleString()} · ${(d.share * 100).toFixed(1)}%`, dx: 34, fontSize: 11}),
@@ -109,27 +106,26 @@ Plot.plot({
 
 ## Pairs by source combination
 
-The detail behind the headline: each pair grouped by the **exact set** of sources that
-assert it — an [UpSet-style](https://upset.app/) breakdown. So `medic+dakp` means
-pairs MEDIC and DAKP **both** have but dismech does **not**; `medic` means MEDIC-only.
-Blue bars are agreement (≥2 sources). Log scale, because the single-source buckets dwarf
-the rest.
+The detail behind the headline: each indication pair grouped by the **exact set** of
+sources that assert it — an [UpSet-style](https://upset.app/) breakdown. So
+`MEDIC + DAKP-approved` means pairs both have but dismech doesn't; `MEDIC` means
+MEDIC-only. Blue bars are agreement (≥2 sources). Log scale, because the single-source
+buckets dwarf the rest.
 
 ```js
-const comboRows = Object.entries(summary.combinations)
-  .map(([combo, n]) => ({combo, n, multi: combo.includes("+")}))
+const comboRows = Object.entries(ind.combinations)
+  .map(([combo, n]) => ({combo, n, multi: combo.includes(" + ")}))
   .sort((a, b) => b.n - a.n);
 ```
 
 ```js
 Plot.plot({
   width,
-  marginLeft: 150,
+  marginLeft: 220,
   x: {label: "pairs (log scale)", type: "log", grid: true},
   y: {label: null, domain: comboRows.map((d) => d.combo)},
   color: {domain: [true, false], range: ["#4269d0", "#bab0ac"], legend: true, tickFormat: (d) => d ? "≥2 sources (agree)" : "single source"},
   marks: [
-    // x1:1 gives the bars a baseline on the log scale (otherwise they don't draw)
     Plot.barX(comboRows, {y: "combo", x1: 1, x2: "n", fill: "multi", tip: true,
       title: (d) => `${d.combo}\n${d.n.toLocaleString()} pairs`}),
     Plot.text(comboRows, {y: "combo", x: "n", text: (d) => d.n.toLocaleString(), dx: 18, fontSize: 10}),
@@ -148,12 +144,10 @@ are corroborated by MEDIC/DAKP and ${summary.dismech.novel.toLocaleString()} are
 
 ## Pairwise overlap
 
-Exact-pair agreement between each pair of sources (Jaccard, and the raw shared count).
-MEDIC↔DAKP is the mature comparison; dismech is small and curated, so it overlaps
-less in absolute terms but is high-provenance (every edge carries literature support).
+Exact-pair agreement between each pair of indication sources (Jaccard + raw shared count).
 
 ```js
-const pw = Object.entries(summary.pairwise).map(([k, v]) => ({pair: k, shared: v.shared, jaccard: v.jaccard}));
+const pw = Object.entries(ind.pairwise).map(([k, v]) => ({pair: k, shared: v.shared, jaccard: v.jaccard}));
 ```
 
 ```js
@@ -165,29 +159,33 @@ Inputs.table(pw, {
 })
 ```
 
-## The fair MEDIC vs DAKP comparison
+## FAERS off-label use — context, not indications
 
-DAKP is dominated by off-label use, which MEDIC (label-indications only) can't
-contain. Restricting DAKP to `approved_for_condition` is the apples-to-apples view.
+DAKP additionally reports **${fmt(off.pairs)}** off-label drug→disease pairs from FAERS —
+*observed* real-world use, not approvals — kept out of the headline above.
+**${fmt(off.only)}** are off-label only (no source asserts them as an indication);
+**${fmt(off.corroborated)}** coincide with an indication asserted elsewhere. Browse them,
+framed as observations, on the [off-label view](./offlabel).
 
 <div class="grid grid-cols-3">
   <div class="card">
-    <h2>DAKP on-label pairs</h2>
-    <span class="big">${fmt(summary.dakp_onlabel_pairs)}</span>
-    of ${fmt(summary.source_pairs.dakp)} DAKP pairs (rest off-label)
+    <h2>Off-label pairs</h2>
+    <span class="big">${fmt(off.pairs)}</span>
+    FAERS observed use
   </div>
   <div class="card">
-    <h2>MEDIC ∩ DAKP on-label</h2>
-    <span class="big">${fmt(summary.medic_vs_dakp_onlabel.shared)}</span>
-    Jaccard ${summary.medic_vs_dakp_onlabel.jaccard.toFixed(3)}
+    <h2>Off-label only</h2>
+    <span class="big">${fmt(off.only)}</span>
+    no indication anywhere
   </div>
   <div class="card">
-    <h2>of DAKP on-label, in MEDIC</h2>
-    <span class="big">${(summary.medic_vs_dakp_onlabel.of_dakp_onlabel_in_medic * 100).toFixed(0)}%</span>
-    of approved-for-condition pairs are in MEDIC
+    <h2>Coincide with an indication</h2>
+    <span class="big">${fmt(off.corroborated)}</span>
+    seen off-label *and* on-label
   </div>
 </div>
 
 Dig in: [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
-rollups across all three sources, [disagreements](./diff) for the triage queue,
-[de-conflation](./deconflation) for the MONDO/HP audit, and [methods](./methods).
+rollups, [disagreements](./diff) for the triage queue, the [off-label view](./offlabel)
+for FAERS observations, [de-conflation](./deconflation) for the MONDO/HP audit, and
+[methods](./methods).

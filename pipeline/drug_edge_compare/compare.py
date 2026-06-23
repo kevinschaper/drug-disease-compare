@@ -91,7 +91,7 @@ def build_pairs(edges: list[dict], rec: Reconciler):
         key = (drug.canonical, dis.canonical)
         row = treat.setdefault(src, {}).setdefault(
             key,
-            {"drug": drug.canonical, "drug_label": drug.label,
+            {"drug": drug.canonical, "drug_label": drug.label, "drug_unii": drug.unii,
              "disease": dis.canonical, "disease_label": dis.label,
              "disease_prefix": dis.canonical_prefix, "status": None, "cases": 0, "pubs": 0},
         )
@@ -138,7 +138,8 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
     for s in present:
         for k, v in treat[s].items():
             meta_of.setdefault(k, {
-                "drug": v["drug"], "drug_label": v["drug_label"], "disease": v["disease"],
+                "drug": v["drug"], "drug_label": v["drug_label"], "drug_unii": v.get("drug_unii", ""),
+                "disease": v["disease"],
                 "disease_label": v["disease_label"], "disease_prefix": v["disease_prefix"],
             })
     universe = sorted(meta_of)
@@ -300,6 +301,56 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         "scope_diseases": {s: len(scope[s]) for s in present},
     }
 
+    # --- indication-grade headline: MEDIC, DAKP-approved, and dismech only. DAKP
+    # off-label (FAERS) is observed real-world use, not an approval, so it's excluded
+    # from the headline universe / agreement / combinations and reported separately as
+    # context below. This is the primary lens; the all-DAKP fields above are retained for
+    # back-compat and the off-label view.
+    IND_ORDER = ["MEDIC", "DAKP-approved", "dismech"]
+
+    def ind_buckets(p):
+        b = []
+        if p.get("medic") == "exact":
+            b.append("MEDIC")
+        if p.get("dakp") == "exact" and p["dakp_status"] == APPROVED:
+            b.append("DAKP-approved")
+        if p.get("dismech") == "exact":
+            b.append("dismech")
+        return b
+
+    ind = [(p, ind_buckets(p)) for p in pairs]
+    ind_sets: dict[str, set] = {s: set() for s in IND_ORDER}
+    for p, b in ind:
+        for s in b:
+            ind_sets[s].add((p["drug"], p["disease"]))
+    ind_combo = Counter(frozenset(b) for _p, b in ind if b)
+    ind_combinations = {" + ".join(s for s in IND_ORDER if s in fs): n
+                        for fs, n in sorted(ind_combo.items(), key=lambda kv: -kv[1])}
+    ind_pairwise = {}
+    for i, a in enumerate(IND_ORDER):
+        for c in IND_ORDER[i + 1:]:
+            ind_pairwise[f"{a} + {c}"] = {"shared": len(ind_sets[a] & ind_sets[c]),
+                                          "jaccard": jac(ind_sets[a], ind_sets[c])}
+    ind_all = set.intersection(*ind_sets.values()) if all(ind_sets.values()) else set()
+    summary["indication"] = {
+        "sources": IND_ORDER,
+        "source_pairs": {s: len(ind_sets[s]) for s in IND_ORDER},
+        "universe": sum(1 for _p, b in ind if b),
+        "agree_2plus": sum(1 for _p, b in ind if len(b) >= 2),
+        "agree_all": len(ind_all),
+        "combinations": ind_combinations,
+        "pairwise": ind_pairwise,
+    }
+
+    # --- off-label (FAERS) context: observed use, kept out of the headline ---
+    offlabel = [p for p in pairs if p.get("dakp") == "exact" and p["dakp_status"] == OFF_LABEL]
+    summary["offlabel"] = {
+        "pairs": len(offlabel),
+        "only": sum(1 for p, b in ind if not b and p.get("dakp") == "exact" and p["dakp_status"] == OFF_LABEL),
+        "corroborated": sum(1 for p, b in ind if b and p.get("dakp") == "exact" and p["dakp_status"] == OFF_LABEL),
+        "cases": sum(p["dakp_cases"] for p in offlabel),
+    }
+
     # --- drug-collapse (moiety) summary: agreement recovered by treating same-drug
     # variants as one, held at exact-disease so it's attributable to the drug axis.
     # Reported ALONGSIDE strict agreement, never merged into it. ---
@@ -345,7 +396,7 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         }
 
     # --- rollups + reports ---
-    by_drug = _rollup(pairs, present, "drug", "drug_label")
+    by_drug = _rollup(pairs, present, "drug", "drug_label", carry=("drug_unii",))
     by_disease = _rollup(pairs, present, "disease", "disease_label", prefix_key="disease_prefix")
     disease_areas = _by_disease_area(by_disease, present, mondo)
 
@@ -388,14 +439,18 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
     }
 
 
-def _rollup(pairs, present, key, label_key, prefix_key=None) -> list[dict]:
-    """Per-entity coverage: exact pair counts per source, shared (>=2), off-label."""
+def _rollup(pairs, present, key, label_key, prefix_key=None, carry=()) -> list[dict]:
+    """Per-entity coverage: exact pair counts per source, shared (>=2), off-label.
+
+    ``carry`` lists extra per-entity fields (e.g. drug_unii) to copy onto each row.
+    """
     agg: dict[str, dict] = {}
     for p in pairs:
         k = p[key]
         a = agg.get(k)
         if a is None:
-            a = {key: k, label_key: p[label_key], **({prefix_key: p[prefix_key]} if prefix_key else {})}
+            a = {key: k, label_key: p[label_key], **({prefix_key: p[prefix_key]} if prefix_key else {}),
+                 **{c: p.get(c, "") for c in carry}}
             for s in present:
                 a[s] = 0
             a.update(shared=0, offlabel=0, _md=0)

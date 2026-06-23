@@ -3,21 +3,21 @@
 // computed from the per-source exact membership the pipeline already emits.
 export const APPROVED = "approved_for_condition";
 export const OFFLABEL = "off_label_use";
-export const BUCKETS = ["MEDIC", "DAKP approved", "DAKP off-label", "dismech"];
+export const BUCKETS = ["MEDIC", "DAKP-approved", "DAKP off-label", "dismech"];
 
 // Which buckets a detail row belongs to (exact membership only; "related" is a
 // hierarchy note, shown in columns, not a bucket).
 export function bucketsOf(r) {
   const b = [];
   if (r.medic === "exact") b.push("MEDIC");
-  if (r.dakp === "exact" && r.dakp_status === APPROVED) b.push("DAKP approved");
+  if (r.dakp === "exact" && r.dakp_status === APPROVED) b.push("DAKP-approved");
   if (r.dakp === "exact" && r.dakp_status === OFFLABEL) b.push("DAKP off-label");
   if (r.dismech === "exact") b.push("dismech");
   return b;
 }
 
 // The exact source-combination key (UpSet cell) — an EXCLUSIVE set, so single-source
-// groups are suffixed "only" to distinguish "DAKP approved only" (this group) from the
+// groups are suffixed "only" to distinguish "DAKP-approved only" (this group) from the
 // DAKP-approved bucket total (which is spread across every group containing it).
 export function comboKey(r) {
   const b = bucketsOf(r);
