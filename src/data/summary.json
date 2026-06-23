@@ -48,6 +48,50 @@
     "dakp": 1521,
     "dismech": 1147
   },
+  "indication": {
+    "sources": [
+      "MEDIC",
+      "DAKP-approved",
+      "dismech"
+    ],
+    "source_pairs": {
+      "MEDIC": 10878,
+      "DAKP-approved": 5030,
+      "dismech": 1101
+    },
+    "universe": 14433,
+    "agree_2plus": 2474,
+    "agree_all": 102,
+    "combinations": {
+      "MEDIC": 8427,
+      "DAKP-approved": 2622,
+      "MEDIC + DAKP-approved": 2283,
+      "dismech": 910,
+      "MEDIC + DAKP-approved + dismech": 102,
+      "MEDIC + dismech": 66,
+      "DAKP-approved + dismech": 23
+    },
+    "pairwise": {
+      "MEDIC + DAKP-approved": {
+        "shared": 2385,
+        "jaccard": 0.1764
+      },
+      "MEDIC + dismech": {
+        "shared": 168,
+        "jaccard": 0.0142
+      },
+      "DAKP-approved + dismech": {
+        "shared": 125,
+        "jaccard": 0.0208
+      }
+    }
+  },
+  "offlabel": {
+    "pairs": 60034,
+    "only": 59193,
+    "corroborated": 841,
+    "cases": 1419599
+  },
   "moiety": {
     "enabled": true,
     "new_agreements": 175,

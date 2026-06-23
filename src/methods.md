@@ -58,11 +58,13 @@ filter. Adding a source is a one-line entry in `SOURCE_ORDER` (+ `DRUG_FILTERED`
 
 ## Reading the overlap
 
-**Agreement** is a pair exact in ≥2 sources. The DAKP off-label split still governs the
-reading: MEDIC and dismech are approved/curated indications, so a DAKP off-label pair
-absent from them is *expected*, not an error — the fair MEDIC↔DAKP comparison
-restricts DAKP to `approved_for_condition`. dismech is small and curated, so it
-overlaps less in absolute terms but is high-provenance (every edge cites literature).
+The headline comparison is **indication-grade**: MEDIC, **DAKP-approved**
+(`approved_for_condition`), and dismech. DAKP `off_label_use` comes from FAERS — *observed*
+real-world use, not an approval, and confounded by indication — so it is **excluded from
+the headline universe, agreement, and combinations** and read separately on the
+[off-label view](./offlabel). **Agreement** is a pair exact in ≥2 of the indication-grade
+sources. dismech is small and curated, so it overlaps less in absolute terms but is
+high-provenance (every edge cites literature).
 
 No resource is ground truth. A single-source pair (with no exact *or* related match
 elsewhere) is a **lead to triage** — a coverage gap or an extraction error — not a

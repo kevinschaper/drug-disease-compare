@@ -35,6 +35,7 @@ class DrugResolution:
     original: str
     canonical: str
     label: str
+    unii: str = ""   # FDA UNII from the clique, for precise openFDA label matching
 
 
 @dataclass
@@ -79,10 +80,13 @@ class Reconciler:
     def drug(self, curie: str) -> DrugResolution:
         if curie not in self._drug:
             c = self.nn.clique(curie)
+            unii = next((e.split(":", 1)[1] for e in [c.preferred_id, *c.equivalent_ids]
+                         if e.startswith("UNII:")), "")
             self._drug[curie] = DrugResolution(
                 original=curie,
                 canonical=c.preferred_id,
                 label=self._label(c.preferred_id, c.preferred_label),
+                unii=unii,
             )
         return self._drug[curie]
 

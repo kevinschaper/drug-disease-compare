@@ -16,9 +16,9 @@ hierarchy-related and multi-source pairs are confirmed elsewhere, not disagreeme
   has, where MEDIC covers the disease. Either they under-extracted, or DAKP is wrong.
 
 This is **scope-aware**: a pair is only "only" where the other broad source actually
-covers the disease. DAKP off-label pairs are expected to be source-unique (MEDIC/dismech
-are approved indications only), so they're summarized by drug at the bottom. dismech's
-unique edges have their own [dismech lens](./dismech) (it's too narrow to read here).
+covers the disease. DAKP **off-label** (FAERS) pairs aren't disagreements — they're
+observed use, read separately on the [off-label view](./offlabel). dismech's unique
+edges have their own [dismech lens](./dismech) (it's too narrow to read here).
 
 Pairs that look source-unique but are really **the same drug under a different identifier**
 (a salt/ester/prodrug/stereoisomer the Node Normalizer didn't merge) are lifted out of the
@@ -48,8 +48,6 @@ const moietyBridges = toRows(await sql`
   FROM pairs WHERE n_group >= 2
   GROUP BY drug_group, disease HAVING max(n_exact) < 2
   ORDER BY disease_label`);
-const offlabel = await FileAttachment("data/dakp_offlabel_top_drugs.json").json();
-const summary = await FileAttachment("data/summary.json").json();
 moietyBridges.forEach((r) => {
   r.sources = [r.in_medic && "MEDIC", r.in_dakp && "DAKP", r.in_dismech && "dismech"].filter(Boolean).join(" + ");
 });
@@ -58,7 +56,6 @@ const drugCell = (cid, label) => html`<a href="drug?id=${encodeURIComponent(cid)
 const diseaseCell = (cid, label) => html`<a href="disease?id=${encodeURIComponent(cid)}">${label ?? cid}</a> <span class="small muted">${cid}</span>`;
 const dLabel = new Map([...medicOnly, ...dakpOnly].map((r) => [r.drug, r.drug_label]));
 const xLabel = new Map([...medicOnly, ...dakpOnly].map((r) => [r.disease, r.disease_label]));
-const oLabel = new Map(offlabel.map((r) => [r.drug, r.drug_label]));
 ```
 
 <div class="grid grid-cols-3">
@@ -149,25 +146,5 @@ Inputs.table(bSearch, {
 })
 ```
 
-## DAKP off-label-only — expected divergence, by drug
-
-These are not disagreements; shown for context. Top 200 drugs by off-label-only pair
-count (DAKP has ${summary.dakp_offlabel_pairs.toLocaleString()} off-label pairs overall).
-
-```js
-const oSearch = view(Inputs.search(offlabel, {placeholder: "search by drug…"}));
-```
-
-```js
-Inputs.table(oSearch, {
-  columns: ["drug", "n", "cases"],
-  header: {drug: "Drug", n: "off-label pairs", cases: "FAERS cases"},
-  format: {
-    drug: (cid) => drugCell(cid, oLabel.get(cid)),
-  },
-  sort: "n",
-  reverse: true,
-  rows: 12,
-  width,
-})
-```
+DAKP's **off-label** (FAERS) observations are not disagreements — they're read separately
+on the [off-label view](./offlabel).
