@@ -1,0 +1,16 @@
+[
+  {"id": "medic-101", "drug_label": "Zinc oxide", "disease_label": "dyschromatosis universalis hereditaria", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "Diaper rash/sunscreen only; no pigmentary disorder target"},
+  {"id": "medic-105", "drug_label": "Spironolactone", "disease_label": "adrenal cortex adenoma", "prior_verdict": "FP4_overbroad", "verdict": "TARGET", "note": "Label names aldosterone-producing adrenal adenoma maintenance"},
+  {"id": "medic-113", "drug_label": "Coccidioides immitis spherule", "disease_label": "Acute coccidioidomycosis", "prior_verdict": "FP1_setting", "verdict": "CONFIRM_FP", "note": "Diagnostic skin-test antigen, not treatment"},
+  {"id": "medic-23", "drug_label": "Bupivacaine", "disease_label": "ankylosing spondylitis", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "Postsurgical analgesia only; AS not indicated"},
+  {"id": "medic-41", "drug_label": "Glucagon", "disease_label": "type 1 diabetes mellitus", "prior_verdict": "FP1_setting", "verdict": "CONFIRM_FP", "note": "Homeopathic phenolic-sensitivity label; no diabetes target"},
+  {"id": "medic-42", "drug_label": "Prucalopride", "disease_label": "CIC-rearranged sarcoma", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "CIC means chronic idiopathic constipation, not sarcoma"},
+  {"id": "medic-45", "drug_label": "Cholestyramine", "disease_label": "hypothyroidism", "prior_verdict": "FP1_setting", "verdict": "CONFIRM_FP", "note": "Hypothyroidism listed as cause to exclude, not target"},
+  {"id": "medic-5", "drug_label": "Menthol", "disease_label": "migraine with brainstem aura", "prior_verdict": "FP5_negation", "verdict": "CONFIRM_FP", "note": "Topical pain relief only; no migraine target"},
+  {"id": "medic-58", "drug_label": "Phylloquinone", "disease_label": "Sprue", "prior_verdict": "FP1_setting", "verdict": "CONFIRM_FP", "note": "Treats vitamin-K hypoprothrombinemia; sprue is setting"},
+  {"id": "medic-59", "drug_label": "Dexamethasone", "disease_label": "Necrobiosis Lipoidica Diabeticorum", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "Broad dermatologic list does not name necrobiosis lipoidica"},
+  {"id": "medic-66", "drug_label": "Sildenafil", "disease_label": "connective tissue disorder", "prior_verdict": "FP1_setting", "verdict": "CONFIRM_FP", "note": "Indicated for PAH; connective tissue disorder not named"},
+  {"id": "medic-67", "drug_label": "Diclofenac", "disease_label": "gastroesophageal reflux disease", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "Topical musculoskeletal pain; GERD is NSAID risk"},
+  {"id": "medic-73", "drug_label": "olmesartan", "disease_label": "myocardial infarction", "prior_verdict": "FP4_overbroad", "verdict": "CONFIRM_FP", "note": "MI is downstream risk; label denies proven reduction"},
+  {"id": "medic-99", "drug_label": "Choline", "disease_label": "chronic bronchitis", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "Homeopathic mood/memory label; no bronchitis target"}
+]
