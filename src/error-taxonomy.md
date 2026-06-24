@@ -163,7 +163,8 @@ link to their detail pages (expand the **FDA label** panel to check any call you
 ```js
 const auditAll = (await FileAttachment("data/fp_audit.json").json()).edges;
 const isFP = (v) => v.startsWith("FP");
-const srcSel = view(Inputs.select(["all", "dakp-approved", "medic"], {label: "Source", value: "all"}));
+const srcSel = view(Inputs.radio(["all", "dakp-approved", "medic"], {label: "Source", value: "all",
+  format: (v) => ({all: "All", "dakp-approved": "DAKP", medic: "MEDIC"}[v])}));
 const fpOnly = view(Inputs.toggle({label: "False positives only"}));
 const search = view(Inputs.text({label: "Search", placeholder: "drug, disease, or note…"}));
 ```
