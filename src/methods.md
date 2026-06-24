@@ -33,9 +33,9 @@ filter. Adding a source is a one-line entry in `SOURCE_ORDER` (+ `DRUG_FILTERED`
    - **Drugs** → the clique-preferred CURIE. Sources whose treatment subjects mix
      modalities (dismech: MAXO/NCIT) are filtered to **drug-typed** subjects via the
      clique's biolink types.
-   - **Diseases** → the clique's **MONDO** member when one exists; otherwise the
-     original term (usually HP). This undoes MONDO/HP same-name conflation. See
-     [de-conflation](./deconflation).
+   - **Diseases** → the clique-preferred CURIE, which is MONDO-centric by
+     construction (with conflation on, NodeNorm prefers a clique's MONDO whenever
+     one exists; terms with no MONDO equivalent keep their preferred CURIE, usually HP).
 
 3. **Build (drug, disease) pairs** per source under the `treats` relation; aggregate
    DAKP's `clinical_approval_status` (approved beats off-label) + `number_of_cases`,

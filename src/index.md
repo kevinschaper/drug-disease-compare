@@ -187,5 +187,5 @@ framed as observations, on the [off-label view](./offlabel).
 
 Dig in: [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
 rollups, [disagreements](./diff) for the triage queue, the [off-label view](./offlabel)
-for FAERS observations, [de-conflation](./deconflation) for the MONDO/HP audit, and
-[methods](./methods).
+for FAERS observations, the [error taxonomy](./error-taxonomy) for the label-grounded
+audit, and [methods](./methods).

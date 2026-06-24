@@ -71,9 +71,9 @@ def test_reconcile_disease_axis(rec):
     reconciler, _ = rec
     assert reconciler.disease("DOID:5").canonical == "MONDO:0000001"          # lift
     hp = reconciler.disease("HP:0001250")
-    assert hp.canonical == "MONDO:0000003" and hp.deconflated_from_hp          # de-conflate
+    assert hp.canonical == "MONDO:0000003"          # clique-preferred MONDO (NodeNorm)
     kept = reconciler.disease("HP:9999")
-    assert kept.canonical == "HP:9999" and kept.kept_hp                        # kept HP
+    assert kept.canonical == "HP:9999"              # no MONDO in clique, kept as-is
     assert reconciler.drug("CHEBI:1").canonical == "CHEBI:1"
     assert reconciler.is_drug("CHEBI:1") and not reconciler.is_drug("MAXO:1")  # drug filter
 
@@ -111,9 +111,6 @@ def test_three_source_membership(rec):
     assert s["pairwise"]["medic+dismech"]["shared"] == 2
     assert s["pairwise"]["dakp+dismech"]["shared"] == 1
     assert s["contraindication_pairs"] == 1
-
-    dc = result["deconflation"]["summary"]
-    assert dc.get("hp_to_mondo") == 1 and dc.get("kept_hp") == 1
 
     pairs = {(p["drug"], p["disease"]): p for p in result["pairs"]}
     # (CHEBI:1, MONDO:2) is DAKP-exact, MEDIC/dismech related via the parent MONDO:1

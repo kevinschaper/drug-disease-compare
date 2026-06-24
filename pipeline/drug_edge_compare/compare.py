@@ -418,7 +418,6 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
                         ensure_ascii=False),
                 })
 
-    deconflation = _deconflation_report(rec)
     contra_rows = sorted(
         ({"drug": v["drug"], "drug_label": v["drug_label"], "disease": k[1],
           "disease_label": v["disease_label"], "cases": v["cases"]}
@@ -433,7 +432,6 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         "by_disease": by_disease,
         "disease_areas": disease_areas,
         "dakp_offlabel_only_top_drugs": offlabel_top_drugs,
-        "deconflation": deconflation,
         "contraindications": {"summary": {"pairs": len(contra)}, "rows": contra_rows[:1000]},
         "medic_evidence": medic_evidence_rows,
     }
@@ -549,32 +547,3 @@ def _by_disease_area(by_disease: list[dict], present: list[str], mondo: MondoGra
         total = sum(a[s] for s in present)
         a["jaccard"] = round(a["shared"] / total, 4) if total else 0.0
     return sorted(areas.values(), key=lambda a: -sum(a[s] for s in present))
-
-
-def _deconflation_report(rec: Reconciler) -> dict:
-    """Categorize every disease CURIE we resolved by its normalization outcome."""
-    by_outcome: dict[str, int] = defaultdict(int)
-    hp_to_mondo: list[dict] = []
-    kept_hp: list[dict] = []
-    unresolved: list[dict] = []
-    for orig, res in rec._disease.items():
-        op = orig.split(":", 1)[0]
-        if res.deconflated_from_hp:
-            by_outcome["hp_to_mondo"] += 1
-            hp_to_mondo.append({"original": orig, "mondo": res.canonical, "label": res.label})
-        elif res.kept_hp:
-            by_outcome["kept_hp"] += 1
-            kept_hp.append({"original": orig, "label": res.label})
-        elif res.canonical_prefix == "MONDO":
-            by_outcome["lifted_to_mondo" if op != "MONDO" else "already_mondo"] += 1
-        elif not res.resolved:
-            by_outcome["unresolved"] += 1
-            unresolved.append({"original": orig, "label": res.label})
-        else:
-            by_outcome[f"kept_{res.canonical_prefix.lower()}"] += 1
-    return {
-        "summary": dict(sorted(by_outcome.items(), key=lambda kv: -kv[1])),
-        "hp_to_mondo": sorted(hp_to_mondo, key=lambda r: r["original"]),
-        "kept_hp": sorted(kept_hp, key=lambda r: r["original"]),
-        "unresolved": sorted(unresolved, key=lambda r: r["original"])[:500],
-    }

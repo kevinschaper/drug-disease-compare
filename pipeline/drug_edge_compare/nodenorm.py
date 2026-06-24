@@ -1,17 +1,11 @@
-"""SRI Node Normalizer client + clique-based, MONDO-centric reconciliation.
+"""SRI Node Normalizer client + clique-based reconciliation.
 
-This module is where the two feeds are made comparable. Both MEDIC and DAKP have
-already been normalized (differently: MEDIC keeps more UMLS/NCIT, DAKP resolved
-further, and both leak MONDO/HP same-name conflations). Rather than trust either
-side's normalization, we re-resolve every CURIE through one Node Normalizer pass
-so both land in the same identifier space, and we de-conflate the disease axis:
-
-* **Drugs** collapse to the clique's preferred CURIE (drug/chemical conflation on).
-* **Diseases** prefer the MONDO member of the clique; we keep the original term
-  (often HP) only when the clique has no MONDO. That is exactly the "fetch the full
-  clique, take the MONDO back, otherwise keep HP" de-conflation Kevin asked for —
-  it undoes node-normalizer collisions like HP:0001250 (Seizure) <-> MONDO:0005027
-  (epilepsy) MONDO-centrically.
+This module is where the feeds are made comparable. MEDIC, DAKP, and dismech were
+each normalized differently, so we re-resolve every CURIE through one Node
+Normalizer pass (conflation on) so they land in the same identifier space and
+collapse to the clique's preferred CURIE. With conflation on, the preferred id is
+already MONDO-centric for diseases (MONDO when a MONDO is in the clique), so no
+separate de-conflation step is needed.
 
 Responses are cached to a JSON file so repeat builds (and the test suite) don't
 re-hit the service.
@@ -39,15 +33,6 @@ class Clique:
     equivalent_ids: list[str] = field(default_factory=list)
     types: list[str] = field(default_factory=list)
     resolved: bool = True
-
-    def mondo(self) -> str | None:
-        """The MONDO member of the clique, preferred first, else None."""
-        if self.preferred_id.startswith("MONDO:"):
-            return self.preferred_id
-        for cid in self.equivalent_ids:
-            if cid.startswith("MONDO:"):
-                return cid
-        return None
 
 
 def _singleton(curie: str) -> Clique:

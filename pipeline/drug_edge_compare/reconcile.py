@@ -1,9 +1,9 @@
 """Map a raw edge's CURIEs onto canonical comparison keys.
 
-Drugs collapse to the clique-preferred CURIE. Diseases are resolved
-MONDO-centrically: the clique's MONDO member when one exists, otherwise the
-original term (kept as-is, typically HP). Each disease resolution records enough
-to drive the de-conflation report (was the original HP? did a MONDO exist?).
+Both drugs and diseases collapse to the clique-preferred CURIE. Node Normalizer
+(with conflation on) already makes MONDO the preferred id whenever a MONDO is in
+the clique, so the disease axis is MONDO-centric by construction; terms with no
+MONDO equivalent (typically HP) keep their preferred CURIE.
 """
 from __future__ import annotations
 
@@ -44,9 +44,6 @@ class DiseaseResolution:
     canonical: str
     label: str
     canonical_prefix: str       # MONDO | HP | UMLS | ...
-    mondo_in_clique: bool
-    deconflated_from_hp: bool    # original was HP but clique yielded a MONDO
-    kept_hp: bool                # original/canonical is HP with no MONDO in clique
     resolved: bool               # Node Normalizer recognised the CURIE
 
 
@@ -94,30 +91,14 @@ class Reconciler:
         if curie in self._disease:
             return self._disease[curie]
         c = self.nn.clique(curie)
-        mondo = c.mondo()
-        orig_is_hp = curie.startswith("HP:")
-        if mondo:
-            res = DiseaseResolution(
-                original=curie,
-                canonical=mondo,
-                label=self._label(mondo, c.preferred_label),
-                canonical_prefix="MONDO",
-                mondo_in_clique=True,
-                deconflated_from_hp=orig_is_hp,
-                kept_hp=False,
-                resolved=c.resolved,
-            )
-        else:
-            canonical = c.preferred_id
-            res = DiseaseResolution(
-                original=curie,
-                canonical=canonical,
-                label=self._label(canonical, c.preferred_label),
-                canonical_prefix=prefix(canonical),
-                mondo_in_clique=False,
-                deconflated_from_hp=False,
-                kept_hp=canonical.startswith("HP:"),
-                resolved=c.resolved,
-            )
-        self._disease[curie] = res
-        return res
+        # NodeNorm already prefers the clique's MONDO when one exists, so the
+        # preferred id is the canonical disease key (MONDO-centric by construction).
+        canonical = c.preferred_id
+        self._disease[curie] = DiseaseResolution(
+            original=curie,
+            canonical=canonical,
+            label=self._label(canonical, c.preferred_label),
+            canonical_prefix=prefix(canonical),
+            resolved=c.resolved,
+        )
+        return self._disease[curie]
