@@ -20,7 +20,6 @@ export default {
     {name: "Disagreements", path: "/diff"},
     {name: "Error taxonomy", path: "/error-taxonomy"},
     {name: "Off-label (FAERS)", path: "/offlabel"},
-    {name: "De-conflation", path: "/deconflation"},
     {name: "Contraindications", path: "/contraindications"},
     {name: "Methods", path: "/methods"},
   ],

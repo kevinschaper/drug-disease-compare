@@ -110,7 +110,6 @@ def build(drug_collapse: bool) -> None:
     _write("by_drug.json", result["by_drug"])
     _write("by_disease.json", result["by_disease"])
     _write("disease_areas.json", result["disease_areas"])
-    _write("deconflation.json", result["deconflation"])
     _write("contraindications.json", result["contraindications"])
 
     s = result["summary"]
@@ -120,9 +119,7 @@ def build(drug_collapse: bool) -> None:
         f"moiety: {s.get('moiety')}\n"
         f"combinations: {s['combinations']}\n"
         f"pairwise: {s['pairwise']}\n"
-        f"dismech: {s.get('dismech')}\n"
-        f"de-conflation: {result['deconflation']['summary'].get('hp_to_mondo', 0)} HP->MONDO, "
-        f"{result['deconflation']['summary'].get('kept_hp', 0)} kept HP"
+        f"dismech: {s.get('dismech')}"
     )
 
 
