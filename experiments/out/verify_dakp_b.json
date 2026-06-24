@@ -1,0 +1,170 @@
+[
+  {
+    "id": "dakp-approved-60",
+    "drug_label": "Prednisone",
+    "disease_label": "pneumocystosis",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "Pneumocystosis absent; infections only noted as warning"
+  },
+  {
+    "id": "dakp-approved-61",
+    "drug_label": "Midostaurin",
+    "disease_label": "mantle cell lymphoma",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "MCL means mast cell leukemia, not mantle cell lymphoma"
+  },
+  {
+    "id": "dakp-approved-67",
+    "drug_label": "Gabapentin",
+    "disease_label": "Mania",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "Only postherpetic neuralgia and partial seizures indicated"
+  },
+  {
+    "id": "dakp-approved-70",
+    "drug_label": "Etoposide",
+    "disease_label": "cancer",
+    "prior_verdict": "FP4_overbroad",
+    "verdict": "TARGET",
+    "note": "Indicated for neoplasms; cancer is genuine treatment target"
+  },
+  {
+    "id": "dakp-approved-71",
+    "drug_label": "Somatotropin",
+    "disease_label": "hypophysitis",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "Treats GH deficiency, not hypophysitis itself"
+  },
+  {
+    "id": "dakp-approved-72",
+    "drug_label": "Elosulfase alfa",
+    "disease_label": "mucopolysaccharidosis",
+    "prior_verdict": "FP4_overbroad",
+    "verdict": "TARGET",
+    "note": "MPS IVA indicated; a mucopolysaccharidosis is the target"
+  },
+  {
+    "id": "dakp-approved-74",
+    "drug_label": "Azacitidine",
+    "disease_label": "myeloid leukemia",
+    "prior_verdict": "FP4_overbroad",
+    "verdict": "TARGET",
+    "note": "CMMoL indicated, a myeloid leukemia subtype"
+  },
+  {
+    "id": "dakp-approved-75",
+    "drug_label": "Fenofibrate",
+    "disease_label": "pancreatitis",
+    "prior_verdict": "FP5_negation",
+    "verdict": "CONFIRM_FP",
+    "note": "Risk-reduction effect explicitly not adequately studied"
+  },
+  {
+    "id": "dakp-approved-79",
+    "drug_label": "Naproxen",
+    "disease_label": "heart failure",
+    "prior_verdict": "FP3_cross_section",
+    "verdict": "CONFIRM_FP",
+    "note": "Heart failure only in warnings (avoid use)"
+  },
+  {
+    "id": "dakp-approved-83",
+    "drug_label": "Anifrolumab",
+    "disease_label": "lupus nephritis",
+    "prior_verdict": "FP5_negation",
+    "verdict": "CONFIRM_FP",
+    "note": "Explicitly not recommended for lupus nephritis"
+  },
+  {
+    "id": "dakp-approved-87",
+    "drug_label": "Riociguat",
+    "disease_label": "hypertensive disorder",
+    "prior_verdict": "FP4_overbroad",
+    "verdict": "TARGET",
+    "note": "Pulmonary hypertension (PAH/CTEPH) is a hypertensive disorder"
+  },
+  {
+    "id": "dakp-approved-93",
+    "drug_label": "Ibuprofen",
+    "disease_label": "heart disorder",
+    "prior_verdict": "FP3_cross_section",
+    "verdict": "CONFIRM_FP",
+    "note": "OTC for aches/fever; heart disorder not indicated"
+  },
+  {
+    "id": "dakp-approved-94",
+    "drug_label": "Solriamfetol",
+    "disease_label": "obstructive sleep apnea syndrome",
+    "prior_verdict": "FP1_setting",
+    "verdict": "CONFIRM_FP",
+    "note": "Treats sleepiness; explicitly not the airway obstruction"
+  },
+  {
+    "id": "dakp-approved-98",
+    "drug_label": "Morphine",
+    "disease_label": "pain agnosia",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "Opium tincture for diarrhea; pain agnosia absent"
+  },
+  {
+    "id": "dakp-approved-100",
+    "drug_label": "Tetracosactide",
+    "disease_label": "adrenocortical insufficiency",
+    "prior_verdict": "FP1_setting",
+    "verdict": "CONFIRM_FP",
+    "note": "Diagnostic screening agent, not a treatment"
+  },
+  {
+    "id": "dakp-approved-107",
+    "drug_label": "Ramipril",
+    "disease_label": "angioedema",
+    "prior_verdict": "FP3_cross_section",
+    "verdict": "CONFIRM_FP",
+    "note": "Angioedema is contraindication/warning, drug causes it"
+  },
+  {
+    "id": "dakp-approved-108",
+    "drug_label": "Lidocaine",
+    "disease_label": "premature ejaculation",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "Pain/anesthesia uses only; premature ejaculation absent"
+  },
+  {
+    "id": "dakp-approved-110",
+    "drug_label": "Niacin",
+    "disease_label": "liver disorder",
+    "prior_verdict": "FP7_confirmed",
+    "verdict": "CONFIRM_FP",
+    "note": "Vitamin supplement; liver disorder not indicated"
+  },
+  {
+    "id": "dakp-approved-111",
+    "drug_label": "Metronidazole",
+    "disease_label": "vulvovaginitis",
+    "prior_verdict": "FP4_overbroad",
+    "verdict": "TARGET",
+    "note": "Trichomonal vaginitis (T. vaginalis) is indicated target"
+  },
+  {
+    "id": "dakp-approved-112",
+    "drug_label": "Epinephrine",
+    "disease_label": "angioedema",
+    "prior_verdict": "FP7_notintext",
+    "verdict": "TARGET",
+    "note": "Treats angioedema as manifestation of indicated anaphylaxis"
+  },
+  {
+    "id": "dakp-approved-118",
+    "drug_label": "Brinzolamide",
+    "disease_label": "hypertensive disorder",
+    "prior_verdict": "FP4_overbroad",
+    "verdict": "TARGET",
+    "note": "Ocular hypertension indicated, a hypertensive disorder"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {"id": "dakp-approved-12", "drug_label": "Oxymetazoline", "disease_label": "rosacea", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "labels only treat nasal congestion; rosacea absent"},
+  {"id": "dakp-approved-16", "drug_label": "Atenolol", "disease_label": "heart failure", "prior_verdict": "FP3_cross_section", "verdict": "CONFIRM_FP", "note": "indicated for hypertension; cardiac failure is contraindication"},
+  {"id": "dakp-approved-23", "drug_label": "Methenamine", "disease_label": "bacteriuria", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "indicated for irritative voiding symptom relief, not bacteriuria"},
+  {"id": "dakp-approved-27", "drug_label": "Olanzapine", "disease_label": "Weight Gain", "prior_verdict": "FP1_setting", "verdict": "CONFIRM_FP", "note": "weight gain is adverse effect, not treatment target"},
+  {"id": "dakp-approved-33", "drug_label": "tolvaptan", "disease_label": "kidney disorder", "prior_verdict": "FP4_overbroad", "verdict": "TARGET", "note": "slows kidney function decline in ADPKD, a kidney disorder"},
+  {"id": "dakp-approved-35", "drug_label": "Morphine", "disease_label": "depressive disorder", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "opium tincture indicated for diarrhea; depression absent"},
+  {"id": "dakp-approved-37", "drug_label": "Prednisone", "disease_label": "allergic bronchopulmonary aspergillosis", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "ABPA not in indication list"},
+  {"id": "dakp-approved-38", "drug_label": "Hydrocortisone", "disease_label": "ulcer disease", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "topical for dermatoses/itching; ulcer disease not a target"},
+  {"id": "dakp-approved-4", "drug_label": "Diazoxide", "disease_label": "Prader-Willi syndrome", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "indicated for hyperinsulinism hypoglycemia; PWS not listed"},
+  {"id": "dakp-approved-41", "drug_label": "Rifaximin", "disease_label": "liver disorder", "prior_verdict": "FP4_overbroad", "verdict": "CONFIRM_FP", "note": "treats hepatic encephalopathy, not the liver disorder itself"},
+  {"id": "dakp-approved-45", "drug_label": "Corticotropin", "disease_label": "chorioretinitis", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "only homeopathic claims; chorioretinitis absent"},
+  {"id": "dakp-approved-49", "drug_label": "Modafinil", "disease_label": "Hypopnea", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "treats OSA sleepiness, explicitly not underlying obstruction"},
+  {"id": "dakp-approved-50", "drug_label": "Erlotinib", "disease_label": "small cell lung carcinoma", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "indicated for non-small cell lung cancer; SCLC excluded"},
+  {"id": "dakp-approved-52", "drug_label": "Gefitinib", "disease_label": "small cell lung carcinoma", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "indicated for non-small cell lung cancer; SCLC excluded"},
+  {"id": "dakp-approved-54", "drug_label": "LISINOPRIL", "disease_label": "angioedema", "prior_verdict": "FP3_cross_section", "verdict": "CONFIRM_FP", "note": "indicated for hypertension; angioedema is contraindication/adverse"},
+  {"id": "dakp-approved-57", "drug_label": "Famotidine", "disease_label": "dyspepsia", "prior_verdict": "FP2_symptom_swap", "verdict": "CONFIRM_FP", "note": "indicated for ulcers/GERD; dyspepsia not named target"},
+  {"id": "dakp-approved-6", "drug_label": "Nebivolol", "disease_label": "heart failure", "prior_verdict": "FP3_cross_section", "verdict": "CONFIRM_FP", "note": "indicated for hypertension; decompensated cardiac failure contraindicated"},
+  {"id": "dakp-approved-8", "drug_label": "Praziquantel", "disease_label": "fascioliasis", "prior_verdict": "FP7_confirmed", "verdict": "CONFIRM_FP", "note": "treats Clonorchis/Opisthorchis flukes, not Fasciola"}
+]

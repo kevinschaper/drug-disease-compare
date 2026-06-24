@@ -1,0 +1,84 @@
+{
+  "dakp-approved": {
+    "n_judged": 94,
+    "precision_consensus": [
+      67.0,
+      57.0,
+      75.7
+    ],
+    "fp_rate_consensus": [
+      33.0,
+      24.3,
+      43.0
+    ],
+    "fp_rate_firstpass": [
+      41.5,
+      32.1,
+      51.6
+    ],
+    "n_overturned_on_review": 8,
+    "by_type_consensus": {
+      "FP7": [
+        18,
+        19.1
+      ],
+      "FP3_cross_section": [
+        6,
+        6.4
+      ],
+      "FP1_setting": [
+        3,
+        3.2
+      ],
+      "FP5_negation": [
+        2,
+        2.1
+      ],
+      "FP4_overbroad": [
+        1,
+        1.1
+      ],
+      "FP2_symptom_swap": [
+        1,
+        1.1
+      ]
+    }
+  },
+  "medic": {
+    "n_judged": 64,
+    "precision_consensus": [
+      79.7,
+      68.3,
+      87.7
+    ],
+    "fp_rate_consensus": [
+      20.3,
+      12.3,
+      31.7
+    ],
+    "fp_rate_firstpass": [
+      21.9,
+      13.5,
+      33.4
+    ],
+    "n_overturned_on_review": 1,
+    "by_type_consensus": {
+      "FP7": [
+        6,
+        9.4
+      ],
+      "FP1_setting": [
+        5,
+        7.8
+      ],
+      "FP5_negation": [
+        1,
+        1.6
+      ],
+      "FP4_overbroad": [
+        1,
+        1.6
+      ]
+    }
+  }
+}
