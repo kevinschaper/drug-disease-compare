@@ -98,6 +98,15 @@ def build_pairs(edges: list[dict], rec: Reconciler):
         if src == "dakp":
             row["status"] = _agg_status(row["status"], e["clinical_approval_status"])
             row["cases"] += int(e["number_of_cases"] or 0)
+            # preserve DAKP's underlying evidence: DailyMed SPL setids + FDA approvals
+            setids = row.setdefault("setids", [])
+            for p in e.get("publications") or []:
+                if p not in setids:
+                    setids.append(p)
+            fda = row.setdefault("fda_approvals", [])
+            for p in e.get("fda_approvals") or []:
+                if p not in fda:
+                    fda.append(p)
         elif src == "medic":
             # verbatim approving-agency indication text, kept per agency (FDA/EMA/PMDA)
             ev = row.setdefault("medic_evidence", {})
@@ -241,6 +250,10 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         dk = treat["dakp"].get(key) if "dakp" in present else None
         row["dakp_status"] = dk["status"] if dk else ""
         row["dakp_cases"] = dk["cases"] if dk else 0
+        # DailyMed SPL setids + FDA application numbers backing this DAKP edge
+        row["dakp_evidence"] = json.dumps(
+            {"setids": dk.get("setids", []), "fda": dk.get("fda_approvals", [])},
+            ensure_ascii=False) if dk and (dk.get("setids") or dk.get("fda_approvals")) else ""
         dm = treat["dismech"].get(key) if "dismech" in present else None
         row["dismech_pubs"] = dm["pubs"] if dm else 0
         row["dismech_evidence"] = json.dumps(

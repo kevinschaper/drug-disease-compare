@@ -23,7 +23,7 @@ const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.ma
 const detail = id
   ? toRows(await sql`
       SELECT drug, drug_label, medic, dakp, dismech, dakp_status,
-             CAST(dakp_cases AS INTEGER) AS cases, dismech_evidence,
+             CAST(dakp_cases AS INTEGER) AS cases, dismech_evidence, dakp_evidence,
              CAST(n_exact AS INTEGER) AS n_exact, note
       FROM pairs WHERE disease = ${id} ORDER BY n_exact DESC, drug_label`)
   : [];
@@ -95,6 +95,23 @@ const dismechCell = (json) => {
   });
   return html`${links.flatMap((a, i) => (i ? [document.createTextNode(" "), a] : [a]))}`;
 };
+
+// DAKP's underlying evidence: DailyMed SPL labels (setids) + FDA application numbers.
+const dailymedCell = (json) => {
+  let v = null;
+  try { v = json ? JSON.parse(json) : null; } catch (e) { v = null; }
+  if (!v) return "";
+  const setids = v.setids || [], fda = v.fda || [], cap = 5, out = [];
+  setids.slice(0, cap).forEach((sid, i) => {
+    out.push(html`<a class="dm-ref" href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${sid}" target="_blank" rel="noopener" title="DailyMed label ↗">SPL${i + 1}</a>`, document.createTextNode(" "));
+  });
+  if (setids.length > cap) out.push(html`<span class="muted" style="font-size:11px">+${setids.length - cap}</span>`, document.createTextNode(" "));
+  fda.forEach((appl) => {
+    const num = String(appl).replace(/[^0-9]/g, "");
+    out.push(html`<a class="dm-fda" href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=${num}" target="_blank" rel="noopener" title="Drugs@FDA ↗">${appl}</a>`, document.createTextNode(" "));
+  });
+  return out.length ? html`${out}` : "";
+};
 ```
 
 <style>
@@ -106,6 +123,8 @@ const dismechCell = (json) => {
   background: color-mix(in srgb, var(--theme-foreground, #1b1e23) 9%, transparent);
 }
 .agency-chip:hover { border-color: color-mix(in srgb, currentColor 32%, transparent); }
+.dm-ref, .dm-fda { font-size: 11px; font-weight: 600; white-space: nowrap; color: #4269d0; }
+.dm-fda { color: #6b7280; }
 .ev-pmid {
   appearance: none; font: inherit; cursor: pointer; border: none; background: none; padding: 0 2px;
   color: #4269d0; text-decoration: underline; font-variant-numeric: tabular-nums;
@@ -152,14 +171,15 @@ hover a **dismech ref** number for its supporting text.
 // shared table renderer. Explicit column widths so long drug names (and the
 // hierarchy note) don't truncate.
 const renderTable = (rows) => Inputs.table(rows, {
-  columns: ["drug", "medic", "indication", "dakp", "dismech", "dakp_status", "cases", "dismech_evidence", "n_exact", "note"],
-  header: {drug: "Drug", medic: "MEDIC", indication: "MEDIC indication", dakp: "DAKP", dismech: "dismech", dakp_status: "DAKP status", cases: "FAERS cases", dismech_evidence: "dismech refs", n_exact: "n", note: "Hierarchy note"},
+  columns: ["drug", "medic", "indication", "dakp", "dismech", "dakp_status", "dakp_evidence", "cases", "dismech_evidence", "n_exact", "note"],
+  header: {drug: "Drug", medic: "MEDIC", indication: "MEDIC indication", dakp: "DAKP", dismech: "dismech", dakp_status: "DAKP status", dakp_evidence: "DailyMed / FDA", cases: "FAERS cases", dismech_evidence: "dismech refs", n_exact: "n", note: "Hierarchy note"},
   format: {
     drug: (cid) => html`<a href="drug?id=${encodeURIComponent(cid)}">${drugLabel.get(cid) ?? cid}</a>`,
     indication: (json) => agencyCell(json),
+    dakp_evidence: (json) => dailymedCell(json),
     dismech_evidence: (json) => dismechCell(json),
   },
-  width: {drug: 440, medic: 64, indication: 86, dakp: 64, dismech: 72, dakp_status: 150, cases: 84, dismech_evidence: 120, n_exact: 36, note: 240},
+  width: {drug: 400, medic: 60, indication: 86, dakp: 60, dismech: 70, dakp_status: 150, dakp_evidence: 150, cases: 80, dismech_evidence: 110, n_exact: 36, note: 220},
   sort: "n_exact", reverse: true, rows: 100, maxWidth: width,
 });
 ```
