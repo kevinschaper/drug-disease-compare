@@ -29,6 +29,30 @@ const labelOfDisease = new Map(byDisease.map((d) => [d.disease, d.disease_label]
   </div>
 </div>
 
+## Identifier prefixes by source
+
+Distinct diseases each source asserts, by CURIE prefix. **MONDO** is the shared,
+hierarchy-aware space; the non-MONDO rows (UMLS / EFO / NCIT / …) are terms that don't
+participate in MONDO is-a reconciliation — a largely MEDIC-only tail that inflates edge
+counts without connecting to the rest.
+
+```js
+const SRC_LABEL = {medic: "MEDIC", dakp: "DAKP", dismech: "dismech"};
+const prefixTable = (rows, std) => {
+  const tot = (r) => sources.reduce((a, s) => a + (r[s] || 0), 0);
+  return html`<table style="width:auto; min-width:360px">
+    <thead><tr><th style="text-align:left">Prefix</th>
+      ${sources.map((s) => html`<th style="text-align:right">${SRC_LABEL[s] ?? s}</th>`)}
+      <th style="text-align:right">total</th></tr></thead>
+    <tbody>${rows.map((r) => html`<tr style="${std(r.prefix) ? "" : "opacity:0.72"}">
+      <td><strong>${r.prefix}</strong>${std(r.prefix) ? "" : html` <span class="small muted">tail</span>`}</td>
+      ${sources.map((s) => html`<td style="text-align:right;font-variant-numeric:tabular-nums">${(r[s] || 0).toLocaleString()}</td>`)}
+      <td style="text-align:right;font-variant-numeric:tabular-nums"><strong>${tot(r).toLocaleString()}</strong></td>
+    </tr>`)}</tbody></table>`;
+};
+display(prefixTable(summary.prefixes.disease, (p) => p === "MONDO"));
+```
+
 ## Coverage by MONDO disease area
 
 Each disease is rolled up to its area(s) one level below MONDO's

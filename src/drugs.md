@@ -28,6 +28,29 @@ const labelOfDrug = new Map(byDrug.map((d) => [d.drug, d.drug_label]));
   </div>
 </div>
 
+## Identifier prefixes by source
+
+Distinct drugs each source asserts, by CURIE prefix. **CHEBI** and **UNII** are the
+well-connected spaces NodeNorm collapses to; the tail (RXCUI / DRUGBANK / MESH / UMLS / …)
+are drugs that didn't resolve to one — a largely MEDIC-only tail.
+
+```js
+const SRC_LABEL = {medic: "MEDIC", dakp: "DAKP", dismech: "dismech"};
+const prefixTable = (rows, std) => {
+  const tot = (r) => sources.reduce((a, s) => a + (r[s] || 0), 0);
+  return html`<table style="width:auto; min-width:360px">
+    <thead><tr><th style="text-align:left">Prefix</th>
+      ${sources.map((s) => html`<th style="text-align:right">${SRC_LABEL[s] ?? s}</th>`)}
+      <th style="text-align:right">total</th></tr></thead>
+    <tbody>${rows.map((r) => html`<tr style="${std(r.prefix) ? "" : "opacity:0.72"}">
+      <td><strong>${r.prefix}</strong>${std(r.prefix) ? "" : html` <span class="small muted">tail</span>`}</td>
+      ${sources.map((s) => html`<td style="text-align:right;font-variant-numeric:tabular-nums">${(r[s] || 0).toLocaleString()}</td>`)}
+      <td style="text-align:right;font-variant-numeric:tabular-nums"><strong>${tot(r).toLocaleString()}</strong></td>
+    </tr>`)}</tbody></table>`;
+};
+display(prefixTable(summary.prefixes.drug, (p) => p === "CHEBI" || p === "UNII"));
+```
+
 ## Disease counts per drug — pick any two sources
 
 Each point is a drug: diseases asserted by one source (x) vs another (y); the scatter is

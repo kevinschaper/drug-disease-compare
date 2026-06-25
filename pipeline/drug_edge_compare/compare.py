@@ -408,6 +408,8 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
             ),
         }
 
+    summary["prefixes"] = _prefix_stats(pairs, present)
+
     # --- rollups + reports ---
     by_drug = _rollup(pairs, present, "drug", "drug_label", carry=("drug_unii",))
     by_disease = _rollup(pairs, present, "disease", "disease_label", prefix_key="disease_prefix")
@@ -560,3 +562,29 @@ def _by_disease_area(by_disease: list[dict], present: list[str], mondo: MondoGra
         total = sum(a[s] for s in present)
         a["jaccard"] = round(a["shared"] / total, 4) if total else 0.0
     return sorted(areas.values(), key=lambda a: -sum(a[s] for s in present))
+
+
+def _prefix_stats(pairs: list[dict], present: list[str]) -> dict:
+    """Per-source distinct-entity counts by CURIE prefix, for drugs and diseases.
+
+    Surfaces each source's identifier-space footprint — e.g. MEDIC's long non-MONDO
+    tail (UMLS/EFO/NCIT) that DAKP (MONDO/HP) and dismech (MONDO) don't carry.
+    """
+    dis: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
+    drg: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
+    cross: dict[tuple[str, str], int] = defaultdict(int)  # (drug_pfx, disease_pfx) -> distinct pairs
+    for p in pairs:
+        dpfx, gpfx = p["disease_prefix"], p["drug"].split(":", 1)[0]
+        cross[(gpfx, dpfx)] += 1
+        for s in present:
+            if p.get(s) == "exact":
+                dis[dpfx][s].add(p["disease"])
+                drg[gpfx][s].add(p["drug"])
+
+    def rows(d):
+        out = [{"prefix": pfx, **{s: len(d[pfx].get(s, ())) for s in present}} for pfx in d]
+        return sorted(out, key=lambda r: -sum(r[s] for s in present))
+
+    cross_rows = [{"drug_prefix": g, "disease_prefix": d, "pairs": n}
+                  for (g, d), n in sorted(cross.items(), key=lambda kv: -kv[1])]
+    return {"disease": rows(dis), "drug": rows(drg), "cross": cross_rows}
