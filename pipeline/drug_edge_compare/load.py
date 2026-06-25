@@ -86,7 +86,10 @@ def load_dakp(edges_path: str | Path) -> list[dict]:
                     "original_object": e.get("original_object", e["object"]),
                     "clinical_approval_status": e.get("clinical_approval_status"),
                     "number_of_cases": e.get("number_of_cases"),
-                    "publications": "",
+                    # DAKP's underlying evidence: DailyMed SPL setids (``publications``)
+                    # and FDA application numbers (``FDA_regulatory_approvals``).
+                    "publications": e.get("publications") or [],
+                    "fda_approvals": e.get("FDA_regulatory_approvals") or [],
                 }
             )
     return out
