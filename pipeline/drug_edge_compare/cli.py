@@ -76,6 +76,10 @@ def build(drug_collapse: bool) -> None:
 
     click.echo("loading MONDO is-a graph (release KGX)...")
     mondo = MondoGraph(INPUTS / "mondo_edges.tsv", INPUTS / "mondo_nodes.tsv")
+    # phenotype-aware closure (MONDO + HP) used only by the redundancy analysis;
+    # the comparison itself stays MONDO-only via `mondo` above.
+    hier = MondoGraph(INPUTS / "mondo_edges.tsv", INPUTS / "mondo_nodes.tsv",
+                      prefixes=("MONDO", "HP"))
 
     node_labels = load.load_dakp_node_labels(INPUTS / "dakp_nodes.jsonl")
     rec = Reconciler(nn, mondo, node_labels)
@@ -93,7 +97,8 @@ def build(drug_collapse: bool) -> None:
     if drug_collapse:
         click.echo("resolving drug-axis groups (active moiety, ion-guarded; cached)...")
         clients, grouper = moiety_grouper(DRUG_GROUP_CACHE)
-    result = compare.compare(edges, rec, mondo, dismech_scope=dismech_scope, drug_grouper=grouper)
+    result = compare.compare(edges, rec, mondo, dismech_scope=dismech_scope,
+                             drug_grouper=grouper, hier=hier)
     if clients is not None:
         clients.save()
 
@@ -111,6 +116,7 @@ def build(drug_collapse: bool) -> None:
     _write("by_disease.json", result["by_disease"])
     _write("disease_areas.json", result["disease_areas"])
     _write("contraindications.json", result["contraindications"])
+    _write("redundancy.json", result["redundancy"])
 
     s = result["summary"]
     click.echo(

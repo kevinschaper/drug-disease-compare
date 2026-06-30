@@ -14,7 +14,13 @@ SUBCLASS = "biolink:subclass_of"
 
 
 class MondoGraph:
-    def __init__(self, edges_path: str | Path, nodes_path: str | Path):
+    def __init__(self, edges_path: str | Path, nodes_path: str | Path,
+                 prefixes: tuple[str, ...] = ("MONDO",)):
+        # Which ontology prefixes to load is-a edges for. Default MONDO-only (the
+        # cross-source reconciliation axis); pass ("MONDO", "HP") for a phenotype-
+        # aware closure used by the redundancy analysis. MONDO and HP subclass_of
+        # subtrees are disjoint, so widening here never changes MONDO ancestors.
+        self._prefixes = set(prefixes)
         self._parents: dict[str, set[str]] = {}
         self._children: dict[str, set[str]] = {}
         self._labels: dict[str, str] = {}
@@ -28,7 +34,7 @@ class MondoGraph:
         with open(path, newline="") as f:
             for row in csv.DictReader(f, delimiter="\t"):
                 node = row.get("id", "")
-                if not node.startswith("MONDO:"):
+                if node.split(":", 1)[0] not in self._prefixes:
                     continue
                 self._labels[node] = row.get("name") or node
                 if (row.get("deprecated") or "").strip().lower() in {"true", "1"}:
@@ -40,7 +46,8 @@ class MondoGraph:
                 if row.get("predicate") != SUBCLASS:
                     continue
                 child, parent = row.get("subject", ""), row.get("object", "")
-                if not (child.startswith("MONDO:") and parent.startswith("MONDO:")):
+                if (child.split(":", 1)[0] not in self._prefixes
+                        or parent.split(":", 1)[0] not in self._prefixes):
                     continue
                 self._parents.setdefault(child, set()).add(parent)
                 self._children.setdefault(parent, set()).add(child)

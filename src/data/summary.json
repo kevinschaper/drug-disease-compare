@@ -415,5 +415,25 @@
         "pairs": 1
       }
     ]
+  },
+  "redundancy": {
+    "medic": {
+      "raw": 10878,
+      "concepts": 9493,
+      "redundant_edges": 1385,
+      "factor": 1.146
+    },
+    "dakp": {
+      "raw": 65064,
+      "concepts": 48897,
+      "redundant_edges": 16167,
+      "factor": 1.331
+    },
+    "dismech": {
+      "raw": 1101,
+      "concepts": 1063,
+      "redundant_edges": 38,
+      "factor": 1.036
+    }
   }
 }
