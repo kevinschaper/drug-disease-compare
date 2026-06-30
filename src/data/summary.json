@@ -106,5 +106,334 @@
     "by_dakp": 555,
     "scope_diseases": 1147,
     "gaps_in_scope": 18389
+  },
+  "prefixes": {
+    "disease": [
+      {
+        "prefix": "MONDO",
+        "medic": 1774,
+        "dakp": 1239,
+        "dismech": 469
+      },
+      {
+        "prefix": "UMLS",
+        "medic": 580,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "HP",
+        "medic": 246,
+        "dakp": 282,
+        "dismech": 0
+      },
+      {
+        "prefix": "NCIT",
+        "medic": 36,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "EFO",
+        "medic": 29,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "DOID",
+        "medic": 2,
+        "dakp": 0,
+        "dismech": 0
+      }
+    ],
+    "drug": [
+      {
+        "prefix": "CHEBI",
+        "medic": 1307,
+        "dakp": 1079,
+        "dismech": 437
+      },
+      {
+        "prefix": "UNII",
+        "medic": 429,
+        "dakp": 332,
+        "dismech": 1
+      },
+      {
+        "prefix": "RXCUI",
+        "medic": 268,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "PUBCHEM.COMPOUND",
+        "medic": 136,
+        "dakp": 6,
+        "dismech": 4
+      },
+      {
+        "prefix": "DRUGBANK",
+        "medic": 71,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "UMLS",
+        "medic": 46,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "MESH",
+        "medic": 12,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "CHEMBL.COMPOUND",
+        "medic": 7,
+        "dakp": 2,
+        "dismech": 0
+      },
+      {
+        "prefix": "UniProtKB",
+        "medic": 1,
+        "dakp": 0,
+        "dismech": 0
+      },
+      {
+        "prefix": "DrugCentral",
+        "medic": 1,
+        "dakp": 0,
+        "dismech": 0
+      }
+    ],
+    "cross": [
+      {
+        "drug_prefix": "CHEBI",
+        "disease_prefix": "MONDO",
+        "pairs": 49350
+      },
+      {
+        "drug_prefix": "UNII",
+        "disease_prefix": "MONDO",
+        "pairs": 10729
+      },
+      {
+        "drug_prefix": "CHEBI",
+        "disease_prefix": "HP",
+        "pairs": 9030
+      },
+      {
+        "drug_prefix": "UNII",
+        "disease_prefix": "HP",
+        "pairs": 1049
+      },
+      {
+        "drug_prefix": "CHEBI",
+        "disease_prefix": "UMLS",
+        "pairs": 926
+      },
+      {
+        "drug_prefix": "PUBCHEM.COMPOUND",
+        "disease_prefix": "MONDO",
+        "pairs": 728
+      },
+      {
+        "drug_prefix": "RXCUI",
+        "disease_prefix": "MONDO",
+        "pairs": 699
+      },
+      {
+        "drug_prefix": "UNII",
+        "disease_prefix": "UMLS",
+        "pairs": 177
+      },
+      {
+        "drug_prefix": "UMLS",
+        "disease_prefix": "MONDO",
+        "pairs": 111
+      },
+      {
+        "drug_prefix": "DRUGBANK",
+        "disease_prefix": "MONDO",
+        "pairs": 99
+      },
+      {
+        "drug_prefix": "PUBCHEM.COMPOUND",
+        "disease_prefix": "HP",
+        "pairs": 89
+      },
+      {
+        "drug_prefix": "RXCUI",
+        "disease_prefix": "HP",
+        "pairs": 87
+      },
+      {
+        "drug_prefix": "CHEMBL.COMPOUND",
+        "disease_prefix": "MONDO",
+        "pairs": 84
+      },
+      {
+        "drug_prefix": "RXCUI",
+        "disease_prefix": "UMLS",
+        "pairs": 81
+      },
+      {
+        "drug_prefix": "CHEBI",
+        "disease_prefix": "EFO",
+        "pairs": 73
+      },
+      {
+        "drug_prefix": "CHEBI",
+        "disease_prefix": "NCIT",
+        "pairs": 73
+      },
+      {
+        "drug_prefix": "PUBCHEM.COMPOUND",
+        "disease_prefix": "UMLS",
+        "pairs": 67
+      },
+      {
+        "drug_prefix": "MESH",
+        "disease_prefix": "MONDO",
+        "pairs": 47
+      },
+      {
+        "drug_prefix": "UMLS",
+        "disease_prefix": "UMLS",
+        "pairs": 18
+      },
+      {
+        "drug_prefix": "CHEMBL.COMPOUND",
+        "disease_prefix": "HP",
+        "pairs": 17
+      },
+      {
+        "drug_prefix": "UNII",
+        "disease_prefix": "EFO",
+        "pairs": 14
+      },
+      {
+        "drug_prefix": "DRUGBANK",
+        "disease_prefix": "UMLS",
+        "pairs": 12
+      },
+      {
+        "drug_prefix": "UNII",
+        "disease_prefix": "NCIT",
+        "pairs": 9
+      },
+      {
+        "drug_prefix": "RXCUI",
+        "disease_prefix": "NCIT",
+        "pairs": 9
+      },
+      {
+        "drug_prefix": "UMLS",
+        "disease_prefix": "HP",
+        "pairs": 8
+      },
+      {
+        "drug_prefix": "DRUGBANK",
+        "disease_prefix": "HP",
+        "pairs": 6
+      },
+      {
+        "drug_prefix": "RXCUI",
+        "disease_prefix": "EFO",
+        "pairs": 6
+      },
+      {
+        "drug_prefix": "PUBCHEM.COMPOUND",
+        "disease_prefix": "EFO",
+        "pairs": 5
+      },
+      {
+        "drug_prefix": "MESH",
+        "disease_prefix": "UMLS",
+        "pairs": 3
+      },
+      {
+        "drug_prefix": "UMLS",
+        "disease_prefix": "EFO",
+        "pairs": 3
+      },
+      {
+        "drug_prefix": "CHEBI",
+        "disease_prefix": "DOID",
+        "pairs": 3
+      },
+      {
+        "drug_prefix": "PUBCHEM.COMPOUND",
+        "disease_prefix": "NCIT",
+        "pairs": 2
+      },
+      {
+        "drug_prefix": "UniProtKB",
+        "disease_prefix": "MONDO",
+        "pairs": 2
+      },
+      {
+        "drug_prefix": "MESH",
+        "disease_prefix": "HP",
+        "pairs": 2
+      },
+      {
+        "drug_prefix": "UMLS",
+        "disease_prefix": "NCIT",
+        "pairs": 2
+      },
+      {
+        "drug_prefix": "CHEMBL.COMPOUND",
+        "disease_prefix": "NCIT",
+        "pairs": 1
+      },
+      {
+        "drug_prefix": "DRUGBANK",
+        "disease_prefix": "NCIT",
+        "pairs": 1
+      },
+      {
+        "drug_prefix": "DRUGBANK",
+        "disease_prefix": "EFO",
+        "pairs": 1
+      },
+      {
+        "drug_prefix": "DrugCentral",
+        "disease_prefix": "MONDO",
+        "pairs": 1
+      },
+      {
+        "drug_prefix": "MESH",
+        "disease_prefix": "EFO",
+        "pairs": 1
+      },
+      {
+        "drug_prefix": "PUBCHEM.COMPOUND",
+        "disease_prefix": "DOID",
+        "pairs": 1
+      }
+    ]
+  },
+  "redundancy": {
+    "medic": {
+      "raw": 10878,
+      "concepts": 9493,
+      "redundant_edges": 1385,
+      "factor": 1.146
+    },
+    "dakp": {
+      "raw": 65064,
+      "concepts": 48897,
+      "redundant_edges": 16167,
+      "factor": 1.331
+    },
+    "dismech": {
+      "raw": 1101,
+      "concepts": 1063,
+      "redundant_edges": 38,
+      "factor": 1.036
+    }
   }
 }

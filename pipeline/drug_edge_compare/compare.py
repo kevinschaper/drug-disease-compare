@@ -138,7 +138,8 @@ def build_pairs(edges: list[dict], rec: Reconciler):
 
 
 def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
-            dismech_scope: set | None = None, drug_grouper=None) -> dict:
+            dismech_scope: set | None = None, drug_grouper=None,
+            hier: MondoGraph | None = None) -> dict:
     treat, contra = build_pairs(edges, rec)
     present = [s for s in SOURCE_ORDER if treat.get(s)]
 
@@ -408,6 +409,11 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
             ),
         }
 
+    summary["prefixes"] = _prefix_stats(pairs, present)
+
+    redundancy = _redundancy(pairs, present, hier) if hier is not None else {"by_source": {}, "clusters": []}
+    summary["redundancy"] = redundancy["by_source"]
+
     # --- rollups + reports ---
     by_drug = _rollup(pairs, present, "drug", "drug_label", carry=("drug_unii",))
     by_disease = _rollup(pairs, present, "disease", "disease_label", prefix_key="disease_prefix")
@@ -447,6 +453,7 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         "dakp_offlabel_only_top_drugs": offlabel_top_drugs,
         "contraindications": {"summary": {"pairs": len(contra)}, "rows": contra_rows[:1000]},
         "medic_evidence": medic_evidence_rows,
+        "redundancy": redundancy,
     }
 
 
@@ -560,3 +567,82 @@ def _by_disease_area(by_disease: list[dict], present: list[str], mondo: MondoGra
         total = sum(a[s] for s in present)
         a["jaccard"] = round(a["shared"] / total, 4) if total else 0.0
     return sorted(areas.values(), key=lambda a: -sum(a[s] for s in present))
+
+
+def _prefix_stats(pairs: list[dict], present: list[str]) -> dict:
+    """Per-source distinct-entity counts by CURIE prefix, for drugs and diseases.
+
+    Surfaces each source's identifier-space footprint — e.g. MEDIC's long non-MONDO
+    tail (UMLS/EFO/NCIT) that DAKP (MONDO/HP) and dismech (MONDO) don't carry.
+    """
+    dis: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
+    drg: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
+    cross: dict[tuple[str, str], int] = defaultdict(int)  # (drug_pfx, disease_pfx) -> distinct pairs
+    for p in pairs:
+        dpfx, gpfx = p["disease_prefix"], p["drug"].split(":", 1)[0]
+        cross[(gpfx, dpfx)] += 1
+        for s in present:
+            if p.get(s) == "exact":
+                dis[dpfx][s].add(p["disease"])
+                drg[gpfx][s].add(p["drug"])
+
+    def rows(d):
+        out = [{"prefix": pfx, **{s: len(d[pfx].get(s, ())) for s in present}} for pfx in d]
+        return sorted(out, key=lambda r: -sum(r[s] for s in present))
+
+    cross_rows = [{"drug_prefix": g, "disease_prefix": d, "pairs": n}
+                  for (g, d), n in sorted(cross.items(), key=lambda kv: -kv[1])]
+    return {"disease": rows(dis), "drug": rows(drg), "cross": cross_rows}
+
+
+_REDUNDANCY_HOPS = 1  # only collapse a term under an asserted *direct* is-a parent
+
+
+def _redundancy(pairs: list[dict], present: list[str], hier: "MondoGraph") -> dict:
+    """Hierarchical redundancy per (source, drug).
+
+    Within one drug+source, a disease whose **direct** is-a parent (MONDO or HP) is
+    *also* asserted is redundant — adjacent-granularity duplicates the source counts
+    as separate edges (melanoma + metastatic melanoma; nausea+vomiting + its two
+    children). Bounded to ``_REDUNDANCY_HOPS`` so a broad catch-all parent ("cancer")
+    doesn't spuriously swallow every distant specific. "Concepts" = edges left after
+    collapsing the redundant children; factor = raw / concepts. Cross-ontology
+    synonyms (UMLS≡HP "Nausea") are NOT caught here — that needs a mapping layer.
+    """
+    by: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
+    dlabel, druglabel = {}, {}
+    for p in pairs:
+        dlabel[p["disease"]] = p["disease_label"]
+        druglabel[p["drug"]] = p["drug_label"]
+        for s in present:
+            if p.get(s) == "exact":
+                by[s][p["drug"]].add(p["disease"])
+
+    per_source, clusters = {}, []
+    for s in present:
+        raw = collapsed = 0
+        for drug, dset in by[s].items():
+            # child -> an asserted direct(-within-N) parent that subsumes it
+            redundant: dict[str, str] = {}
+            for d in dset:
+                near_parents = (hier.ancestors_within(d, _REDUNDANCY_HOPS) - {d}) & dset
+                if near_parents:
+                    redundant[d] = sorted(near_parents)[0]
+            raw += len(dset)
+            collapsed += len(dset) - len(redundant)
+            if redundant:
+                gm: dict[str, list] = defaultdict(list)
+                for child, parent in redundant.items():
+                    gm[parent].append(dlabel[child])
+                groups = [{"kept": dlabel[p], "subsumed": sorted(v)} for p, v in gm.items()]
+                clusters.append({
+                    "source": s, "drug": drug, "drug_label": druglabel[drug],
+                    "raw": len(dset), "concepts": len(dset) - len(redundant),
+                    "redundant": len(redundant), "groups": groups,
+                })
+        per_source[s] = {
+            "raw": raw, "concepts": collapsed, "redundant_edges": raw - collapsed,
+            "factor": round(raw / collapsed, 3) if collapsed else 1.0,
+        }
+    clusters.sort(key=lambda c: (-c["redundant"], -c["raw"], c["drug_label"]))
+    return {"by_source": per_source, "clusters": clusters[:400]}
