@@ -1,5 +1,7 @@
 # drug-disease-compare
 
+**Dashboard: https://kevinschaper.github.io/drug-disease-compare/**
+
 Hierarchy-aware, **scope-aware** comparison of independently-built, LLM-assisted
 resources that mine drug→disease edges — currently **MEDIC**, the **Drug Approvals KP
 (DAKP)**, and **dismech**. Because their inputs overlap, their indication edges should
@@ -11,11 +13,14 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
 
 ## The comparison
 
-- **Sources.** MEDIC (`monarch-initiative/medic-ingest`, approved indications from
-  DailyMed + EU/Japan labels), DAKP (`infores:multiomics-drugapprovals`, FAERS +
-  DailyMed including off-label use), and dismech (`monarch-initiative/dismech`,
-  curated/mechanism-driven — its CHEBI drug→disease subset). Adding a source is one
-  entry in `SOURCE_ORDER` plus a loader.
+- **Sources.** MEDIC (the `monarch-initiative/medic` redesign — indications and
+  contraindications from FDA/EMA/PMDA/CDSCO labels), DAKP (`infores:drugapprovals-kp`,
+  FAERS + DailyMed + EMA including off-label use), and dismech
+  (`monarch-initiative/dismech`, curated/mechanism-driven — its CHEBI drug→disease
+  subset). Adding a source is one entry in `SOURCE_ORDER` plus a loader.
+- **Versioned.** Each source is pinned at a previous and a latest release
+  (`data/MANIFEST.yaml`); the head-to-head uses the latest, and a version-changes view
+  characterizes how each source moved and which release moved each overlap.
 - **Reconciliation.** Every drug/disease CURIE is re-resolved through the SRI Node
   Normalizer so all sources share one identifier space. The disease axis is
   **MONDO-centric**: prefer the MONDO member of each clique, keep HP only when no
@@ -33,7 +38,7 @@ See [`src/methods.md`](src/methods.md) for the full methodology.
 
 ```
 data/MANIFEST.yaml              pinned inputs + checksums
-data/inputs/                    downloaded sources (gitignored)
+data/inputs/<source>/{old,new}/ downloaded sources, two releases each (gitignored)
 pipeline/drug_edge_compare/     load -> nodenorm -> reconcile -> mondo -> compare -> cli
 pipeline/tests/                 pytest unit tests
 src/                            Observable Framework site (pages + generated data/)
@@ -47,9 +52,11 @@ Requires [`uv`](https://docs.astral.sh/uv/), Node 18+, `zstd`, and (optionally)
 [`just`](https://github.com/casey/just).
 
 ```
-just fetch       # download pinned inputs (MEDIC, DAKP, dismech, MONDO)
+just fetch       # download pinned inputs (old + new of MEDIC, DAKP, dismech; MONDO)
+just sync-medic  # copy the latest local MeDIC KGX export in as the "new" MEDIC
 just normalize   # resolve every CURIE through the Node Normalizer (cached locally)
 just build       # reconcile + compare -> src/data/ (pairs.parquet + JSON)
+just changes     # each source's old -> new change -> src/data/changes.{json,parquet}
 just test        # run the pipeline unit tests
 just dev         # preview the site at localhost
 just site        # build the static site to dist/

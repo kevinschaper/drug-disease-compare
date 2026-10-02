@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e000",
+  "verdict": "FP1_setting",
+  "quote": "protein requirements are substantially increased as with extensive burns",
+  "note": "Burns are only a background condition for parenteral nutrition; the product treats nitrogen balance, not burns."
+ },
+ {
+  "id": "e008",
+  "verdict": "TARGET",
+  "quote": "Primary hypogonadism (congenital or acquired)",
+  "note": "Primary and hypogonadotropic hypogonadism are explicitly indicated for androgen replacement."
+ },
+ {
+  "id": "e016",
+  "verdict": "TARGET",
+  "quote": "treatment of overactive bladder with symptoms of urge urinary incontinence, urgency and frequency",
+  "note": "Urge urinary incontinence is an indicated target; edge is a near parent."
+ },
+ {
+  "id": "e024",
+  "verdict": "TARGET",
+  "quote": "treatment of human immunodeficiency virus (HIV 1) infection",
+  "note": "HIV-1 infection explicitly indicated (EMA)."
+ },
+ {
+  "id": "e032",
+  "verdict": "FP1_setting",
+  "quote": "Prevention of premature luteinising hormone (LH) surges in women undergoing controlled ovarian hyperstimulation (COH) for assisted reproduction techniques (ART)",
+  "note": "Drug prevents LH surges during ART; infertility is only the background setting."
+ },
+ {
+  "id": "e040",
+  "verdict": "TARGET",
+  "quote": "management of severe and persistent pain in opioid tolerant patients, that requires an opioid analgesic",
+  "note": "Indication covers severe persistent pain generally; urinary tract pain is a narrower subtype."
+ },
+ {
+  "id": "e048",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with unresectable or metastatic melanoma with a BRAF V600E or V600K mutation",
+  "note": "Melanoma indicated without site restriction; non-cutaneous melanoma is a narrower subtype."
+ },
+ {
+  "id": "e056",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Cancer pain is not mentioned; sertraline is indicated for psychiatric disorders only."
+ },
+ {
+  "id": "e064",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No mention of epilepsy of infancy with migrating focal seizures; label covers partial-onset/PGTC/LGS seizures in patients 2 years and older."
+ },
+ {
+  "id": "e072",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is about oral/nasal rinse and sanitizer; acid indigestion not mentioned."
+ },
+ {
+  "id": "e080",
+  "verdict": "TARGET",
+  "quote": "Efficacy has been shown in a PAH population including aetiologies of idiopathic or heritable PAH",
+  "note": "PAH indicated, with heritable PAH explicitly included."
+ },
+ {
+  "id": "e088",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in patients with haemophilia A",
+  "note": "Haemophilia A bleeding is the indicated target."
+ },
+ {
+  "id": "e096",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of idiopathic Parkinson's disease (PD)",
+  "note": "Parkinson's disease explicitly indicated."
+ },
+ {
+  "id": "e104",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "GI pain is not an indication; only 'abdominal distress' appears as a diagnostic symptom of anxiety/panic."
+ },
+ {
+  "id": "e112",
+  "verdict": "TARGET",
+  "quote": "locally advanced or metastatic basal cell carcinoma (laBCC or mBCC)",
+  "note": "Metastatic BCC explicitly indicated."
+ },
+ {
+  "id": "e120",
+  "verdict": "TARGET",
+  "quote": "also effective for the treatment of Candida urinary tract infections, peritonitis, and systemic Candida infections",
+  "note": "Candida peritonitis is named in the indications section as treated."
+ },
+ {
+  "id": "e128",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment of HIV-1 infection in adults and in pediatric patients",
+  "note": "Indicated for HIV-1 infection only; 'Infection' is a whole disease class."
+ },
+ {
+  "id": "e136",
+  "verdict": "TARGET",
+  "quote": "Treatment of adults with breast cancer as part of a combination chemotherapy regimen",
+  "note": "Breast cancer indicated; HER2-positive breast carcinoma is a narrower subtype."
+ },
+ {
+  "id": "e144",
+  "verdict": "TARGET",
+  "quote": "Maintenance treatment in adult patients with moderate to severe chronic obstructive pulmonary disease (COPD)",
+  "note": "COPD indicated; severe early-onset COPD is a narrower form."
+ },
+ {
+  "id": "e152",
+  "verdict": "TARGET",
+  "quote": "In postmenopausal women with osteoporosis, teriparatide injection reduces the risk of vertebral and nonvertebral fractures",
+  "note": "Prevention of osteoporotic (pathologic) fractures is a stated benefit of the indicated treatment."
+ },
+ {
+  "id": "e160",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Type 2 diabetes explicitly indicated."
+ },
+ {
+  "id": "e168",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of moderate to severe dyspareunia, a symptom of vulvar and vaginal atrophy, due to menopause",
+  "note": "Label treats symptoms (dyspareunia, dryness) of vulvovaginal atrophy, not the atrophy itself; edge term is also fragmentary."
+ },
+ {
+  "id": "e176",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in patients with haemophilia B",
+  "note": "Bleeding is the treated target (in haemophilia B patients)."
+ },
+ {
+  "id": "e184",
+  "verdict": "TARGET",
+  "quote": "treatment of narcolepsy with or without cataplexy",
+  "note": "Narcolepsy without cataplexy explicitly covered."
+ },
+ {
+  "id": "e192",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Ovarian cancer is not mentioned in the supplied indication text."
+ },
+ {
+  "id": "e200",
+  "verdict": "TARGET",
+  "quote": "Olanzapine is indicated for the treatment of moderate to severe manic episode",
+  "note": "Manic episode explicitly indicated."
+ },
+ {
+  "id": "e208",
+  "verdict": "TARGET",
+  "quote": "Acute Exacerbations of Chronic Bronchitis",
+  "note": "Bacterial exacerbations of chronic bronchitis indicated; bronchitis is a near parent."
+ },
+ {
+  "id": "e216",
+  "verdict": "FP3_cross_section",
+  "quote": "cardiac syncope, asystole, and myocardial infarction",
+  "note": "Asystole appears only in warnings as an adverse effect; indication is organophosphate poisoning."
+ },
+ {
+  "id": "e224",
+  "verdict": "TARGET",
+  "quote": "indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Section 1.2 explicitly indicates T2DM."
+ },
+ {
+  "id": "e232",
+  "verdict": "TARGET",
+  "quote": "effective as a sclerosing agent for the treatment of malignant pleural effusion",
+  "note": "Malignant pleural effusion explicitly indicated."
+ },
+ {
+  "id": "e240",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of patients with intermittent claudication on the basis of chronic occlusive arterial disease of the limbs",
+  "note": "Label treats the claudication symptom and says it is not intended to replace definitive therapy for PVD."
+ },
+ {
+  "id": "e248",
+  "verdict": "TARGET",
+  "quote": "reducing signs and symptoms and inducing and maintaining clinical remission in adult patients with moderately to severely active Crohn's disease",
+  "note": "Crohn's disease explicitly indicated."
+ },
+ {
+  "id": "e256",
+  "verdict": "TARGET",
+  "quote": "management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "General severe persistent pain indicated; pleuritic pain is a narrower subtype."
+ },
+ {
+  "id": "e264",
+  "verdict": "TARGET",
+  "quote": "The treatment of adult patients with eosinophilic granulomatosis with polyangiitis (EGPA)",
+  "note": "EGPA explicitly indicated."
+ },
+ {
+  "id": "e272",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplement uses do not mention fatigue."
+ },
+ {
+  "id": "e280",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of obsessions and compulsions in patients with obsessive-compulsive disorder (OCD)",
+  "note": "OCD explicitly indicated."
+ },
+ {
+  "id": "e288",
+  "verdict": "TARGET",
+  "quote": "Lokelma is indicated for the treatment of hyperkalaemia in adult patients",
+  "note": "Hyperkalaemia explicitly indicated."
+ },
+ {
+  "id": "e296",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Indication text is only an empty header."
+ }
+]

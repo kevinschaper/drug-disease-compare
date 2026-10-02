@@ -1,0 +1,110 @@
+[
+ {
+  "id": "e022",
+  "verdict": "FP1_setting",
+  "quote": "temporarily maintain the patency of the ductus arteriosus until corrective or palliative surgery can be performed in neonates who have congenital heart defects",
+  "note": "Drug palliatively maintains ductal patency; TGA appears only in the list of defects defining the neonatal population, not as the thing treated."
+ },
+ {
+  "id": "e068",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain in opioid tolerant patients, that requires an opioid analgesic",
+  "note": "Unrestricted-by-site severe persistent pain indication covers urinary tract pain as a narrower subtype; weak but granularity rule favours TARGET."
+ },
+ {
+  "id": "e092",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated as an adjunct to diet to reduce triglyceride (TG) levels in adult patients with severe (≥500 mg/dL) hypertriglyceridemia",
+  "note": "Label targets triglyceride levels in severe hypertriglyceridemia; generic 'lipid measurement' is a much broader parent category."
+ },
+ {
+  "id": "e097",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Edge 'Myelogenous' is a bare adjective (likely from myelogenous leukemia) and cannot be reliably mapped to the indicated FGFR1-rearranged myeloid/lymphoid neoplasms."
+ },
+ {
+  "id": "e141",
+  "verdict": "TARGET",
+  "quote": "particularly useful for this latter phase of therapy in its ability to render the disturbed patient more amenable to psychotherapy in long term treatment of the psychoneurotic",
+  "note": "Beyond symptomatic anxiety relief, label credits adjunctive long-term treatment of psychoneurosis (= neurotic disorder); adjunctive indications count."
+ },
+ {
+  "id": "e152",
+  "verdict": "TARGET",
+  "quote": "Celecoxib is indicated for the management of AP in adults",
+  "note": "Acute pain indication covers bone pain as a site-specific subtype; the VYSCOXA negation applies to one product only and the texts are a union."
+ },
+ {
+  "id": "e153",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Unqualified mild-to-moderate pain indication covers chronic widespread pain as a narrower subtype."
+ },
+ {
+  "id": "e181",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of adult patients with macular oedema following either branch retinal-vein occlusion (BRVO) or central retinal-vein occlusion (CRVO)",
+  "note": "Label treats the macular oedema manifestation, while the edge names the underlying occlusion."
+ },
+ {
+  "id": "e196",
+  "verdict": "FP4_overbroad",
+  "quote": "relapsed or refractory diffuse large B-cell lymphoma, not otherwise specified (DLBCL, NOS) or large B-cell lymphoma (LBCL) arising from follicular lymphoma",
+  "note": "Indication is limited to relapsed/refractory large B-cell lymphoma; B-cell NHL is a whole lymphoma class (follicular, mantle cell, marginal zone, etc.)."
+ },
+ {
+  "id": "e198",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only hypertension and angina are indicated; preeclampsia/pregnancy appears nowhere and is a distinct pregnancy disorder, not a reasonable subtype reading of the hypertension indication."
+ },
+ {
+  "id": "e211",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only ocular hypertension/elevated IOP is indicated; systemic hypertensive disorder is not mentioned, a word collision on 'hypertension'."
+ },
+ {
+  "id": "e228",
+  "verdict": "UNSURE",
+  "quote": "indicated for the relief of discomfort associated with acute, painful musculoskeletal conditions in adults",
+  "note": "Limb pain is a symptom that may or may not stem from the indicated musculoskeletal conditions; text neither names nor clearly subsumes it."
+ },
+ {
+  "id": "e231",
+  "verdict": "TARGET",
+  "quote": "JOURNAVX is indicated for the treatment of moderate to severe acute pain, including postoperative pain, in adults",
+  "note": "Generic moderate-to-severe acute pain indication covers acute pelvic pain as a site-specific subtype."
+ },
+ {
+  "id": "e249",
+  "verdict": "TARGET",
+  "quote": "For relief of mild to moderate pain",
+  "note": "Unqualified mild-to-moderate pain indication covers greater trochanteric pain syndrome as a narrower pain subtype."
+ },
+ {
+  "id": "e281",
+  "verdict": "TARGET",
+  "quote": "indicated for the maintenance of remission of ulcerative colitis",
+  "note": "Ulcerative colitis is a form of colitis; 'colitis' is a near parent, not a whole disease class or organ-system category."
+ },
+ {
+  "id": "e287",
+  "verdict": "FP1_setting",
+  "quote": "in patients with epilepsy 12 years of age and older",
+  "note": "Treated targets are seizure clusters and status epilepticus; epilepsy is only the patient population and absence epilepsy is never named."
+ },
+ {
+  "id": "e295",
+  "verdict": "FP3_cross_section",
+  "quote": "When pregnancy is detected, discontinue valsartan and hydrochlorothiazide tablets as soon as possible",
+  "note": "Pregnancy appears only in fetal-toxicity warnings, not as an indication; no explicit 'not indicated' statement for pregnancy hypertension."
+ },
+ {
+  "id": "e296",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Generic opioid pain indication is not site-restricted, so infusion site pain is a narrower subtype under the granularity rule (weak)."
+ }
+]

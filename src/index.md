@@ -1,8 +1,8 @@
 # Overview
 
 Three independently-built, LLM-assisted resources mine drug→disease **indications**:
-**MEDIC** (approved indications from FDA / EMA / PMDA labels), **DAKP** (the Drug
-Approvals KP — its `approved_for_condition` edges, from DailyMed / Drugs@FDA), and
+**MEDIC** (approved indications from FDA / EMA / PMDA / CDSCO labels), **DAKP** (the Drug
+Approvals KP — its `approved_for_condition` edges, from DailyMed / Drugs@FDA / EMA), and
 **dismech** (mechanism-driven, curated; only its CHEBI drug→disease subset). Where their
 indications *overlap* we gain confidence; where they *diverge* we get a lead to triage.
 
@@ -31,6 +31,13 @@ const support = [1, 2, 3].map((k) => ({
 const universeN = support.reduce((a, s) => a + s.n, 0);
 support.forEach((s, i) => { s.share = s.n / universeN; s.color = ["#bab0ac", "#6a9bd8", "#13315c"][i]; });
 ```
+
+<div class="note">
+  <b>Releases compared:</b> MEDIC ${summary.versions.medic} · DAKP ${summary.versions.dakp} ·
+  dismech ${summary.versions.dismech}. All three changed substantially since the previous
+  build of this site — see <a href="./changes">version changes</a> for how each source moved
+  and which source's release moved each overlap.
+</div>
 
 Every indication pair, grouped by **how many sources assert it**. **Agreement** (≥2
 sources) is the higher-confidence core: ${fmt(ind.agree_2plus)} pairs, ${fmt(ind.agree_all)}
@@ -91,6 +98,7 @@ Plot.plot({
   width,
   height: 150,
   marginLeft: 120,
+  marginRight: 90,
   x: {label: "pairs (log scale)", type: "log", grid: true},
   y: {label: null, domain: support.map((s) => s.sources)},
   color: {type: "identity"},
@@ -122,6 +130,7 @@ const comboRows = Object.entries(ind.combinations)
 Plot.plot({
   width,
   marginLeft: 220,
+  marginRight: 60,
   x: {label: "pairs (log scale)", type: "log", grid: true},
   y: {label: null, domain: comboRows.map((d) => d.combo)},
   color: {domain: [true, false], range: ["#4269d0", "#bab0ac"], legend: true, tickFormat: (d) => d ? "≥2 sources (agree)" : "single source"},
@@ -185,7 +194,17 @@ framed as observations, on the [off-label view](./offlabel).
   </div>
 </div>
 
-Dig in: [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
+## Same drug, different identifier
+
+Strict agreement above requires the **same canonical drug CURIE**. ${fmt(summary.moiety.new_agreements)}
+further (drug, disease) pairs agree once same-drug variants are bridged by **active moiety**
+(salt ↔ parent, brand ↔ ingredient) — a flagged inference, never folded into the counts
+above. This matters more now: DAKP 1.16 grounds ~2,700 drugs to UMLS brand/combination concepts,
+and the MeDIC redesign often grounds to salt forms. ${fmt(summary.repaired_drugs)} drug ids
+the Node Normalizer doesn't know (mostly MEDIC's newly minted ChEBI ids) were repaired by
+exact RxNorm name — see [methods](./methods).
+
+Dig in: [version changes](./changes) for how each source moved, [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
 rollups, [disagreements](./diff) for the triage queue, the [off-label view](./offlabel)
 for FAERS observations, the [error taxonomy](./error-taxonomy) for the label-grounded
 audit, and [methods](./methods).

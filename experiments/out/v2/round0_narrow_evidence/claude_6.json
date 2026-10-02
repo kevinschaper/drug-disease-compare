@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e006",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers only first-aid prevention of infection in minor cuts, scrapes and burns; sepsis not mentioned."
+ },
+ {
+  "id": "e014",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of wounds in patients with dystrophic epidermolysis bullosa (DEB)",
+  "note": "Treating the wounds of DEB is management of the disease itself."
+ },
+ {
+  "id": "e022",
+  "verdict": "TARGET",
+  "quote": "require therapy for associated renal cell carcinoma (RCC)",
+  "note": "RCC (VHL-associated and clear cell RCC) is explicitly indicated."
+ },
+ {
+  "id": "e030",
+  "verdict": "TARGET",
+  "quote": "indicated for the initial treatment of severe malaria in adults and children",
+  "note": "Severe malaria is a form of malaria; essentially the indicated disease."
+ },
+ {
+  "id": "e038",
+  "verdict": "TARGET",
+  "quote": "in patients with Graves' disease with hyperthyroidism or toxic multinodular goiter",
+  "note": "Hyperthyroidism due to toxic multinodular goiter is a named indication."
+ },
+ {
+  "id": "e046",
+  "verdict": "TARGET",
+  "quote": "indicated, in combination with cisplatin, for the initial treatment of patients with malignant pleural mesothelioma",
+  "note": "Malignant pleural mesothelioma is an explicit indication."
+ },
+ {
+  "id": "e054",
+  "verdict": "FP3_cross_section",
+  "quote": "accompanied by fever, rash, or persistent headache",
+  "note": "Headache appears only in warnings; indication is cough relief."
+ },
+ {
+  "id": "e062",
+  "verdict": "FP2_symptom_swap",
+  "quote": "visual impairment due to myopic choroidal neovascularisation (myopic CNV)",
+  "note": "Text treats myopic CNV complication/visual impairment, not degenerative myopia itself."
+ },
+ {
+  "id": "e070",
+  "verdict": "TARGET",
+  "quote": "indicated for reducing the risk of NSAID (nonsteroidal anti-inflammatory drugs, including aspirin)–induced gastric ulcers",
+  "note": "Prevention of (NSAID-induced) gastric ulcer counts as an indication."
+ },
+ {
+  "id": "e078",
+  "verdict": "TARGET",
+  "quote": "to increase blood pressure in adults with septic or other distributive shock",
+  "note": "Raising BP in distributive shock is management of the shock itself."
+ },
+ {
+  "id": "e086",
+  "verdict": "TARGET",
+  "quote": "Short-term treatment (up to 8 weeks) of active duodenal ulcer",
+  "note": "Duodenal ulcer is the explicit indication."
+ },
+ {
+  "id": "e094",
+  "verdict": "TARGET",
+  "quote": "treatment of thrombocytopenia in: Adult patients with immune thrombocytopenia (ITP)",
+  "note": "Immune thrombocytopenia is the indicated condition."
+ },
+ {
+  "id": "e102",
+  "verdict": "FP4_overbroad",
+  "quote": "Primary Mediastinal Large B-Cell Lymphoma (PMBCL) for the treatment of adult and pediatric patients with refractory PMBCL",
+  "note": "Only specific lymphomas (PMBCL, cHL) indicated; 'B-cell neoplasm' is a whole disease class."
+ },
+ {
+  "id": "e110",
+  "verdict": "TARGET",
+  "quote": "indicated as an add-on to ravulizumab or eculizumab for the treatment of adult patients with paroxysmal nocturnal haemoglobinuria (PNH)",
+  "note": "PNH treatment (add-on) is explicitly indicated."
+ },
+ {
+  "id": "e118",
+  "verdict": "TARGET",
+  "quote": "Bacterial septicemia",
+  "note": "Bacterial septicemia is a listed indication (synonym of bacterial sepsis)."
+ },
+ {
+  "id": "e126",
+  "verdict": "TARGET",
+  "quote": "well-differentiated, non-functional neuroendocrine tumors (NET) of gastrointestinal (GI) or lung origin",
+  "note": "Well-differentiated GI and pancreatic NETs are indicated, matching grade 1/2 digestive NET."
+ },
+ {
+  "id": "e134",
+  "verdict": "TARGET",
+  "quote": "for the treatment of patients with unresectable or metastatic melanoma",
+  "note": "Melanoma indicated without site restriction; non-cutaneous melanoma is a narrower subtype."
+ },
+ {
+  "id": "e142",
+  "verdict": "TARGET",
+  "quote": "Bronchial asthma",
+  "note": "Bronchial asthma is listed under allergic states."
+ },
+ {
+  "id": "e150",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Hypertension is explicitly indicated (label is for ramipril, the prodrug of ramiprilat)."
+ },
+ {
+  "id": "e158",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with progressive, metastatic medullary thyroid cancer (MTC)",
+  "note": "Medullary thyroid cancer is explicitly indicated (Cometriq)."
+ },
+ {
+  "id": "e166",
+  "verdict": "TARGET",
+  "quote": "INTRA-ABDOMINAL INFECTIONS, including peritonitis, intra-abdominal abscess, and liver abscess",
+  "note": "Peritonitis is a named indicated infection."
+ },
+ {
+  "id": "e174",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are OA, RA, JRA, AS, acute pain, dysmenorrhea; greater trochanteric pain syndrome not mentioned."
+ },
+ {
+  "id": "e182",
+  "verdict": "TARGET",
+  "quote": "Ilaris is indicated for the symptomatic treatment of adult patients with frequent gouty arthritis attacks",
+  "note": "Gouty arthritis attacks are explicitly indicated."
+ },
+ {
+  "id": "e190",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Esomeprazole text covers GI acid conditions only; juvenile idiopathic arthritis not mentioned."
+ },
+ {
+  "id": "e198",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only strongyloidiasis and onchocerciasis indicated; habronemiasis not mentioned."
+ },
+ {
+  "id": "e206",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only type 2 DM (and HF/CKD) indicated; malnutrition-related diabetes not mentioned."
+ },
+ {
+  "id": "e214",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied (truncated) indications list uveitis/ocular inflammation but not herpes zoster ophthalmicus; only varicella zoster in warnings."
+ },
+ {
+  "id": "e222",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of thrombocytopenia in adult patients with chronic liver disease",
+  "note": "Thrombocytopenia is the treated condition."
+ },
+ {
+  "id": "e230",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "EMA text indicates type 2 DM, heart failure and CKD only; type 1 DM not mentioned."
+ },
+ {
+  "id": "e238",
+  "verdict": "TARGET",
+  "quote": "indicated for the topical treatment of acne vulgaris",
+  "note": "Acne conglobata is a severe form of acne vulgaris; also 'For the treatment of acne'."
+ },
+ {
+  "id": "e246",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in previously treated patients (PTPs) ≥ 7 years of age with haemophilia A",
+  "note": "Bleeding (hemorrhage) in haemophilia A is the treated target."
+ },
+ {
+  "id": "e254",
+  "verdict": "TARGET",
+  "quote": "indicated for the prevention of early myocardial infarction in adults presenting with unstable angina or non-Q-wave myocardial infarction",
+  "note": "MI prevention/treatment of NSTEMI is explicitly indicated."
+ },
+ {
+  "id": "e262",
+  "verdict": "TARGET",
+  "quote": "KABIVEN may be used to prevent essential fatty acid deficiency",
+  "note": "Combination parenteral nutrition product indicated to prevent EFA deficiency; combo indications count per rubric."
+ },
+ {
+  "id": "e270",
+  "verdict": "TARGET",
+  "quote": "Seasonal or perennial allergic rhinitis",
+  "note": "Allergic rhinitis is listed; rhinitis is a near parent, not a broad class."
+ },
+ {
+  "id": "e278",
+  "verdict": "TARGET",
+  "quote": "skin and skin structure infections, including cellulitis",
+  "note": "Cellulitis is a named indication (piperacillin/tazobactam combination)."
+ },
+ {
+  "id": "e286",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of persistent premature ventricular extrasystoles that impair the well-being of the patient",
+  "note": "Premature ventricular extrasystoles = PVCs."
+ },
+ {
+  "id": "e294",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of schizophrenia",
+  "note": "Schizophrenia indicated; schizophrenia 10 is a narrower subtype."
+ }
+]

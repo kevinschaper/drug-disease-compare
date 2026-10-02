@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e071",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Veno-occlusive disease not mentioned; pioglitazone indicated for type 2 diabetes glycemic control."
+ },
+ {
+  "id": "e157",
+  "verdict": "FP4_overbroad",
+  "quote": "Joenja is indicated for the treatment of activated phosphoinositide 3-kinase delta syndrome (APDS)",
+  "note": "Label names APDS only; 'inborn error of immunity' is a whole disease class."
+ },
+ {
+  "id": "e042",
+  "verdict": "TARGET",
+  "quote": "for the prophylaxis of acute transplant rejection in adult and paediatric (1 to 18 years of age)&nbsp;patients receiving allogeneic renal, cardiac or hepatic transplants",
+  "note": "Prophylaxis of transplant rejection is graft rejection prevention."
+ },
+ {
+  "id": "e047",
+  "verdict": "TARGET",
+  "quote": "replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Primary hypothyroidism explicitly named."
+ },
+ {
+  "id": "e004",
+  "verdict": "TARGET",
+  "quote": "Adults with overweight in the presence of at least one weight-related comorbid condition",
+  "note": "Phentermine/topiramate chronic weight management indicated for adults with overweight."
+ },
+ {
+  "id": "e020",
+  "verdict": "FP5_negation",
+  "quote": "Not recommended for use to improve glycemic control in patients with type 1 diabetes mellitus.",
+  "note": "Explicit limitation of use for T1DM."
+ },
+ {
+  "id": "e192",
+  "verdict": "FP4_overbroad",
+  "quote": "Acute Sinusitis ( 1.12 )",
+  "note": "Only acute sinusitis (and lower RTI) indicated; edge is the broad upper respiratory infection category."
+ },
+ {
+  "id": "e290",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "A depression rating-scale term; tenapanor indicated for IBS-C and hyperphosphatemia in CKD."
+ },
+ {
+  "id": "e022",
+  "verdict": "TARGET",
+  "quote": "congenital heart defects ... include pulmonary atresia, pulmonary stenosis, tricuspid atresia, tetralogy of Fallot, interruption of the aortic arch, coarctation of the aorta, or transposition of the great vessels",
+  "note": "Palliative therapy for ductal-dependent defects explicitly listing transposition of the great vessels."
+ },
+ {
+  "id": "e005",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with phenylketonuria (PKU)",
+  "note": "PKU explicitly named."
+ },
+ {
+  "id": "e198",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Preeclampsia not mentioned; only hypertension and angina indicated."
+ },
+ {
+  "id": "e083",
+  "verdict": "TARGET",
+  "quote": "management of severe and persistent pain in opioid tolerant patients, that requires an opioid analgesic",
+  "note": "General severe pain indication; testicular pain is a narrower pain type."
+ },
+ {
+  "id": "e102",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine attacks with or without aura in adults",
+  "note": "Migraine without aura explicitly covered."
+ },
+ {
+  "id": "e233",
+  "verdict": "TARGET",
+  "quote": "Adjunctive treatment of focal-onset seizures with or without secondary generalisation in adult patients with epilepsy",
+  "note": "Treats seizures of epilepsy (adjunctive)."
+ },
+ {
+  "id": "e164",
+  "verdict": "TARGET",
+  "quote": "relapsed or refractory (r/r) DLBCL and primary mediastinal large B cell lymphoma (PMBCL), after two or more lines of systemic therapy",
+  "note": "PMBCL explicitly named."
+ },
+ {
+  "id": "e287",
+  "verdict": "TARGET",
+  "quote": "acute treatment of intermittent, stereotypic episodes of frequent seizure activity ... in patients with epilepsy 12 years of age and older",
+  "note": "Epilepsy seizure clusters indicated; childhood absence epilepsy is a narrower subtype (borderline)."
+ },
+ {
+  "id": "e221",
+  "verdict": "TARGET",
+  "quote": "adult patients with intermediate or poor risk advanced renal cell carcinoma, as a first-line treatment in combination with ipilimumab",
+  "note": "RCC explicitly indicated."
+ },
+ {
+  "id": "e134",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: backache muscle aches arthritis",
+  "note": "Caffeine-containing analgesic combos list backache."
+ },
+ {
+  "id": "e162",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+  "note": "OPTN-related OAG is a subtype of open-angle glaucoma."
+ },
+ {
+  "id": "e013",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pain and inflammation associated with cataract surgery",
+  "note": "Treats postoperative ocular pain, a form of eye pain."
+ },
+ {
+  "id": "e178",
+  "verdict": "TARGET",
+  "quote": "treatment of moderately to severely active Crohn's disease in adults and pediatric patients 6 years of age and older",
+  "note": "Crohn's disease explicitly named."
+ },
+ {
+  "id": "e151",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only trigeminal neuralgia pain indicated; skin pain not mentioned."
+ },
+ {
+  "id": "e174",
+  "verdict": "TARGET",
+  "quote": "treatment of adults and pediatric patients 2 years of age and older with moderately to severely active ulcerative colitis",
+  "note": "UC explicitly named."
+ },
+ {
+  "id": "e062",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma whose tumors express PD-L1",
+  "note": "Ovarian cancer indicated; stage III is narrower."
+ },
+ {
+  "id": "e171",
+  "verdict": "FP1_setting",
+  "quote": "Omidria is added to an ocular irrigating solution used during cataract surgery or intraocular lens replacement",
+  "note": "Cataract surgery is the procedural setting; drug prevents miosis and postoperative pain."
+ },
+ {
+  "id": "e056",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "PMDD not mentioned; text covers oral contraception only."
+ },
+ {
+  "id": "e126",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only prophylaxis of common migraine; new daily persistent headache not mentioned."
+ },
+ {
+  "id": "e278",
+  "verdict": "TARGET",
+  "quote": "indicated in the long-term treatment of angina pectoris, to reduce angina attacks",
+  "note": "Angina pectoris indicated; unstable angina is a subtype (borderline - also mentioned in warnings)."
+ },
+ {
+  "id": "e104",
+  "verdict": "TARGET",
+  "quote": "treatment of moderate to severe acute pain, including postoperative pain, in adults",
+  "note": "Postoperative pain explicitly named."
+ },
+ {
+  "id": "e238",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis; acute rheumatic carditis; ankylosing spondylitis",
+  "note": "Acute rheumatic carditis is a synonym of acute rheumatic heart disease."
+ },
+ {
+  "id": "e195",
+  "verdict": "TARGET",
+  "quote": "indicated for up to 8 weeks for the treatment of active duodenal ulcer",
+  "note": "Duodenal ulcer explicitly named."
+ },
+ {
+  "id": "e053",
+  "verdict": "TARGET",
+  "quote": "Secondary therapy in non-Hodgkin's lymphoma and Hodgkin's disease",
+  "note": "NHL indicated; familial NHL is a narrower form."
+ },
+ {
+  "id": "e077",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin",
+  "note": "Diphtheria explicitly named."
+ },
+ {
+  "id": "e045",
+  "verdict": "TARGET",
+  "quote": "INTRA-ABDOMINAL INFECTIONS, including peritonitis, intra-abdominal abscess, and liver abscess",
+  "note": "Intra-abdominal abscess explicitly named."
+ },
+ {
+  "id": "e226",
+  "verdict": "FP2_symptom_swap",
+  "quote": "for nausea associated with gastroenteritis",
+  "note": "Treats nausea, not gastroenteritis itself."
+ },
+ {
+  "id": "e219",
+  "verdict": "FP2_symptom_swap",
+  "quote": "management of hypoglycemia due to hyperinsulinism associated with the following conditions ... Inoperable islet cell adenoma or carcinoma",
+  "note": "Treats hypoglycemia caused by islet cell carcinoma, not the tumor."
+ },
+ {
+  "id": "e262",
+  "verdict": "TARGET",
+  "quote": "Primary or secondary adrenocortical insufficiency",
+  "note": "Primary adrenocortical insufficiency explicitly listed."
+ }
+]

@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e005",
+  "verdict": "TARGET",
+  "quote": "Serious fungal infections caused by Scedosporium apiospermum and Fusarium species",
+  "note": "Label lists invasive aspergillosis, candidemia and other fungal infections; near-parent edge is TARGET per rubric."
+ },
+ {
+  "id": "e013",
+  "verdict": "TARGET",
+  "quote": "1.8 Ophthalmic Conditions Sympathetic ophthalmia",
+  "note": "Sympathetic ophthalmia is listed among indicated ophthalmic conditions."
+ },
+ {
+  "id": "e021",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with metastatic carcinoma of the ovary after failure of first-line or subsequent therapy",
+  "note": "EMA indication covers ovarian carcinoma (metastatic, relapsed)."
+ },
+ {
+  "id": "e029",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels cover plaque psoriasis of scalp and body / scalp psoriasis; nail psoriasis is not mentioned."
+ },
+ {
+  "id": "e037",
+  "verdict": "TARGET",
+  "quote": "reduction in the duration of neutropenia and the incidence of febrile neutropenia",
+  "note": "Reducing incidence of febrile neutropenia is a prevention target."
+ },
+ {
+  "id": "e045",
+  "verdict": "TARGET",
+  "quote": "Treatment of hypertension in adults and pediatric patients 6 years of age and older",
+  "note": "Hypertension is indicated; hypertensive disorder is essentially synonymous."
+ },
+ {
+  "id": "e053",
+  "verdict": "FP5_negation",
+  "quote": "for malignancy (with the exception of chronic myeloid leukaemia and myelodysplastic syndromes)",
+  "note": "CML is explicitly excluded from the indicated population."
+ },
+ {
+  "id": "e061",
+  "verdict": "TARGET",
+  "quote": "Dermatologic diseases: Bullous dermatitis herpetiformis, exfoliative erythroderma, mycosis fungoides, pemphigus, severe erythema multiforme (Stevens-Johnson syndrome).",
+  "note": "Severe erythema multiforme is a listed indication."
+ },
+ {
+  "id": "e069",
+  "verdict": "TARGET",
+  "quote": "Previously treated marginal zone lymphoma (MZL), in combination with a rituximab product",
+  "note": "MZL is explicitly indicated."
+ },
+ {
+  "id": "e077",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are partial-onset and primary generalized tonic-clonic seizures; juvenile absence epilepsy is not mentioned."
+ },
+ {
+  "id": "e085",
+  "verdict": "TARGET",
+  "quote": "indicated in the topical control of acne vulgaris, acne rosacea and seborrheic dermatitis",
+  "note": "Combination product indicated for acne rosacea."
+ },
+ {
+  "id": "e093",
+  "verdict": "TARGET",
+  "quote": "indicated for the symptomatic relief of cough",
+  "note": "Cough is the indicated target."
+ },
+ {
+  "id": "e101",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with unresectable or metastatic liposarcoma who have received a prior anthracycline-containing regimen",
+  "note": "Myxoid liposarcoma is a subtype of the indicated liposarcoma."
+ },
+ {
+  "id": "e109",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only indication is angina pectoris; allergic rhinitis not mentioned."
+ },
+ {
+  "id": "e117",
+  "verdict": "TARGET",
+  "quote": "may be used in patients with chronic open-angle glaucoma and intraocular hypertension",
+  "note": "Lowers IOP in chronic open-angle glaucoma."
+ },
+ {
+  "id": "e125",
+  "verdict": "TARGET",
+  "quote": "Central Nervous System Infections, including meningitis, caused by Haemophilus influenzae and Neisseria meningitidis",
+  "note": "Meningitis is an explicitly listed infection."
+ },
+ {
+  "id": "e133",
+  "verdict": "FP2_symptom_swap",
+  "quote": "A major depressive episode (DSM-IV) implies a prominent and relatively persistent (nearly every day for at least 2 weeks) depressed mood",
+  "note": "Indicated for major depressive disorder; depressed mood appears only as a symptom in the diagnostic description."
+ },
+ {
+  "id": "e141",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only Burkitt leukaemia (mature B-cell acute leukaemia) is indicated; B-lymphoblastic ALL is a distinct disease not mentioned."
+ },
+ {
+  "id": "e149",
+  "verdict": "TARGET",
+  "quote": "monotherapy for the treatment of adult patients with metastatic castration-resistant prostate cancer (mCRPC) and BRCA1/2-mutations",
+  "note": "mCRPC is a form of prostate cancer; near parent still describes indication."
+ },
+ {
+  "id": "e157",
+  "verdict": "TARGET",
+  "quote": "gastric or gastroesophageal junction adenocarcinoma whose tumors are claudin (CLDN) 18.2 positive",
+  "note": "Metastatic gastric adenocarcinoma is explicitly indicated (with biomarker restrictions)."
+ },
+ {
+  "id": "e165",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only use is moisturizing dry nasal passages; burns not mentioned."
+ },
+ {
+  "id": "e173",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with moderate to severe depression associated with moderate to severe anxiety",
+  "note": "Combination product treats depression (with anxiety)."
+ },
+ {
+  "id": "e181",
+  "verdict": "TARGET",
+  "quote": "Rifampin for Injection, USP is indicated in the treatment of all forms of tuberculosis.",
+  "note": "All forms of TB includes disseminated TB."
+ },
+ {
+  "id": "e189",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indicated seizure types are partial-onset, PGTC and Lennox-Gastaut generalized seizures; generalized nonconvulsive (e.g. absence) seizures not named."
+ },
+ {
+  "id": "e197",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of major adverse cardiovascular events (cardiovascular death, non-fatal myocardial infarction, or non-fatal stroke)",
+  "note": "Prevention of non-fatal MI is an explicit risk-reduction target."
+ },
+ {
+  "id": "e205",
+  "verdict": "TARGET",
+  "quote": "indicated for the prevention of serious lower respiratory tract disease caused by respiratory syncytial virus (RSV) in pediatric patients",
+  "note": "Prevention of RSV disease counts; treatment not established, but prevention is indicated."
+ },
+ {
+  "id": "e213",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with insomnia, characterized by difficulties with sleep onset and/or sleep maintenance",
+  "note": "Sleep-maintenance insomnia is explicitly covered."
+ },
+ {
+  "id": "e221",
+  "verdict": "FP1_setting",
+  "quote": "Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions.",
+  "note": "Indicated only for hypertension; MI appears as background rationale, not an indication for acute MI."
+ },
+ {
+  "id": "e229",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of mild to moderate pain in adult and pediatric patients 2 years and older",
+  "note": "Pain management is a direct indication."
+ },
+ {
+  "id": "e237",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of respiratory tract infections caused by susceptible isolates of Streptococcus pneumoniae and Streptococcus pyogenes",
+  "note": "Respiratory tract infection is explicitly indicated."
+ },
+ {
+  "id": "e245",
+  "verdict": "TARGET",
+  "quote": "lower respiratory tract infections including pneumonia, empyema, and lung abscess",
+  "note": "Lung, tubo-ovarian and intra-abdominal abscesses are listed indications."
+ },
+ {
+  "id": "e253",
+  "verdict": "TARGET",
+  "quote": "Treatment of patients with moderate to severe Alzheimer's disease.",
+  "note": "Alzheimer disease is the indication."
+ },
+ {
+  "id": "e261",
+  "verdict": "TARGET",
+  "quote": "To induce diuresis or remission of proteinuria in idiopathic nephrotic syndrome, or that due to lupus erythematosus.",
+  "note": "Nephrotic syndrome is a listed renal indication."
+ },
+ {
+  "id": "e269",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Benzathine penicillin texts cover streptococcal URTI, syphilis, yaws, rheumatic fever etc.; meningococcal meningitis not mentioned."
+ },
+ {
+  "id": "e277",
+  "verdict": "TARGET",
+  "quote": "anterior segment of the globe such as allergic conjunctivitis, acne rosacea, superficial punctate keratitis, herpes zoster keratitis, iritis, cyclitis",
+  "note": "Iritis is listed; chronic iritis is a more specific form."
+ },
+ {
+  "id": "e285",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Rheumatic list includes psoriatic, rheumatoid, gouty arthritis etc. but not reactive arthritis/Reiter syndrome."
+ },
+ {
+  "id": "e293",
+  "verdict": "TARGET",
+  "quote": "1.4 Gastrointestinal Diseases During acute episodes in: Crohn's Disease Ulcerative colitis",
+  "note": "Crohn disease is explicitly listed."
+ }
+]

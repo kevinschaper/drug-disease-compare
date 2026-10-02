@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e099",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Indication and warnings fields are empty headers only."
+ },
+ {
+  "id": "e082",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels cover PAH (WHO Group I) in adults and children 1-17 years; neonatal pulmonary hypertension is not mentioned."
+ },
+ {
+  "id": "e030",
+  "verdict": "TARGET",
+  "quote": "chronic obstructive pulmonary disease (COPD) including chronic bronchitis and/or emphysema",
+  "note": "Chronic bronchitis is explicitly named within the COPD indication."
+ },
+ {
+  "id": "e039",
+  "verdict": "TARGET",
+  "quote": "indicated for the palliative treatment of chronic myelogenous (myeloid, myelocytic, granulocytic) leukemia",
+  "note": "CML is named directly as the indication."
+ },
+ {
+  "id": "e141",
+  "verdict": "FP2_symptom_swap",
+  "quote": "For symptomatic relief of anxiety and tension associated with psychoneurosis",
+  "note": "The label treats the anxiety and tension symptoms, while the edge names the underlying psychoneurosis."
+ },
+ {
+  "id": "e297",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Ondansetron is indicated for CINV and PONV; vomiting of pregnancy is not mentioned."
+ },
+ {
+  "id": "e106",
+  "verdict": "TARGET",
+  "quote": "in adult patients with primary hypercholesterolaemia who are not adequately controlled with a statin alone",
+  "note": "The EMA indication names primary hypercholesterolaemia."
+ },
+ {
+  "id": "e161",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of recurrent herpes labialis (cold sores) in adults and children 12 years of age or older",
+  "note": "Recurrent herpes labialis is recurrent oral herpes."
+ },
+ {
+  "id": "e204",
+  "verdict": "TARGET",
+  "quote": "or ≥27 kg/m2 to &lt;30 kg/m2 (overweight) in the presence of at least one weight-related comorbidity",
+  "note": "The EMA Wegovy indication covers weight management in adults with overweight."
+ },
+ {
+  "id": "e047",
+  "verdict": "TARGET",
+  "quote": "As replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Primary hypothyroidism is named directly."
+ },
+ {
+  "id": "e128",
+  "verdict": "TARGET",
+  "quote": "Severe essential hypertension when the drug cannot be given orally or when there is an urgent need to lower blood pressure",
+  "note": "Malignant essential hypertension is a subtype of the indicated (severe) essential hypertension."
+ },
+ {
+  "id": "e063",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lumateperone is indicated for schizophrenia, bipolar depression and MDD; perinatal asphyxia is not mentioned."
+ },
+ {
+  "id": "e256",
+  "verdict": "TARGET",
+  "quote": "with cisplatin for unresectable, locally advanced or metastatic untreated NSCLC",
+  "note": "Stage IIIB NSCLC falls under locally advanced NSCLC, so it is a subtype of the indication."
+ },
+ {
+  "id": "e119",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of adult patients with H. pylori infection and duodenal ulcer disease",
+  "note": "The only infection indicated is H. pylori; the generic class \"Infection\" is far too broad."
+ },
+ {
+  "id": "e014",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Loratadine relieves allergy symptoms such as itching of the nose or throat; throat pain is not mentioned."
+ },
+ {
+  "id": "e185",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Breast pain is a narrower subtype of the generic pain indication; the granularity rule favours TARGET."
+ },
+ {
+  "id": "e232",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of severe hepatic veno-occlusive disease (VOD) also known as sinusoidal obstructive syndrome (SOS)",
+  "note": "Hepatic VOD is named directly."
+ },
+ {
+  "id": "e296",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Infusion site pain is a narrower subtype of the generic pain indication; the granularity rule favours TARGET."
+ },
+ {
+  "id": "e273",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in patients with haemophilia A (congenital factor VIII deficiency)",
+  "note": "Haemophilia A is named as the indicated condition, with its bleeding managed."
+ },
+ {
+  "id": "e092",
+  "verdict": "FP1_setting",
+  "quote": "Laboratory studies should be done to ascertain that the lipid levels are consistently abnormal before instituting therapy",
+  "note": "\"Lipid measurement\" is a lab test used as a prerequisite; the indication is severe hypertriglyceridemia."
+ },
+ {
+  "id": "e066",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure in patients with open angle glaucoma or ocular hypertension",
+  "note": "Ocular hypertension is named directly."
+ },
+ {
+  "id": "e050",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Ranitidine indications are ulcers, GERD and hypersecretory states; back pain is not mentioned."
+ },
+ {
+  "id": "e195",
+  "verdict": "TARGET",
+  "quote": "indicated for up to 8 weeks for the treatment of active duodenal ulcer",
+  "note": "Duodenal ulcer is named directly."
+ },
+ {
+  "id": "e049",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of moderate to severe pain associated with endometriosis",
+  "note": "Managing the pain of endometriosis counts as managing the disease under the rubric."
+ },
+ {
+  "id": "e291",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of acute urinary retention",
+  "note": "Prevention of acute urinary retention in BPH is an explicit indication goal."
+ },
+ {
+  "id": "e148",
+  "verdict": "TARGET",
+  "quote": "reducing the frequency and severity of serious infections associated with Chronic Granulomatous Disease (CGD)",
+  "note": "Managing the defining infections of CGD counts as disease management, as with bleeding in haemophilia."
+ },
+ {
+  "id": "e139",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "The acetaminophen indications supplied are pain only; sneezing is not mentioned."
+ },
+ {
+  "id": "e062",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma",
+  "note": "Stage III ovarian cancer is a narrower form of the indicated ovarian carcinoma."
+ },
+ {
+  "id": "e286",
+  "verdict": "TARGET",
+  "quote": "Primary or secondary adrenocortical insufficiency",
+  "note": "Secondary adrenal insufficiency is named directly."
+ },
+ {
+  "id": "e061",
+  "verdict": "TARGET",
+  "quote": "Respiratory tract infections caused by Mycoplasma pneumoniae",
+  "note": "Respiratory tract infections are listed indications."
+ },
+ {
+  "id": "e112",
+  "verdict": "TARGET",
+  "quote": "useful in combination with other oncolytic agents in Hodgkin's disease, non–Hodgkin's malignant lymphomas, rhabdomyosarcoma, neuroblastoma, and Wilms' tumor",
+  "note": "Neuroblastoma is named in the indication list."
+ },
+ {
+  "id": "e052",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, alone or with other antihypertensive agents, to lower blood pressure",
+  "note": "Hypertension secondary to endocrine disorders is a subtype of the indicated hypertension."
+ },
+ {
+  "id": "e111",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of tinea cruris and tinea corporis",
+  "note": "Tinea cruris is dermatophytosis of the groin."
+ },
+ {
+  "id": "e035",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with moderate to severe depression associated with moderate to severe anxiety",
+  "note": "The chlordiazepoxide/amitriptyline combination is indicated for depression."
+ },
+ {
+  "id": "e109",
+  "verdict": "TARGET",
+  "quote": "indicated for the prevention or amelioration of symptoms associated with acute mountain sickness",
+  "note": "Prevention of acute mountain sickness is an explicit indication."
+ },
+ {
+  "id": "e038",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets are indicated for relief of mild to moderate pain.",
+  "note": "Bladder pain is a narrower subtype of the generic pain indication; the granularity rule favours TARGET."
+ },
+ {
+  "id": "e144",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of amyotrophic lateral sclerosis (ALS) in adults who have a mutation in the superoxide dismutase 1 ( SOD1 ) gene",
+  "note": "ALS is named directly."
+ },
+ {
+  "id": "e046",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections caused by sensitive strains of E. coli and Proteus mirabilis",
+  "note": "Recurrent UTI is a subtype of the indicated urinary tract infections."
+ }
+]

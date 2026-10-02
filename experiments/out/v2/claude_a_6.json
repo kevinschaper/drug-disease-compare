@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e194",
+  "verdict": "TARGET",
+  "quote": "Rifampin is indicated in the treatment of all forms of tuberculosis.",
+  "note": "Lymph node TB is a form of tuberculosis."
+ },
+ {
+  "id": "e113",
+  "verdict": "TARGET",
+  "quote": "indicated in the management of adults with active classical or definite rheumatoid arthritis",
+  "note": "RA explicitly indicated."
+ },
+ {
+  "id": "e158",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy in the management of partial seizures.",
+  "note": "Partial seizures = focal-onset seizures."
+ },
+ {
+  "id": "e097",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with relapsed or refractory myeloid/lymphoid neoplasms (MLNs) with FGFR1 rearrangement",
+  "note": "Myelogenous read as myeloid neoplasm, which is indicated; edge term is vague."
+ },
+ {
+  "id": "e111",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of tinea cruris and tinea corporis",
+  "note": "Tinea cruris is dermatophytosis of the groin/perianal area."
+ },
+ {
+  "id": "e055",
+  "verdict": "FP1_setting",
+  "quote": "protein requirements are substantially increased as with extensive burns.",
+  "note": "Nutritional support given in the setting of burns; burns not treated."
+ },
+ {
+  "id": "e108",
+  "verdict": "TARGET",
+  "quote": "Treatment of cervical dystonia in adult patients",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "e024",
+  "verdict": "TARGET",
+  "quote": "Respiratory Diseases ... asthma",
+  "note": "Cough variant asthma is a subtype of indicated asthma."
+ },
+ {
+  "id": "e207",
+  "verdict": "TARGET",
+  "quote": "Idiopathic thrombocytopenic purpura in adults",
+  "note": "ITP is autoimmune thrombocytopenia."
+ },
+ {
+  "id": "e025",
+  "verdict": "TARGET",
+  "quote": "treatment of narcolepsy with or without cataplexy",
+  "note": "Explicit EMA indication."
+ },
+ {
+  "id": "e101",
+  "verdict": "TARGET",
+  "quote": "In postmenopausal women with osteoporosis, teriparatide injection reduces the risk of vertebral and nonvertebral fractures.",
+  "note": "Prevention of vertebral fractures stated."
+ },
+ {
+  "id": "e179",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers human COPD only; equine COPD not mentioned."
+ },
+ {
+  "id": "e163",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Temporarily relieves these symptoms due to the common cold",
+  "note": "Relieves cold symptoms, not the cold itself."
+ },
+ {
+  "id": "e032",
+  "verdict": "TARGET",
+  "quote": "allergic corneal marginal ulcers",
+  "note": "Allergic corneal marginal ulcer is a listed form of corneal ulcer."
+ },
+ {
+  "id": "e033",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis",
+  "note": "Contact dermatitis is a listed indication."
+ },
+ {
+  "id": "e220",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of postmenopausal osteoporosis in patients at risk of vitamin-D insufficiency.",
+  "note": "Vitamin D insufficiency is the population risk, osteoporosis is treated."
+ },
+ {
+  "id": "e094",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with locally advanced or metastatic breast cancer after failure of prior chemotherapy",
+  "note": "ER+ breast cancer is a subtype of indicated breast cancer."
+ },
+ {
+  "id": "e064",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura",
+  "note": "Combination product; migraine without aura explicit."
+ },
+ {
+  "id": "e241",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of interdigital tinea pedis, tinea cruris, and tinea corporis",
+  "note": "Explicit indication (cream)."
+ },
+ {
+  "id": "e014",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only itching of nose/throat mentioned; no throat pain."
+ },
+ {
+  "id": "e267",
+  "verdict": "FP5_negation",
+  "quote": "not recommended for the treatment of type 1 diabetes mellitus or diabetic ketoacidosis",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "e250",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Influenza not mentioned in supplied text."
+ },
+ {
+  "id": "e259",
+  "verdict": "TARGET",
+  "quote": "indicated for the symptomatic treatment of adults with COPD",
+  "note": "Edge is a narrower form of indicated COPD."
+ },
+ {
+  "id": "e152",
+  "verdict": "TARGET",
+  "quote": "Celecoxib Capsules is indicated for the management of AP in adults",
+  "note": "Bone pain falls under indicated acute pain management; one product negates acute pain but union applies."
+ },
+ {
+  "id": "e028",
+  "verdict": "TARGET",
+  "quote": "HER2-negative locally advanced or metastatic breast cancer",
+  "note": "Stage IV = metastatic breast cancer."
+ },
+ {
+  "id": "e191",
+  "verdict": "TARGET",
+  "quote": "indicated for the temporary relief of coughs and upper respiratory symptoms",
+  "note": "Upper respiratory symptoms explicitly targeted."
+ },
+ {
+  "id": "e183",
+  "verdict": "TARGET",
+  "quote": "indicated as therapy to abort or prevent vascular headache; e.g., migraine",
+  "note": "Migraine explicitly named."
+ },
+ {
+  "id": "e081",
+  "verdict": "FP1_setting",
+  "quote": "indicated for positron emission tomography (PET) of prostate-specific membrane antigen (PSMA) positive lesions in men with prostate cancer",
+  "note": "Diagnostic imaging agent, not treatment."
+ },
+ {
+  "id": "e227",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: headache",
+  "note": "Tension-type headache is a form of headache relieved."
+ },
+ {
+  "id": "e143",
+  "verdict": "FP4_overbroad",
+  "quote": "Recurrent or metastatic squamous cell carcinoma of the head and neck",
+  "note": "Label limited to head and neck SCC; edge is the whole SCC class."
+ },
+ {
+  "id": "e193",
+  "verdict": "TARGET",
+  "quote": "Chorea associated with Huntington’s disease",
+  "note": "Huntington chorea is a choreatic disease."
+ },
+ {
+  "id": "e199",
+  "verdict": "TARGET",
+  "quote": "BRAF V600 mutation-positive unresectable or metastatic melanoma",
+  "note": "Stage IV melanoma = metastatic melanoma."
+ },
+ {
+  "id": "e205",
+  "verdict": "FP1_setting",
+  "quote": "parkinsonism in association with cerebral arteriosclerosis",
+  "note": "Parkinsonism is treated; arteriosclerosis is background."
+ },
+ {
+  "id": "e011",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "e223",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period",
+  "note": "Spinal pain is a form of indicated severe persistent pain."
+ },
+ {
+  "id": "e007",
+  "verdict": "TARGET",
+  "quote": "BCG-unresponsive, non-muscle invasive bladder cancer (NMIBC) with carcinoma in situ",
+  "note": "Bladder cancer subtype indicated; edge is near parent."
+ },
+ {
+  "id": "e110",
+  "verdict": "TARGET",
+  "quote": "Such infections encompass conjunctivitis, keratitis and keratoconjunctivitis, blepharitis and blepharoconjunctivitis.",
+  "note": "Combination product; blepharitis listed."
+ }
+]

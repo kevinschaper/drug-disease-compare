@@ -23,15 +23,17 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter, defaultdict
+from dataclasses import replace
 
 from .mondo import MondoGraph
 from .reconcile import Reconciler
 
 # dismech supporting_text entries look like "[PMID:41751547] [SUPPORT] <snippet>"
 _PMID_PREFIX = re.compile(r"^\[(PMID:[^\]]+)\]\s*(.*)$", re.DOTALL)
-# MEDIC supporting_text entries are one per agency: "[FDA] <verbatim indication text>"
-_AGENCY_PREFIX = re.compile(r"^\[(FDA|EMA|PMDA)\]\s*(.*)$", re.DOTALL)
-_AGENCY_ORDER = ("FDA", "EMA", "PMDA")
+_AGENCY_ORDER = ("FDA", "EMA", "PMDA", "CDSCO")
+_RELIABILITY_RANK = {"HIGH": 3, "MEDIUM": 2, "LOW": 1}
+# sources that export contraindications (compared head to head on their own page)
+CONTRA_SOURCES = ("medic", "dakp")
 
 LINEAGE_HOPS = 2
 APPROVED = "approved_for_condition"
@@ -61,22 +63,31 @@ def _agg_status(prev: str | None, status: str | None) -> str:
     return cur if rank.get(cur, 0) > rank.get(prev, 0) else prev
 
 
+def named_clique(rec: Reconciler, drug: str):
+    """Clique for a canonical drug, named by the source node when it's an unresolved
+    singleton (named by its CURIE), so the grouper's exact-name fallback can work."""
+    c = rec.nn.clique(drug)
+    if c.preferred_label in ("", drug) and rec.node_labels.get(drug):
+        c = replace(c, preferred_label=rec.node_labels[drug])
+    return c
+
+
 def build_pairs(edges: list[dict], rec: Reconciler):
     """Reduce raw edges to per-source canonical pair tables keyed by (drug, disease).
 
-    Returns ``(treat, contra)`` where ``treat[source]`` maps (drug, disease) -> meta
-    and ``contra`` holds DAKP contraindications.
+    Returns ``(treat, contra)`` where ``treat[source]`` and ``contra[source]`` each map
+    (drug, disease) -> meta. Contraindications come from MEDIC (redesign) and DAKP.
     """
     treat: dict[str, dict[tuple[str, str], dict]] = {s: {} for s in SOURCE_ORDER}
-    contra: dict[tuple[str, str], dict] = {}
+    contra: dict[str, dict[tuple[str, str], dict]] = {s: {} for s in CONTRA_SOURCES}
 
     for e in edges:
         src = e["source"]
         if e["relation"] == "contraindicated_in":
-            if src == "dakp":
+            if src in contra:
                 drug = rec.drug(e["subject"])
                 dis = rec.disease(e["object"])
-                row = contra.setdefault(
+                row = contra[src].setdefault(
                     (drug.canonical, dis.canonical),
                     {"drug": drug.canonical, "drug_label": drug.label,
                      "disease": dis.canonical, "disease_label": dis.label, "cases": 0},
@@ -108,12 +119,16 @@ def build_pairs(edges: list[dict], rec: Reconciler):
                 if p not in fda:
                     fda.append(p)
         elif src == "medic":
-            # verbatim approving-agency indication text, kept per agency (FDA/EMA/PMDA)
+            # approving agencies (FDA/EMA/PMDA/CDSCO), with the verbatim indication text
+            # when the export carries it (medic-ingest did; the redesign KGX doesn't)
             ev = row.setdefault("medic_evidence", {})
-            for st in e.get("supporting_text") or []:
-                m = _AGENCY_PREFIX.match(st)
-                if m and m.group(1) not in ev:
-                    ev[m.group(1)] = m.group(2).strip()
+            for agency, text in (e.get("agency_text") or {}).items():
+                if not ev.get(agency):
+                    ev[agency] = text
+            # best reliability tier across the pair's edges (redesign only)
+            rel = e.get("reliability")
+            if rel and _RELIABILITY_RANK.get(rel, 0) > _RELIABILITY_RANK.get(row.get("reliability"), 0):
+                row["reliability"] = rel
         elif src == "dismech":
             # aggregate evidence across this pair's dismech edges: ordered PMIDs +
             # each PMID's supporting-text snippet (for numbered PubMed links on the site)
@@ -169,8 +184,10 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
     gid: dict[str, str] = {}
     glabel: dict[str, str] = {}
     if drug_grouper is not None:
+        if hasattr(drug_grouper, "prefetch"):
+            drug_grouper.prefetch([named_clique(rec, d) for d in sorted(all_drugs)])
         for drug in all_drugs:
-            g = drug_grouper.group(rec.nn.clique(drug))
+            g = drug_grouper.group(named_clique(rec, drug))
             gid[drug] = g.group_id
             glabel[g.group_id] = g.group_label
     else:
@@ -254,6 +271,8 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         row["dakp_evidence"] = json.dumps(
             {"setids": dk.get("setids", []), "fda": dk.get("fda_approvals", [])},
             ensure_ascii=False) if dk and (dk.get("setids") or dk.get("fda_approvals")) else ""
+        mm = treat["medic"].get(key) if "medic" in present else None
+        row["medic_reliability"] = (mm or {}).get("reliability") or ""
         dm = treat["dismech"].get(key) if "dismech" in present else None
         row["dismech_pubs"] = dm["pubs"] if dm else 0
         row["dismech_evidence"] = json.dumps(
@@ -310,7 +329,8 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
             "of_dakp_onlabel_in_medic": (
                 round(len(onlabel_agree) / len(dakp_onlabel), 4) if dakp_onlabel else 0.0),
         },
-        "contraindication_pairs": len(contra),
+        "repaired_drugs": len(rec.repaired),
+        "contraindication_pairs": {s: len(v) for s, v in contra.items()},
         "scope_diseases": {s: len(scope[s]) for s in present},
     }
 
@@ -376,6 +396,7 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
     merged_groups = sum(1 for g, ds in _group_members(gid).items() if len(ds) > 1)
     summary["moiety"] = {
         "enabled": drug_grouper is not None,
+        "lookup_failures": getattr(drug_grouper, "failed", 0),
         "new_agreements": len(collapsed_agree - strict_agree_gd),
         "agree_with_moiety": len(collapsed_agree),
         "merged_groups": merged_groups,
@@ -424,19 +445,14 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         for (drug, dis), row in treat["medic"].items():
             ev = row.get("medic_evidence")
             if ev:
+                agencies = [a for a in _AGENCY_ORDER if a in ev] + sorted(set(ev) - set(_AGENCY_ORDER))
                 medic_evidence_rows.append({
                     "drug": drug, "disease": dis,
                     "evidence": json.dumps(
-                        [{"agency": a, "text": ev[a]} for a in _AGENCY_ORDER if a in ev],
-                        ensure_ascii=False),
+                        [{"agency": a, "text": ev[a]} for a in agencies], ensure_ascii=False),
                 })
 
-    contra_rows = sorted(
-        ({"drug": v["drug"], "drug_label": v["drug_label"], "disease": k[1],
-          "disease_label": v["disease_label"], "cases": v["cases"]}
-         for k, v in contra.items()),
-        key=lambda r: (-r["cases"], r["drug_label"]),
-    )
+    contraindications = _contraindications(contra, treat)
 
     return {
         "summary": summary,
@@ -445,8 +461,48 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
         "by_disease": by_disease,
         "disease_areas": disease_areas,
         "dakp_offlabel_only_top_drugs": offlabel_top_drugs,
-        "contraindications": {"summary": {"pairs": len(contra)}, "rows": contra_rows[:1000]},
+        "contraindications": contraindications,
         "medic_evidence": medic_evidence_rows,
+    }
+
+
+def _contraindications(contra: dict, treat: dict) -> dict:
+    """MEDIC vs DAKP contraindications, head to head, plus the treats/contra clash.
+
+    A "clash" is a pair one source calls an *indication* and another (or the same) calls
+    a contraindication -- usually a negation-scoping or section-attribution error worth a
+    look. Indication-grade only: DAKP off-label (FAERS) use isn't an indication, and a
+    drug used off-label where it's contraindicated is unremarkable.
+    """
+    m, d = set(contra.get("medic", {})), set(contra.get("dakp", {}))
+    ind = {s: {k for k, v in t.items() if s != "dakp" or v.get("status") == APPROVED}
+           for s, t in treat.items()}
+    treats_any = set().union(*ind.values())
+    rows = []
+    for key in m | d:
+        v = contra["medic"].get(key) or contra["dakp"][key]
+        clash = [s for s in ind if key in ind[s]]
+        rows.append({
+            "drug": v["drug"], "drug_label": v["drug_label"],
+            "disease": key[1], "disease_label": v["disease_label"],
+            "medic": key in m, "dakp": key in d,
+            "dakp_cases": contra["dakp"][key]["cases"] if key in d else 0,
+            "treats_in": ", ".join(clash),
+        })
+    rows.sort(key=lambda r: (-(r["medic"] and r["dakp"]), -bool(r["treats_in"]),
+                             -r["dakp_cases"], r["drug_label"]))
+    union = len(m | d)
+    return {
+        "summary": {
+            "pairs": {"medic": len(m), "dakp": len(d)},
+            "shared": len(m & d),
+            "jaccard": round(len(m & d) / union, 4) if union else 0.0,
+            "union": union,
+            "medic_drugs": len({k[0] for k in m}), "dakp_drugs": len({k[0] for k in d}),
+            "shared_drugs": len({k[0] for k in m} & {k[0] for k in d}),
+            "clash": {s: len(contra[s].keys() & treats_any) for s in contra},
+        },
+        "rows": rows[:3000],
     }
 
 

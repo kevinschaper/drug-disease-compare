@@ -6,7 +6,7 @@ from pathlib import Path
 
 import click
 
-from . import compare, load
+from . import changes, compare, load
 from .drug_groups import moiety_grouper
 from .mondo import MondoGraph
 from .nodenorm import NodeNorm
@@ -19,11 +19,68 @@ DRUG_GROUP_CACHE = ROOT / "data" / "drug_groups_cache.json"
 ARTIFACTS = ROOT / "src" / "data"
 
 
-def _load_edges() -> list[dict]:
-    medic = load.load_medic(INPUTS / "medic_edges.jsonl")
-    dakp = load.load_dakp(INPUTS / "dakp_edges.jsonl")
-    dismech = load.load_dismech(INPUTS / "dismech_edges.jsonl")
-    return medic + dakp + dismech
+# Inputs are versioned per source: data/inputs/<source>/{old,new}/. "new" drives the
+# head-to-head; "old" is the release the previous site was built from, kept so each
+# source's change can be characterized (data/MANIFEST.yaml pins both).
+LOADERS = {"medic": load.load_medic, "dakp": load.load_dakp, "dismech": load.load_dismech}
+VERSIONS = ("old", "new")
+
+
+def _edges_path(source: str, version: str = "new") -> Path:
+    return INPUTS / source / version / f"{source}_edges.jsonl"
+
+
+def _load_source(source: str, version: str = "new") -> list[dict]:
+    return LOADERS[source](_edges_path(source, version))
+
+
+def _load_edges(version: str = "new") -> list[dict]:
+    return [e for s in LOADERS for e in _load_source(s, version)]
+
+
+def _node_labels() -> dict[str, str]:
+    """Source node names (DAKP + MEDIC nodes files), new release winning over old.
+
+    Labels nodes the Node Normalizer can't name, and feeds the exact-name drug repair.
+    """
+    labels: dict[str, str] = {}
+    for v in VERSIONS:
+        for s in ("medic", "dakp"):
+            path = INPUTS / s / v / f"{s}_nodes.jsonl"
+            if path.exists():
+                labels.update(load.load_node_labels(path))
+    return labels
+
+
+def _reconciler(nn: NodeNorm, mondo: MondoGraph, edges: list[dict]):
+    """Reconciler with exact-name RxNorm repair for unresolved drug CURIEs.
+
+    Returns ``(rec, clients)``; ``clients.save()`` persists the RxNorm lookups. The
+    repair lookups are prefetched concurrently and their RXCUIs batch-normalized.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+
+    from .drug_groups import _Cache, _Clients
+
+    labels = _node_labels()
+    clients = _Clients(_Cache(DRUG_GROUP_CACHE))
+    unresolved = {e["subject"] for e in edges if not nn.clique(e["subject"]).resolved}
+    names = sorted({labels[c] for c in unresolved if labels.get(c)})
+    with ThreadPoolExecutor(16) as ex:
+        rxcuis = [r for r in ex.map(clients.rxnorm_by_name, names) if r]
+    nn.warm(f"RXCUI:{r}" for r in rxcuis)
+    clients.save()
+    click.echo(f"  {len(unresolved)} drug CURIEs unknown to the Node Normalizer; "
+               f"{len(rxcuis)} have an exact RxNorm name match")
+    return Reconciler(nn, mondo, labels, name_to_rxcui=clients.rxnorm_by_name), clients
+
+
+def _manifest_versions() -> dict:
+    """{source: {old: release, new: release}} from data/MANIFEST.yaml."""
+    import yaml
+
+    m = yaml.safe_load((ROOT / "data" / "MANIFEST.yaml").read_text())["inputs"]
+    return {s: {v: m[f"{s}_edges"][v]["release"] for v in VERSIONS} for s in LOADERS}
 
 
 def _write(name: str, obj) -> None:
@@ -50,9 +107,11 @@ def cli() -> None:
 
 @cli.command()
 def normalize() -> None:
-    """Resolve every drug/disease CURIE through the Node Normalizer (warms cache)."""
-    edges = _load_edges()
-    curies = load.all_curies(edges)
+    """Resolve every drug/disease CURIE (old + new releases) through the Node Normalizer."""
+    curies = set()
+    for v in VERSIONS:
+        curies |= load.all_curies(_load_edges(v))
+        curies |= load.load_dismech_diseases(_edges_path("dismech", v))
     click.echo(f"resolving {len(curies)} distinct CURIEs through the Node Normalizer...")
     nn = NodeNorm(CACHE)
     nn.warm(curies)
@@ -67,8 +126,8 @@ def build(drug_collapse: bool) -> None:
     """Load inputs, reconcile via Node Normalizer + MONDO, emit src/data/*.json."""
     click.echo("loading edges...")
     edges = _load_edges()
-    n_medic = sum(e["source"] == "medic" for e in edges)
-    click.echo(f"  {n_medic} MEDIC + {len(edges) - n_medic} DAKP comparable edges")
+    n = {s: sum(e["source"] == s for e in edges) for s in LOADERS}
+    click.echo("  " + ", ".join(f"{s}={c}" for s, c in n.items()) + " comparable edges")
 
     click.echo("warming Node Normalizer cache...")
     nn = NodeNorm(CACHE)
@@ -77,14 +136,13 @@ def build(drug_collapse: bool) -> None:
     click.echo("loading MONDO is-a graph (release KGX)...")
     mondo = MondoGraph(INPUTS / "mondo_edges.tsv", INPUTS / "mondo_nodes.tsv")
 
-    node_labels = load.load_dakp_node_labels(INPUTS / "dakp_nodes.jsonl")
-    rec = Reconciler(nn, mondo, node_labels)
+    rec, _ = _reconciler(nn, mondo, edges)
 
     click.echo("comparing...")
     # dismech's curated-disease scope (canonicalized), so its absence is only read
     # as a signal where it actually curates. These come from *all* dismech edges, so
     # many aren't in the treats-edge cache — batch-warm them before resolving.
-    dismech_disease_curies = load.load_dismech_diseases(INPUTS / "dismech_edges.jsonl")
+    dismech_disease_curies = load.load_dismech_diseases(_edges_path("dismech"))
     nn.warm(dismech_disease_curies)
     dismech_scope = {rec.disease(c).canonical for c in dismech_disease_curies}
 
@@ -105,12 +163,14 @@ def build(drug_collapse: bool) -> None:
     # MEDIC verbatim agency indication text, kept out of pairs.parquet (~14 MB of prose);
     # the detail pages join it on (drug, disease) on demand.
     _write_parquet("medic_evidence.parquet", result["medic_evidence"])
-    _write("summary.json", result["summary"])
     _write("dakp_offlabel_top_drugs.json", result["dakp_offlabel_only_top_drugs"])
     _write("by_drug.json", result["by_drug"])
     _write("by_disease.json", result["by_disease"])
     _write("disease_areas.json", result["disease_areas"])
     _write("contraindications.json", result["contraindications"])
+    s = result["summary"]
+    s["versions"] = {src: v["new"] for src, v in _manifest_versions().items()}
+    _write("summary.json", s)
 
     s = result["summary"]
     click.echo(
@@ -121,6 +181,48 @@ def build(drug_collapse: bool) -> None:
         f"pairwise: {s['pairwise']}\n"
         f"dismech: {s.get('dismech')}"
     )
+
+
+@cli.command("changes")
+def changes_cmd() -> None:
+    """Characterize each source's old -> new release change -> src/data/changes.*"""
+    click.echo("loading old + new releases...")
+    edges = {s: {v: _load_source(s, v) for v in VERSIONS} for s in LOADERS}
+    nn = NodeNorm(CACHE)
+    nn.warm(set().union(*(load.all_curies(e) for d in edges.values() for e in d.values())))
+    mondo = MondoGraph(INPUTS / "mondo_edges.tsv", INPUTS / "mondo_nodes.tsv")
+    rec, _ = _reconciler(nn, mondo, [e for d in edges.values() for v in d.values() for e in v])
+    versions = _manifest_versions()
+
+    # moiety groups (shared cache with `build`) so a re-grounded drug isn't misread as
+    # one drug dropped + another added
+    click.echo("resolving drug-axis groups (active moiety; cached)...")
+    gclients, grouper = moiety_grouper(DRUG_GROUP_CACHE)
+    gmemo: dict[str, str] = {}
+
+    def group(drug: str) -> str:
+        if drug not in gmemo:
+            gmemo[drug] = grouper.group(compare.named_clique(rec, drug)).group_id
+        return gmemo[drug]
+
+    summaries, rows, sets = {}, [], {}
+    for s in LOADERS:
+        click.echo(f"  diffing {s} {versions[s]['old']} -> {versions[s]['new']}...")
+        summ, r, ss = changes.source_changes(s, edges[s]["old"], edges[s]["new"], rec, mondo,
+                                             versions[s], group)
+        summaries[s], sets[s] = summ, ss
+        rows.extend(r)
+        for lens, L in summ["lenses"].items():
+            click.echo(f"    {lens}: {L['old']} -> {L['new']} (kept {L['kept']}, "
+                       f"+{L['added']}, -{L['removed']}) {L['reasons']}")
+
+    trajectory = changes.agreement_trajectory(sets)
+    for t in trajectory:
+        click.echo(f"  {t['pair']}: old/old {t['old_old']['shared']} -> new/new {t['new_new']['shared']}")
+    gclients.save()
+    _write("changes.json", {"sources": summaries, "trajectory": trajectory,
+                            "repaired_drugs": len(rec.repaired)})
+    _write_parquet("changes.parquet", rows)
 
 
 if __name__ == "__main__":

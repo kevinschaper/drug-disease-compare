@@ -6,7 +6,7 @@ sql:
 
 # dismech lens
 
-dismech is **disease-centric and narrow** — it curates ~1,150 diseases so far, and
+dismech is **disease-centric and narrow** — it curates ~${summary.dismech.scope_diseases.toLocaleString()} diseases so far, and
 only some of those have drug→disease edges yet. So its non-overlap can't be read
 like MEDIC↔DAKP: a missing edge on a disease it hasn't curated means *"not curated"*,
 not *"disagrees"*. This page reads dismech on its own terms — **how well do the broad
@@ -69,6 +69,7 @@ const supRows = [
 Plot.plot({
   width,
   marginLeft: 130,
+  marginRight: 50,
   height: 200,
   x: {label: "dismech edges", grid: true},
   y: {label: null, domain: supRows.map((r) => r.support)},

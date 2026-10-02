@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e117",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia",
+  "note": "Ventricular arrhythmias named directly."
+ },
+ {
+  "id": "e080",
+  "verdict": "TARGET",
+  "quote": "Treatment of partial-onset seizures in adults",
+  "note": "Post-stroke epilepsy is an etiologic form of the indicated (partial-onset) seizure disorder."
+ },
+ {
+  "id": "e065",
+  "verdict": "TARGET",
+  "quote": "palliative treatment of patients with advanced head and neck squamous cell carcinoma",
+  "note": "Exact match in EMA indication."
+ },
+ {
+  "id": "e002",
+  "verdict": "TARGET",
+  "quote": "indicated as monotherapy for pediatric patients with infantile spasms 1 month to 2 years of age",
+  "note": "Infantile spasms named as indication."
+ },
+ {
+  "id": "e203",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label covers systemic hypertension and edema; pulmonary hypertension not mentioned."
+ },
+ {
+  "id": "e060",
+  "verdict": "TARGET",
+  "quote": "Uncomplicated urethritis in men due to Neisseria gonorrhoeae and for the treatment of other gonococcal infections",
+  "note": "Gonococcal infections listed."
+ },
+ {
+  "id": "e218",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "\"Abuse\" appears only as opioid drug abuse risk; victim of abuse is a spurious mapping."
+ },
+ {
+  "id": "e190",
+  "verdict": "TARGET",
+  "quote": "Diabetic Macular Edema (DME) ( 1.2 ) Macular Edema Following Retinal Vein Occlusion (RVO)",
+  "note": "Macular edema forms are indicated; edge is a near parent."
+ },
+ {
+  "id": "e294",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Exact match."
+ },
+ {
+  "id": "e138",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only advanced RCC is indicated; Stage II (localized) RCC is not supported by any indication."
+ },
+ {
+  "id": "e279",
+  "verdict": "TARGET",
+  "quote": "For the treatment of urinary tract infections due to susceptible strains of the following organisms",
+  "note": "Recurrent UTI is a subtype of indicated UTI (combination product)."
+ },
+ {
+  "id": "e237",
+  "verdict": "TARGET",
+  "quote": "KABIVEN may be used to prevent essential fatty acid deficiency",
+  "note": "Combination PN product indication names EFAD prevention."
+ },
+ {
+  "id": "e280",
+  "verdict": "TARGET",
+  "quote": "KABIVEN may be used to prevent essential fatty acid deficiency",
+  "note": "Combination PN product indication names EFAD prevention."
+ },
+ {
+  "id": "e103",
+  "verdict": "TARGET",
+  "quote": "Treatment of anemia due to o Chronic Kidney Disease (CKD)",
+  "note": "Anemia (of several causes) is the treated condition."
+ },
+ {
+  "id": "e239",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (e.g., Zollinger-Ellison syndrome and systemic mastocytosis)",
+  "note": "Systemic mastocytosis named in indication list."
+ },
+ {
+  "id": "e265",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced renal cell carcinoma, as a first-line treatment in combination with cabozantinib",
+  "note": "Papillary RCC is a histologic subtype of indicated RCC."
+ },
+ {
+  "id": "e285",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with hepatocellular carcinoma (HCC) who have an alpha fetoprotein (AFP) of >=400 ng/mL",
+  "note": "HCC named directly."
+ },
+ {
+  "id": "e286",
+  "verdict": "TARGET",
+  "quote": "Primary or secondary adrenocortical insufficiency",
+  "note": "Secondary adrenal insufficiency listed."
+ },
+ {
+  "id": "e231",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Label covers moderate-to-severe acute pain generally; pelvic pain not named and not clearly a subtype of acute pain."
+ },
+ {
+  "id": "e230",
+  "verdict": "TARGET",
+  "quote": "Relieves sinus congestion and pressure, helps decongest sinus openings and passages",
+  "note": "Sinus congestion is directly relieved (combination OTC products)."
+ },
+ {
+  "id": "e209",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only CINV and PONV indicated; cyclic vomiting syndrome not mentioned."
+ },
+ {
+  "id": "e206",
+  "verdict": "TARGET",
+  "quote": "Preventive treatment of migraine in patients 12 years of age and older",
+  "note": "Migraine prevention indicated."
+ },
+ {
+  "id": "e173",
+  "verdict": "TARGET",
+  "quote": "Acute and maintenance treatment of Major Depressive Disorder (MDD)",
+  "note": "Exact match."
+ },
+ {
+  "id": "e244",
+  "verdict": "TARGET",
+  "quote": "indicated for remission induction in acute non-lymphocytic leukemia of adults and pediatric patients",
+  "note": "AML with t(3;5) is a subtype of indicated AML/ANLL."
+ },
+ {
+  "id": "e160",
+  "verdict": "TARGET",
+  "quote": "Pneumonia: Nosocomial ( 1.1 ) and Community-Acquired ( 1.2 , 1.3 )",
+  "note": "CAP named directly."
+ },
+ {
+  "id": "e155",
+  "verdict": "TARGET",
+  "quote": "Complicated urinary tract infections including pyelonephritis.",
+  "note": "Exact match."
+ },
+ {
+  "id": "e125",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension",
+  "note": "Hypertension indicated."
+ },
+ {
+  "id": "e006",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Polymyositis listed."
+ },
+ {
+  "id": "e291",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of acute urinary retention",
+  "note": "Prevention of acute urinary retention is an explicit indication goal in BPH."
+ },
+ {
+  "id": "e099",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Indication text is an empty header only."
+ },
+ {
+  "id": "e148",
+  "verdict": "TARGET",
+  "quote": "reducing the frequency and severity of serious infections associated with Chronic Granulomatous Disease (CGD)",
+  "note": "Management of CGD's principal manifestation (infections); CGD named."
+ },
+ {
+  "id": "e261",
+  "verdict": "TARGET",
+  "quote": "for the treatment of patients with unresectable or metastatic melanoma",
+  "note": "Eyelid melanoma is an anatomic subtype of indicated melanoma."
+ },
+ {
+  "id": "e019",
+  "verdict": "FP1_setting",
+  "quote": "with one or more risk factors, such as prior stroke or transient ischemic attack (TIA); age >= 75 years; heart failure (NYHA Class >= II); diabetes mellitus; hypertension",
+  "note": "Diabetes is a risk-factor qualifier for the NVAF stroke-prevention population."
+ },
+ {
+  "id": "e010",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH, WHO Group I)",
+  "note": "Exact match."
+ },
+ {
+  "id": "e168",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is about moisturizing dry nasal passages; leukemic leptomeningitis not mentioned."
+ },
+ {
+  "id": "e074",
+  "verdict": "TARGET",
+  "quote": "Prevention of Postmenopausal Osteoporosis",
+  "note": "Prevention of postmenopausal osteoporosis indicated."
+ },
+ {
+  "id": "e258",
+  "verdict": "FP1_setting",
+  "quote": "left ventricular dysfunction following myocardial infarction in clinically stable patients",
+  "note": "MI is background; target is post-MI LV dysfunction/CV mortality."
+ },
+ {
+  "id": "e214",
+  "verdict": "TARGET",
+  "quote": "non-metastatic castration-resistant prostate cancer (nmCRPC)",
+  "note": "nmCRPC is a form of CRPC."
+ }
+]

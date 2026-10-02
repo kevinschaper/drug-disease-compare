@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e003",
+  "verdict": "TARGET",
+  "quote": "Hematologic Diseases Acquired (autoimmune) hemolytic anemia",
+  "note": "Acquired autoimmune hemolytic anemia is a listed hematologic indication."
+ },
+ {
+  "id": "e011",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the hyperuricemia associated with gout and gouty arthritis",
+  "note": "Treating gout-associated hyperuricemia is management of chronic gout."
+ },
+ {
+  "id": "e019",
+  "verdict": "TARGET",
+  "quote": "Acute Bacterial Otitis Media -caused by beta‑lactamase‑producing isolates of H. influenzae and M. catarrhalis",
+  "note": "Acute bacterial otitis media is a listed indication of the amoxicillin/clavulanate combination."
+ },
+ {
+  "id": "e027",
+  "verdict": "TARGET",
+  "quote": "long-term enzyme replacement therapy (ERT) for patients with type 1 Gaucher disease",
+  "note": "Type 1 Gaucher disease is the stated indication."
+ },
+ {
+  "id": "e035",
+  "verdict": "TARGET",
+  "quote": "neuroblastoma (disseminated disease)",
+  "note": "Neuroblastoma is listed among malignant diseases indicated for cyclophosphamide."
+ },
+ {
+  "id": "e043",
+  "verdict": "TARGET",
+  "quote": "improving physical function in patients with moderately to severely active rheumatoid arthritis (RA)",
+  "note": "Rheumatoid arthritis is a primary indication."
+ },
+ {
+  "id": "e051",
+  "verdict": "TARGET",
+  "quote": "ELAPRASE is indicated for patients with Hunter syndrome (Mucopolysaccharidosis II, MPS II)",
+  "note": "MPS II (Hunter syndrome) is the stated indication."
+ },
+ {
+  "id": "e059",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with multicentric Castleman's disease (MCD) who are human immunodeficiency virus (HIV) negative",
+  "note": "MCD is the indicated disease (HIV/HHV-8 negative subset)."
+ },
+ {
+  "id": "e067",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Sodium acetate is indicated for hyponatremia/sodium source; essential fatty acid deficiency not mentioned."
+ },
+ {
+  "id": "e075",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of anemia associated with chronic kidney disease (CKD)",
+  "note": "Anemia is the treated condition (CKD is the setting); anemia due to chemotherapy is excluded but anemia itself is the target."
+ },
+ {
+  "id": "e083",
+  "verdict": "TARGET",
+  "quote": "For the treatment of wild-type or variant transthyretin amyloidosis in adult patients with cardiomyopathy (ATTR-CM)",
+  "note": "Variant (hereditary) transthyretin amyloidosis is indicated, with cardiomyopathy."
+ },
+ {
+  "id": "e091",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an opioid analgesic",
+  "note": "Indication is generic severe pain; urinary tract pain is a narrower form of pain."
+ },
+ {
+  "id": "e099",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with advanced renal cell carcinoma (RCC)",
+  "note": "RCC (advanced and adjuvant) is indicated."
+ },
+ {
+  "id": "e107",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied betamethasone labels are topical, for corticosteroid-responsive dermatoses; bursitis not mentioned."
+ },
+ {
+  "id": "e115",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Topiramate indicated for epilepsy and migraine prophylaxis; cluster headache not mentioned."
+ },
+ {
+  "id": "e123",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Sulindac indications are OA, RA, AS, acute painful shoulder, acute gout; back pain not mentioned."
+ },
+ {
+  "id": "e131",
+  "verdict": "TARGET",
+  "quote": "malignant lymphomas: Hodgkin's disease, lymphocytic lymphoma, mixed-cell type lymphoma, histiocytic lymphoma, Burkitt's lymphoma",
+  "note": "Burkitt lymphoma is explicitly listed for cyclophosphamide."
+ },
+ {
+  "id": "e139",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of human immunodeficiency virus (HIV-1) infection in adult and pediatric patients 3 years of age and older",
+  "note": "HIV-1 infection is the indication."
+ },
+ {
+  "id": "e147",
+  "verdict": "TARGET",
+  "quote": "Formulated for symptoms associated with toxicity such as fatigue, headaches and sluggish elimination",
+  "note": "Combination (homeopathic-style) product text names fatigue as a targeted symptom; weak but explicit."
+ },
+ {
+  "id": "e155",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with carcinoid syndrome",
+  "note": "Carcinoid syndrome is an explicit indication."
+ },
+ {
+  "id": "e163",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Selenium products are for parenteral nutrition supplementation; allergic rhinitis not mentioned."
+ },
+ {
+  "id": "e171",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with locally advanced or metastatic breast cancer after failure of prior chemotherapy",
+  "note": "Breast cancer is indicated; HER2-positive breast carcinoma is a narrower subtype."
+ },
+ {
+  "id": "e179",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced or metastatic gastric cancer, gastroesophageal junction cancer, and esophageal adenocarcinoma whose tumors express PD-L1",
+  "note": "Gastric cancer is an explicit indication."
+ },
+ {
+  "id": "e187",
+  "verdict": "TARGET",
+  "quote": "including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma",
+  "note": "High-grade B-cell lymphoma is explicitly named in FDA and EMA indications."
+ },
+ {
+  "id": "e195",
+  "verdict": "FP1_setting",
+  "quote": "Angiographically Documented Coronary Artery Disease in patients without heart failure or an ejection fraction <40%",
+  "note": "Heart failure appears only as a population exclusion/background, not as a treated condition."
+ },
+ {
+  "id": "e203",
+  "verdict": "TARGET",
+  "quote": "in combination with durvalumab is indicated for the first line treatment of adults with advanced or unresectable hepatocellular carcinoma (HCC)",
+  "note": "HCC is an explicit EMA indication."
+ },
+ {
+  "id": "e211",
+  "verdict": "TARGET",
+  "quote": "high-grade epithelial ovarian, fallopian tube or primary peritoneal cancer",
+  "note": "Primary peritoneal cancer is explicitly named in the EMA indication."
+ },
+ {
+  "id": "e219",
+  "verdict": "TARGET",
+  "quote": "add-on maintenance treatment of adult and pediatric patients aged 6 years and older with severe asthma, and with an eosinophilic phenotype",
+  "note": "Severe eosinophilic asthma is indicated; asthma is a near parent."
+ },
+ {
+  "id": "e227",
+  "verdict": "TARGET",
+  "quote": "Diffuse posterior uveitis and choroiditis Sympathetic ophthalmia Keratitis Optic neuritis",
+  "note": "Keratitis is a listed ophthalmic indication."
+ },
+ {
+  "id": "e235",
+  "verdict": "TARGET",
+  "quote": "Diffuse posterior uveitis and choroiditis Sympathetic ophthalmia Keratitis Optic neuritis",
+  "note": "Label lists keratitis; Acanthamoeba keratitis is a subtype per rubric, though label context is allergic/inflammatory and steroids may worsen protozoan infection."
+ },
+ {
+  "id": "e243",
+  "verdict": "TARGET",
+  "quote": "Metastatic Ovarian Tumors In established combination therapy with other approved chemotherapeutic agents in patients with metastatic ovarian tumors",
+  "note": "Ovarian tumors are an explicit indication."
+ },
+ {
+  "id": "e251",
+  "verdict": "FP3_cross_section",
+  "quote": "Interstitial lung disease: May be fatal. New onset or worsening symptoms may necessitate discontinuation of leflunomide",
+  "note": "Indication is RA only; interstitial lung disease appears only as a warning."
+ },
+ {
+  "id": "e259",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Aspirin texts cover minor aches/pains, fever, cardiovascular prevention; insect bites not mentioned."
+ },
+ {
+  "id": "e267",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied text is only for nail fungus; groin/perianal dermatophytosis not mentioned."
+ },
+ {
+  "id": "e275",
+  "verdict": "TARGET",
+  "quote": "Treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and prevention of recurrent DVT and PE in adults",
+  "note": "PE is an explicit EMA indication."
+ },
+ {
+  "id": "e283",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of secondary amenorrhea, endometriosis, and abnormal uterine bleeding",
+  "note": "Endometriosis is an explicit indication of norethindrone acetate."
+ },
+ {
+  "id": "e291",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with Type 1 diabetes who are unable to approach target HbA1c because of current repeated episodes of severe hypoglycemia",
+  "note": "Type 1 diabetes is the indication (restricted subset)."
+ },
+ {
+  "id": "e299",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Supplied text is only dosing directions for a combination pellet product; no indication content."
+ }
+]
