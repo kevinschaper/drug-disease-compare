@@ -3,7 +3,7 @@
 Three independently-built, LLM-assisted resources mine drug→disease **indications**:
 **MEDIC** (approved indications from FDA / EMA / PMDA / CDSCO labels), **DAKP** (the Drug
 Approvals KP — its `approved_for_condition` edges, from DailyMed / Drugs@FDA / EMA), and
-**dismech** (mechanism-driven, curated; only its CHEBI drug→disease subset). Where their
+**dismech** (mechanism-driven, curated; only its drug→disease subset). Where their
 indications *overlap* we gain confidence; where they *diverge* we get a lead to triage.
 
 DAKP also carries a large volume of **FAERS off-label use** — *observed* real-world use,

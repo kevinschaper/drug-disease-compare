@@ -7,7 +7,7 @@ identifiers), not drift in our reconciliation. Each source is read through the s
 
 * medic   -- treats, contraindicated
 * dakp    -- approved (approved_for_condition), off-label (FAERS), contraindicated
-* dismech -- treats (CHEBI drug subset)
+* dismech -- treats (drug-typed subset)
 
 Per lens we report kept / added / removed canonical pairs, and explain each churned
 pair where we can:

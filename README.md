@@ -16,7 +16,7 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
 - **Sources.** MEDIC (the `monarch-initiative/medic` redesign — indications and
   contraindications from FDA/EMA/PMDA/CDSCO labels), DAKP (`infores:drugapprovals-kp`,
   FAERS + DailyMed + EMA including off-label use), and dismech
-  (`monarch-initiative/dismech`, curated/mechanism-driven — its CHEBI drug→disease
+  (`monarch-initiative/dismech`, curated/mechanism-driven — its drug→disease
   subset). Adding a source is one entry in `SOURCE_ORDER` plus a loader.
 - **In-progress work.** The MEDIC (MeDIC redesign, local unreleased build) and DAKP
   (1.16.0) updates are evaluated as work in progress: the comparison and audit are feedback
@@ -32,7 +32,7 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
   `exact`, `related` (same drug ≤2 MONDO is-a hops away), or absent. "Agreement" is a
   pair exact in ≥2 sources.
 - **Scope-aware.** A source's *absence* only counts where it covers the disease. dismech
-  is disease-centric (~1,150 curated diseases), so it's read on its own terms — how
+  is disease-centric (~3,000 curated diseases), so it's read on its own terms — how
   many of its edges the broad sources corroborate, and what's novel to it.
 
 See [`src/methods.md`](src/methods.md) for the full methodology.
