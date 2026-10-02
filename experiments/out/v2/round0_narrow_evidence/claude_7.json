@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e007",
+  "verdict": "TARGET",
+  "quote": "Juvenile Rheumatoid Arthritis (JRA) in patients 2 years and older",
+  "note": "JRA is the older synonym for juvenile idiopathic arthritis."
+ },
+ {
+  "id": "e015",
+  "verdict": "TARGET",
+  "quote": "Prevention and treatment of haemorrhage or surgical bleeding in adults (age 18 years and older) with von Willebrand disease (VWD)",
+  "note": "Factor replacement for bleeding in VWD is management of the disease itself."
+ },
+ {
+  "id": "e023",
+  "verdict": "TARGET",
+  "quote": "Infliximab is indicated for reducing signs and symptoms in adult patients with active ankylosing spondylitis (AS).",
+  "note": "AS named explicitly as an indication."
+ },
+ {
+  "id": "e031",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers overactive bladder only; neurogenic bladder is not mentioned."
+ },
+ {
+  "id": "e039",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only general/minor pain, anorectal and mucosal anesthesia; chest pain not mentioned."
+ },
+ {
+  "id": "e047",
+  "verdict": "TARGET",
+  "quote": "In postmenopausal women with osteoporosis, FORTEO reduces the risk of vertebral and nonvertebral fractures.",
+  "note": "Reduction of osteoporotic fracture risk is an explicit indication."
+ },
+ {
+  "id": "e055",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of urge incontinence and/or increased urinary frequency and urgency",
+  "note": "Urge incontinence is named as treated."
+ },
+ {
+  "id": "e063",
+  "verdict": "TARGET",
+  "quote": "indicated for use in the treatment of the following invasive fungal infections ... Invasive aspergillosis",
+  "note": "Invasive aspergillosis listed explicitly."
+ },
+ {
+  "id": "e071",
+  "verdict": "TARGET",
+  "quote": "Prevention of phototoxicity in adult patients with erythropoietic protoporphyria (EPP).",
+  "note": "Prevents the defining manifestation of EPP; edge is a subtype of EPP."
+ },
+ {
+  "id": "e079",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic hepatitis B in adults and pediatric patients 12 years of age and older",
+  "note": "Chronic hepatitis B is a form of chronic hepatitis; near parent."
+ },
+ {
+  "id": "e087",
+  "verdict": "TARGET",
+  "quote": "XHANCE is indicated for the treatment of chronic rhinosinusitis without nasal polyps (CRSsNP) in adults.",
+  "note": "Exact match."
+ },
+ {
+  "id": "e095",
+  "verdict": "TARGET",
+  "quote": "Enjaymo is indicated for the treatment of haemolytic anaemia in adult patients with cold agglutinin disease (CAD).",
+  "note": "Treats haemolytic anaemia, i.e. the haemolysis itself."
+ },
+ {
+  "id": "e103",
+  "verdict": "TARGET",
+  "quote": "emergency therapy for known or suspected opioid overdose",
+  "note": "Opioid overdose named."
+ },
+ {
+  "id": "e111",
+  "verdict": "TARGET",
+  "quote": "As adjunctive therapy for short-term administration ... in: ... post-traumatic osteoarthritis",
+  "note": "Listed explicitly among rheumatic disorders."
+ },
+ {
+  "id": "e119",
+  "verdict": "TARGET",
+  "quote": "Treatment of unresectable or metastatic melanoma in adults and pediatric patients 12 years and older",
+  "note": "Unresectable melanoma named."
+ },
+ {
+  "id": "e127",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are HR+/HER2- breast cancer and PIK3CA-related overgrowth spectrum; no hereditary endocrine growth disease."
+ },
+ {
+  "id": "e135",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with locally advanced or metastatic anaplastic thyroid cancer (ATC) with BRAF V600E mutation",
+  "note": "Anaplastic thyroid cancer named."
+ },
+ {
+  "id": "e143",
+  "verdict": "FP5_negation",
+  "quote": "Nplate is not indicated for the treatment of thrombocytopenia due to myelodysplastic syndrome (MDS) or any cause of thrombocytopenia other than ITP.",
+  "note": "Non-ITP thrombocytopenias, including this one, are explicitly excluded."
+ },
+ {
+  "id": "e151",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of social anxiety disorder",
+  "note": "Social anxiety disorder is a synonym of social phobia."
+ },
+ {
+  "id": "e159",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indicated as sedative/anticonvulsant only; IBS not mentioned."
+ },
+ {
+  "id": "e167",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Disease is an unresolved UMLS code; cannot match against HIV-1 indication text."
+ },
+ {
+  "id": "e175",
+  "verdict": "TARGET",
+  "quote": "Rheumatoid Arthritis (RA) in combination with methotrexate in adult patients with moderately-to-severely-active RA",
+  "note": "RA named explicitly."
+ },
+ {
+  "id": "e183",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lists organisms incl. N. gonorrhoeae but never mentions urethritis."
+ },
+ {
+  "id": "e191",
+  "verdict": "TARGET",
+  "quote": "Treatment of symptomatic obstructive hypertrophic cardiomyopathy.",
+  "note": "Obstructive HCM is a form of HCM; near parent."
+ },
+ {
+  "id": "e199",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Severe pain is the indicated target (combination product counts)."
+ },
+ {
+  "id": "e207",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of thrombotic cardiovascular events (including stent thrombosis)",
+  "note": "Prevention of vascular thrombosis in ACS/PCI."
+ },
+ {
+  "id": "e215",
+  "verdict": "TARGET",
+  "quote": "clopidogrel is indicated in combination with ASA for the prevention of atherothrombotic and thromboembolic events, including stroke.",
+  "note": "Stroke prevention is explicitly indicated."
+ },
+ {
+  "id": "e223",
+  "verdict": "TARGET",
+  "quote": "as an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients aged 10 years and older with type 2 diabetes mellitus",
+  "note": "T2DM indicated (T1DM excluded); DM is a near parent."
+ },
+ {
+  "id": "e231",
+  "verdict": "TARGET",
+  "quote": "adult and pediatric (12 years and older) patients with unresectable or metastatic melanoma",
+  "note": "Metastatic ocular melanoma is a subtype of metastatic melanoma."
+ },
+ {
+  "id": "e239",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are metabolic acidosis, poisonings, insect bites; GERD/heartburn not mentioned."
+ },
+ {
+  "id": "e247",
+  "verdict": "FP1_setting",
+  "quote": "Improving survival of stable adult patients with symptomatic heart failure with reduced ejection fraction (HFrEF) after an acute myocardial infarction.",
+  "note": "Ejection fraction is a measurement describing the HFrEF population, not a treated disease."
+ },
+ {
+  "id": "e255",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only tonic-clonic, complex partial and neurosurgery seizures; atonic seizures not mentioned."
+ },
+ {
+  "id": "e263",
+  "verdict": "TARGET",
+  "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma",
+  "note": "Cough variant asthma is a subtype of asthma."
+ },
+ {
+  "id": "e271",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of stroke and systemic embolism in adult patients with non-valvular atrial fibrillation",
+  "note": "Systemic embolism prevention named."
+ },
+ {
+  "id": "e279",
+  "verdict": "TARGET",
+  "quote": "Tuberculous meningitis with subarachnoid block or impending block when used concurrently with appropriate antituberculous chemotherapy",
+  "note": "Tuberculous meningitis listed (adjunctive)."
+ },
+ {
+  "id": "e287",
+  "verdict": "TARGET",
+  "quote": "Nadolol tablets, USP are indicated for the treatment of hypertension, to lower blood pressure.",
+  "note": "Hypertension named."
+ },
+ {
+  "id": "e295",
+  "verdict": "TARGET",
+  "quote": "Hematologic Disorders Idiopathic thrombocytopenic purpura in adults",
+  "note": "ITP is synonymous with autoimmune thrombocytopenic purpura."
+ }
+]

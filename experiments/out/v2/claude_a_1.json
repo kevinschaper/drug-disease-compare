@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e260",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of severely ill patients with schizophrenia who fail to respond adequately to standard antipsychotic treatment",
+  "note": "Schizophrenia named as treated condition."
+ },
+ {
+  "id": "e266",
+  "verdict": "TARGET",
+  "quote": "Amlodipine is indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Hypertension is indicated in the amlodipine/atorvastatin combination label (amlodipine component); counted per combination rule."
+ },
+ {
+  "id": "e136",
+  "verdict": "TARGET",
+  "quote": "indicated for preoperative medication, support of anesthesia, for obstetrical analgesia",
+  "note": "Obstetrical analgesia corresponds to labor pain."
+ },
+ {
+  "id": "e204",
+  "verdict": "TARGET",
+  "quote": "or ≥27 kg/m2 to &lt;30 kg/m2 (overweight) in the presence of at least one weight-related comorbidity",
+  "note": "Weight management indicated in overweight adults with comorbidity."
+ },
+ {
+  "id": "e170",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Mycobacterium fortuitum / mycobacterial infection not mentioned in any supplied text."
+ },
+ {
+  "id": "e058",
+  "verdict": "TARGET",
+  "quote": "temporarily reduces fever",
+  "note": "OTC naproxen labels list fever reduction as a use."
+ },
+ {
+  "id": "e034",
+  "verdict": "FP2_symptom_swap",
+  "quote": "a discrete period of intense fear or discomfort",
+  "note": "Discomfort appears only as a symptom in the panic disorder definition; the drug treats the disorder."
+ },
+ {
+  "id": "e182",
+  "verdict": "FP4_overbroad",
+  "quote": "XIFAXAN is a rifamycin antibacterial indicated for: Treatment of travelers’ diarrhea (TD) caused by noninvasive strains of Escherichia coli",
+  "note": "Indicated for specific E. coli travelers diarrhea; generic Infection is an overbroad class."
+ },
+ {
+  "id": "e181",
+  "verdict": "FP1_setting",
+  "quote": "treatment of adult patients with macular oedema following either branch retinal-vein occlusion (BRVO) or central retinal-vein occlusion (CRVO)",
+  "note": "Treats macular oedema; CRVO is the underlying background condition."
+ },
+ {
+  "id": "e132",
+  "verdict": "TARGET",
+  "quote": "Cefepime as monotherapy is indicated for empiric treatment of febrile neutropenic patients",
+  "note": "Empiric therapy of febrile neutropenia is an explicit indication."
+ },
+ {
+  "id": "e234",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of the signs and symptoms of osteoarthritis or rheumatoid arthritis",
+  "note": "Rheumatoid arthritis named (diclofenac/misoprostol and diclofenac potassium)."
+ },
+ {
+  "id": "e145",
+  "verdict": "TARGET",
+  "quote": "To control the manifestations of the manic type of manic-depressive illness",
+  "note": "Manic-depressive illness is a synonym for bipolar disorder."
+ },
+ {
+  "id": "e225",
+  "verdict": "TARGET",
+  "quote": "supply significant amounts of vitamins A, C, D, E ... to help assure that nutritional deficiencies of these vitamins will not develop",
+  "note": "Prevention of vitamin deficiency is the stated use."
+ },
+ {
+  "id": "e242",
+  "verdict": "TARGET",
+  "quote": "Angina at rest including: Vasospastic (Prinzmetal's variant) angina Unstable (crescendo, pre-infarction) angina 2. Chronic stable angina",
+  "note": "Angina explicitly indicated."
+ },
+ {
+  "id": "e177",
+  "verdict": "TARGET",
+  "quote": "Treatment of schizophrenia in adults",
+  "note": "Schizophrenia explicitly indicated."
+ },
+ {
+  "id": "e185",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Generic severe pain indication; breast pain is a narrower pain type (granularity favours TARGET), borderline."
+ },
+ {
+  "id": "e141",
+  "verdict": "TARGET",
+  "quote": "For symptomatic relief of anxiety and tension associated with psychoneurosis",
+  "note": "Psychoneurosis = neurotic disorder; anxiety is its core manifestation and label also cites long-term treatment of the psychoneurotic."
+ },
+ {
+  "id": "e054",
+  "verdict": "TARGET",
+  "quote": "They are also indicated in chronic anterior uveitis",
+  "note": "Chronic anterior uveitis is synonymous with chronic iritis (combination ophthalmic product)."
+ },
+ {
+  "id": "e255",
+  "verdict": "TARGET",
+  "quote": "Pentazocine and Naloxone Tablets are indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Severe pain indicated for the pentazocine/naloxone combination; counted per combination rule."
+ },
+ {
+  "id": "e008",
+  "verdict": "TARGET",
+  "quote": "indicated to improve glycemic control in patients 1 year of age and older with diabetes mellitus",
+  "note": "Type 1 diabetes is a subtype of the indicated diabetes mellitus."
+ },
+ {
+  "id": "e112",
+  "verdict": "TARGET",
+  "quote": "useful in combination with other oncolytic agents in Hodgkin's disease, non–Hodgkin's malignant lymphomas, rhabdomyosarcoma, neuroblastoma, and Wilms' tumor",
+  "note": "Neuroblastoma named in list of indicated tumors."
+ },
+ {
+  "id": "e210",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer",
+  "note": "Advanced breast cancer explicitly indicated."
+ },
+ {
+  "id": "e249",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Greater trochanteric pain syndrome not mentioned; only generic mild-to-moderate pain, OA, RA, sprains."
+ },
+ {
+  "id": "e016",
+  "verdict": "TARGET",
+  "quote": "Treatment of Cryopyrin-Associated Periodic Syndromes (CAPS), including Familial Cold Autoinflammatory Syndrome (FCAS)",
+  "note": "FCAS explicitly indicated."
+ },
+ {
+  "id": "e089",
+  "verdict": "FP3_cross_section",
+  "quote": "Administration of hydroxychloroquine sulfate to patients with porphyria may exacerbate porphyria. Avoid hydroxychloroquine sulfate in patients with porphyria.",
+  "note": "Porphyria appears only in warnings."
+ },
+ {
+  "id": "e222",
+  "verdict": "TARGET",
+  "quote": "indicated in the control of grand mal, psychomotor, and focal epileptic seizures",
+  "note": "Grand mal = generalized/bilateral tonic-clonic seizures."
+ },
+ {
+  "id": "e275",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD)",
+  "note": "ADHD explicitly indicated."
+ },
+ {
+  "id": "e213",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with Adenocarcinoma of the Colon and Rectum",
+  "note": "Colon adenocarcinoma explicitly indicated."
+ },
+ {
+  "id": "e115",
+  "verdict": "TARGET",
+  "quote": "useful alone or as an adjunct in the treatment of the Lennox-Gastaut syndrome (petit mal variant), akinetic, and myoclonic seizures",
+  "note": "Akinetic seizures named."
+ },
+ {
+  "id": "e051",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the treatment of irritable bowel syndrome with diarrhea (IBS-D)",
+  "note": "IBS-D explicitly indicated."
+ },
+ {
+  "id": "e186",
+  "verdict": "TARGET",
+  "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment",
+  "note": "Atopy/allergic conditions (atopic dermatitis, asthma, allergic rhinitis) indicated; near parent, borderline."
+ },
+ {
+  "id": "e292",
+  "verdict": "TARGET",
+  "quote": "indicated in pediatric patients aged one to 17 years of age for treatment of complicated urinary tract infections (cUTI) and pyelonephritis",
+  "note": "Pyelonephritis indicated; chronic pyelonephritis is a narrower form."
+ },
+ {
+  "id": "e240",
+  "verdict": "TARGET",
+  "quote": "BCG-unresponsive non-muscle invasive bladder cancer (NMIBC) with carcinoma in situ (CIS) with or without papillary tumours",
+  "note": "NMIBC is synonymous with superficial bladder carcinoma."
+ },
+ {
+  "id": "e232",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of severe hepatic veno-occlusive disease (VOD)",
+  "note": "Hepatic VOD explicitly indicated."
+ },
+ {
+  "id": "e254",
+  "verdict": "FP1_setting",
+  "quote": "treatment of adult patients with chronic hepatitis C virus (HCV) infection without cirrhosis or with compensated cirrhosis (Child-Pugh A)",
+  "note": "Compensated cirrhosis is the patient population; HCV is treated."
+ },
+ {
+  "id": "e118",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult and pediatric patients aged 12 years and older with hypereosinophilic syndrome (HES)",
+  "note": "HES explicitly indicated."
+ },
+ {
+  "id": "e270",
+  "verdict": "TARGET",
+  "quote": "HR-positive, HER2-negative advanced or metastatic breast cancer",
+  "note": "Breast neoplasm is a near parent of indicated breast cancer subtypes."
+ },
+ {
+  "id": "e298",
+  "verdict": "TARGET",
+  "quote": "Nicardipine hydrochloride capsules are indicated for the treatment of hypertension",
+  "note": "Hypertension explicitly indicated."
+ }
+]

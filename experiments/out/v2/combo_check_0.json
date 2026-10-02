@@ -1,0 +1,248 @@
+[
+ {
+  "id": "e001",
+  "verdict": "FP6_coingredient",
+  "quote": "general unrest and sleeplessness",
+  "note": "No single-ingredient text; sleeplessness appears only on multi-ingredient homeopathic labels with no attribution to arsenite, so it cannot be credited to DRUG's own component."
+ },
+ {
+  "id": "e004",
+  "verdict": "TARGET",
+  "quote": "QSYMIA is a combination of phentermine, a sympathomimetic amine anorectic, and topiramate, indicated in combination with a reduced-calorie diet and increased physical activity to reduce excess body weight",
+  "note": "Combination-only, but topiramate is an active weight-loss component of Qsymia, so the overweight indication is attributable to it."
+ },
+ {
+  "id": "e006",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Polymyositis is listed on single-ingredient hydrocortisone labels."
+ },
+ {
+  "id": "e008",
+  "verdict": "TARGET",
+  "quote": "Insulin Degludec is indicated to improve glycemic control in patients 1 year of age and older with diabetes mellitus.",
+  "note": "Single-ingredient label covers diabetes mellitus generally, of which type 1 is a subtype (Xultophy combo is type 2 only)."
+ },
+ {
+  "id": "e010",
+  "verdict": "TARGET",
+  "quote": "Macitentan tablets are an endothelin receptor antagonist (ERA) indicated for the treatment of pulmonary arterial hypertension",
+  "note": "PAH is on the single-ingredient and EMA labels."
+ },
+ {
+  "id": "e011",
+  "verdict": "TARGET",
+  "quote": "Irbesartan tablets, USP are indicated for the treatment of hypertension, to lower blood pressure.",
+  "note": "Hypertension is on the single-ingredient label."
+ },
+ {
+  "id": "e015",
+  "verdict": "TARGET",
+  "quote": "psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require low dose maintenance therapy); ankylosing spondylitis",
+  "note": "Single-ingredient label lists seronegative arthritides (psoriatic arthritis, ankylosing spondylitis); not combination-derived, though the match is parent-to-child rather than exact."
+ },
+ {
+  "id": "e024",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis",
+  "note": "Cough variant asthma is a subtype of asthma, which is on the single-ingredient prednisone label."
+ },
+ {
+  "id": "e030",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchoconstriction in patients with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Chronic bronchitis is named on the single-ingredient formoterol label."
+ },
+ {
+  "id": "e031",
+  "verdict": "TARGET",
+  "quote": "Ciprofloxacin tablets are indicated in adult patients for treatment of typhoid fever (enteric fever)caused by Salmonella typhi.",
+  "note": "Typhoid fever is on the single-ingredient label."
+ },
+ {
+  "id": "e032",
+  "verdict": "TARGET",
+  "quote": "Allergic corneal marginal ulcers",
+  "note": "Corneal (marginal) ulcers are listed under ophthalmic diseases on single-ingredient prednisolone labels."
+ },
+ {
+  "id": "e033",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis; atopic dermatitis",
+  "note": "Contact dermatitis is on the single-ingredient prednisone label."
+ },
+ {
+  "id": "e035",
+  "verdict": "FP6_coingredient",
+  "quote": "Chlordiazepoxide and amitriptyline hydrochloride tablets are indicated for the treatment of patients with moderate to severe depression associated with moderate to severe anxiety.",
+  "note": "Single-ingredient chlordiazepoxide is for anxiety/alcohol withdrawal only; the depression indication comes from the amitriptyline component."
+ },
+ {
+  "id": "e038",
+  "verdict": "OTHER",
+  "quote": "For relief of mild to moderate pain",
+  "note": "Neither single nor combination text mentions bladder pain/cystitis; the edge rests only on generic minor/mild-to-moderate pain, not a combination artifact."
+ },
+ {
+  "id": "e045",
+  "verdict": "TARGET",
+  "quote": "INTRA-ABDOMINAL INFECTIONS, including peritonitis, intra-abdominal abscess, and liver abscess",
+  "note": "Intra-abdominal abscess is on the single-ingredient metronidazole label."
+ },
+ {
+  "id": "e046",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections caused by sensitive strains of E. coli and Proteus mirabilis",
+  "note": "Single-ingredient ampicillin covers UTIs, of which recurrent UTI is a subtype."
+ },
+ {
+  "id": "e047",
+  "verdict": "TARGET",
+  "quote": "As replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Primary hypothyroidism is explicitly on the single-ingredient label."
+ },
+ {
+  "id": "e052",
+  "verdict": "TARGET",
+  "quote": "Olmesartan medoxomil tablets, USP are indicated for the treatment of hypertension",
+  "note": "Single-ingredient label covers hypertension, of which the secondary/endocrine form is a subtype."
+ },
+ {
+  "id": "e054",
+  "verdict": "FP6_coingredient",
+  "quote": "Ocular corticosteroids are indicated in inflammatory conditions of the palpebral and bulbar conjunctiva, cornea, and anterior segment of the globe",
+  "note": "Single-ingredient neomycin has no eye/iritis indication; the anti-inflammatory iritis/anterior uveitis use belongs to the hydrocortisone component of the ophthalmic combination."
+ },
+ {
+  "id": "e058",
+  "verdict": "TARGET",
+  "quote": "temporarily reduces fever",
+  "note": "Fever reduction is on single-ingredient naproxen OTC labels."
+ },
+ {
+  "id": "e062",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult patients with platinum-resistant epithelial ovarian, fallopian tube, or primary peritoneal carcinoma",
+  "note": "Ovarian cancer is on the single-ingredient pembrolizumab label; stage III is a more specific subset."
+ },
+ {
+  "id": "e064",
+  "verdict": "TARGET",
+  "quote": "a combination of sumatriptan, a serotonin (5-HT) 1b/1d receptor agonist (triptan), and naproxen sodium, a non-steroidal anti-inflammatory drug, indicated for the acute treatment of migraine with or without aura",
+  "note": "Combination-only, but naproxen is a co-active analgesic component of the migraine combination (sumatriptan/naproxen), so the indication is attributable to it in part."
+ },
+ {
+  "id": "e069",
+  "verdict": "TARGET",
+  "quote": "Treatment of schizophrenia.",
+  "note": "Single-ingredient olanzapine is indicated for schizophrenia, of which simple schizophrenia is a subtype."
+ },
+ {
+  "id": "e074",
+  "verdict": "FP6_coingredient",
+  "quote": "PREMPRO/PREMPHASE is an estrogen plus progestin indicated in a woman with a uterus for",
+  "note": "Postmenopausal osteoporosis prevention appears only on the conjugated estrogens/MPA label and is due to the estrogen; MPA is there to protect the endometrium."
+ },
+ {
+  "id": "e077",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin",
+  "note": "Diphtheria is on single-ingredient erythromycin labels."
+ },
+ {
+  "id": "e093",
+  "verdict": "TARGET",
+  "quote": "AVYCAZ (ceftazidime and avibactam) is indicated for the treatment of complicated urinary tract in",
+  "note": "Avibactam is never marketed alone; as the beta-lactamase inhibitor it is integral to the combination's antibacterial purpose, so cUTI is attributable to it."
+ },
+ {
+  "id": "e102",
+  "verdict": "TARGET",
+  "quote": "Diclofenac potassium for oral solution is indicated for the acute treatment of migraine attacks with or without aura",
+  "note": "Migraine without aura is on the single-ingredient diclofenac label."
+ },
+ {
+  "id": "e105",
+  "verdict": "TARGET",
+  "quote": "simvastatin tablets USP are indicated to: Reduce the risk of non-fatal myocardial infarction and stroke.",
+  "note": "Stroke risk reduction is on the single-ingredient simvastatin label."
+ },
+ {
+  "id": "e107",
+  "verdict": "TARGET",
+  "quote": "It may also be used topically and subconjunctivally in the treatment of infections of the eye caused by susceptible strains of Ps. aeruginosa",
+  "note": "Eye infections are on the single-ingredient polymyxin B label."
+ },
+ {
+  "id": "e110",
+  "verdict": "TARGET",
+  "quote": "Such infections encompass conjunctivitis, keratitis and keratoconjunctivitis, blepharitis and blepharoconjunctivitis.",
+  "note": "Combination-only, but gramicidin is one of the antibacterial components of neomycin/polymyxin B/gramicidin, so bacterial blepharitis is attributable to its own action."
+ },
+ {
+  "id": "e116",
+  "verdict": "FP6_coingredient",
+  "quote": "Temporarily relieves minor aches, pains and fever associated with: headache",
+  "note": "Guaifenesin is an expectorant; headache relief on cold/flu combinations comes from the acetaminophen/analgesic co-ingredients."
+ },
+ {
+  "id": "e125",
+  "verdict": "TARGET",
+  "quote": "Telmisartan tablets, USP are an angiotensin II receptor blocker (ARB) indicated for: Treatment of hypertension",
+  "note": "Hypertension is on single-ingredient telmisartan and EMA labels."
+ },
+ {
+  "id": "e128",
+  "verdict": "TARGET",
+  "quote": "Severe essential hypertension when the drug cannot be given orally or when there is an urgent need to lower blood pressure.",
+  "note": "Single-ingredient hydralazine covers severe essential hypertension, encompassing malignant essential hypertension."
+ },
+ {
+  "id": "e129",
+  "verdict": "TARGET",
+  "quote": "For treatment of primary dysmenorrhea",
+  "note": "Primary dysmenorrhea is on the single-ingredient diclofenac label."
+ },
+ {
+  "id": "e132",
+  "verdict": "TARGET",
+  "quote": "Empiric therapy for febrile neutropenic patients.",
+  "note": "Febrile neutropenia is on the single-ingredient cefepime label."
+ },
+ {
+  "id": "e133",
+  "verdict": "TARGET",
+  "quote": "Citrobacter freundii",
+  "note": "Citrobacter freundii is a listed susceptible organism on the single-ingredient ciprofloxacin label."
+ },
+ {
+  "id": "e134",
+  "verdict": "FP6_coingredient",
+  "quote": "backache",
+  "note": "Single-ingredient caffeine is for apnea of prematurity/alertness; backache relief on combinations comes from analgesic co-ingredients (aspirin/acetaminophen/orphenadrine), caffeine being only an adjuvant."
+ },
+ {
+  "id": "e142",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of Nasal Symptoms of Seasonal Allergic Rhinitis",
+  "note": "Seasonal allergic rhinitis is on the single-ingredient mometasone label."
+ },
+ {
+  "id": "e148",
+  "verdict": "TARGET",
+  "quote": "reducing the frequency and severity of serious infections associated with Chronic Granulomatous Disease (CGD)",
+  "note": "CGD is on the single-ingredient Actimmune label."
+ },
+ {
+  "id": "e153",
+  "verdict": "OTHER",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Neither single nor combination text supports chronic widespread pain (labels cover minor/acute pain only); the edge rests on generic pain, not a combination artifact."
+ },
+ {
+  "id": "e159",
+  "verdict": "TARGET",
+  "quote": "treatment of secondary amenorrhea and abnormal uterine bleeding due to hormonal imbalance",
+  "note": "Single-ingredient MPA covers abnormal uterine bleeding, which encompasses menorrhagia."
+ }
+]

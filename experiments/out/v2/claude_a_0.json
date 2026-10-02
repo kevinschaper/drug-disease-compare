@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e161",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of recurrent herpes labialis (cold sores) in adults",
+  "note": "Recurrent herpes labialis is recurrent oral herpes."
+ },
+ {
+  "id": "e067",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of symptoms of depression. Endogenous depression is more likely to be alleviated than other depressive states.",
+  "note": "Endogenous depression is a named subtype of indicated depression."
+ },
+ {
+  "id": "e030",
+  "verdict": "TARGET",
+  "quote": "chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Chronic bronchitis is explicitly included in the COPD indication."
+ },
+ {
+  "id": "e187",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Back pain not mentioned; only endometriosis-associated pain and contraception."
+ },
+ {
+  "id": "e295",
+  "verdict": "FP3_cross_section",
+  "quote": "When pregnancy is detected, discontinue valsartan and hydrochlorothiazide tablets as soon as possible",
+  "note": "Indicated for hypertension generally; pregnancy appears only in fetal-toxicity warnings."
+ },
+ {
+  "id": "e135",
+  "verdict": "TARGET",
+  "quote": "Diabetic Macular Edema (DME)",
+  "note": "DME is a listed indication."
+ },
+ {
+  "id": "e246",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Malignant hypertension is a subtype of indicated hypertension."
+ },
+ {
+  "id": "e052",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, alone or with other antihypertensive agents, to lower blood pressure",
+  "note": "Secondary hypertension is a subtype of indicated hypertension."
+ },
+ {
+  "id": "e076",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Nephrotic syndrome not mentioned; label covers hyperlipidemia/CV risk."
+ },
+ {
+  "id": "e049",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of moderate to severe pain associated with endometriosis",
+  "note": "Management of disease pain counts as treating endometriosis."
+ },
+ {
+  "id": "e201",
+  "verdict": "TARGET",
+  "quote": "correction of hemodynamic imbalances present in the shock syndrome",
+  "note": "Shock syndrome is the treated condition."
+ },
+ {
+  "id": "e284",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with relapsed or refractory multiple myeloma",
+  "note": "Plasma cell myeloma = multiple myeloma."
+ },
+ {
+  "id": "e057",
+  "verdict": "TARGET",
+  "quote": "Treatment of adults with moderately to severely active rheumatoid arthritis",
+  "note": "RA is a listed indication."
+ },
+ {
+  "id": "e105",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of non-fatal myocardial infarction and stroke.",
+  "note": "Stroke prevention is an indication."
+ },
+ {
+  "id": "e154",
+  "verdict": "TARGET",
+  "quote": "Idiopathic thrombocytopenic purpura in adults Secondary thrombocytopenia in adults",
+  "note": "Thrombocytopenia forms are listed hematologic indications."
+ },
+ {
+  "id": "e091",
+  "verdict": "TARGET",
+  "quote": "Dermatographism",
+  "note": "Dermatographism is listed; familial form is a subtype."
+ },
+ {
+  "id": "e070",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of edema associated with heart failure, renal disease or hepatic disease",
+  "note": "Label treats edema; renal disease is the underlying cause."
+ },
+ {
+  "id": "e276",
+  "verdict": "TARGET",
+  "quote": "Angina Pectoris Due to Coronary Atherosclerosis Atenolol tablets USP are indicated for the long-term man",
+  "note": "Angina pectoris is an indication."
+ },
+ {
+  "id": "e122",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pelvic pain not mentioned in any section."
+ },
+ {
+  "id": "e107",
+  "verdict": "TARGET",
+  "quote": "in the treatment of infections of the eye caused by susceptible strains of P. aeruginosa",
+  "note": "Eye infections are indicated."
+ },
+ {
+  "id": "e180",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE)",
+  "note": "Lower-limb DVT is a subtype of indicated DVT."
+ },
+ {
+  "id": "e129",
+  "verdict": "TARGET",
+  "quote": "for treatment of primary dysmenorrhea",
+  "note": "Primary dysmenorrhea is a listed indication."
+ },
+ {
+  "id": "e247",
+  "verdict": "TARGET",
+  "quote": "Oral Olanzapine and fluoxetine in combination is indicated for the treatment of treatment resistant depression",
+  "note": "TRD indicated (combination therapy)."
+ },
+ {
+  "id": "e044",
+  "verdict": "TARGET",
+  "quote": "Torisel is indicated for the first-line treatment of adult patients with advanced renal-cell carcinoma (RCC)",
+  "note": "EMA indication for RCC."
+ },
+ {
+  "id": "e085",
+  "verdict": "TARGET",
+  "quote": "Baricitinib is indicated for the treatment of active juvenile idiopathic arthritis in patients 2 years of age and older",
+  "note": "EMA indication for JIA."
+ },
+ {
+  "id": "e142",
+  "verdict": "TARGET",
+  "quote": "seasonal allergic rhinitis",
+  "note": "Seasonal allergic rhinitis is a listed indication."
+ },
+ {
+  "id": "e140",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of generalized myasthenia gravis (gMG) in adult patients",
+  "note": "gMG indicated."
+ },
+ {
+  "id": "e023",
+  "verdict": "TARGET",
+  "quote": "Efficacy has been shown in a PAH population including aetiologies of idiopathic or heritable PAH",
+  "note": "Idiopathic PAH is within the indicated PAH population."
+ },
+ {
+  "id": "e128",
+  "verdict": "TARGET",
+  "quote": "Severe essential hypertension when the drug cannot be given orally or when there is an urgent need to lower blood pressure.",
+  "note": "Malignant essential hypertension is a severe form of indicated essential hypertension."
+ },
+ {
+  "id": "e087",
+  "verdict": "TARGET",
+  "quote": "congenital (erythroid) hypoplastic anemia (Diamond Blackfan anemia), pure red cell aplasia",
+  "note": "Erythroid hypoplastic anemia is a listed hematologic indication."
+ },
+ {
+  "id": "e018",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease appears only in generic class boilerplate about other antihypertensives, not as a lisinopril indication."
+ },
+ {
+  "id": "e228",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Limb pain not mentioned; label covers acute painful musculoskeletal conditions generally."
+ },
+ {
+  "id": "e288",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Hernia pain not mentioned; label covers ulcers, GERD, hypersecretory states."
+ },
+ {
+  "id": "e082",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Neonates not mentioned; PAH indicated only in adults and pediatric patients 1 to 17 years."
+ },
+ {
+  "id": "e059",
+  "verdict": "FP3_cross_section",
+  "quote": "Avoid using aspirin in patients with a history of active peptic ulcer disease",
+  "note": "Ulcer appears only in contraindications/warnings."
+ },
+ {
+  "id": "e119",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of adult patients with H. pylori infection and duodenal ulcer disease",
+  "note": "Label covers H. pylori infection only; \"Infection\" is a whole class."
+ },
+ {
+  "id": "e120",
+  "verdict": "TARGET",
+  "quote": "previously untreated Stage III or IV classical Hodgkin lymphoma (cHL)",
+  "note": "Multiple lymphoma types indicated; lymphoma is a near parent."
+ },
+ {
+  "id": "e144",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of amyotrophic lateral sclerosis (ALS) in adults who have a mutation in the superoxide dismutase 1",
+  "note": "SOD1-ALS indicated."
+ }
+]

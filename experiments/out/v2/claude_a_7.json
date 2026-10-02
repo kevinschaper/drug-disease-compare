@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e263",
+  "verdict": "TARGET",
+  "quote": "Moderate to severe persistent asthma in adults and pediatric patients 6 years of age and older",
+  "note": "Asthma is a named indication."
+ },
+ {
+  "id": "e072",
+  "verdict": "TARGET",
+  "quote": "palliative treatment of advanced carcinoma of the breast or endometrium",
+  "note": "Endometrial carcinoma is indicated (palliative)."
+ },
+ {
+  "id": "e130",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "COPD is not mentioned in the naproxen indication text."
+ },
+ {
+  "id": "e268",
+  "verdict": "TARGET",
+  "quote": "Pemphigus Severe psoriasis",
+  "note": "Severe psoriasis is listed under dermatologic diseases."
+ },
+ {
+  "id": "e150",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Seizure types are indicated but COVID-19-related seizures are not mentioned."
+ },
+ {
+  "id": "e212",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with relapsed or refractory multiple myeloma",
+  "note": "Plasma cell myeloma = multiple myeloma."
+ },
+ {
+  "id": "e202",
+  "verdict": "TARGET",
+  "quote": "Cholera caused by Vibrio cholerae",
+  "note": "Cholera is a listed indication."
+ },
+ {
+  "id": "e114",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only chemotherapy-induced nausea/vomiting and AIDS anorexia are indicated; cyclic vomiting syndrome not mentioned."
+ },
+ {
+  "id": "e272",
+  "verdict": "TARGET",
+  "quote": "for the treatment of nosocomial pneumonia (moderate to severe)",
+  "note": "Nosocomial pneumonia = hospital-acquired pneumonia."
+ },
+ {
+  "id": "e273",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in patients with haemophilia A",
+  "note": "Haemophilia A is the indication."
+ },
+ {
+  "id": "e116",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves minor aches, pains and fever associated with: headache",
+  "note": "Headache is named as a relieved condition (combination OTC labels)."
+ },
+ {
+  "id": "e106",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated total cholesterol and LDL-C in adult patients with primary hypercholesterolaemia",
+  "note": "Primary hypercholesterolaemia is the indication."
+ },
+ {
+  "id": "e257",
+  "verdict": "TARGET",
+  "quote": "Hepatocellular Carcinoma (HCC) in combination with bevacizumab for the treatment of adult patients with unresectable or metastatic HCC",
+  "note": "HCC is an indication."
+ },
+ {
+  "id": "e252",
+  "verdict": "TARGET",
+  "quote": "pulmonary tuberculosis (TB) due to Mycobacterium tuberculosis resistant to at least rifampicin and isoniazid",
+  "note": "Resistance to rifampicin and isoniazid defines MDR-TB."
+ },
+ {
+  "id": "e196",
+  "verdict": "TARGET",
+  "quote": "relapsed or refractory diffuse large B-cell lymphoma, not otherwise specified (DLBCL, NOS) or large B-cell lymphoma (LBCL) arising from follicular lymphoma",
+  "note": "Edge is a near parent (B-cell NHL) of indicated DLBCL/LBCL, not a whole disease class."
+ },
+ {
+  "id": "e176",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of primary biliary cholangitis (PBC)",
+  "note": "PBC is the indication."
+ },
+ {
+  "id": "e039",
+  "verdict": "TARGET",
+  "quote": "indicated for the palliative treatment of chronic myelogenous (myeloid, myelocytic, granulocytic) leukemia",
+  "note": "CML is treated (Myleran); also transplant conditioning for CML."
+ },
+ {
+  "id": "e012",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with selective subtypes of advanced soft-tissue sarcoma (STS)",
+  "note": "Soft-tissue sarcoma is an EMA indication."
+ },
+ {
+  "id": "e166",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only migraine with/without aura in adults is indicated; abdominal migraine (a distinct pediatric syndrome) is not mentioned."
+ },
+ {
+  "id": "e123",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hyperkalaemia",
+  "note": "Hyperkalaemia is the indication."
+ },
+ {
+  "id": "e096",
+  "verdict": "FP1_setting",
+  "quote": "established cardiovascular disease or diabetes mellitus and 2 or more additional risk factors for cardiovascular disease",
+  "note": "Diabetes is a population criterion for CV risk reduction, not treated."
+ },
+ {
+  "id": "e061",
+  "verdict": "TARGET",
+  "quote": "Respiratory tract infections caused by Mycoplasma pneumoniae",
+  "note": "Respiratory tract infections are listed indications."
+ },
+ {
+  "id": "e109",
+  "verdict": "TARGET",
+  "quote": "indicated for the prevention or amelioration of symptoms associated with acute mountain sickness",
+  "note": "Prevention of acute mountain sickness is indicated."
+ },
+ {
+  "id": "e088",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of ischemic complications in unstable angina and non-Q-wave myocardial infarction",
+  "note": "Drug manages non-Q-wave MI by preventing its ischemic complications."
+ },
+ {
+  "id": "e159",
+  "verdict": "TARGET",
+  "quote": "treatment of secondary amenorrhea and abnormal uterine bleeding due to hormonal imbalance",
+  "note": "Menorrhagia is a form of indicated abnormal uterine bleeding."
+ },
+ {
+  "id": "e153",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Generic relief of mild to moderate pain; unclear whether this covers a chronic widespread pain syndrome, which is not named."
+ },
+ {
+  "id": "e040",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with complicated skin and skin structure infections (cSSSI)",
+  "note": "cSSSI is an indication."
+ },
+ {
+  "id": "e098",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of adult patients with metastatic carcinoma of the colon or rectum",
+  "note": "Colon carcinoma (metastatic) is indicated."
+ },
+ {
+  "id": "e037",
+  "verdict": "FP2_symptom_swap",
+  "quote": "includes at least 5 of the following 9 symptoms: depressed mood",
+  "note": "Indication is MDD; depressed mood appears only as a symptom of it."
+ },
+ {
+  "id": "e031",
+  "verdict": "TARGET",
+  "quote": "indicated in adult patients for treatment of typhoid fever (enteric fever)caused by Salmonella typhi",
+  "note": "Typhoid fever is an indication."
+ },
+ {
+  "id": "e274",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "CRPS is not mentioned in venlafaxine indications."
+ },
+ {
+  "id": "e038",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets are indicated for relief of mild to moderate pain.",
+  "note": "Bladder pain falls under the generic mild-to-moderate pain indication (low confidence)."
+ },
+ {
+  "id": "e175",
+  "verdict": "TARGET",
+  "quote": "Pheochromocytoma Propranolol hydrochloride tablets, USP are indicated as an adjunct to alpha-adrenergic blockade to control blood pressure and reduce symptoms of catecholamine-secreting tumors",
+  "note": "Adjunctive management of pheochromocytoma."
+ },
+ {
+  "id": "e188",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indication is MS/spinal-cord spasticity with concomitant spasm pain; spine pain itself is not an indication."
+ },
+ {
+  "id": "e021",
+  "verdict": "FP1_setting",
+  "quote": "PAH associated with corrected simple congenital heart disease",
+  "note": "Congenital heart disease is only the background of treated PAH."
+ },
+ {
+  "id": "e001",
+  "verdict": "TARGET",
+  "quote": "general unrest and sleeplessness",
+  "note": "Sleeplessness (insomnia) is named for temporary relief in a homeopathic combination."
+ },
+ {
+  "id": "e245",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis and treatment of venous thrombosis and its extension, pulmonary embolism",
+  "note": "Pulmonary venous thrombosis is a subtype of indicated venous thrombosis."
+ }
+]

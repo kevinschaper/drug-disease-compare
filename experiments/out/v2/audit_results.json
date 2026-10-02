@@ -1,0 +1,338 @@
+{
+  "sources": {
+    "medic": {
+      "sampled": 150,
+      "judged": 148,
+      "excluded": {
+        "UNSURE": 2
+      },
+      "fp_rate": [
+        27.0,
+        20.5,
+        34.7
+      ],
+      "precision": [
+        73.0,
+        65.3,
+        79.5
+      ],
+      "by_type": {
+        "FP1_setting": [
+          14,
+          9.5
+        ],
+        "FP2_symptom_swap": [
+          4,
+          2.7
+        ],
+        "FP3_cross_section": [
+          1,
+          0.7
+        ],
+        "FP6_coingredient": [
+          12,
+          8.1
+        ],
+        "FP7_notintext": [
+          9,
+          6.1
+        ]
+      },
+      "by_regulator": {
+        "FDA only": {
+          "n": 114,
+          "fp_rate": [
+            31.6,
+            23.8,
+            40.6
+          ]
+        },
+        "EMA only": {
+          "n": 21,
+          "fp_rate": [
+            19.0,
+            7.7,
+            40.0
+          ]
+        },
+        "FDA + EMA": {
+          "n": 13,
+          "fp_rate": [
+            0.0,
+            0.0,
+            22.8
+          ]
+        }
+      },
+      "by_reliability": {
+        "HIGH": {
+          "n": 128,
+          "fp_rate": [
+            26.6,
+            19.7,
+            34.8
+          ]
+        },
+        "MEDIUM": {
+          "n": 7,
+          "fp_rate": [
+            14.3,
+            2.6,
+            51.3
+          ]
+        },
+        "LOW": {
+          "n": 13,
+          "fp_rate": [
+            38.5,
+            17.7,
+            64.5
+          ]
+        }
+      }
+    },
+    "dakp-approved": {
+      "sampled": 150,
+      "judged": 149,
+      "excluded": {
+        "UNSURE": 1
+      },
+      "fp_rate": [
+        34.9,
+        27.7,
+        42.8
+      ],
+      "precision": [
+        65.1,
+        57.2,
+        72.3
+      ],
+      "by_type": {
+        "FP1_setting": [
+          6,
+          4.0
+        ],
+        "FP2_symptom_swap": [
+          4,
+          2.7
+        ],
+        "FP3_cross_section": [
+          2,
+          1.3
+        ],
+        "FP4_overbroad": [
+          10,
+          6.7
+        ],
+        "FP5_negation": [
+          2,
+          1.3
+        ],
+        "FP7_notintext": [
+          28,
+          18.8
+        ]
+      },
+      "by_regulator": {
+        "FDA only": {
+          "n": 126,
+          "fp_rate": [
+            39.7,
+            31.6,
+            48.4
+          ]
+        },
+        "EMA only": {
+          "n": 10,
+          "fp_rate": [
+            20.0,
+            5.7,
+            51.0
+          ]
+        },
+        "FDA + EMA": {
+          "n": 13,
+          "fp_rate": [
+            0.0,
+            0.0,
+            22.8
+          ]
+        }
+      }
+    }
+  },
+  "agreement": {
+    "n": 300,
+    "n_reference": 297,
+    "claude_ab_exact_8way": 0.94,
+    "claude_ab_kappa_8way": 0.871,
+    "claude_ab_binary": 0.953,
+    "claude_ab_kappa_binary": 0.887,
+    "tiebroken": 18,
+    "jev_exact_8way": 0.818,
+    "jev_kappa_8way": 0.635,
+    "jev_binary": 0.842,
+    "jev_kappa_binary": 0.631,
+    "jev_per_class": {
+      "TARGET": {
+        "n": 205,
+        "jev_exact": 0.883,
+        "jev_binary": 0.883
+      },
+      "FP1_setting": {
+        "n": 20,
+        "jev_exact": 0.8,
+        "jev_binary": 0.9
+      },
+      "FP2_symptom_swap": {
+        "n": 8,
+        "jev_exact": 0.5,
+        "jev_binary": 0.5
+      },
+      "FP3_cross_section": {
+        "n": 3,
+        "jev_exact": 0.667,
+        "jev_binary": 0.667
+      },
+      "FP4_overbroad": {
+        "n": 10,
+        "jev_exact": 0.6,
+        "jev_binary": 0.7
+      },
+      "FP5_negation": {
+        "n": 2,
+        "jev_exact": 1.0,
+        "jev_binary": 1.0
+      },
+      "FP6_coingredient": {
+        "n": 12,
+        "jev_exact": 0.0,
+        "jev_binary": 0.083
+      },
+      "FP7_notintext": {
+        "n": 37,
+        "jev_exact": 0.865,
+        "jev_binary": 0.946
+      }
+    },
+    "claude_a_vs_reference_binary": 0.933,
+    "claude_b_vs_reference_binary": 0.946,
+    "acceptance": {
+      "ceiling_binary": 0.96,
+      "jev_binary": 0.842,
+      "within_5pts": false,
+      "kappa_ok": true
+    },
+    "decomposed_noul_vs_reference": 0.801,
+    "jev_calibration": [
+      {
+        "conf_bin": "0.2-0.4",
+        "n": 18,
+        "acc": 0.611
+      },
+      {
+        "conf_bin": "0.4-0.6",
+        "n": 36,
+        "acc": 0.667
+      },
+      {
+        "conf_bin": "0.6-0.8",
+        "n": 53,
+        "acc": 0.774
+      },
+      {
+        "conf_bin": "0.8-1.0",
+        "n": 190,
+        "acc": 0.916
+      }
+    ],
+    "confusion_binary": {
+      "FP|jev:FP": 69,
+      "FP|jev:TARGET": 23,
+      "TARGET|jev:FP": 24,
+      "TARGET|jev:TARGET": 181
+    },
+    "jev_accepted": false,
+    "jev_high_confidence": {
+      "0.6": {
+        "coverage": 0.818,
+        "binary_acc": 0.885,
+        "flag_precision": 0.783,
+        "target_precision": 0.918
+      },
+      "0.8": {
+        "coverage": 0.64,
+        "binary_acc": 0.916,
+        "flag_precision": 0.821,
+        "target_precision": 0.94
+      },
+      "0.9": {
+        "coverage": 0.512,
+        "binary_acc": 0.954,
+        "flag_precision": 0.897,
+        "target_precision": 0.967
+      }
+    }
+  },
+  "population": {
+    "medic": {
+      "screened": 5118,
+      "judged": 5106,
+      "jev_fp_share": 18.3,
+      "corrected_fp_rate": [
+        27.1,
+        22.1,
+        32.3
+      ],
+      "jev_by_type": {
+        "FP1_setting": 376,
+        "FP7_notintext": 357,
+        "FP2_symptom_swap": 88,
+        "FP4_overbroad": 42,
+        "FP5_negation": 39,
+        "FP3_cross_section": 32
+      },
+      "jev_fp_share_by_reliability": {
+        "HIGH": 17.6,
+        "MEDIUM": 21.9,
+        "LOW": 27.2
+      }
+    },
+    "dakp-approved": {
+      "screened": 12249,
+      "judged": 12238,
+      "jev_fp_share": 41.2,
+      "corrected_fp_rate": [
+        33.1,
+        27.0,
+        39.2
+      ],
+      "jev_by_type": {
+        "FP7_notintext": 3047,
+        "FP4_overbroad": 581,
+        "FP1_setting": 572,
+        "FP2_symptom_swap": 412,
+        "FP3_cross_section": 223,
+        "FP5_negation": 205
+      }
+    }
+  },
+  "previous_release": {
+    "dakp-approved": {
+      "n": 94,
+      "fp_rate": [
+        33.0,
+        24.3,
+        43.0
+      ]
+    },
+    "medic": {
+      "n": 64,
+      "fp_rate": [
+        20.3,
+        12.3,
+        31.7
+      ]
+    }
+  }
+}

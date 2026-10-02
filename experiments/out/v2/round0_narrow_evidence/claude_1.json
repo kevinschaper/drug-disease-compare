@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e001",
+  "verdict": "TARGET",
+  "quote": "Ciprofloxacin Injection is indicated in adult patients for treatment of acute sinusitis caused by Haemophilus influenzae",
+  "note": "Acute sinusitis is an indicated upper respiratory infection; edge is a near parent, not a whole organ-system class."
+ },
+ {
+  "id": "e009",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of sucrase deficiency, which is part of congenital sucrase-isomaltase deficiency (CSID)",
+  "note": "CSID is directly named as the treated condition."
+ },
+ {
+  "id": "e017",
+  "verdict": "TARGET",
+  "quote": "Triazolam is indicated for the short-term treatment of insomnia",
+  "note": "Insomnia is the named indication."
+ },
+ {
+  "id": "e025",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an opioid analgesic",
+  "note": "Back pain is a narrower form of the generically indicated severe persistent pain."
+ },
+ {
+  "id": "e033",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied text covers only intravesical gemcitabine for NMIBC; breast cancer not mentioned."
+ },
+ {
+  "id": "e041",
+  "verdict": "TARGET",
+  "quote": "allergic conditions intractable to adequate trials of conventional treatment: Seasonal or perennial allergic rhinitis Bronchial asthma",
+  "note": "Prednisolone syrup lists bronchial asthma; late-onset asthma is a subtype."
+ },
+ {
+  "id": "e049",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are ulcers, GERD, hypersecretory states; lower abdominal pain not mentioned."
+ },
+ {
+  "id": "e057",
+  "verdict": "TARGET",
+  "quote": "Celecoxib Capsules is indicated for the management of AP in adults",
+  "note": "Acute pain indication covers shoulder pain as narrower form (VYSCOXA negation does not override other labels)."
+ },
+ {
+  "id": "e065",
+  "verdict": "TARGET",
+  "quote": "Acetaminophen Injection is indicated for the management of mild to moderate pain",
+  "note": "Generic pain indication; groin pain is a narrower form."
+ },
+ {
+  "id": "e073",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "RA (arthritis) is indicated, but interstitial lung disease is never mentioned; RA indication does not support treating the lung manifestation."
+ },
+ {
+  "id": "e081",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in the treatment of the following infections due to susceptible strains of the designated microorganisms",
+  "note": "Label lists specific bacterial infections; edge \"Infection\" is a whole disease class."
+ },
+ {
+  "id": "e089",
+  "verdict": "TARGET",
+  "quote": "the treatment of cholestatic pruritus in patients 3 months of age and older with Alagille syndrome (ALGS)",
+  "note": "Cholestatic pruritus is the named treatment target."
+ },
+ {
+  "id": "e097",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients one year of age and older with gastrointestinal infections caused by Ascaris lumbricoides",
+  "note": "GI helminth infections; edge is a near parent that essentially describes the indication."
+ },
+ {
+  "id": "e105",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Typhoid/Salmonella/enteric fever not mentioned in the ciprofloxacin injection text."
+ },
+ {
+  "id": "e113",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of adult patients with: Chronic lymphocytic leukemia (CLL)",
+  "note": "CLL is named; B-cell CLL is equivalent/subtype."
+ },
+ {
+  "id": "e121",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus",
+  "note": "Dermatomyositis indicated; paraneoplastic form is a subtype."
+ },
+ {
+  "id": "e129",
+  "verdict": "TARGET",
+  "quote": "Myocardial Infarction Propranolol hydrochloride tablets, USP are indicated to reduce cardiovascular mortality in patients who have survived the acute phase of myocardial infarction",
+  "note": "Labelled indication heading is MI (post-MI secondary prevention); borderline with FP1."
+ },
+ {
+  "id": "e137",
+  "verdict": "TARGET",
+  "quote": "Breyanzi is indicated for the treatment of adult patients with diffuse large B-cell lymphoma (DLBCL)",
+  "note": "DLBCL named in EMA indication."
+ },
+ {
+  "id": "e145",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only topical betamethasone dermatoses texts; transfusion reaction not mentioned."
+ },
+ {
+  "id": "e153",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an opioid analgesic",
+  "note": "Myofascial pain syndrome treated as a narrower form of the generic severe persistent pain indication."
+ },
+ {
+  "id": "e161",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Zolpidem texts cover insomnia only; anxiety not mentioned."
+ },
+ {
+  "id": "e169",
+  "verdict": "TARGET",
+  "quote": "Atenolol tablets USP are indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Systolic hypertension is a subtype of indicated hypertension."
+ },
+ {
+  "id": "e177",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text relieves symptoms of \"hay fever\" (allergic rhinitis) and aids sleep; fever itself is not an indication (string collision)."
+ },
+ {
+  "id": "e185",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of acute gout",
+  "note": "Gout is indicated; primary gout is a form of it."
+ },
+ {
+  "id": "e193",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection",
+  "note": "Indication is HIV-1 infection; \"immunodeficiency disease\" is a broad class."
+ },
+ {
+  "id": "e201",
+  "verdict": "TARGET",
+  "quote": "acute nonspecific tenosynovitis; acute gouty arthritis; posttraumatic osteoarthritis; synovitis of osteoarthritis",
+  "note": "Synovitis (of OA) is a listed rheumatic indication."
+ },
+ {
+  "id": "e209",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Combination-only text covers cIAI only; VABP/pneumonia not mentioned."
+ },
+ {
+  "id": "e217",
+  "verdict": "TARGET",
+  "quote": "systemic mastocytosis with an associated haematological neoplasm (SM-AHN)",
+  "note": "SM-AHN is the synonym of the edge disease and is named in EMA indication."
+ },
+ {
+  "id": "e225",
+  "verdict": "TARGET",
+  "quote": "revascularization procedures, hospitalization for congestive heart failure, and angina in adults with clinically evident CHD",
+  "note": "CHF hospitalization is a named prevented outcome; borderline as risk-reduction."
+ },
+ {
+  "id": "e233",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation",
+  "note": "Stroke is indicated; hemorrhagic stroke is a subtype per rubric, though text plausibly means embolic stroke (borderline)."
+ },
+ {
+  "id": "e241",
+  "verdict": "TARGET",
+  "quote": "indicated for acute or long-term use for symptomatic treatment of the following: Mild to moderate pain Osteoarthritis Rheumatoid arthritis",
+  "note": "OA and RA indicated; \"arthritic joint disease\" is a near parent."
+ },
+ {
+  "id": "e249",
+  "verdict": "TARGET",
+  "quote": "Isoniazid oral solution is recommended for all forms of tuberculosis in which organisms are susceptible",
+  "note": "All forms of TB covers congenital TB."
+ },
+ {
+  "id": "e257",
+  "verdict": "TARGET",
+  "quote": "Morganella morganii, Citrobacter freundii, Pseudomonas aeruginosa",
+  "note": "Citrobacter infections are listed causative organisms."
+ },
+ {
+  "id": "e265",
+  "verdict": "TARGET",
+  "quote": "visual impairment due to diabetic macular oedema (DME)",
+  "note": "DME named in EMA Ozurdex indication."
+ },
+ {
+  "id": "e273",
+  "verdict": "FP1_setting",
+  "quote": "megaloblastic anemias due to a deficiency of folic acid (as may be seen in tropical or nontropical sprue)",
+  "note": "Sprue is only background cause; treated condition is megaloblastic anemia (edge also overbroad)."
+ },
+ {
+  "id": "e281",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults and pediatric patients 10 years of age and older with type 2 diabetes mellitus",
+  "note": "T2DM is the named indication."
+ },
+ {
+  "id": "e289",
+  "verdict": "TARGET",
+  "quote": "Infants and children: Leucine sensitivity, islet cell hyperplasia, nesidioblastosis",
+  "note": "Manages hyperinsulinism (incl. familial forms like nesidioblastosis/leucine sensitivity)."
+ },
+ {
+  "id": "e297",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with renal angiomyolipoma and TSC",
+  "note": "Renal angiomyolipoma is a named indication."
+ }
+]

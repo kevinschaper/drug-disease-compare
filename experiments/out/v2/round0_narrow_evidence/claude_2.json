@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e002",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Cosmetic skin-care texts; no infection mentioned."
+ },
+ {
+  "id": "e010",
+  "verdict": "TARGET",
+  "quote": "indicated in combination with ciclosporin and corticosteroids for the prophylaxis of acute transplant rejection",
+  "note": "Prophylaxis of transplant rejection equals graft rejection."
+ },
+ {
+  "id": "e018",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves cough due to minor thraot and bronchial irritations as may occur with a cold",
+  "note": "Text treats cough/phlegm, not the common cold itself."
+ },
+ {
+  "id": "e026",
+  "verdict": "TARGET",
+  "quote": "Treatment of unstable angina or non-ST-segment-elevation myocardial infarction (UA/NSTEMI)",
+  "note": "Intermediate coronary syndrome is a synonym of unstable angina."
+ },
+ {
+  "id": "e034",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indication text is a scalp spray direction; no vitamin deficiency mentioned."
+ },
+ {
+  "id": "e042",
+  "verdict": "TARGET",
+  "quote": "malignant lymphomas: Hodgkin's disease, lymphocytic lymphoma, mixed-cell type lymphoma",
+  "note": "Small (lymphocytic) cell lymphoma matches listed lymphocytic lymphoma (nodular or diffuse)."
+ },
+ {
+  "id": "e050",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of end-stage kidney disease (ESKD), doubling of serum creatinine, cardiovascular (CV) death, and hospitalization for heart failure",
+  "note": "Reducing risk of heart-failure hospitalization is a stated prevention target."
+ },
+ {
+  "id": "e058",
+  "verdict": "TARGET",
+  "quote": "Acthar Gel is indicated for the treatment of acute exacerbations of multiple sclerosis in adults.",
+  "note": "MS exacerbations are an explicit indication."
+ },
+ {
+  "id": "e066",
+  "verdict": "TARGET",
+  "quote": "Ketoprofen Capsules, USP is indicated for the management of pain.",
+  "note": "Spinal pain is a narrower form of the indicated pain."
+ },
+ {
+  "id": "e074",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels cover perennial nonallergic rhinitis, asthma, dermatoses; allergic rhinitis not mentioned."
+ },
+ {
+  "id": "e082",
+  "verdict": "TARGET",
+  "quote": "in combination with pegylated liposomal doxorubicin (PLD) is indicated for the treatment of patients with relapsed platinum-sensitive ovarian cancer",
+  "note": "Exact match."
+ },
+ {
+  "id": "e090",
+  "verdict": "TARGET",
+  "quote": "indicated in pediatric patients one to 17 years of age for treatment of complicated urinary tract infections (cUTI) and pyelonephritis",
+  "note": "Chronic pyelonephritis is a subtype of indicated pyelonephritis."
+ },
+ {
+  "id": "e098",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Clostridioides difficile infections (CDI)",
+  "note": "Exact match."
+ },
+ {
+  "id": "e106",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label covers severe persistent pain in opioid-tolerant patients; paroxysmal extreme pain disorder not mentioned."
+ },
+ {
+  "id": "e114",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are partial-onset and PGTC seizures; post-traumatic epilepsy not mentioned."
+ },
+ {
+  "id": "e122",
+  "verdict": "FP2_symptom_swap",
+  "quote": "controlling the manifestations of clinical spasticity resulting from upper motor neuron disorders (e.g., spinal cord injury, stroke, cerebral palsy, or multiple sclerosis)",
+  "note": "Treats spasticity, with MS only as an underlying cause."
+ },
+ {
+  "id": "e130",
+  "verdict": "TARGET",
+  "quote": "BYLVAY is indicated for the treatment of cholestatic pruritus in patients 12 months of age and older with ALGS.",
+  "note": "Disease-specific management of Alagille syndrome pruritus, analogous to pain of osteoarthritis."
+ },
+ {
+  "id": "e138",
+  "verdict": "TARGET",
+  "quote": "Primary hypogonadism (congenital or acquired): testicular failure due to conditions such as cryptorchidism, bilateral torsion, orchitis, vanishing testis syndrome, orchiectomy, Klinefelter's syndrome",
+  "note": "Klinefelter's named in the list of indicated hypogonadal conditions."
+ },
+ {
+  "id": "e146",
+  "verdict": "TARGET",
+  "quote": "Pulmonary Arterial Hypertension (PAH) (WHO Group 1)",
+  "note": "PAH and CTEPH are forms of pulmonary hypertension; near parent."
+ },
+ {
+  "id": "e154",
+  "verdict": "TARGET",
+  "quote": "Treatment of superficial and/or nodular basal cell carcinoma unsuitable for surgical treatment",
+  "note": "Exact match."
+ },
+ {
+  "id": "e162",
+  "verdict": "TARGET",
+  "quote": "Rifampin for Injection, USP is indicated in the treatment of all forms of tuberculosis.",
+  "note": "Adrenal TB is a form of tuberculosis."
+ },
+ {
+  "id": "e170",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with unresectable or metastatic colorectal cancer",
+  "note": "Stage IV colon cancer is metastatic colorectal cancer."
+ },
+ {
+  "id": "e178",
+  "verdict": "TARGET",
+  "quote": "treatment of symptomatic, inoperable plexiform neurofibromas (PN) in adult and paediatric patients with neurofibromatosis type 1 (NF1)",
+  "note": "Treats the NF1 plexiform neurofibroma manifestation; disease-specific indication."
+ },
+ {
+  "id": "e186",
+  "verdict": "TARGET",
+  "quote": "Complicated intra-abdominal infections (cIAI) in patients who have limited or no alternative treatment options.",
+  "note": "Combination product indicated for intra-abdominal infection."
+ },
+ {
+  "id": "e194",
+  "verdict": "FP4_overbroad",
+  "quote": "Conversion to sinus rhythm of paroxysmal supraventricular tachycardia (PSVT)",
+  "note": "Only PSVT indicated; label says it does not convert ventricular tachycardia, so generic tachycardia is overbroad."
+ },
+ {
+  "id": "e202",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Folic acid indicated for megaloblastic anemia; scurvy not mentioned."
+ },
+ {
+  "id": "e210",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves sinus congestion and pressure",
+  "note": "Sinus congestion explicitly relieved."
+ },
+ {
+  "id": "e218",
+  "verdict": "TARGET",
+  "quote": "such as chronic open-angle glaucoma, secondary glaucoma",
+  "note": "Explicitly listed."
+ },
+ {
+  "id": "e226",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an opioid analgesic",
+  "note": "Pleuritic chest pain is a narrower form of indicated severe pain."
+ },
+ {
+  "id": "e234",
+  "verdict": "TARGET",
+  "quote": "Treatment of symptomatic anaemia associated with chronic renal failure (CRF)",
+  "note": "Exact match."
+ },
+ {
+  "id": "e242",
+  "verdict": "FP1_setting",
+  "quote": "In patients with established peripheral arterial disease or with a history of recent myocardial infarction (MI) or recent stroke clopidogrel tablets are indicated to reduce the rate of MI and stroke.",
+  "note": "PAD is the patient population; target is MI/stroke reduction."
+ },
+ {
+  "id": "e250",
+  "verdict": "TARGET",
+  "quote": "Adult patients with relapsed or refractory large B-cell lymphoma (LBCL)",
+  "note": "Exact match."
+ },
+ {
+  "id": "e258",
+  "verdict": "TARGET",
+  "quote": "Serious central-nervous-system infections (meningitis) caused by susceptible organisms.",
+  "note": "Meningitis listed."
+ },
+ {
+  "id": "e266",
+  "verdict": "TARGET",
+  "quote": "Rickettsiae (Rocky Mountain spotted fever, typhus fever, and the typhus group, Q fever, rickettsial pox and tick fevers)",
+  "note": "Rickettsialpox listed."
+ },
+ {
+  "id": "e274",
+  "verdict": "TARGET",
+  "quote": "treatment of the symptoms and reversible airflow obstruction associated with chronic asthma and other chronic lung diseases, e.g., emphysema",
+  "note": "Management of emphysema airflow obstruction counts."
+ },
+ {
+  "id": "e282",
+  "verdict": "TARGET",
+  "quote": "Lymphogranuloma venereum caused by Chlamydia trachomatis .",
+  "note": "Listed."
+ },
+ {
+  "id": "e290",
+  "verdict": "TARGET",
+  "quote": "Rifampin for Injection, USP is indicated in the treatment of all forms of tuberculosis.",
+  "note": "Joint TB is a form of tuberculosis."
+ },
+ {
+  "id": "e298",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of orthostatic dizziness, lightheadedness ... in adult patients with symptomatic neurogenic orthostatic hypotension (nOH) caused by primary autonomic failure (Parkinson's disease [PD], multiple system atrophy",
+  "note": "Treats nOH symptoms; MSA is only the underlying cause."
+ }
+]

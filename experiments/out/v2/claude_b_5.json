@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e181",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of adult patients with macular oedema following either branch retinal-vein occlusion (BRVO) or central retinal-vein occlusion (CRVO)",
+  "note": "Treats macular oedema secondary to CRVO, not the occlusion itself."
+ },
+ {
+  "id": "e093",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of complicated urinary tract infections (cUTI) including pyelonephritis",
+  "note": "cUTI explicitly indicated (ceftazidime-avibactam combination)."
+ },
+ {
+  "id": "e252",
+  "verdict": "TARGET",
+  "quote": "pulmonary tuberculosis (TB) due to Mycobacterium tuberculosis resistant to at least rifampicin and isoniazid",
+  "note": "Resistance to rifampicin and isoniazid is the definition of MDR-TB."
+ },
+ {
+  "id": "e027",
+  "verdict": "FP2_symptom_swap",
+  "quote": "reduces severity of symptoms associated with the common cold and throat, nasal, bronchial irritations: cough, headache, hoarseness, sore throat",
+  "note": "Only symptomatic relief of sore throat/irritation; pharyngitis as a disease not named."
+ },
+ {
+  "id": "e041",
+  "verdict": "TARGET",
+  "quote": "treatment of progressive, well-differentiated pancreatic neuroendocrine tumors (pNET) in adult patients with unresectable locally advanced or metastatic disease",
+  "note": "pNET explicitly indicated."
+ },
+ {
+  "id": "e259",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment in adult patients with moderate to severe chronic obstructive pulmonary disease (COPD)",
+  "note": "Edge is a narrower form of indicated COPD."
+ },
+ {
+  "id": "e130",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "COPD/pulmonary disease not mentioned; naproxen indicated for arthritis and pain."
+ },
+ {
+  "id": "e201",
+  "verdict": "TARGET",
+  "quote": "indicated for the correction of hemodynamic imbalances present in the shock syndrome",
+  "note": "Manages shock syndrome hemodynamics."
+ },
+ {
+  "id": "e272",
+  "verdict": "TARGET",
+  "quote": "indicated in adults and pediatric patients (2 months of age and older) for the treatment of nosocomial pneumonia (moderate to severe)",
+  "note": "Nosocomial pneumonia = hospital-acquired pneumonia."
+ },
+ {
+  "id": "e103",
+  "verdict": "TARGET",
+  "quote": "RETACRIT is indicated for the treatment of anemia due to chronic kidney disease (CKD)",
+  "note": "Anemia (of several causes) is the treated condition."
+ },
+ {
+  "id": "e058",
+  "verdict": "TARGET",
+  "quote": "temporarily reduces fever",
+  "note": "Fever reduction explicitly listed."
+ },
+ {
+  "id": "e164",
+  "verdict": "TARGET",
+  "quote": "including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma",
+  "note": "PMBCL named in indication list."
+ },
+ {
+  "id": "e008",
+  "verdict": "TARGET",
+  "quote": "indicated to improve glycemic control in patients 1 year of age and older with diabetes mellitus",
+  "note": "T1DM is a subtype of indicated diabetes mellitus."
+ },
+ {
+  "id": "e264",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe chronic pain in adult patients for whom intrathecal therapy is warranted",
+  "note": "Cervical radicular pain treated as a subtype of indicated severe chronic pain; label is non-specific."
+ },
+ {
+  "id": "e244",
+  "verdict": "TARGET",
+  "quote": "indicated for remission induction in acute non-lymphocytic leukemia of adults and pediatric patients",
+  "note": "Cytogenetic AML subtype falls under indicated acute non-lymphocytic leukemia."
+ },
+ {
+  "id": "e215",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of cardiovascular death and hospitalization for heart failure in adults with heart failure",
+  "note": "HFpEF is a subtype of indicated heart failure."
+ },
+ {
+  "id": "e094",
+  "verdict": "TARGET",
+  "quote": "BEIZRAY is indicated for the treatment of patients with locally advanced or metastatic breast cancer after failure of prior chemotherapy",
+  "note": "ER+ breast cancer is a subtype of indicated breast cancer."
+ },
+ {
+  "id": "e249",
+  "verdict": "TARGET",
+  "quote": "For relief of mild to moderate pain",
+  "note": "GTPS pain falls under the broad mild-to-moderate pain indication; not named specifically."
+ },
+ {
+  "id": "e143",
+  "verdict": "FP4_overbroad",
+  "quote": "locally or regionally advanced squamous cell carcinoma of the head and neck in combination with radiation therapy",
+  "note": "Label limited to SCC of head and neck; generic SCC spans all organs."
+ },
+ {
+  "id": "e198",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Only hypertension and angina indicated; preeclampsia/pregnancy never mentioned, and whether it counts as a hypertension subtype is debatable."
+ },
+ {
+  "id": "e131",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Labor pain is a form of the broadly indicated severe pain; not named specifically."
+ },
+ {
+  "id": "e010",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH, WHO Group I) in adults",
+  "note": "PAH explicitly indicated."
+ },
+ {
+  "id": "e298",
+  "verdict": "TARGET",
+  "quote": "Nicardipine hydrochloride capsules are indicated for the treatment of hypertension",
+  "note": "Hypertension = hypertensive disorder."
+ },
+ {
+  "id": "e080",
+  "verdict": "TARGET",
+  "quote": "Treatment of partial-onset seizures in adults and in pediatric patients weighing at least 50 kg",
+  "note": "Post-stroke epilepsy seizures fall under indicated partial-onset/generalized seizures."
+ },
+ {
+  "id": "e070",
+  "verdict": "FP2_symptom_swap",
+  "quote": "the treatment of edema associated with heart failure, renal disease or hepatic disease",
+  "note": "Treats edema due to renal disease, not CKD itself."
+ },
+ {
+  "id": "e042",
+  "verdict": "TARGET",
+  "quote": "for the prophylaxis of acute transplant rejection in adult and paediatric (1 to 18 years of age) patients receiving allogeneic renal, cardiac or hepatic transplants",
+  "note": "Prevention of transplant rejection is indicated."
+ },
+ {
+  "id": "e295",
+  "verdict": "FP5_negation",
+  "quote": "When pregnancy is detected, discontinue valsartan and hydrochlorothiazide tablets as soon as possible",
+  "note": "Hypertension indicated, but label directs discontinuation in pregnancy (fetal toxicity)."
+ },
+ {
+  "id": "e129",
+  "verdict": "TARGET",
+  "quote": "for treatment of primary dysmenorrhea",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e089",
+  "verdict": "FP3_cross_section",
+  "quote": "Administration of hydroxychloroquine sulfate to patients with porphyria may exacerbate porphyria. Avoid hydroxychloroquine sulfate in patients with porphyria.",
+  "note": "Porphyria appears only in warnings."
+ },
+ {
+  "id": "e247",
+  "verdict": "TARGET",
+  "quote": "Treatment of treatment resistant depression.",
+  "note": "TRD explicitly indicated (olanzapine/fluoxetine)."
+ },
+ {
+  "id": "e162",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+  "note": "OPTN-related OAG is a subtype of indicated open-angle glaucoma."
+ },
+ {
+  "id": "e069",
+  "verdict": "TARGET",
+  "quote": "Olanzapine orally disintegrating tablets are indicated for the treatment of schizophrenia.",
+  "note": "Simple schizophrenia is a subtype of schizophrenia."
+ },
+ {
+  "id": "e011",
+  "verdict": "TARGET",
+  "quote": "Irbesartan tablets, USP are indicated for the treatment of hypertension, to lower blood pressure.",
+  "note": "Hypertension = hypertensive disorder."
+ },
+ {
+  "id": "e261",
+  "verdict": "TARGET",
+  "quote": "KEYTRUDA is indicated for the treatment of patients with unresectable or metastatic melanoma.",
+  "note": "Eyelid melanoma is a site-specific melanoma subtype."
+ },
+ {
+  "id": "e017",
+  "verdict": "TARGET",
+  "quote": "Tavlesse is indicated for the treatment of chronic immune thrombocytopenia (ITP) in adult patients who are refractory to other treatments.",
+  "note": "Immune thrombocytopenia = thrombocytopenia due to immune destruction."
+ },
+ {
+  "id": "e299",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pain and inflammation associated with cataract surgery",
+  "note": "Post-cataract-surgery pain is procedural pain; near parent."
+ },
+ {
+  "id": "e055",
+  "verdict": "FP1_setting",
+  "quote": "(3) protein requirements are substantially increased as with extensive burns.",
+  "note": "Burns are only the setting for nutritional support."
+ }
+]

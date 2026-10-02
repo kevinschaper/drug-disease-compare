@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e090",
+  "verdict": "TARGET",
+  "quote": "Circadin is indicated as monotherapy for the short-term treatment of primary insomnia",
+  "note": "Insomnia is the disorder of initiating and maintaining sleep."
+ },
+ {
+  "id": "e051",
+  "verdict": "TARGET",
+  "quote": "VIBERZI is indicated in adults for the treatment of irritable bowel syndrome with diarrhea (IBS-D)",
+  "note": "Exact match."
+ },
+ {
+  "id": "e206",
+  "verdict": "TARGET",
+  "quote": "Preventive treatment of migraine in patients 12 years of age and older",
+  "note": "Migraine prevention is an indication."
+ },
+ {
+  "id": "e186",
+  "verdict": "TARGET",
+  "quote": "allergic conditions intractable to adequate trials of conventional treatment in adult and pediatric populations with: seasonal or perennial allergic rhinitis; asthma; contact dermatitis; atopic dermatitis",
+  "note": "Listed atopic conditions are essentially what atopy covers; near parent of indicated allergic states."
+ },
+ {
+  "id": "e271",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only partial(-onset) seizures are indicated; generalized/idiopathic generalized epilepsy is not mentioned."
+ },
+ {
+  "id": "e137",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text concerns vitamin supplementation/fluoride; marasmus (protein-energy malnutrition) is not mentioned."
+ },
+ {
+  "id": "e225",
+  "verdict": "TARGET",
+  "quote": "Retinyl palmitate injection is effective for the treatment of vitamin A deficiency",
+  "note": "Vitamin A deficiency is a vitamin deficiency disorder."
+ },
+ {
+  "id": "e231",
+  "verdict": "TARGET",
+  "quote": "JOURNAVX is indicated for the treatment of moderate to severe acute pain, including postoperative pain, in adults",
+  "note": "Generic acute pain indication covers site-specific pelvic pain; weak, pelvic pain not named."
+ },
+ {
+  "id": "e289",
+  "verdict": "TARGET",
+  "quote": "indicated for use as an aid to smoking cessation treatment",
+  "note": "Exact match."
+ },
+ {
+  "id": "e250",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Naproxen indications cover arthritis, pain, migraine etc.; influenza is not mentioned."
+ },
+ {
+  "id": "e241",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of interdigital tinea pedis, tinea cruris, and tinea corporis caused by the organism Trichophyton rubrum",
+  "note": "Tinea corporis is named."
+ },
+ {
+  "id": "e218",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Abuse appears only as drug abuse/misuse risk; victim of abuse is not an indication or mentioned concept."
+ },
+ {
+  "id": "e132",
+  "verdict": "TARGET",
+  "quote": "Cefepime for injection as monotherapy is indicated for empiric treatment of febrile neutropenic patients",
+  "note": "Empiric therapy of febrile neutropenia is an explicit indication."
+ },
+ {
+  "id": "e100",
+  "verdict": "FP4_overbroad",
+  "quote": "They are also indicated for use in the prevention of endometrial hyperplasia in nonhysterectomized postmenopausal women",
+  "note": "Label is endometrial hyperplasia; generic hyperplasia is a broad pathological class."
+ },
+ {
+  "id": "e212",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with relapsed or refractory multiple myeloma",
+  "note": "Plasma cell myeloma = multiple myeloma."
+ },
+ {
+  "id": "e191",
+  "verdict": "TARGET",
+  "quote": "indicated for the temporary relief of coughs and upper respiratory symptoms, including nasal congestion, associated with allergy or the common cold",
+  "note": "Upper respiratory symptoms named (combination product)."
+ },
+ {
+  "id": "e223",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Generic severe persistent pain covers spine pain; spine not named."
+ },
+ {
+  "id": "e257",
+  "verdict": "TARGET",
+  "quote": "TECENTRIQ, in combination with bevacizumab, is indicated for the treatment of adult patients with unresectable or metastatic hepatocellular carcinoma (HCC)",
+  "note": "Exact match (combination therapy counts)."
+ },
+ {
+  "id": "e234",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of the signs and symptoms of osteoarthritis or rheumatoid arthritis in adult patients at high risk of developing NSAID-induced gastric and duodenal ulcers",
+  "note": "RA named in diclofenac/misoprostol indication."
+ },
+ {
+  "id": "e029",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+  "note": "SLE named."
+ },
+ {
+  "id": "e151",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pain indication is trigeminal neuralgia; skin pain is not mentioned."
+ },
+ {
+  "id": "e076",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Nephrotic syndrome not mentioned; indications are hypercholesterolemia/CHD."
+ },
+ {
+  "id": "e127",
+  "verdict": "TARGET",
+  "quote": "VYEPTI is indicated for the preventive treatment of migraine in adults.",
+  "note": "Vestibular migraine is a subtype of migraine."
+ },
+ {
+  "id": "e023",
+  "verdict": "TARGET",
+  "quote": "Efficacy has been shown in a PAH population including aetiologies of idiopathic or heritable PAH",
+  "note": "Idiopathic PAH is a subtype of indicated PAH."
+ },
+ {
+  "id": "e013",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pain and inflammation associated with cataract surgery",
+  "note": "Post-cataract-surgery ocular pain is eye pain; edge is a near parent."
+ },
+ {
+  "id": "e133",
+  "verdict": "TARGET",
+  "quote": "skin and skin structure infections caused by Escherichia coli, Klebsiella pneumoniae, Enterobacter cloacae, Proteus mirabilis, Proteus vulgaris, Providencia stuartii, Morganella morganii, Citrobacter freundii",
+  "note": "Citrobacter freundii infections are indicated."
+ },
+ {
+  "id": "e075",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis and treatment of signs and symptoms of infection caused by various strains of influenza A virus",
+  "note": "Influenza A is indicated; near parent."
+ },
+ {
+  "id": "e209",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only chemotherapy-induced and postoperative nausea/vomiting; cyclic vomiting syndrome not mentioned."
+ },
+ {
+  "id": "e283",
+  "verdict": "FP1_setting",
+  "quote": "absolute benefit is greater in patients who are at higher risk independent of their hypertension (for example, patients with diabetes or hyperlipidemia)",
+  "note": "Hyperlipidemia is a risk-population background for hypertension treatment."
+ },
+ {
+  "id": "e022",
+  "verdict": "FP1_setting",
+  "quote": "Such congenital heart defects include pulmonary atresia, pulmonary stenosis, tricuspid atresia, tetralogy of Fallot, interruption of the aortic arch, coarctation of the aorta, or transposition of the great vessels",
+  "note": "TGA is the underlying defect; drug palliatively maintains ductus patency."
+ },
+ {
+  "id": "e114",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are AIDS anorexia and chemotherapy N/V; warnings mention cannabinoid hyperemesis, not cyclic vomiting syndrome."
+ },
+ {
+  "id": "e123",
+  "verdict": "TARGET",
+  "quote": "Veltassa is indicated for the treatment of hyperkalaemia in adults and adolescents aged 12 to 17 years.",
+  "note": "Exact match."
+ },
+ {
+  "id": "e159",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of secondary amenorrhea and abnormal uterine bleeding due to hormonal imbalance in the absence of organic pathology",
+  "note": "Menorrhagia is a form of abnormal uterine bleeding."
+ },
+ {
+  "id": "e115",
+  "verdict": "TARGET",
+  "quote": "useful alone or as an adjunct in the treatment of the Lennox-Gastaut syndrome (petit mal variant), akinetic, and myoclonic seizures",
+  "note": "Akinetic seizures named."
+ },
+ {
+  "id": "e258",
+  "verdict": "FP1_setting",
+  "quote": "indicated to reduce cardiovascular mortality in clinically stable patients who have survived the acute phase of a myocardial infarction and have a left ventricular ejection fraction",
+  "note": "Target is post-MI LV dysfunction/mortality; MI is the setting."
+ },
+ {
+  "id": "e278",
+  "verdict": "TARGET",
+  "quote": "indicated in the long-term treatment of angina pectoris, to reduce angina attacks and to improve exercise tolerance",
+  "note": "Intermediate coronary syndrome (unstable angina) is a form of angina pectoris."
+ },
+ {
+  "id": "e193",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the treatment of: chorea associated with Huntington’s disease",
+  "note": "Chorea is indicated; choreatic disease is a near parent."
+ },
+ {
+  "id": "e263",
+  "verdict": "TARGET",
+  "quote": "indicated for adults and pediatric patients 6 years of age and older with moderate to severe persistent asthma",
+  "note": "Asthma subtype indicated."
+ }
+]

@@ -1,0 +1,242 @@
+[
+ {
+  "id": "e162",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+  "note": "Single-ingredient latanoprost labels cover open-angle glaucoma, of which OPTN-related POAG is a subtype."
+ },
+ {
+  "id": "e172",
+  "verdict": "TARGET",
+  "quote": "diffuse posterior uveitis and choroiditis, optic neuritis, sympathetic ophthalmia",
+  "note": "Optic neuritis is listed among ophthalmic diseases on single-ingredient prednisolone labels."
+ },
+ {
+  "id": "e173",
+  "verdict": "TARGET",
+  "quote": "Fluoxetine capsules, USP are indicated for the acute and maintenance treatment of Major Depressive Disorder",
+  "note": "MDD is a direct single-ingredient fluoxetine indication."
+ },
+ {
+  "id": "e183",
+  "verdict": "TARGET",
+  "quote": "Ergomar \u00ae is indicated as therapy to abort or prevent vascular headache, e.g., migraine",
+  "note": "Single-ingredient ergotamine (Ergomar) is indicated for migraine."
+ },
+ {
+  "id": "e184",
+  "verdict": "TARGET",
+  "quote": "25% Dextrose Injection is indicated in the treatment of acute symptomatic episodes of hypoglycemia",
+  "note": "Single-ingredient dextrose label directly indicates hypoglycemia."
+ },
+ {
+  "id": "e186",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis; atopic dermatitis",
+  "note": "Single-ingredient prednisone covers allergic/atopic states, which atopic IgE responsiveness falls under (somewhat loose mapping)."
+ },
+ {
+  "id": "e191",
+  "verdict": "FP6_coingredient",
+  "quote": "temporary relief of coughs and upper respiratory symptoms, including nasal congestion, associated with allergy or the common cold",
+  "note": "Single-ingredient codeine is indicated only for pain; on the promethazine/phenylephrine/codeine label codeine supplies the cough relief, while the separately listed upper respiratory symptoms (nasal congestion, allergy) come from promethazine and phenylephrine."
+ },
+ {
+  "id": "e201",
+  "verdict": "TARGET",
+  "quote": "correction of hemodynamic imbalances present in the shock syndrome",
+  "note": "Single-ingredient dopamine is indicated for shock."
+ },
+ {
+  "id": "e202",
+  "verdict": "TARGET",
+  "quote": "Cholera caused by Vibrio cholerae",
+  "note": "Cholera is listed in single-ingredient doxycycline indications."
+ },
+ {
+  "id": "e206",
+  "verdict": "TARGET",
+  "quote": "indicated for the preventive treatment of migraine in patients 12 years of age and older",
+  "note": "Single-ingredient topiramate is indicated for migraine prevention."
+ },
+ {
+  "id": "e207",
+  "verdict": "TARGET",
+  "quote": "Idiopathic thrombocytopenic purpura in adults",
+  "note": "Single-ingredient prednisone covers ITP (autoimmune thrombocytopenia)."
+ },
+ {
+  "id": "e215",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of cardiovascular death and hospitalization for heart failure in adults with heart failure",
+  "note": "Single-ingredient Jardiance covers heart failure broadly, including HFpEF as a subtype."
+ },
+ {
+  "id": "e221",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced renal cell carcinoma",
+  "note": "Single-ingredient nivolumab (Opdivo) is indicated for RCC."
+ },
+ {
+  "id": "e223",
+  "verdict": "TARGET",
+  "quote": "management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Single-ingredient buprenorphine transdermal covers severe persistent pain, of which spine pain is a specific instance."
+ },
+ {
+  "id": "e224",
+  "verdict": "TARGET",
+  "quote": "including pyelonephritis and cystitis (initial and recurrent)",
+  "note": "Single-ingredient aztreonam lists cystitis under UTIs."
+ },
+ {
+  "id": "e225",
+  "verdict": "TARGET",
+  "quote": "Retinyl palmitate injection is effective for the treatment of vitamin A deficiency",
+  "note": "Vitamin A deficiency (a vitamin deficiency disorder) is a single-ingredient indication."
+ },
+ {
+  "id": "e227",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: headache",
+  "note": "Single-ingredient OTC naproxen relieves headache, covering tension-type headache."
+ },
+ {
+  "id": "e230",
+  "verdict": "FP6_coingredient",
+  "quote": "Relieves sinus congestion and pressure, helps decongest sinus opening",
+  "note": "Sinus congestion appears only on combination products and belongs to the decongestant partner (e.g. phenylephrine), not acetaminophen."
+ },
+ {
+  "id": "e234",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis",
+  "note": "Single-ingredient diclofenac labels indicate rheumatoid arthritis (and on Arthrotec it is diclofenac's own NSAID effect)."
+ },
+ {
+  "id": "e237",
+  "verdict": "FP6_coingredient",
+  "quote": "PERIKABIVEN may be used to prevent essential fatty acid deficiency",
+  "note": "No single-ingredient text; EFAD prevention on the parenteral nutrition combination comes from the lipid emulsion, not the amino acid L-valine."
+ },
+ {
+  "id": "e238",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis; acute rheumatic carditis; ankylosing spondylitis",
+  "note": "Only in combination text, but the product is betamethasone sodium phosphate plus betamethasone acetate (two salts of DRUG), so the indication is DRUG's own."
+ },
+ {
+  "id": "e242",
+  "verdict": "TARGET",
+  "quote": "Angina at rest including: Vasospastic (Prinzmetal's variant) angina Unstable (crescendo, pre-infarction) angina 2. Chronic stable angina",
+  "note": "Single-ingredient verapamil is indicated for angina."
+ },
+ {
+  "id": "e244",
+  "verdict": "TARGET",
+  "quote": "indicated for remission induction in acute non-lymphocytic leukemia of adults and pediatric patients",
+  "note": "Acute non-lymphocytic leukemia = AML; the t(3;5) AML is a subtype on the single-ingredient label."
+ },
+ {
+  "id": "e247",
+  "verdict": "TARGET",
+  "quote": "Oral Olanzapine and fluoxetine in combination is indicated for the treatment of treatment resistant depression",
+  "note": "The olanzapine single-ingredient label itself lists treatment-resistant depression (used with fluoxetine), so it is olanzapine's own labeled indication."
+ },
+ {
+  "id": "e249",
+  "verdict": "TARGET",
+  "quote": "For relief of mild to moderate pain",
+  "note": "Single-ingredient diclofenac covers mild to moderate pain generally, which includes greater trochanteric pain syndrome (a loose, generic-pain mapping)."
+ },
+ {
+  "id": "e253",
+  "verdict": "TARGET",
+  "quote": "effective for the treatment of thiamine deficiency or beriberi",
+  "note": "Single-ingredient thiamine is indicated for beriberi."
+ },
+ {
+  "id": "e255",
+  "verdict": "FP6_coingredient",
+  "quote": "Pentazocine and Naloxone Tablets are indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Naloxone alone is indicated only for opioid overdose reversal; the analgesic indication on pentazocine/naloxone belongs to pentazocine."
+ },
+ {
+  "id": "e261",
+  "verdict": "TARGET",
+  "quote": "for the treatment of patients with unresectable or metastatic melanoma",
+  "note": "Single-ingredient pembrolizumab covers melanoma; eyelid melanoma is a site-specific subtype."
+ },
+ {
+  "id": "e265",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced renal cell carcinoma",
+  "note": "Papillary RCC is a subtype of RCC indicated on single-ingredient nivolumab."
+ },
+ {
+  "id": "e266",
+  "verdict": "FP6_coingredient",
+  "quote": "Amlodipine besylate and atorvastatin calcium tablets are indicated in patients for whom treatment with both amlodipine and atorvastatin is appropriate",
+  "note": "The hypertension indication is found only on the amlodipine/atorvastatin label and belongs to amlodipine."
+ },
+ {
+  "id": "e272",
+  "verdict": "TARGET",
+  "quote": "Nosocomial pneumonia in adult and pediatric patients 2 months of age and older",
+  "note": "Only on the piperacillin/tazobactam label, but piperacillin is the antibacterial agent there (tazobactam is the beta-lactamase inhibitor), so the indication is attributable to DRUG."
+ },
+ {
+  "id": "e276",
+  "verdict": "TARGET",
+  "quote": "Angina Pectoris Due to Coronary Atherosclerosis",
+  "note": "Single-ingredient atenolol is indicated for angina pectoris."
+ },
+ {
+  "id": "e277",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of surface ocular bacterial infections, including acute bacterial conjunctivitis, and blepharoconjunctivitis",
+  "note": "Both polymyxin B and trimethoprim on this label are antibacterials, so polymyxin B shares the indication; its single-ingredient label also covers eye infections ('infections of the eye caused by susceptible strains of Ps. aeruginosa')."
+ },
+ {
+  "id": "e278",
+  "verdict": "TARGET",
+  "quote": "Angina Pectoris",
+  "note": "Single-ingredient metoprolol is indicated for angina pectoris (and acute MI); intermediate coronary syndrome (unstable angina) is treated as a subtype, though the label does not name unstable angina."
+ },
+ {
+  "id": "e279",
+  "verdict": "TARGET",
+  "quote": "1.3 Urinary Tract Infections Sulfamethoxazole and Trimethoprim Injection is indicated in the treatment of severe or complicated urinary tract inf",
+  "note": "No single-ingredient text, but in SMX/TMP both components are antibacterials acting together, so the UTI indication is attributable to sulfamethoxazole."
+ },
+ {
+  "id": "e280",
+  "verdict": "FP6_coingredient",
+  "quote": "PERIKABIVEN may be used to prevent essential fatty acid deficiency",
+  "note": "No single-ingredient text; EFAD prevention on the parenteral nutrition combination comes from the lipid emulsion, not aspartic acid."
+ },
+ {
+  "id": "e286",
+  "verdict": "TARGET",
+  "quote": "Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first choice",
+  "note": "Single-ingredient hydrocortisone is indicated for secondary adrenocortical insufficiency."
+ },
+ {
+  "id": "e291",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of acute urinary retention",
+  "note": "Single-ingredient finasteride is indicated to reduce the risk of acute urinary retention in BPH."
+ },
+ {
+  "id": "e292",
+  "verdict": "TARGET",
+  "quote": "Complicated Urinary Tract Infection and Pyelonephritis in Pediatric Patients",
+  "note": "Single-ingredient ciprofloxacin covers pyelonephritis, of which chronic pyelonephritis is a subtype."
+ },
+ {
+  "id": "e298",
+  "verdict": "TARGET",
+  "quote": "II. Hypertension Nicardipine hydrochloride capsules are indicated for the treatment of hypertension",
+  "note": "Single-ingredient nicardipine is indicated for hypertension."
+ }
+]

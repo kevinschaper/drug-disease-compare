@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e208",
+  "verdict": "TARGET",
+  "quote": "monotherapy or adjunctive therapy in the treatment of partial-onset seizures in adults",
+  "note": "Focal aware seizure is a subtype of partial-onset seizures."
+ },
+ {
+  "id": "e104",
+  "verdict": "TARGET",
+  "quote": "treatment of moderate to severe acute pain, including postoperative pain, in adults",
+  "note": "Postoperative pain explicitly named."
+ },
+ {
+  "id": "e048",
+  "verdict": "FP1_setting",
+  "quote": "indicated as a diluent for the intrathecal administration of methotrexate sodium and cytarabine for the prevention or treatment of meningeal leukemia or lymphocytic lymphoma",
+  "note": "Phosphate solution is only a diluent; lymphoma is treated by the co-administered cytotoxics."
+ },
+ {
+  "id": "e169",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of refractory hypotension in adults with septic or other distributive shock",
+  "note": "Hypotension is the treated condition."
+ },
+ {
+  "id": "e226",
+  "verdict": "FP2_symptom_swap",
+  "quote": "for nausea associated with gastroenteritis",
+  "note": "Label treats nausea, not the underlying gastroenteritis."
+ },
+ {
+  "id": "e120",
+  "verdict": "TARGET",
+  "quote": "Adult patients with previously untreated Stage III or IV classical Hodgkin lymphoma (cHL)",
+  "note": "Multiple lymphoma types indicated; lymphoma is a near parent describing the indications."
+ },
+ {
+  "id": "e084",
+  "verdict": "TARGET",
+  "quote": "Maintenance treatment of asthma, in adults not adequately controlled",
+  "note": "Asthma named in EMA indication."
+ },
+ {
+  "id": "e182",
+  "verdict": "FP4_overbroad",
+  "quote": "Treatment of travelers' diarrhea (TD) caused by noninvasive strains of Escherichia coli",
+  "note": "Generic 'infection' is a whole disease class; only E. coli travelers' diarrhea is indicated."
+ },
+ {
+  "id": "e172",
+  "verdict": "TARGET",
+  "quote": "allergic conjunctivitis, keratitis, allergic corneal marginal ulcers, herpes zoster ophthalmicus, iritis and iridocyclitis, chorioretinitis, anterior segment inflammation, diffuse posterior uveitis and choroiditis, optic neuritis",
+  "note": "Optic neuritis listed among ophthalmic indications."
+ },
+ {
+  "id": "e097",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Edge term 'Myelogenous' is a bare adjective; label indicates myeloid/lymphoid neoplasms with FGFR1 rearrangement, mapping unclear."
+ },
+ {
+  "id": "e096",
+  "verdict": "FP1_setting",
+  "quote": "in adult patients with elevated triglyceride (TG) levels (≥ 150 mg/dL) and established cardiovascular disease or diabetes mellitus",
+  "note": "Diabetes is a population risk criterion, not the treated condition."
+ },
+ {
+  "id": "e086",
+  "verdict": "FP1_setting",
+  "quote": "chronic weight management in: 30 kg/m 2 or greater (obese), or 27 kg/m 2 or greater (overweight)",
+  "note": "BMI is an eligibility measure, not a treated disease."
+ },
+ {
+  "id": "e274",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Complex regional pain syndrome is not mentioned; indications are depression/anxiety-type disorders."
+ },
+ {
+  "id": "e202",
+  "verdict": "TARGET",
+  "quote": "Cholera caused by Vibrio cholerae .",
+  "note": "Cholera listed in doxycycline indications."
+ },
+ {
+  "id": "e235",
+  "verdict": "TARGET",
+  "quote": "Monotherapy and adjunctive therapy of complex partial seizures",
+  "note": "Complex partial seizures are focal-onset seizures; edge is a near parent."
+ },
+ {
+  "id": "e019",
+  "verdict": "FP1_setting",
+  "quote": "non-valvular atrial fibrillation (NVAF), with one or more risk factors, such as prior stroke or transient ischemic attack (TIA); age ≥ 75 years; heart failure (NYHA Class ≥ II); diabetes mellitus",
+  "note": "Diabetes is only a listed risk factor in the population."
+ },
+ {
+  "id": "e044",
+  "verdict": "TARGET",
+  "quote": "Torisel is indicated for the first-line treatment of adult patients with advanced renal-cell carcinoma (RCC)",
+  "note": "RCC named."
+ },
+ {
+  "id": "e009",
+  "verdict": "FP1_setting",
+  "quote": "prevention of nausea and vomiting associated with initial and repeat courses of emetogenic cancer chemotherapy",
+  "note": "Cancer is the background; treated condition is CINV."
+ },
+ {
+  "id": "e188",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Spine pain is not named; label covers MS spasticity with concomitant pain of flexor spasms and spinal cord disease, not spinal pain."
+ },
+ {
+  "id": "e085",
+  "verdict": "TARGET",
+  "quote": "Baricitinib is indicated for the treatment of active juvenile idiopathic arthritis in patients 2 years of age and older",
+  "note": "JIA named in EMA indication."
+ },
+ {
+  "id": "e237",
+  "verdict": "TARGET",
+  "quote": "KABIVEN may be used to prevent essential fatty acid deficiency or treat negative nitrogen balance in adult patients.",
+  "note": "Combination PN product indicated to prevent EFAD; combo indications count."
+ },
+ {
+  "id": "e071",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Hepatic veno-occlusive disease not mentioned; only hepatic failure in warnings."
+ },
+ {
+  "id": "e293",
+  "verdict": "TARGET",
+  "quote": "indicated for the chronic management of hyperuricemia in adult patients with gout",
+  "note": "Hyperuricemia is the treated condition."
+ },
+ {
+  "id": "e102",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine attacks with or without aura in adults",
+  "note": "Migraine without aura explicitly covered."
+ },
+ {
+  "id": "e002",
+  "verdict": "TARGET",
+  "quote": "Vigabatrin tablets are indicated as monotherapy for pediatric patients with infantile spasms 1 month to 2 years of age",
+  "note": "Infantile spasms named."
+ },
+ {
+  "id": "e028",
+  "verdict": "TARGET",
+  "quote": "HER2-negative locally advanced or metastatic breast cancer",
+  "note": "Stage IV breast cancer is metastatic breast cancer."
+ },
+ {
+  "id": "e121",
+  "verdict": "FP1_setting",
+  "quote": "radioactive diagnostic agent indicated as an adjunct to other diagnostic evaluations ... in adult patients with: suspected Parkinsonian syndromes (PS) or suspected dementia with Lewy bodies (DLB)",
+  "note": "Diagnostic imaging agent; dementia is the diagnostic setting, not treated."
+ },
+ {
+  "id": "e040",
+  "verdict": "TARGET",
+  "quote": "VIBATIV is indicated for the treatment of adult patients with complicated skin and skin structure infections (cSSSI)",
+  "note": "cSSSI named."
+ },
+ {
+  "id": "e033",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis; atopic dermatitis; serum sickness",
+  "note": "Contact dermatitis listed."
+ },
+ {
+  "id": "e166",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Abdominal migraine is not mentioned; label covers migraine with or without aura and episodic migraine in adults."
+ },
+ {
+  "id": "e068",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain in opioid tolerant patients, that requires an opioid analgesic",
+  "note": "Weak: urinary tract pain only as a subtype of generically indicated severe persistent pain."
+ },
+ {
+  "id": "e021",
+  "verdict": "FP1_setting",
+  "quote": "PAH associated with corrected simple congenital heart disease",
+  "note": "Congenital heart disease is the PAH background; PAH is treated."
+ },
+ {
+  "id": "e180",
+  "verdict": "TARGET",
+  "quote": "SAVAYSA is indicated for the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE)",
+  "note": "Lower-limb DVT is a subtype of DVT."
+ },
+ {
+  "id": "e004",
+  "verdict": "TARGET",
+  "quote": "Adults with overweight in the presence of at least one weight-related comorbid condition",
+  "note": "Overweight named (phentermine/topiramate)."
+ },
+ {
+  "id": "e221",
+  "verdict": "TARGET",
+  "quote": "adult patients with intermediate or poor risk advanced renal cell carcinoma, as a first-line treatment in combination with ipilimumab",
+  "note": "RCC named."
+ },
+ {
+  "id": "e073",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of neurogenic detrusor overactivity (NDO) in pediatric patients 6 years of age and older",
+  "note": "NDO named."
+ },
+ {
+  "id": "e224",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections (complicated and uncomplicated), including pyelonephritis and cystitis (initial and recurrent)",
+  "note": "Cystitis named."
+ }
+]

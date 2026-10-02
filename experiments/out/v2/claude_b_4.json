@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e173",
+  "verdict": "TARGET",
+  "quote": "Fluoxetine is indicated for the acute and maintenance treatment of Major Depressive Disorder in adult patients",
+  "note": "MDD named directly."
+ },
+ {
+  "id": "e024",
+  "verdict": "TARGET",
+  "quote": "Pulmonary Diseases Acute exacerbations of chronic obstructive pulmonary disease (COPD) Allergic bronchopulmonary aspergillosis Aspiration pneumonitis Asthma",
+  "note": "Cough variant asthma is a subtype of the indicated asthma."
+ },
+ {
+  "id": "e078",
+  "verdict": "FP1_setting",
+  "quote": "indicated for use as an adjunctive diagnostic tool for serum thyroglobulin (Tg) testing",
+  "note": "Tg measurement is a diagnostic procedure the drug assists, not a disease treated."
+ },
+ {
+  "id": "e176",
+  "verdict": "TARGET",
+  "quote": "LIVDELZI is indicated for the treatment of primary biliary cholangitis (PBC)",
+  "note": "PBC named directly."
+ },
+ {
+  "id": "e122",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pelvic pain not mentioned; PMDD/MDD/etc. indications only."
+ },
+ {
+  "id": "e230",
+  "verdict": "TARGET",
+  "quote": "Relieves sinus congestion and pressure, helps decongest sinus openings and passages",
+  "note": "Sinus congestion named in OTC combination uses."
+ },
+ {
+  "id": "e015",
+  "verdict": "TARGET",
+  "quote": "in: psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require low dose maintenance therapy); ankylosing spondylitis",
+  "note": "Near parent of listed seronegative arthritides (psoriatic arthritis, ankylosing spondylitis)."
+ },
+ {
+  "id": "e005",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce blood phenylalanine concentrations in adult and pediatric patients 12 years of age and older with phenylketonuria (PKU)",
+  "note": "PKU named as the treated condition."
+ },
+ {
+  "id": "e107",
+  "verdict": "TARGET",
+  "quote": "used topically and subconjunctivally in the treatment of infections of the eye caused by susceptible strains of Ps. aeruginosa",
+  "note": "Eye infections named."
+ },
+ {
+  "id": "e290",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Depression rating-scale term unrelated to hyperphosphatemia/IBS-C indications."
+ },
+ {
+  "id": "e167",
+  "verdict": "FP1_setting",
+  "quote": "Such congenital heart defects include pulmonary atresia, pulmonary stenosis, tricuspid atresia, tetralogy of Fallot",
+  "note": "Pulmonary stenosis is the background defect; drug palliatively keeps ductus patent."
+ },
+ {
+  "id": "e053",
+  "verdict": "TARGET",
+  "quote": "Secondary therapy in non-Hodgkin's lymphoma and Hodgkin's disease",
+  "note": "Familial NHL is a subtype of indicated NHL."
+ },
+ {
+  "id": "e134",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: backache muscle aches arthritis menstrual cramps",
+  "note": "Backache named in OTC uses."
+ },
+ {
+  "id": "e083",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain in opioid tolerant patients",
+  "note": "Generic pain indication; testicular pain is a narrower form of pain (weak, site never named)."
+ },
+ {
+  "id": "e199",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with BRAF V600 mutation-positive unresectable or metastatic melanoma",
+  "note": "Stage IV melanoma falls within metastatic melanoma."
+ },
+ {
+  "id": "e105",
+  "verdict": "TARGET",
+  "quote": "simvastatin tablets USP are indicated to: Reduce the risk of non-fatal myocardial infarction and stroke",
+  "note": "Stroke risk reduction is an indication."
+ },
+ {
+  "id": "e171",
+  "verdict": "FP1_setting",
+  "quote": "added to an ocular irrigating solution used during cataract surgery or intraocular lens replacement and is indicated for maintaining pupil size by preventing intraoperative miosis",
+  "note": "Cataract surgery is the procedural setting; target is miosis/postoperative pain."
+ },
+ {
+  "id": "e268",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases Bullous dermatitis herpetiformis ... Pemphigus Severe psoriasis",
+  "note": "Psoriasis (severe) listed."
+ },
+ {
+  "id": "e205",
+  "verdict": "FP1_setting",
+  "quote": "indicated in those elderly patients believed to develop parkinsonism in association with cerebral arteriosclerosis",
+  "note": "Parkinsonism is treated; cerebral arteriosclerosis is the associated background."
+ },
+ {
+  "id": "e251",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis and treatment of illness caused by various strains of influenza A virus in adults",
+  "note": "Influenza A named directly."
+ },
+ {
+  "id": "e228",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Label covers discomfort of acute painful musculoskeletal conditions; limb pain is neither named nor a clear subtype."
+ },
+ {
+  "id": "e284",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with relapsed or refractory multiple myeloma",
+  "note": "Plasma cell myeloma = multiple myeloma."
+ },
+ {
+  "id": "e243",
+  "verdict": "TARGET",
+  "quote": "Prevention of stroke and systemic embolism in adult patients with non-valvular atrial fibrillation (NVAF)",
+  "note": "Stroke prevention is the indication."
+ },
+ {
+  "id": "e196",
+  "verdict": "FP4_overbroad",
+  "quote": "relapsed or refractory diffuse large B-cell lymphoma, not otherwise specified (DLBCL, NOS) or large B-cell lymphoma (LBCL) arising from follicular lymphoma",
+  "note": "Label limited to large B-cell lymphoma; B-cell NHL is a much broader class."
+ },
+ {
+  "id": "e277",
+  "verdict": "TARGET",
+  "quote": "surface ocular bacterial infections, including acute bacterial conjunctivitis, and blepharoconjunctivitis",
+  "note": "Blepharoconjunctivitis named."
+ },
+ {
+  "id": "e275",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD) in children 6 years of age and older",
+  "note": "ADHD named directly."
+ },
+ {
+  "id": "e285",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with hepatocellular carcinoma (HCC) who have an alpha fetoprotein (AFP) of ≥400 ng/mL",
+  "note": "HCC named directly."
+ },
+ {
+  "id": "e168",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Nasal moisturizer text; leptomeningitis not mentioned."
+ },
+ {
+  "id": "e007",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with Bacillus Calmette-Guérin (BCG)-unresponsive, non-muscle invasive bladder cancer (NMIBC)",
+  "note": "Bladder neoplasm is a near parent of indicated NMIBC."
+ },
+ {
+  "id": "e239",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (e.g., Zollinger-Ellison syndrome and systemic mastocytosis)",
+  "note": "Systemic mastocytosis named in list of indicated conditions."
+ },
+ {
+  "id": "e265",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced renal cell carcinoma, as a first-line treatment in combination with cabozantinib",
+  "note": "Papillary RCC is a subtype of indicated RCC."
+ },
+ {
+  "id": "e183",
+  "verdict": "TARGET",
+  "quote": "indicated as therapy to abort or prevent vascular headache; e.g., migraine, migraine variants",
+  "note": "Migraine named."
+ },
+ {
+  "id": "e006",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus",
+  "note": "Polymyositis named."
+ },
+ {
+  "id": "e280",
+  "verdict": "TARGET",
+  "quote": "PERIKABIVEN may be used to prevent essential fatty acid deficiency",
+  "note": "Combination-product indication names EFAD prevention."
+ },
+ {
+  "id": "e269",
+  "verdict": "TARGET",
+  "quote": "including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma",
+  "note": "PMBCL named."
+ },
+ {
+  "id": "e211",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only ocular hypertension/elevated IOP indicated; systemic hypertensive disorder not mentioned (word collision)."
+ },
+ {
+  "id": "e233",
+  "verdict": "TARGET",
+  "quote": "Adjunctive treatment of focal-onset seizures with or without secondary generalisation in adult patients with epilepsy",
+  "note": "Treats epileptic seizures, i.e. manages epilepsy."
+ }
+]

@@ -21,3 +21,6 @@ __pycache__/
 
 # Experiment run outputs (regenerable via experiments/drug_collapse.py)
 /experiments/out/
+
+# (archived audit artifacts under experiments/out/ -- the v1 files and v2's sample.jsonl,
+# verdicts and Jev outputs -- are force-added; regenerable intermediates stay ignored)

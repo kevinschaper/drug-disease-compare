@@ -3,6 +3,7 @@ title: Disease detail
 sql:
   pairs: ./data/pairs.parquet
   medev: ./data/medic_evidence.parquet
+  lc: ./data/label_check.parquet
 ---
 
 # Disease detail
@@ -23,7 +24,7 @@ const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.ma
 const detail = id
   ? toRows(await sql`
       SELECT drug, drug_label, medic, dakp, dismech, dakp_status,
-             CAST(dakp_cases AS INTEGER) AS cases, dismech_evidence, dakp_evidence,
+             CAST(dakp_cases AS INTEGER) AS cases, medic_reliability, dismech_evidence, dakp_evidence,
              CAST(n_exact AS INTEGER) AS n_exact, note
       FROM pairs WHERE disease = ${id} ORDER BY n_exact DESC, drug_label`)
   : [];
@@ -32,10 +33,14 @@ const drugLabel = new Map(detail.map((r) => [r.drug, r.drug_label]));
 const medEv = id ? toRows(await sql`SELECT drug, evidence FROM medev WHERE disease = ${id}`) : [];
 const medEvBy = new Map(medEv.map((r) => [r.drug, r.evidence]));
 detail.forEach((r) => { r.indication = medEvBy.get(r.drug) ?? ""; });
+// Jev label check (automated; only verdicts at confidence >= 0.9 -- see Error taxonomy)
+const lcRows = id ? toRows(await sql`SELECT drug, source, verdict FROM lc WHERE disease = ${id} AND confidence >= 0.9 AND verdict NOT IN ('UNVERIFIABLE', 'UNSURE')`) : [];
+const lcBy = d3.group(lcRows, (r) => r.drug);
+detail.forEach((r) => { r.label_check = lcBy.get(r.drug) ?? []; });
 ```
 
 ```js
-// Click an FDA/EMA/PMDA chip or a dismech ref to PIN a panel with the verbatim text. It
+// Click an FDA/EMA/PMDA/CDSCO chip or a dismech ref to PIN a panel with the verbatim text. It
 // stays open and is selectable/copyable; close with ×, the same chip again, or a click
 // outside. (Hover tooltips vanished before you could select the text.)
 const evTip = (() => {
@@ -69,14 +74,14 @@ function showEvidence(anchor, header, body, href) {
   evTip.style.top = (below + h > window.innerHeight - 8 ? r.top - h - 6 : below) + "px";
 }
 
-// FDA/EMA/PMDA chips — click to pin the verbatim approving-agency indication text.
+// FDA/EMA/PMDA/CDSCO chips — click to pin the verbatim approving-agency indication text.
 const agencyCell = (json) => {
   let ev = [];
   try { ev = json ? JSON.parse(json) : []; } catch (e) { ev = []; }
   if (!ev.length) return "";
   const chips = ev.map((e) => {
     const c = html`<button type="button" class="agency-chip">${e.agency}</button>`;
-    c.addEventListener("click", (x) => { x.stopPropagation(); showEvidence(c, `${e.agency} indication`, e.text); });
+    c.addEventListener("click", (x) => { x.stopPropagation(); showEvidence(c, `${e.agency} label text`, e.text || "(no verbatim text in this MEDIC export)"); });
     return c;
   });
   return html`${chips.flatMap((c, i) => (i ? [document.createTextNode(" "), c] : [c]))}`;
@@ -115,6 +120,9 @@ const dailymedCell = (json) => {
 ```
 
 <style>
+.lc { display: inline-block; font-size: 11px; padding: 0 5px; margin-right: 3px; border-radius: 4px; white-space: nowrap; }
+.lc-ok { background: color-mix(in srgb, #3a7d34 18%, transparent); }
+.lc-fp { background: color-mix(in srgb, #b4423a 22%, transparent); font-weight: 600; }
 .agency-chip {
   appearance: none; font: inherit; color: inherit;
   display: inline-block; padding: 0 6px; border-radius: 6px;
@@ -164,22 +172,30 @@ id
 Every drug linked to this disease, **broken out by the exact set of sources that assert
 it** (DAKP split into approved vs off-label; off-label groups last). Membership is
 **exact** / **related** (a MONDO is-a hop away — see `note`) / blank; where MEDIC asserts
-the indication, **hover the FDA/EMA/PMDA chip** for the verbatim approving-agency text, and
-hover a **dismech ref** number for its supporting text.
+the indication, **click the FDA/EMA/PMDA/CDSCO chip** for the verbatim approving-agency text, and
+click a **dismech ref** number for its supporting text. **Label check** is an automated screen (the Jev decision
+model, shown only at confidence ≥ 0.9) of the pair against independently fetched FDA/EMA
+label text, per source: `M`/`D` = MEDIC / DAKP-approved, ✓ a genuine indication, ⚠ a likely
+error with its [type](./error-taxonomy). About 9 in 10 of its flags hold up on review — a
+lead, not a verdict.
 
 ```js
 // shared table renderer. Explicit column widths so long drug names (and the
 // hierarchy note) don't truncate.
+const lcCell = (checks) => checks.length
+  ? html`${checks.map((c) => html`<span class="lc ${c.verdict === "TARGET" ? "lc-ok" : "lc-fp"}" title="${c.source === "medic" ? "MEDIC" : "DAKP-approved"}: ${c.verdict} (Jev, confidence ≥ 0.9)">${c.source === "medic" ? "M" : "D"} ${c.verdict === "TARGET" ? "✓" : "⚠ " + c.verdict.split("_")[0]}</span>`)}`
+  : "";
 const renderTable = (rows) => Inputs.table(rows, {
-  columns: ["drug", "medic", "indication", "dakp", "dismech", "dakp_status", "dakp_evidence", "cases", "dismech_evidence", "n_exact", "note"],
-  header: {drug: "Drug", medic: "MEDIC", indication: "MEDIC indication", dakp: "DAKP", dismech: "dismech", dakp_status: "DAKP status", dakp_evidence: "DailyMed / FDA", cases: "FAERS cases", dismech_evidence: "dismech refs", n_exact: "n", note: "Hierarchy note"},
+  columns: ["drug", "medic", "indication", "medic_reliability", "label_check", "dakp", "dismech", "dakp_status", "dakp_evidence", "cases", "dismech_evidence", "n_exact", "note"],
+  header: {drug: "Drug", medic: "MEDIC", indication: "MEDIC label", medic_reliability: "MEDIC tier", label_check: "Label check", dakp: "DAKP", dismech: "dismech", dakp_status: "DAKP status", dakp_evidence: "DailyMed / FDA", cases: "FAERS cases", dismech_evidence: "dismech refs", n_exact: "n", note: "Hierarchy note"},
   format: {
     drug: (cid) => html`<a href="drug?id=${encodeURIComponent(cid)}">${drugLabel.get(cid) ?? cid}</a>`,
     indication: (json) => agencyCell(json),
+    label_check: lcCell,
     dakp_evidence: (json) => dailymedCell(json),
     dismech_evidence: (json) => dismechCell(json),
   },
-  width: {drug: 400, medic: 60, indication: 86, dakp: 60, dismech: 70, dakp_status: 150, dakp_evidence: 150, cases: 80, dismech_evidence: 110, n_exact: 36, note: 220},
+  width: {drug: 400, medic: 60, indication: 110, medic_reliability: 80, label_check: 110, dakp: 60, dismech: 70, dakp_status: 150, dakp_evidence: 150, cases: 80, dismech_evidence: 110, n_exact: 36, note: 220},
   sort: "n_exact", reverse: true, rows: 100, maxWidth: width,
 });
 ```

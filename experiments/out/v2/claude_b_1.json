@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e065",
+  "verdict": "TARGET",
+  "quote": "indicated for the palliative treatment of patients with advanced head and neck squamous cell carcinoma",
+  "note": "EMA indication names the disease exactly."
+ },
+ {
+  "id": "e214",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with: non-metastatic castration-resistant prostate cancer (nmCRPC)",
+  "note": "nmCRPC is a form of CRPC; near parent essentially describes indication."
+ },
+ {
+  "id": "e117",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia, that, in the judgment of the physician, are life-threatening",
+  "note": "Ventricular arrhythmias named as indication."
+ },
+ {
+  "id": "e064",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura in adults and pediatric patients 12 years of age and older",
+  "note": "Migraine without aura explicitly indicated (sumatriptan/naproxen combination)."
+ },
+ {
+  "id": "e170",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No mycobacterial infection mentioned; only listed bacterial infections."
+ },
+ {
+  "id": "e288",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Hernia not mentioned; indications are ulcers, GERD, hypersecretory states."
+ },
+ {
+  "id": "e150",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "COVID-19 not mentioned; only epilepsy seizure types indicated."
+ },
+ {
+  "id": "e210",
+  "verdict": "TARGET",
+  "quote": "HER2-negative advanced or metastatic breast cancer",
+  "note": "Advanced breast cancer is indicated (HR+/HER2- subtype)."
+ },
+ {
+  "id": "e200",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of urge incontinence and/or increased urinary frequency and urgency",
+  "note": "Increased urinary frequency is a synonym of pollakisuria."
+ },
+ {
+  "id": "e110",
+  "verdict": "TARGET",
+  "quote": "Such infections encompass conjunctivitis, keratitis and keratoconjunctivitis, blepharitis and blepharoconjunctivitis.",
+  "note": "Blepharitis listed among indicated infections in combination product."
+ },
+ {
+  "id": "e101",
+  "verdict": "TARGET",
+  "quote": "In postmenopausal women with osteoporosis, teriparatide injection reduces the risk of vertebral and nonvertebral fractures.",
+  "note": "Reduction of vertebral (spinal) fracture risk stated in indications."
+ },
+ {
+  "id": "e126",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only prophylaxis of common migraine; new daily persistent headache not mentioned."
+ },
+ {
+  "id": "e031",
+  "verdict": "TARGET",
+  "quote": "indicated in adult patients for treatment of typhoid fever (enteric fever)caused by Salmonella typhi",
+  "note": "Typhoid fever explicitly indicated."
+ },
+ {
+  "id": "e253",
+  "verdict": "TARGET",
+  "quote": "effective for the treatment of thiamine deficiency or beriberi whether of the dry",
+  "note": "Beriberi explicitly indicated."
+ },
+ {
+  "id": "e197",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No gastrointestinal pain indication; GI text only concerns adverse events."
+ },
+ {
+  "id": "e194",
+  "verdict": "TARGET",
+  "quote": "Rifampin is indicated in the treatment of all forms of tuberculosis.",
+  "note": "Lymph node TB is a form of tuberculosis."
+ },
+ {
+  "id": "e059",
+  "verdict": "FP3_cross_section",
+  "quote": "Avoid using aspirin in patients with a history of active peptic ulcer disease",
+  "note": "Ulcers appear only in contraindications/warnings."
+ },
+ {
+  "id": "e146",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of postoperative nausea and vomiting in those circumstances where nasogastric suction is undesirable",
+  "note": "Postoperative vomiting is procedural vomiting."
+ },
+ {
+  "id": "e254",
+  "verdict": "FP1_setting",
+  "quote": "chronic HCV infection without cirrhosis or with compensated cirrhosis (Child-Pugh A)",
+  "note": "Compensated cirrhosis is the patient population; HCV is treated."
+ },
+ {
+  "id": "e095",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Fracture healing not mentioned; indications are osteoporosis."
+ },
+ {
+  "id": "e292",
+  "verdict": "TARGET",
+  "quote": "for treatment of complicated urinary tract infections (cUTI) and pyelonephritis due to Escherichia coli",
+  "note": "Chronic pyelonephritis is a subtype of indicated pyelonephritis."
+ },
+ {
+  "id": "e163",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Temporarily relieves these symptoms due to the common cold, hay fever (allergic rhinitis) or other upper respiratory allergies",
+  "note": "Treats cold symptoms, not the common cold."
+ },
+ {
+  "id": "e088",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of ischemic complications in unstable angina and non-Q-wave myocardial infarction, when concurrently administered with aspirin therapy",
+  "note": "Acute management of non-Q-wave MI is a labeled indication."
+ },
+ {
+  "id": "e079",
+  "verdict": "TARGET",
+  "quote": "Ramipril Capsules are indicated to reduce the risk of myocardial infarction, stroke, or death from cardiovascular causes",
+  "note": "MI risk reduction (prevention) is an indication."
+ },
+ {
+  "id": "e057",
+  "verdict": "TARGET",
+  "quote": "CIMZIA is indicated for the treatment of adults with moderately to severely active rheumatoid arthritis (RA).",
+  "note": "RA explicitly indicated."
+ },
+ {
+  "id": "e138",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only advanced RCC indicated; Stage II RCC not mentioned (Stage IIB/IIC refers to melanoma)."
+ },
+ {
+  "id": "e034",
+  "verdict": "FP2_symptom_swap",
+  "quote": "a discrete period of intense fear or discomfort in which 4 (or more) of the following symptoms develop abruptly",
+  "note": "Discomfort appears only as a symptom in panic disorder definition."
+ },
+ {
+  "id": "e135",
+  "verdict": "TARGET",
+  "quote": "Diabetic Macular Edema (DME) ( 1.2 )",
+  "note": "DME explicitly indicated."
+ },
+ {
+  "id": "e016",
+  "verdict": "TARGET",
+  "quote": "Treatment of Cryopyrin-Associated Periodic Syndromes (CAPS), including Familial Cold Autoinflammatory Syndrome (FCAS)",
+  "note": "FCAS explicitly indicated."
+ },
+ {
+  "id": "e113",
+  "verdict": "TARGET",
+  "quote": "indicated in the management of adults with active classical or definite rheumatoid arthritis (ARA criteria)",
+  "note": "RA explicitly indicated."
+ },
+ {
+  "id": "e026",
+  "verdict": "TARGET",
+  "quote": "Celecoxib is indicated for the management of AP in adults",
+  "note": "Post-procedural pain is a form of indicated acute pain (one product excludes it, others indicate)."
+ },
+ {
+  "id": "e036",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of metastatic breast cancer in adult patients who have failed first-line treatment for metastatic disease",
+  "note": "Stage IV breast carcinoma = metastatic breast cancer."
+ },
+ {
+  "id": "e116",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves minor aches, pains and fever associated with: headache, common cold, toothache",
+  "note": "Headache is a listed relief target in the product uses."
+ },
+ {
+  "id": "e012",
+  "verdict": "TARGET",
+  "quote": "Votrient is indicated for the treatment of adult patients with selective subtypes of advanced soft-tissue sarcoma (STS)",
+  "note": "Soft tissue sarcoma explicitly indicated."
+ },
+ {
+  "id": "e213",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with Adenocarcinoma of the Colon and Rectum",
+  "note": "Colon adenocarcinoma is covered by the indication."
+ },
+ {
+  "id": "e147",
+  "verdict": "TARGET",
+  "quote": "the first-line treatment of adult patients with locally advanced or metastatic NSCLC with activating EGFR mutations",
+  "note": "NSCLC explicitly indicated."
+ },
+ {
+  "id": "e216",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with metastatic small cell lung cancer (SCLC)",
+  "note": "SCLC explicitly indicated."
+ },
+ {
+  "id": "e018",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only a generic class statement mentions diabetic kidney disease; not a lisinopril indication."
+ }
+]

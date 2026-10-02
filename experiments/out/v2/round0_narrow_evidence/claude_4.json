@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e004",
+  "verdict": "TARGET",
+  "quote": "Propranolol hydrochloride tablets, USP are indicated in the management of hypertension.",
+  "note": "Essential hypertension is a subtype of the indicated hypertension."
+ },
+ {
+  "id": "e012",
+  "verdict": "TARGET",
+  "quote": "indicated in patients 12 years of age and older with WHIM syndrome (warts, hypogammaglobulinemia, infections and myelokathexis) to increase the number of circulating mature neutrophils",
+  "note": "Myelokathexis is named as a component of WHIM and the stated effect (raising circulating neutrophils) addresses it directly."
+ },
+ {
+  "id": "e020",
+  "verdict": "FP2_symptom_swap",
+  "quote": "a discrete period of intense fear or discomfort in which four (or more) of the following symptoms develop",
+  "note": "Discomfort appears only as a descriptive symptom of panic attacks; the indication is panic disorder, not discomfort."
+ },
+ {
+  "id": "e028",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treats cold sores/fever blisters on the face or lips shortens healing time and duration of symptoms: tingling, pain, burning, and/or itching",
+  "note": "Pain is only a symptom of cold sores being treated; lip pain generally is not an indication."
+ },
+ {
+  "id": "e036",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are first aid for minor cuts, scrapes, burns; keratitis is not mentioned (eyes appear only as a do-not-use warning)."
+ },
+ {
+  "id": "e044",
+  "verdict": "TARGET",
+  "quote": "indicated for the short term (up to 1 week) treatment of scurvy",
+  "note": "Scurvy is named directly."
+ },
+ {
+  "id": "e052",
+  "verdict": "TARGET",
+  "quote": "Idiopathic thrombocytopenic purpura in adults Pure red cell aplasia Secondary thrombocytopenia in adults",
+  "note": "Secondary (acquired) thrombocytopenia and ITP are listed indications."
+ },
+ {
+  "id": "e060",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of human immunodeficiency virus 1 (HIV 1) infection",
+  "note": "Emtricitabine-containing combinations in EMA text are indicated for HIV-1 infection."
+ },
+ {
+  "id": "e068",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with unresectable or metastatic gastric, esophageal, or gastroesophageal junction cancer as a component of a combination chemotherapy regimen",
+  "note": "Esophageal cancer is explicitly indicated."
+ },
+ {
+  "id": "e076",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Duchenne muscular dystrophy (DMD) in patients who have a confirmed mutation of the DMD gene that is amenable to exon 53 skipping",
+  "note": "DMD named directly (genetic subset)."
+ },
+ {
+  "id": "e084",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of seizures associated with Dravet syndrome (DS) in patients taking clobazam",
+  "note": "Treating the seizures of an epilepsy syndrome is treating the syndrome."
+ },
+ {
+  "id": "e092",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves sinus congestion and pressure",
+  "note": "Sinus congestion is named as a use."
+ },
+ {
+  "id": "e100",
+  "verdict": "TARGET",
+  "quote": "Pheochromocytoma Propranolol hydrochloride tablets, USP are indicated as an adjunct to alpha-adrenergic blockade to control blood pressure and reduce symptoms of catecholamine-secreting tumors",
+  "note": "Pheochromocytoma is a labeled (adjunctive management) indication."
+ },
+ {
+  "id": "e108",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the prevention of itching associated with allergic conjunctivitis",
+  "note": "Text treats only the itching symptom of allergic conjunctivitis, not conjunctivitis itself."
+ },
+ {
+  "id": "e116",
+  "verdict": "TARGET",
+  "quote": "indicated for reducing signs and symptoms, inducing major clinical response, inhibiting the progression of structural damage, and improving physical function in patients with moderately to severely active rheumatoid arthritis",
+  "note": "RA named directly."
+ },
+ {
+  "id": "e124",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy for the treatment of primary generalized tonic-clonic seizures in patients with epilepsy 12 years of age and older",
+  "note": "Primary generalized tonic-clonic seizures equal bilateral tonic-clonic seizures with generalized onset."
+ },
+ {
+  "id": "e132",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of edema associated with congestive heart failure, cirrhosis of the liver and the nephrotic syndrome; steroid-induced edema, idiopathic edema",
+  "note": "Edema named directly."
+ },
+ {
+  "id": "e140",
+  "verdict": "TARGET",
+  "quote": "Severe psoriasis Severe seborrheic dermatitis",
+  "note": "Severe seborrheic dermatitis is a listed dermatologic indication."
+ },
+ {
+  "id": "e148",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only non-small cell lung cancer (NSCLC) is indicated; small cell lung carcinoma is a different disease (substring collision)."
+ },
+ {
+  "id": "e156",
+  "verdict": "TARGET",
+  "quote": "Primary hypogonadism (congenital or acquired) ( 1 ) \u2022 Hypogonadotropic hypogonadism (congenital or acquired) ( 1 )",
+  "note": "Hypogonadism forms are listed indications for testosterone replacement."
+ },
+ {
+  "id": "e164",
+  "verdict": "TARGET",
+  "quote": "Mycosis fungoides Severe psoriasis Severe seborrheic dermatitis",
+  "note": "Severe psoriasis is a listed dermatologic indication."
+ },
+ {
+  "id": "e172",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with follicular lymphoma who relapsed after, or are refractory to, a rituximab-containing regimen",
+  "note": "Follicular lymphoma named directly."
+ },
+ {
+  "id": "e180",
+  "verdict": "TARGET",
+  "quote": "Aspiration pneumonitis Asthma Fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate chemotherapy Hypersensitivity pneumonitis",
+  "note": "Specific pneumonitis types are listed; pneumonitis is a near parent."
+ },
+ {
+  "id": "e188",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of acute bacterial skin and skin structure infections (ABSSSI)",
+  "note": "ABSSSI named directly."
+ },
+ {
+  "id": "e196",
+  "verdict": "TARGET",
+  "quote": "Rifampin is indicated in the treatment of all forms of tuberculosis.",
+  "note": "Cutaneous TB is a form of tuberculosis."
+ },
+ {
+  "id": "e204",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients 2 years of age and older with active polyarticular juvenile idiopathic arthritis",
+  "note": "Polyarticular JIA is indicated; JIA is a near parent."
+ },
+ {
+  "id": "e212",
+  "verdict": "TARGET",
+  "quote": "Diffuse posterior uveitis and choroiditis",
+  "note": "Choroiditis is listed among ophthalmic indications."
+ },
+ {
+  "id": "e220",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of ocular inflammation and pain following ophthalmic surgery",
+  "note": "Ocular (eye) pain is a treated target, postoperative setting."
+ },
+ {
+  "id": "e228",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diphenhydramine texts cover topical pain/itching from burns, bites, rashes; nausea not mentioned."
+ },
+ {
+  "id": "e236",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of adult patients with relapsed or refractory chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL)",
+  "note": "Only CLL/SLL is indicated; 'lymphoma' as a whole class is overbroad."
+ },
+ {
+  "id": "e244",
+  "verdict": "TARGET",
+  "quote": "Bylvay is indicated for the treatment of progressive familial intrahepatic cholestasis (PFIC)",
+  "note": "PFIC named directly (EMA)."
+ },
+ {
+  "id": "e252",
+  "verdict": "TARGET",
+  "quote": "treatment of disease-related splenomegaly or symptoms in adult patients with primary myelofibrosis, post polycythaemia vera myelofibrosis",
+  "note": "Post-PV myelofibrosis named; disease-related splenomegaly/symptoms is its management."
+ },
+ {
+  "id": "e260",
+  "verdict": "FP3_cross_section",
+  "quote": "Intramuscular corticosteroid preparations are contraindicated for idiopathic thrombocytopenic purpura.",
+  "note": "Immune/autoimmune thrombocytopenia appears only in contraindications; indications list only select secondary thrombocytopenia."
+ },
+ {
+  "id": "e268",
+  "verdict": "TARGET",
+  "quote": "reduce Total-C, LDL-C and ApoB levels in children and adolescents 8 to 17 years of age with heterozygous familial hypercholesterolemia",
+  "note": "HeFH named directly."
+ },
+ {
+  "id": "e276",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is opium tincture for diarrhea; infusion site pain not mentioned."
+ },
+ {
+  "id": "e284",
+  "verdict": "TARGET",
+  "quote": "long-term treatment of paediatric patients with growth disturbance due to insufficient secretion of growth hormone",
+  "note": "GH replacement for insufficient GH secretion targets the GH deficiency itself."
+ },
+ {
+  "id": "e292",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications list various bacterial infections; Mycobacterium fortuitum is not mentioned."
+ }
+]

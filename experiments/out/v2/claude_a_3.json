@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e289",
+  "verdict": "TARGET",
+  "quote": "indicated for use as an aid to smoking cessation treatment",
+  "note": "Smoking cessation is the stated indication."
+ },
+ {
+  "id": "e299",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pain and inflammation associated with cataract surgery",
+  "note": "Cataract-surgery pain is procedural pain; edge is a near parent."
+ },
+ {
+  "id": "e235",
+  "verdict": "TARGET",
+  "quote": "Monotherapy and adjunctive therapy of complex partial seizures",
+  "note": "Complex partial seizures are focal-onset seizures."
+ },
+ {
+  "id": "e027",
+  "verdict": "FP2_symptom_swap",
+  "quote": "throat, nasal, bronchial irritations: cough, headache, hoarseness, sore throat",
+  "note": "Homeopathic labels relieve sore throat symptom, not pharyngitis as a disease."
+ },
+ {
+  "id": "e184",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of acute symptomatic episodes of hypoglycemia",
+  "note": "Hypoglycemia directly indicated."
+ },
+ {
+  "id": "e281",
+  "verdict": "TARGET",
+  "quote": "indicated for the maintenance of remission of ulcerative colitis",
+  "note": "Ulcerative colitis is a form of colitis; edge is a near parent."
+ },
+ {
+  "id": "e256",
+  "verdict": "TARGET",
+  "quote": "with cisplatin for unresectable, locally advanced or metastatic untreated NSCLC",
+  "note": "Stage IIIB NSCLC falls under locally advanced NSCLC."
+ },
+ {
+  "id": "e197",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "GI pain not named as an indication; label covers acute pain, arthritis, dysmenorrhea; GI only as adverse events."
+ },
+ {
+  "id": "e029",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+  "note": "SLE named in indication list."
+ },
+ {
+  "id": "e200",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of urge incontinence and/or increased urinary frequency and urgency",
+  "note": "Pollakisuria = increased urinary frequency."
+ },
+ {
+  "id": "e269",
+  "verdict": "TARGET",
+  "quote": "including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma",
+  "note": "PMBCL explicitly listed."
+ },
+ {
+  "id": "e036",
+  "verdict": "TARGET",
+  "quote": "Metastatic breast cancer, after failure of combination chemotherapy for metastatic disease",
+  "note": "Stage IV breast carcinoma = metastatic breast cancer."
+ },
+ {
+  "id": "e216",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with metastatic small cell lung cancer (SCLC)",
+  "note": "SCLC directly indicated."
+ },
+ {
+  "id": "e167",
+  "verdict": "FP1_setting",
+  "quote": "temporarily maintain the patency of the ductus arteriosus until corrective or palliative surgery can be performed in neonates who have congenital heart defects",
+  "note": "Pulmonary stenosis is the underlying defect/population; target is ductal patency."
+ },
+ {
+  "id": "e264",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe chronic pain in adult patients for whom intrathecal therapy is warranted",
+  "note": "Cervical radicular pain is a narrower form of severe chronic pain; weak support."
+ },
+ {
+  "id": "e048",
+  "verdict": "FP1_setting",
+  "quote": "indicated as a diluent for the intrathecal administration of methotrexate sodium and cytarabine for the prevention or treatment of meningeal leukemia or lymphocytic lymphoma",
+  "note": "Phosphate solution is a diluent; lymphoma is treated by the co-administered drugs."
+ },
+ {
+  "id": "e139",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Sneezing not mentioned in supplied acetaminophen text."
+ },
+ {
+  "id": "e296",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Infusion site pain not mentioned; generic severe-pain opioid indication does not reasonably support it."
+ },
+ {
+  "id": "e086",
+  "verdict": "FP1_setting",
+  "quote": "Adult patients with an initial body mass index (BMI) of",
+  "note": "BMI is an eligibility criterion, not a treated condition."
+ },
+ {
+  "id": "e066",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure in patients with open angle glaucoma or ocular hypertension",
+  "note": "Ocular hypertension directly indicated."
+ },
+ {
+  "id": "e236",
+  "verdict": "TARGET",
+  "quote": "locally advanced or metastatic differentiated thyroid carcinoma (DTC), refractory or not eligible to radioactive iodine",
+  "note": "DTC directly indicated in EMA text."
+ },
+ {
+  "id": "e003",
+  "verdict": "TARGET",
+  "quote": "Treatment of symptomatic gastroesophageal reflux disease (GERD)",
+  "note": "GERD directly indicated."
+ },
+ {
+  "id": "e009",
+  "verdict": "FP1_setting",
+  "quote": "prevention of nausea and vomiting associated with initial and repeat courses of emetogenic cancer chemotherapy",
+  "note": "Cancer is the background setting; target is CINV."
+ },
+ {
+  "id": "e026",
+  "verdict": "TARGET",
+  "quote": "Celecoxib Capsules is indicated for the management of AP in adults",
+  "note": "Post-procedural pain is a form of acute pain."
+ },
+ {
+  "id": "e043",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate to severe acute pain, including postoperative pain, in adults",
+  "note": "Neck pain as narrower acute pain; weak support, location not named."
+ },
+ {
+  "id": "e146",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of postoperative nausea and vomiting",
+  "note": "Postoperative vomiting = procedural vomiting."
+ },
+ {
+  "id": "e000",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with moderate-to-severe plaque psoriasis",
+  "note": "Plaque psoriasis indicated; psoriasis is a near parent."
+ },
+ {
+  "id": "e068",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Urinary tract pain not mentioned in fentanyl text."
+ },
+ {
+  "id": "e282",
+  "verdict": "FP4_overbroad",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD)",
+  "note": "Label indicates COPD/asthma; bronchial disorder is an organ-system category."
+ },
+ {
+  "id": "e211",
+  "verdict": "FP4_overbroad",
+  "quote": "reduction of elevated intraocular pressure in patients with open angle glaucoma or ocular hypertension",
+  "note": "Only ocular hypertension indicated; generic hypertensive disorder is a broad class."
+ },
+ {
+  "id": "e229",
+  "verdict": "FP1_setting",
+  "quote": "treatment of asymptomatic T. vaginalis infection in females when the organism is associated with endocervicitis, cervicitis, or cervical erosion",
+  "note": "Target is T. vaginalis infection; cervical erosion is the clinical context."
+ },
+ {
+  "id": "e172",
+  "verdict": "TARGET",
+  "quote": "diffuse posterior uveitis and choroiditis, optic neuritis, sympathetic ophthalmia",
+  "note": "Optic neuritis listed among ophthalmic indications."
+ },
+ {
+  "id": "e095",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only osteoporosis indications; fracture healing not mentioned."
+ },
+ {
+  "id": "e063",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are schizophrenia, bipolar depression, MDD; perinatal asphyxia absent."
+ },
+ {
+  "id": "e017",
+  "verdict": "TARGET",
+  "quote": "treatment of chronic immune thrombocytopenia (ITP) in adult patients",
+  "note": "ITP = thrombocytopenia due to immune destruction."
+ },
+ {
+  "id": "e035",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with moderate to severe depression associated with moderate to severe anxiety",
+  "note": "Combination product indicated for depression; counts per rubric."
+ },
+ {
+  "id": "e093",
+  "verdict": "TARGET",
+  "quote": "Complicated Urinary Tract Infections (cUTI), including Pyelonephritis",
+  "note": "cUTI directly indicated (ceftazidime-avibactam)."
+ },
+ {
+  "id": "e084",
+  "verdict": "TARGET",
+  "quote": "Maintenance treatment of asthma",
+  "note": "Asthma directly indicated."
+ }
+]

@@ -1,0 +1,230 @@
+[
+ {
+  "id": "e279",
+  "verdict": "TARGET",
+  "quote": "For the treatment of urinary tract infections due to susceptible strains of the following organisms",
+  "note": "Recurrent UTI is a subtype of the indicated urinary tract infections (combination product)."
+ },
+ {
+  "id": "e192",
+  "verdict": "FP4_overbroad",
+  "quote": "Acute Sinusitis ( 1.12 )",
+  "note": "Only acute sinusitis among URIs is indicated (respiratory indication is lower tract); 'upper respiratory infections' is an organ-system category."
+ },
+ {
+  "id": "e118",
+  "verdict": "TARGET",
+  "quote": "FASENRA is indicated for the treatment of adult and pediatric patients aged 12 years and older with hypereosinophilic syndrome (HES)",
+  "note": "Named indication."
+ },
+ {
+  "id": "e174",
+  "verdict": "TARGET",
+  "quote": "Ustekinumab is indicated for the treatment of adults and pediatric patients 2 years of age and older with moderately to severely active ulcerative colitis.",
+  "note": "Named indication."
+ },
+ {
+  "id": "e045",
+  "verdict": "TARGET",
+  "quote": "INTRA-ABDOMINAL INFECTIONS, including peritonitis, intra-abdominal abscess, and liver abscess",
+  "note": "Intra-abdominal abscess is named as an indicated infection."
+ },
+ {
+  "id": "e217",
+  "verdict": "TARGET",
+  "quote": "preoperatively in acute angle-closure glaucoma where lowering the intraocular pressure is desired before surgery",
+  "note": "Acute angle-closure glaucoma named as a condition where the drug lowers IOP."
+ },
+ {
+  "id": "e098",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of adult patients with metastatic carcinoma of the colon or rectum",
+  "note": "Colon carcinoma is a near parent of indicated metastatic colon carcinoma (EMA)."
+ },
+ {
+  "id": "e108",
+  "verdict": "TARGET",
+  "quote": "BOTOX is indicated for the treatment of adults with cervical dystonia",
+  "note": "Named indication."
+ },
+ {
+  "id": "e245",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis and treatment of venous thrombosis and its extension, pulmonary embolism",
+  "note": "Pulmonary venous thrombosis is literally a venous thrombosis; weak, likely intended as PE mapping."
+ },
+ {
+  "id": "e266",
+  "verdict": "TARGET",
+  "quote": "Amlodipine is indicated for the treatment of hypertension, to lower blood pressure (1.1).",
+  "note": "Hypertension indication exists only via amlodipine/atorvastatin combination label; counts per combo rule."
+ },
+ {
+  "id": "e178",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderately to severely active Crohn's disease in adults and pediatric patients 6 years of age and older",
+  "note": "Named indication."
+ },
+ {
+  "id": "e067",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of symptoms of depression. Endogenous depression is more likely to be alleviated than other depressive states.",
+  "note": "Endogenous depression named within the depression indication."
+ },
+ {
+  "id": "e074",
+  "verdict": "TARGET",
+  "quote": "1.3 Prevention of Postmenopausal Osteoporosis",
+  "note": "Indicated in conjugated estrogens/medroxyprogesterone (PREMPRO) combination label."
+ },
+ {
+  "id": "e149",
+  "verdict": "TARGET",
+  "quote": "Treatment of partial-onset seizures with or without secondarily generalized seizures in patients with epilepsy 4 years of age and older",
+  "note": "Treatment of epileptic seizures is treatment of epilepsy."
+ },
+ {
+  "id": "e238",
+  "verdict": "TARGET",
+  "quote": "As adjunctive therapy for short-term administration ... in acute gouty arthritis; acute rheumatic carditis",
+  "note": "Acute rheumatic carditis is a synonym of acute rheumatic heart disease."
+ },
+ {
+  "id": "e267",
+  "verdict": "FP5_negation",
+  "quote": "Saxagliptin tablets are not recommended for the treatment of type 1 diabetes mellitus or diabetic ketoacidosis.",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "e179",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "EMA text covers human COPD only; equine COPD (heaves) is a spurious veterinary mapping."
+ },
+ {
+  "id": "e240",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with Bacillus Calmette-Guérin (BCG)-unresponsive non-muscle invasive bladder cancer (NMIBC)",
+  "note": "NMIBC is synonymous with superficial bladder carcinoma."
+ },
+ {
+  "id": "e262",
+  "verdict": "TARGET",
+  "quote": "Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first choice",
+  "note": "Primary adrenocortical insufficiency is listed among endocrine indications."
+ },
+ {
+  "id": "e124",
+  "verdict": "TARGET",
+  "quote": "Desipramine hydrochloride tablets, USP are indicated for the treatment of depression.",
+  "note": "Depression = depressive disorder."
+ },
+ {
+  "id": "e056",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied ethinyl estradiol text covers contraception only; PMDD/premenstrual not mentioned."
+ },
+ {
+  "id": "e001",
+  "verdict": "TARGET",
+  "quote": "For the temporary relief of ... general unrest and sleeplessness.",
+  "note": "Homeopathic combination products list sleeplessness (insomnia) as a relieved condition."
+ },
+ {
+  "id": "e140",
+  "verdict": "TARGET",
+  "quote": "RYSTIGGO is indicated for the treatment of generalized myasthenia gravis (gMG) in adult patients",
+  "note": "Named indication."
+ },
+ {
+  "id": "e276",
+  "verdict": "TARGET",
+  "quote": "Atenolol tablets USP are indicated for the long-term management of patients with angina pectoris.",
+  "note": "Named indication."
+ },
+ {
+  "id": "e043",
+  "verdict": "TARGET",
+  "quote": "JOURNAVX is indicated for the treatment of moderate to severe acute pain, including postoperative pain, in adults.",
+  "note": "Neck pain is not named; accepted only as a narrower form of indicated acute pain (borderline)."
+ },
+ {
+  "id": "e175",
+  "verdict": "TARGET",
+  "quote": "Pheochromocytoma Propranolol is indicated as an adjunct to alpha-adrenergic blockade to control blood pressure and reduce symptoms of catecholamine-secreting tumors.",
+  "note": "Adjunctive management of pheochromocytoma under its own heading."
+ },
+ {
+  "id": "e248",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with unresectable or metastatic liposarcoma who have received a prior anthracycline-containing regimen",
+  "note": "Named indication."
+ },
+ {
+  "id": "e287",
+  "verdict": "FP1_setting",
+  "quote": "acute treatment of intermittent, stereotypic episodes of frequent seizure activity ... in patients with epilepsy 12 years of age and older",
+  "note": "Epilepsy is only the population for seizure-cluster rescue (age 12+); absence epilepsy not mentioned."
+ },
+ {
+  "id": "e281",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the maintenance of remission of ulcerative colitis in adult patients who are intolerant of sulfasalazine",
+  "note": "Label is ulcerative colitis only; generic 'colitis' is an overbroad class."
+ },
+ {
+  "id": "e236",
+  "verdict": "TARGET",
+  "quote": "Cabometyx is indicated as monotherapy for the treatment of adult patients with locally advanced or metastatic differentiated thyroid carcinoma (DTC)",
+  "note": "Named EMA indication."
+ },
+ {
+  "id": "e142",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of the nasal symptoms of seasonal allergic rhinitis",
+  "note": "Management of SAR symptoms counts as treating SAR."
+ },
+ {
+  "id": "e054",
+  "verdict": "TARGET",
+  "quote": "They are also indicated in chronic anterior uveitis",
+  "note": "Chronic iritis is chronic anterior uveitis (neomycin/corticosteroid combination)."
+ },
+ {
+  "id": "e154",
+  "verdict": "TARGET",
+  "quote": "Idiopathic thrombocytopenic purpura in adults Secondary thrombocytopenia in adults",
+  "note": "Thrombocytopenia is a near parent of listed indicated forms."
+ },
+ {
+  "id": "e165",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label indicates systemic hypertension only; pulmonary arterial hypertension is not mentioned and not a subtype."
+ },
+ {
+  "id": "e032",
+  "verdict": "TARGET",
+  "quote": "allergic corneal marginal ulcers",
+  "note": "Edge is a near parent of the listed allergic corneal marginal ulcers; infectious ulcers are not covered."
+ },
+ {
+  "id": "e184",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of acute symptomatic episodes of hypoglycemia",
+  "note": "Named indication."
+ },
+ {
+  "id": "e227",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: headache",
+  "note": "Tension-type headache is a subtype of the OTC headache indication."
+ },
+ {
+  "id": "e189",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in adults (≥ 18 years of age) with infections caused by designated, susceptible bacteria",
+  "note": "Generic 'Infection' is a whole disease class; label covers specific bacterial infections."
+ }
+]

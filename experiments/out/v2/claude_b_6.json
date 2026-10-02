@@ -1,0 +1,224 @@
+[
+ {
+  "id": "e222",
+  "verdict": "TARGET",
+  "quote": "indicated in the control of grand mal, psychomotor, and focal epileptic seizures",
+  "note": "Grand mal seizures are generalized/bilateral tonic-clonic seizures."
+ },
+ {
+  "id": "e229",
+  "verdict": "FP1_setting",
+  "quote": "treatment of asymptomatic T. vaginalis infection in females when the organism is associated with endocervicitis, cervicitis, or cervical erosion",
+  "note": "Cervical erosion is the setting of the treated T. vaginalis infection."
+ },
+ {
+  "id": "e136",
+  "verdict": "TARGET",
+  "quote": "indicated for preoperative medication, support of anesthesia, for obstetrical analgesia",
+  "note": "Obstetrical analgesia is management of labor pain."
+ },
+ {
+  "id": "e219",
+  "verdict": "FP2_symptom_swap",
+  "quote": "management of hypoglycemia due to hyperinsulinism associated with the following conditions",
+  "note": "Drug treats hypoglycemia from hyperinsulinism caused by islet cell carcinoma, not the carcinoma itself."
+ },
+ {
+  "id": "e155",
+  "verdict": "TARGET",
+  "quote": "Complicated urinary tract infections including pyelonephritis.",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e156",
+  "verdict": "TARGET",
+  "quote": "Pancreatic Adenocarcinoma ( 1.4 )",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e077",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin",
+  "note": "Adjunctive indication counts."
+ },
+ {
+  "id": "e282",
+  "verdict": "FP4_overbroad",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD)",
+  "note": "Label names COPD and asthma; bronchial disorder is an organ-system category."
+ },
+ {
+  "id": "e220",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of postmenopausal osteoporosis in patients at risk of vitamin-D insufficiency.",
+  "note": "Vitamin D insufficiency is the patient population; osteoporosis is treated."
+ },
+ {
+  "id": "e157",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment of activated phosphoinositide 3-kinase delta syndrome (APDS)",
+  "note": "Label names APDS only; inborn error of immunity is a whole disease class."
+ },
+ {
+  "id": "e294",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e145",
+  "verdict": "TARGET",
+  "quote": "To control the manifestations of the manic type of manic-depressive illness.",
+  "note": "Manic-depressive illness is bipolar disorder."
+ },
+ {
+  "id": "e152",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are OA, RA, JRA, AS, acute pain, dysmenorrhea; bone pain not mentioned."
+ },
+ {
+  "id": "e020",
+  "verdict": "FP5_negation",
+  "quote": "Not recommended for use to improve glycemic control in patients with type 1 diabetes mellitus.",
+  "note": "Explicit limitation of use for T1DM."
+ },
+ {
+  "id": "e207",
+  "verdict": "TARGET",
+  "quote": "Idiopathic thrombocytopenic purpura in adults",
+  "note": "ITP (immune thrombocytopenia) is autoimmune thrombocytopenia."
+ },
+ {
+  "id": "e255",
+  "verdict": "TARGET",
+  "quote": "Pentazocine and Naloxone Tablets are indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Combination product indication for severe pain counts."
+ },
+ {
+  "id": "e037",
+  "verdict": "FP2_symptom_swap",
+  "quote": "A major depressive episode (DSM-IV) implies a prominent and relatively persistent ... depressed or dysphoric mood",
+  "note": "Label treats MDD; depressed mood is only a symptom in its definition."
+ },
+ {
+  "id": "e125",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension",
+  "note": "Hypertension explicitly indicated."
+ },
+ {
+  "id": "e190",
+  "verdict": "TARGET",
+  "quote": "Diabetic Macular Edema (DME) ( 1.2 ) Macular Edema Following Retinal Vein Occlusion (RVO)",
+  "note": "Macular edema forms are indicated; edge is near parent."
+ },
+ {
+  "id": "e246",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Malignant hypertension is a subtype of indicated hypertension."
+ },
+ {
+  "id": "e203",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label treats systemic hypertension and edema; pulmonary hypertension is not mentioned or a subtype."
+ },
+ {
+  "id": "e153",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets are indicated for relief of mild to moderate pain",
+  "note": "Unqualified pain indication covers chronic widespread pain as a subtype."
+ },
+ {
+  "id": "e060",
+  "verdict": "TARGET",
+  "quote": "Uncomplicated urethritis in men due to Neisseria gonorrhoeae and for the treatment of other gonococcal infections.",
+  "note": "Gonococcal infections indicated."
+ },
+ {
+  "id": "e242",
+  "verdict": "TARGET",
+  "quote": "Angina at rest including: Vasospastic (Prinzmetal's variant) angina Unstable (crescendo, pre-infarction) angina 2. Chronic stable angina",
+  "note": "Angina explicitly indicated."
+ },
+ {
+  "id": "e091",
+  "verdict": "TARGET",
+  "quote": "Dermatographism",
+  "note": "Familial dermatographia is a subtype of indicated dermatographism."
+ },
+ {
+  "id": "e177",
+  "verdict": "TARGET",
+  "quote": "Treatment of schizophrenia in adults",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e260",
+  "verdict": "TARGET",
+  "quote": "Treatment of severely ill patients with schizophrenia who fail to respond adequately to standard antipsychotic treatment.",
+  "note": "Treatment-resistant schizophrenia indicated."
+ },
+ {
+  "id": "e160",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of community-acquired pneumonia",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e087",
+  "verdict": "TARGET",
+  "quote": "congenital (erythroid) hypoplastic anemia (Diamond Blackfan anemia), pure red cell aplasia",
+  "note": "Erythroid hypoplasia is named in hematologic indications."
+ },
+ {
+  "id": "e000",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with moderate-to-severe plaque psoriasis (PsO)",
+  "note": "Plaque psoriasis indicated; psoriasis is near parent."
+ },
+ {
+  "id": "e158",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy in the management of partial seizures",
+  "note": "Partial seizures = focal-onset seizures."
+ },
+ {
+  "id": "e072",
+  "verdict": "TARGET",
+  "quote": "palliative treatment of advanced carcinoma of the breast or endometrium",
+  "note": "Endometrial carcinoma explicitly indicated."
+ },
+ {
+  "id": "e081",
+  "verdict": "FP1_setting",
+  "quote": "radioactive diagnostic agent indicated for positron emission tomography (PET) of prostate-specific membrane antigen (PSMA) positive lesions in men with prostate cancer",
+  "note": "Diagnostic imaging only, not treatment."
+ },
+ {
+  "id": "e003",
+  "verdict": "TARGET",
+  "quote": "Treatment of symptomatic gastroesophageal reflux disease (GERD)",
+  "note": "Explicitly indicated."
+ },
+ {
+  "id": "e187",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Back pain is not mentioned; only endometriosis-associated pain."
+ },
+ {
+  "id": "e025",
+  "verdict": "TARGET",
+  "quote": "treatment of narcolepsy with or without cataplexy",
+  "note": "Narcolepsy without cataplexy explicitly covered."
+ },
+ {
+  "id": "e270",
+  "verdict": "TARGET",
+  "quote": "HR-positive advanced breast cancer in postmenopausal women",
+  "note": "Breast cancer is a breast neoplasm; near-level granularity."
+ }
+]
