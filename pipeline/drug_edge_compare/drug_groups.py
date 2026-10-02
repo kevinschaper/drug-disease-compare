@@ -32,6 +32,8 @@ Negative results are cached too, so dead ends aren't re-fetched.
 from __future__ import annotations
 
 import json
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Protocol
@@ -67,9 +69,16 @@ class Grouping:
 # cached HTTP                                                                  #
 # --------------------------------------------------------------------------- #
 class _Cache:
+    """Thread-safe JSON cache; checkpoints to disk every ``SAVE_EVERY`` new entries so a
+    long cold run (or a flaky upstream) never loses its progress."""
+
+    SAVE_EVERY = 500
+
     def __init__(self, path: str | Path):
         self.path = Path(path)
         self._c: dict[str, object] = {}
+        self._lock = threading.Lock()
+        self._dirty = 0
         if self.path.exists():
             self._c = json.loads(self.path.read_text())
 
@@ -80,10 +89,24 @@ class _Cache:
         return key in self._c
 
     def put(self, key: str, value) -> None:
-        self._c[key] = value if value is not None else _MISS
+        with self._lock:
+            self._c[key] = value if value is not None else _MISS
+            self._dirty += 1
+            checkpoint = self._dirty >= self.SAVE_EVERY
+        if checkpoint:
+            self.save()
 
     def save(self) -> None:
-        self.path.write_text(json.dumps(self._c))
+        with self._lock:
+            text = json.dumps(self._c)
+            self._dirty = 0
+        tmp = self.path.with_suffix(".tmp")
+        tmp.write_text(text)
+        tmp.replace(self.path)
+
+
+class _Transient(Exception):
+    """An upstream timeout / 5xx: retryable, never cached."""
 
 
 def _members(clique: Clique, prefix: str) -> list[str]:
@@ -109,7 +132,14 @@ class _Clients:
         self.cache.save()
 
     def _get_json(self, url: str):
-        r = self._http.get(url)
+        """JSON body, None for a definite miss (4xx / not JSON); raises ``_Transient`` on
+        timeouts and 5xx so the caller doesn't cache an outage as "not found"."""
+        try:
+            r = self._http.get(url)
+        except httpx.TransportError as e:
+            raise _Transient(url) from e
+        if r.status_code >= 500 or r.status_code == 429:
+            raise _Transient(url)
         if r.status_code != 200:
             return None
         try:
@@ -118,20 +148,20 @@ class _Clients:
             return None
 
     # -- GSRS: UNII -> active-moiety [(UNII, name)] --------------------------
+    # (the /relationships sub-resource is ~4x faster than ?view=full)
     def gsrs_active_moiety(self, unii: str) -> list[tuple[str, str]]:
         key = f"gsrs:moiety:{unii}"
         if self.cache.has(key):
             v = self.cache.get(key)
             return [] if v == _MISS else [tuple(p) for p in v]
-        d = self._get_json(f"{GSRS_BASE}/substances({unii})?view=full")
+        d = self._get_json(f"{GSRS_BASE}/substances({unii})/relationships")
         out: list[tuple[str, str]] = []
-        if d:
-            for rel in d.get("relationships", []) or []:
-                if (rel.get("type") or "").upper().startswith("ACTIVE MOIETY"):
-                    rs = rel.get("relatedSubstance", {}) or {}
-                    am = rs.get("approvalID")
-                    if am:
-                        out.append((am, rs.get("refPname") or am))
+        for rel in (d if isinstance(d, list) else []):
+            if (rel.get("type") or "").upper().startswith("ACTIVE MOIETY"):
+                rs = rel.get("relatedSubstance", {}) or {}
+                am = rs.get("approvalID")
+                if am:
+                    out.append((am, rs.get("refPname") or am))
         self.cache.put(key, [list(p) for p in out] or None)
         return out
 
@@ -141,10 +171,30 @@ class _Clients:
         if self.cache.has(key):
             v = self.cache.get(key)
             return None if v == _MISS else v
-        d = self._get_json(f"{GSRS_BASE}/substances({unii})?view=full")
+        d = self._get_json(f"{GSRS_BASE}/substances({unii})")
         formula = ((d or {}).get("structure") or {}).get("formula")
         self.cache.put(key, formula)
         return formula
+
+    # -- RxNav: exact name -> RXCUI ------------------------------------------
+    def rxnorm_by_name(self, name: str) -> str | None:
+        """Exact (search=0) RxNorm concept for a drug name; None if absent/ambiguous.
+
+        Exact-string only: an INN ("adalimumab") or a US/EU brand ("Gemzar") maps,
+        a fuzzy near-miss doesn't. Used to rescue ids the Node Normalizer can't see.
+        """
+        key = f"rxnav:name:{name.lower()}"
+        if self.cache.has(key):
+            v = self.cache.get(key)
+            return None if v == _MISS else v
+        try:
+            d = self._get_json(f"{RXNAV_BASE}/rxcui.json?name={quote(name)}&search=0")
+        except _Transient:
+            return None  # not cached: retried next run
+        ids = ((d or {}).get("idGroup") or {}).get("rxnormId") or []
+        rx = ids[0] if len(ids) == 1 else None
+        self.cache.put(key, rx)
+        return rx
 
     # -- RxNav: RXCUI -> ingredient (IN) -------------------------------------
     def rxnorm_ingredient(self, rxcui: str) -> tuple[str, str] | None:
@@ -260,9 +310,48 @@ class MoietyGrouper:
             un = self.c.rxnorm_unii(rx)
             if un:
                 return [un]
+        # last resort for cliques with neither (brand-name UMLS singletons, ids the
+        # Node Normalizer doesn't know): exact RxNorm name -> its single ingredient ->
+        # UNII. A brand resolves to its ingredient here, which is exactly the kind of
+        # inference this flagged layer exists for.
+        if clique.preferred_label and clique.preferred_label != clique.preferred_id:
+            rx = self.c.rxnorm_by_name(clique.preferred_label)
+            if rx:
+                ing = self.c.rxnorm_ingredient(rx)
+                un = self.c.rxnorm_unii(ing[0] if ing else rx)
+                if un:
+                    return [un]
         return []
 
+    def prefetch(self, cliques: list[Clique], workers: int = 16, rounds: int = 3) -> None:
+        """Warm the lookup cache concurrently (a cold run is ~10k drugs).
+
+        Lookups that hit a transient upstream error are retried for up to ``rounds``
+        passes; anything still failing is left uncached and grouped as itself.
+        """
+        def attempt(c):
+            try:
+                self._group(c)
+                return None
+            except _Transient:
+                return c
+
+        todo = list(cliques)
+        for _ in range(rounds):
+            with ThreadPoolExecutor(workers) as ex:
+                todo = [c for c in ex.map(attempt, todo) if c is not None]
+            self.c.save()
+            if not todo:
+                break
+        self.failed = len(todo)
+
     def group(self, clique: Clique) -> Grouping:
+        try:
+            return self._group(clique)
+        except _Transient:  # an outage outside prefetch: leave it ungrouped
+            return _self(clique)
+
+    def _group(self, clique: Clique) -> Grouping:
         uniis = self._uniis(clique)
         if not uniis:
             return _self(clique)

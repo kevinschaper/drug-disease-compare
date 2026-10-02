@@ -8,6 +8,7 @@ MONDO equivalent (typically HP) keep their preferred CURIE.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Callable
 
 from .mondo import MondoGraph
 from .nodenorm import NodeNorm
@@ -36,6 +37,7 @@ class DrugResolution:
     canonical: str
     label: str
     unii: str = ""   # FDA UNII from the clique, for precise openFDA label matching
+    repaired: bool = False  # unresolved CURIE rescued by exact name (see Reconciler)
 
 
 @dataclass
@@ -48,10 +50,19 @@ class DiseaseResolution:
 
 
 class Reconciler:
-    def __init__(self, nn: NodeNorm, mondo: MondoGraph, node_labels: dict[str, str] | None = None):
+    """``name_to_rxcui`` (optional) rescues drug CURIEs the Node Normalizer doesn't know
+    -- e.g. ChEBI ids minted after its build -- by looking the source's own node name up
+    as an *exact* RxNorm concept and taking that RXCUI's clique. It never touches a CURIE
+    the Node Normalizer resolves, so it repairs identifiers rather than merging drugs.
+    """
+
+    def __init__(self, nn: NodeNorm, mondo: MondoGraph, node_labels: dict[str, str] | None = None,
+                 name_to_rxcui: Callable[[str], str | None] | None = None):
         self.nn = nn
         self.mondo = mondo
         self.node_labels = node_labels or {}
+        self.name_to_rxcui = name_to_rxcui
+        self.repaired: dict[str, str] = {}   # original CURIE -> repaired canonical
         self._drug: dict[str, DrugResolution] = {}
         self._disease: dict[str, DiseaseResolution] = {}
 
@@ -74,9 +85,24 @@ class Reconciler:
             return any(t in DRUG_TYPES for t in c.types)
         return prefix(curie) in DRUG_PREFIXES
 
+    def _repair(self, curie: str):
+        """RXCUI clique for an unresolved drug CURIE via its exact name, else None."""
+        name = self.node_labels.get(curie)
+        if not (self.name_to_rxcui and name):
+            return None
+        rx = self.name_to_rxcui(name)
+        if not rx:
+            return None
+        c = self.nn.clique(f"RXCUI:{rx}")
+        return c if c.resolved else None
+
     def drug(self, curie: str) -> DrugResolution:
         if curie not in self._drug:
             c = self.nn.clique(curie)
+            repaired = False
+            if not c.resolved and (fixed := self._repair(curie)):
+                c, repaired = fixed, True
+                self.repaired[curie] = c.preferred_id
             unii = next((e.split(":", 1)[1] for e in [c.preferred_id, *c.equivalent_ids]
                          if e.startswith("UNII:")), "")
             self._drug[curie] = DrugResolution(
@@ -84,6 +110,7 @@ class Reconciler:
                 canonical=c.preferred_id,
                 label=self._label(c.preferred_id, c.preferred_label),
                 unii=unii,
+                repaired=repaired,
             )
         return self._drug[curie]
 

@@ -110,7 +110,7 @@ def test_three_source_membership(rec):
     assert s["pairwise"]["medic+dakp"]["shared"] == 2
     assert s["pairwise"]["medic+dismech"]["shared"] == 2
     assert s["pairwise"]["dakp+dismech"]["shared"] == 1
-    assert s["contraindication_pairs"] == 1
+    assert s["contraindication_pairs"] == {"medic": 0, "dakp": 1}
 
     pairs = {(p["drug"], p["disease"]): p for p in result["pairs"]}
     # (CHEBI:1, MONDO:2) is DAKP-exact, MEDIC/dismech related via the parent MONDO:1
@@ -150,9 +150,56 @@ def test_moiety_bridge_is_flagged_not_folded(rec):
     res = compare.compare(edges, reconciler, mondo, drug_grouper=g)
     s = res["summary"]
     assert s["agree_2plus"] == 0                     # UNCHANGED — not folded in
-    assert s["moiety"] == {"enabled": True, "new_agreements": 1,
+    assert s["moiety"] == {"enabled": True, "lookup_failures": 0, "new_agreements": 1,
                            "agree_with_moiety": 1, "merged_groups": 1}
     pairs = {(p["drug"], p["disease"]): p for p in res["pairs"]}
     p1 = pairs[("CHEBI:1", "MONDO:0000003")]
     assert p1["drug_group"] == "MOI:X" and p1["n_group"] == 2 and p1["n_exact"] == 1
     assert "dakp via moiety: DrugTwo" in p1["drug_note"]
+
+def test_source_changes_reasons(rec):
+    """old -> new churn is explained: re-grained, drug dropped/new, DAKP status flip."""
+    from drug_edge_compare import changes
+
+    reconciler, mondo = rec
+    old = [
+        _edge("dakp", "biolink:treats", "CHEBI:1", "MONDO:0000001", "approved_for_condition"),
+        _edge("dakp", "biolink:treats", "CHEBI:2", "MONDO:0000003", "approved_for_condition"),
+        _edge("dakp", "biolink:applied_to_treat", "CHEBI:1", "MONDO:0000003", "off_label_use"),
+    ]
+    new = [
+        # CHEBI:1 moved Parent -> Child (1 is-a hop): re-grained, not lost
+        _edge("dakp", "biolink:treats", "CHEBI:1", "MONDO:0000002", "approved_for_condition"),
+        # CHEBI:1 -> M3 promoted off-label -> approved: a status flip
+        _edge("dakp", "biolink:treats", "CHEBI:1", "MONDO:0000003", "approved_for_condition"),
+        # CHEBI:2 gone entirely
+    ]
+    summ, rows, sets = changes.source_changes("dakp", old, new, reconciler, mondo, {})
+    approved = summ["lenses"]["approved"]
+    assert (approved["old"], approved["new"], approved["kept"]) == (2, 2, 0)
+    assert approved["reasons"]["added"] == {"re-grained": 1, "status flip": 1}
+    assert approved["reasons"]["removed"] == {"re-grained": 1, "drug dropped": 1}
+    assert summ["lenses"]["off-label"]["reasons"]["removed"] == {"status flip": 1}
+    assert {r["lens"] for r in rows} == {"approved", "off-label"}
+
+    traj = changes.agreement_trajectory({
+        "medic": {"old": {"treats": {("CHEBI:1", "MONDO:0000001"): {}}}, "new": {"treats": {}}},
+        "dakp": sets,
+        "dismech": {"old": {}, "new": {}},
+    })
+    md = next(t for t in traj if t["pair"] == "MEDIC + DAKP-approved")
+    assert md["old_old"]["shared"] == 1 and md["new_new"]["shared"] == 0
+
+
+def test_diff_lens_regrounded(rec):
+    """Same pair under a sibling CURIE of the same moiety is re-grounded, not drop+add."""
+    from drug_edge_compare import changes
+
+    _, mondo = rec
+    m = {"drug_label": "x", "disease_label": "y"}
+    old = {("CHEBI:salt", "MONDO:0000001"): m, ("CHEBI:gone", "MONDO:0000003"): m}
+    new = {("CHEBI:parent", "MONDO:0000001"): m}
+    moiety = {"CHEBI:salt": "UNII:A", "CHEBI:parent": "UNII:A"}
+    summ, _ = changes._diff_lens(old, new, mondo, {}, group=lambda d: moiety.get(d, d))
+    assert summ["reasons"]["removed"] == {"re-grounded": 1, "drug dropped": 1}
+    assert summ["reasons"]["added"] == {"re-grounded": 1}

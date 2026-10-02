@@ -14,6 +14,7 @@ export default {
   </style>`,
   pages: [
     {name: "Overview", path: "/"},
+    {name: "Version changes", path: "/changes"},
     {name: "Drug coverage", path: "/drugs"},
     {name: "Disease coverage", path: "/diseases"},
     {name: "dismech lens", path: "/dismech"},

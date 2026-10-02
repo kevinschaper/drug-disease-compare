@@ -1,44 +1,92 @@
 # Contraindications
 
-DAKP carries `biolink:contraindicated_in` edges — the **opposite** of a treatment
-relation. MEDIC's indication export has no contraindications, so there is **nothing
-to compare them against yet**; they are surfaced here for completeness and as a
-marker of what a future MEDIC contraindication export could be reconciled against.
-
-These are held entirely apart from the treatment overlap on the other pages: a
-contraindication is never collapsed into the `treats` bucket.
+`contraindicated_in` is the **opposite** of a treatment relation, so it is held entirely
+apart from the indication overlap on the other pages. Since the MeDIC redesign, **both
+MEDIC and DAKP** export contraindications mined from the label's contraindications
+section, so for the first time they can be compared head to head.
 
 ```js
 const contra = await FileAttachment("data/contraindications.json").json();
+const cs = contra.summary;
+const fmt = (n) => n.toLocaleString();
 ```
 
-<div class="grid grid-cols-2">
+<div class="grid grid-cols-4">
   <div class="card">
-    <h2>DAKP contraindication pairs</h2>
-    <span class="big">${contra.summary.pairs.toLocaleString()}</span>
-    drug↛disease (canonical, MONDO-centric)
+    <h2>MEDIC</h2>
+    <span class="big">${fmt(cs.pairs.medic)}</span>
+    contraindication pairs · ${fmt(cs.medic_drugs)} drugs
   </div>
   <div class="card">
-    <h2>MEDIC contraindications</h2>
-    <span class="big">0</span>
-    not in the current indication export
+    <h2>DAKP</h2>
+    <span class="big">${fmt(cs.pairs.dakp)}</span>
+    contraindication pairs · ${fmt(cs.dakp_drugs)} drugs
+  </div>
+  <div class="card">
+    <h2>Shared</h2>
+    <span class="big">${fmt(cs.shared)}</span>
+    exact pairs · Jaccard ${cs.jaccard.toFixed(3)}
+  </div>
+  <div class="card">
+    <h2>Drugs in both</h2>
+    <span class="big">${fmt(cs.shared_drugs)}</span>
+    drugs with contraindications in each source
   </div>
 </div>
 
-## DAKP contraindications
+Pairs are canonical (Node Normalizer cliques, MONDO-preferred) and compared **exactly** —
+no is-a "related" matching here, since a contraindication on a parent disease does not
+imply one on each subtype (or vice versa).
 
-Ranked by `number_of_cases` (FAERS support). Showing up to 1,000 pairs.
+## Indication ↔ contraindication clashes
+
+A pair a source lists as a **contraindication** that some source (possibly the same one)
+also lists as an **indication** (MEDIC, DAKP-approved or dismech; FAERS off-label use doesn't
+count) is a strong lead: usually a negation-scoping or
+section-attribution error in extraction, occasionally a real subpopulation nuance
+("contraindicated in severe X", "indicated for mild X").
+
+<div class="grid grid-cols-2">
+  <div class="card">
+    <h2>MEDIC contraindications that are also indications</h2>
+    <span class="big">${fmt(cs.clash.medic)}</span>
+    of ${fmt(cs.pairs.medic)} · an indication in MEDIC, DAKP-approved or dismech
+  </div>
+  <div class="card">
+    <h2>DAKP contraindications that are also indications</h2>
+    <span class="big">${fmt(cs.clash.dakp)}</span>
+    of ${fmt(cs.pairs.dakp)} · an indication in MEDIC, DAKP-approved or dismech
+  </div>
+</div>
+
+## All contraindication pairs
+
+Agreement first, then clashes, then by DAKP's FAERS case count. Up to 3,000 pairs.
 
 ```js
-const search = view(Inputs.search(contra.rows, {placeholder: "search by drug or disease…"}));
+const which = view(Inputs.radio(["all", "both", "MEDIC only", "DAKP only", "clash"], {label: "Show", value: "all"}));
+```
+
+```js
+const filtered = contra.rows.filter((r) =>
+  which === "all" ? true
+  : which === "both" ? r.medic && r.dakp
+  : which === "MEDIC only" ? r.medic && !r.dakp
+  : which === "DAKP only" ? r.dakp && !r.medic
+  : !!r.treats_in);
+const search = view(Inputs.search(filtered, {placeholder: "search by drug or disease…"}));
 ```
 
 ```js
 Inputs.table(search, {
-  columns: ["drug_label", "drug", "disease_label", "disease", "cases"],
-  header: {drug_label: "Drug", drug: "Drug ID", disease_label: "Disease (contraindicated)", disease: "Disease ID", cases: "FAERS cases"},
-  sort: "cases",
-  reverse: true,
-  rows: 20,
+  columns: ["drug_label", "disease_label", "medic", "dakp", "treats_in", "dakp_cases", "drug", "disease"],
+  header: {drug_label: "Drug", disease_label: "Disease (contraindicated)", medic: "MEDIC", dakp: "DAKP",
+           treats_in: "Indication in", dakp_cases: "FAERS cases", drug: "Drug ID", disease: "Disease ID"},
+  format: {
+    drug_label: (l, i, data) => html`<a href="drug?id=${encodeURIComponent(data[i].drug)}">${l}</a>`,
+    medic: (v) => (v ? "✓" : ""), dakp: (v) => (v ? "✓" : ""),
+  },
+  width: {drug_label: 200, disease_label: 280, medic: 56, dakp: 56, treats_in: 150, dakp_cases: 90},
+  sort: null, rows: 25, select: false,
 })
 ```
