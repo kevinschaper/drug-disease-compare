@@ -36,7 +36,9 @@ support.forEach((s, i) => { s.share = s.n / universeN; s.color = ["#bab0ac", "#6
   <b>Releases compared:</b> MEDIC ${summary.versions.medic} · DAKP ${summary.versions.dakp} ·
   dismech ${summary.versions.dismech}. All three changed substantially since the previous
   build of this site — see <a href="./changes">version changes</a> for how each source moved
-  and which source's release moved each overlap.
+  and which source's release moved each overlap. The MEDIC (MeDIC redesign, a local,
+  unreleased build) and DAKP updates are both <b>in-progress work</b>: read everything here
+  as a snapshot to inform the next iteration of each source, not a final characterization.
 </div>
 
 Every indication pair, grouped by **how many sources assert it**. **Agreement** (≥2

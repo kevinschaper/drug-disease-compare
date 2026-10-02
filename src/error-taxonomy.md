@@ -5,6 +5,13 @@ toc: true
 
 # Error taxonomy — measured against the label
 
+<div class="note">
+  <b>In-progress work.</b> The MEDIC (MeDIC redesign, a local, unreleased build) and DAKP
+  (1.16.0) updates compared here are both under active development. Treat every number on
+  this page as a snapshot of work in progress, to inform the next iteration of each source —
+  not as a final characterization of either resource.
+</div>
+
 Cross-source *agreement* is a useful confidence signal, but it encodes **shared** errors
 (the sources mine the same regulator text with similar methods) and can't see what *every*
 source missed. The stronger arbiter is the regulator text itself. This page measures how

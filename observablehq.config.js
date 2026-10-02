@@ -28,6 +28,6 @@ export default {
   footer:
     'Compares <code>MEDIC</code>, the <code>Drug Approvals KP</code>, and ' +
     '<code>dismech</code> drug→disease edges, reconciled MONDO-centrically via ' +
-    'SRI Node Normalizer cliques.',
+    'SRI Node Normalizer cliques. The MEDIC and DAKP updates are evaluated as in-progress work.',
   toc: true,
 };
