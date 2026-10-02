@@ -26,7 +26,7 @@ const toRows = (t) => Array.from(t, (r) => Object.fromEntries(t.schema.fields.ma
   <div class="card">
     <h2>dismech edges</h2>
     <span class="big">${d.edges.toLocaleString()}</span>
-    drug→disease pairs (CHEBI subset)
+    drug→disease pairs (drug-typed subset)
   </div>
   <div class="card">
     <h2>Corroborated</h2>

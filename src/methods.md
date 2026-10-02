@@ -15,13 +15,16 @@ Results here are feedback on work in progress, not a final assessment of either 
 | Edge meaning | approved **indication** / **contraindication** | observed **application** (incl. off-label) / contraindication | curated **treatment** |
 | Predicate(s) | `treats`, `contraindicated_in` | `applied_to_treat`, `treats`, `contraindicated_in` | `treats_or_applied_or_studied_to_treat` |
 | Provenance per edge | one edge per regulator assertion: authority, verbatim label text, reliability tier | `clinical_approval_status`, `number_of_cases`, SPL setids, application numbers | real per-edge PMIDs + `supporting_text` |
-| Comparable edges | ~14.7k (~10.2k distinct triples) | ~132k | ~3.4k (CHEBI drug subset only) |
+| Comparable edges | ~14.7k (~10.2k distinct triples) | ~132k | ~4.2k (drug-typed subset: ~3.4k CHEBI + ~0.8k NCIT drug concepts) |
 
 MeDIC is described in DeLuca *et al.*, *Nucleic Acids Research* 2026;54(D1):D1477–D1487;
 the redesign is not yet a published release. dismech ships ~105k KGX edges; of its
 ~20k treatment→disease edges, most subjects are NCIT procedures/therapies — only the
-**CHEBI drug subset** is comparable here, kept via a Node-Normalizer drug-type filter. Adding a source is a one-line entry in `SOURCE_ORDER` (+ `DRUG_FILTERED` if its
-"treatment" subjects mix drugs with non-drug modalities) plus a CLI loader.
+**drug-typed subset** is comparable here: every CHEBI subject plus the NCIT subjects whose
+Node Normalizer clique is a drug/chemical type (e.g. NCIT monoclonal-antibody concepts),
+kept via the reconciler's drug-type filter. Adding a source is a one-line entry in
+`SOURCE_ORDER` (+ `DRUG_FILTERED` if its "treatment" subjects mix drugs with non-drug
+modalities) plus a CLI loader.
 
 ## Pipeline
 
@@ -53,8 +56,11 @@ the redesign is not yet a published release. dismech ships ~105k KGX edges; of i
      one exists; terms with no MONDO equivalent keep their preferred CURIE, usually HP).
 
 3. **Build (drug, disease) pairs** per source under the `treats` relation; aggregate
-   DAKP's `clinical_approval_status` (approved beats off-label) + `number_of_cases`,
-   and dismech's per-edge publication count.
+   DAKP's `clinical_approval_status` (approved beats off-label), `number_of_cases`, SPL
+   setids and application numbers; MEDIC's per-regulator label text (FDA/EMA/PMDA/CDSCO)
+   and best reliability tier; and dismech's per-edge PMIDs with supporting text. Edge
+   **context qualifiers** (new in DAKP 1.16: population, sex, anatomy, frequency, timing;
+   MEDIC exports none) are not used — the pair is the unit of comparison.
 
 4. **Per-source membership.** Each pair in the universe records, for every source, a
    status: **exact**, **related** (the source has the same drug on a disease ≤2 MONDO
@@ -64,7 +70,7 @@ the redesign is not yet a published release. dismech ships ~105k KGX edges; of i
 5. **Scope-aware comparison.** Each source has a disease **scope** — where its absence
    is a real signal vs "not covered." Broad sources (MEDIC/DAKP) scope to the diseases
    they assert any drug for; dismech is disease-centric, so its scope is every disease
-   it *curates* (the MONDO terms across all its edges, ~1,150), which is wider than the
+   it *curates* (the MONDO terms across all its edges, ~3,000), which is wider than the
    diseases it has drug edges for. Each pair carries a per-source `_scope` flag, so a
    "source-only" pair is only flagged where the other source actually covers the disease.
 
@@ -79,7 +85,7 @@ real-world use, not an approval, and confounded by indication — so it is **exc
 the headline universe, agreement, and combinations** and read separately on the
 [off-label view](./offlabel). **Agreement** is a pair exact in ≥2 of the indication-grade
 sources. dismech is small and curated, so it overlaps less in absolute terms but is
-high-provenance (every edge cites literature).
+high-provenance (~95% of its drug edges cite at least one paper).
 
 No resource is ground truth. A single-source pair (with no exact *or* related match
 elsewhere) is a **lead to triage** — a coverage gap or an extraction error — not a
@@ -115,9 +121,13 @@ active moiety — see `experiments/drug_collapse.py`. Run with `just build` (def
 - **Contraindication hierarchy.** MEDIC ↔ DAKP [contraindications](./contraindications)
   are compared exactly; an is-a neighbour isn't treated as related, since a
   contraindication doesn't propagate along the disease hierarchy.
-- **Node Normalizer version pinning.** DAKP baked in `node_norm_version 2025sep1`;
-  our re-resolution uses the live endpoint. Pin a dated instance for strict
-  reproducibility. Inputs are otherwise pinned with checksums in `data/MANIFEST.yaml`.
+- **Context qualifiers.** DAKP 1.16's qualifiers are dropped (above). Checked: qualified
+  and unqualified DAKP pairs had indistinguishable error rates in the label audit, and the
+  values are mostly generic ("patients", "adults", dosing frequency), so this doesn't bias
+  the results — but a pediatric-only approval and a general one count as the same pair.
+- **Node Normalizer version pinning.** Our re-resolution uses the live endpoint (cached
+  locally), not the snapshot each source normalized against. Pin a dated instance for
+  strict reproducibility. Inputs are otherwise pinned with checksums in `data/MANIFEST.yaml`.
 
 ## Version changes
 
@@ -130,6 +140,20 @@ flip** (DAKP approved ↔ off-label), **drug new/dropped**, or **changed**. A 2�
 *agreement trajectory* (each source pair at previous/latest × previous/latest) attributes
 a shift in head-to-head overlap to the source whose release moved it.
 
+## Label audit & label check
+
+The [error taxonomy](./error-taxonomy) measures how often an asserted indication edge is
+*not* a genuine treatment target according to regulator text fetched independently — the
+openFDA bulk label export (matched by UNII or shared GSRS active moiety; homeopathic labels
+excluded) and EMA EPAR indications. A seeded sample of 150 edges per source (MEDIC;
+DAKP-approved) was judged blind by two Claude reviewers, a tie-breaker and a co-ingredient
+check, forming a reference. The Jev decision model (TypeSafe, `jev-1.13.0`) was scored
+against that reference with an acceptance bar set in advance; it didn't meet it as a
+stand-alone adjudicator but is well calibrated, so only its verdicts at confidence ≥ 0.9
+back the **Label check** column on the drug and disease pages. dismech isn't audited this
+way: its edges assert literature-backed (including investigational) use, not approvals.
+Full method, rubric and archived verdicts: `experiments/README.md`.
+
 ## Reproducing
 
 ```
@@ -138,6 +162,8 @@ just sync-medic  # copy the latest local MeDIC KGX export in as "new" MEDIC
 just normalize   # resolve every CURIE through the Node Normalizer (cached)
 just build       # reconcile + compare -> src/data/* (pairs.parquet + JSON)
 just changes     # characterize each source's old -> new change -> src/data/changes.*
+# label audit + label check: see experiments/README.md (label_index, audit_sample,
+# reviewer subagents, audit_jev, audit_report)
 just dev         # preview the site locally
 just site        # build the static site to dist/
 ```

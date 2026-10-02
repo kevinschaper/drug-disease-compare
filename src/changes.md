@@ -246,7 +246,7 @@ churnDrugs("dakp", "approved")
 
 dismech is growing, and almost purely additively: it now curates
 ${fmt(X.treats.diseases.new)} diseases with drug edges (was ${fmt(X.treats.diseases.old)}),
-and its CHEBI drug→disease subset went ${fmt(X.treats.old)} → ${fmt(X.treats.new)} pairs
+and its drug→disease subset went ${fmt(X.treats.old)} → ${fmt(X.treats.new)} pairs
 with only ${fmt(X.treats.removed)} removed. Its treatment edges no longer use MAXO medical
 actions as subjects (NCIT + CHEBI only), which doesn't affect the drug subset compared here.
 

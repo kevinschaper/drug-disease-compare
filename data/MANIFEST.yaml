@@ -72,7 +72,7 @@ inputs:
   dismech_edges:
     description: >-
       Monarch dismech KGX edges (mechanism-driven, curated, LLM-extracted with human
-      validation). Only the CHEBI drug subset of its treatment->disease edges
+      validation). Only the drug-typed subset (CHEBI + NCIT drug concepts) of its treatment->disease edges
       (biolink:treats_or_applied_or_studied_to_treat) is comparable to MEDIC/DAKP; it
       is kept via the reconciler's drug filter. Edges carry real per-edge
       publications + supporting_text.
