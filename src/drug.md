@@ -10,6 +10,8 @@ sql:
 
 ```js
 import {comboKey, comboCounts} from "./components/sources.js";
+import {labelCheckCell, labelCheckStyle} from "./components/labelcheck.js";
+display(labelCheckStyle);
 ```
 
 ```js
@@ -34,7 +36,7 @@ const medEv = id ? toRows(await sql`SELECT disease, evidence FROM medev WHERE dr
 const medEvBy = new Map(medEv.map((r) => [r.disease, r.evidence]));
 detail.forEach((r) => { r.indication = medEvBy.get(r.disease) ?? ""; });
 // Jev label check (automated; only verdicts at confidence >= 0.9 -- see Error taxonomy)
-const lcRows = id ? toRows(await sql`SELECT disease, source, verdict FROM lc WHERE drug = ${id} AND confidence >= 0.9 AND verdict NOT IN ('UNVERIFIABLE', 'UNSURE')`) : [];
+const lcRows = id ? toRows(await sql`SELECT disease, source, verdict, confidence FROM lc WHERE drug = ${id} AND confidence >= 0.9 AND verdict NOT IN ('UNVERIFIABLE', 'UNSURE')`) : [];
 const lcBy = d3.group(lcRows, (r) => r.disease);
 detail.forEach((r) => { r.label_check = lcBy.get(r.disease) ?? []; });
 ```
@@ -121,9 +123,6 @@ const dailymedCell = (json) => {
 ```
 
 <style>
-.lc { display: inline-block; font-size: 11px; padding: 0 5px; margin-right: 3px; border-radius: 4px; white-space: nowrap; }
-.lc-ok { background: color-mix(in srgb, #3a7d34 18%, transparent); }
-.lc-fp { background: color-mix(in srgb, #b4423a 22%, transparent); font-weight: 600; }
 .agency-chip {
   appearance: none; font: inherit; color: inherit;
   display: inline-block; padding: 0 6px; border-radius: 6px;
@@ -227,27 +226,24 @@ its supporting text (both pin a copyable panel). The **DailyMed / FDA** column l
 underlying evidence — each `SPL` opens the DailyMed product label, each `NDA/ANDA` opens the
 Drugs@FDA approval record. **Label check** is an automated screen (the Jev decision
 model, shown only at confidence ≥ 0.9) of the pair against independently fetched FDA/EMA
-label text, per source: `M`/`D` = MEDIC / DAKP-approved, ✓ a genuine indication, ⚠ a likely
-error with its [type](./error-taxonomy). About 9 in 10 of its flags hold up on review — a
+label text, per source: ✓ a genuine indication, ⚠ a likely error with its [type](./error-taxonomy) —
+**hover a chip** for what it means. About 9 in 10 of its flags hold up on review — a
 lead, not a verdict.
 
 ```js
 // shared table renderer. Explicit column widths so long disease names (and the
 // hierarchy note) don't truncate.
-const lcCell = (checks) => checks.length
-  ? html`${checks.map((c) => html`<span class="lc ${c.verdict === "TARGET" ? "lc-ok" : "lc-fp"}" title="${c.source === "medic" ? "MEDIC" : "DAKP-approved"}: ${c.verdict} (Jev, confidence ≥ 0.9)">${c.source === "medic" ? "M" : "D"} ${c.verdict === "TARGET" ? "✓" : "⚠ " + c.verdict.split("_")[0]}</span>`)}`
-  : "";
 const renderTable = (rows) => Inputs.table(rows, {
   columns: ["disease", "disease_prefix", "medic", "indication", "medic_reliability", "label_check", "dakp", "dismech", "dakp_status", "dakp_evidence", "cases", "dismech_evidence", "n_exact", "note"],
   header: {disease: "Disease", disease_prefix: "Space", medic: "MEDIC", indication: "MEDIC label", medic_reliability: "MEDIC tier", label_check: "Label check", dakp: "DAKP", dismech: "dismech", dakp_status: "DAKP status", dakp_evidence: "DailyMed / FDA", cases: "FAERS cases", dismech_evidence: "dismech refs", n_exact: "n", note: "Hierarchy note"},
   format: {
     disease: (cid) => html`<a href="disease?id=${encodeURIComponent(cid)}">${diseaseLabel.get(cid) ?? cid}</a>`,
     indication: (json) => agencyCell(json),
-    label_check: lcCell,
+    label_check: labelCheckCell,
     dakp_evidence: (json) => dailymedCell(json),
     dismech_evidence: (json) => dismechCell(json),
   },
-  width: {disease: 400, disease_prefix: 60, medic: 60, indication: 110, medic_reliability: 80, label_check: 110, dakp: 60, dismech: 70, dakp_status: 150, dakp_evidence: 150, cases: 80, dismech_evidence: 110, n_exact: 36, note: 220},
+  width: {disease: 400, disease_prefix: 60, medic: 60, indication: 110, medic_reliability: 80, label_check: 150, dakp: 60, dismech: 70, dakp_status: 150, dakp_evidence: 150, cases: 80, dismech_evidence: 110, n_exact: 36, note: 220},
   sort: "n_exact", reverse: true, rows: 100, maxWidth: width,
 });
 ```
