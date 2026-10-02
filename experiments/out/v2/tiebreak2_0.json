@@ -1,0 +1,146 @@
+[
+ {
+  "id": "f011",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of mild to moderate dementia of the Alzheimer's type",
+  "note": "Benzgalantamine's active moiety is galantamine and every supplied galantamine label names Alzheimer-type dementia as the indication."
+ },
+ {
+  "id": "f043",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the treatment of panic disorder, with or without agoraphobia",
+  "note": "The label treats panic disorder; panic attacks are only described as its defining manifestation, a reverse symptom swap."
+ },
+ {
+  "id": "f055",
+  "verdict": "FP4_overbroad",
+  "quote": "Systemic lupus erythematosus Acute rheumatic carditis",
+  "note": "Only acute rheumatic carditis is indicated; generic heart-layer inflammation (carditis incl. infective endo/myo/pericarditis) is a much broader class."
+ },
+ {
+  "id": "f091",
+  "verdict": "TARGET",
+  "quote": "As pituitary TSH suppressants, in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis (Hashimoto’s), multinodular goiter",
+  "note": "One supplied label explicitly indicates euthyroid/multinodular goiter; the newer negation covers only nontoxic diffuse goiter in iodine-sufficient patients, and texts are a union."
+ },
+ {
+  "id": "f117",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Phenobarbital controls anxiety, decreases muscular activity and lessens nervous excitability in hyperthyroid patients.",
+  "note": "Phenobarbital sedates the anxiety/excitability manifestations of hyperthyroidism rather than treating the thyroid disease itself."
+ },
+ {
+  "id": "f145",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels indicate rheumatoid arthritis (joint disease) only; interstitial lung disease is never mentioned and RA-ILD is not a form of the arthritis being treated."
+ },
+ {
+  "id": "f156",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD)",
+  "note": "Only ADHD is indicated; 'atypical behavior' is a broad behavioral phenotype category, and the warnings mention of behavior disturbance is not the basis for the claim."
+ },
+ {
+  "id": "f218",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the treatment of mild-to-moderate dementia associated with Parkinson’s disease (PDD)",
+  "note": "The label treats the dementia manifestation of Parkinson's disease, not Parkinson's disease itself."
+ },
+ {
+  "id": "f254",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Generic mild-to-moderate pain indication covers testicular pain as a narrower specific form of pain."
+ },
+ {
+  "id": "f263",
+  "verdict": "FP6_coingredient",
+  "quote": "Nystatin and Triamcinolone Acetonide Cream and Ointment are indicated for the treatment of cutaneous candidiasis",
+  "note": "The only antifungal indication is on the nystatin/triamcinolone combination and belongs to nystatin; elsewhere fungal infections appear only in warnings."
+ },
+ {
+  "id": "f270",
+  "verdict": "FP1_setting",
+  "quote": "in adults with type 2 diabetes mellitus and established cardiovascular disease (CVD)",
+  "note": "Cardiovascular disease appears literally as the population; the treated targets are specific MACE events, mirroring the rubric's CHD example."
+ },
+ {
+  "id": "f332",
+  "verdict": "FP5_negation",
+  "quote": "There are no controlled trials demonstrating risk reduction with quinapril tablets USP.",
+  "note": "Stroke reduction is cited only as an antihypertensive class benefit and the label explicitly says it has not been demonstrated for quinapril."
+ },
+ {
+  "id": "f421",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with acute myeloid leukemia (AML)",
+  "note": "Myeloid leukemia is a near parent that essentially describes the indicated AML, not a whole organ-system or broad disease class."
+ },
+ {
+  "id": "f490",
+  "verdict": "TARGET",
+  "quote": "For the temporary relief of pain",
+  "note": "The topical OTC indication is generic local pain relief, which covers scar pain as a narrower localized pain."
+ },
+ {
+  "id": "f515",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids.",
+  "note": "Ocular cicatricial pemphigoid is a specific ocular (conjunctival) inflammatory condition within the indicated corticosteroid-responsive class."
+ },
+ {
+  "id": "f573",
+  "verdict": "TARGET",
+  "quote": "in combination with other approved chemotherapeutic agents as first line treatment in patients with small cell lung cancer",
+  "note": "Small cell lung cancer is indicated and the recurrent form is a narrower subtype; the first-line qualifier is not an explicit negation."
+ },
+ {
+  "id": "f608",
+  "verdict": "FP1_setting",
+  "quote": "Management of postherpetic neuralgia in adults",
+  "note": "Gabapentin manages neuralgia following herpes zoster; the viral infection is only the past background, not the thing treated."
+ },
+ {
+  "id": "f630",
+  "verdict": "FP2_symptom_swap",
+  "quote": "A manic episode is a distinct period of abnormally and persistently elevated, expansive, or irritable mood.",
+  "note": "Anger/irritability/hostility appear only as manifestations of mania, which is what valproate is indicated to treat."
+ },
+ {
+  "id": "f671",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in the treatment of serious infections caused by susceptible strains of the following microorganisms",
+  "note": "Gentamicin is restricted to serious infections by susceptible bacteria; generic 'Infection' is a whole disease class including viral, fungal and parasitic infections."
+ },
+ {
+  "id": "f690",
+  "verdict": "TARGET",
+  "quote": "reduces the rate of progression of nephropathy as measured by the occurrence of doubling of serum creatinine or end stage renal disease",
+  "note": "The label claims losartan reduces occurrence of end-stage renal disease in diabetic nephropathy, a prevention claim for ESRD."
+ },
+ {
+  "id": "f746",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate to severe vasomotor symptoms (VMS) due to menopause",
+  "note": "Treating vasomotor symptoms of menopause manages the menopausal syndrome, and artificially induced menopause is a narrower form not excluded."
+ },
+ {
+  "id": "f809",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Management of a disease's pain counts per the rubric, and CRPS pain falls under the generic severe-pain indication."
+ },
+ {
+  "id": "f865",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH, WHO Group I)",
+  "note": "Only PAH is indicated; 'heart disorder' is an organ-system category, with congenital heart disease mentioned only as clinical-study background."
+ },
+ {
+  "id": "f887",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Deficient spermatogenesis due to hypogonadotrophic hypogonadism.",
+  "note": "The EMA text treats deficient spermatogenesis (and infertility) caused by hypogonadism, not the hypogonadism itself."
+ }
+]

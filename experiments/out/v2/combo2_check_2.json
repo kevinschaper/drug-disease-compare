@@ -1,0 +1,302 @@
+[
+ {
+  "id": "f017",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of bursitis",
+  "note": "Single-ingredient naproxen labels list bursitis directly."
+ },
+ {
+  "id": "f041",
+  "verdict": "TARGET",
+  "quote": "Treatment of glucocorticoid-induced osteoporosis",
+  "note": "Single-ingredient alendronate label covers glucocorticoid-induced (corticosteroid-induced) osteoporosis."
+ },
+ {
+  "id": "f068",
+  "verdict": "TARGET",
+  "quote": "Gastrointestinal Infections caused by Salmonella typhi (typhoid fever)",
+  "note": "Single-ingredient ampicillin label lists typhoid fever."
+ },
+ {
+  "id": "f080",
+  "verdict": "TARGET",
+  "quote": "in the treatment of the symptoms of idiopathic Parkinson’s disease (paralysis agitans), postencephalitic parkinsonism",
+  "note": "Single-ingredient carbidopa (Lodosyn) label names postencephalitic parkinsonism, used with levodopa."
+ },
+ {
+  "id": "f091",
+  "verdict": "TARGET",
+  "quote": "in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis (Hashimoto’s), multinodular goiter",
+  "note": "Goiter appears only on thyroid (T4+T3) combination labels where TSH suppression is attributable to levothyroxine itself; note single-ingredient labels exclude nontoxic diffuse goiter in iodine-sufficient patients."
+ },
+ {
+  "id": "f101",
+  "verdict": "TARGET",
+  "quote": "control of ventricular rate at rest and during stress in patients with chronic atrial flutter and/or atrial fibrillation",
+  "note": "Single-ingredient verapamil label lists atrial flutter."
+ },
+ {
+  "id": "f119",
+  "verdict": "TARGET",
+  "quote": "Non-Small Cell Lung Cancer (NSCLC)",
+  "note": "Single-ingredient nivolumab (Opdivo) label covers NSCLC."
+ },
+ {
+  "id": "f142",
+  "verdict": "TARGET",
+  "quote": "Herpes zoster ophthalmicus",
+  "note": "Single-ingredient dexamethasone label lists herpes zoster ophthalmicus."
+ },
+ {
+  "id": "f162",
+  "verdict": "TARGET",
+  "quote": "congenital or acquired hypothyroidism",
+  "note": "Single-ingredient liothyronine label covers congenital hypothyroidism."
+ },
+ {
+  "id": "f206",
+  "verdict": "TARGET",
+  "quote": "in anaphylaxis as an adjunct to epinephrine and other standard measures",
+  "note": "Single-ingredient diphenhydramine injection lists anaphylaxis (adjunct)."
+ },
+ {
+  "id": "f215",
+  "verdict": "TARGET",
+  "quote": "Ankylosing spondylitis",
+  "note": "Single-ingredient dexamethasone label lists ankylosing spondylitis, a subtype of spondylitis."
+ },
+ {
+  "id": "f227",
+  "verdict": "TARGET",
+  "quote": "Edematous States To induce a diuresis or remission of proteinuria in the nephrotic syndrome",
+  "note": "Single-ingredient hydrocortisone label lists edematous states."
+ },
+ {
+  "id": "f241",
+  "verdict": "TARGET",
+  "quote": "rashes due to poison ivy, poison oak, and poison sumac",
+  "note": "Single-ingredient topical diphenhydramine labels list poison ivy rash."
+ },
+ {
+  "id": "f256",
+  "verdict": "TARGET",
+  "quote": "Tobramycin for Injection is indicated for the treatment of bone infections caused by susceptible isolates",
+  "note": "Single-ingredient tobramycin label covers bone infections, i.e. osteomyelitis."
+ },
+ {
+  "id": "f276",
+  "verdict": "TARGET",
+  "quote": "seizures associated with Lennox-Gastaut syndrome (LGS)",
+  "note": "Single-ingredient topiramate label lists LGS."
+ },
+ {
+  "id": "f292",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for the treatment of acute hyperammonemia and associated encephalopathy",
+  "note": "Only label is sodium phenylacetate/sodium benzoate, where benzoate is itself a co-active nitrogen-binding agent, so the indication is attributable to benzoic acid."
+ },
+ {
+  "id": "f316",
+  "verdict": "TARGET",
+  "quote": "Rheumatic fever and/or chorea —Prophylaxis with penicillin G benzathine has proven effective",
+  "note": "Single-ingredient penicillin G label covers rheumatic fever prophylaxis."
+ },
+ {
+  "id": "f334",
+  "verdict": "TARGET",
+  "quote": "fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy",
+  "note": "Single-ingredient prednisolone label lists pulmonary tuberculosis (adjunct)."
+ },
+ {
+  "id": "f349",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of conjunctivitis and other superficial ocular infections",
+  "note": "Single-ingredient sulfacetamide label lists conjunctivitis."
+ },
+ {
+  "id": "f360",
+  "verdict": "TARGET",
+  "quote": "superficial punctate keratitis",
+  "note": "Single-ingredient loteprednol label lists superficial punctate keratitis, matching punctate epithelial keratoconjunctivitis."
+ },
+ {
+  "id": "f374",
+  "verdict": "TARGET",
+  "quote": "generalized myasthenia gravis (gMG) chronic inflammatory demyelinating polyneuropathy (CIDP)",
+  "note": "CIDP appears only on efgartigimod/hyaluronidase (Vyvgart Hytrulo), where hyaluronidase is just a dispersion enzyme so the indication belongs to efgartigimod."
+ },
+ {
+  "id": "f395",
+  "verdict": "TARGET",
+  "quote": "Lower Respiratory Tract Infections , including pneumonia and bronchitis",
+  "note": "Single-ingredient aztreonam label lists bronchitis."
+ },
+ {
+  "id": "f419",
+  "verdict": "TARGET",
+  "quote": "serious intra-abdominal infections including peritonitis",
+  "note": "Single-ingredient clindamycin label lists peritonitis."
+ },
+ {
+  "id": "f430",
+  "verdict": "TARGET",
+  "quote": "secondary amenorrhea and abnormal uterine bleeding due to hormonal imbalance",
+  "note": "Single-ingredient medroxyprogesterone label lists abnormal uterine bleeding."
+ },
+ {
+  "id": "f449",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of myocardial infarction",
+  "note": "Single-ingredient atorvastatin label covers MI risk reduction."
+ },
+ {
+  "id": "f468",
+  "verdict": "TARGET",
+  "quote": "help restore normal serum potassium levels in patients who develop hypokalemia on the kaliuretic diuretic",
+  "note": "Single-ingredient amiloride label covers hypokalemia (potassium deficiency)."
+ },
+ {
+  "id": "f482",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves these symptoms due to hay fever or other upper respiratory allergies: o runny nose o sneezing",
+  "note": "Single-ingredient diphenhydramine label covers hay fever (allergic rhinitis)."
+ },
+ {
+  "id": "f503",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of malaria",
+  "note": "Single-ingredient doxycycline label lists malaria prophylaxis."
+ },
+ {
+  "id": "f515",
+  "verdict": "TARGET",
+  "quote": "Severe acute and chronic allergic and inflammatory processes involving the eye and its adnexa such as",
+  "note": "Ocular cicatricial pemphigoid is not named but falls under the single-ingredient hydrocortisone ophthalmic inflammatory category; the combination text plays no role."
+ },
+ {
+  "id": "f531",
+  "verdict": "TARGET",
+  "quote": "Lymphogranuloma venereum caused by Chlamydia trachomatis",
+  "note": "Single-ingredient doxycycline label lists LGV."
+ },
+ {
+  "id": "f553",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD)",
+  "note": "Single-ingredient tiotropium label lists COPD."
+ },
+ {
+  "id": "f559",
+  "verdict": "TARGET",
+  "quote": "Post-traumatic osteoarthritis Synovitis of osteoarthritis",
+  "note": "Single-ingredient hydrocortisone label lists osteoarthritis indications."
+ },
+ {
+  "id": "f563",
+  "verdict": "TARGET",
+  "quote": "indicated in the management of hypertension either as the sole therapeutic agent",
+  "note": "Single-ingredient chlorthalidone label lists hypertension."
+ },
+ {
+  "id": "f600",
+  "verdict": "TARGET",
+  "quote": "Allergic conjunctivitis.",
+  "note": "Single-ingredient corticotropin label lists allergic conjunctivitis, of which atopic conjunctivitis is a subtype."
+ },
+ {
+  "id": "f629",
+  "verdict": "TARGET",
+  "quote": "idiopathic bronchiolitis obliterans with organizing pneumonia",
+  "note": "Single-ingredient prednisone label lists a bronchiolitis subtype."
+ },
+ {
+  "id": "f646",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Single-ingredient pseudoephedrine label covers upper respiratory nasal symptoms."
+ },
+ {
+  "id": "f665",
+  "verdict": "TARGET",
+  "quote": "acute and subacute bursitis",
+  "note": "Found only on betamethasone sodium phosphate/betamethasone acetate (Celestone Soluspan), where both ingredients are betamethasone, so it is attributable to the drug."
+ },
+ {
+  "id": "f685",
+  "verdict": "TARGET",
+  "quote": "NOVOLIN R is indicated to improve glycemic control in adults and pediatric patients with diabetes mellitus",
+  "note": "Single-ingredient human insulin labels cover diabetes mellitus, including type 1."
+ },
+ {
+  "id": "f700",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of repetitive paroxysmal supraventricular tachycardia",
+  "note": "Single-ingredient verapamil label lists PSVT."
+ },
+ {
+  "id": "f724",
+  "verdict": "TARGET",
+  "quote": "as an adjunct to diet to reduce TG levels in adult patients with severe (≥ 500 mg/dL) hypertriglyceridemia",
+  "note": "Single-ingredient icosapent ethyl label lists hypertriglyceridemia."
+ },
+ {
+  "id": "f738",
+  "verdict": "TARGET",
+  "quote": "congenital or acquired hypothyroidism",
+  "note": "Single-ingredient levothyroxine label covers congenital hypothyroidism."
+ },
+ {
+  "id": "f755",
+  "verdict": "TARGET",
+  "quote": "partial onset or primary generalized tonic-clonic seizures",
+  "note": "Occipital lobe epilepsy is a focal (partial-onset) epilepsy covered by single-ingredient topiramate labels."
+ },
+ {
+  "id": "f797",
+  "verdict": "TARGET",
+  "quote": "Nosocomial pneumonia in adult and pediatric patients 2 months of age and older",
+  "note": "Only label is piperacillin/tazobactam, where piperacillin is the antibacterial and tazobactam the beta-lactamase inhibitor, so respiratory infection is attributable to piperacillin."
+ },
+ {
+  "id": "f809",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the management of pain severe enough to require an opioid analgesic",
+  "note": "Single-ingredient oxycodone covers severe pain generally, including CRPS pain; the combination text is not needed."
+ },
+ {
+  "id": "f822",
+  "verdict": "TARGET",
+  "quote": "herpes zoster keratitis",
+  "note": "Single-ingredient loteprednol label lists herpes zoster keratitis."
+ },
+ {
+  "id": "f838",
+  "verdict": "TARGET",
+  "quote": "ZEPATIER ® is indicated for the treatment of chronic hepatitis C virus (HCV) genotype 1 or 4 infection",
+  "note": "Only label is elbasvir/grazoprevir, where grazoprevir is an HCV NS3/4A protease inhibitor that actively contributes to the HCV indication."
+ },
+ {
+  "id": "f850",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis; acute rheumatic carditis; ankylosing spondylitis; psoriatic arthritis; rheumatoid arthritis",
+  "note": "Found only on betamethasone sodium phosphate/acetate labels, where both ingredients are betamethasone, so it is attributable to the drug."
+ },
+ {
+  "id": "f857",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Single-ingredient buprenorphine covers severe persistent pain generally, including facial pain; the combination text is not needed."
+ },
+ {
+  "id": "f877",
+  "verdict": "TARGET",
+  "quote": "blastomycosis, coccidioidomycosis, histoplasmosis, chromomycosis, and paracoccidioidomycosis",
+  "note": "Single-ingredient ketoconazole label lists coccidioidomycosis."
+ },
+ {
+  "id": "f895",
+  "verdict": "TARGET",
+  "quote": "Actinomycosis caused by Actinomyces species",
+  "note": "Single-ingredient tetracycline label lists actinomycosis."
+ }
+]

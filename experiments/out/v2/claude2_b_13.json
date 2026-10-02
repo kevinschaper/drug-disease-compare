@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f788",
+  "verdict": "TARGET",
+  "quote": "specifically intended to treat potentially life-threatening fungal infections",
+  "note": "Label lists life-threatening fungal infections; edge is a near parent of the listed mycoses."
+ },
+ {
+  "id": "f640",
+  "verdict": "FP1_setting",
+  "quote": "to reduce risk of stroke and systemic embolism in nonvalvular atrial fibrillation",
+  "note": "Heart conditions (AF, CAD, congenital heart disease) appear only as patient populations; the treated targets are thromboembolic events."
+ },
+ {
+  "id": "f239",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with severe aplastic anemia who have had an insufficient response to immunosuppressive therapy",
+  "note": "Severe aplastic anemia explicitly indicated."
+ },
+ {
+  "id": "f023",
+  "verdict": "TARGET",
+  "quote": "indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE)",
+  "note": "HAE attack prophylaxis is an explicit indication."
+ },
+ {
+  "id": "f067",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Topotecan text covers SCLC and cervical carcinoma only; ovarian cancer not mentioned."
+ },
+ {
+  "id": "f012",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease appears only in generic boilerplate about other antihypertensives; not a valsartan indication."
+ },
+ {
+  "id": "f278",
+  "verdict": "TARGET",
+  "quote": "indicated for the radical cure (prevention of relapse) of vivax malaria",
+  "note": "Vivax malaria explicitly indicated."
+ },
+ {
+  "id": "f273",
+  "verdict": "FP3_cross_section",
+  "quote": "persistent or chronic cough such as occurs with smoking, asthma, chronic bronchitis or emphysema",
+  "note": "Bronchitis appears only in the ask-a-doctor warning; indications are cough/bronchial irritation with a cold."
+ },
+ {
+  "id": "f783",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia, temporal arteritis, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids",
+  "note": "Uveitis is a listed ophthalmic indication."
+ },
+ {
+  "id": "f103",
+  "verdict": "TARGET",
+  "quote": "Proteus mirabilis Pseudomonas aeruginosa CORNEAL ULCERS",
+  "note": "Ophthalmic label lists CORNEAL ULCERS as a treated condition."
+ },
+ {
+  "id": "f450",
+  "verdict": "TARGET",
+  "quote": "Acute and subacute bursitis",
+  "note": "Bursitis is a listed rheumatic indication."
+ },
+ {
+  "id": "f774",
+  "verdict": "FP5_negation",
+  "quote": "should not be used to treat type 1 diabetes or diabetic ketoacidosis, as it would not be effective in these settings",
+  "note": "Type 1 diabetes explicitly excluded."
+ },
+ {
+  "id": "f625",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Chest pain is a subtype of the broadly indicated severe pain."
+ },
+ {
+  "id": "f857",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Facial pain is a subtype of the broadly indicated severe persistent pain."
+ },
+ {
+  "id": "f052",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of symptoms of intermittent claudication",
+  "note": "Intermittent claudication explicitly indicated."
+ },
+ {
+  "id": "f879",
+  "verdict": "FP1_setting",
+  "quote": "radioactive diagnostic agent indicated as an adjunct to other diagnostic evaluations",
+  "note": "Diagnostic imaging agent; DLB is the population being evaluated, not treated."
+ },
+ {
+  "id": "f665",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis",
+  "note": "Subacute bursitis explicitly listed."
+ },
+ {
+  "id": "f467",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only use is prevention of dental cavities; dentin sensitivity not mentioned."
+ },
+ {
+  "id": "f488",
+  "verdict": "TARGET",
+  "quote": "Efficacy has been shown in a PAH population including idiopathic and heritable PAH",
+  "note": "EMA indication is PAH; heritable PAH is a subtype explicitly named."
+ },
+ {
+  "id": "f509",
+  "verdict": "TARGET",
+  "quote": "treatment or prevention of bronchospasm in adults, adolescents, and children 6 years of age and older with reversible obstructive airway disease",
+  "note": "Asthma is a form of the indicated reversible obstructive airway disease."
+ },
+ {
+  "id": "f630",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Anger is not an indication; only irritable mood/aggressiveness described as mania symptoms."
+ },
+ {
+  "id": "f766",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only use is moisturizing dry nasal passages; salicylate poisoning not mentioned."
+ },
+ {
+  "id": "f070",
+  "verdict": "TARGET",
+  "quote": "symptoms of hay fever or other upper respiratory allergies: runny nose sneezing nasal congestion",
+  "note": "Hay fever (allergic rhinitis) symptom relief is an indicated use."
+ },
+ {
+  "id": "f861",
+  "verdict": "FP1_setting",
+  "quote": "indicated for intravenous administration to infants for treatment of dehydration, acidosis, diarrhea, and burns",
+  "note": "Multi-electrolyte fluid therapy is supportive care; burns are the underlying illness, not the phosphate target."
+ },
+ {
+  "id": "f759",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with insomnia, characterized by difficulties with sleep onset and/or sleep maintenance",
+  "note": "Paradoxical insomnia is a subtype of indicated insomnia."
+ },
+ {
+  "id": "f171",
+  "verdict": "TARGET",
+  "quote": "advanced mycosis fungoides (cutaneous T cell lymphoma)",
+  "note": "Cutaneous T-cell lymphoma explicitly named."
+ },
+ {
+  "id": "f635",
+  "verdict": "TARGET",
+  "quote": "For the treatment of most athlete's foot (tinea pedis), jock itch (tinea cruris), ringworm (tinea corporis)",
+  "note": "Tinea infections explicitly indicated."
+ },
+ {
+  "id": "f769",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with multiple myeloma and patients with documented bone metastases from solid tumors",
+  "note": "Multiple myeloma named in the indication."
+ },
+ {
+  "id": "f090",
+  "verdict": "TARGET",
+  "quote": "reduce the risk of acute urinary retention (AUR)",
+  "note": "Risk reduction (prevention) of AUR is an explicit indication goal."
+ },
+ {
+  "id": "f352",
+  "verdict": "TARGET",
+  "quote": "may be used in patients with chronic open-angle glaucoma and intraocular hypertension",
+  "note": "Open-angle glaucoma indicated; glaucoma is a near parent."
+ },
+ {
+  "id": "f721",
+  "verdict": "TARGET",
+  "quote": "found useful in the treatment of acute non-lymphocytic leukemia and the blast phase of chronic myelocytic leukemia",
+  "note": "Blast-phase CML named in indications; CML is a near parent."
+ },
+ {
+  "id": "f014",
+  "verdict": "TARGET",
+  "quote": "to reduce LDL-C in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "HeFH explicitly named on the bempedoic acid (NEXLETOL) label."
+ },
+ {
+  "id": "f396",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic rhinosinusitis with nasal polyps in adult patients 18 years of age and older",
+  "note": "Nasal polyps explicitly treated."
+ },
+ {
+  "id": "f449",
+  "verdict": "TARGET",
+  "quote": "atorvastatin is indicated to: Reduce the risk of myocardial infarction",
+  "note": "MI risk reduction is an explicit atorvastatin indication."
+ },
+ {
+  "id": "f397",
+  "verdict": "TARGET",
+  "quote": "treatment of refractory hypotension in adults with septic or other distributive shock",
+  "note": "Treating the defining hypotension of distributive shock is shock management."
+ },
+ {
+  "id": "f534",
+  "verdict": "TARGET",
+  "quote": "indicated in adult patients for treatment of urinary tract infections caused by Escherichia coli",
+  "note": "Bacterial UTI explicitly indicated."
+ },
+ {
+  "id": "f479",
+  "verdict": "TARGET",
+  "quote": "for patients with HES and/or CEL who are FIP1L1-PDGFRα fusion kinase negative or unknown",
+  "note": "HES indicated including fusion-negative/unknown (idiopathic) cases."
+ },
+ {
+  "id": "f043",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the treatment of panic disorder, with or without agoraphobia",
+  "note": "Label treats panic disorder; panic attack is its manifestation."
+ },
+ {
+  "id": "f826",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with high-risk early-stage triple-negative breast cancer (TNBC)",
+  "note": "TNBC explicitly indicated."
+ },
+ {
+  "id": "f084",
+  "verdict": "TARGET",
+  "quote": "Relief of the signs and symptoms of osteoarthritis (OA)",
+  "note": "OA symptom management counts per rubric."
+ },
+ {
+  "id": "f494",
+  "verdict": "TARGET",
+  "quote": "indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE)",
+  "note": "HAE type 3 is a subtype of indicated HAE."
+ },
+ {
+  "id": "f101",
+  "verdict": "TARGET",
+  "quote": "control of ventricular rate at rest and during stress in patients with chronic atrial flutter and/or atrial fibrillation",
+  "note": "Rate control of atrial flutter is management of the arrhythmia."
+ },
+ {
+  "id": "f068",
+  "verdict": "TARGET",
+  "quote": "Gastrointestinal Infections caused by Salmonella typhi (typhoid fever)",
+  "note": "Typhoid fever explicitly named."
+ },
+ {
+  "id": "f026",
+  "verdict": "TARGET",
+  "quote": "stimulate respiration in patients with drug-induced postanesthesia respiratory depression or apnea",
+  "note": "Postanesthesia apnea indicated; apnea is a near parent."
+ },
+ {
+  "id": "f500",
+  "verdict": "TARGET",
+  "quote": "Hypogonadotropic hypogonadism (congenital or acquired)",
+  "note": "Congenital HH indicated; HH12 is a subtype."
+ }
+]

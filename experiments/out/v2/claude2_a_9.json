@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f586",
+  "verdict": "TARGET",
+  "quote": "mycosis fungoides (advanced disease)",
+  "note": "Cyclophosphamide label lists mycosis fungoides among indicated malignancies."
+ },
+ {
+  "id": "f649",
+  "verdict": "TARGET",
+  "quote": "Diazepam is indicated for the management of anxiety disorders",
+  "note": "Anxiety disorders explicitly indicated."
+ },
+ {
+  "id": "f499",
+  "verdict": "TARGET",
+  "quote": "Paroxetine Tablets are indicated for the treatment of Posttraumatic Stress Disorder (PTSD).",
+  "note": "PTSD explicitly indicated."
+ },
+ {
+  "id": "f644",
+  "verdict": "FP5_negation",
+  "quote": "remission of proteinuria in the nephrotic syndrome, without uremia",
+  "note": "Uremia appears only as an explicit exclusion from the nephrotic syndrome indication."
+ },
+ {
+  "id": "f800",
+  "verdict": "TARGET",
+  "quote": "aggressive systemic mastocytosis (ASM), systemic mastocytosis with associated haematological neoplasm (SM AHN), or mast cell leukaemia (MCL)",
+  "note": "EMA indication names mast cell leukaemia."
+ },
+ {
+  "id": "f514",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of secondary hyperparathyroidism in adult patients with Stage 3 or Stage 4 chronic kidney disease",
+  "note": "Secondary hyperparathyroidism explicitly indicated."
+ },
+ {
+  "id": "f749",
+  "verdict": "TARGET",
+  "quote": "Tinea corporis Tinea pedis Tinea cruris Tinea barbae Tinea capitis Tinea unguium",
+  "note": "Tinea pedis listed among indicated ringworm infections."
+ },
+ {
+  "id": "f725",
+  "verdict": "TARGET",
+  "quote": "indicated for the topical treatment of onychomycosis of the toenail(s) due to Trichophyton rubrum",
+  "note": "Onychomycosis is a synonym for tinea unguium."
+ },
+ {
+  "id": "f130",
+  "verdict": "FP2_symptom_swap",
+  "quote": "palpitations or accelerated heart rate",
+  "note": "Tachycardia appears only as a symptom in the anxiety/panic disorder description, not a treatment target."
+ },
+ {
+  "id": "f810",
+  "verdict": "TARGET",
+  "quote": "Acute bacterial sinusitis due to Haemophilus influenzae, Moraxella catarrhalis or Streptococcus pneumoniae",
+  "note": "Acute bacterial sinusitis explicitly indicated."
+ },
+ {
+  "id": "f228",
+  "verdict": "FP1_setting",
+  "quote": "It can be used as a diagnostic aid in such conditions as panhypopituitarism, pituitary dwarfism, ... acromegaly, gigantism",
+  "note": "Arginine is a diagnostic aid in gigantism, not a treatment."
+ },
+ {
+  "id": "f639",
+  "verdict": "TARGET",
+  "quote": "Gonorrhea, acute uncomplicated (ano-genital and urethral infections in males and females) - due to Neisseria gonorrhoeae",
+  "note": "Gonorrhea is a listed indication (with caution against empiric use)."
+ },
+ {
+  "id": "f117",
+  "verdict": "FP1_setting",
+  "quote": "conditions in which the sedative action of this class of drugs is desired are anxiety-tension states, hyperthyroidism",
+  "note": "Hyperthyroidism is the background for sedation, not the condition treated."
+ },
+ {
+  "id": "f109",
+  "verdict": "TARGET",
+  "quote": "Short- term treatment of active duodenal ulcer",
+  "note": "Duodenal/gastric ulcers are indicated; ulceration is a near parent."
+ },
+ {
+  "id": "f579",
+  "verdict": "TARGET",
+  "quote": "For control of severe nausea and vomiting.",
+  "note": "Vomiting explicitly indicated."
+ },
+ {
+  "id": "f707",
+  "verdict": "TARGET",
+  "quote": "Acute otitis media caused by Streptococcus pneumoniae",
+  "note": "Acute otitis media explicitly indicated."
+ },
+ {
+  "id": "f557",
+  "verdict": "TARGET",
+  "quote": "Severe psoriasis.",
+  "note": "Severe psoriasis listed among dermatologic indications."
+ },
+ {
+  "id": "f560",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves common cold/flu symptoms: nasal congestion sinus congestion & pressure",
+  "note": "Nasal congestion relief is attributable to pseudoephedrine as the decongestant."
+ },
+ {
+  "id": "f077",
+  "verdict": "TARGET",
+  "quote": "Gabapentin tablets are indicated for the management of Postherpetic Neuralgia (PHN).",
+  "note": "Postherpetic neuralgia is a subtype of neuralgia; near parent."
+ },
+ {
+  "id": "f382",
+  "verdict": "TARGET",
+  "quote": "QULIPTA is indicated for the preventive treatment of migraine in adults.",
+  "note": "Migraine prevention explicitly indicated."
+ },
+ {
+  "id": "f498",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of ischemic complications of unstable angina and non-Q-wave myocardial infarction (MI)",
+  "note": "Unstable angina (intermediate coronary syndrome) is indicated."
+ },
+ {
+  "id": "f299",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pneumonia due to Pneumocystis carinii",
+  "note": "Pneumocystis pneumonia treatment and prevention indicated."
+ },
+ {
+  "id": "f352",
+  "verdict": "TARGET",
+  "quote": "may be used in patients with chronic open-angle glaucoma and intraocular hypertension",
+  "note": "Open-angle glaucoma is a subtype of glaucoma."
+ },
+ {
+  "id": "f433",
+  "verdict": "TARGET",
+  "quote": "Acebutolol hydrochloride capsules, USP are indicated for the management of hypertension in adults.",
+  "note": "Hypertension explicitly indicated."
+ },
+ {
+  "id": "f739",
+  "verdict": "TARGET",
+  "quote": "contact dermatitis; atopic dermatitis",
+  "note": "Several dermatitis types listed as indications."
+ },
+ {
+  "id": "f394",
+  "verdict": "TARGET",
+  "quote": "primary mediastinal large B-cell lymphoma (PMBCL)",
+  "note": "EMA indication names PMBCL."
+ },
+ {
+  "id": "f029",
+  "verdict": "TARGET",
+  "quote": "For the management of moderately severe to severe essential hypertension",
+  "note": "Essential hypertension explicitly indicated."
+ },
+ {
+  "id": "f750",
+  "verdict": "TARGET",
+  "quote": "reduce the risk of myocardial infarction",
+  "note": "Prevention of myocardial infarction is indicated; infarction is a near parent."
+ },
+ {
+  "id": "f364",
+  "verdict": "TARGET",
+  "quote": "Familial Mediterranean fever (FMF) in adults and children 4 years or older",
+  "note": "FMF explicitly indicated."
+ },
+ {
+  "id": "f865",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH, WHO Group I)",
+  "note": "Indication is PAH; heart disorder is an overbroad organ-system category (congenital heart disease appears only as study population)."
+ },
+ {
+  "id": "f564",
+  "verdict": "TARGET",
+  "quote": "stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer",
+  "note": "Ovarian cancer is indicated."
+ },
+ {
+  "id": "f756",
+  "verdict": "TARGET",
+  "quote": "Septicemia, endocarditis and urinary system infections have been effectively treated with flucytosine.",
+  "note": "Endocarditis (Candida) cited among serious infections treated within the indication text."
+ },
+ {
+  "id": "f400",
+  "verdict": "TARGET",
+  "quote": "Acute treatment of migraine attacks in adults with a history of migraine with or without aura",
+  "note": "Migraine explicitly indicated."
+ },
+ {
+  "id": "f007",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "COVID-19-related seizures are not mentioned; indications are status epilepticus and seizures in epilepsy patients."
+ },
+ {
+  "id": "f630",
+  "verdict": "FP2_symptom_swap",
+  "quote": "A manic episode is a distinct period of abnormally and persistently elevated, expansive, or irritable mood.",
+  "note": "Anger/irritability appears only as a manifestation of mania, which is what is treated."
+ },
+ {
+  "id": "f885",
+  "verdict": "TARGET",
+  "quote": "in combination with amphotericin B for the treatment of systemic candidiasis and cryptococcosis",
+  "note": "Candida infections explicitly indicated."
+ },
+ {
+  "id": "f379",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of hypoglycemia due to hyperinsulinism",
+  "note": "Hypoglycemia explicitly indicated."
+ },
+ {
+  "id": "f285",
+  "verdict": "TARGET",
+  "quote": "generalized tonic-clonic seizures (grand mal)",
+  "note": "Generalized tonic-clonic seizures = bilateral tonic-clonic seizures."
+ },
+ {
+  "id": "f121",
+  "verdict": "TARGET",
+  "quote": "adjuvant treatment of patients with Stage III colon cancer",
+  "note": "Colon cancer explicitly indicated."
+ },
+ {
+  "id": "f608",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the management of postherpetic neuralgia",
+  "note": "Viral (herpes) infection is only the background of PHN; gabapentin does not treat the infection."
+ },
+ {
+  "id": "f195",
+  "verdict": "TARGET",
+  "quote": "Acquired (autoimmune) hemolytic anemia",
+  "note": "AIHA listed among hematologic indications."
+ },
+ {
+  "id": "f545",
+  "verdict": "TARGET",
+  "quote": "Bipolar I disorder, manic or mixed episodes Bipolar disorder, depressive episodes",
+  "note": "Bipolar disorder explicitly indicated."
+ },
+ {
+  "id": "f422",
+  "verdict": "FP3_cross_section",
+  "quote": "Because of the risk of antibacterial drug-associated pseudomembranous colitis, [see Boxed Warning ]",
+  "note": "Colitis appears only as a warned adverse risk."
+ },
+ {
+  "id": "f347",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Nedosiran is indicated for primary hyperoxaluria type 1; no leukemia mention."
+ },
+ {
+  "id": "f181",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are BPH and hypertension; kidney disease only mentioned generically for other antihypertensives."
+ }
+]

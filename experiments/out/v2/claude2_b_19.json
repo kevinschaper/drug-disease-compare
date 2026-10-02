@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f132",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels cover oral rinse, nasal and sanitizer uses; no antacid/sour stomach indication."
+ },
+ {
+  "id": "f081",
+  "verdict": "TARGET",
+  "quote": "Ophthalmic Diseases : severe acute and chronic allergic and inflammatory processes involving the eye and its adnexa, such as: allergic conjunctivitis, keratitis, allergic corneal marginal ulcers, herpes zoster ophthalmicus",
+  "note": "Herpes zoster ophthalmicus is listed; edge is its near parent, not a whole class."
+ },
+ {
+  "id": "f824",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of symptomatic anaemia associated with chronic renal failure (CRF) in adult and paediatric patients",
+  "note": "Renal failure is the background; anaemia is what is treated."
+ },
+ {
+  "id": "f344",
+  "verdict": "TARGET",
+  "quote": "FOLIC ACID oral solution is indicated for the treatment of megaloblastic anemias due to folic acid deficiency in adult and pediatric patients.",
+  "note": "Megaloblastic anemia named as indication."
+ },
+ {
+  "id": "f267",
+  "verdict": "TARGET",
+  "quote": "Metalyse is indicated for the thrombolytic treatment of suspected myocardial infarction with persistent ST elevation",
+  "note": "MI named directly."
+ },
+ {
+  "id": "f006",
+  "verdict": "TARGET",
+  "quote": "effective for the treatment of Candida urinary tract infections, peritonitis, and systemic Candida infections including candidemia, disseminated candidiasis, and pneumonia",
+  "note": "Disseminated candidiasis named in indications section."
+ },
+ {
+  "id": "f601",
+  "verdict": "TARGET",
+  "quote": "Beovu is indicated in adults for the treatment of neovascular (wet) age-related macular degeneration (AMD).",
+  "note": "Exact match."
+ },
+ {
+  "id": "f404",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indication is METex14 NSCLC; no chromosome 11 tumor suppressor gene condition mentioned."
+ },
+ {
+  "id": "f506",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications cover RCC and urothelial carcinoma (unspecified site); non-RCC kidney carcinoma not named."
+ },
+ {
+  "id": "f470",
+  "verdict": "TARGET",
+  "quote": "relief of symptoms associated with allergic rhinitis such as sneezing, rhinorrhea, pruritus and lacrimation",
+  "note": "Rhinorrhea is itself named as a symptom relieved."
+ },
+ {
+  "id": "f073",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are seizures of LGS, Dravet, TSC; visual epilepsy not mentioned (epilepsy only in warnings)."
+ },
+ {
+  "id": "f701",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: minor pain of arthritis",
+  "note": "Arthritis pain indicated; RA is a subtype of arthritis (pain-of-disease counts per rubric)."
+ },
+ {
+  "id": "f533",
+  "verdict": "TARGET",
+  "quote": "Treatment of active duodenal ulcer in adults ( 1.1 )",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f394",
+  "verdict": "TARGET",
+  "quote": "primary mediastinal large B-cell lymphoma (PMBCL)",
+  "note": "PMBCL named in Breyanzi indication."
+ },
+ {
+  "id": "f614",
+  "verdict": "FP5_negation",
+  "quote": "There are no controlled trials demonstrating reduction of risk of these events with TRYVIO.",
+  "note": "Indication is hypertension; stroke reduction is class background explicitly not shown for drug."
+ },
+ {
+  "id": "f056",
+  "verdict": "TARGET",
+  "quote": "Prevention and treatment of postoperative nausea and vomiting in adults.",
+  "note": "Vomiting is the direct target."
+ },
+ {
+  "id": "f692",
+  "verdict": "TARGET",
+  "quote": "Treatment of Wilson's disease.",
+  "note": "Exact match."
+ },
+ {
+  "id": "f275",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Temporal arteritis named."
+ },
+ {
+  "id": "f466",
+  "verdict": "TARGET",
+  "quote": "Multaq is indicated for the maintenance of sinus rhythm after successful cardioversion in adult clinically stable patients with paroxysmal or persistent atrial fibrillation (AF).",
+  "note": "AF managed (rhythm control); only permanent AF contraindicated."
+ },
+ {
+  "id": "f385",
+  "verdict": "TARGET",
+  "quote": "topical treatment of ocular bacterial infections including conjunctivitis, keratitis, keratoconjunctivitis, corneal ulcers, blepharitis",
+  "note": "Blepharitis named in list."
+ },
+ {
+  "id": "f464",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pain agnosia (insensitivity to pain) not mentioned; drug manages pain."
+ },
+ {
+  "id": "f235",
+  "verdict": "TARGET",
+  "quote": "component of multiple risk factor intervention in those individuals with dyslipidemia at risk for atherosclerotic vascular disease",
+  "note": "Dyslipidemia equals abnormal circulating lipid concentration."
+ },
+ {
+  "id": "f428",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Radicular pain is a narrower form of the indicated pain."
+ },
+ {
+  "id": "f515",
+  "verdict": "TARGET",
+  "quote": "Ocular corticosteroids are indicated in inflammatory conditions of the palpebral and bulbar conjunctiva, cornea, and anterior segment of the globe",
+  "note": "OCP is a conjunctival inflammatory condition, subtype of indicated class; weak but text-supported."
+ },
+ {
+  "id": "f513",
+  "verdict": "TARGET",
+  "quote": "Meprobamate tablets are indicated for the management of anxiety disorders",
+  "note": "Exact match."
+ },
+ {
+  "id": "f165",
+  "verdict": "TARGET",
+  "quote": "allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis",
+  "note": "Contact dermatitis named."
+ },
+ {
+  "id": "f876",
+  "verdict": "FP5_negation",
+  "quote": "In patients with recently documented CAD by angiography and without heart failure or an ejection fraction <40%",
+  "note": "Heart failure appears only as an exclusion; not indicated."
+ },
+ {
+  "id": "f897",
+  "verdict": "TARGET",
+  "quote": "Ciprofloxacin tablets are indicated in adult patients for treatment of complicated intra-abdominal infections",
+  "note": "Near parent of indicated cIAI."
+ },
+ {
+  "id": "f118",
+  "verdict": "FP4_overbroad",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Edge is an organ-system category; label covers symptomatic relief in cold/allergies."
+ },
+ {
+  "id": "f097",
+  "verdict": "TARGET",
+  "quote": "BUDESONIDE AND FORMOTEROL FUMARATE DIHYDRATE INHALATION AEROSOL is indicated for the treatment of asthma in patients 6 years of age and older.",
+  "note": "ICS/LABA asthma indication includes formoterol component; monotherapy label says not indicated."
+ },
+ {
+  "id": "f607",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of adult patients with metastatic carcinoma of the colon or rectum",
+  "note": "Direct match."
+ },
+ {
+  "id": "f232",
+  "verdict": "FP1_setting",
+  "quote": "Assessment of left ventricular function (left ventricular ejection fraction and wall motion) in patients with known or suspected heart disease",
+  "note": "Diagnostic imaging agent; heart disease is the population."
+ },
+ {
+  "id": "f258",
+  "verdict": "TARGET",
+  "quote": "Rivaroxaban tablets are indicated to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation.",
+  "note": "Stroke prevention counts."
+ },
+ {
+  "id": "f770",
+  "verdict": "TARGET",
+  "quote": "treatment of hyperkeratotic conditions such as ... damaged, ingrown and devitalized nails",
+  "note": "Specific nail disorders listed; nail disorder is near parent."
+ },
+ {
+  "id": "f689",
+  "verdict": "FP1_setting",
+  "quote": "E-Z-DISK is indicated for the evaluation of esophageal patency",
+  "note": "Diagnostic contrast agent; stricture only implied as what is evaluated, not treated."
+ },
+ {
+  "id": "f145",
+  "verdict": "UNSURE",
+  "quote": "Hydroxychloroquine sulfate tablets are indicated for the treatment of acute and chronic rheumatoid arthritis in adults.",
+  "note": "RA indicated, but ILD manifestation not mentioned; unclear if RA-ILD counts as subtype."
+ },
+ {
+  "id": "f776",
+  "verdict": "TARGET",
+  "quote": "Adefovir dipivoxil tablets are indicated for the treatment of chronic hepatitis B",
+  "note": "Exact synonym."
+ },
+ {
+  "id": "f745",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of panic disorder in adults, with or without agoraphobia",
+  "note": "Exact match."
+ },
+ {
+  "id": "f307",
+  "verdict": "TARGET",
+  "quote": "idiopathic thrombocytopenic purpura in adults, pure red cell aplasia, and selected cases of secondary thrombocytopenia",
+  "note": "PRCA listed under hematologic disorders."
+ },
+ {
+  "id": "f605",
+  "verdict": "FP2_symptom_swap",
+  "quote": "includes at least five of the following nine symptoms: depressed mood, ... increased fatigue",
+  "note": "Fatigue appears only as a symptom in the definition of depression, which is the indication."
+ },
+ {
+  "id": "f459",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for the following seizure types in patients aged 2 years and older: partial-onset seizures. primary generalized tonic-clonic (PGTC) seizures.",
+  "note": "Bilateral tonic-clonic seizures covered by PGTC/partial-onset indications."
+ },
+ {
+  "id": "f722",
+  "verdict": "TARGET",
+  "quote": "For the prevention of recurrence following rheumatic fever and/or chorea",
+  "note": "Prevention of rheumatic fever recurrence."
+ },
+ {
+  "id": "f326",
+  "verdict": "TARGET",
+  "quote": "indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection",
+  "note": "Direct match."
+ },
+ {
+  "id": "f437",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of overactive bladder with symptoms of urge urinary incontinence, urgency, and frequency",
+  "note": "Urge urinary incontinence named; edge is near parent."
+ },
+ {
+  "id": "f074",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of urge incontinence and/or increased urinary frequency and urgency",
+  "note": "Increased urinary frequency = pollakiuria."
+ }
+]

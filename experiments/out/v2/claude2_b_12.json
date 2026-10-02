@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f416",
+  "verdict": "TARGET",
+  "quote": "indicated, in combination with trametinib, for the treatment of pediatric patients 1 year of age and older with low-grade glioma (LGG) with a BRAF V600E mutation",
+  "note": "LGG is a glioma; glioma is a near parent, not a whole class."
+ },
+ {
+  "id": "f595",
+  "verdict": "FP4_overbroad",
+  "quote": "useful in the management of the following neoplasms",
+  "note": "Label lists specific SCCs, lymphomas and testicular carcinoma; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f715",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult patients with primary advanced or recurrent endometrial cancer that is mismatch repair deficient (dMMR)",
+  "note": "Stage III endometrial cancer falls under primary advanced endometrial cancer."
+ },
+ {
+  "id": "f496",
+  "verdict": "TARGET",
+  "quote": "Community-acquired pneumonia due to Chlamydophila pneumoniae, Haemophilus influenzae, Mycoplasma pneumoniae or Streptococcus pneumoniae in patients appropriate for oral therapy.",
+  "note": "CAP named directly in indications."
+ },
+ {
+  "id": "f125",
+  "verdict": "TARGET",
+  "quote": "indicated for the maintenance treatment of patients with chronic obstructive pulmonary disease (COPD)",
+  "note": "Edge is a narrower form of indicated COPD."
+ },
+ {
+  "id": "f025",
+  "verdict": "TARGET",
+  "quote": "routine prophylaxis to prevent or reduce the frequency of bleeding episodes in adult and pediatric patients 12 years of age and older with: hemophilia A (congenital factor VIII deficiency)",
+  "note": "Hemophilia A listed as indicated population/condition for bleeding prophylaxis."
+ },
+ {
+  "id": "f609",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of advanced testicular cancer ... advanced ovarian cancer ... advanced bladder cancer",
+  "note": "Specific cancers indicated; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f331",
+  "verdict": "TARGET",
+  "quote": "indicated in patients 18 years of age or older for the treatment of complicated urinary tract infections (cUTIs), including pyelonephritis",
+  "note": "cUTI named directly."
+ },
+ {
+  "id": "f166",
+  "verdict": "TARGET",
+  "quote": "Congenital adrenal hyperplasia Nonsuppurative thyroiditis Hypercalcemia associated with cancer",
+  "note": "Nonsuppurative thyroiditis indicated; thyroiditis is a near parent, not a class."
+ },
+ {
+  "id": "f753",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is multivitamin/fluoride supplementation; infection never mentioned."
+ },
+ {
+  "id": "f206",
+  "verdict": "TARGET",
+  "quote": "in anaphylaxis as an adjunct to epinephrine and other standard measures after the acute symptoms have been controlled",
+  "note": "Adjunctive anaphylaxis indication counts."
+ },
+ {
+  "id": "f391",
+  "verdict": "TARGET",
+  "quote": "indicated, in combination with rilpivirine injection, for the treatment of Human Immunodeficiency Virus type 1 (HIV-1) infection",
+  "note": "HIV-1 treatment and PrEP indicated (EMA)."
+ },
+ {
+  "id": "f739",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis; atopic dermatitis",
+  "note": "Contact and atopic dermatitis listed; dermatitis is a near parent."
+ },
+ {
+  "id": "f854",
+  "verdict": "FP2_symptom_swap",
+  "quote": "6) chest pain or discomfort;",
+  "note": "Chest pain appears only as a panic-attack symptom in the panic disorder definition, not a treated condition."
+ },
+ {
+  "id": "f457",
+  "verdict": "FP2_symptom_swap",
+  "quote": "spasticity caused by upper motor neuron disorders (such as cerebral palsy and paraplegia)",
+  "note": "Drug relieves spasticity; paraplegia is the underlying cause."
+ },
+ {
+  "id": "f259",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the prophylaxis of common migraine headache",
+  "note": "Only migraine prophylaxis indicated; generic headache is an overbroad category."
+ },
+ {
+  "id": "f253",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Selinexor text covers only multiple myeloma; no lymphoma mentioned."
+ },
+ {
+  "id": "f112",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Treatment of agitation associated with dementia due to Alzheimer's disease",
+  "note": "Treats agitation, not Alzheimer disease itself."
+ },
+ {
+  "id": "f377",
+  "verdict": "FP1_setting",
+  "quote": "many antihypertensive drugs have additional approved indications and effects (e.g., on angina, heart failure, or diabetic kidney disease)",
+  "note": "Mentioned only as generic background about other antihypertensives, not a telmisartan indication."
+ },
+ {
+  "id": "f805",
+  "verdict": "FP2_symptom_swap",
+  "quote": "includes at least 5 of the following 9 symptoms: depressed mood, loss of interest in usual activities, significant change in weight and/or appetite, insomnia or hypersomnia",
+  "note": "Insomnia is only a listed MDD symptom (and an adverse effect), not an indication."
+ },
+ {
+  "id": "f771",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the incidence of nausea and vomiting associated with surgical and diagnostic procedures",
+  "note": "Nausea is the treated condition."
+ },
+ {
+  "id": "f645",
+  "verdict": "TARGET",
+  "quote": "Rezzayo is indicated for the treatment of invasive candidiasis in adults.",
+  "note": "Disseminated candidiasis is a form of invasive candidiasis."
+ },
+ {
+  "id": "f208",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only Muckle-Wells syndrome appears; Wells syndrome (eosinophilic cellulitis) is a name collision."
+ },
+ {
+  "id": "f058",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with persistent, recurrent, or metastatic cervical cancer",
+  "note": "Recurrent cervical cancer named."
+ },
+ {
+  "id": "f297",
+  "verdict": "TARGET",
+  "quote": "Epilepsy-adjunctive therapy in patients aged 2 years and older : partial-onset seizures. primary generalized tonic-clonic seizures.",
+  "note": "Post-stroke seizures are a cause-specific subtype of the indicated seizure types; stroke itself not named."
+ },
+ {
+  "id": "f491",
+  "verdict": "TARGET",
+  "quote": "Noxafil oral suspension is indicated for the treatment of oropharyngeal candidiasis (OPC)",
+  "note": "OPC named directly."
+ },
+ {
+  "id": "f846",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of schizophrenia in adults who were previously taking a stable dosage of an immediate-release oral haloperidol product",
+  "note": "Schizophrenia named directly."
+ },
+ {
+  "id": "f425",
+  "verdict": "TARGET",
+  "quote": "Tadalafil Tablets are indicated for the treatment of erectile dysfunction (ED).",
+  "note": "ED named directly."
+ },
+ {
+  "id": "f230",
+  "verdict": "TARGET",
+  "quote": "indicated for use in adults for the management of moderate-to-severe pain, alone or in combination with non-NSAID analgesics",
+  "note": "Vulvovaginal pain not named; counts only as a subtype of the general pain indication."
+ },
+ {
+  "id": "f192",
+  "verdict": "FP3_cross_section",
+  "quote": "Because of the risks of addiction, abuse, and misuse with opioids, which can occur at any dosage or duration",
+  "note": "Addiction appears only as a risk/warning, not an indication."
+ },
+ {
+  "id": "f427",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of external genital and perianal warts (Condylomata acuminata) in immunocompetent patients 18 years and older",
+  "note": "Perianal warts named."
+ },
+ {
+  "id": "f190",
+  "verdict": "TARGET",
+  "quote": "Osteoarthritis (OA) ( 1.1 )",
+  "note": "OA listed as indication."
+ },
+ {
+  "id": "f246",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text only covers moisturizing dry nasal passages."
+ },
+ {
+  "id": "f518",
+  "verdict": "TARGET",
+  "quote": "For the treatment of systemic lupus erythematosus, dermatomyositis (polymyositis), polymyalgia rheumatica",
+  "note": "Dermatomyositis named."
+ },
+ {
+  "id": "f284",
+  "verdict": "TARGET",
+  "quote": "Acetaminophen and codeine phosphate tablets are indicated for the management of mild to moderate pain",
+  "note": "Inflammatory pain not named; counts only as a subtype of the general pain indications (incl. minor pain of arthritis)."
+ },
+ {
+  "id": "f234",
+  "verdict": "TARGET",
+  "quote": "induction of ovulation (OI) and pregnancy in anovulatory infertile patients in whom the cause of infertility is functional",
+  "note": "Anovulatory infertility indicated; infertility is a near parent."
+ },
+ {
+  "id": "f034",
+  "verdict": "TARGET",
+  "quote": "Septicemia and Endocarditis caused by susceptible Gram-positive organisms including Streptococcus spp.",
+  "note": "Neonatal sepsis is a subtype of indicated septicemia."
+ },
+ {
+  "id": "f045",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are CML, head-and-neck SCC and sickle cell anemia; ovarian carcinoma not mentioned."
+ },
+ {
+  "id": "f790",
+  "verdict": "TARGET",
+  "quote": "Postmenopausal women with advanced hormone receptor-positive, HER2-negative breast cancer in combination with exemestane",
+  "note": "Breast cancer subtype indicated; edge is a near parent."
+ },
+ {
+  "id": "f152",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No back pain or musculoskeletal pain mentioned in venlafaxine text."
+ },
+ {
+  "id": "f798",
+  "verdict": "TARGET",
+  "quote": "Adolescent Patients with Heterozygous Familial Hypercholesterolemia Lovastatin tablets USP are indicated as an adjunct to diet to reduce total-C, LDL-C and apolipoprotein B levels",
+  "note": "HeFH named directly."
+ },
+ {
+  "id": "f392",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the prophylaxis of common migraine headache",
+  "note": "Only migraine prophylaxis indicated; generic headache is an overbroad category."
+ },
+ {
+  "id": "f742",
+  "verdict": "FP4_overbroad",
+  "quote": "Biopsy-confirmed, primary superficial basal cell carcinoma (sBCC) in immunocompetent adults",
+  "note": "Only sBCC indicated; \"carcinoma\" is a whole tumor class."
+ },
+ {
+  "id": "f686",
+  "verdict": "TARGET",
+  "quote": "Fluoxetine capsules and Olanzapine in Combination are indicated for the treatment of: Treatment resistant depression",
+  "note": "TRD indicated as combination therapy with olanzapine (monotherapy not indicated)."
+ },
+ {
+  "id": "f357",
+  "verdict": "TARGET",
+  "quote": "Treatment of moderately to severely active ulcerative colitis in adult patients.",
+  "note": "UC named directly."
+ }
+]

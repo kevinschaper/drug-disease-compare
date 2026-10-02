@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f536",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Rheumatoid arthritis (joint episodes) and some lung diseases are indicated, but interstitial lung disease associated with RA is not mentioned."
+ },
+ {
+  "id": "f558",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with unresectable or metastatic MSI-H or dMMR colorectal cancer (CRC)",
+  "note": "Colorectal cancer subtype explicitly indicated."
+ },
+ {
+  "id": "f738",
+  "verdict": "TARGET",
+  "quote": "replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Congenital hypothyroidism explicitly indicated."
+ },
+ {
+  "id": "f220",
+  "verdict": "TARGET",
+  "quote": "Orfadin is indicated for the treatment of adult patients with alkaptonuria (AKU).",
+  "note": "EMA indication names alkaptonuria."
+ },
+ {
+  "id": "f480",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of ocular pain and burning/stinging following corneal refractive surgery",
+  "note": "Ocular pain is a treated target."
+ },
+ {
+  "id": "f275",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Temporal arteritis listed among indications."
+ },
+ {
+  "id": "f613",
+  "verdict": "FP1_setting",
+  "quote": "children less than two years of age and requiring treatment for bronchopulmonary dysplasia within the last six months",
+  "note": "BPD defines the high-risk population for RSV prophylaxis, not the target."
+ },
+ {
+  "id": "f200",
+  "verdict": "FP4_overbroad",
+  "quote": "HER2-Positive Metastatic Breast Cancer",
+  "note": "Indications are specific HER2 cancers; generic metastatic neoplasm is a whole class."
+ },
+ {
+  "id": "f832",
+  "verdict": "TARGET",
+  "quote": "subfoveal choroidal neovascularization (CNV) due to age-related macular degeneration (AMD)",
+  "note": "Treats the neovascular form of AMD."
+ },
+ {
+  "id": "f307",
+  "verdict": "TARGET",
+  "quote": "idiopathic thrombocytopenic purpura in adults, pure red cell aplasia, and selected cases of secondary thrombocytopenia",
+  "note": "Pure red cell aplasia listed under hematologic disorders."
+ },
+ {
+  "id": "f136",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of infections caused by susceptible strains of the following bacteria in the conditions listed below: ... CONJUNCTIVITIS",
+  "note": "Bacterial conjunctivitis indicated."
+ },
+ {
+  "id": "f795",
+  "verdict": "FP5_negation",
+  "quote": "Alfuzosin hydrochloride extended-release tablets are not indicated for treatment of hypertension.",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f799",
+  "verdict": "TARGET",
+  "quote": "Enbrel is indicated for reducing signs and symptoms in patients with active ankylosing spondylitis",
+  "note": "Spondylitis is a near parent of indicated ankylosing spondylitis."
+ },
+ {
+  "id": "f702",
+  "verdict": "FP1_setting",
+  "quote": "prevention of Pneumocystis jiroveci pneumonia (PJP) in high-risk, HIV-infected patients",
+  "note": "HIV is the patient population; PJP is the target."
+ },
+ {
+  "id": "f682",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure (BP) in adult patients who are not adequately controlled on other drugs",
+  "note": "Hypertension indicated; essential hypertension is a subtype."
+ },
+ {
+  "id": "f632",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only androgenetic alopecia (vertex hair loss) is indicated; alopecia areata is not mentioned."
+ },
+ {
+  "id": "f170",
+  "verdict": "TARGET",
+  "quote": "Vedrop is indicated in vitamin-E deficiency due to digestive malabsorption",
+  "note": "Vitamin E deficiency equals decreased circulating vitamin E."
+ },
+ {
+  "id": "f570",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only chronic migraine prophylaxis is indicated (episodic migraine negated); migraine with aura is not mentioned."
+ },
+ {
+  "id": "f436",
+  "verdict": "FP2_symptom_swap",
+  "quote": "palpitations, pounding heart, or accelerated heart rate",
+  "note": "Palpitations appear only as a symptom criterion of panic disorder, not a treatment target."
+ },
+ {
+  "id": "f421",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with acute myeloid leukemia (AML)",
+  "note": "Myeloid leukemia is a near parent of indicated AML."
+ },
+ {
+  "id": "f502",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves nasal congestion due to: common cold",
+  "note": "Treats nasal congestion symptom, not the cold itself."
+ },
+ {
+  "id": "f647",
+  "verdict": "TARGET",
+  "quote": "indicated to: reduce the risk of myocardial infarction (MI)",
+  "note": "MI prevention is an indicated target."
+ },
+ {
+  "id": "f125",
+  "verdict": "TARGET",
+  "quote": "indicated for the maintenance treatment of patients with chronic obstructive pulmonary disease (COPD)",
+  "note": "COPD indicated; edge is a narrower form."
+ },
+ {
+  "id": "f206",
+  "verdict": "TARGET",
+  "quote": "in anaphylaxis as an adjunct to epinephrine and other standard measures after the acute symptoms have been controlled",
+  "note": "Adjunctive anaphylaxis treatment counts."
+ },
+ {
+  "id": "f745",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of panic disorder in adults, with or without agoraphobia",
+  "note": "Panic disorder explicitly indicated."
+ },
+ {
+  "id": "f272",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only nasal moisturizing use; methanol toxicity not mentioned."
+ },
+ {
+  "id": "f387",
+  "verdict": "FP1_setting",
+  "quote": "non-valvular atrial fibrillation (NVAF), with one or more risk factors, such as ... symptomatic heart failure (NYHA Class >= II)",
+  "note": "Heart failure is only a risk factor qualifying the AF stroke-prevention population."
+ },
+ {
+  "id": "f768",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of the symptoms of seasonal allergic rhinitis",
+  "note": "Seasonal allergic rhinitis indicated on single-agent nasal spray."
+ },
+ {
+  "id": "f801",
+  "verdict": "TARGET",
+  "quote": "Ketoprofen capsules USP are also indicated for treatment of primary dysmenorrhea.",
+  "note": "Primary dysmenorrhea indicated."
+ },
+ {
+  "id": "f714",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of anemia due to chronic kidney disease (CKD)",
+  "note": "Anemia of CKD/chronic renal failure is a form of anemia due to chronic disease; near parent."
+ },
+ {
+  "id": "f777",
+  "verdict": "FP1_setting",
+  "quote": "In patients with established peripheral arterial disease ... clopidogrel tablets are indicated to reduce the rate of MI and stroke.",
+  "note": "PAD defines the population; MI/stroke are the targets."
+ },
+ {
+  "id": "f081",
+  "verdict": "TARGET",
+  "quote": "allergic corneal marginal ulcers, herpes zoster ophthalmicus, iritis and iridocyclitis",
+  "note": "Herpes zoster ophthalmicus listed; edge is a near parent (inflammatory management only)."
+ },
+ {
+  "id": "f308",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of primary hyperkalemic periodic paralysis, primary hypokalemic periodic paralysis, and related variants",
+  "note": "Generic paralysis is far broader than periodic paralysis."
+ },
+ {
+  "id": "f078",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the prevention of angina pectoris due to coronary artery disease",
+  "note": "Arterial disorder is an organ-system class broader than angina/CAD."
+ },
+ {
+  "id": "f548",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate to severe hidradenitis suppurativa (HS)",
+  "note": "Hidradenitis suppurativa indicated."
+ },
+ {
+  "id": "f842",
+  "verdict": "TARGET",
+  "quote": "Nexavar is indicated for the treatment of hepatocellular carcinoma.",
+  "note": "EMA indication names HCC."
+ },
+ {
+  "id": "f063",
+  "verdict": "FP1_setting",
+  "quote": "high risk of developing a major cardiovascular event because of a history of coronary artery disease, stroke, peripheral vascular disease, or diabetes",
+  "note": "Diabetes is a risk-population qualifier for CV risk reduction."
+ },
+ {
+  "id": "f221",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis and treatment of thromboembolic complications associated with atrial fibrillation",
+  "note": "AF with embolization listed as an indication."
+ },
+ {
+  "id": "f852",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of ocular itching associated with allergic conjunctivitis",
+  "note": "Ocular itching is the treated target."
+ },
+ {
+  "id": "f395",
+  "verdict": "TARGET",
+  "quote": "Lower Respiratory Tract Infections, including pneumonia and bronchitis caused by Escherichia coli",
+  "note": "Bacterial bronchitis indicated."
+ },
+ {
+  "id": "f013",
+  "verdict": "FP2_symptom_swap",
+  "quote": "airway swelling, laryngospasm, bronchospasm, pruritus, urticaria or angioedema, swelling of the eyelids, lips, and tongue",
+  "note": "Swelling appears only as a manifestation of anaphylaxis, which is the target."
+ },
+ {
+  "id": "f856",
+  "verdict": "TARGET",
+  "quote": "treatment of complicated urinary tract infections (cUTI) and pyelonephritis due to Escherichia coli",
+  "note": "Pyelonephritis indicated in pediatric patients."
+ },
+ {
+  "id": "f667",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia",
+  "note": "Ventricular arrhythmia indicated."
+ },
+ {
+  "id": "f481",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Iodine texts cover goiter, antisepsis and homeopathic uses; no B-cell neoplasm."
+ },
+ {
+  "id": "f629",
+  "verdict": "TARGET",
+  "quote": "Idiopathic bronchiolitis obliterans with organizing pneumonia",
+  "note": "Bronchiolitis obliterans form listed among respiratory indications; edge is near parent."
+ }
+]

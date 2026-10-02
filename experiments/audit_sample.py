@@ -35,7 +35,7 @@ Outputs (experiments/out/v2/)
 * ``population.jsonl``   -- every eligible edge (no text; joins evidence by drug)
 * ``sample.jsonl``       -- seeded random sample per source, with text attached
 
-Run:  uv run python -m experiments.audit_sample --n 150
+Run:  PYTHONPATH=pipeline:. uv run python -m experiments.audit_sample --n 300 [--release old]
 """
 from __future__ import annotations
 
@@ -50,6 +50,8 @@ from pathlib import Path
 import pyarrow.parquet as pq
 
 from experiments.label_index import EMA_INDEX, FDA_INDEX, norm_name
+
+APPROVED = "approved_for_condition"
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
@@ -225,14 +227,60 @@ def candidates() -> list[dict]:
     return rows
 
 
+def candidates_from_release(version: str) -> list[dict]:
+    """Indication pairs of a release, built straight from its source files.
+
+    Used for the *previous* releases (the site's pairs.parquet only holds the latest): the
+    same loaders, reconciler (incl. exact-name drug repair) and moiety grouping as the build,
+    so a pair here is keyed exactly as it would be in pairs.parquet.
+    """
+    from drug_edge_compare import cli, compare
+    from drug_edge_compare.drug_groups import moiety_grouper
+    from drug_edge_compare.mondo import MondoGraph
+    from drug_edge_compare.nodenorm import NodeNorm
+
+    edges = cli._load_edges(version)
+    nn = NodeNorm(cli.CACHE)
+    nn.warm(e["subject"] for e in edges)
+    nn.warm(e["object"] for e in edges)
+    mondo = MondoGraph(cli.INPUTS / "mondo_edges.tsv", cli.INPUTS / "mondo_nodes.tsv")
+    rec, _ = cli._reconciler(nn, mondo, edges)
+    treat, _ = compare.build_pairs(edges, rec)
+    clients, grouper = moiety_grouper(cli.DRUG_GROUP_CACHE)
+
+    def base(drug, dis, m):
+        g = grouper.group(compare.named_clique(rec, drug))
+        return {"drug": drug, "drug_label": m["drug_label"], "disease": dis,
+                "disease_label": m["disease_label"], "disease_prefix": m["disease_prefix"],
+                "drug_group": g.group_id, "drug_group_label": g.group_label}
+
+    rows = []
+    for (drug, dis), m in treat["medic"].items():
+        rows.append({**base(drug, dis, m), "source": "medic",
+                     "cited": sorted(m.get("medic_evidence", {})),
+                     "medic_reliability": m.get("reliability") or ""})
+    for (drug, dis), m in treat["dakp"].items():
+        if m["status"] != APPROVED:
+            continue
+        ev = json.dumps({"fda": m.get("fda_approvals", [])})
+        rows.append({**base(drug, dis, m), "source": "dakp-approved",
+                     "cited": sorted(_dakp_regulators(ev))})
+    clients.save()
+    return rows
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=150, help="gold sample size per source")
+    ap.add_argument("--release", choices=("new", "old"), default="new",
+                    help="latest releases (site pairs) or the previous releases (source files)")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
+    old = args.release == "old"
+    sfx, idp, seed = ("_old", "old:", SEED + 1) if old else ("", "", SEED)
     ev = Evidence()
     pop, stats = [], Counter()
-    for r in candidates():
+    for r in (candidates_from_release("old") if old else candidates()):
         e = ev.drug(r["drug"], r["drug_label"], r["drug_group"] or "", r["drug_group_label"] or "")
         have = {k.upper() for k in ("fda", "ema") if e[k]}
         cited = set(r["cited"])
@@ -249,20 +297,32 @@ def main() -> None:
         pop.append({**r, "judge_against": sorted(judge_against), "absence_ok": absence_ok,
                     "fda_method": e["fda"]["method"] if e["fda"] else "none"})
 
-    with gzip.open(OUT / "evidence.json.gz", "wt") as f:
+    with gzip.open(OUT / f"evidence{sfx}.json.gz", "wt") as f:
         json.dump(ev._cache, f)
-    with open(OUT / "population.jsonl", "w") as f:
+    with open(OUT / f"population{sfx}.jsonl", "w") as f:
         for i, r in enumerate(pop):
-            r["id"] = f"{r['source']}:{r['drug']}|{r['disease']}"
+            r["id"] = f"{idp}{r['source']}:{r['drug']}|{r['disease']}"
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
-    rng = random.Random(SEED)
+    # Two-stage draw so a larger --n *extends* an earlier sample instead of redrawing it:
+    # stage 1 reproduces the original 150-per-source draw (one stream across sources, as
+    # first run); stage 2 tops each source up from its remaining pool with its own stream.
+    BASE = 150
+    rng = random.Random(seed)
+    pools = {src: sorted((r for r in pop if r["source"] == src), key=lambda r: r["id"])
+             for src in SOURCES}
+    drawn = {src: rng.sample(pools[src], min(BASE, args.n, len(pools[src]))) for src in SOURCES}
+    for src in SOURCES:
+        taken = {r["id"] for r in drawn[src]}
+        rest = [r for r in pools[src] if r["id"] not in taken]
+        extra = max(0, min(args.n, len(pools[src])) - len(drawn[src]))
+        drawn[src] += random.Random(f"{seed}-extend-{src}").sample(rest, extra)
     sample = []
     for src in SOURCES:
-        pool = sorted((r for r in pop if r["source"] == src), key=lambda r: r["id"])
-        for j, r in enumerate(rng.sample(pool, min(args.n, len(pool)))):
-            sample.append({**r, "sid": f"{src}-{j}", **attach_text(r, ev._cache[r["drug"]])})
-    with open(OUT / "sample.jsonl", "w") as f:
+        for j, r in enumerate(drawn[src]):
+            sample.append({**r, "sid": f"{idp}{src}-{j}", "release": args.release,
+                           **attach_text(r, ev._cache[r["drug"]])})
+    with open(OUT / f"sample{sfx}.jsonl", "w") as f:
         for r in sample:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 

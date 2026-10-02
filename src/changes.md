@@ -145,6 +145,56 @@ const M = ch.sources.medic.lenses, D = ch.sources.dakp.lenses, X = ch.sources.di
 const r = (L, ch_, k) => L.reasons[ch_]?.[k] ?? 0;
 ```
 
+
+```js
+// "Did it improve?": the label audit, run like-for-like on both releases (300 edges each)
+const audit = (await FileAttachment("data/fp_audit.json").json()).summary;
+const TYPE = {FP1_setting: "setting as target", FP2_symptom_swap: "symptom swap",
+  FP3_cross_section: "warning-only mention", FP4_overbroad: "over-broad parent",
+  FP5_negation: "negated indication", FP6_coingredient: "co-ingredient's indication",
+  FP7_notintext: "not in label"};
+const sig = ([, lo, hi]) => lo > 0 || hi < 0;
+const pts = ([d, lo, hi]) => `${d > 0 ? "+" : ""}${d} pts (95% CI ${lo} to ${hi})`;
+
+function improveCards(src) {
+  const o = audit.previous_release[src], n = audit.sources[src], d = audit.change[src].fp_rate_pts;
+  return html`<div class="grid grid-cols-3 lens-cards">
+    <div class="card"><h2>False-positive rate — previous</h2><span class="big">${o.fp_rate[0]}%</span>
+      <div class="sub">CI ${o.fp_rate[1]}–${o.fp_rate[2]} · n = ${o.judged}</div></div>
+    <div class="card"><h2>False-positive rate — latest</h2><span class="big">${n.fp_rate[0]}%</span>
+      <div class="sub">CI ${n.fp_rate[1]}–${n.fp_rate[2]} · n = ${n.judged}</div></div>
+    <div class="card"><h2>Change</h2><span class="big">${d[0] > 0 ? "+" : ""}${d[0]} pts</span>
+      <div class="sub">95% CI ${d[1]} to ${d[2]} — ${sig(d) ? (d[0] < 0 ? "fewer errors" : "more errors") : "no significant change"}</div></div>
+  </div>`;
+}
+
+function improveChart(src) {
+  const rows = Object.entries(audit.change[src].by_type_pts).map(([t, [d, lo, hi]]) => ({
+    type: TYPE[t] ?? t, d, lo, hi, significant: lo > 0 || hi < 0,
+    dir: lo > 0 ? "more of this error" : hi < 0 ? "less of this error" : "no significant change"}));
+  return Plot.plot({
+    width, height: 40 + 30 * rows.length, marginLeft: 170, marginRight: 40,
+    x: {label: "← fewer errors · change in share of edges (percentage points) · more errors →", grid: true},
+    y: {label: null, domain: rows.map((r) => r.type)},
+    color: {domain: ["less of this error", "no significant change", "more of this error"],
+            range: ["var(--r-regrained)", "#9498a0", "var(--r-changed)"], legend: true},
+    marks: [
+      Plot.ruleX([0], {stroke: "currentColor", strokeOpacity: 0.5}),
+      Plot.ruleY(rows, {y: "type", x1: "lo", x2: "hi", stroke: "dir", strokeWidth: 2}),
+      Plot.dot(rows, {y: "type", x: "d", fill: "dir", r: 5, tip: true,
+        title: (r) => `${r.type}\n${r.d > 0 ? "+" : ""}${r.d} pts (95% CI ${r.lo} to ${r.hi})`}),
+    ],
+  });
+}
+
+// rough volume of correct indications: canonical pairs x measured precision
+function correctVolume(src, lens) {
+  const L = ch.sources[src === "medic" ? "medic" : "dakp"].lenses[lens];
+  const po = 1 - audit.previous_release[src].fp_rate[0] / 100, pn = 1 - audit.sources[src].fp_rate[0] / 100;
+  return {old: Math.round(L.old * po), new: Math.round(L.new * pn)};
+}
+```
+
 ## MEDIC — ${ch.sources.medic.versions.old} → ${ch.sources.medic.versions.new}
 
 The redesigned MeDIC pipeline is a different export, not an increment: it emits **one edge
@@ -196,6 +246,43 @@ churnDrugs("medic", "treats")
 
 </details>
 
+### Did MEDIC improve?
+
+The [label audit](./error-taxonomy) was run **like-for-like on both releases**: 300 randomly
+sampled indication edges from each, judged blind (reviewers never saw source or release)
+against the same independently fetched FDA/EMA label text, by the same protocol.
+
+```js
+improveCards("medic")
+```
+
+```js
+improveChart("medic")
+```
+
+```js
+const mv = correctVolume("medic", "treats");
+const mc = audit.change.medic.by_type_pts;
+```
+
+**Precision: unchanged overall, but the kinds of error moved.**
+
+- **Better — negated indications are nearly gone** (${pts(mc.FP5_negation)}). The old
+  export asserted pairs the label explicitly rules out ("not indicated for…"); the redesign's
+  negation handling has largely fixed this.
+- **New problem — combination products** (${pts(mc.FP6_coingredient)}). The redesign credits
+  each ingredient of a fixed-dose combination with the whole product's indications
+  (atorvastatin → hypertension via amlodipine/atorvastatin).
+- **Worse — population mistaken for the treated disease** (${pts(mc.FP1_setting)}): e.g.
+  "reduce the risk of MI *in patients with* coronary heart disease" → CHD.
+- "Not in label" mappings moved ${pts(mc.FP7_notintext)} — not a significant change.
+
+**Volume:** at the measured precision, the redesign carries roughly
+**${fmt(mv.new)}** correct indication pairs vs **${fmt(mv.old)}** before — a smaller set at the
+same precision. What improved most is structure and provenance: contraindications, a fourth
+regulator, the authority and verbatim label text on every edge, and a reliability tier that
+tracks error (see the [error taxonomy](./error-taxonomy)).
+
 ## DAKP — ${ch.sources.dakp.versions.old} → ${ch.sources.dakp.versions.new}
 
 DAKP moved from the rtx.ai build (`infores:multiomics-drugapprovals`) to the Tablassert
@@ -241,6 +328,40 @@ churnDrugs("dakp", "approved")
 ```
 
 </details>
+
+### Did DAKP improve?
+
+Same like-for-like audit: 300 sampled `approved_for_condition` edges from each release, judged
+blind against the same label text.
+
+```js
+improveCards("dakp-approved")
+```
+
+```js
+improveChart("dakp-approved")
+```
+
+```js
+const dv = correctVolume("dakp-approved", "approved");
+const dc = audit.change["dakp-approved"].by_type_pts;
+const dvocab = audit.sources["dakp-approved"].by_disease_vocab;
+const dvocabOld = audit.previous_release["dakp-approved"].by_disease_vocab;
+```
+
+**Precision: no significant change overall — cleaner label reading, worse term mapping.**
+
+- **Worse — "not in label" mappings** (${pts(dc.FP7_notintext)}). The increase tracks the new
+  disease vocabulary: ${dvocab.UMLS ? `${dvocab.UMLS.not_in_label[0]}% of edges on UMLS disease terms (n = ${dvocab.UMLS.n})` : "UMLS disease terms"}
+  are "not in label", and even MONDO-term edges went ${dvocabOld.MONDO.not_in_label[0]}% →
+  ${dvocab.MONDO.not_in_label[0]}%. The previous release used only MONDO and HP.
+- **Better, each a trend** — setting-as-target (${pts(dc.FP1_setting)}), symptom swaps
+  (${pts(dc.FP2_symptom_swap)}) and over-broad parents (${pts(dc.FP4_overbroad)}) all fell; the
+  label *reading* looks better even where the *mapping* got worse.
+
+**Volume:** at the measured precision, DAKP now carries roughly **${fmt(dv.new)}** correct
+approved indications vs **${fmt(dv.old)}** before — the clearest net gain of either source,
+from adding EMA without losing precision.
 
 ## dismech — ${ch.sources.dismech.versions.old} → ${ch.sources.dismech.versions.new}
 

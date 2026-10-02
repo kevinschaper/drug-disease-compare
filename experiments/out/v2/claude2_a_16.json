@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f482",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves these symptoms due to hay fever or other upper respiratory allergies: runny nose sneezing",
+  "note": "OTC labels manage symptoms of hay fever (allergic rhinitis), a subtype of rhinitis."
+ },
+ {
+  "id": "f227",
+  "verdict": "TARGET",
+  "quote": "cerebral edema associated with primary or metastatic brain tumor, or craniotomy",
+  "note": "Cerebral edema (a form of edema) is an indicated target; edematous states also listed."
+ },
+ {
+  "id": "f062",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis.",
+  "note": "Rheumatoid arthritis explicitly indicated."
+ },
+ {
+  "id": "f854",
+  "verdict": "FP2_symptom_swap",
+  "quote": "6) chest pain or discomfort;",
+  "note": "Chest pain appears only as a listed symptom in the panic disorder definition; the drug treats panic disorder."
+ },
+ {
+  "id": "f781",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the first-line treatment of patients with metastatic non-small cell lung cancer (NSCLC)",
+  "note": "Label is limited to metastatic NSCLC; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f218",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of mild-to-moderate dementia associated with Parkinson’s disease (PDD)",
+  "note": "Treats dementia in PD patients, not Parkinson disease itself."
+ },
+ {
+  "id": "f878",
+  "verdict": "FP1_setting",
+  "quote": "Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions.",
+  "note": "Indication is hypertension; MI appears only as class-wide background benefit of BP lowering, and edge \"Infarction\" is generic."
+ },
+ {
+  "id": "f164",
+  "verdict": "TARGET",
+  "quote": "keratosis pilaris, keratosis palmaris, keratoderma, corns and calluses",
+  "note": "Keratoderma/keratosis palmaris listed; hereditary palmoplantar keratoderma is a narrower form."
+ },
+ {
+  "id": "f704",
+  "verdict": "TARGET",
+  "quote": "primary generalized tonic-clonic seizures in patients 6 years of age and older with idiopathic generalized epilepsy",
+  "note": "Treats the seizures of idiopathic generalized epilepsy (EMA wording identical)."
+ },
+ {
+  "id": "f866",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection",
+  "note": "Indicated for HIV-1 infection; \"immunodeficiency disease\" is a broad disease class."
+ },
+ {
+  "id": "f668",
+  "verdict": "TARGET",
+  "quote": "Syphilis caused by Treponema pallidum subspecies pallidum .",
+  "note": "Syphilis listed among infections treated (penicillin-alternative list)."
+ },
+ {
+  "id": "f132",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers mouth rinse/nasal/sanitizer uses; no sour stomach or antacid use."
+ },
+ {
+  "id": "f837",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied indications list pneumonia and Gram-positive infections; no sepsis/bacteremia mentioned."
+ },
+ {
+  "id": "f178",
+  "verdict": "TARGET",
+  "quote": "management of the fulminant hypermetabolism of skeletal muscle characteristic of malignant hyperthermia crises",
+  "note": "Malignant hyperthermia treatment and prevention in anesthesia explicitly indicated."
+ },
+ {
+  "id": "f643",
+  "verdict": "TARGET",
+  "quote": "Metastatic mammary cancer – Testosterone Enanthate Injection, USP may be used secondarily in women with advancing inoperable metastatic (skeletal) mammary cancer",
+  "note": "Metastatic breast cancer indicated; breast cancer is a near parent."
+ },
+ {
+  "id": "f517",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications cover partial-onset, PGTC, LGS seizures and migraine; absence epilepsy not mentioned."
+ },
+ {
+  "id": "f512",
+  "verdict": "TARGET",
+  "quote": "Treatment of adults with refractory anaplastic astrocytoma.",
+  "note": "Anaplastic astrocytoma explicitly indicated."
+ },
+ {
+  "id": "f513",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of anxiety disorders or for the short-term relief of the symptoms of anxiety",
+  "note": "Anxiety disorders explicitly indicated."
+ },
+ {
+  "id": "f183",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with advanced or metastatic breast cancer as a single agent",
+  "note": "Breast cancer indicated."
+ },
+ {
+  "id": "f505",
+  "verdict": "TARGET",
+  "quote": "They are also indicated in chronic anterior uveitis",
+  "note": "Chronic anterior uveitis indicated; uveitis is a near parent."
+ },
+ {
+  "id": "f654",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of major adverse cardiovascular (CV) events (CV death, myocardial infarction, stroke",
+  "note": "MI risk reduction is an explicit indication."
+ },
+ {
+  "id": "f368",
+  "verdict": "FP5_negation",
+  "quote": "Colchicine is not an analgesic medication and should not be used to treat pain from other causes.",
+  "note": "Label explicitly excludes treating pain other than gout; indications are gout and FMF."
+ },
+ {
+  "id": "f797",
+  "verdict": "TARGET",
+  "quote": "Nosocomial pneumonia in adult and pediatric patients 2 months of age and older ( 1.2 ) ... Community-acquired pneumonia in adults",
+  "note": "Pneumonia indications belong to piperacillin (the antibacterial component) of the combination."
+ },
+ {
+  "id": "f805",
+  "verdict": "FP2_symptom_swap",
+  "quote": "includes at least 5 of the following 9 symptoms: depressed mood, loss of interest in usual activities, significant change in weight and/or appetite, insomnia or hypersomnia",
+  "note": "Insomnia only appears as an MDD symptom in the definition (and as an adverse effect)."
+ },
+ {
+  "id": "f369",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Chronic Hepatitis C (CHC) in patients 3 years of age or older with compensated liver disease",
+  "note": "Chronic hepatitis C explicitly indicated."
+ },
+ {
+  "id": "f256",
+  "verdict": "TARGET",
+  "quote": "Tobramycin for Injection is indicated for the treatment of bone infections caused by susceptible isolates",
+  "note": "Bone infections (osteomyelitis) indicated."
+ },
+ {
+  "id": "f243",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied text only indicates psoriasis photochemotherapy; no CTCL."
+ },
+ {
+  "id": "f201",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are hyperlipidemia and CHD secondary prevention; diabetes not mentioned."
+ },
+ {
+  "id": "f763",
+  "verdict": "FP2_symptom_swap",
+  "quote": "nausea or abdominal distress",
+  "note": "Abdominal distress appears only as a symptom in anxiety/panic disorder definitions."
+ },
+ {
+  "id": "f455",
+  "verdict": "TARGET",
+  "quote": "for the treatment of newly diagnosed acute myeloid leukemia (AML) in adults 75 years or older",
+  "note": "AML explicitly indicated."
+ },
+ {
+  "id": "f217",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult and pediatric patients aged 1 year and older, weighing at least 15 kg, with eosinophilic esophagitis (EoE)",
+  "note": "EoE explicitly indicated."
+ },
+ {
+  "id": "f863",
+  "verdict": "TARGET",
+  "quote": "for routine management of uterine atony, hemorrhage and subinvolution of the uterus",
+  "note": "Subinvolution of the uterus indicated."
+ },
+ {
+  "id": "f540",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of major adverse cardiovascular events (cardiovascular death, myocardial infarction, stroke, or coronary revascularization)",
+  "note": "MI risk reduction is an explicit indication."
+ },
+ {
+  "id": "f261",
+  "verdict": "TARGET",
+  "quote": "indicated for the symptomatic relief of patients with interstitial cystitis",
+  "note": "Symptomatic management of interstitial cystitis counts."
+ },
+ {
+  "id": "f134",
+  "verdict": "TARGET",
+  "quote": "The total management of anxiety, tension, and psychomotor agitation in conditions of emotional stress",
+  "note": "Psychomotor agitation and acutely disturbed patients are managed per indications."
+ },
+ {
+  "id": "f417",
+  "verdict": "TARGET",
+  "quote": "severe acute and chronic allergic and inflammatory processes involving the eye and its adnexa, such as: allergic conjunctivitis",
+  "note": "Atopic conjunctivitis is a form of the listed allergic conjunctivitis."
+ },
+ {
+  "id": "f199",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are angina and hypertension; preeclampsia/pregnancy not mentioned."
+ },
+ {
+  "id": "f679",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of premenstrual dysphoric disorder (PMDD) in adults",
+  "note": "PMDD explicitly indicated."
+ },
+ {
+  "id": "f194",
+  "verdict": "TARGET",
+  "quote": "indicated in pediatric and adult patients for the treatment of Mucopolysaccharidosis VII (MPS VII, Sly syndrome)",
+  "note": "MPS VII explicitly indicated."
+ },
+ {
+  "id": "f788",
+  "verdict": "TARGET",
+  "quote": "should be administered primarily to patients with progressive, potentially life-threatening fungal infections",
+  "note": "Fungal infections indicated."
+ },
+ {
+  "id": "f590",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with H. pylori infection and duodenal ulcer disease",
+  "note": "H. pylori eradication indicated."
+ },
+ {
+  "id": "f833",
+  "verdict": "TARGET",
+  "quote": "for treatment of adult male patients with advanced hormone-dependent prostate cancer",
+  "note": "Prostate cancer explicitly indicated (EMA)."
+ },
+ {
+  "id": "f437",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of overactive bladder with symptoms of urge urinary incontinence, urgency, and frequency",
+  "note": "Urge urinary incontinence is managed; near parent."
+ },
+ {
+  "id": "f442",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only Haemophilus influenzae (bacterium) appears; influenza (viral disease) is not indicated - name collision."
+ },
+ {
+  "id": "f894",
+  "verdict": "TARGET",
+  "quote": "Klebsiella pneumoniae , specifically bacteremia",
+  "note": "Bloodstream infections/bacteremia are indicated, matching bacterial sepsis."
+ }
+]

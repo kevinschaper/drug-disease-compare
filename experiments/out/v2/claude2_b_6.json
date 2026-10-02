@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f318",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Ketosis-prone diabetes is not named; only type 2 DM is indicated and ketoacidosis appears only as a warning/contraindication."
+ },
+ {
+  "id": "f415",
+  "verdict": "TARGET",
+  "quote": "treatment of Complicated Intra-Abdominal Infections (cIAI) including polymicrobial infections such as abscess",
+  "note": "Abscess is named as an indicated infection type."
+ },
+ {
+  "id": "f806",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease is mentioned only as an indication of other antihypertensive drugs, not nadolol."
+ },
+ {
+  "id": "f272",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is a nasal moisturizer; methanol toxicity not mentioned."
+ },
+ {
+  "id": "f476",
+  "verdict": "FP1_setting",
+  "quote": "For induction and maintenance of mydriasis during intraocular surgery",
+  "note": "Mydriasis is the pharmacologic effect induced during surgery, not a condition being treated."
+ },
+ {
+  "id": "f432",
+  "verdict": "FP5_negation",
+  "quote": "Whether a negative skin test to PRE-PEN predicts a lower risk of anaphylaxis is not established.",
+  "note": "Diagnostic skin test; anaphylaxis appears only in a not-established statement and warnings."
+ },
+ {
+  "id": "f836",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with unresectable or metastatic colorectal cancer as a single agent or as a component of a combination chemotherapy regimen",
+  "note": "Stage IV colon cancer is a subtype of metastatic colorectal cancer."
+ },
+ {
+  "id": "f825",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids.",
+  "note": "Uveitis named in ophthalmic indications."
+ },
+ {
+  "id": "f773",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of onchocerciasis due to the nematode parasite Onchocerca volvulus",
+  "note": "Exact match."
+ },
+ {
+  "id": "f247",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with advanced or metastatic breast cancer as a single agent",
+  "note": "Breast cancer is a near parent of the indicated advanced/metastatic breast cancer."
+ },
+ {
+  "id": "f718",
+  "verdict": "TARGET",
+  "quote": "Reduce elevated total-C, LDL-C, and Apo B in boys and postmenarchal girls, 10 to 17 years of age with heterozygous familial hypercholesterolemia",
+  "note": "HeFH explicitly indicated."
+ },
+ {
+  "id": "f001",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the control of serum phosphorus in patients with chronic kidney disease (CKD) on dialysis",
+  "note": "Kidney disease is the patient population; serum phosphorus is what is treated."
+ },
+ {
+  "id": "f110",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of diabetic nephropathy with an elevated serum creatinine and proteinuria in patients with type 2 diabetes and a history of hypertension.",
+  "note": "Diabetes is the population; the target is diabetic nephropathy."
+ },
+ {
+  "id": "f694",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Atopic eczema/dermatitis not mentioned; indications are transplant, RA and psoriasis."
+ },
+ {
+  "id": "f787",
+  "verdict": "TARGET",
+  "quote": "short-term (up to four weeks) treatment in the healing and symptomatic relief of duodenal ulcers",
+  "note": "Exact match."
+ },
+ {
+  "id": "f225",
+  "verdict": "TARGET",
+  "quote": "Treatment of adult and pediatric patients with acute lymphoblastic leukemia as part of a combination chemotherapy regimen",
+  "note": "ALL (and meningeal leukemia) are lymphoid leukemias; near parent."
+ },
+ {
+  "id": "f700",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of repetitive paroxysmal supraventricular tachycardia",
+  "note": "SVT explicitly indicated."
+ },
+ {
+  "id": "f460",
+  "verdict": "FP2_symptom_swap",
+  "quote": "for the temporary relief of these symptoms associated with menstrual periods: cramps bloating water-weight gain headache backache",
+  "note": "Text relieves menstrual symptoms; menstruation itself is the normal background process."
+ },
+ {
+  "id": "f724",
+  "verdict": "TARGET",
+  "quote": "as an adjunct to diet to reduce TG levels in adult patients with severe (\u2265 500 mg/dL) hypertriglyceridemia",
+  "note": "Hypertriglyceridemia explicitly indicated."
+ },
+ {
+  "id": "f535",
+  "verdict": "TARGET",
+  "quote": "Septicemia caused by Staphylococcus aureus (penicillinase- and non-penicillinase-producing strains), Streptococcus pneumoniae, Escherichia coli, Haemophilus influenzae",
+  "note": "Neonatal sepsis is a subtype of indicated septicemia; no neonatal restriction in text."
+ },
+ {
+  "id": "f287",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment or prevention of bronchospasm in adult and pediatric patients aged 4 years and older with reversible obstructive airway disease",
+  "note": "Bronchial disorder is an organ-system category broader than bronchospasm."
+ },
+ {
+  "id": "f452",
+  "verdict": "TARGET",
+  "quote": "as an adjunct in the treatment of chronic ulcerative colitis",
+  "note": "Exact match."
+ },
+ {
+  "id": "f283",
+  "verdict": "TARGET",
+  "quote": "the premenstrual and menstrual periods (dysmenorrhea)",
+  "note": "Dysmenorrhea pain explicitly listed."
+ },
+ {
+  "id": "f021",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of the inflammatory and pruritic manifestations of atopic dermatitis",
+  "note": "Atopic eczema = atopic dermatitis."
+ },
+ {
+  "id": "f682",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure (BP) in adult patients who are not adequately controlled on other drugs",
+  "note": "Essential hypertension is a subtype of indicated hypertension."
+ },
+ {
+  "id": "f866",
+  "verdict": "FP4_overbroad",
+  "quote": "for the treatment of HIV-1 infection in adults",
+  "note": "Immunodeficiency disease is a whole disease class; label is HIV-1 infection."
+ },
+ {
+  "id": "f019",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with hormone-refractory metastatic prostate cancer previously treated with a docetaxel-containing regimen",
+  "note": "Hormone-refractory = castration-resistant prostate cancer."
+ },
+ {
+  "id": "f784",
+  "verdict": "FP2_symptom_swap",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis. For relief of the signs and symptoms of osteoarthritis.",
+  "note": "Arthralgia (symptom) is not named; text treats RA/OA."
+ },
+ {
+  "id": "f130",
+  "verdict": "FP2_symptom_swap",
+  "quote": "palpitations, pounding heart, or accelerated heart rate",
+  "note": "Tachycardia appears only as a panic-attack symptom; indication is panic disorder."
+ },
+ {
+  "id": "f539",
+  "verdict": "TARGET",
+  "quote": "HER2-negative advanced or metastatic breast cancer",
+  "note": "Advanced breast cancer explicitly indicated."
+ },
+ {
+  "id": "f435",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Topical analgesic text; leukemia not mentioned."
+ },
+ {
+  "id": "f830",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease is mentioned only as an indication of other antihypertensive drugs, not atenolol."
+ },
+ {
+  "id": "f557",
+  "verdict": "TARGET",
+  "quote": "Severe psoriasis.",
+  "note": "Psoriasis listed among dermatologic indications."
+ },
+ {
+  "id": "f833",
+  "verdict": "TARGET",
+  "quote": "for treatment of adult male patients with advanced hormone-dependent prostate cancer",
+  "note": "Prostate cancer is a near parent of the indicated forms."
+ },
+ {
+  "id": "f586",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Text is cyclophosphamide label (names mycosis fungoides), not the metabolite 4-hydroxycyclophosphamide itself."
+ },
+ {
+  "id": "f306",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Fabry disease appears only in the FABRAZYME (agalsidase) label; eliglustat is indicated for Gaucher disease type 1."
+ },
+ {
+  "id": "f184",
+  "verdict": "TARGET",
+  "quote": "previously untreated adult patients with stage III-IV follicular lymphoma in combination with chemotherapy",
+  "note": "Exact match."
+ },
+ {
+  "id": "f338",
+  "verdict": "TARGET",
+  "quote": "anovulation (including polycystic ovarian disease, PCOD) in women who have been unresponsive to treatment with clomiphene citrate; stimulation of multifollicular development in patients undergoing superovulation for assisted reproductive technologies",
+  "note": "Anovulation and ART stimulation essentially describe female infertility treatment."
+ },
+ {
+  "id": "f403",
+  "verdict": "TARGET",
+  "quote": "uncomplicated skin and skin structure infections (mild to moderate) including abscesses, cellulitis, furuncles, impetigo",
+  "note": "Impetigo named in list."
+ },
+ {
+  "id": "f096",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM)",
+  "note": "oHCM is a form of HCM; near parent."
+ },
+ {
+  "id": "f801",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of primary dysmenorrhea",
+  "note": "Exact match (subtype)."
+ },
+ {
+  "id": "f709",
+  "verdict": "TARGET",
+  "quote": "metastatic castration-sensitive prostate cancer",
+  "note": "Castration-sensitive = hormone-sensitive prostate cancer."
+ },
+ {
+  "id": "f042",
+  "verdict": "TARGET",
+  "quote": "Adult patients with relapsed or refractory large B-cell lymphoma (LBCL)",
+  "note": "Exact match."
+ },
+ {
+  "id": "f359",
+  "verdict": "FP1_setting",
+  "quote": "with hemodynamically significant congenital heart disease (CHD) and who are 24 months of age or younger at the beginning of RSV season",
+  "note": "CHD defines the population; target is RSV lower respiratory disease prevention."
+ },
+ {
+  "id": "f329",
+  "verdict": "TARGET",
+  "quote": "as an adjunct in the treatment of tetanus",
+  "note": "Exact match; adjunctive counts."
+ }
+]

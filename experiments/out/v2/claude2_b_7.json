@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f874",
+  "verdict": "TARGET",
+  "quote": "SOLOSEC is indicated for the treatment of trichomoniasis caused by Trichomonas vaginalis in patients 12 years of age and older.",
+  "note": "Trichomoniasis explicitly indicated."
+ },
+ {
+  "id": "f480",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of ocular pain and burning/stinging following corneal refractive surgery",
+  "note": "Ophthalmic ketorolac indicated for ocular pain."
+ },
+ {
+  "id": "f261",
+  "verdict": "TARGET",
+  "quote": "indicated for the symptomatic relief of patients with interstitial cystitis",
+  "note": "Symptomatic management of interstitial cystitis counts as treating the disease."
+ },
+ {
+  "id": "f059",
+  "verdict": "TARGET",
+  "quote": "Infections caused by Chlamydia trachomatis such as uncomplicated urethral, endocervical or rectal infections, inclusion conjunctivitis, trachoma, and lymphogranuloma venereum.",
+  "note": "Chlamydial infections are listed indications."
+ },
+ {
+  "id": "f053",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of sucrase deficiency, which is part of congenital sucrase-isomaltase deficiency (CSID)",
+  "note": "Treats the sucrase deficiency component of CSID."
+ },
+ {
+  "id": "f872",
+  "verdict": "FP1_setting",
+  "quote": "treatment and prophylaxis of hypokalemia with or without metabolic alkalosis",
+  "note": "Hypokalemia is treated; metabolic alkalosis is only a qualifier of the population."
+ },
+ {
+  "id": "f296",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC)",
+  "note": "Metastatic colorectal cancer is the indication."
+ },
+ {
+  "id": "f126",
+  "verdict": "FP2_symptom_swap",
+  "quote": "emergency therapy for known or suspected opioid overdose as manifested by respiratory and/or central nervous system depression",
+  "note": "Indication is opioid overdose; respiratory depression is cited as its manifestation."
+ },
+ {
+  "id": "f472",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Docosanol treats cold sores on face/lips; oropharyngeal pain is not mentioned (label says avoid inside mouth)."
+ },
+ {
+  "id": "f293",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with active ankylosing spondylitis (AS)",
+  "note": "Ankylosing spondylitis is a subtype; spondylitis is a near parent, not a whole class."
+ },
+ {
+  "id": "f794",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are VTE/PE/AF/valve/post-MI thromboembolism; no thrombophilia or thrombin defect mentioned."
+ },
+ {
+  "id": "f064",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of thrombocytopenia in: Adult patients with immune thrombocytopenia (ITP)",
+  "note": "ITP is thrombocytopenia due to immune destruction."
+ },
+ {
+  "id": "f175",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with advanced or metastatic breast cancer as a single agent",
+  "note": "Breast cancer indicated."
+ },
+ {
+  "id": "f688",
+  "verdict": "TARGET",
+  "quote": "in combination with pembrolizumab, is indicated for the treatment of patients with advanced endometrial carcinoma (EC)",
+  "note": "Endometrial carcinoma indicated (combination regimen, not FDC)."
+ },
+ {
+  "id": "f375",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of panic disorder, with or without agoraphobia, as defined in DSM-V",
+  "note": "Panic disorder is treated; agoraphobia is only a specifier."
+ },
+ {
+  "id": "f431",
+  "verdict": "TARGET",
+  "quote": "As therapy for anaphylactic reactions adjunctive to epinephrine and other standard measures after the acute manifestations have been controlled.",
+  "note": "Adjunctive anaphylaxis therapy counts."
+ },
+ {
+  "id": "f823",
+  "verdict": "TARGET",
+  "quote": "ORENCIA is indicated for the prophylaxis of acute graft versus host disease (aGVHD)",
+  "note": "Prophylaxis of aGVHD indicated."
+ },
+ {
+  "id": "f751",
+  "verdict": "TARGET",
+  "quote": "treatment of homocystinuria ... Included within the category of homocystinuria are ... Cobalamin cofactor metabolism (cbl) defect",
+  "note": "Cbl defect is a listed homocystinuria form treated."
+ },
+ {
+  "id": "f423",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD) and Narcolepsy",
+  "note": "Narcolepsy indicated (mixed amphetamine salts, single entity)."
+ },
+ {
+  "id": "f224",
+  "verdict": "TARGET",
+  "quote": "Ethacrynic acid tablets are indicated for treatment of edema when an agent with greater diuretic potential",
+  "note": "Edema indicated."
+ },
+ {
+  "id": "f822",
+  "verdict": "TARGET",
+  "quote": "such as allergic conjunctivitis, acne rosacea, superficial punctate keratitis, herpes zoster keratitis, iritis, cyclitis",
+  "note": "Herpes zoster keratitis named in indication list."
+ },
+ {
+  "id": "f319",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of growth failure in pediatric patients 2 years of age and older with severe primary IGF-1 deficiency",
+  "note": "Growth failure (growth delay) is the treated condition."
+ },
+ {
+  "id": "f222",
+  "verdict": "TARGET",
+  "quote": "Systemic lupus erythematosus Acute rheumatic carditis",
+  "note": "SLE listed among collagen disease indications."
+ },
+ {
+  "id": "f636",
+  "verdict": "FP1_setting",
+  "quote": "PET imaging of amyloid neuritic plaque density in the brains of adult patients with cognitive impairment who are being evaluated for Alzheimer",
+  "note": "Diagnostic agent; cognitive impairment is the population."
+ },
+ {
+  "id": "f203",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated as an antidote for ethylene glycol (such as antifreeze) or methanol poisoning",
+  "note": "Label is specific to ethylene glycol/methanol; generic poisoning is overbroad."
+ },
+ {
+  "id": "f708",
+  "verdict": "TARGET",
+  "quote": "indicated for the local treatment of vulvovaginal candidiasis (moniliasis)",
+  "note": "Vulvovaginal candidiasis; candidiasis is a near parent."
+ },
+ {
+  "id": "f502",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves nasal congestion due to: a cold",
+  "note": "Treats nasal congestion symptom, not the common cold."
+ },
+ {
+  "id": "f324",
+  "verdict": "FP1_setting",
+  "quote": "conditioning treatment prior to allogeneic haematopoietic stem cell transplantation (alloHSCT) in adult patients ... with malignant and non-malignant diseases",
+  "note": "Conditioning regimen; diseases only describe population, and \"disease\" is a root term."
+ },
+ {
+  "id": "f163",
+  "verdict": "TARGET",
+  "quote": "in combination with a rituximab product, is indicated for the treatment of adult patients with previously treated follicular lymphoma (FL)",
+  "note": "Follicular lymphoma indicated."
+ },
+ {
+  "id": "f569",
+  "verdict": "TARGET",
+  "quote": "metastatic soft tissue sarcoma, metastatic bone sarcomas, metastatic ovarian carcinoma",
+  "note": "Bone sarcomas listed."
+ },
+ {
+  "id": "f389",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL)",
+  "note": "CLL indicated."
+ },
+ {
+  "id": "f768",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of the symptoms of seasonal allergic rhinitis in adults and pediatric patients 6 years of age and older",
+  "note": "Single-agent olopatadine nasal spray for SAR."
+ },
+ {
+  "id": "f524",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia Keratitis Optic neuritis Allergic conjunctivitis",
+  "note": "Optic neuritis listed among ophthalmic indications."
+ },
+ {
+  "id": "f262",
+  "verdict": "FP1_setting",
+  "quote": "MI and stroke in adults with type 2 diabetes mellitus with multiple risk factors for CHD but without clinically evident CHD",
+  "note": "Diabetes is the risk population, not the target."
+ },
+ {
+  "id": "f855",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (i.e., Zollinger-Ellison Syndrome, systemic mastocytosis, multiple endocrine adenomas).",
+  "note": "Systemic mastocytosis named."
+ },
+ {
+  "id": "f334",
+  "verdict": "TARGET",
+  "quote": "fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy",
+  "note": "Adjunctive use in pulmonary TB is listed."
+ },
+ {
+  "id": "f029",
+  "verdict": "TARGET",
+  "quote": "For the management of moderately severe to severe essential hypertension",
+  "note": "Essential hypertension indicated."
+ },
+ {
+  "id": "f336",
+  "verdict": "TARGET",
+  "quote": "treatment of non-central nervous system (CNS) manifestations of Type 1 or Type 3 Gaucher disease",
+  "note": "Type 1 Gaucher indicated."
+ },
+ {
+  "id": "f161",
+  "verdict": "FP1_setting",
+  "quote": "treatment of transfusional iron overload in adult and pediatric patients 3 years of age and older with thalassemia syndromes, sickle cell disease or other anemias",
+  "note": "Iron overload is treated; anemia is the background."
+ },
+ {
+  "id": "f880",
+  "verdict": "TARGET",
+  "quote": "Treatment of stage 1 or Stage 2 polyneuropathy in adult patients with hereditary transthyretin amyloidosis (hATTR).",
+  "note": "Polyneuropathy is the treated condition."
+ },
+ {
+  "id": "f482",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves these symptoms due to hay fever or other upper respiratory allergies: o runny nose o sneezing",
+  "note": "Hay fever (allergic rhinitis) symptom relief; rhinitis is near parent."
+ },
+ {
+  "id": "f003",
+  "verdict": "TARGET",
+  "quote": "Epivir is indicated as part of antiretroviral combination therapy for the treatment of human-immunodeficiency-virus (HIV)-infected adults and children.",
+  "note": "Single-agent lamivudine for HIV."
+ },
+ {
+  "id": "f202",
+  "verdict": "FP1_setting",
+  "quote": "in the presence of at least one weight-related comorbid condition (e.g., hypertension, dyslipidaemia",
+  "note": "Hypertension is only a qualifying comorbidity for weight management."
+ },
+ {
+  "id": "f181",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are hypertension and BPH; \"diabetic kidney disease\" appears only in generic boilerplate about other antihypertensives."
+ },
+ {
+  "id": "f527",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of heart failure (NYHA class II-IV) in adults with left ventricular systolic dysfunction",
+  "note": "Heart failure indicated."
+ }
+]

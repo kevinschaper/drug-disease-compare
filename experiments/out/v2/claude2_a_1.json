@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f224",
+  "verdict": "TARGET",
+  "quote": "Ethacrynic acid tablets are indicated for treatment of edema when an agent with greater diuretic potential than those commonly employed is required.",
+  "note": "Edema is the direct indication."
+ },
+ {
+  "id": "f341",
+  "verdict": "FP3_cross_section",
+  "quote": "Because of the risks of addiction, abuse, misuse, overdose, and death",
+  "note": "Opioid abuse appears only as a risk/limitation, never as an indication."
+ },
+ {
+  "id": "f683",
+  "verdict": "FP1_setting",
+  "quote": "indicated for treatment of patients with stable coronary artery disease to reduce the risk of cardiovascular mortality or nonfatal myocardial infarction",
+  "note": "CAD is the population; the target is CV death/MI risk reduction."
+ },
+ {
+  "id": "f478",
+  "verdict": "FP3_cross_section",
+  "quote": "Worsening of congestive heart failure has been reported in patients with preexisting impairment of ventricular function.",
+  "note": "Heart failure appears only in warnings and a generic antihypertensive class sentence."
+ },
+ {
+  "id": "f636",
+  "verdict": "FP1_setting",
+  "quote": "PET imaging of ? amyloid neuritic plaque density in the brains of adult patients with cognitive impairment who are being evaluated for Alzheimer's disease",
+  "note": "Diagnostic agent; cognitive impairment is the population being evaluated."
+ },
+ {
+  "id": "f246",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text only covers moisturizing dry nasal passages; no infertility mention."
+ },
+ {
+  "id": "f023",
+  "verdict": "TARGET",
+  "quote": "indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE) in adults and pediatric patients 2 years of age and older",
+  "note": "HAE prophylaxis is the indication."
+ },
+ {
+  "id": "f787",
+  "verdict": "TARGET",
+  "quote": "Healing of Duodenal Ulcers",
+  "note": "Duodenal ulcer healing is a listed indication."
+ },
+ {
+  "id": "f165",
+  "verdict": "TARGET",
+  "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis",
+  "note": "Contact dermatitis is a listed allergic state."
+ },
+ {
+  "id": "f458",
+  "verdict": "TARGET",
+  "quote": "relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease",
+  "note": "Active SPMS explicitly included."
+ },
+ {
+  "id": "f093",
+  "verdict": "TARGET",
+  "quote": "Chronic Thromboembolic Pulmonary Hypertension (CTEPH) (WHO Group 4) ... Pulmonary Arterial Hypertension (PAH) (WHO Group 1)",
+  "note": "CTEPH and PAH are subtypes; edge is a near parent."
+ },
+ {
+  "id": "f099",
+  "verdict": "TARGET",
+  "quote": "Treatment of Moderate to Severe Symptoms of Vulvar and Vaginal Atrophy due to Menopause",
+  "note": "VVA due to menopause is the GSM synonym."
+ },
+ {
+  "id": "f380",
+  "verdict": "TARGET",
+  "quote": "as a brachial plexus block or femoral nerve block for treatment of post-operative pain",
+  "note": "Post-operative pain is the EMA indication."
+ },
+ {
+  "id": "f145",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label covers rheumatoid arthritis only; interstitial lung disease not mentioned."
+ },
+ {
+  "id": "f233",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of acute pulmonary embolism in adults when administered in conjunction with warfarin sodium",
+  "note": "Acute PE treatment is indicated."
+ },
+ {
+  "id": "f850",
+  "verdict": "TARGET",
+  "quote": "in acute gouty arthritis; acute rheumatic carditis; ankylosing spondylitis; psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Multiple arthritides listed; edge is a near parent."
+ },
+ {
+  "id": "f106",
+  "verdict": "TARGET",
+  "quote": "Treatment of hypercalcemia of malignancy refractory to bisphosphonate therapy.",
+  "note": "Hypercalcemia of malignancy is a subtype of hypercalcemia."
+ },
+ {
+  "id": "f102",
+  "verdict": "TARGET",
+  "quote": "relieves heartburn associated with acid indigestion and sour stomach",
+  "note": "OTC use relieves/prevents heartburn of acid indigestion (near-synonymous symptoms)."
+ },
+ {
+  "id": "f401",
+  "verdict": "FP4_overbroad",
+  "quote": "Pulmonary Arterial Hypertension (PAH) (WHO Group 1)",
+  "note": "Only pulmonary hypertension indicated; 'hypertensive disorder' is a broad class implying systemic hypertension."
+ },
+ {
+  "id": "f485",
+  "verdict": "TARGET",
+  "quote": "Patients 2 years of age and older with active polyarticular juvenile idiopathic arthritis.",
+  "note": "PJIA is a listed indication."
+ },
+ {
+  "id": "f593",
+  "verdict": "FP1_setting",
+  "quote": "treatment of panic disorder in adults, with or without agoraphobia",
+  "note": "Target is panic disorder; agoraphobia is only a qualifying feature."
+ },
+ {
+  "id": "f278",
+  "verdict": "TARGET",
+  "quote": "indicated for the radical cure (prevention of relapse) of vivax malaria",
+  "note": "Vivax malaria is the indication."
+ },
+ {
+  "id": "f721",
+  "verdict": "TARGET",
+  "quote": "found useful in the treatment of acute non-lymphocytic leukemia and the blast phase of chronic myelocytic leukemia",
+  "note": "Blast-phase CML named as treated."
+ },
+ {
+  "id": "f331",
+  "verdict": "TARGET",
+  "quote": "Complicated Urinary Tract Infections (cUTI), including Pyelonephritis",
+  "note": "cUTI is indicated."
+ },
+ {
+  "id": "f197",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels cover ventricular arrhythmias (VF/VT) only; no supraventricular mention."
+ },
+ {
+  "id": "f273",
+  "verdict": "FP3_cross_section",
+  "quote": "persistent or chronic cough such as occurs with smoking, asthma, chronic bronchitis or emphysema",
+  "note": "Bronchitis appears only in the ask-a-doctor warning."
+ },
+ {
+  "id": "f075",
+  "verdict": "TARGET",
+  "quote": "reduction of blood levels and depot stores of lead in lead poisoning (acute and chronic) and lead encephalopathy",
+  "note": "Lead encephalopathy is indicated."
+ },
+ {
+  "id": "f032",
+  "verdict": "TARGET",
+  "quote": "Treatment of acute, uncomplicated influenza type A and B infections",
+  "note": "Influenza treatment is indicated."
+ },
+ {
+  "id": "f126",
+  "verdict": "FP2_symptom_swap",
+  "quote": "emergency therapy for known or suspected opioid overdose as manifested by respiratory and/or central nervous system depression",
+  "note": "Target is opioid overdose; edge names the generic manifestation."
+ },
+ {
+  "id": "f764",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label covers psoriasis only; no CTCL mention."
+ },
+ {
+  "id": "f386",
+  "verdict": "FP1_setting",
+  "quote": "treatment of metabolic acidosis which may occur in severe renal disease",
+  "note": "Treats metabolic acidosis; renal disease is the background."
+ },
+ {
+  "id": "f163",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with previously treated follicular lymphoma (FL)",
+  "note": "FL is indicated."
+ },
+ {
+  "id": "f589",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of Parkinson's disease, post-encephalitic parkinsonism",
+  "note": "Parkinson's disease is the indication."
+ },
+ {
+  "id": "f087",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Duchenne muscular dystrophy (DMD) in patients 6 years of age and older",
+  "note": "DMD is the indication."
+ },
+ {
+  "id": "f255",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis.",
+  "note": "RA signs/symptoms management counts."
+ },
+ {
+  "id": "f214",
+  "verdict": "TARGET",
+  "quote": "adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "T2DM glycemic control is indicated."
+ },
+ {
+  "id": "f813",
+  "verdict": "TARGET",
+  "quote": "Mild, uncomplicated allergic skin manifestations of urticaria and angioedema",
+  "note": "Angioedema is a listed indication."
+ },
+ {
+  "id": "f722",
+  "verdict": "TARGET",
+  "quote": "For the prevention of recurrence following rheumatic fever and/or chorea",
+  "note": "Prevention of rheumatic fever recurrence is indicated."
+ },
+ {
+  "id": "f486",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with locally advanced or metastatic urothelial carcinoma (mUC) with susceptible FGFR3 genetic alterations",
+  "note": "Edge is a near parent of the indicated UC."
+ },
+ {
+  "id": "f802",
+  "verdict": "TARGET",
+  "quote": "Septicemia, empyema, pneumonia, pericarditis, endocarditis, meningitis",
+  "note": "Pneumonia is a listed clinical indication."
+ },
+ {
+  "id": "f384",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of symptomatic orthostatic hypotension (OH)",
+  "note": "OH is the indication."
+ },
+ {
+  "id": "f211",
+  "verdict": "TARGET",
+  "quote": "Trichomoniasis ( 1.1 )",
+  "note": "Trichomoniasis is indicated."
+ },
+ {
+  "id": "f617",
+  "verdict": "FP5_negation",
+  "quote": "Treatment of patients with asymptomatic ventricular premature contractions should be avoided.",
+  "note": "PVC treatment explicitly discouraged."
+ },
+ {
+  "id": "f804",
+  "verdict": "TARGET",
+  "quote": "localized hypertrophic, infiltrated, inflammatory lesions of granuloma annulare",
+  "note": "Granuloma annulare lesions listed for intralesional use."
+ },
+ {
+  "id": "f692",
+  "verdict": "TARGET",
+  "quote": "Treatment of Wilson's disease.",
+  "note": "Wilson's disease is the EMA indication."
+ }
+]

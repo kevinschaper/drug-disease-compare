@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f319",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of growth failure in pediatric patients 2 years of age and older with severe primary IGF- 1 deficiency",
+  "note": "Growth failure is the treated condition; growth delay is a synonym."
+ },
+ {
+  "id": "f219",
+  "verdict": "TARGET",
+  "quote": "Treatment of Paget's disease of the bone.",
+  "note": "EMA indication names Paget disease of bone."
+ },
+ {
+  "id": "f678",
+  "verdict": "TARGET",
+  "quote": "relapsed or refractory mantle cell lymphoma (MCL) ... chronic lymphocytic leukemia or small lymphocytic lymphoma (CLL/SLL)",
+  "note": "Indicated lymphoma subtypes; lymphoma is a near parent."
+ },
+ {
+  "id": "f803",
+  "verdict": "TARGET",
+  "quote": "in combination with chlorambucil, for the treatment of patients with previously untreated chronic lymphocytic leukemia (CLL)",
+  "note": "CLL is B-cell CLL."
+ },
+ {
+  "id": "f424",
+  "verdict": "TARGET",
+  "quote": "patients with relapsing-remitting multiple sclerosis and two or more relapses within the last two years",
+  "note": "MS forms are indicated in EMA text."
+ },
+ {
+  "id": "f260",
+  "verdict": "FP1_setting",
+  "quote": "decrease the incidence of chemotherapy-induced myelosuppression in adult patients when administered prior to a platinum/etoposide-containing regimen ... for extensive-stage small cell lung cancer",
+  "note": "SCLC is the background; target is chemo-induced myelosuppression."
+ },
+ {
+  "id": "f882",
+  "verdict": "FP1_setting",
+  "quote": "For blood pressure control in certain acute hypotensive states (e.g., ... myocardial infarction",
+  "note": "MI is a setting for hypotension, not the treated condition."
+ },
+ {
+  "id": "f587",
+  "verdict": "FP1_setting",
+  "quote": "Genotype 1, 4, 5, or 6 infection without cirrhosis or with compensated cirrhosis",
+  "note": "Compensated cirrhosis is the patient population; HCV is treated."
+ },
+ {
+  "id": "f572",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases Pemphigus Bullous dermatitis herpetiformis Severe erythema multiforme (Stevens-Johnson syndrome) Exfoliative dermatitis",
+  "note": "Listed indicated dermatologic disease."
+ },
+ {
+  "id": "f155",
+  "verdict": "FP3_cross_section",
+  "quote": "associated with significant loss of bone mineral density (BMD)",
+  "note": "Bone loss appears only as a warning, not an indication."
+ },
+ {
+  "id": "f207",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of patients with chronic stable angina (effort-associated angina)",
+  "note": "Effort-associated angina = exercise-induced angina."
+ },
+ {
+  "id": "f302",
+  "verdict": "TARGET",
+  "quote": "Treatment of active duodenal ulcer in adults ... Treatment of active benign gastric ulcer in adults.",
+  "note": "Duodenal and gastric ulcers indicated; ulcer disease near parent."
+ },
+ {
+  "id": "f659",
+  "verdict": "FP1_setting",
+  "quote": "Genotype 1 infection with decompensated cirrhosis, in combination with ribavirin",
+  "note": "Decompensated cirrhosis is the population; HCV infection is treated."
+ },
+ {
+  "id": "f614",
+  "verdict": "FP5_negation",
+  "quote": "There are no controlled trials demonstrating reduction of risk of these events with TRYVIO.",
+  "note": "Stroke only in class boilerplate, explicitly not demonstrated for this drug."
+ },
+ {
+  "id": "f360",
+  "verdict": "TARGET",
+  "quote": "allergic conjunctivitis, acne rosacea, superficial punctate keratitis, herpes zoster keratitis",
+  "note": "Superficial punctate keratitis listed among indicated conditions."
+ },
+ {
+  "id": "f296",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with wild-type RAS metastatic colorectal cancer (mCRC)",
+  "note": "mCRC is metastatic colorectal neoplasm."
+ },
+ {
+  "id": "f657",
+  "verdict": "TARGET",
+  "quote": "Uses for temporary relief of mild symptoms of intermittent asthma ■ wheezing",
+  "note": "Wheezing is explicitly listed as relieved."
+ },
+ {
+  "id": "f169",
+  "verdict": "TARGET",
+  "quote": "Aspergillosis, pulmonary and extrapulmonary, in patients who are intolerant of or who are refractory to amphotericin B therapy.",
+  "note": "Pulmonary aspergilloma is a form of pulmonary aspergillosis."
+ },
+ {
+  "id": "f083",
+  "verdict": "TARGET",
+  "quote": "Community-Acquired Pneumonia due to Haemophilus influenzae or Streptococcus pneumonia .",
+  "note": "H. influenzae infections are indicated."
+ },
+ {
+  "id": "f176",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of overactive bladder with symptoms of urge urinary incontinence, urgency and frequency",
+  "note": "Direct match."
+ },
+ {
+  "id": "f321",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1) ... Efficacy has been shown in idiopathic PAH (IPAH)",
+  "note": "Idiopathic PAH is a subtype of indicated PAH."
+ },
+ {
+  "id": "f293",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with active ankylosing spondylitis (AS)",
+  "note": "AS is a spondylitis; near parent."
+ },
+ {
+  "id": "f495",
+  "verdict": "TARGET",
+  "quote": "Difluprednate ophthalmic emulsion is indicated for the treatment of endogenous anterior uveitis.",
+  "note": "Direct match."
+ },
+ {
+  "id": "f430",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of secondary amenorrhea and abnormal uterine bleeding due to hormonal imbalance",
+  "note": "Direct match."
+ },
+ {
+  "id": "f135",
+  "verdict": "TARGET",
+  "quote": "for the treatment of pediatric patients 1 year of age and older with low-grade glioma (LGG) with a BRAF V600E mutation",
+  "note": "LGG is a glioma; near parent."
+ },
+ {
+  "id": "f796",
+  "verdict": "TARGET",
+  "quote": "Relapsed or refractory, low grade or follicular, CD20-positive B-cell NHL as a single agent.",
+  "note": "Low-grade B-cell NHL = indolent B-NHL."
+ },
+ {
+  "id": "f084",
+  "verdict": "TARGET",
+  "quote": "Relief of the signs and symptoms of osteoarthritis (OA)",
+  "note": "Direct match."
+ },
+ {
+  "id": "f556",
+  "verdict": "TARGET",
+  "quote": "Treatment of adult patients with very high elevations of serum triglyceride levels (Types IV and V hyperlipidemia)",
+  "note": "Hypertriglyceridemia treated."
+ },
+ {
+  "id": "f473",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis and treatment of venous thrombosis and pulmonary embolism",
+  "note": "Direct match."
+ },
+ {
+  "id": "f055",
+  "verdict": "TARGET",
+  "quote": "Systemic lupus erythematosus Acute rheumatic carditis",
+  "note": "Acute rheumatic carditis is a carditis; near parent."
+ },
+ {
+  "id": "f038",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Only concurrent bacteremia within pneumonia/UTI is mentioned; sepsis not clearly indicated."
+ },
+ {
+  "id": "f249",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1)",
+  "note": "Hypertensive disorder is a broad class beyond PAH."
+ },
+ {
+  "id": "f426",
+  "verdict": "TARGET",
+  "quote": "1.6 Prevention of Postmenopausal Osteoporosis",
+  "note": "Direct match (prevention)."
+ },
+ {
+  "id": "f571",
+  "verdict": "FP2_symptom_swap",
+  "quote": "minor aches, pains and related discomforts ... including those affecting the back, legs and joints",
+  "note": "Only joint aches/pain relieved, not arthritic disease."
+ },
+ {
+  "id": "f340",
+  "verdict": "TARGET",
+  "quote": "acute lymphoblastic (stem-cell) leukemia (Cyclophosphamide for Injection given during remission is effective in prolonging its duration)",
+  "note": "Listed indicated leukemia."
+ },
+ {
+  "id": "f588",
+  "verdict": "TARGET",
+  "quote": "Nosocomial pneumonia ( 1.1 ); Community-acquired pneumonia ( 1.1 )",
+  "note": "Direct match."
+ },
+ {
+  "id": "f366",
+  "verdict": "TARGET",
+  "quote": "For the treatment of postmenopausal women with osteoporosis at high risk for fracture",
+  "note": "Direct match."
+ },
+ {
+  "id": "f184",
+  "verdict": "TARGET",
+  "quote": "Previously untreated follicular, CD20-positive, B-cell NHL in combination with first line chemotherapy",
+  "note": "Direct match."
+ },
+ {
+  "id": "f816",
+  "verdict": "TARGET",
+  "quote": "mild, uncomplicated allergic skin manifestations of urticaria and angioedema",
+  "note": "Urticaria listed."
+ },
+ {
+  "id": "f351",
+  "verdict": "TARGET",
+  "quote": "Systemic lupus erythematosus Acute rheumatic carditis",
+  "note": "Direct match."
+ },
+ {
+  "id": "f504",
+  "verdict": "TARGET",
+  "quote": "Sodium Sulfacetamide 10% Wash is intended for topical application in the following scaling dermatoses: seborrheic dermatitis",
+  "note": "Single-ingredient label names it."
+ },
+ {
+  "id": "f139",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult patients with metastatic non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC is a lung cancer; near parent."
+ },
+ {
+  "id": "f663",
+  "verdict": "FP5_negation",
+  "quote": "should not be used for the treatment of type 1 diabetes or for the treatment of diabetic ketoacidosis.",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f619",
+  "verdict": "TARGET",
+  "quote": "Intra-abdominal Infections , including peritonitis caused by Escherichia coli",
+  "note": "Peritonitis explicitly indicated."
+ },
+ {
+  "id": "f597",
+  "verdict": "TARGET",
+  "quote": "RITUXAN is indicated for the treatment of adult patients with moderate to severe pemphigus vulgaris.",
+  "note": "PV is the main pemphigus form; near parent."
+ }
+]

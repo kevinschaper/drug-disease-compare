@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f434",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with KRAS G12C-mutated locally advanced or metastatic non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC named directly."
+ },
+ {
+  "id": "f892",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the following ringworm infections; tinea corporis (ringworm of the body)",
+  "note": "Tinea corporis listed as indicated."
+ },
+ {
+  "id": "f588",
+  "verdict": "TARGET",
+  "quote": "Nosocomial pneumonia ( 1.1 ); Community-acquired pneumonia ( 1.1 )",
+  "note": "Pneumonia subtypes indicated; edge is near parent."
+ },
+ {
+  "id": "f571",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves these common cold symptoms: runny nose & sneezing nasal congestion sore throat cough phlegm chills fever headache joint pain muscle pain",
+  "note": "Only joint pain/aches (from colds, strain) relieved; arthritis never named as target."
+ },
+ {
+  "id": "f707",
+  "verdict": "TARGET",
+  "quote": "Acute otitis media caused by Streptococcus pneumoniae (excluding penicillin-resistant strains), Streptococcus pyogenes",
+  "note": "Acute otitis media listed as indication."
+ },
+ {
+  "id": "f851",
+  "verdict": "TARGET",
+  "quote": "asthma (as distinct from allergic asthma listed above under \"Allergic States\")",
+  "note": "Asthma listed under respiratory diseases."
+ },
+ {
+  "id": "f091",
+  "verdict": "TARGET",
+  "quote": "As pituitary TSH suppressants, in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules",
+  "note": "Older label indicates goiter treatment (newer labels limit nontoxic goiter, but union applies)."
+ },
+ {
+  "id": "f791",
+  "verdict": "TARGET",
+  "quote": "1.3 Maintenance Treatment of Chronic Obstructive Pulmonary Disease SEREVENT DISKUS is indicated for the long-term twice-daily administration in the maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD)",
+  "note": "Single-agent salmeterol label indicates COPD maintenance."
+ },
+ {
+  "id": "f575",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of ocular hypertension and chronic open-angle glaucoma",
+  "note": "Open-angle glaucoma indicated; glaucoma is near parent."
+ },
+ {
+  "id": "f237",
+  "verdict": "TARGET",
+  "quote": "Metoclopramide injection, USP is indicated for the prophylaxis of vomiting associated with emetogenic cancer chemotherapy",
+  "note": "Vomiting itself is the prevention target."
+ },
+ {
+  "id": "f092",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Homeopathic food-sensitivity/allergy symptom text; diabetes not mentioned."
+ },
+ {
+  "id": "f219",
+  "verdict": "TARGET",
+  "quote": "Treatment of Paget's disease of the bone.",
+  "note": "EMA indication names Paget's disease of bone."
+ },
+ {
+  "id": "f691",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only ocular hypertension (raised IOP) is indicated; systemic hypertensive disorder is a word-collision mapping."
+ },
+ {
+  "id": "f424",
+  "verdict": "TARGET",
+  "quote": "patients with relapsing-remitting multiple sclerosis and two or more relapses within the last two years; patients with secondary progressive multiple sclerosis",
+  "note": "MS subtypes indicated."
+ },
+ {
+  "id": "f402",
+  "verdict": "TARGET",
+  "quote": "fluconazole tablets USP were also effective for the treatment of Candida urinary tract infections",
+  "note": "Candida UTI stated in indications section; edge is near parent."
+ },
+ {
+  "id": "f869",
+  "verdict": "TARGET",
+  "quote": "Severe seborrheic dermatitis",
+  "note": "Listed under dermatologic diseases."
+ },
+ {
+  "id": "f099",
+  "verdict": "TARGET",
+  "quote": "Treatment of Moderate to Severe Symptoms of Vulvar and Vaginal Atrophy due to Menopause",
+  "note": "VVA due to menopause is the GSM entity."
+ },
+ {
+  "id": "f870",
+  "verdict": "TARGET",
+  "quote": "indicated for use in combination with other antiretroviral agents for the treatment of HIV-1 infection",
+  "note": "HIV-1 infection indicated."
+ },
+ {
+  "id": "f863",
+  "verdict": "TARGET",
+  "quote": "for routine management of uterine atony, hemorrhage and subinvolution of the uterus",
+  "note": "Subinvolution of uterus indicated; edge is narrower form."
+ },
+ {
+  "id": "f158",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of anxiety disorder ... or the short-term relief of symptoms of anxiety",
+  "note": "Anxiety named as treated."
+ },
+ {
+  "id": "f209",
+  "verdict": "TARGET",
+  "quote": "microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) metastatic colorectal cancer",
+  "note": "MSI-H/dMMR CRC indicated; CRC is near parent."
+ },
+ {
+  "id": "f031",
+  "verdict": "TARGET",
+  "quote": "Onychomycosis of the toenail, with or without fingernail involvement, due to dermatophytes (tinea unguium)",
+  "note": "Tinea unguium named."
+ },
+ {
+  "id": "f213",
+  "verdict": "TARGET",
+  "quote": "to reduce excess body weight and maintain weight reduction long term in: ... Adults with overweight in the presence of at least one weight-related comorbid condition",
+  "note": "Overweight is a treated population/condition for weight reduction."
+ },
+ {
+  "id": "f187",
+  "verdict": "FP1_setting",
+  "quote": "treatment of secondary hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on dialysis",
+  "note": "CKD/ESRD is the background; secondary HPT is treated."
+ },
+ {
+  "id": "f676",
+  "verdict": "TARGET",
+  "quote": "Upper respiratory infections caused by Streptococcus pneumoniae",
+  "note": "Pneumococcal respiratory infection indicated; edge near parent."
+ },
+ {
+  "id": "f271",
+  "verdict": "TARGET",
+  "quote": "For the relief of symptoms of depression.",
+  "note": "Perinatal maternal depression is a subtype of indicated depression."
+ },
+ {
+  "id": "f240",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are gallstones and CTX; urinary stones never mentioned."
+ },
+ {
+  "id": "f189",
+  "verdict": "FP5_negation",
+  "quote": "The efficacy of SAPHNELO has not been evaluated in patients with severe active lupus nephritis or severe active central nervous system lupus.",
+  "note": "CNS lupus explicitly carved out in Limitations of Use."
+ },
+ {
+  "id": "f895",
+  "verdict": "TARGET",
+  "quote": "Actinomycosis caused by Actinomyces species",
+  "note": "Listed indication."
+ },
+ {
+  "id": "f080",
+  "verdict": "TARGET",
+  "quote": "indicated for use with carbidopa-levodopa or with levodopa in the treatment of the symptoms of idiopathic Parkinson's disease (paralysis agitans), postencephalitic parkinsonism",
+  "note": "Single-agent carbidopa label names postencephalitic parkinsonism."
+ },
+ {
+  "id": "f683",
+  "verdict": "FP1_setting",
+  "quote": "indicated for treatment of patients with stable coronary artery disease to reduce the risk of cardiovascular mortality or nonfatal myocardial infarction",
+  "note": "CAD is the population; target is CV death/MI risk reduction (rubric FP1 example pattern)."
+ },
+ {
+  "id": "f777",
+  "verdict": "FP1_setting",
+  "quote": "For patients with a history of recent myocardial infarction (MI), recent stroke, or established peripheral arterial disease, clopidogrel ... reduce the rate of a combined endpoint of new ischemic stroke",
+  "note": "PAD is the population; target is atherothrombotic events."
+ },
+ {
+  "id": "f456",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Cryopyrin-Associated Periodic Syndromes (CAPS), including Familial Cold Autoinflammatory Syndrome (FCAS), and Muckle-Wells Syndrome (MWS)",
+  "note": "MWS named."
+ },
+ {
+  "id": "f255",
+  "verdict": "TARGET",
+  "quote": "Relief of the signs and symptoms of rheumatoid arthritis",
+  "note": "RA indicated."
+ },
+ {
+  "id": "f244",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia",
+  "note": "Ventricular tachycardia indicated; tachycardia is near parent, not organ-system class."
+ },
+ {
+  "id": "f711",
+  "verdict": "TARGET",
+  "quote": "JAVADIN is indicated for the treatment of hypertension in adult patients, to lower blood pressure.",
+  "note": "Orthostatic hypertension is a form of indicated hypertension."
+ },
+ {
+  "id": "f323",
+  "verdict": "TARGET",
+  "quote": "Meningitis due to Neisseria meningitidis .",
+  "note": "Meningococcal meningitis listed among treated infections."
+ },
+ {
+  "id": "f013",
+  "verdict": "FP2_symptom_swap",
+  "quote": "airway swelling, laryngospasm, bronchospasm, pruritus, urticaria or angioedema, swelling of the eyelids, lips, and tongue",
+  "note": "Swelling appears only as a manifestation of anaphylaxis (the treated condition); pulmonary edema is a warning."
+ },
+ {
+  "id": "f066",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of acute bacterial sinusitis (ABS)due to Streptococcus pneumoniae, Haemophilus influenzae, or Moraxella catarrhalis",
+  "note": "Acute bacterial sinusitis indicated."
+ },
+ {
+  "id": "f668",
+  "verdict": "TARGET",
+  "quote": "Syphilis caused by Treponema pallidum subspecies pallidum .",
+  "note": "Syphilis listed."
+ },
+ {
+  "id": "f699",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with atypical hemolytic uremic syndrome (aHUS) to inhibit complement-mediated thrombotic microangiopathy",
+  "note": "TMA is explicitly the inhibited target."
+ },
+ {
+  "id": "f223",
+  "verdict": "TARGET",
+  "quote": "Intra-abdominal Infections, including peritonitis caused by Escherichia coli , Klebsiella spp., and Staphylococcus aureus",
+  "note": "Intra-abdominal infections indicated."
+ },
+ {
+  "id": "f332",
+  "verdict": "FP5_negation",
+  "quote": "There are no controlled trials demonstrating risk reduction with quinapril tablets.",
+  "note": "Stroke reduction mentioned only as class rationale, explicitly not demonstrated for quinapril."
+ },
+ {
+  "id": "f251",
+  "verdict": "TARGET",
+  "quote": "treatment of cutaneous manifestations in patients with cutaneous T-cell lymphoma (CTCL)",
+  "note": "CTCL is the primary cutaneous T-cell lymphoma."
+ },
+ {
+  "id": "f859",
+  "verdict": "FP2_symptom_swap",
+  "quote": "a suicide attempt or suicidal ideation",
+  "note": "Suicidal ideation appears only as an MDD symptom criterion (and in warnings), not a target."
+ }
+]

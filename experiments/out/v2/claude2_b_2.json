@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f814",
+  "verdict": "FP5_negation",
+  "quote": "JARDIANCE is not recommended for patients with type 1 diabetes or for the treatment of diabetic ketoacidosis",
+  "note": "DKA is explicitly excluded in Limitations of Use and appears as a contraindication/warning."
+ },
+ {
+  "id": "f517",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications cover partial-onset, primary generalized tonic-clonic and LGS seizures; absence epilepsy is not mentioned."
+ },
+ {
+  "id": "f057",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Juvenile dermatomyositis is a subtype of the indicated dermatomyositis."
+ },
+ {
+  "id": "f212",
+  "verdict": "TARGET",
+  "quote": "Ziprasidone capsules are indicated for the treatment of schizophrenia",
+  "note": "Schizophrenia is named directly as an indication."
+ },
+ {
+  "id": "f044",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of dysfunctions associated with hyperprolactinemia including amenorrhea with or without galactorrhea, infertility or hypogonadism",
+  "note": "Galactorrhea is named as one of the hyperprolactinemia-associated dysfunctions treated."
+ },
+ {
+  "id": "f669",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of major adverse cardiovascular (CV) events (CV death, myocardial infarction, stroke, unstable angina",
+  "note": "Stroke risk reduction is an explicit prevention indication."
+ },
+ {
+  "id": "f856",
+  "verdict": "TARGET",
+  "quote": "indicated in pediatric patients aged one to 17 years of age for treatment of complicated urinary tract infections (cUTI) and pyelonephritis due to Escherichia coli",
+  "note": "Pyelonephritis is named directly."
+ },
+ {
+  "id": "f485",
+  "verdict": "TARGET",
+  "quote": "ACTEMRA (tocilizumab) is indicated for the treatment of active polyarticular juvenile idiopathic arthritis in patients 2 years of age and older.",
+  "note": "PJIA is named directly."
+ },
+ {
+  "id": "f519",
+  "verdict": "FP1_setting",
+  "quote": "protein requirements are substantially increased as with extensive burns.",
+  "note": "Extensive burns are a setting for parenteral nutrition, not the treated condition."
+ },
+ {
+  "id": "f719",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of functional bowel/irritable bowel syndrome",
+  "note": "IBS is named directly."
+ },
+ {
+  "id": "f250",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura in adults",
+  "note": "Migraine is named directly."
+ },
+ {
+  "id": "f180",
+  "verdict": "TARGET",
+  "quote": "indicated to improve survival of stable adult patients with symptomatic heart failure with reduced ejection fraction (<=40%) (HFrEF) after an acute myocardial infarction",
+  "note": "Heart failure (HFrEF post-MI) is the treated condition; CHF essentially describes it."
+ },
+ {
+  "id": "f439",
+  "verdict": "TARGET",
+  "quote": "left ventricular dysfunction following myocardial infarction in clinically stable patients",
+  "note": "Left ventricular dysfunction is an indicated condition (synonym of abnormal LV function)."
+ },
+ {
+  "id": "f644",
+  "verdict": "FP5_negation",
+  "quote": "To induce a diuresis or remission of proteinuria in the nephrotic syndrome, without uremia",
+  "note": "Uremia appears only as an exclusion qualifier, not an indication."
+ },
+ {
+  "id": "f673",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Fatigue is not mentioned; indications are hypogonadism, delayed puberty, and metastatic mammary cancer."
+ },
+ {
+  "id": "f626",
+  "verdict": "TARGET",
+  "quote": "Korjuny is indicated for the intraperitoneal treatment of malignant ascites in adults with epithelial cellular adhesion molecule (EpCAM)-positive carcinomas",
+  "note": "Malignant ascites is named directly."
+ },
+ {
+  "id": "f170",
+  "verdict": "TARGET",
+  "quote": "Vedrop is indicated in vitamin-E deficiency due to digestive malabsorption",
+  "note": "Vitamin E deficiency is a synonym of decreased circulating vitamin E."
+ },
+ {
+  "id": "f227",
+  "verdict": "TARGET",
+  "quote": "cerebral edema associated with primary or metastatic brain tumor, or craniotomy.",
+  "note": "Cerebral edema (and Edematous States) is an indicated form of edema; edge is a near parent."
+ },
+ {
+  "id": "f038",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications list pneumonia, febrile neutropenia, UTI, skin and intra-abdominal infections; sepsis/septicemia not mentioned."
+ },
+ {
+  "id": "f613",
+  "verdict": "FP1_setting",
+  "quote": "prevention of serious lower respiratory tract disease caused by respiratory syncytial virus (RSV) in pediatric patients: ... with bronchopulmonary dysplasia (BPD)",
+  "note": "BPD defines the eligible population; the target is RSV disease."
+ },
+ {
+  "id": "f638",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are local/regional anesthesia; uveitis is not mentioned."
+ },
+ {
+  "id": "f523",
+  "verdict": "FP1_setting",
+  "quote": "treatment of chronic hepatitis B virus (HBV) infection in adults with: ... decompensated liver disease.",
+  "note": "Decompensated liver disease is the patient population; HBV is the treated condition."
+ },
+ {
+  "id": "f740",
+  "verdict": "TARGET",
+  "quote": "As adjunctive therapy for short term administration (to tide the patient over an acute episode or exacerbation) in: psoriatic arthritis",
+  "note": "Psoriatic arthritis is a named listed indication."
+ },
+ {
+  "id": "f658",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced or metastatic gastric cancer, gastroesophageal junction cancer, and esophageal adenocarcinoma whose tumors express PD-L1",
+  "note": "GEJ cancer is named directly."
+ },
+ {
+  "id": "f361",
+  "verdict": "TARGET",
+  "quote": "In anaphylaxis as an adjunct to epinephrine and other standard measures after the acute symptoms have been controlled.",
+  "note": "Adjunctive treatment of anaphylaxis is indicated."
+ },
+ {
+  "id": "f562",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura in adults and in pediatric patients 6 to 17 years of age",
+  "note": "Migraine is named directly."
+ },
+ {
+  "id": "f637",
+  "verdict": "TARGET",
+  "quote": "IMJUDO, in combination with durvalumab, is indicated for the treatment of adult patients with unresectable hepatocellular carcinoma (uHCC).",
+  "note": "HCC named; combination therapy counts."
+ },
+ {
+  "id": "f687",
+  "verdict": "TARGET",
+  "quote": "IMFINZI, in combination with tremelimumab-actl, is indicated for the treatment of adult patients with unresectable hepatocellular carcinoma (uHCC).",
+  "note": "HCC named directly (also EMA monotherapy)."
+ },
+ {
+  "id": "f386",
+  "verdict": "FP1_setting",
+  "quote": "indicated in the treatment of metabolic acidosis which may occur in severe renal disease",
+  "note": "Renal disease is the background in which the treated metabolic acidosis arises."
+ },
+ {
+  "id": "f151",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the risk of myocardial infarction, stroke, or death from cardiovascular causes",
+  "note": "Stroke risk reduction is an explicit indication."
+ },
+ {
+  "id": "f849",
+  "verdict": "TARGET",
+  "quote": "Rheumatic fever and/or chorea - Prophylaxis with penicillin G benzathine has proven effective in preventing recurrence of these conditions.",
+  "note": "Prophylaxis of rheumatic fever is indicated."
+ },
+ {
+  "id": "f889",
+  "verdict": "TARGET",
+  "quote": "Budesonide inhalation suspension is indicated for the maintenance treatment of asthma",
+  "note": "Asthma named on single-ingredient budesonide label."
+ },
+ {
+  "id": "f867",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with deleterious or suspected deleterious gBRCAm, HER2-negative metastatic breast cancer",
+  "note": "Stage IV breast carcinoma corresponds to the indicated metastatic breast cancer."
+ },
+ {
+  "id": "f257",
+  "verdict": "TARGET",
+  "quote": "For use as directed by a doctor for the prevention of recurrent heart attack or stroke",
+  "note": "Single-ingredient aspirin label indicates stroke prevention."
+ },
+ {
+  "id": "f105",
+  "verdict": "TARGET",
+  "quote": "Nadolol is indicated for the long-term management of patients with angina pectoris",
+  "note": "Angina pectoris named directly."
+ },
+ {
+  "id": "f763",
+  "verdict": "FP2_symptom_swap",
+  "quote": "(7) nausea or abdominal distress;",
+  "note": "Abdominal distress appears only as a listed symptom of panic disorder, not as a treatment target."
+ },
+ {
+  "id": "f072",
+  "verdict": "TARGET",
+  "quote": "reduce the incidence and duration of sequelae of neutropenia ... in symptomatic patients with congenital neutropenia, cyclic neutropenia, or idiopathic neutropenia",
+  "note": "Congenital neutropenia (constitutional) is an indicated condition."
+ },
+ {
+  "id": "f737",
+  "verdict": "TARGET",
+  "quote": "Glivec is indicated for the treatment of adult and paediatric patients with newly diagnosed Philadelphia-chromosome (bcr-abl)-positive (Ph+) chronic myeloid leukaemia (CML)",
+  "note": "CML named directly."
+ },
+ {
+  "id": "f593",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of panic disorder in adults, with or without agoraphobia, as defined in DSM-IV.",
+  "note": "Agoraphobia is only a specifier of the treated panic disorder, not itself the target."
+ },
+ {
+  "id": "f604",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (i.e., Zollinger-Ellison Syndrome, systemic mastocytosis, multiple endocrine adenomas).",
+  "note": "Systemic mastocytosis is a named listed condition; mastocytosis is a near parent."
+ },
+ {
+  "id": "f735",
+  "verdict": "TARGET",
+  "quote": "RYDAPT is indicated for the treatment of adult patients with aggressive systemic mastocytosis (ASM), systemic mastocytosis with associated hematological neoplasm (SM-AHN), or mast cell leukemia",
+  "note": "Systemic mastocytosis subtypes are indicated."
+ },
+ {
+  "id": "f252",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the treatment of edema associated with congestive heart failure, hepatic and renal disease, including the nephrotic syndrome.",
+  "note": "The drug treats edema; nephrotic syndrome is the underlying disease."
+ },
+ {
+  "id": "f577",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the nausea and vomiting associated with cancer chemotherapy",
+  "note": "Nausea (chemotherapy-induced) is the treated condition."
+ },
+ {
+  "id": "f395",
+  "verdict": "TARGET",
+  "quote": "Lower Respiratory Tract Infections, including pneumonia and bronchitis caused by Escherichia coli",
+  "note": "Bronchitis named in indication list."
+ },
+ {
+  "id": "f538",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are septic shock hypotension, anaphylaxis, and local anesthesia adjunct; rhinitis not mentioned."
+ }
+]

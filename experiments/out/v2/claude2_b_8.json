@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f299",
+  "verdict": "TARGET",
+  "quote": "indicated for the prevention of Pneumocystis jiroveci pneumonia (PJP) in high-risk, HIV-infected patients",
+  "note": "PJP is a form of pneumocystosis; prevention counts."
+ },
+ {
+  "id": "f345",
+  "verdict": "TARGET",
+  "quote": "As adjunctive therapy for short term administration (to tide the patient over an acute episode or exacerbation) in: psoriatic arthritis",
+  "note": "Psoriatic arthritis is listed under rheumatic disorders."
+ },
+ {
+  "id": "f462",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of homocystinuria to decrease elevated homocysteine blood concentrations",
+  "note": "Exact match."
+ },
+ {
+  "id": "f032",
+  "verdict": "TARGET",
+  "quote": "Treatment of acute, uncomplicated influenza type A and B infections in patients aged 7 years and older",
+  "note": "Influenza treatment and prophylaxis are indicated."
+ },
+ {
+  "id": "f325",
+  "verdict": "FP1_setting",
+  "quote": "Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions.",
+  "note": "MI appears only as background rationale for the hypertension indication; no post-MI indication is in the text."
+ },
+ {
+  "id": "f589",
+  "verdict": "TARGET",
+  "quote": "Carbidopa and levodopa tablets, USP are indicated in the treatment of Parkinson's disease",
+  "note": "Levodopa is the active antiparkinson component."
+ },
+ {
+  "id": "f164",
+  "verdict": "TARGET",
+  "quote": "treatment of hyperkeratotic conditions such as dry, rough skin, dermatitis, psoriasis, xerosis, ichthyosis, eczema, keratosis pilaris, keratosis palmaris, keratoderma",
+  "note": "Hereditary palmoplantar keratoderma is a subtype of the listed keratoderma."
+ },
+ {
+  "id": "f248",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases Pemphigus; bullous dermatitis herpetiformis; severe erythema multiforme (Stevens-Johnson syndrome); exfoliative erythroderma; mycosis fungoides.",
+  "note": "The edge is narrower than the listed mycosis fungoides."
+ },
+ {
+  "id": "f245",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with ... Pancreatic Adenocarcinoma ( 1.4 )",
+  "note": "Exact match."
+ },
+ {
+  "id": "f566",
+  "verdict": "TARGET",
+  "quote": "1.1 Prevention of Cardiovascular Disease In hypercholesterolemic patients without clinically evident coronary heart disease (CHD), pravastatin sodium tablets are indicated to: reduce the risk of myocardial infarction",
+  "note": "The indication is explicitly prevention of cardiovascular disease."
+ },
+ {
+  "id": "f024",
+  "verdict": "FP2_symptom_swap",
+  "quote": "In OSA, modafinil tablets, USP are indicated to treat excessive sleepiness and not as treatment for the underlying obstruction.",
+  "note": "Treats the excessive-sleepiness symptom, not OSA itself."
+ },
+ {
+  "id": "f565",
+  "verdict": "FP5_negation",
+  "quote": "in patients with either NSVT or supraventricular arrhythmias, its use in patients with less severe arrhythmias, even if the patients are symptomatic, is generally not recommended",
+  "note": "Indicated only for life-threatening arrhythmias such as sustained VT; use in less severe arrhythmias (the NSVT context) is not recommended."
+ },
+ {
+  "id": "f838",
+  "verdict": "TARGET",
+  "quote": "ZEPATIER is a fixed-dose combination product containing elbasvir, a hepatitis C virus (HCV) NS5A inhibitor, and grazoprevir, an HCV NS3/4A protease inhibitor, and is indicated for treatment of chronic HCV",
+  "note": "Combination-only, but grazoprevir is itself an HCV antiviral that shares the indication."
+ },
+ {
+  "id": "f194",
+  "verdict": "TARGET",
+  "quote": "MEPSEVII is indicated in pediatric and adult patients for the treatment of Mucopolysaccharidosis VII (MPS VII, Sly syndrome).",
+  "note": "Exact match."
+ },
+ {
+  "id": "f505",
+  "verdict": "TARGET",
+  "quote": "They are also indicated in chronic anterior uveitis and corneal injury from chemical, radiation or thermal burns",
+  "note": "Anterior uveitis is a form of uveitis, a near parent; loteprednol is the steroid component."
+ },
+ {
+  "id": "f747",
+  "verdict": "TARGET",
+  "quote": "Aspergillosis, pulmonary and extrapulmonary, in patients who are intolerant of or who are refractory to amphotericin B therapy.",
+  "note": "Exact match."
+ },
+ {
+  "id": "f335",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of relapsing forms of multiple sclerosis (MS)",
+  "note": "Relapsing MS is a near-parent match."
+ },
+ {
+  "id": "f478",
+  "verdict": "FP3_cross_section",
+  "quote": "Congestive Heart Failure: Worsening of congestive heart failure has been reported in patients with preexisting impairment of ventricular function.",
+  "note": "Heart failure appears in warnings and in generic antihypertensive boilerplate, not as a diltiazem indication."
+ },
+ {
+  "id": "f590",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with H. pylori infection and duodenal ulcer disease (active or five-year history of duodenal ulcer) to eradicate H. pylori",
+  "note": "Clarithromycin is part of the eradication regimen; adjunctive or combination therapy counts."
+ },
+ {
+  "id": "f411",
+  "verdict": "FP4_overbroad",
+  "quote": "The following neoplastic diseases for the: o Treatment of adult and pediatric patients with acute lymphoblastic leukemia",
+  "note": "Specific cancers are indicated; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f561",
+  "verdict": "TARGET",
+  "quote": "Rheumatic Disorders As adjunctive therapy for short-term administration ... in: Post-traumatic osteoarthritis Synovitis of osteoarthritis Rheumatoid arthritis",
+  "note": "Multiple arthritides are listed; arthritic joint disease is a near parent."
+ },
+ {
+  "id": "f528",
+  "verdict": "TARGET",
+  "quote": "Skyrizi is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis",
+  "note": "Exact match in the EMA text."
+ },
+ {
+  "id": "f474",
+  "verdict": "TARGET",
+  "quote": "Itraconazole oral solution is indicated for the treatment of oropharyngeal and esophageal candidiasis.",
+  "note": "Exact match."
+ },
+ {
+  "id": "f233",
+  "verdict": "TARGET",
+  "quote": "Fondaparinux sodium injection is indicated for the treatment of acute pulmonary embolism in adults when administered in conjunction with warfarin sodium",
+  "note": "Exact match."
+ },
+ {
+  "id": "f195",
+  "verdict": "TARGET",
+  "quote": "Hematologic Disorders Idiopathic thrombocytopenic purpura in adults Secondary thrombocytopenia in adults Acquired (autoimmune) hemolytic anemia",
+  "note": "Exact match in the list."
+ },
+ {
+  "id": "f782",
+  "verdict": "TARGET",
+  "quote": "SAVAYSA is indicated to reduce the risk of stroke and systemic embolism (SE) in patients with nonvalvular atrial fibrillation",
+  "note": "Systemic embolism and PE are both embolism."
+ },
+ {
+  "id": "f218",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the treatment of mild-to-moderate dementia associated with Parkinson's disease (PDD)",
+  "note": "Treats dementia associated with PD, not PD itself."
+ },
+ {
+  "id": "f463",
+  "verdict": "TARGET",
+  "quote": "Complicated skin and soft tissue infections (cSSTI), excluding diabetic foot infections",
+  "note": "cSSTI falls within skin infection."
+ },
+ {
+  "id": "f628",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with locally advanced or metastatic cholangiocarcinoma with a fibroblast growth factor receptor 2 (FGFR2) fusion or rearrangement",
+  "note": "Edge is a parent at reasonable granularity."
+ },
+ {
+  "id": "f520",
+  "verdict": "TARGET",
+  "quote": "Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis",
+  "note": "Exact match."
+ },
+ {
+  "id": "f815",
+  "verdict": "TARGET",
+  "quote": "NOURIANZ is indicated as adjunctive treatment to levodopa/carbidopa in adult patients with Parkinson's disease (PD) experiencing \"off\" episodes.",
+  "note": "Adjunctive PD treatment counts."
+ },
+ {
+  "id": "f547",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of patients with predominantly classic subfoveal choroidal neovascularization (CNV) due to age-related macular degeneration (AMD), pathologic myopia",
+  "note": "Treats CNV secondary to pathologic myopia, not the myopia itself."
+ },
+ {
+  "id": "f629",
+  "verdict": "FP4_overbroad",
+  "quote": "Idiopathic bronchiolitis obliterans with organizing pneumonia",
+  "note": "Only idiopathic BOOP is indicated; generic \"bronchiolitis\" overstates it."
+ },
+ {
+  "id": "f544",
+  "verdict": "TARGET",
+  "quote": "gastrointestinal infections caused by Ascaris lumbricoides (roundworm) and Trichuris trichiura (whipworm)",
+  "note": "Ascaris infection is ascariasis."
+ },
+ {
+  "id": "f263",
+  "verdict": "FP6_coingredient",
+  "quote": "Nystatin and Triamcinolone Acetonide Cream and Ointment are indicated for the treatment of cutaneous candidiasis",
+  "note": "The antifungal indication belongs to nystatin on the combination label; elsewhere fungal infection is only in warnings."
+ },
+ {
+  "id": "f316",
+  "verdict": "TARGET",
+  "quote": "Rheumatic fever and/or chorea —Prophylaxis with penicillin G benzathine has proven effective in preventing recurrence of these conditions.",
+  "note": "Prophylaxis of rheumatic fever is indicated."
+ },
+ {
+  "id": "f138",
+  "verdict": "TARGET",
+  "quote": "DIURIL is indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy.",
+  "note": "Edema is directly indicated."
+ },
+ {
+  "id": "f311",
+  "verdict": "TARGET",
+  "quote": "metastatic ovarian carcinoma",
+  "note": "Stage IV ovarian cancer is metastatic ovarian carcinoma."
+ },
+ {
+  "id": "f401",
+  "verdict": "FP4_overbroad",
+  "quote": "Pulmonary Arterial Hypertension (PAH) (WHO Group 1) to improve exercise capacity",
+  "note": "Only PAH and CTEPH are indicated; \"hypertensive disorder\" is a broad class."
+ },
+ {
+  "id": "f060",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of overactive bladder with symptoms of urge urinary incontinence, urgency, and frequency",
+  "note": "Urge incontinence is a form of urinary leakage and is named as a treated symptom."
+ },
+ {
+  "id": "f570",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only chronic migraine is indicated (episodic migraine excluded); migraine with aura is not mentioned."
+ },
+ {
+  "id": "f748",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are osteoporosis only; hypoparathyroidism is not mentioned."
+ },
+ {
+  "id": "f120",
+  "verdict": "TARGET",
+  "quote": "treatment of overactive bladder (OAB) with symptoms of urge urinary incontinence, urgency, and urinary frequency in adults",
+  "note": "Urge urinary incontinence is a subtype of urinary incontinence."
+ },
+ {
+  "id": "f368",
+  "verdict": "FP5_negation",
+  "quote": "COLCRYS is not an analgesic medication and should not be used to treat pain from other causes.",
+  "note": "Pain is mentioned only in a negation; indications are gout flares and FMF."
+ },
+ {
+  "id": "f887",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Deficient spermatogenesis due to hypogonadotrophic hypogonadism.",
+  "note": "Treats deficient spermatogenesis (and female infertility), not hypogonadism itself."
+ }
+]

@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f203",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated as an antidote for ethylene glycol (such as antifreeze) or methanol poisoning",
+  "note": "Label covers only ethylene glycol/methanol poisoning; 'poisoning' is a whole class."
+ },
+ {
+  "id": "f297",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for the following seizure types in patients aged 2 years and older: partial-onset seizures",
+  "note": "Post-stroke seizure is a narrower form of the indicated partial-onset seizures."
+ },
+ {
+  "id": "f656",
+  "verdict": "TARGET",
+  "quote": "indicated to control ventricular rate in patients with atrial fibrillation and a rapid ventricular response",
+  "note": "AF rate control is an explicit indication."
+ },
+ {
+  "id": "f365",
+  "verdict": "TARGET",
+  "quote": "indicated for the prevention of serious lower respiratory tract disease caused by respiratory syncytial virus (RSV)",
+  "note": "Prevention of lower respiratory tract disease is the indication."
+ },
+ {
+  "id": "f454",
+  "verdict": "TARGET",
+  "quote": "in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis",
+  "note": "Older labels list subacute thyroiditis under TSH suppression; newer labels only exclude hypothyroidism in its recovery phase."
+ },
+ {
+  "id": "f552",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of enterocolitis caused by susceptible isolates of Staphylococcus aureus",
+  "note": "Oral vancomycin indicated for staphylococcal enterocolitis."
+ },
+ {
+  "id": "f843",
+  "verdict": "TARGET",
+  "quote": "indicated for the symptomatic relief of acute alcohol withdrawal",
+  "note": "Alcohol withdrawal is explicitly indicated."
+ },
+ {
+  "id": "f325",
+  "verdict": "FP1_setting",
+  "quote": "in clinically stable adult patients with left ventricular failure or left ventricular dysfunction following myocardial infarction, valsartan tablets are indicated to reduce the risk of cardiovascular mortality",
+  "note": "MI is the background population; target is CV mortality."
+ },
+ {
+  "id": "f095",
+  "verdict": "TARGET",
+  "quote": "For symptomatic relief of anxiety and tension associated with psychoneurosis",
+  "note": "Anxiety is explicitly indicated."
+ },
+ {
+  "id": "f298",
+  "verdict": "TARGET",
+  "quote": "in combination with dabrafenib, for the treatment of patients with metastatic non-small cell lung cancer (NSCLC) with BRAF V600E mutation",
+  "note": "NSCLC is indicated."
+ },
+ {
+  "id": "f392",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the prophylaxis of common migraine headache",
+  "note": "Only migraine prophylaxis is indicated; generic headache is much broader."
+ },
+ {
+  "id": "f253",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only multiple myeloma indications; no lymphoma mentioned."
+ },
+ {
+  "id": "f708",
+  "verdict": "TARGET",
+  "quote": "indicated for the local treatment of vulvovaginal candidiasis (moniliasis)",
+  "note": "Candidiasis is a near parent of the indicated vulvovaginal candidiasis."
+ },
+ {
+  "id": "f267",
+  "verdict": "TARGET",
+  "quote": "indicated for the thrombolytic treatment of suspected myocardial infarction with persistent ST elevation",
+  "note": "EMA indication for acute MI."
+ },
+ {
+  "id": "f435",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only local anesthesia/analgesia indications; leukemia not mentioned."
+ },
+ {
+  "id": "f310",
+  "verdict": "TARGET",
+  "quote": "adjunct to diet and exercise to reduce low-density lipoprotein cholesterol (LDL-C) in: adults with hypercholesterolemia",
+  "note": "Hypercholesterolemia is a form of hyperlipidemia; near parent."
+ },
+ {
+  "id": "f304",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "RCC indications are restricted to advanced RCC; stage I RCC is not covered or mentioned."
+ },
+ {
+  "id": "f420",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with intermittent claudication on the basis of chronic occlusive arterial disease of the limbs",
+  "note": "Intermittent claudication is indicated."
+ },
+ {
+  "id": "f047",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented, life-threatening ventricular arrhythmias, such as sustained ventricular tachycardia",
+  "note": "VF is a life-threatening ventricular arrhythmia within the indication."
+ },
+ {
+  "id": "f457",
+  "verdict": "FP2_symptom_swap",
+  "quote": "spasticity caused by upper motor neuron disorders (such as cerebral palsy and paraplegia)",
+  "note": "Treats spasticity, not paraplegia itself."
+ },
+ {
+  "id": "f037",
+  "verdict": "FP3_cross_section",
+  "quote": "Hypertension : Monitor blood pressure.",
+  "note": "Hypertension appears only in warnings."
+ },
+ {
+  "id": "f415",
+  "verdict": "TARGET",
+  "quote": "Complicated Intra-Abdominal Infections (cIAI) including polymicrobial infections such as abscess",
+  "note": "Abscess named within the cIAI indication."
+ },
+ {
+  "id": "f334",
+  "verdict": "TARGET",
+  "quote": "fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy",
+  "note": "Listed respiratory indication (adjunctive)."
+ },
+ {
+  "id": "f124",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with: - tardive dyskinesia",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f051",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of chronic lymphatic (lymphocytic) leukemia",
+  "note": "CLL indicated; leukemia is a near parent."
+ },
+ {
+  "id": "f762",
+  "verdict": "TARGET",
+  "quote": "following French-American-British (FAB) myelodysplastic syndrome subtypes: refractory anemia (RA)",
+  "note": "MDS subtype within indicated MDS."
+ },
+ {
+  "id": "f549",
+  "verdict": "FP2_symptom_swap",
+  "quote": "spasticity caused by upper motor neuron disorders (such as cerebral palsy and paraplegia)",
+  "note": "Treats spasticity, not cerebral palsy itself."
+ },
+ {
+  "id": "f177",
+  "verdict": "TARGET",
+  "quote": "indicated only in the treatment of serious infections caused by susceptible strains of Candida",
+  "note": "Serious Candida infections incl. septicemia are the indication."
+ },
+ {
+  "id": "f565",
+  "verdict": "FP5_negation",
+  "quote": "in patients with either non-sustained ventricular tachycardia (NSVT) or supraventricular arrhythmias (SVT), its use in patients with less severe arrhythmias, even if the patients are symptomatic, is generally not recommended",
+  "note": "NSVT mentioned only as setting where use is not recommended."
+ },
+ {
+  "id": "f541",
+  "verdict": "TARGET",
+  "quote": "Use in patients with atrial flutter or atrial fibrillation should be reserved for arrythmias unresponsive to standard therapy",
+  "note": "Atrial flutter within the supraventricular arrhythmia indication."
+ },
+ {
+  "id": "f712",
+  "verdict": "FP1_setting",
+  "quote": "included patients with etiologies of idiopathic interstitial pneumonia (IIP) (45%) inclusive of idiopathic pulmonary fibrosis (IPF), combined pulmonary fibrosis and emphysema (CPFE)",
+  "note": "Indicated for PH-ILD; CPFE is only underlying etiology."
+ },
+ {
+  "id": "f825",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids",
+  "note": "Uveitis explicitly listed."
+ },
+ {
+  "id": "f594",
+  "verdict": "TARGET",
+  "quote": "for the treatment of patients with advanced endometrial carcinoma (EC) that is mismatch repair proficient (pMMR)",
+  "note": "Clear cell adenocarcinoma is a subtype of indicated endometrial carcinoma."
+ },
+ {
+  "id": "f412",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with marginal zone lymphoma (MZL)",
+  "note": "EMA indication for MZL."
+ },
+ {
+  "id": "f585",
+  "verdict": "TARGET",
+  "quote": "chronic idiopathic constipation (CIC) in adults",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f212",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of schizophrenia",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f848",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases: pemphigus, bullous dermatitis herpetiformis, severe erythema multiforme (Stevens-Johnson syndrome), exfoliative dermatitis, mycosis fungoides",
+  "note": "Listed indication."
+ },
+ {
+  "id": "f592",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate-to-severe plaque psoriasis in adults",
+  "note": "Edge is a subtype of plaque psoriasis."
+ },
+ {
+  "id": "f402",
+  "verdict": "TARGET",
+  "quote": "fluconazole was also effective for the treatment of Candida urinary tract infections",
+  "note": "Candida UTI named in indications section; UTI is a near parent."
+ },
+ {
+  "id": "f332",
+  "verdict": "FP1_setting",
+  "quote": "Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions",
+  "note": "Stroke is only a rationale outcome of the hypertension indication."
+ },
+ {
+  "id": "f185",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of acute attacks of hereditary angioedema (HAE)",
+  "note": "HAE is a form of angioedema; near parent."
+ },
+ {
+  "id": "f576",
+  "verdict": "FP5_negation",
+  "quote": "established cytotoxic chemotherapy for malignancy (with the exception of chronic myeloid leukaemia and myelodysplastic syndromes)",
+  "note": "MDS explicitly excluded."
+ },
+ {
+  "id": "f330",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of Rocky Mountain spotted fever",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f438",
+  "verdict": "FP5_negation",
+  "quote": "Adenosine injection, USP does not convert atrial flutter, atrial fibrillation, or ventricular tachycardia to normal sinus rhythm.",
+  "note": "Text explicitly says not effective for AF; indicated for PSVT."
+ },
+ {
+  "id": "f818",
+  "verdict": "FP1_setting",
+  "quote": "indicated to reduce serum phosphorus in adults with chronic kidney disease (CKD) on dialysis",
+  "note": "CKD is the population; target is hyperphosphatemia."
+ }
+]

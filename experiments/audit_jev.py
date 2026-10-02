@@ -134,7 +134,9 @@ def main() -> None:
     g.add_argument("--population", action="store_true")
     args = ap.parse_args()
     if args.sample:
-        recs = [json.loads(line) for line in open(OUT / "sample.jsonl")]
+        # latest-release sample plus, when present, the previous-release sample
+        recs = [json.loads(line) for f in ("sample.jsonl", "sample_old.jsonl")
+                if (OUT / f).exists() for line in open(OUT / f)]
         out = OUT / "jev_sample.jsonl"
     else:
         with gzip.open(OUT / "evidence.json.gz", "rt") as f:

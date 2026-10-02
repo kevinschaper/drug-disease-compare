@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f100",
+  "verdict": "TARGET",
+  "quote": "indicated for the rapid conversion of atrial fibrillation or atrial flutter of recent onset to sinus rhythm",
+  "note": "AF named directly."
+ },
+ {
+  "id": "f798",
+  "verdict": "TARGET",
+  "quote": "Adolescent Patients with Heterozygous Familial Hypercholesterolemia Lovastatin tablets USP are indicated as an adjunct to diet to reduce total-C, LDL-C",
+  "note": "heFH explicitly indicated."
+ },
+ {
+  "id": "f317",
+  "verdict": "TARGET",
+  "quote": "treatment of pediatric patients aged 6 years and older with symptoms of detrusor overactivity associated with a neurological condition (e.g., spina bifida)",
+  "note": "Neurogenic detrusor overactivity indicated."
+ },
+ {
+  "id": "f624",
+  "verdict": "TARGET",
+  "quote": "For the management of edema and sodium retention when the patient is only partially responsive to, or is intolerant of, other therapeutic measures",
+  "note": "Edematous conditions are an indication; generalized edema is edema."
+ },
+ {
+  "id": "f873",
+  "verdict": "TARGET",
+  "quote": "etiologies of idiopathic or heritable PAH (60%)",
+  "note": "Heritable PAH is a subtype of indicated PAH (WHO Group 1)."
+ },
+ {
+  "id": "f546",
+  "verdict": "FP1_setting",
+  "quote": "treatment of thrombocytopenia in adult patients with chronic liver disease who are scheduled to undergo a procedure",
+  "note": "CLD is the population; thrombocytopenia is treated."
+ },
+ {
+  "id": "f893",
+  "verdict": "TARGET",
+  "quote": "first-line maintenance treatment of adult patients with locally advanced or metastatic urothelial carcinoma (UC)",
+  "note": "Metastatic UC indicated (EMA)."
+ },
+ {
+  "id": "f479",
+  "verdict": "TARGET",
+  "quote": "Adult patients with hypereosinophilic syndrome (HES) and/or chronic eosinophilic leukemia (CEL)",
+  "note": "HES indicated."
+ },
+ {
+  "id": "f489",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the symptoms of seasonal allergic rhinitis",
+  "note": "SAR directly named."
+ },
+ {
+  "id": "f205",
+  "verdict": "TARGET",
+  "quote": "psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Multiple arthritides listed under rheumatic disorders."
+ },
+ {
+  "id": "f303",
+  "verdict": "TARGET",
+  "quote": "relief of moderate to severe pain such as that due to: surgery, cancer, trauma (soft tissue and bone), biliary colic",
+  "note": "Pain of biliary colic is a listed target."
+ },
+ {
+  "id": "f191",
+  "verdict": "TARGET",
+  "quote": "Nadolol tablets, USP are indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Hypertension indicated."
+ },
+ {
+  "id": "f289",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis",
+  "note": "RA indicated."
+ },
+ {
+  "id": "f691",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only ocular hypertension/IOP is indicated; systemic hypertensive disorder is a name collision."
+ },
+ {
+  "id": "f216",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pain of bursitis/tendonitis mentioned, but no ganglion or synovial/tendon cyst."
+ },
+ {
+  "id": "f054",
+  "verdict": "TARGET",
+  "quote": "Sorafenib tablets are indicated for the treatment of patients with unresectable hepatocellular carcinoma (HCC)",
+  "note": "HCC indicated."
+ },
+ {
+  "id": "f706",
+  "verdict": "FP6_coingredient",
+  "quote": "Temporarily relieves these symptoms due to the common cold, hay fever (allergic rhinitis) or other upper respiratory allergies",
+  "note": "Combo-only OTC; rhinitis symptoms are the antihistamine partner's, clofedanol covers cough."
+ },
+ {
+  "id": "f650",
+  "verdict": "FP4_overbroad",
+  "quote": "induction of remission in adults and pediatric patients 1 year of age and older with acute promyelocytic leukemia (APL)",
+  "note": "Only APL indicated; \"cancer\" is a whole class."
+ },
+ {
+  "id": "f339",
+  "verdict": "TARGET",
+  "quote": "first-line treatment of locally advanced or metastatic non-small cell lung cancer, in combination with carboplatin",
+  "note": "NSCLC indicated."
+ },
+ {
+  "id": "f553",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD), and for reducing COPD exacerbations",
+  "note": "COPD indicated on single-agent tiotropium labels."
+ },
+ {
+  "id": "f282",
+  "verdict": "TARGET",
+  "quote": "SPEVIGO is indicated for the treatment of generalized pustular psoriasis (GPP)",
+  "note": "Psoriasis 14, pustular is a genetic form of GPP."
+ },
+ {
+  "id": "f465",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications are infected traumatic skin lesions and impetigo; no skin neoplasm."
+ },
+ {
+  "id": "f295",
+  "verdict": "TARGET",
+  "quote": "acute treatment of migraine with or without aura in adults",
+  "note": "Migraine without aura named."
+ },
+ {
+  "id": "f523",
+  "verdict": "FP1_setting",
+  "quote": "treatment of chronic hepatitis B virus (HBV) infection in adults with: ... decompensated liver disease",
+  "note": "Liver failure/decompensation is the population; HBV is treated."
+ },
+ {
+  "id": "f515",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pemphigus and ocular inflammatory conditions listed, but not ocular cicatricial pemphigoid."
+ },
+ {
+  "id": "f096",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with symptomatic obstructive hypertrophic cardiomyopathy (oHCM)",
+  "note": "oHCM is the main form of HCM; near parent."
+ },
+ {
+  "id": "f530",
+  "verdict": "TARGET",
+  "quote": "Rifampin is indicated in the treatment of all forms of tuberculosis",
+  "note": "Bone TB is a form of TB."
+ },
+ {
+  "id": "f049",
+  "verdict": "TARGET",
+  "quote": "Zolgensma is indicated for the treatment of: patients with 5q spinal muscular atrophy (SMA)",
+  "note": "SMA indicated (EMA)."
+ },
+ {
+  "id": "f427",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of external genital and perianal warts (Condylomata acuminata)",
+  "note": "Perianal warts named."
+ },
+ {
+  "id": "f003",
+  "verdict": "TARGET",
+  "quote": "Epivir is indicated as part of antiretroviral combination therapy for the treatment of human-immunodeficiency-virus (HIV)-infected adults and children",
+  "note": "HIV infection indicated on single-agent label."
+ },
+ {
+  "id": "f476",
+  "verdict": "FP1_setting",
+  "quote": "For induction and maintenance of mydriasis during intraocular surgery",
+  "note": "Mydriasis is the induced procedural effect, not a treated disease."
+ },
+ {
+  "id": "f258",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation",
+  "note": "Stroke prevention is an indication."
+ },
+ {
+  "id": "f544",
+  "verdict": "TARGET",
+  "quote": "gastrointestinal infections caused by: Ascaris lumbricoides (roundworm)",
+  "note": "Ascariasis indicated."
+ },
+ {
+  "id": "f399",
+  "verdict": "TARGET",
+  "quote": "Cephalexin is indicated for the treatment of genitourinary tract infections, including acute prostatitis",
+  "note": "GU infections indicated."
+ },
+ {
+  "id": "f751",
+  "verdict": "TARGET",
+  "quote": "Included within the category of homocystinuria are ... Cobalamin cofactor metabolism (cbl) defect",
+  "note": "cbl defects listed among indicated homocystinurias."
+ },
+ {
+  "id": "f677",
+  "verdict": "FP1_setting",
+  "quote": "Hypoprothrombinemia secondary to factors limiting absorption or synthesis of vitamin K, e.g., obstructive jaundice, biliary fistula",
+  "note": "Biliary fistula is the cause/background; hypoprothrombinemia is treated."
+ },
+ {
+  "id": "f329",
+  "verdict": "TARGET",
+  "quote": "as an adjunct in the treatment of tetanus",
+  "note": "Adjunctive tetanus indication."
+ },
+ {
+  "id": "f483",
+  "verdict": "FP1_setting",
+  "quote": "with hemodynamically significant congenital heart disease (CHD) and who are 24 months of age or younger",
+  "note": "CHD defines the population; RSV disease is prevented."
+ },
+ {
+  "id": "f742",
+  "verdict": "FP4_overbroad",
+  "quote": "topical treatment of biopsy-confirmed, primary superficial basal cell carcinoma (sBCC)",
+  "note": "Only sBCC indicated; \"carcinoma\" is a whole class."
+ },
+ {
+  "id": "f405",
+  "verdict": "FP2_symptom_swap",
+  "quote": "includes at least five of the following nine symptoms: depressed mood, ... insomnia or hypersomnia",
+  "note": "Insomnia is only a symptom of the indicated depression (and an adverse reaction)."
+ },
+ {
+  "id": "f385",
+  "verdict": "TARGET",
+  "quote": "topical treatment of ocular bacterial infections including conjunctivitis, keratitis, keratoconjunctivitis, corneal ulcers, blepharitis",
+  "note": "Blepharitis listed."
+ },
+ {
+  "id": "f009",
+  "verdict": "TARGET",
+  "quote": "Acute gouty arthritis",
+  "note": "Gout flares (acute gouty arthritis) listed among indications."
+ },
+ {
+  "id": "f328",
+  "verdict": "TARGET",
+  "quote": "Treatment of uncomplicated malaria due to susceptible strains of P. falciparum, P. malariae, P. ovale, and P. vivax",
+  "note": "Malaria indicated."
+ },
+ {
+  "id": "f826",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with high-risk early-stage triple-negative breast cancer (TNBC) in combination with chemotherapy",
+  "note": "TNBC indicated."
+ },
+ {
+  "id": "f089",
+  "verdict": "TARGET",
+  "quote": "management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Bone pain is a narrower form of indicated severe pain."
+ }
+]

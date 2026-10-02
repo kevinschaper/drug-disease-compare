@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f035",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of invasive aspergillosis in adult and pediatric patients",
+  "note": "Invasive aspergillosis is a subtype of aspergillosis."
+ },
+ {
+  "id": "f767",
+  "verdict": "FP5_negation",
+  "quote": "VIGIV is not indicated for postvaccinial encephalitis",
+  "note": "Explicitly not indicated."
+ },
+ {
+  "id": "f838",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic hepatitis C virus (HCV) genotype 1 or 4 infection",
+  "note": "Grazoprevir is an HCV protease inhibitor component; indication attributable to it."
+ },
+ {
+  "id": "f153",
+  "verdict": "TARGET",
+  "quote": "emergency control of certain acute convulsive episodes, e.g., those associated with status epilepticus",
+  "note": "Status epilepticus convulsions are an indicated use."
+ },
+ {
+  "id": "f844",
+  "verdict": "FP2_symptom_swap",
+  "quote": "vascular spasm associated with acute myocardial infarction (coronary occlusion), angina pectoris, peripheral and pulmonary embolism",
+  "note": "Treats the vascular spasm accompanying embolism, not the embolism itself."
+ },
+ {
+  "id": "f129",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with active non-radiographic axial spondyloarthritis (nr-axSpA)",
+  "note": "nr-axSpA and AS indicated; both are axial spondyloarthritis."
+ },
+ {
+  "id": "f281",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with schizophrenia",
+  "note": "Disorganized schizophrenia is a subtype of indicated schizophrenia."
+ },
+ {
+  "id": "f889",
+  "verdict": "TARGET",
+  "quote": "Maintenance treatment of asthma and as prophylactic therapy in children",
+  "note": "Asthma indicated for budesonide (single-agent and ICS component)."
+ },
+ {
+  "id": "f410",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Disease given only as an unresolved EFO ID; cannot match to text."
+ },
+ {
+  "id": "f693",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with relapsed or refractory diffuse large B-cell lymphoma (DLBCL)",
+  "note": "DLBCL directly indicated."
+ },
+ {
+  "id": "f864",
+  "verdict": "FP3_cross_section",
+  "quote": "captopril, has caused agranulocytosis",
+  "note": "Agranulocytosis appears only as a safety risk."
+ },
+ {
+  "id": "f040",
+  "verdict": "TARGET",
+  "quote": "chronic simple (open-angle) glaucoma, secondary glaucoma, and preoperatively in acute angle-closure glaucoma",
+  "note": "Glaucoma types indicated (adjunctive)."
+ },
+ {
+  "id": "f046",
+  "verdict": "FP5_negation",
+  "quote": "Not indicated for treatment of transient hypothyroidism during the recovery phase of subacute thyroiditis",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f510",
+  "verdict": "TARGET",
+  "quote": "The total management of anxiety, tension, and psychomotor agitation in conditions of emotional stress",
+  "note": "Psychomotor agitation managed; also acutely disturbed patients."
+ },
+ {
+  "id": "f876",
+  "verdict": "FP6_coingredient",
+  "quote": "hospitalization for congestive heart failure, and angina in adults with clinically evident CHD",
+  "note": "Heart failure reduction belongs to atorvastatin in combo; amlodipine text says patients without heart failure."
+ },
+ {
+  "id": "f709",
+  "verdict": "TARGET",
+  "quote": "metastatic castration-sensitive prostate cancer",
+  "note": "Castration-sensitive = hormone-sensitive prostate cancer."
+ },
+ {
+  "id": "f577",
+  "verdict": "TARGET",
+  "quote": "treatment of the nausea and vomiting associated with cancer chemotherapy",
+  "note": "Nausea is the treated condition (CINV subtype)."
+ },
+ {
+  "id": "f441",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of spinal muscular atrophy (SMA)",
+  "note": "Direct match."
+ },
+ {
+  "id": "f834",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of ischemic complications of unstable angina and non-Q-wave myocardial infarction",
+  "note": "Intermediate coronary syndrome = unstable angina."
+ },
+ {
+  "id": "f159",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Hypertension directly indicated."
+ },
+ {
+  "id": "f734",
+  "verdict": "TARGET",
+  "quote": "Kevzara is indicated for the treatment of active polyarticular juvenile idiopathic arthritis (pJIA",
+  "note": "EMA indication direct match."
+ },
+ {
+  "id": "f697",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment of inflammation and pain associated with ocular surgery",
+  "note": "Label is postoperative ocular inflammation/uveitis; generic Inflammation is a whole category."
+ },
+ {
+  "id": "f637",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with unresectable hepatocellular carcinoma (uHCC)",
+  "note": "Direct match (in combination with durvalumab)."
+ },
+ {
+  "id": "f886",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of symptoms of intermittent claudication",
+  "note": "Intermittent claudication directly targeted."
+ },
+ {
+  "id": "f406",
+  "verdict": "TARGET",
+  "quote": "indicated, for the treatment of chronic gout in adult patients refractory to conventional therapy",
+  "note": "Direct match."
+ },
+ {
+  "id": "f111",
+  "verdict": "TARGET",
+  "quote": "Reduction in the risk of death, recurrent myocardial infarction (MI), and thromboembolic events",
+  "note": "Prevention of recurrent MI is indicated."
+ },
+ {
+  "id": "f732",
+  "verdict": "TARGET",
+  "quote": "moderately to severely active ulcerative colitis (UC)",
+  "note": "Direct match."
+ },
+ {
+  "id": "f019",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with hormone-refractory metastatic prostate cancer previously treated with a docetaxel-containing regimen",
+  "note": "Hormone-refractory = castration-resistant prostate cancer."
+ },
+ {
+  "id": "f082",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only roundworm and whipworm indicated; hookworm not mentioned."
+ },
+ {
+  "id": "f434",
+  "verdict": "TARGET",
+  "quote": "KRAS G12C-mutated locally advanced or metastatic non-small cell lung cancer (NSCLC)",
+  "note": "Subtype of NSCLC indicated."
+ },
+ {
+  "id": "f337",
+  "verdict": "TARGET",
+  "quote": "iritis and iridocyclitis, chorioretinitis, anterior segment inflammation",
+  "note": "Chorioretinitis listed among ophthalmic indications."
+ },
+ {
+  "id": "f045",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Ovarian carcinoma not in supplied text (CML, head and neck SCC, sickle cell only)."
+ },
+ {
+  "id": "f450",
+  "verdict": "TARGET",
+  "quote": "Acute and subacute bursitis",
+  "note": "Listed rheumatic indication."
+ },
+ {
+  "id": "f789",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pain agnosia (insensitivity to pain) not mentioned; label treats severe pain."
+ },
+ {
+  "id": "f168",
+  "verdict": "FP1_setting",
+  "quote": "treatment of CMV retinitis in patients with acquired immunodeficiency syndrome (AIDS)",
+  "note": "AIDS is the patient population; CMV retinitis is treated."
+ },
+ {
+  "id": "f052",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of symptoms of intermittent claudication",
+  "note": "Intermittent claudication directly targeted."
+ },
+ {
+  "id": "f252",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of edema associated with congestive heart failure, hepatic and renal disease, including the nephrotic syndrome",
+  "note": "Treats edema, not the nephrotic syndrome itself."
+ },
+ {
+  "id": "f698",
+  "verdict": "TARGET",
+  "quote": "As an adjunct to diet to reduce LDL-C in adults with primary hyperlipidemia",
+  "note": "Direct match."
+ },
+ {
+  "id": "f396",
+  "verdict": "TARGET",
+  "quote": "Treatment of Chronic Rhinosinusitis with Nasal Polyps",
+  "note": "Nasal polyps treated."
+ },
+ {
+  "id": "f263",
+  "verdict": "FP3_cross_section",
+  "quote": "may exacerbate systemic fungal infections",
+  "note": "Fungal infections appear only in warnings."
+ },
+ {
+  "id": "f858",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pemphigus not mentioned; iodine labels cover goiter/thyroid."
+ },
+ {
+  "id": "f048",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation",
+  "note": "EMA indication; combination with vemurafenib."
+ },
+ {
+  "id": "f114",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of relapsing forms of multiple sclerosis (MS)",
+  "note": "Subtypes of MS indicated."
+ },
+ {
+  "id": "f771",
+  "verdict": "TARGET",
+  "quote": "reduce the incidence of nausea and vomiting associated with surgical and diagnostic procedures",
+  "note": "Nausea prevention is the indication."
+ },
+ {
+  "id": "f535",
+  "verdict": "TARGET",
+  "quote": "Septicemia caused by Staphylococcus aureus",
+  "note": "Septicemia indicated; neonatal sepsis is a narrower subtype (no age restriction stated)."
+ }
+]

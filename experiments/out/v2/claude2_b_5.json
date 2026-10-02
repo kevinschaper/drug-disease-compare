@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f083",
+  "verdict": "TARGET",
+  "quote": "Community-Acquired Pneumonia due to Haemophilus influenzae or Streptococcus pneumonia",
+  "note": "Infections caused by H. influenzae are explicitly indicated."
+ },
+ {
+  "id": "f810",
+  "verdict": "TARGET",
+  "quote": "Acute bacterial sinusitis due to Haemophilus influenzae, Moraxella catarrhalis or Streptococcus pneumoniae",
+  "note": "Named directly."
+ },
+ {
+  "id": "f282",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of generalized pustular psoriasis (GPP)",
+  "note": "Edge is a specific (genetic) form of generalized pustular psoriasis."
+ },
+ {
+  "id": "f216",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers pain of bursitis/tendonitis; ganglion or synovial cyst is never mentioned."
+ },
+ {
+  "id": "f000",
+  "verdict": "TARGET",
+  "quote": "indicated for the rapid conversion of atrial fibrillation or atrial flutter of recent onset to sinus rhythm",
+  "note": "Named directly."
+ },
+ {
+  "id": "f852",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of ocular itching associated with allergic conjunctivitis",
+  "note": "Ocular itching (pruritus) is the treated condition."
+ },
+ {
+  "id": "f853",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with atypical hemolytic uremic syndrome (aHUS)",
+  "note": "aHUS is indicated; edge is near parent, though STEC-HUS is explicitly excluded."
+ },
+ {
+  "id": "f442",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only Haemophilus influenzae bacteria appear; influenza (viral) is not mentioned."
+ },
+ {
+  "id": "f366",
+  "verdict": "TARGET",
+  "quote": "For the treatment of postmenopausal women with osteoporosis at high risk for fracture",
+  "note": "Named directly."
+ },
+ {
+  "id": "f008",
+  "verdict": "TARGET",
+  "quote": "indicated for the initial treatment of advanced ovarian carcinoma",
+  "note": "Named directly."
+ },
+ {
+  "id": "f681",
+  "verdict": "TARGET",
+  "quote": "lower respiratory tract infections caused by ... Haemophilus parainfluenzae, or Streptococcus pneumoniae",
+  "note": "S. pneumoniae (alpha-haemolytic) infections indicated; edge is a near parent organism group."
+ },
+ {
+  "id": "f702",
+  "verdict": "FP1_setting",
+  "quote": "prevention of Pneumocystis jiroveci pneumonia (PJP) in high-risk, HIV-infected patients",
+  "note": "HIV is the patient population; PJP is the target."
+ },
+ {
+  "id": "f317",
+  "verdict": "TARGET",
+  "quote": "symptoms of detrusor overactivity associated with a neurological condition (e.g., spina bifida)",
+  "note": "Neurogenic detrusor overactivity indicated."
+ },
+ {
+  "id": "f552",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of enterocolitis caused by susceptible isolates of Staphylococcus aureus",
+  "note": "Staphylococcal enterocolitis indicated; edge is near parent."
+ },
+ {
+  "id": "f631",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with metastatic RET fusion-positive non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC is a near parent of the indicated RET-fusion NSCLC."
+ },
+ {
+  "id": "f085",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic kidney disease (with albuminuria) associated with type 2 diabetes",
+  "note": "Named directly (EMA)."
+ },
+ {
+  "id": "f603",
+  "verdict": "TARGET",
+  "quote": "indicated for the first-line treatment of adult patients with unresectable advanced, recurrent, or metastatic oesophageal squamous cell carcinoma",
+  "note": "Named directly (EMA)."
+ },
+ {
+  "id": "f781",
+  "verdict": "FP4_overbroad",
+  "quote": "first-line treatment of patients with metastatic non-small cell lung cancer (NSCLC) whose tumors have non-resistant epidermal growth factor receptor (EGFR) mutations",
+  "note": "Only NSCLC indicated; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f731",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of schizophrenia in adults and in adolescents aged 15 years and older",
+  "note": "Named directly."
+ },
+ {
+  "id": "f541",
+  "verdict": "TARGET",
+  "quote": "Use in patients with atrial flutter or atrial fibrillation should be reserved for arrythmias unresponsive to standard therapy",
+  "note": "Atrial flutter named within the supraventricular arrhythmia indication."
+ },
+ {
+  "id": "f873",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1)",
+  "note": "Heritable PAH is a subtype of indicated PAH."
+ },
+ {
+  "id": "f322",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Chronic bronchitis named in the COPD indication."
+ },
+ {
+  "id": "f288",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pulmonary tuberculosis",
+  "note": "Tuberculosis is a near parent of pulmonary TB."
+ },
+ {
+  "id": "f147",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily controls cough due to minor throat and bronchial irritation associated with inhaled irritants",
+  "note": "Text treats cough; edge names its cause."
+ },
+ {
+  "id": "f465",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indication is secondarily infected traumatic skin lesions; no skin neoplasm mentioned."
+ },
+ {
+  "id": "f733",
+  "verdict": "TARGET",
+  "quote": "indicated for reduction of the risk of myocardial infarction, stroke, or death from cardiovascular causes",
+  "note": "MI risk reduction is an indication."
+ },
+ {
+  "id": "f507",
+  "verdict": "TARGET",
+  "quote": "indicated for use in the treatment of allergic symptoms by immunotherapy in patients with a history of grass pollen allergy",
+  "note": "Grass pollen allergy immunotherapy covers seasonal allergic rhinitis; mixed-grass extract, Phleum is an active allergen not a partner."
+ },
+ {
+  "id": "f765",
+  "verdict": "TARGET",
+  "quote": "treatment of primary generalised tonic-clonic seizures in adults, adolescents and children from 4 years of age with idiopathic generalised epilepsy",
+  "note": "Named directly (EMA)."
+ },
+ {
+  "id": "f696",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD) (including emphysema and chronic bronchitis)",
+  "note": "Emphysema named within COPD indication."
+ },
+ {
+  "id": "f540",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of major adverse cardiovascular events (cardiovascular death, myocardial infarction, stroke, or coronary revascularization)",
+  "note": "MI risk reduction is indicated."
+ },
+ {
+  "id": "f116",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Named in list."
+ },
+ {
+  "id": "f123",
+  "verdict": "TARGET",
+  "quote": "Treatment of superficial and/or nodular basal cell carcinoma unsuitable for surgical treatment",
+  "note": "Named directly (EMA)."
+ },
+ {
+  "id": "f294",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "CAP means community-acquired pneumonia; no myopathy mentioned (acronym collision)."
+ },
+ {
+  "id": "f065",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with refractory or relapsed follicular lymphoma (FL)",
+  "note": "Named directly (EMA)."
+ },
+ {
+  "id": "f667",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia",
+  "note": "Named directly."
+ },
+ {
+  "id": "f521",
+  "verdict": "FP1_setting",
+  "quote": "prevention of bacterial endocarditis in penicillin-allergic patients with ... mitral valve prolapse with insufficiency",
+  "note": "MVP is the at-risk population; endocarditis is the target."
+ },
+ {
+  "id": "f201",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No diabetes mention in any supplied text."
+ },
+ {
+  "id": "f400",
+  "verdict": "TARGET",
+  "quote": "Acute treatment of migraine attacks in adults with a history of migraine with or without aura",
+  "note": "Named directly."
+ },
+ {
+  "id": "f124",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adults with: - tardive dyskinesia",
+  "note": "Named directly."
+ },
+ {
+  "id": "f353",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of haemolytic anaemia in adult patients with cold agglutinin disease (CAD)",
+  "note": "Haemolytic anaemia is the named treated condition."
+ },
+ {
+  "id": "f153",
+  "verdict": "TARGET",
+  "quote": "emergency control of certain acute convulsive episodes, e.g., those associated with status epilepticus",
+  "note": "Control of status epilepticus convulsions is indicated."
+ },
+ {
+  "id": "f736",
+  "verdict": "TARGET",
+  "quote": "Treatment and prevention of osteoporosis in postmenopausal women",
+  "note": "Named directly."
+ },
+ {
+  "id": "f611",
+  "verdict": "FP1_setting",
+  "quote": "protein requirements are substantially increased as with extensive burns",
+  "note": "Burns are the background for parenteral nutrition support, not the treated condition."
+ },
+ {
+  "id": "f812",
+  "verdict": "TARGET",
+  "quote": "as an adjunct to diet and exercise to improve glycemic control in patients 10 years and older with type 2 diabetes mellitus",
+  "note": "Named directly."
+ },
+ {
+  "id": "f407",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with moderately to severely active chronic pouchitis",
+  "note": "Named directly (EMA)."
+ }
+]

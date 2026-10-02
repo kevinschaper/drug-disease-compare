@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f597",
+  "verdict": "TARGET",
+  "quote": "RITUXAN is indicated for the treatment of adult patients with moderate to severe pemphigus vulgaris.",
+  "note": "Pemphigus vulgaris is the main form of pemphigus; edge is a near parent."
+ },
+ {
+  "id": "f041",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of glucocorticoid-induced osteoporosis in men and women receiving glucocorticoids",
+  "note": "Glucocorticoid-induced osteoporosis is an exact synonym."
+ },
+ {
+  "id": "f109",
+  "verdict": "FP4_overbroad",
+  "quote": "Short- term treatment of active duodenal ulcer.",
+  "note": "Label covers duodenal/gastric ulcers; generic 'Ulceration' spans any organ and is far broader."
+ },
+ {
+  "id": "f214",
+  "verdict": "TARGET",
+  "quote": "indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+  "note": "Directly named."
+ },
+ {
+  "id": "f349",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of conjunctivitis and other superficial ocular infections due to susceptible microorganisms",
+  "note": "Directly named."
+ },
+ {
+  "id": "f128",
+  "verdict": "TARGET",
+  "quote": "fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy, idiopathic eosinophilic pneumonias, symptomatic sarcoidosis.",
+  "note": "Symptomatic sarcoidosis is listed as an indication."
+ },
+ {
+  "id": "f883",
+  "verdict": "TARGET",
+  "quote": "JOURNAVX is indicated for the treatment of moderate to severe acute pain, including postoperative pain, in adults.",
+  "note": "Bone pain is a narrower form of the indicated pain; acute-only qualifier makes this weak."
+ },
+ {
+  "id": "f221",
+  "verdict": "FP1_setting",
+  "quote": "Atrial fibrillation with embolization",
+  "note": "The treated target is embolization; atrial fibrillation is the setting."
+ },
+ {
+  "id": "f710",
+  "verdict": "TARGET",
+  "quote": "VIBERZI is indicated in adults for the treatment of irritable bowel syndrome with diarrhea (IBS-D).",
+  "note": "IBS-D is a subtype; edge IBS is a near parent."
+ },
+ {
+  "id": "f129",
+  "verdict": "TARGET",
+  "quote": "TALTZ is indicated for the treatment of adult patients with active non-radiographic axial spondyloarthritis (nr-axSpA)",
+  "note": "nr-axSpA and ankylosing spondylitis together cover axial spondyloarthritis."
+ },
+ {
+  "id": "f106",
+  "verdict": "TARGET",
+  "quote": "Denosumab-bmwo is indicated for the treatment of hypercalcemia of malignancy refractory to bisphosphonate therapy.",
+  "note": "Hypercalcemia of malignancy is a form of hypercalcemia; edge is a near parent."
+ },
+ {
+  "id": "f117",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Phenobarbital controls anxiety, decreases muscular activity and lessens nervous excitability in hyperthyroid patients.",
+  "note": "Sedation of hyperthyroid symptoms, not treatment of hyperthyroidism itself."
+ },
+ {
+  "id": "f573",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Label covers small cell lung cancer only as first-line treatment; recurrent disease is arguably outside that."
+ },
+ {
+  "id": "f113",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of relapsing forms of multiple sclerosis (MS)",
+  "note": "Relapsing MS; edge is near parent."
+ },
+ {
+  "id": "f087",
+  "verdict": "TARGET",
+  "quote": "DUVYZAT is indicated for the treatment of Duchenne muscular dystrophy (DMD) in patients 6 years of age and older.",
+  "note": "Directly named."
+ },
+ {
+  "id": "f848",
+  "verdict": "TARGET",
+  "quote": "1.2 Dermatologic Diseases Bullous dermatitis herpetiformis Contact dermatitis Exfoliative erythroderma Mycosis fungoides",
+  "note": "Named in list of indicated dermatologic diseases."
+ },
+ {
+  "id": "f249",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1) to improve exercise capacity.",
+  "note": "Label is PAH only; 'hypertensive disorder' is a whole class."
+ },
+ {
+  "id": "f274",
+  "verdict": "TARGET",
+  "quote": "Treatment of adults with moderate to severe plaque psoriasis",
+  "note": "Plaque psoriasis is a subtype; psoriasis is a near parent (EMA text)."
+ },
+ {
+  "id": "f839",
+  "verdict": "FP1_setting",
+  "quote": "POSLUMA is a radioactive diagnostic agent indicated for positron emission tomography (PET) of prostate-specific membrane antigen (PSMA) positive lesions in men with prostate cancer",
+  "note": "Diagnostic imaging agent; prostate cancer is not treated."
+ },
+ {
+  "id": "f440",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the signs and symptoms of benign prostatic hyperplasia (BPH).",
+  "note": "Directly named."
+ },
+ {
+  "id": "f371",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of mild to moderate acute malaria caused by mefloquine-susceptible strains of P. falciparum",
+  "note": "Treatment and prophylaxis of malaria."
+ },
+ {
+  "id": "f498",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of ischemic complications of unstable angina and non-Q-wave myocardial infarction (MI)",
+  "note": "Intermediate coronary syndrome = unstable angina; preventing its complications is management."
+ },
+ {
+  "id": "f757",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only systemic JIA is indicated; psoriasis-related JIA is a different subtype and is not mentioned."
+ },
+ {
+  "id": "f726",
+  "verdict": "TARGET",
+  "quote": "ZEVTERA is indicated for the treatment of adult patients with Staphylococcus aureus bloodstream infection (bacteremia) (SAB)",
+  "note": "S. aureus bacteremia is a S. aureus infection."
+ },
+ {
+  "id": "f720",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation.",
+  "note": "Systemic embolism is the prevented outcome."
+ },
+ {
+  "id": "f741",
+  "verdict": "TARGET",
+  "quote": "Community-acquired bacterial pneumonia ( 1.3 )",
+  "note": "CABP is a subtype of bacterial pneumonia (HAP/VAP excluded)."
+ },
+ {
+  "id": "f661",
+  "verdict": "FP2_symptom_swap",
+  "quote": "associated with at least 3 of the following 6 symptoms: restlessness or feeling keyed up or on edge, being easily fatigued, difficulty concentrating or mind going blank, irritability",
+  "note": "Irritability is only a diagnostic symptom of GAD, which is the indication."
+ },
+ {
+  "id": "f703",
+  "verdict": "FP5_negation",
+  "quote": "74 percent of Enterococcus faecalis (formerly Streptococcus faecalis ) have been found to be resistant to tetracycline drugs.",
+  "note": "E. faecalis is mentioned only as largely resistant."
+ },
+ {
+  "id": "f301",
+  "verdict": "TARGET",
+  "quote": "drug hypersensitivity reactions, perennial or seasonal allergic rhinitis, serum sickness, transfusion reactions.",
+  "note": "Named in allergic states list."
+ },
+ {
+  "id": "f816",
+  "verdict": "TARGET",
+  "quote": "mild, uncomplicated allergic skin manifestations of urticaria and angioedema",
+  "note": "Urticaria named as treated."
+ },
+ {
+  "id": "f027",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Pleuritic chest pain is a narrower form of the generically indicated pain; weak."
+ },
+ {
+  "id": "f758",
+  "verdict": "FP4_overbroad",
+  "quote": "Localized hypertrophic, infiltrated, inflammatory lesions of: lichen planus, psoriatic plaques, granuloma annulare",
+  "note": "Only specific granulomatous conditions are named; generic 'Granuloma' is overbroad."
+ },
+ {
+  "id": "f270",
+  "verdict": "FP1_setting",
+  "quote": "Major adverse cardiovascular events (cardiovascular death, nonfatal myocardial infarction and nonfatal stroke) in adults with type 2 diabetes mellitus and established cardiovascular disease (CVD).",
+  "note": "Established CVD is the population; MACE risk reduction is the target."
+ },
+ {
+  "id": "f037",
+  "verdict": "FP3_cross_section",
+  "quote": "Hypertension : Monitor blood pressure.",
+  "note": "Hypertension appears only in warnings."
+ },
+ {
+  "id": "f342",
+  "verdict": "TARGET",
+  "quote": "it is indicated for the control of extrapyramidal disorders caused by central nervous system drugs",
+  "note": "Extrapyramidal disorders are named."
+ },
+ {
+  "id": "f429",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with relapsed or refractory diffuse large B-cell lymphoma, not otherwise specified (DLBCL, NOS)",
+  "note": "Directly named."
+ },
+ {
+  "id": "f585",
+  "verdict": "TARGET",
+  "quote": "Chronic idiopathic constipation (CIC) in adults.",
+  "note": "Directly named."
+ },
+ {
+  "id": "f617",
+  "verdict": "FP5_negation",
+  "quote": "Treatment of patients with asymptomatic ventricular premature contractions should be avoided.",
+  "note": "Explicit negation in indications."
+ },
+ {
+  "id": "f475",
+  "verdict": "TARGET",
+  "quote": "Temporary control of rapid ventricular rate in atrial fibrillation or atrial flutter.",
+  "note": "Rate control is management of atrial fibrillation."
+ },
+ {
+  "id": "f398",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchoconstriction in patients with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema.",
+  "note": "Chronic bronchitis named on formoterol-only label; bronchitis is a near parent."
+ },
+ {
+  "id": "f639",
+  "verdict": "TARGET",
+  "quote": "1.5 Gonorrhea, acute uncomplicated (ano-genital and urethral infections in males and females) - due to Neisseria gonorrhoeae .",
+  "note": "Named indication (some labels advise against empiric use)."
+ },
+ {
+  "id": "f039",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Social Anxiety Disorder (SAD), also known as social phobia.",
+  "note": "Social phobia is a phobic disorder subtype."
+ },
+ {
+  "id": "f009",
+  "verdict": "TARGET",
+  "quote": "Acute gouty arthritis",
+  "note": "Gouty arthritis is the indicated gout manifestation."
+ },
+ {
+  "id": "f530",
+  "verdict": "TARGET",
+  "quote": "Rifampin for Injection, USP is indicated in the treatment of all forms of tuberculosis.",
+  "note": "Bone TB is a form of tuberculosis."
+ },
+ {
+  "id": "f419",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of serious intra-abdominal infections including peritonitis and intra-abdominal abscess",
+  "note": "Peritonitis named."
+ }
+]

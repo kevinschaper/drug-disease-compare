@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f011",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of mild to moderate dementia of the Alzheimer's type",
+  "note": "Galantamine (benzgalantamine active moiety) labels name Alzheimer dementia."
+ },
+ {
+  "id": "f444",
+  "verdict": "TARGET",
+  "quote": "relief of bronchospasm in patients 2 to 12 years of age with asthma (reversible obstructive airway disease)",
+  "note": "Bronchospasm relief in asthma is management of asthma itself."
+ },
+ {
+  "id": "f226",
+  "verdict": "FP2_symptom_swap",
+  "quote": "insomnia or hypersomnia",
+  "note": "Insomnia appears only as a listed symptom of MDD (and in warnings); drug treats depression."
+ },
+ {
+  "id": "f002",
+  "verdict": "TARGET",
+  "quote": "PELVIC INFLAMMATORY DISEASE caused by Neisseria gonorrhoeae.",
+  "note": "PID listed as an indicated infection."
+ },
+ {
+  "id": "f507",
+  "verdict": "TARGET",
+  "quote": "treatment of allergic symptoms by immunotherapy in patients with a history of grass pollen allergy",
+  "note": "Grass pollen allergy immunotherapy covers seasonal allergic rhinitis; not named verbatim."
+ },
+ {
+  "id": "f068",
+  "verdict": "TARGET",
+  "quote": "Gastrointestinal Infections caused by Salmonella typhi (typhoid fever)",
+  "note": "Typhoid fever explicitly listed."
+ },
+ {
+  "id": "f524",
+  "verdict": "TARGET",
+  "quote": "Keratitis Optic neuritis Allergic conjunctivitis",
+  "note": "Optic neuritis named in ophthalmic disease list."
+ },
+ {
+  "id": "f468",
+  "verdict": "TARGET",
+  "quote": "help restore normal serum potassium levels in patients who develop hypokalemia",
+  "note": "Hypokalemia (potassium deficiency) treatment/prevention is the indication."
+ },
+ {
+  "id": "f057",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Juvenile dermatomyositis is a subtype of indicated dermatomyositis."
+ },
+ {
+  "id": "f416",
+  "verdict": "TARGET",
+  "quote": "treatment of pediatric patients 1 year of age and older with low-grade glioma (LGG) with a BRAF V600E mutation",
+  "note": "LGG is a glioma; edge is a near parent."
+ },
+ {
+  "id": "f600",
+  "verdict": "TARGET",
+  "quote": "Serum sickness. Allergic conjunctivitis.",
+  "note": "Atopic conjunctivitis is a form of indicated allergic conjunctivitis."
+ },
+ {
+  "id": "f333",
+  "verdict": "FP1_setting",
+  "quote": "treatment of secondary hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on hemodialysis",
+  "note": "CKD is the population; target is secondary HPT."
+ },
+ {
+  "id": "f237",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of vomiting associated with emetogenic cancer chemotherapy",
+  "note": "Vomiting prevention is explicitly indicated."
+ },
+ {
+  "id": "f604",
+  "verdict": "TARGET",
+  "quote": "pathological hypersecretory conditions (i.e., Zollinger-Ellison Syndrome, systemic mastocytosis, multiple endocrine adenomas)",
+  "note": "Systemic mastocytosis named in list of indicated conditions."
+ },
+ {
+  "id": "f779",
+  "verdict": "TARGET",
+  "quote": "To improve hemodynamic status in patients in distributive shock and shock due to reduced cardiac output",
+  "note": "Shock due to reduced cardiac output is cardiogenic shock."
+ },
+ {
+  "id": "f687",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with unresectable hepatocellular carcinoma (uHCC)",
+  "note": "HCC explicitly indicated."
+ },
+ {
+  "id": "f605",
+  "verdict": "FP2_symptom_swap",
+  "quote": "increased fatigue",
+  "note": "Fatigue appears only as a symptom in the MDD definition; drug treats depression."
+ },
+ {
+  "id": "f747",
+  "verdict": "TARGET",
+  "quote": "Aspergillosis, pulmonary and extrapulmonary, in patients who are intolerant of or who are refractory to amphotericin B therapy.",
+  "note": "Aspergillosis explicitly indicated."
+ },
+ {
+  "id": "f684",
+  "verdict": "TARGET",
+  "quote": "to control the development of renal bone disease",
+  "note": "EMA text frames use within multi-therapy approach to control renal bone disease; primary target is hyperphosphataemia."
+ },
+ {
+  "id": "f728",
+  "verdict": "TARGET",
+  "quote": "anaplastic lymphoma kinase (ALK)-positive metastatic non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC explicitly indicated."
+ },
+ {
+  "id": "f373",
+  "verdict": "TARGET",
+  "quote": "management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Generic severe pain indication; mastalgia is a narrower pain subtype, not named."
+ },
+ {
+  "id": "f079",
+  "verdict": "TARGET",
+  "quote": "in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "HeFH explicitly named."
+ },
+ {
+  "id": "f039",
+  "verdict": "TARGET",
+  "quote": "Social Anxiety Disorder (SAD), also known as social phobia",
+  "note": "Social phobia is a phobic disorder; panic with agoraphobia also listed."
+ },
+ {
+  "id": "f358",
+  "verdict": "FP2_symptom_swap",
+  "quote": "short stature associated with Noonan syndrome",
+  "note": "Label treats short stature in Noonan syndrome, not the syndrome itself."
+ },
+ {
+  "id": "f429",
+  "verdict": "TARGET",
+  "quote": "relapsed or refractory diffuse large B-cell lymphoma, not otherwise specified (DLBCL, NOS)",
+  "note": "DLBCL explicitly indicated."
+ },
+ {
+  "id": "f443",
+  "verdict": "TARGET",
+  "quote": "adenocarcinoma of the ovary",
+  "note": "Cyclophosphamide (parent of 4-hydroxy metabolite) labels list ovarian adenocarcinoma."
+ },
+ {
+  "id": "f131",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL)",
+  "note": "CLL explicitly indicated."
+ },
+ {
+  "id": "f322",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Chronic bronchitis named as included COPD form."
+ },
+ {
+  "id": "f867",
+  "verdict": "TARGET",
+  "quote": "gBRCA m, HER2-negative metastatic breast cancer",
+  "note": "Metastatic (stage IV) breast cancer explicitly indicated."
+ },
+ {
+  "id": "f231",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of attention deficit hyperactivity disorder (ADHD)",
+  "note": "Inattentive type is a subtype of indicated ADHD."
+ },
+ {
+  "id": "f225",
+  "verdict": "TARGET",
+  "quote": "Treatment of adult and pediatric patients with acute lymphoblastic leukemia as part of a combination chemotherapy regimen",
+  "note": "ALL is a lymphoid leukemia; edge is a near parent."
+ },
+ {
+  "id": "f182",
+  "verdict": "TARGET",
+  "quote": "Vemlidy is indicated for the treatment of chronic hepatitis B (CHB) in adults and paediatric patients",
+  "note": "CHB explicitly indicated in EMA text."
+ },
+ {
+  "id": "f484",
+  "verdict": "TARGET",
+  "quote": "treatment of inflammatory papules and pustules of rosacea",
+  "note": "Pustules are directly the treated lesion (of rosacea)."
+ },
+ {
+  "id": "f561",
+  "verdict": "TARGET",
+  "quote": "Synovitis of osteoarthritis Rheumatoid arthritis Acute and subacute bursitis Acute gouty arthritis",
+  "note": "Multiple arthritides listed; edge is a near parent."
+ },
+ {
+  "id": "f760",
+  "verdict": "TARGET",
+  "quote": "Diabetic Macular Edema (DME)",
+  "note": "DME explicitly indicated."
+ },
+ {
+  "id": "f161",
+  "verdict": "FP1_setting",
+  "quote": "transfusional iron overload in adult and pediatric patients 3 years of age and older with thalassemia syndromes, sickle cell disease or other anemias",
+  "note": "Anemia is the background population; target is iron overload."
+ },
+ {
+  "id": "f244",
+  "verdict": "TARGET",
+  "quote": "documented ventricular arrhythmias, such as sustained ventricular tachycardia, that, in the judgment of the physician, are life-threatening",
+  "note": "Ventricular tachycardia is a tachycardia; edge is a near parent."
+ },
+ {
+  "id": "f836",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with unresectable or metastatic colorectal cancer",
+  "note": "Metastatic colon cancer covered."
+ },
+ {
+  "id": "f533",
+  "verdict": "TARGET",
+  "quote": "Treatment of active duodenal ulcer in adults",
+  "note": "Duodenal ulcer explicitly indicated."
+ },
+ {
+  "id": "f509",
+  "verdict": "TARGET",
+  "quote": "treatment or prevention of bronchospasm in adults, adolescents, and children 6 years of age and older with reversible obstructive airway disease",
+  "note": "Reversible obstructive airway disease is a standard synonym for asthma."
+ },
+ {
+  "id": "f782",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE)",
+  "note": "PE and systemic embolism are treated/prevented."
+ },
+ {
+  "id": "f190",
+  "verdict": "TARGET",
+  "quote": "Celecoxib Capsules is indicated for relief of the signs and symptoms of OA",
+  "note": "OA explicitly indicated."
+ },
+ {
+  "id": "f381",
+  "verdict": "FP1_setting",
+  "quote": "hereditary transthyretin-mediated amyloidosis (hATTR amyloidosis) in adult patients with stage 1 or stage 2 polyneuropathy",
+  "note": "Polyneuropathy is the patient population/stage; target is hATTR amyloidosis."
+ },
+ {
+  "id": "f187",
+  "verdict": "FP1_setting",
+  "quote": "Secondary Hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on dialysis",
+  "note": "Renal failure is the setting; target is secondary HPT."
+ },
+ {
+  "id": "f432",
+  "verdict": "FP5_negation",
+  "quote": "Whether a negative skin test to PRE-PEN predicts a lower risk of anaphylaxis is not established.",
+  "note": "Diagnostic skin test; anaphylaxis mentioned only in a not-established statement."
+ }
+]

@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f519",
+  "verdict": "FP1_setting",
+  "quote": "protein requirements are substantially increased as with extensive burns",
+  "note": "Burns are a setting for amino-acid nutritional support, not the treated condition."
+ },
+ {
+  "id": "f607",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of adult patients with metastatic carcinoma of the colon or rectum",
+  "note": "Metastatic colon carcinoma is directly indicated."
+ },
+ {
+  "id": "f625",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Chest pain is a narrower form of the general pain indication; label names no specific pain type."
+ },
+ {
+  "id": "f528",
+  "verdict": "TARGET",
+  "quote": "Skyrizi is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis",
+  "note": "UC is explicitly indicated (EMA)."
+ },
+ {
+  "id": "f835",
+  "verdict": "TARGET",
+  "quote": "treatment of partial seizures, with or without secondary generalisation",
+  "note": "Focal seizures with secondary generalisation are indicated."
+ },
+ {
+  "id": "f343",
+  "verdict": "FP1_setting",
+  "quote": "for control of heart failure in the setting of acute myocardial infarction",
+  "note": "MI is the setting; heart failure is what is treated."
+ },
+ {
+  "id": "f419",
+  "verdict": "TARGET",
+  "quote": "serious intra-abdominal infections including peritonitis and intra-abdominal abscess caused by susceptible anaerobic organisms",
+  "note": "Peritonitis named as indicated infection."
+ },
+ {
+  "id": "f116",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia, temporal arteritis, uveitis and ocular inflammatory conditions",
+  "note": "Temporal arteritis is a listed indication."
+ },
+ {
+  "id": "f710",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the treatment of irritable bowel syndrome with diarrhea (IBS-D)",
+  "note": "IBS-D is a subtype; IBS is a near parent."
+ },
+ {
+  "id": "f655",
+  "verdict": "TARGET",
+  "quote": "XIFAXAN is indicated for the treatment of irritable bowel syndrome with diarrhea (IBS-D) in adults",
+  "note": "Exact match."
+ },
+ {
+  "id": "f058",
+  "verdict": "TARGET",
+  "quote": "Persistent, recurrent, or metastatic cervical cancer, in combination with paclitaxel and cisplatin",
+  "note": "Recurrent cervical cancer is indicated."
+ },
+ {
+  "id": "f547",
+  "verdict": "FP2_symptom_swap",
+  "quote": "predominantly classic subfoveal choroidal neovascularization (CNV) due to age-related macular degeneration (AMD), pathologic myopia",
+  "note": "Treats CNV complication; pathologic myopia is the underlying cause."
+ },
+ {
+  "id": "f737",
+  "verdict": "TARGET",
+  "quote": "Philadelphia chromosome (bcr-abl) positive (Ph+) chronic myeloid leukaemia (CML)",
+  "note": "Ph+ CML is indicated."
+ },
+ {
+  "id": "f367",
+  "verdict": "TARGET",
+  "quote": "management of hypoglycemia due to hyperinsulinism associated with ... Infants and children: Leucine sensitivity, islet cell hyperplasia, nesidioblastosis",
+  "note": "Manages congenital hyperinsulinism (nesidioblastosis/islet hyperplasia) in infants."
+ },
+ {
+  "id": "f398",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchoconstriction in patients with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Chronic bronchitis named; bronchitis is a near parent."
+ },
+ {
+  "id": "f744",
+  "verdict": "TARGET",
+  "quote": "ELIQUIS is indicated for the treatment of adults with deep vein thrombosis (DVT)",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f887",
+  "verdict": "TARGET",
+  "quote": "Deficient spermatogenesis due to hypogonadotrophic hypogonadism",
+  "note": "Hypogonadotrophic hypogonadism is a subtype of hypogonadism; FSH replaces the deficiency."
+ },
+ {
+  "id": "f060",
+  "verdict": "TARGET",
+  "quote": "treatment of overactive bladder with symptoms of urge urinary incontinence, urgency, and frequency",
+  "note": "Urge incontinence (urinary leakage) is treated."
+ },
+ {
+  "id": "f270",
+  "verdict": "FP4_overbroad",
+  "quote": "reduce the risk of major adverse cardiovascular events ... in adults with type 2 diabetes mellitus and established cardiovascular disease",
+  "note": "Organ-system class edge; label targets MACE risk reduction in T2DM with CVD."
+ },
+ {
+  "id": "f759",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with insomnia, characterized by difficulties with sleep onset and/or sleep maintenance",
+  "note": "Paradoxical insomnia is a subtype of indicated insomnia."
+ },
+ {
+  "id": "f669",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of major adverse cardiovascular (CV) events (CV death, myocardial infarction, stroke",
+  "note": "Stroke prevention is named."
+ },
+ {
+  "id": "f881",
+  "verdict": "TARGET",
+  "quote": "Treatment of Esophageal Candidiasis in adult and pediatric patients 4 months of age and older",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f761",
+  "verdict": "TARGET",
+  "quote": "treatment of cutaneous manifestations of cutaneous T-cell lymphoma in patients who are refractory to at least one prior systemic therapy",
+  "note": "CTCL is primary cutaneous T-cell lymphoma."
+ },
+ {
+  "id": "f685",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus",
+  "note": "Type 1 diabetes named on human insulin labels."
+ },
+ {
+  "id": "f715",
+  "verdict": "TARGET",
+  "quote": "primary advanced or recurrent endometrial cancer that is mismatch repair deficient (dMMR)",
+  "note": "Stage III falls within advanced endometrial cancer."
+ },
+ {
+  "id": "f503",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of malaria due to Plasmodium falciparum in short-term travelers",
+  "note": "Malaria prophylaxis is indicated."
+ },
+ {
+  "id": "f792",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Heart failure not mentioned; texts are dialysis nutritional supplements and dosing instructions."
+ },
+ {
+  "id": "f229",
+  "verdict": "TARGET",
+  "quote": "Uncomplicated skin and skin structure infections due to Staphylococcus aureus , or Streptococcus pyogenes",
+  "note": "Skin infection indicated."
+ },
+ {
+  "id": "f778",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Angina Pectoris Due to Coronary Atherosclerosis ... indicated to decrease angina frequency and increase exercise tolerance",
+  "note": "Treats angina symptom; coronary atherosclerosis is the underlying disease."
+ },
+ {
+  "id": "f235",
+  "verdict": "TARGET",
+  "quote": "component of multiple risk factor intervention in those individuals with dyslipidemia",
+  "note": "Dyslipidemia/hypercholesterolemia is indicated."
+ },
+ {
+  "id": "f872",
+  "verdict": "FP1_setting",
+  "quote": "treatment and prophylaxis of hypokalemia with or without metabolic alkalosis",
+  "note": "Hypokalemia is treated; metabolic alkalosis is accompanying context."
+ },
+ {
+  "id": "f259",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of common migraine headache",
+  "note": "Migraine headache prophylaxis; headache is a near parent."
+ },
+ {
+  "id": "f043",
+  "verdict": "TARGET",
+  "quote": "treatment of panic disorder ... characterized by the occurrence of unexpected panic attacks",
+  "note": "Panic attacks are the defining feature of the indicated panic disorder."
+ },
+ {
+  "id": "f030",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated as a treatment to improve walking in adult patients with multiple sclerosis (MS)",
+  "note": "Treats walking impairment, not MS itself."
+ },
+ {
+  "id": "f266",
+  "verdict": "FP3_cross_section",
+  "quote": "a steroid medicine for asthma, allergies or skin rash",
+  "note": "Skin conditions appear only in warnings text; indications are asthma/COPD."
+ },
+ {
+  "id": "f511",
+  "verdict": "TARGET",
+  "quote": "advanced or metastatic RET fusion-positive thyroid cancer who require systemic therapy",
+  "note": "Thyroid cancer indicated."
+ },
+ {
+  "id": "f531",
+  "verdict": "TARGET",
+  "quote": "Lymphogranuloma venereum caused by Chlamydia trachomatis",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f284",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves minor aches and pains due to: Minor pain of arthritis",
+  "note": "Arthritis pain is inflammatory pain."
+ },
+ {
+  "id": "f726",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with Staphylococcus aureus bloodstream infection (bacteremia) (SAB)",
+  "note": "S. aureus infections indicated."
+ },
+ {
+  "id": "f731",
+  "verdict": "TARGET",
+  "quote": "treatment of schizophrenia in adults and in adolescents aged 15 years and older",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f623",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Texts cover oral wound cleansing only; seborrheic keratosis not mentioned."
+ },
+ {
+  "id": "f010",
+  "verdict": "TARGET",
+  "quote": "indicated for the adjuvant treatment of adults with pancreatic adenocarcinoma",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f542",
+  "verdict": "TARGET",
+  "quote": "indicated for the local treatment of vulvovaginal candidiasis (infections caused by Candida )",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f824",
+  "verdict": "FP1_setting",
+  "quote": "treatment of anaemia associated with chronic renal failure in paediatric and adult patients on haemodialysis",
+  "note": "Anaemia is treated; renal failure is the setting."
+ },
+ {
+  "id": "f407",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with moderately to severely active chronic pouchitis",
+  "note": "Direct indication (EMA)."
+ }
+]

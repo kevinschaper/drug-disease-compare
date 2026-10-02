@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f404",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Disease term (a gene locus) not mentioned; label is METex14 NSCLC."
+ },
+ {
+  "id": "f496",
+  "verdict": "TARGET",
+  "quote": "Community-acquired pneumonia due to Chlamydophila pneumoniae, Haemophilus influenzae, Mycoplasma pneumoniae or Streptococcus pneumoniae in patients appropriate for oral therapy.",
+  "note": "CAP is a listed indication."
+ },
+ {
+  "id": "f236",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Ventricular fibrillation not mentioned; only ventricular arrhythmias as an adverse effect in warnings."
+ },
+ {
+  "id": "f723",
+  "verdict": "TARGET",
+  "quote": "Sertraline hydrochloride tablets USP are indicated for the treatment of major depressive disorder in adults.",
+  "note": "MDD explicitly indicated."
+ },
+ {
+  "id": "f891",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the incidence of recurrent vulvovaginal candidiasis (RVVC) in females with a history of RVVC",
+  "note": "RVVC prevention indicated."
+ },
+ {
+  "id": "f508",
+  "verdict": "FP2_symptom_swap",
+  "quote": "adjunct for the relief of skeletal muscle spasm due to reflex spasm to local pathology ... stiff man syndrome; and tetanus.",
+  "note": "Treats muscle spasm in tetanus, not tetanus itself."
+ },
+ {
+  "id": "f555",
+  "verdict": "FP5_negation",
+  "quote": "Azithromycin should not be used in patients with pneumonia who are judged to be inappropriate for oral therapy ... (including immunodeficiency or functional asplenia).",
+  "note": "Asplenia appears only as a risk factor where use is not recommended."
+ },
+ {
+  "id": "f618",
+  "verdict": "TARGET",
+  "quote": "indicated for intralesional use in alopecia areata, discoid lupus erythematosus, keloids",
+  "note": "Alopecia areata listed for intralesional use."
+ },
+ {
+  "id": "f841",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of acute agitation in schizophrenic adult patients",
+  "note": "Agitation is the treated target (in schizophrenia)."
+ },
+ {
+  "id": "f776",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic hepatitis B in patients 12 years of age and older",
+  "note": "Chronic HBV indicated."
+ },
+ {
+  "id": "f305",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Irritability not mentioned; closest is 'mood swings' in an unapproved cosmetic cream."
+ },
+ {
+  "id": "f254",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Testicular pain is a specific form of indicated pain."
+ },
+ {
+  "id": "f755",
+  "verdict": "TARGET",
+  "quote": "indicated as initial monotherapy in patients 2 years of age and older with partial onset or primary generalized tonic-clonic seizures",
+  "note": "Occipital lobe epilepsy is a focal (partial-onset) epilepsy."
+ },
+ {
+  "id": "f269",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of chronic hepatitis B virus (HBV) infection",
+  "note": "Label is chronic HBV; edge is generic hepatitis of all etiologies."
+ },
+ {
+  "id": "f290",
+  "verdict": "TARGET",
+  "quote": "unresectable, locally advanced or metastatic intrahepatic cholangiocarcinoma harboring fibroblast growth factor receptor 2 (FGFR2) gene fusions",
+  "note": "Near parent of indicated intrahepatic cholangiocarcinoma."
+ },
+ {
+  "id": "f662",
+  "verdict": "TARGET",
+  "quote": "emergency treatment of allergic reactions (Type I) including anaphylaxis to ... foods, drugs",
+  "note": "Anaphylaxis from foods explicitly covered."
+ },
+ {
+  "id": "f071",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of hemodynamically stable patients with definite or suspected acute myocardial infarction to reduce cardiovascular mortality",
+  "note": "Anterolateral MI is a subtype of indicated MI."
+ },
+ {
+  "id": "f196",
+  "verdict": "TARGET",
+  "quote": "Thiotepa for Injection has been effective against other lymphomas, such as lymphosarcoma and Hodgkin's disease.",
+  "note": "Hodgkin's disease named in older label indications."
+ },
+ {
+  "id": "f103",
+  "verdict": "TARGET",
+  "quote": "CORNEAL ULCERS Gram-positive bacteria Gram-negative bacteria Staphylococcus aureus Pseudomonas aeruginosa",
+  "note": "Bacterial corneal ulcers listed for ophthalmic solution."
+ },
+ {
+  "id": "f748",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Hypoparathyroidism not mentioned; teriparatide text is osteoporosis only."
+ },
+ {
+  "id": "f020",
+  "verdict": "TARGET",
+  "quote": "ELFABRIO is indicated for the treatment of adults with confirmed Fabry disease.",
+  "note": "Fabry disease indicated."
+ },
+ {
+  "id": "f008",
+  "verdict": "TARGET",
+  "quote": "indicated for the initial treatment of advanced ovarian carcinoma in established combination with other approved chemotherapeutic agents",
+  "note": "Ovarian carcinoma indicated."
+ },
+ {
+  "id": "f638",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Uveitis not mentioned; bupivacaine is a local anesthetic."
+ },
+ {
+  "id": "f616",
+  "verdict": "TARGET",
+  "quote": "refractory auto-immune haemolytic anaemia, caused by warm IgG antibodies",
+  "note": "AIHA listed in EMA indication."
+ },
+ {
+  "id": "f306",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Eliglustat is indicated for Gaucher type 1; Fabry appears only on a mismatched Fabrazyme label."
+ },
+ {
+  "id": "f831",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic spontaneous urticaria (CSU) in adult patients who remain symptomatic despite H1 antihistamine treatment",
+  "note": "CSU is a synonym of chronic idiopathic urticaria."
+ },
+ {
+  "id": "f713",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of thrombocythemia, secondary to myeloproliferative neoplasms, to reduce the elevated platelet count",
+  "note": "Thrombocythemia ~ thrombocytosis."
+ },
+ {
+  "id": "f459",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for the following seizure types ... primary generalized tonic-clonic (PGTC) seizures",
+  "note": "Tonic-clonic seizures indicated (also partial-onset)."
+ },
+ {
+  "id": "f477",
+  "verdict": "TARGET",
+  "quote": "adults and pediatric patients aged 8 years and older with heterozygous familial hypercholesterolemia (HeFH). adults with homozygous familial hypercholesterolemia (HoFH).",
+  "note": "FH indicated."
+ },
+ {
+  "id": "f822",
+  "verdict": "TARGET",
+  "quote": "conjunctiva, cornea and anterior segment of the globe such as allergic conjunctivitis, acne rosacea, superficial punctate keratitis, herpes zoster keratitis, iritis",
+  "note": "Herpes zoster keratitis named in list."
+ },
+ {
+  "id": "f363",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pediatric patients 2 years of age and older with central precocious puberty (CPP)",
+  "note": "CPP is a form of precocious puberty."
+ },
+ {
+  "id": "f088",
+  "verdict": "FP1_setting",
+  "quote": "mobilize hematopoietic stem cells to the peripheral blood for collection and subsequent autologous transplantation in patients with multiple myeloma",
+  "note": "Myeloma is the patient population, not the treated condition."
+ },
+ {
+  "id": "f445",
+  "verdict": "FP3_cross_section",
+  "quote": "Because of the risks of addiction, abuse, misuse, overdose, and death",
+  "note": "Abuse appears only as a risk, not an indication."
+ },
+ {
+  "id": "f141",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderately to severely active ulcerative colitis (UC) in adults",
+  "note": "UC indicated."
+ },
+ {
+  "id": "f383",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of: multiple myeloma, malignant lymphoma (Hodgkin, non-Hodgkin lymphoma), acute lymphoblastic and myeloblastic leukemia, childhood neuroblastoma, ovarian cancer",
+  "note": "Ovarian cancer listed in EMA indication."
+ },
+ {
+  "id": "f897",
+  "verdict": "TARGET",
+  "quote": "indicated in adult patients for treatment of complicated intra-abdominal infections (used in combination with metronidazole)",
+  "note": "Intra-abdominal infection indicated."
+ },
+ {
+  "id": "f580",
+  "verdict": "TARGET",
+  "quote": "indicated for the first-line treatment of adult patients with non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC is the main lung cancer form; near parent."
+ },
+ {
+  "id": "f072",
+  "verdict": "TARGET",
+  "quote": "symptomatic patients with congenital neutropenia, cyclic neutropenia, or idiopathic neutropenia",
+  "note": "Congenital neutropenia indicated."
+ },
+ {
+  "id": "f690",
+  "verdict": "TARGET",
+  "quote": "reduces the rate of progression of nephropathy as measured by the occurrence of doubling of serum creatinine or end stage renal disease",
+  "note": "Reducing occurrence of ESRD in diabetic nephropathy is a prevention claim (borderline)."
+ },
+ {
+  "id": "f397",
+  "verdict": "TARGET",
+  "quote": "treatment of refractory hypotension in adults with septic or other distributive shock",
+  "note": "Treats the hypotension defining distributive shock."
+ },
+ {
+  "id": "f018",
+  "verdict": "TARGET",
+  "quote": "Acute treatment of manic or mixed episodes associated with bipolar I disorder",
+  "note": "Bipolar I indicated."
+ },
+ {
+  "id": "f729",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Erythema itself not an indication; only distinct disease 'severe erythema multiforme' is listed."
+ },
+ {
+  "id": "f374",
+  "verdict": "TARGET",
+  "quote": "chronic inflammatory demyelinating polyneuropathy (CIDP)",
+  "note": "CIDP indicated (Vyvgart Hytrulo)."
+ },
+ {
+  "id": "f355",
+  "verdict": "TARGET",
+  "quote": "TRADJENTA is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "T2DM indicated on single-agent label."
+ },
+ {
+  "id": "f652",
+  "verdict": "FP1_setting",
+  "quote": "subfoveal choroidal neovascularization (CNV) due to age-related macular degeneration, pathologic myopia or presumed ocular histoplasmosis",
+  "note": "Treats CNV; histoplasmosis is the underlying cause."
+ }
+]

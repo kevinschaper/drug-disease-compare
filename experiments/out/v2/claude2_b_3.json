@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f169",
+  "verdict": "TARGET",
+  "quote": "Aspergillosis, pulmonary and extrapulmonary, in patients who are intolerant of or who are refractory to amphotericin B therapy",
+  "note": "Pulmonary aspergilloma is a form of the indicated pulmonary aspergillosis."
+ },
+ {
+  "id": "f756",
+  "verdict": "TARGET",
+  "quote": "Septicemia, endocarditis and urinary system infections have been effectively treated with flucytosine.",
+  "note": "Candida endocarditis is named among the serious Candida infections in the indications section."
+ },
+ {
+  "id": "f055",
+  "verdict": "FP4_overbroad",
+  "quote": "During an exacerbation or as maintenance therapy in selected cases of: Systemic lupus erythematosus Acute rheumatic carditis",
+  "note": "Only acute rheumatic carditis is indicated; generic carditis (any heart-layer inflammation) is a much broader class."
+ },
+ {
+  "id": "f662",
+  "verdict": "TARGET",
+  "quote": "Emergency treatment of allergic reactions (Type I), including anaphylaxis, which may result from allergic reactions to insect stings, biting insects, foods, drugs",
+  "note": "Anaphylaxis from foods is explicitly covered."
+ },
+ {
+  "id": "f269",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of chronic hepatitis B virus (HBV) infection associated with evidence of hepatitis B viral replication",
+  "note": "Label is chronic hepatitis B only; generic 'hepatitis' spans all etiologies."
+ },
+ {
+  "id": "f367",
+  "verdict": "TARGET",
+  "quote": "management of hypoglycemia due to hyperinsulinism associated with the following conditions: ... Infants and children: Leucine sensitivity, islet cell hyperplasia, nesidioblastosis",
+  "note": "Congenital hyperinsulinism (nesidioblastosis/islet cell hyperplasia in infants) is a listed hyperinsulinism condition."
+ },
+ {
+  "id": "f841",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of acute agitation in schizophrenic adult patients",
+  "note": "Agitation is the treated condition; schizophrenia is the population."
+ },
+ {
+  "id": "f598",
+  "verdict": "FP5_negation",
+  "quote": "abnormal uterine bleeding due to hormonal imbalance in the absence of organic pathology, such as fibroids or uterine cancer",
+  "note": "Uterine cancer is mentioned only as an excluded organic pathology; no endometrial carcinoma indication in text."
+ },
+ {
+  "id": "f079",
+  "verdict": "TARGET",
+  "quote": "reduce low-density lipoprotein cholesterol (LDL-C) in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "HeFH explicitly named."
+ },
+ {
+  "id": "f075",
+  "verdict": "TARGET",
+  "quote": "reduction of blood levels and depot stores of lead in lead poisoning (acute and chronic) and lead encephalopathy",
+  "note": "Lead encephalopathy explicitly indicated."
+ },
+ {
+  "id": "f837",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No sepsis, septicemia or bacteremia indication in the linezolid text."
+ },
+ {
+  "id": "f354",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with unresectable or metastatic liposarcoma or leiomyosarcoma who received a prior anthracycline-containing regimen",
+  "note": "Leiomyosarcoma explicitly indicated."
+ },
+ {
+  "id": "f399",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of genitourinary tract infections, including acute prostatitis",
+  "note": "Genitourinary tract infections explicitly indicated."
+ },
+ {
+  "id": "f615",
+  "verdict": "FP6_coingredient",
+  "quote": "The naproxen component of naproxen and esomeprazole magnesium delayed-release tablet is indicated for relief of signs and symptoms of: osteoarthritis",
+  "note": "Osteoarthritis indication belongs to the naproxen component of the combination."
+ },
+ {
+  "id": "f845",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Breakthrough pain not named; credited only as a narrower form of the indicated opioid-requiring pain (weak)."
+ },
+ {
+  "id": "f300",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of T-cell acute lymphoblastic leukemia (T-ALL) and T-cell lymphoblastic lymphoma (T-LBL)",
+  "note": "Only relapsed/refractory T-ALL is indicated; 'leukemia' is a whole cancer class."
+ },
+ {
+  "id": "f370",
+  "verdict": "TARGET",
+  "quote": "Nicardipine hydrochloride capsules are indicated for the treatment of hypertension.",
+  "note": "Hypertension explicitly indicated."
+ },
+ {
+  "id": "f260",
+  "verdict": "FP1_setting",
+  "quote": "decrease the incidence of chemotherapy-induced myelosuppression in adult patients when administered prior to a platinum/etoposide-containing regimen ... for extensive-stage small cell lung cancer",
+  "note": "SCLC is the background setting; the target is chemotherapy-induced myelosuppression."
+ },
+ {
+  "id": "f495",
+  "verdict": "TARGET",
+  "quote": "Difluprednate ophthalmic emulsion is also indicated for the treatment of endogenous anterior uveitis.",
+  "note": "Anterior uveitis explicitly indicated."
+ },
+ {
+  "id": "f514",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of secondary hyperparathyroidism in adult patients with Stage 3 or Stage 4 chronic kidney disease",
+  "note": "Secondary hyperparathyroidism explicitly indicated."
+ },
+ {
+  "id": "f550",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Severe IBS includes diarrhea and 1 or more of the following: frequent and severe abdominal pain/discomfort, frequent bowel urgency or fecal incontinence",
+  "note": "Fecal incontinence is only a defining manifestation of severe IBS-D, which is what is treated."
+ },
+ {
+  "id": "f430",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of secondary amenorrhea and abnormal uterine bleeding due to hormonal imbalance in the absence of organic pathology",
+  "note": "Abnormal uterine bleeding explicitly indicated."
+ },
+ {
+  "id": "f341",
+  "verdict": "FP3_cross_section",
+  "quote": "Because of the risks of addiction, abuse, misuse, overdose, and death",
+  "note": "Opioid abuse appears only as a risk/warning, not as an indication."
+ },
+ {
+  "id": "f082",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indications cover only roundworm and whipworm; hookworm not mentioned."
+ },
+ {
+  "id": "f750",
+  "verdict": "FP4_overbroad",
+  "quote": "reduce the risk of myocardial infarction",
+  "note": "Label is myocardial infarction risk reduction; generic 'Infarction' (any organ) is overbroad."
+ },
+ {
+  "id": "f483",
+  "verdict": "FP1_setting",
+  "quote": "with hemodynamically significant congenital heart disease (CHD) and who are 24 months of age or younger at the beginning of RSV season",
+  "note": "CHD defines the population for RSV prophylaxis, not the treated disease."
+ },
+ {
+  "id": "f176",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of overactive bladder with symptoms of urge urinary incontinence, urgency and frequency",
+  "note": "Overactive bladder explicitly indicated."
+ },
+ {
+  "id": "f551",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients aged 2 years and older with: sickle cell disease (SCD) with recurrent vaso-occlusive crises",
+  "note": "SCD explicitly indicated."
+ },
+ {
+  "id": "f033",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with generalized myasthenia gravis (gMG) who are anti-acetylcholine receptor (AChR) antibody-positive",
+  "note": "Generalized MG indicated; edge is a near parent."
+ },
+ {
+  "id": "f680",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (i.e., Zollinger-Ellison Syndrome, systemic mastocytosis, multiple endocrine adenomas)",
+  "note": "Systemic mastocytosis is a named item in the indicated list."
+ },
+ {
+  "id": "f089",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Bone pain not named; credited only as a narrower form of indicated severe pain (weak)."
+ },
+ {
+  "id": "f899",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Polymyositis explicitly indicated."
+ },
+ {
+  "id": "f441",
+  "verdict": "TARGET",
+  "quote": "SPINRAZA is indicated for the treatment of spinal muscular atrophy (SMA) in pediatric and adult patients.",
+  "note": "SMA explicitly indicated."
+ },
+ {
+  "id": "f730",
+  "verdict": "TARGET",
+  "quote": "Impetigo contagiosa, superficial folliculitis, ecthyma, furunculosis, sycosis barbae, and pyoderma gangrenosum.",
+  "note": "Furunculosis listed among primary skin infections."
+ },
+ {
+  "id": "f654",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of major adverse cardiovascular (CV) events (CV death, myocardial infarction, stroke, unstable angina requiring hospitalization, or coronary revascularization)",
+  "note": "MI prevention is explicitly indicated."
+ },
+ {
+  "id": "f295",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura in adults",
+  "note": "Migraine without aura explicitly indicated."
+ },
+ {
+  "id": "f779",
+  "verdict": "TARGET",
+  "quote": "To improve hemodynamic status in patients in distributive shock and shock due to reduced cardiac output",
+  "note": "Shock due to reduced cardiac output is cardiogenic shock."
+ },
+ {
+  "id": "f749",
+  "verdict": "TARGET",
+  "quote": "tinea pedis (athlete's foot)",
+  "note": "Tinea pedis listed among indicated ringworm infections."
+ },
+ {
+  "id": "f393",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for short-term administration ... in acute gouty arthritis, acute and subacute bursitis",
+  "note": "Bursitis explicitly listed."
+ },
+ {
+  "id": "f186",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment of adult patients with PSMA-positive metastatic androgen pathway modulation-resistant (mAPMR) prostate cancer",
+  "note": "Only metastatic PSMA-positive prostate cancer indicated; 'cancer' is overbroad."
+ },
+ {
+  "id": "f729",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Severe erythema multiforme (Stevens-Johnson syndrome)",
+  "note": "Only erythema multiforme/erythroderma are indicated; edge names the generic sign erythema."
+ },
+ {
+  "id": "f340",
+  "verdict": "TARGET",
+  "quote": "acute lymphoblastic (stem-cell) leukemia (cyclophosphamide given during remission is effective in prolonging its duration)",
+  "note": "ALL is a listed indicated leukemia."
+ },
+ {
+  "id": "f556",
+  "verdict": "TARGET",
+  "quote": "Treatment of adult patients with very high elevations of serum triglyceride levels (Types IV and V hyperlipidemia) who present a risk of pancreatitis",
+  "note": "Familial hypertriglyceridemia is a form of the indicated severe hypertriglyceridemia (not the excluded Type I)."
+ },
+ {
+  "id": "f501",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult and pediatric patients with rhabdomyosarcoma, as part of a multi-phase, combination chemotherapy regimen",
+  "note": "Alveolar rhabdomyosarcoma is a subtype of indicated rhabdomyosarcoma."
+ },
+ {
+  "id": "f850",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis; acute rheumatic carditis; ankylosing spondylitis; psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Multiple arthritides listed; arthritis is a near parent of what is indicated."
+ }
+]
