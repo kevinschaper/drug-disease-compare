@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f094",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Spinal pain is a specific form of the indicated severe persistent pain."
+ },
+ {
+  "id": "f882",
+  "verdict": "FP1_setting",
+  "quote": "For blood pressure control in certain acute hypotensive states (e.g., pheochromocytomectomy, sympathectomy, poliomyelitis, spinal anesthesia, myocardial infarction, septicemia",
+  "note": "MI is only a setting for treating hypotension."
+ },
+ {
+  "id": "f508",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Diazepam is a useful adjunct for the relief of skeletal muscle spasm due to ... athetosis; stiff man syndrome; and tetanus",
+  "note": "Label relieves muscle spasm due to tetanus, not tetanus itself."
+ },
+ {
+  "id": "f477",
+  "verdict": "TARGET",
+  "quote": "adults and pediatric patients aged 8 years and older with heterozygous familial hypercholesterolemia (HeFH). adults with homozygous familial hypercholesterolemia (HoFH)",
+  "note": "HeFH and HoFH explicitly indicated."
+ },
+ {
+  "id": "f381",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of hereditary transthyretin-mediated amyloidosis (hATTR amyloidosis) in adult patients with stage 1 or stage 2 polyneuropathy.",
+  "note": "Generic polyneuropathy is the patient population; hATTR amyloidosis is what is treated."
+ },
+ {
+  "id": "f864",
+  "verdict": "FP3_cross_section",
+  "quote": "Neutropenia/Agranulocytosis Trandolapril Component Another ACE inhibitor, captopril, has been shown to cause agranulocytosis",
+  "note": "Agranulocytosis appears only as a warning."
+ },
+ {
+  "id": "f755",
+  "verdict": "TARGET",
+  "quote": "Adjunctive therapy for adults and pediatric patients (2 to 16 years of age) with partial onset seizures",
+  "note": "Occipital lobe epilepsy is a focal (partial-onset) epilepsy."
+ },
+ {
+  "id": "f891",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the incidence of recurrent vulvovaginal candidiasis (RVVC) in females with a history of RVVC",
+  "note": "Exact match."
+ },
+ {
+  "id": "f328",
+  "verdict": "TARGET",
+  "quote": "Treatment of uncomplicated malaria due to susceptible strains of P. falciparum, P. malariae, P. ovale, and P. vivax . Prophylaxis of malaria",
+  "note": "Malaria explicitly indicated."
+ },
+ {
+  "id": "f036",
+  "verdict": "FP5_negation",
+  "quote": "SAFETY AND EFFICACY OF FOSCARNET SODIUM INJECTION HAVE NOT BEEN ESTABLISHED FOR TREATMENT OF OTHER HSV INFECTIONS (e.g., RETINITIS, ENCEPHALITIS)",
+  "note": "Encephalitis named only as not established."
+ },
+ {
+  "id": "f146",
+  "verdict": "TARGET",
+  "quote": "Respiratory Diseases Symptomatic sarcoidosis Loeffler\u2019s syndrome not manageable by other means Berylliosis",
+  "note": "Berylliosis is synonym of chronic beryllium disease."
+ },
+ {
+  "id": "f803",
+  "verdict": "TARGET",
+  "quote": "in combination with chlorambucil, for the treatment of patients with previously untreated chronic lymphocytic leukemia (CLL)",
+  "note": "CLL is B-cell CLL."
+ },
+ {
+  "id": "f279",
+  "verdict": "FP1_setting",
+  "quote": "Empirical Therapy for Febrile Neutropenic Patients Ciprofloxacin Injection is indicated in adult patients for the treatment of febrile neutropenia in combination with piperacillin",
+  "note": "Antibiotic treats presumed infection in neutropenic patients, not neutropenia."
+ },
+ {
+  "id": "f458",
+  "verdict": "TARGET",
+  "quote": "Mayzent is indicated for the treatment of adult patients with secondary progressive multiple sclerosis (SPMS) with active disease",
+  "note": "SPMS explicitly indicated."
+ },
+ {
+  "id": "f762",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of adult patients with the following French-American British (FAB) myelodysplastic syndrome subtypes: refractory anemia (RA)",
+  "note": "MDS subtypes indicated; single-lineage dysplasia corresponds to refractory anemia subtype of MDS."
+ },
+ {
+  "id": "f200",
+  "verdict": "FP4_overbroad",
+  "quote": "HER2-Positive Metastatic Breast Cancer",
+  "note": "Label is HER2+ metastatic breast cancer; 'metastatic neoplasm' is a whole class."
+ },
+ {
+  "id": "f698",
+  "verdict": "TARGET",
+  "quote": "1.2 Hyperlipidemia Pravastatin sodium tablets are indicated: as an adjunct to diet to reduce elevated total c",
+  "note": "Hyperlipidemia indication heading."
+ },
+ {
+  "id": "f421",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of adult patients with acute myeloid leukemia (AML) as a component of a combination chemotherapy regimen",
+  "note": "Only AML indicated; 'myeloid leukemia' class also covers CML."
+ },
+ {
+  "id": "f898",
+  "verdict": "TARGET",
+  "quote": "in acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis",
+  "note": "Bursitis listed."
+ },
+ {
+  "id": "f309",
+  "verdict": "TARGET",
+  "quote": "treatment of Still\u2019s disease, including Systemic Juvenile Idiopathic Arthritis (SJIA)",
+  "note": "SJIA explicitly indicated."
+ },
+ {
+  "id": "f536",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No interstitial lung disease indication; RA listed only as rheumatic/articular disorder and respiratory list lacks ILD."
+ },
+ {
+  "id": "f135",
+  "verdict": "TARGET",
+  "quote": "the treatment of pediatric patients 1 year of age and older with low-grade glioma (LGG) with a BRAF V600E mutation",
+  "note": "Glioma (low-grade, BRAF V600E) indicated; edge broader but near parent."
+ },
+ {
+  "id": "f727",
+  "verdict": "TARGET",
+  "quote": "anogenital pruritus (vulvae, scroti, ani)",
+  "note": "Pruritus ani explicitly listed."
+ },
+ {
+  "id": "f632",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only androgenetic alopecia indicated; alopecia areata not mentioned."
+ },
+ {
+  "id": "f148",
+  "verdict": "FP1_setting",
+  "quote": "in adult patients with stable, symptomatic chronic heart failure with reduced left ventricular ejection fraction",
+  "note": "LVEF is a measure describing the population, not a treated disease."
+ },
+ {
+  "id": "f596",
+  "verdict": "TARGET",
+  "quote": "Mild, uncomplicated allergic skin manifestations of urticaria and angioedema.",
+  "note": "Urticaria listed."
+ },
+ {
+  "id": "f646",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves these symptoms due to the common cold, hay fever (allergic rhinitis) or other upper respiratory allergies",
+  "note": "Relief of upper respiratory symptoms (nasal congestion) indicated."
+ },
+ {
+  "id": "f289",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis.",
+  "note": "RA explicitly indicated."
+ },
+ {
+  "id": "f643",
+  "verdict": "TARGET",
+  "quote": "may be used secondarily in women with advancing inoperable metastatic (skeletal) mammary cancer",
+  "note": "Metastatic breast cancer indicated."
+ },
+ {
+  "id": "f448",
+  "verdict": "TARGET",
+  "quote": "The long-term, once-daily, maintenance treatment of asthma in patients 6 years of age and older",
+  "note": "Late-onset asthma is a subtype of asthma (Spiriva Respimat)."
+ },
+ {
+  "id": "f641",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of stroke and systemic embolism in adult patients with non-valvular atrial fibrillation",
+  "note": "Ischemic stroke prevention is a subtype of indicated stroke risk reduction."
+ },
+ {
+  "id": "f531",
+  "verdict": "TARGET",
+  "quote": "Lymphogranuloma venereum caused by Chlamydia trachomatis",
+  "note": "Exact match."
+ },
+ {
+  "id": "f725",
+  "verdict": "TARGET",
+  "quote": "indicated for the topical treatment of onychomycosis of the toenail(s) due to Trichophyton rubrum and Trichophyton mentagrophytes",
+  "note": "Dermatophyte onychomycosis = tinea unguium."
+ },
+ {
+  "id": "f321",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1)",
+  "note": "Idiopathic PAH is a subtype of PAH; efficacy shown in IPAH."
+ },
+ {
+  "id": "f380",
+  "verdict": "TARGET",
+  "quote": "in adults as a brachial plexus block or femoral nerve block for treatment of post-operative pain",
+  "note": "Exact match."
+ },
+ {
+  "id": "f554",
+  "verdict": "TARGET",
+  "quote": "Azopt is indicated to decrease elevated intraocular pressure in: ocular hypertension",
+  "note": "Monotherapy indication names ocular hypertension."
+ },
+ {
+  "id": "f063",
+  "verdict": "FP1_setting",
+  "quote": "patients 55 years or older at high risk of developing a major cardiovascular event because of a history of coronary artery disease, stroke, peripheral vascular disease, or diabetes",
+  "note": "Diabetes is only a risk-population setting for CV risk reduction."
+ },
+ {
+  "id": "f388",
+  "verdict": "TARGET",
+  "quote": "Allergic conjunctivitis Keratitis Allergic corneal marginal ulcers",
+  "note": "Keratitis listed among ophthalmic indications."
+ },
+ {
+  "id": "f800",
+  "verdict": "TARGET",
+  "quote": "as monotherapy for the treatment of adult patients with aggressive systemic mastocytosis (ASM), systemic mastocytosis with associated haematological neoplasm (SM AHN), or mast cell leukaemia (MCL)",
+  "note": "Mast cell leukaemia explicitly indicated."
+ },
+ {
+  "id": "f564",
+  "verdict": "TARGET",
+  "quote": "Epithelial ovarian, fallopian tube, or primary peritoneal cancer: in combination with carboplatin and paclitaxel",
+  "note": "Ovarian cancer indicated; ovarian neoplasm near synonym."
+ },
+ {
+  "id": "f136",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of infections caused by susceptible strains of the following bacteria in the conditions listed below: ... CONJUNCTIVITIS",
+  "note": "Bacterial conjunctivitis indicated."
+ },
+ {
+  "id": "f347",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label covers only primary hyperoxaluria; leukemia not mentioned."
+ },
+ {
+  "id": "f732",
+  "verdict": "TARGET",
+  "quote": "moderately to severely active ulcerative colitis (UC)",
+  "note": "Exact match."
+ },
+ {
+  "id": "f532",
+  "verdict": "TARGET",
+  "quote": "specifically intended to treat potentially life-threatening fungal infections: aspergillosis, cryptococcosis",
+  "note": "Cryptococcosis listed."
+ },
+ {
+  "id": "f185",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for treatment of acute attacks of hereditary angioedema (HAE) in patients 12 years of age and older",
+  "note": "Only HAE indicated; generic angioedema (incl. acquired/drug-induced) is overbroad."
+ }
+]

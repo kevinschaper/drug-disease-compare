@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f349",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of conjunctivitis and other superficial ocular infections due to susceptible microorganisms",
+  "note": "Conjunctivitis named directly."
+ },
+ {
+  "id": "f884",
+  "verdict": "FP5_negation",
+  "quote": "not recommended for the treatment of diabetic ketoacidosis",
+  "note": "Insulin labels explicitly exclude DKA."
+ },
+ {
+  "id": "f213",
+  "verdict": "TARGET",
+  "quote": "Adults with overweight in the presence of at least one weight-related comorbid condition",
+  "note": "Overweight is an indicated target for weight reduction."
+ },
+ {
+  "id": "f456",
+  "verdict": "TARGET",
+  "quote": "Treatment of Cryopyrin-Associated Periodic Syndromes (CAPS), including Familial Cold Autoinflammatory Syndrome (FCAS), and Muckle-Wells Syndrome (MWS)",
+  "note": "MWS named directly."
+ },
+ {
+  "id": "f869",
+  "verdict": "TARGET",
+  "quote": "Severe seborrheic dermatitis",
+  "note": "Listed among dermatologic indications."
+ },
+ {
+  "id": "f390",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of panic disorder in adults, with or without agoraphobia",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f012",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease appears only in boilerplate about other antihypertensives' indications, not as a valsartan indication."
+ },
+ {
+  "id": "f537",
+  "verdict": "TARGET",
+  "quote": "treatment of newly-diagnosed CD33-positive acute myeloid leukemia (AML)",
+  "note": "AML; myeloid leukemia is a near parent."
+ },
+ {
+  "id": "f847",
+  "verdict": "TARGET",
+  "quote": "The treatment of adult patients with eosinophilic granulomatosis with polyangiitis (EGPA).",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f719",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with functional bowel/irritable bowel syndrome",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f287",
+  "verdict": "FP4_overbroad",
+  "quote": "Treatment or prevention of bronchospasm in adult and pediatric patients aged 4 years and older with reversible obstructive airway disease",
+  "note": "Label treats bronchospasm; 'bronchial disorder' is an organ-system category."
+ },
+ {
+  "id": "f534",
+  "verdict": "TARGET",
+  "quote": "indicated in adult patients for treatment of urinary tract infections caused by Escherichia coli , Klebsiella pneumoniae",
+  "note": "Bacterial UTI indicated."
+ },
+ {
+  "id": "f686",
+  "verdict": "TARGET",
+  "quote": "Fluoxetine capsules and Olanzapine in Combination are indicated for the treatment of: Treatment resistant depression",
+  "note": "Combination-therapy indication with fluoxetine as active component (monotherapy excluded)."
+ },
+ {
+  "id": "f823",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of acute graft versus host disease (aGVHD), in combination with a calcineurin inhibitor and methotrexate",
+  "note": "Prevention of aGVHD."
+ },
+ {
+  "id": "f257",
+  "verdict": "TARGET",
+  "quote": "For use as directed by a doctor for the prevention of recurrent heart attack or stroke",
+  "note": "Stroke prevention on aspirin labels."
+ },
+ {
+  "id": "f559",
+  "verdict": "TARGET",
+  "quote": "Post-traumatic osteoarthritis Synovitis of osteoarthritis",
+  "note": "Osteoarthritis forms listed in rheumatic indications."
+ },
+ {
+  "id": "f786",
+  "verdict": "TARGET",
+  "quote": "for the management of the temporary polyuria and polydipsia following head trauma or surgery in the pituitary region",
+  "note": "Polydipsia named as managed condition."
+ },
+ {
+  "id": "f123",
+  "verdict": "TARGET",
+  "quote": "Treatment of superficial and/or nodular basal cell carcinoma unsuitable for surgical treatment",
+  "note": "Nodular BCC named."
+ },
+ {
+  "id": "f061",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure in patients with open angle glaucoma or ocular hypertension",
+  "note": "IOP lowering in open-angle glaucoma is glaucoma management."
+ },
+ {
+  "id": "f167",
+  "verdict": "FP5_negation",
+  "quote": "Hydroxychloroquine Sulfate Tablets are not recommended for the treatment of complicated malaria.",
+  "note": "Severe (complicated) malaria explicitly excluded."
+ },
+ {
+  "id": "f215",
+  "verdict": "TARGET",
+  "quote": "Ankylosing spondylitis",
+  "note": "Spondylitis (ankylosing) listed; near parent."
+ },
+ {
+  "id": "f645",
+  "verdict": "TARGET",
+  "quote": "Rezzayo is indicated for the treatment of invasive candidiasis in adults.",
+  "note": "Invasive candidiasis ~ disseminated candidiasis."
+ },
+ {
+  "id": "f016",
+  "verdict": "FP4_overbroad",
+  "quote": "Gastric Adenocarcinoma (GC): with cisplatin and fluorouracil for untreated, advanced GC",
+  "note": "Adenocarcinoma is a whole histologic class; label names specific cancers."
+ },
+ {
+  "id": "f487",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "'Ball Device' is a spurious mapping of B ALL (B-cell acute lymphoblastic leukaemia)."
+ },
+ {
+  "id": "f539",
+  "verdict": "TARGET",
+  "quote": "HER2-negative advanced or metastatic breast cancer",
+  "note": "Advanced breast cancer indicated."
+ },
+ {
+  "id": "f428",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Radicular pain is a narrower form of the indicated severe pain."
+ },
+ {
+  "id": "f491",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of oropharyngeal candidiasis (OPC), including OPC refractory (rOPC) to itraconazole and/or fluconazole",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f634",
+  "verdict": "TARGET",
+  "quote": "Adults with progressive neuroendocrine tumors of pancreatic origin (PNET) and adults with progressive, well-differentiated, non-functional neuroendocrine tumors (NET)",
+  "note": "NETs indicated."
+ },
+ {
+  "id": "f409",
+  "verdict": "TARGET",
+  "quote": "Felodipine tablets are indicated for the treatment of hypertension, to lower blood pressure.",
+  "note": "Hypertension indicated."
+ },
+ {
+  "id": "f073",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only seizures of LGS, Dravet and TSC; visual epilepsy not mentioned."
+ },
+ {
+  "id": "f633",
+  "verdict": "TARGET",
+  "quote": "Acute adrenocortical insufficiency",
+  "note": "Listed under endocrine disorders."
+ },
+ {
+  "id": "f080",
+  "verdict": "TARGET",
+  "quote": "postencephalitic parkinsonism, and symptomatic parkinsonism",
+  "note": "Postencephalitic parkinsonism indicated (adjunct)."
+ },
+ {
+  "id": "f027",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Pleuritic chest pain is a narrower form of indicated pain; edge narrower than label."
+ },
+ {
+  "id": "f673",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Fatigue not mentioned."
+ },
+ {
+  "id": "f173",
+  "verdict": "TARGET",
+  "quote": "Sorafenib tablets are indicated for the treatment of patients with advanced renal cell carcinoma (RCC).",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f880",
+  "verdict": "TARGET",
+  "quote": "Treatment of stage 1 or Stage 2 polyneuropathy in adult patients with hereditary transthyretin amyloidosis (hATTR).",
+  "note": "Polyneuropathy is the treated condition (near parent of hATTR-PN)."
+ },
+ {
+  "id": "f274",
+  "verdict": "TARGET",
+  "quote": "Treatment of adults with moderate to severe plaque psoriasis",
+  "note": "Plaque psoriasis indicated."
+ },
+ {
+  "id": "f146",
+  "verdict": "TARGET",
+  "quote": "Berylliosis",
+  "note": "Berylliosis = chronic beryllium disease, listed under respiratory diseases."
+ },
+ {
+  "id": "f506",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only renal cell carcinoma is a kidney indication; non-RCC kidney carcinoma not mentioned."
+ },
+ {
+  "id": "f595",
+  "verdict": "FP4_overbroad",
+  "quote": "useful in the management of the following neoplasms either as a single agent",
+  "note": "Label lists specific neoplasms; 'cancer' is a whole disease class."
+ },
+ {
+  "id": "f666",
+  "verdict": "TARGET",
+  "quote": "Syphilis caused by Treponema pallidum",
+  "note": "Listed indication."
+ },
+ {
+  "id": "f711",
+  "verdict": "TARGET",
+  "quote": "JAVADIN is indicated for the treatment of hypertension in adult patients, to lower blood pressure.",
+  "note": "Orthostatic hypertension is a subtype of indicated hypertension."
+ },
+ {
+  "id": "f500",
+  "verdict": "TARGET",
+  "quote": "Hypogonadotropic hypogonadism (congenital or acquired)",
+  "note": "Genetic HH subtype of indicated congenital HH."
+ },
+ {
+  "id": "f133",
+  "verdict": "TARGET",
+  "quote": "severe erythema multiforme (Stevens-Johnson syndrome)",
+  "note": "Listed dermatologic indication."
+ },
+ {
+  "id": "f640",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation",
+  "note": "'Heart disorder' is an organ-system category; heart conditions are only settings."
+ }
+]

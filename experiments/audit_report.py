@@ -15,6 +15,11 @@ Absence rule: an FP7 ("not in the label") only counts where we hold text for eve
 the edge cites (``absence_ok``); elsewhere it is "unverifiable" and leaves the denominator,
 as do UNSURE calls.
 
+Releases: every number under ``sources`` is the latest release (300 edges/source); the
+previous releases were sampled and judged with the identical protocol (``previous_release``)
+and ``change`` gives latest minus previous with Newcombe 95% CIs. Jev is validated against
+the reference on all edges of both releases.
+
 Population estimate: Jev's verdict on all eligible edges, corrected with its measured error
 on the gold sample: FP_hat = P(Jev=FP)*PPV + P(Jev=TARGET)*(1-NPV), PPV/NPV from the gold
 sample, 95% CI by bootstrap over gold edges.
@@ -74,15 +79,80 @@ def load_json_list(pattern: str) -> dict:
     return out
 
 
+def newcombe(k1: int, n1: int, k2: int, n2: int):
+    """Difference p2 - p1 in percentage points, with Newcombe's hybrid-score 95% CI."""
+    if not n1 or not n2:
+        return [0.0, 0.0, 0.0]
+    p1, l1, u1 = (x / 100 for x in wilson(k1, n1))
+    p2, l2, u2 = (x / 100 for x in wilson(k2, n2))
+    d = p2 - p1
+    lo = d - math.sqrt((p2 - l2) ** 2 + (u1 - p1) ** 2)
+    hi = d + math.sqrt((u2 - p2) ** 2 + (p1 - l1) ** 2)
+    return [round(100 * d, 1), round(100 * lo, 1), round(100 * hi, 1)]
+
+
+def _source_result(E: list[dict], src: str) -> dict:
+    """FP rate, type mix and slices for one source's adjudicated edges."""
+    judged = [e for e in E if e["verdict"] in FP or e["verdict"] == "TARGET"]
+    n, k = len(judged), sum(e["verdict"] in FP for e in judged)
+    by_type = Counter(e["verdict"] for e in judged if e["verdict"] in FP)
+    res = {
+        "sampled": len(E), "judged": n, "fp": k,
+        "excluded": dict(Counter(e["verdict"] for e in E if e not in judged)),
+        "fp_rate": wilson(k, n), "precision": wilson(n - k, n),
+        "by_type": {t: [by_type[t], round(100 * by_type[t] / n, 1) if n else 0] for t in FP if by_type[t]},
+        "by_regulator": {},
+    }
+    for lab, pred in (("FDA only", lambda e: e["judged_against"] == ["FDA"]),
+                      ("EMA only", lambda e: e["judged_against"] == ["EMA"]),
+                      ("FDA + EMA", lambda e: e["judged_against"] == ["EMA", "FDA"])):
+        S = [e for e in judged if pred(e)]
+        if S:
+            res["by_regulator"][lab] = {"n": len(S), "fp_rate": wilson(sum(e["verdict"] in FP for e in S), len(S))}
+    # error rates by the disease vocabulary the edge uses (MONDO / HP / UMLS / NCIT ...)
+    res["by_disease_vocab"] = {}
+    for pre, grp in sorted(Counter(e["disease_prefix"] for e in judged).items(), key=lambda x: -x[1]):
+        S = [e for e in judged if e["disease_prefix"] == pre]
+        if len(S) >= 10:
+            res["by_disease_vocab"][pre] = {
+                "n": len(S), "fp_rate": wilson(sum(e["verdict"] in FP for e in S), len(S)),
+                "not_in_label": wilson(sum(e["verdict"] == "FP7_notintext" for e in S), len(S))}
+    if src == "medic":
+        res["by_reliability"] = {}
+        for tier in ("HIGH", "MEDIUM", "LOW"):
+            S = [e for e in judged if e["medic_reliability"] == tier]
+            if S:
+                res["by_reliability"][tier] = {"n": len(S), "fp_rate": wilson(sum(e["verdict"] in FP for e in S), len(S))}
+    return res
+
+
 def main() -> None:
-    sample = {r["sid"]: r for r in (json.loads(line) for line in open(OUT / "sample.jsonl"))}
+    # latest-release sample (300/source) + previous-release sample (300/source); two review
+    # rounds (round 1: the first 150 latest edges per source; round 2: everything else,
+    # shuffled together across releases so reviewers never saw source or release)
+    sample = {}
+    for fname, rel in (("sample.jsonl", "new"), ("sample_old.jsonl", "old")):
+        if (OUT / fname).exists():
+            for line in open(OUT / fname):
+                r = json.loads(line)
+                r["release"] = rel
+                sample[r["sid"]] = r
     key = json.load(open(OUT / "blind_key.json"))           # blind id -> sid
-    claude = {key[i]: r for i, r in load_json_list("claude_a_*.json").items()}
-    claude_b = {key[i]: r for i, r in load_json_list("claude_b_*.json").items()}
-    tiebreak = {key[i]: r for i, r in load_json_list("tiebreak_[0-9]*.json").items()}
+    if (OUT / "blind_key_2.json").exists():
+        key.update(json.load(open(OUT / "blind_key_2.json")))
+
+    def by_sid(*patterns):
+        out = {}
+        for pat in patterns:
+            out.update({key[i]: r for i, r in load_json_list(pat).items()})
+        return out
+
+    claude = by_sid("claude_a_*.json", "claude2_a_*.json")
+    claude_b = by_sid("claude_b_*.json", "claude2_b_*.json")
+    tiebreak = by_sid("tiebreak_[0-9]*.json", "tiebreak2_[0-9].json")
     # co-ingredient check: every reference TARGET whose evidence included combination labels
     # was re-judged with single-ingredient and combination text separated (rubric FP6)
-    combo = {key[i]: r for i, r in load_json_list("combo_check_*.json").items()}
+    combo = by_sid("combo_check_*.json", "combo2_check_*.json")
     jev_by_pid = {r["id"]: r for r in (json.loads(line) for line in open(OUT / "jev_sample.jsonl"))}
     jev = {sid: jev_by_pid[r["id"]] for sid, r in sample.items() if r["id"] in jev_by_pid}
 
@@ -103,8 +173,9 @@ def main() -> None:
         if cons == "FP7_notintext" and not r["absence_ok"]:
             final = "UNVERIFIABLE"
         edges.append({
-            "sid": sid, "source": r["source"], "drug": r["drug"], "drug_label": r["drug_label"],
+            "sid": sid, "release": r["release"], "source": r["source"], "drug": r["drug"], "drug_label": r["drug_label"],
             "disease": r["disease"], "disease_label": r["disease_label"],
+            "disease_prefix": r.get("disease_prefix", r["disease"].split(":", 1)[0]),
             "cited": r["cited"], "judged_against": r["judge_against"], "fda_method": r["fda_method"],
             "medic_reliability": r.get("medic_reliability") or "",
             "claude": c["verdict"], "claude_b": b["verdict"],
@@ -118,32 +189,21 @@ def main() -> None:
         })
 
     # --- per-source measured rates (gold sample, consensus) ---
-    results = {}
-    for src in SOURCES:
-        E = [e for e in edges if e["source"] == src]
-        judged = [e for e in E if e["verdict"] in FP or e["verdict"] == "TARGET"]
-        n, k = len(judged), sum(e["verdict"] in FP for e in judged)
-        by_type = Counter(e["verdict"] for e in judged if e["verdict"] in FP)
-        res = {
-            "sampled": len(E), "judged": n,
-            "excluded": dict(Counter(e["verdict"] for e in E if e not in judged)),
-            "fp_rate": wilson(k, n), "precision": wilson(n - k, n),
-            "by_type": {t: [by_type[t], round(100 * by_type[t] / n, 1) if n else 0] for t in FP if by_type[t]},
-            "by_regulator": {},
-        }
-        for lab, pred in (("FDA only", lambda e: e["judged_against"] == ["FDA"]),
-                          ("EMA only", lambda e: e["judged_against"] == ["EMA"]),
-                          ("FDA + EMA", lambda e: e["judged_against"] == ["EMA", "FDA"])):
-            S = [e for e in judged if pred(e)]
-            if S:
-                res["by_regulator"][lab] = {"n": len(S), "fp_rate": wilson(sum(e["verdict"] in FP for e in S), len(S))}
-        if src == "medic":
-            res["by_reliability"] = {}
-            for tier in ("HIGH", "MEDIUM", "LOW"):
-                S = [e for e in judged if e["medic_reliability"] == tier]
-                if S:
-                    res["by_reliability"][tier] = {"n": len(S), "fp_rate": wilson(sum(e["verdict"] in FP for e in S), len(S))}
-        results[src] = res
+    def source_results(release):
+        return {src: _source_result([e for e in edges if e["source"] == src
+                                     and e["release"] == release], src)
+                for src in SOURCES}
+
+    results = source_results("new")
+    previous = source_results("old")
+    change = {src: {
+        "fp_rate_pts": newcombe(previous[src]["fp"], previous[src]["judged"],
+                                results[src]["fp"], results[src]["judged"]),
+        "by_type_pts": {t: newcombe(previous[src]["by_type"].get(t, [0])[0], previous[src]["judged"],
+                                    results[src]["by_type"].get(t, [0])[0], results[src]["judged"])
+                        for t in FP if t in results[src]["by_type"] or t in previous[src]["by_type"]},
+    } for src in SOURCES if previous[src]["judged"]}
+
 
     # --- inter-rater ceiling (Claude A<->B), then Jev scored against the reference ---
     both = [e for e in edges]
@@ -219,7 +279,7 @@ def main() -> None:
         rng = random.Random(1)
         for src in SOURCES:
             P = [p for p in pop_rows if p["source"] == src and binary(p["verdict"]) != "other"]
-            G = [e for e in gold if e["source"] == src]
+            G = [e for e in gold if e["source"] == src and e["release"] == "new"]
 
             def est(G):
                 jfp = [e for e in G if binary(e["jev"]) == "FP"]
@@ -246,8 +306,11 @@ def main() -> None:
 
     v1 = json.load(open(V1)) if V1.exists() else {}
     summary = {"sources": results, "agreement": agreement, "population": population,
-               "previous_release": {s: {"n": v1[s]["n_judged"], "fp_rate": v1[s]["fp_rate_consensus"]}
-                                    for s in v1}}
+               # like-for-like: the previous releases judged with this exact protocol
+               "previous_release": previous, "change": change,
+               # the earlier (v1, FDA-only, different protocol) audit, for reference only
+               "v1_audit": {s: {"n": v1[s]["n_judged"], "fp_rate": v1[s]["fp_rate_consensus"]}
+                            for s in v1}}
     (OUT / "audit_results.json").write_text(json.dumps(summary, indent=2))
     SITE.mkdir(parents=True, exist_ok=True)
     (SITE / "fp_audit.json").write_text(json.dumps({"summary": summary, "edges": edges}, indent=1))

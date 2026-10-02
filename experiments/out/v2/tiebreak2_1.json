@@ -1,0 +1,140 @@
+[
+ {
+  "id": "f038",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Sepsis/septicemia is never named; only 'concurrent bacteremia' qualifies pneumonia/UTI cases, which is not sepsis."
+ },
+ {
+  "id": "f051",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in the treatment of chronic lymphatic (lymphocytic) leukemia",
+  "note": "Only CLL is indicated; 'leukemia' as a whole disease class (incl. acute leukemias) is overbroad."
+ },
+ {
+  "id": "f069",
+  "verdict": "TARGET",
+  "quote": "excessive sleepiness associated with obstructive sleep apnea (OSA), narcolepsy, or shift work disorder (SWD)",
+  "note": "Managing narcolepsy's cardinal manifestation counts as disease management, analogous to the rubric's osteoarthritis-pain example."
+ },
+ {
+  "id": "f109",
+  "verdict": "FP4_overbroad",
+  "quote": "Short- term treatment of active duodenal ulcer",
+  "note": "Label covers peptic (duodenal/gastric) ulcers; generic 'Ulceration' of any organ/tissue is a much broader category."
+ },
+ {
+  "id": "f118",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Text relieves a symptom (nasal congestion) only; edge names the underlying disorders, matching the rubric's canonical FP2 example."
+ },
+ {
+  "id": "f155",
+  "verdict": "FP3_cross_section",
+  "quote": "associated with significant loss of bone mineral density (BMD)",
+  "note": "Low bone density (osteopenia) appears only as a warning; the sole bone indication (prevention of postmenopausal osteoporosis) is a different condition on an estrogen-plus-progestin combo label."
+ },
+ {
+  "id": "f185",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of acute attacks of hereditary angioedema (HAE)",
+  "note": "HAE attacks are angioedema episodes; angioedema is a near parent condition, not a whole disease class or organ-system category."
+ },
+ {
+  "id": "f221",
+  "verdict": "FP1_setting",
+  "quote": "Prophylaxis and treatment of thromboembolic complications associated with atrial fibrillation",
+  "note": "The treated target is thromboembolism/embolization; atrial fibrillation is the background condition."
+ },
+ {
+  "id": "f259",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the prophylaxis of common migraine headache",
+  "note": "Only migraine prophylaxis is indicated; generic 'Headache' spans many headache disorders and is overbroad."
+ },
+ {
+  "id": "f264",
+  "verdict": "FP1_setting",
+  "quote": "for induction of intraoperative hypotension",
+  "note": "Hypotension in the indication is a deliberately induced surgical effect, not a disorder treated; elsewhere it is only an adverse effect."
+ },
+ {
+  "id": "f324",
+  "verdict": "FP4_overbroad",
+  "quote": "with malignant and non-malignant diseases",
+  "note": "The edge is the root term 'disease'; the indication is HSCT conditioning, so the claim is overbroad to the point of meaninglessness."
+ },
+ {
+  "id": "f365",
+  "verdict": "FP4_overbroad",
+  "quote": "prevention of serious lower respiratory tract disease caused by respiratory syncytial virus (RSV)",
+  "note": "Indication is restricted to RSV disease; the organ-system category edge implies general LRT disorders."
+ },
+ {
+  "id": "f454",
+  "verdict": "TARGET",
+  "quote": "in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis",
+  "note": "Older labels list subacute thyroiditis under TSH-suppression indications; the 'not indicated' text concerns only recovery-phase hypothyroidism, and texts are a union."
+ },
+ {
+  "id": "f493",
+  "verdict": "TARGET",
+  "quote": "anorexia associated with weight loss in patients with Acquired Immune Deficiency Syndrome (AIDS)",
+  "note": "Weight loss is part of the treated condition (anorexia with weight loss), not the background population (that is AIDS)."
+ },
+ {
+  "id": "f555",
+  "verdict": "FP5_negation",
+  "quote": "Azithromycin is not recommended in patients with pneumonia who are judged to be inappropriate for oral therapy",
+  "note": "Functional asplenia appears only in Limitations of Use as a risk factor where use is not recommended."
+ },
+ {
+  "id": "f586",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Supplied text is the cyclophosphamide label; it says nothing about the metabolite 4-hydroxycyclophosphamide as a product."
+ },
+ {
+  "id": "f629",
+  "verdict": "FP4_overbroad",
+  "quote": "Idiopathic bronchiolitis obliterans with organizing pneumonia",
+  "note": "Only idiopathic BOOP is indicated; generic 'bronchiolitis' (e.g. infant viral bronchiolitis) is a broader grouping the label does not support."
+ },
+ {
+  "id": "f640",
+  "verdict": "FP1_setting",
+  "quote": "to reduce risk of stroke and systemic embolism in nonvalvular atrial fibrillation",
+  "note": "Heart conditions (AF, CAD, congenital heart disease) appear only as populations; the treated targets are thromboembolic events."
+ },
+ {
+  "id": "f678",
+  "verdict": "FP4_overbroad",
+  "quote": "relapsed or refractory mantle cell lymphoma (MCL)",
+  "note": "Only R/R MCL and CLL/SLL are indicated; 'lymphoma' as a whole disease class is overbroad."
+ },
+ {
+  "id": "f729",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Severe erythema multiforme (Stevens-Johnson syndrome)",
+  "note": "Text treats named diseases (erythema multiforme, exfoliative erythroderma); edge names the generic skin sign erythema."
+ },
+ {
+  "id": "f750",
+  "verdict": "FP4_overbroad",
+  "quote": "reduce the risk of myocardial infarction",
+  "note": "Label covers myocardial infarction only; generic 'Infarction' of any organ is an overbroad pathologic category."
+ },
+ {
+  "id": "f835",
+  "verdict": "FP2_symptom_swap",
+  "quote": "treatment of partial seizures, with or without secondary generalisation",
+  "note": "Indication treats clinical partial seizures; the edge is an EEG finding (manifestation), not the treated condition or a synonym."
+ },
+ {
+  "id": "f876",
+  "verdict": "FP6_coingredient",
+  "quote": "Reduce the risk of hospitalization for congestive heart failure (CHF)",
+  "note": "Heart failure risk reduction is atorvastatin's indication on the amlodipine/atorvastatin label; amlodipine's own text mentions heart failure only as a population exclusion."
+ }
+]

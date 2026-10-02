@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f061",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of elevated intraocular pressure in patients with open angle glaucoma or ocular hypertension",
+  "note": "Open-angle glaucoma is indicated; glaucoma is a near parent and IOP lowering is the treatment of it."
+ },
+ {
+  "id": "f241",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves pain and itching associated with: ... rashes due to poison ivy, poison oak and poison sumac",
+  "note": "Relief of the poison ivy rash/itch, analogous to pain-of-osteoarthritis rule."
+ },
+ {
+  "id": "f885",
+  "verdict": "TARGET",
+  "quote": "should be used in combination with amphotericin B for the treatment of systemic candidiasis and cryptococcosis",
+  "note": "Systemic candidiasis/serious Candida infections indicated."
+ },
+ {
+  "id": "f543",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No pharyngitis or sore throat in the supplied acetaminophen text."
+ },
+ {
+  "id": "f844",
+  "verdict": "FP2_symptom_swap",
+  "quote": "vascular spasm associated with acute myocardial infarction (coronary occlusion), angina pectoris, peripheral and pulmonary embolism",
+  "note": "Treats the vascular spasm accompanying embolism, not the embolism itself."
+ },
+ {
+  "id": "f062",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis.",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f217",
+  "verdict": "TARGET",
+  "quote": "DUPIXENT is indicated for the treatment of adult and pediatric patients aged 1 year and older, weighing at least 15 kg, with eosinophilic esophagitis (EoE).",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f443",
+  "verdict": "TARGET",
+  "quote": "neuroblastoma (disseminated disease) adenocarcinoma of the ovary retinoblastoma carcinoma of the breast",
+  "note": "Adenocarcinoma of the ovary named in the cyclophosphamide malignancy list."
+ },
+ {
+  "id": "f143",
+  "verdict": "TARGET",
+  "quote": "Glimepiride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Single-ingredient glimepiride label indicates T2DM."
+ },
+ {
+  "id": "f546",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of thrombocytopenia in adult patients with chronic liver disease who are scheduled to undergo a procedure",
+  "note": "Treats thrombocytopenia; chronic liver disease is the population."
+ },
+ {
+  "id": "f174",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Temporarily relieves nasal congestion due to the common cold, hay fever or other upper repiratory allergies",
+  "note": "Relieves cold symptoms (congestion), not the common cold itself."
+ },
+ {
+  "id": "f746",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the treatment of moderate to severe vasomotor symptoms (VMS) due to menopause",
+  "note": "Treats VMS of menopause; artificial/induced menopausal syndrome not named."
+ },
+ {
+  "id": "f545",
+  "verdict": "TARGET",
+  "quote": "Bipolar I disorder, manic or mixed episodes Bipolar disorder, depressive episodes",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f678",
+  "verdict": "FP4_overbroad",
+  "quote": "relapsed or refractory mantle cell lymphoma (MCL) after at least two lines of systemic therapy, including a BTK inhibitor",
+  "note": "Only R/R MCL and CLL/SLL indicated; lymphoma as a whole class is overbroad."
+ },
+ {
+  "id": "f077",
+  "verdict": "TARGET",
+  "quote": "Gabapentin tablets are indicated for the management of postherpetic neuralgia.",
+  "note": "Postherpetic neuralgia is a form of neuralgia; near parent."
+ },
+ {
+  "id": "f266",
+  "verdict": "FP3_cross_section",
+  "quote": "may unmask allergic conditions previously suppressed by the systemic corticosteroid therapy (e.g., rhinitis, conjunctivitis, eczema, arthritis, eosinophilic conditions)",
+  "note": "Supplied fluticasone indications are asthma/COPD only; skin conditions appear only in warnings."
+ },
+ {
+  "id": "f455",
+  "verdict": "TARGET",
+  "quote": "indicated in combination with azacitidine, or decitabine, or low-dose cytarabine for the treatment of newly diagnosed acute myeloid leukemia (AML)",
+  "note": "Directly indicated (combination therapy)."
+ },
+ {
+  "id": "f243",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Supplied methoxsalen text indicates only psoriasis; no CTCL."
+ },
+ {
+  "id": "f893",
+  "verdict": "TARGET",
+  "quote": "first-line maintenance treatment of adult patients with locally advanced or metastatic urothelial carcinoma (UC)",
+  "note": "EMA indication names metastatic UC."
+ },
+ {
+  "id": "f651",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of intestinal amebiasis and amebic liver abscess caused by Entamoeba histolytica",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f693",
+  "verdict": "TARGET",
+  "quote": "in combination with lenalidomide for the treatment of adult patients with relapsed or refractory diffuse large B-cell lymphoma (DLBCL)",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f671",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in the treatment of serious infections caused by susceptible strains of the following microorganisms",
+  "note": "Indicated for serious bacterial infections; generic Infection is a whole class."
+ },
+ {
+  "id": "f104",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in patients with haemophilia B (congenital factor IX deficiency).",
+  "note": "EMA indication; managing bleeding of haemophilia B."
+ },
+ {
+  "id": "f071",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of hemodynamically stable patients with definite or suspected acute myocardial infarction to reduce cardiovascular mortality",
+  "note": "Anterolateral MI is a subtype of acute MI."
+ },
+ {
+  "id": "f360",
+  "verdict": "TARGET",
+  "quote": "allergic conjunctivitis, acne rosacea, superficial punctate keratitis, herpes zoster keratitis, iritis, cyclitis",
+  "note": "Superficial punctate keratitis named in list of steroid-responsive conditions."
+ },
+ {
+  "id": "f446",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of lower respiratory tract infections, including pneumonia and lung abscess",
+  "note": "Pneumonia named."
+ },
+ {
+  "id": "f842",
+  "verdict": "TARGET",
+  "quote": "Nexavar is indicated for the treatment of hepatocellular carcinoma.",
+  "note": "EMA indication."
+ },
+ {
+  "id": "f685",
+  "verdict": "TARGET",
+  "quote": "NOVOLIN 70/30 is indicated to improve glycemic control in adults and pediatric patients with diabetes mellitus",
+  "note": "Human insulin indicated for diabetes mellitus; T1DM is a subtype."
+ },
+ {
+  "id": "f616",
+  "verdict": "TARGET",
+  "quote": "refractory auto-immune haemolytic anaemia, caused by warm IgG antibodies",
+  "note": "EMA list item."
+ },
+ {
+  "id": "f504",
+  "verdict": "TARGET",
+  "quote": "intended for topical application in the following scaling dermatoses: seborrheic dermatitis and seborrhea sicca (dandruff)",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f652",
+  "verdict": "FP1_setting",
+  "quote": "subfoveal choroidal neovascularization (CNV) due to age-related macular degeneration (AMD), pathologic myopia or presumed ocular histoplasmosis",
+  "note": "Treats CNV; histoplasmosis is the underlying cause."
+ },
+ {
+  "id": "f451",
+  "verdict": "TARGET",
+  "quote": "Lymphomas: Hodgkin's disease, non-Hodgkin's lymphoma.",
+  "note": "Classic Hodgkin lymphoma is a subtype of Hodgkin disease."
+ },
+ {
+  "id": "f290",
+  "verdict": "TARGET",
+  "quote": "locally advanced or metastatic intrahepatic cholangiocarcinoma harboring fibroblast growth factor receptor 2 (FGFR2) gene fusions or other rearrangements",
+  "note": "Intrahepatic cholangiocarcinoma indicated; near parent."
+ },
+ {
+  "id": "f149",
+  "verdict": "TARGET",
+  "quote": "treatment of infectious diarrhea caused by Escherichia coli (enterotoxigenic isolates), Campylobacter jejuni",
+  "note": "Campylobacter infectious diarrhea indicated."
+ },
+ {
+  "id": "f376",
+  "verdict": "TARGET",
+  "quote": "indicated for the add-on maintenance treatment of adult and pediatric patients aged 12 years and older with severe asthma",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f140",
+  "verdict": "TARGET",
+  "quote": "Rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require low dose maintenance therapy)",
+  "note": "Listed rheumatic disorder."
+ },
+ {
+  "id": "f558",
+  "verdict": "TARGET",
+  "quote": "for the treatment of patients with unresectable or metastatic MSI-H or dMMR colorectal cancer (CRC)",
+  "note": "MSI-H/dMMR CRC indicated; near parent."
+ },
+ {
+  "id": "f362",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with BCG-unresponsive non-muscle invasive bladder cancer (NMIBC) with carcinoma in situ (CIS)",
+  "note": "NMIBC is superficial bladder carcinoma."
+ },
+ {
+  "id": "f160",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases Pemphigus Severe erythema multiforme (Stevens-Johnson syndrome) Exfoliative dermatitis",
+  "note": "Listed item."
+ },
+ {
+  "id": "f831",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic spontaneous urticaria (CSU) in adult patients who remain symptomatic despite H1 antihistamine treatment",
+  "note": "CSU is a synonym of chronic idiopathic urticaria."
+ },
+ {
+  "id": "f821",
+  "verdict": "TARGET",
+  "quote": "Reduction in risk of invasive breast cancer in postmenopausal women at high risk for invasive breast cancer.",
+  "note": "Prevention of invasive breast cancer; ER+ is a subtype (treatment is not indicated)."
+ },
+ {
+  "id": "f579",
+  "verdict": "TARGET",
+  "quote": "For control of severe nausea and vomiting.",
+  "note": "Directly indicated."
+ },
+ {
+  "id": "f348",
+  "verdict": "TARGET",
+  "quote": "relief of moderate to severe pain such as that due to: surgery, cancer, trauma (soft tissue and bone), biliary colic, myocardial infarction, burns, renal colic",
+  "note": "Pain of renal colic named."
+ },
+ {
+  "id": "f624",
+  "verdict": "TARGET",
+  "quote": "For the management of edema and sodium retention when the patient is only partially responsive to, or is intolerant of, other therapeutic measures.",
+  "note": "Edematous conditions indicated; generalized edema is a form."
+ },
+ {
+  "id": "f236",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No ventricular fibrillation or cardiac arrest indication; only anaphylaxis, septic-shock hypotension."
+ }
+]

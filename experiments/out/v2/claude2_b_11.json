@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f111",
+  "verdict": "TARGET",
+  "quote": "Reduction in the risk of death, recurrent myocardial infarction (MI), and thromboembolic events",
+  "note": "Prevention of recurrent MI is an indication."
+ },
+ {
+  "id": "f154",
+  "verdict": "TARGET",
+  "quote": "Impetigo contagiosa, superficial folliculitis, ecthyma, furunculosis",
+  "note": "Impetigo listed among primary skin infections indicated."
+ },
+ {
+  "id": "f320",
+  "verdict": "FP5_negation",
+  "quote": "Safety and effectiveness for the prevention or treatment of actinic keratoses, skin neoplasms, or lentigo maligna have not been established.",
+  "note": "Skin neoplasms explicitly not established."
+ },
+ {
+  "id": "f141",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderately to severely active ulcerative colitis (UC) in adults",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f881",
+  "verdict": "TARGET",
+  "quote": "Treatment of Esophageal Candidiasis in adult and pediatric patients 4 months of age and older",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f486",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with locally advanced or metastatic urothelial carcinoma (mUC) with susceptible FGFR3 genetic alterations",
+  "note": "Urothelial carcinoma is the indicated disease (near parent of mUC)."
+ },
+ {
+  "id": "f193",
+  "verdict": "TARGET",
+  "quote": "Community-acquired pneumonia due to Chlamydophila pneumoniae, Haemophilus influenzae, Mycoplasma pneumoniae or Streptococcus pneumoniae",
+  "note": "CAP is indicated; pneumonia is a near parent."
+ },
+ {
+  "id": "f723",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of major depressive disorder in adults",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f594",
+  "verdict": "TARGET",
+  "quote": "in combination with pembrolizumab, is indicated for the treatment of patients with advanced endometrial carcinoma (EC)",
+  "note": "Edge is a subtype of indicated endometrial carcinoma; combination therapy counts."
+ },
+ {
+  "id": "f799",
+  "verdict": "TARGET",
+  "quote": "Enbrel is indicated for reducing signs and symptoms in patients with active ankylosing spondylitis (AS).",
+  "note": "Ankylosing spondylitis indicated; spondylitis is a near parent."
+ },
+ {
+  "id": "f215",
+  "verdict": "TARGET",
+  "quote": "Acute gouty arthritis Psoriatic arthritis Ankylosing spondylitis",
+  "note": "Ankylosing spondylitis listed; spondylitis is a near parent."
+ },
+ {
+  "id": "f410",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "Disease given only as an unresolved ontology ID; cannot match against text."
+ },
+ {
+  "id": "f560",
+  "verdict": "TARGET",
+  "quote": "the nasal decongestant properties of pseudoephedrine are desired",
+  "note": "Nasal congestion relief is attributed to pseudoephedrine itself."
+ },
+ {
+  "id": "f548",
+  "verdict": "TARGET",
+  "quote": "COSENTYX is indicated for the treatment of moderate to severe hidradenitis suppurativa (HS)",
+  "note": "Hidradenitis suppurativa indicated; near synonym."
+ },
+ {
+  "id": "f697",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of inflammation and pain associated with ocular surgery",
+  "note": "Label limited to postoperative ocular inflammation; generic Inflammation is a whole process class."
+ },
+ {
+  "id": "f167",
+  "verdict": "FP5_negation",
+  "quote": "Hydroxychloroquine Sulfate Tablets are not recommended for the treatment of complicated malaria.",
+  "note": "Severe/complicated malaria explicitly not recommended."
+ },
+ {
+  "id": "f205",
+  "verdict": "TARGET",
+  "quote": "psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Several arthritides listed as indications; near parent."
+ },
+ {
+  "id": "f156",
+  "verdict": "FP3_cross_section",
+  "quote": "CNS stimulants may exacerbate symptoms of behavior disturbance and thought disorder in patients with a pre-existing psychotic disorder.",
+  "note": "Behavior disturbance only in warnings; indication is ADHD."
+ },
+ {
+  "id": "f159",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f834",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of ischemic complications of unstable angina and non-Q-wave myocardial infarction",
+  "note": "Unstable angina = intermediate coronary syndrome."
+ },
+ {
+  "id": "f108",
+  "verdict": "TARGET",
+  "quote": "Psoriatic arthritis; Rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Listed under rheumatic disorders as adjunctive therapy."
+ },
+ {
+  "id": "f372",
+  "verdict": "TARGET",
+  "quote": "adults and pediatric patients aged 10 years and older with heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "Familial hypercholesterolemia indicated."
+ },
+ {
+  "id": "f775",
+  "verdict": "TARGET",
+  "quote": "Yaws caused by Treponema pallidum subspecies pertenue .",
+  "note": "Listed indication."
+ },
+ {
+  "id": "f574",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Hodgkin lymphoma not mentioned; only hepatosplenic T-cell lymphoma in warnings."
+ },
+ {
+  "id": "f358",
+  "verdict": "FP2_symptom_swap",
+  "quote": "short stature associated with Noonan syndrome",
+  "note": "Treats short stature, not Noonan syndrome itself."
+ },
+ {
+  "id": "f843",
+  "verdict": "TARGET",
+  "quote": "indicated for the symptomatic relief of acute alcohol withdrawal",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f422",
+  "verdict": "FP3_cross_section",
+  "quote": "Orally and parenterally administered clindamycin has been associated with severe colitis which may result in patient death.",
+  "note": "Colitis only as adverse effect/contraindication."
+ },
+ {
+  "id": "f780",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of insomnia characterized by difficulty in falling asleep",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f760",
+  "verdict": "TARGET",
+  "quote": "Diabetic Macular Edema (DME)",
+  "note": "Listed indication."
+ },
+ {
+  "id": "f860",
+  "verdict": "TARGET",
+  "quote": "treatment of tinea pedis, tinea cruris, and tinea corporis",
+  "note": "Tinea cruris = dermatophytosis of groin."
+ },
+ {
+  "id": "f022",
+  "verdict": "FP5_negation",
+  "quote": "Saxagliptin tablets are not recommended for the treatment of type 1 diabetes mellitus or diabetic ketoacidosis.",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f150",
+  "verdict": "FP1_setting",
+  "quote": "primary or secondary (post-polycythemia vera or post-essential thrombocythemia) myelofibrosis (MF)",
+  "note": "ET appears only as antecedent of treated myelofibrosis."
+ },
+ {
+  "id": "f226",
+  "verdict": "FP2_symptom_swap",
+  "quote": "depressed mood, loss of interest in usual activities, significant change in weight and/or appetite, insomnia or hypersomnia",
+  "note": "Insomnia only as a symptom of indicated depression."
+ },
+ {
+  "id": "f492",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Discoid lupus not mentioned."
+ },
+ {
+  "id": "f663",
+  "verdict": "FP5_negation",
+  "quote": "Colesevelam hydrochloride should not be used for the treatment of type 1 diabetes or for the treatment of diabetic ketoacidosis.",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f310",
+  "verdict": "TARGET",
+  "quote": "reduce low-density lipoprotein cholesterol (LDL-C) in: adults with hypercholesterolemia.",
+  "note": "Hypercholesterolemia is a form of hyperlipidemia; near parent."
+ },
+ {
+  "id": "f647",
+  "verdict": "TARGET",
+  "quote": "pravastatin sodium tablets are indicated to: reduce the risk of myocardial infarction (MI).",
+  "note": "MI risk reduction is an indication."
+ },
+ {
+  "id": "f868",
+  "verdict": "TARGET",
+  "quote": "indicated in adult patients for the treatment of Acute Bacterial Exacerbation of Chronic Bronchitis (ABECB)",
+  "note": "Direct indication."
+ },
+ {
+  "id": "f199",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Preeclampsia/pregnancy not mentioned."
+ },
+ {
+  "id": "f447",
+  "verdict": "TARGET",
+  "quote": "diffuse posterior uveitis and choroiditis, optic neuritis, sympathetic ophthalmia",
+  "note": "Optic neuritis listed under ophthalmic diseases."
+ },
+ {
+  "id": "f281",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of schizophrenia in adults",
+  "note": "Edge is a subtype of schizophrenia."
+ },
+ {
+  "id": "f529",
+  "verdict": "FP5_negation",
+  "quote": "trientine hydrochloride capsules are not recommended in cystinuria or rheumatoid arthritis.",
+  "note": "Explicitly not recommended."
+ },
+ {
+  "id": "f365",
+  "verdict": "FP4_overbroad",
+  "quote": "prevention of serious lower respiratory tract disease caused by respiratory syncytial virus (RSV)",
+  "note": "Indication is RSV disease only; organ-system category edge is overbroad."
+ },
+ {
+  "id": "f704",
+  "verdict": "TARGET",
+  "quote": "primary generalized tonic-clonic seizures in patients 6 years of age and older with idiopathic generalized epilepsy",
+  "note": "Treats seizures of IGE (adjunctive)."
+ },
+ {
+  "id": "f010",
+  "verdict": "TARGET",
+  "quote": "adjuvant treatment of adults with pancreatic adenocarcinoma as a component of a combination chemotherapy regimen",
+  "note": "Direct indication."
+ }
+]

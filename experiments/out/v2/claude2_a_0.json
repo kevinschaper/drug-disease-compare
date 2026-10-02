@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f344",
+  "verdict": "TARGET",
+  "quote": "Folic acid is effective in the treatment of megaloblastic anemias due to a deficiency of folic acid",
+  "note": "Megaloblastic anemia named as indication."
+ },
+ {
+  "id": "f660",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Edema not mentioned anywhere in morphine text."
+ },
+ {
+  "id": "f439",
+  "verdict": "TARGET",
+  "quote": "left ventricular dysfunction following myocardial infarction in clinically stable patients",
+  "note": "LV dysfunction post-MI is an indication."
+ },
+ {
+  "id": "f808",
+  "verdict": "TARGET",
+  "quote": "Atopic dermatitis",
+  "note": "Atopic dermatitis listed among indicated disorders."
+ },
+ {
+  "id": "f286",
+  "verdict": "TARGET",
+  "quote": "to reduce excess body weight and maintain weight reduction long term in: Adults and pediatric patients aged 12 years and older with body weight greater than 60 kg and obesity",
+  "note": "Chronic weight management in obesity."
+ },
+ {
+  "id": "f716",
+  "verdict": "TARGET",
+  "quote": "Replacement therapy in adults with pronounced growth hormone deficiency",
+  "note": "GH deficiency is an EMA indication."
+ },
+ {
+  "id": "f529",
+  "verdict": "FP5_negation",
+  "quote": "trientine hydrochloride capsules are not recommended in cystinuria or rheumatoid arthritis",
+  "note": "Explicitly not recommended in cystinuria."
+ },
+ {
+  "id": "f612",
+  "verdict": "TARGET",
+  "quote": "Guanfacine Tablets, USP are indicated in the management of hypertension",
+  "note": "Hypertension indication."
+ },
+ {
+  "id": "f846",
+  "verdict": "TARGET",
+  "quote": "Haloperidol decanoate injection is indicated for the treatment of schizophrenia",
+  "note": "Schizophrenia indication."
+ },
+ {
+  "id": "f138",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy",
+  "note": "Edema indication."
+ },
+ {
+  "id": "f793",
+  "verdict": "TARGET",
+  "quote": "relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease",
+  "note": "Active SPMS explicitly included."
+ },
+ {
+  "id": "f036",
+  "verdict": "FP5_negation",
+  "quote": "SAFETY AND EFFICACY OF FOSCARNET SODIUM HAVE NOT BEEN ESTABLISHED FOR TREATMENT OF OTHER HSV INFECTIONS (e.g., RETINITIS, ENCEPHALITIS)",
+  "note": "Encephalitis appears only in a not-established limitation."
+ },
+ {
+  "id": "f230",
+  "verdict": "TARGET",
+  "quote": "indicated for use in adults for the management of moderate-to-severe pain",
+  "note": "General moderate-to-severe pain indication covers narrower vulvovaginal pain; weak, no specific mention."
+ },
+ {
+  "id": "f493",
+  "verdict": "TARGET",
+  "quote": "anorexia associated with weight loss in patients with Acquired Immune Deficiency Syndrome (AIDS)",
+  "note": "Anorexia with weight loss in AIDS is the treated target."
+ },
+ {
+  "id": "f356",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections (complicated and uncomplicated), including pyelonephritis and cystitis",
+  "note": "UTI indication."
+ },
+ {
+  "id": "f393",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis",
+  "note": "Bursitis listed."
+ },
+ {
+  "id": "f603",
+  "verdict": "TARGET",
+  "quote": "indicated for the first-line treatment of adult patients with unresectable advanced, recurrent, or metastatic oesophageal squamous cell carcinoma",
+  "note": "ESCC EMA indication."
+ },
+ {
+  "id": "f120",
+  "verdict": "TARGET",
+  "quote": "overactive bladder (OAB) with symptoms of urge urinary incontinence, urgency, and urinary frequency in adults",
+  "note": "Urge incontinence of OAB is treated."
+ },
+ {
+  "id": "f688",
+  "verdict": "TARGET",
+  "quote": "in combination with pembrolizumab, is indicated for the treatment of patients with advanced endometrial carcinoma (EC)",
+  "note": "Endometrial carcinoma indication."
+ },
+ {
+  "id": "f812",
+  "verdict": "TARGET",
+  "quote": "Liraglutide injection is indicated: as an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients aged 10 years and older with type 2 diabetes mellitus",
+  "note": "Single-agent T2DM indication."
+ },
+ {
+  "id": "f301",
+  "verdict": "TARGET",
+  "quote": "perennial or seasonal allergic rhinitis",
+  "note": "Allergic rhinitis listed."
+ },
+ {
+  "id": "f143",
+  "verdict": "TARGET",
+  "quote": "Glimepiride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Single-agent T2DM indication."
+ },
+ {
+  "id": "f770",
+  "verdict": "TARGET",
+  "quote": "as well as damaged, ingrown and devitalized nails",
+  "note": "Nail conditions listed as treated."
+ },
+ {
+  "id": "f110",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of diabetic nephropathy with an elevated serum creatinine and proteinuria in patients with type 2 diabetes and a history of hypertension",
+  "note": "Diabetes is the population; nephropathy is treated."
+ },
+ {
+  "id": "f015",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of CMV retinitis in patients with acquired immunodeficiency syndrome (AIDS)",
+  "note": "CMV retinitis is a form of retinitis."
+ },
+ {
+  "id": "f740",
+  "verdict": "TARGET",
+  "quote": "in: psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Psoriatic arthritis listed."
+ },
+ {
+  "id": "f198",
+  "verdict": "FP5_negation",
+  "quote": "have not been found effective in the treatment of spasticity associated with cerebral or spinal cord disease",
+  "note": "Spinal cord disease appears only in a negation."
+ },
+ {
+  "id": "f026",
+  "verdict": "TARGET",
+  "quote": "stimulate respiration in patients with drug-induced postanesthesia respiratory depression or apnea other than that due to muscle relaxant drugs",
+  "note": "Postanesthesia apnea is treated."
+ },
+ {
+  "id": "f733",
+  "verdict": "TARGET",
+  "quote": "indicated for reduction of the risk of myocardial infarction",
+  "note": "MI risk reduction indication."
+ },
+ {
+  "id": "f581",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "General severe pain covers narrower musculoskeletal pain."
+ },
+ {
+  "id": "f014",
+  "verdict": "TARGET",
+  "quote": "to reduce LDL-C in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "HeFH named."
+ },
+ {
+  "id": "f562",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura",
+  "note": "Migraine indication."
+ },
+ {
+  "id": "f327",
+  "verdict": "TARGET",
+  "quote": "for the treatment of community-acquired bacterial pneumonia (CABP)",
+  "note": "CABP is a form of pneumonia."
+ },
+ {
+  "id": "f346",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Pertussis (whooping cough) caused by Bordetella pertussis",
+  "note": "Treats pertussis infection, not cough as such."
+ },
+ {
+  "id": "f851",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis",
+  "note": "Asthma listed."
+ },
+ {
+  "id": "f348",
+  "verdict": "TARGET",
+  "quote": "relief of moderate to severe pain such as that due to: surgery, cancer, trauma (soft tissue and bone), biliary colic, myocardial infarction, burns, renal colic",
+  "note": "Renal colic pain listed."
+ },
+ {
+  "id": "f006",
+  "verdict": "TARGET",
+  "quote": "also effective for the treatment of Candida urinary tract infections, peritonitis, and systemic Candida infections including candidemia, disseminated candidiasis, and pneumonia",
+  "note": "Disseminated candidiasis named in indications."
+ },
+ {
+  "id": "f389",
+  "verdict": "TARGET",
+  "quote": "For the treatment of adult patients with chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL)",
+  "note": "CLL indication."
+ },
+ {
+  "id": "f378",
+  "verdict": "TARGET",
+  "quote": "hypersensitivity pneumonitis, idiopathic pulmonary fibrosis",
+  "note": "IPF listed; near parent."
+ },
+ {
+  "id": "f447",
+  "verdict": "TARGET",
+  "quote": "Chorioretinitis Optic neuritis Iritis and iridocyclitis",
+  "note": "Optic neuritis listed."
+ },
+ {
+  "id": "f703",
+  "verdict": "FP5_negation",
+  "quote": "74 percent of Enterococcus faecalis (formerly Streptococcus faecalis ) have been found to be resistant to tetracycline drugs",
+  "note": "E. faecalis mentioned only as a resistance caveat, not an indication."
+ },
+ {
+  "id": "f875",
+  "verdict": "TARGET",
+  "quote": "for the treatment of seborrheic dermatitis of the scalp, dandruff and tinea versicolor",
+  "note": "Infantile form is subtype of seborrheic dermatitis."
+ },
+ {
+  "id": "f626",
+  "verdict": "TARGET",
+  "quote": "indicated for the intraperitoneal treatment of malignant ascites in adults with epithelial cellular adhesion molecule (EpCAM)-positive carcinomas",
+  "note": "Malignant ascites EMA indication."
+ },
+ {
+  "id": "f118",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Relieves symptoms, edge names broad upper respiratory disorder."
+ },
+ {
+  "id": "f743",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Thrombophilia/thrombin defect not mentioned."
+ }
+]

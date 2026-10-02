@@ -16,12 +16,12 @@ genuine treatment target according to regulator text.
 |---|---|---|
 | 1. index regulator text | `label_index.py` (openFDA bulk export + EMA medicines report, homeopathic labels dropped) | `data/inputs/labels/*_index.json.gz` |
 | 1b. moieties for label UNIIs | `label_moieties.py` (GSRS, cached in `data/drug_groups_cache.json`) | — |
-| 2. evidence + sample | `audit_sample.py --n 150` (seed 20261002) | `sample.jsonl`, `population.jsonl`, `evidence.json.gz` |
-| 3. reviewer A, reviewer B (adversarial) | 16 blind Claude subagents over `batch_{a,b}_*.json` (ids in `blind_key.json`, rubric `audit_rubric.md`) | `claude_a_*.json`, `claude_b_*.json` |
-| 4. tie-break A≠B | 1 Claude subagent | `tiebreak_0.json` |
-| 5. co-ingredient check | 2 Claude subagents, every TARGET whose evidence included combination labels, single vs combination text separated | `combo_check_*.json` |
+| 2. evidence + sample | `audit_sample.py --n 300` (latest; seed 20261002, two-stage so it extends the first 150) and `--release old` (previous releases, built from their source files) | `sample.jsonl`, `sample_old.jsonl`, `population*.jsonl`, `evidence*.json.gz` |
+| 3. reviewer A, reviewer B (adversarial) | round 1: 16 blind Claude subagents (first 150 latest/source; `blind_key.json`); round 2: 40 more over the other 900 edges, latest and previous shuffled together (`blind_key_2.json`) | `claude_{a,b}_*.json`, `claude2_{a,b}_*.json` |
+| 4. tie-break A≠B | 1 + 2 Claude subagents | `tiebreak_0.json`, `tiebreak2_*.json` |
+| 5. co-ingredient check | 2 + 4 Claude subagents, every TARGET whose evidence included combination labels, single vs combination text separated | `combo_check_*.json`, `combo2_check_*.json` |
 | 6. Jev | `audit_jev.py --sample` / `--population` (`jev-1.13.0`, needs `TYPESAFE_API_KEY`) | `jev_sample.jsonl`, `jev_population.jsonl` |
-| 7. report | `audit_report.py` (deterministic) | `audit_results.json`, `src/data/fp_audit.json`, `src/data/label_check.parquet` |
+| 7. report | `audit_report.py` (deterministic): latest rates, like-for-like previous rates and the change, Jev validation on all reference edges | `audit_results.json`, `src/data/fp_audit.json`, `src/data/label_check.parquet` |
 
 Run steps 1–2 and 6–7 with `PYTHONPATH=pipeline:. uv run [--with openpyxl|typesafe-sdk] python -m experiments.<script>`.
 
@@ -37,25 +37,31 @@ tie-breaker; co-ingredient overrides applied to TARGETs. Jev is scored against i
 accepted for stand-alone use only if binary agreement is within 5 pts of the A↔B ceiling and
 κ ≥ 0.6. Otherwise only its confidence ≥ 0.9 verdicts are used.
 
-### v2 results (2026-10-02)
+### v2 results (2026-10-02; 300 edges per source per release)
 
-| source | n judged | FP rate (95% CI) | v1 (previous release) |
+| source | previous release | latest release | change (95% CI) |
 |---|---|---|---|
-| MEDIC | 148 | 27.0% (20.5–34.7) | 20.3% (n=64) |
-| DAKP-approved | 149 | 34.9% (27.7–42.8) | 33.0% (n=94) |
+| MEDIC | 25.8% (n=299) | 25.6% (n=297) | −0.2 pts (−7.1 to +6.8) |
+| DAKP-approved | 35.0% (n=300) | 32.6% (n=298) | −2.4 pts (−10.0 to +5.2) |
 
-Population (Jev screen corrected by its gold-sample PPV/NPV): MEDIC 27.1% (22.1–32.3) over
-5,106 edges; DAKP-approved 33.1% (27.0–39.2) over 12,238.
+Neither source's precision changed significantly; the *kinds* of error did:
+- **MEDIC** — negated indications nearly eliminated (−5.3 pts, CI −8.6 to −2.5); new
+  co-ingredient attribution errors (+5.1, CI 2.7 to 8.2); more setting-as-target (+4.7, CI 0.6
+  to 9.0).
+- **DAKP** — "not in label" mappings up (+9.4, CI 4.3 to 14.7), concentrated in the newly used
+  UMLS disease terms (24% of those edges); setting, symptom-swap and over-broad errors each
+  trend down (not individually significant).
 
-MEDIC's main types: setting-as-target 9.5%, **co-ingredient attribution 8.1%** (all 12 FP6
-cases in the sample are MEDIC's), not-in-label 6.1%. DAKP: not-in-label 18.8%, over-broad 6.7%.
+Population (Jev screen corrected by its latest-release PPV/NPV): MEDIC 25.7% (22.3–29.2),
+DAKP-approved 32.2% (27.8–36.6). (The v1 audit, FDA-only and a different protocol, measured
+20.3% / 33.0% on the previous releases; kept for reference.)
 
-**Jev:** reviewer A↔B binary agreement 95.3% (κ 0.887); Jev vs reference 84.2% (κ 0.631) —
-**does not meet the acceptance bar**. At confidence ≥ 0.9 (51% of edges) agreement is 95.4%,
-flag precision 89.7%, target precision 96.7%; those verdicts back the site's "label check"
-column. Jev misses symptom swaps / over-broad parents and every co-ingredient case (the
-latter a setup limitation: no FP6 option, no separated combination text). Decomposing into
-yes/no questions did not help (80.1%). Full screen: 47.7M input tokens, ≈ $2.
+**Jev** (validated on all 1,194 reference edges): reviewer A↔B binary agreement 96.3% (κ 0.91);
+Jev vs reference 88.3% (κ 0.72) — **does not meet the acceptance bar**. At confidence ≥ 0.9
+(55% of edges) agreement is 97.5%, flag precision 92.2%, target precision 98.7%; those
+verdicts back the site's "label check" column. Weakest on symptom swaps (50%), over-broad
+parents (70%) and co-ingredient cases (19%). Decomposing into yes/no questions did not help
+(84.1%). Cost: ≈ $2.10 for the full screen plus all gold edges.
 
 **Round 0** (`round0_narrow_evidence/`): a first reviewer pass on narrower evidence
 (exact-UNII labels only, no combination labels, whole-text truncation) produced visibly more

@@ -1,0 +1,302 @@
+[
+ {
+  "id": "f021",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of the inflammatory and pruritic manifestations of atopic dermatitis",
+  "note": "Single-ingredient fluticasone propionate lotion is indicated for atopic dermatitis (synonym of atopic eczema)."
+ },
+ {
+  "id": "f055",
+  "verdict": "TARGET",
+  "quote": "Acute rheumatic carditis",
+  "note": "Single-ingredient prednisolone lists acute rheumatic carditis, a form of inflammation of the heart layers."
+ },
+ {
+  "id": "f070",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves these symptoms due to hay fever or other upper respiratory allergies",
+  "note": "Single-ingredient diphenhydramine OTC labels cover hay fever (allergic rhinitis) symptoms."
+ },
+ {
+  "id": "f081",
+  "verdict": "TARGET",
+  "quote": "Herpes zoster ophthalmicus",
+  "note": "Single-ingredient prednisolone lists herpes zoster ophthalmicus, a subtype of herpes zoster."
+ },
+ {
+  "id": "f094",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Single-ingredient buprenorphine is indicated for severe pain generally, of which spinal pain is a specific instance; combination (buprenorphine/naloxone) text is not involved."
+ },
+ {
+  "id": "f102",
+  "verdict": "TARGET",
+  "quote": "relieves heartburn associated with acid indigestion and sour stomach",
+  "note": "Single-ingredient famotidine OTC labels explicitly name acid indigestion."
+ },
+ {
+  "id": "f128",
+  "verdict": "TARGET",
+  "quote": "symptomatic sarcoidosis",
+  "note": "Single-ingredient triamcinolone injectable lists symptomatic sarcoidosis."
+ },
+ {
+  "id": "f143",
+  "verdict": "TARGET",
+  "quote": "Glimepiride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Single-ingredient glimepiride label is indicated for type 2 diabetes."
+ },
+ {
+  "id": "f164",
+  "verdict": "TARGET",
+  "quote": "keratosis palmaris, keratoderma",
+  "note": "Single-ingredient urea labels list keratoderma and keratosis palmaris among hyperkeratotic conditions treated."
+ },
+ {
+  "id": "f207",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of patients with chronic stable angina (effort-associated angina)",
+  "note": "Single-ingredient nicardipine is indicated for effort-associated (exercise-induced) angina."
+ },
+ {
+  "id": "f221",
+  "verdict": "TARGET",
+  "quote": "Atrial fibrillation with embolization",
+  "note": "Single-ingredient heparin sodium label lists atrial fibrillation with embolization."
+ },
+ {
+  "id": "f230",
+  "verdict": "TARGET",
+  "quote": "indicated for use in adults for the management of moderate-to-severe pain",
+  "note": "Single-ingredient meloxicam (QAMZOVA/XIFYRM) covers moderate-to-severe pain generally, so vulvovaginal pain is at most a site-specific instance; combination labels (ZYNRELEF postsurgical, SYMBRAVO migraine) are irrelevant, though the support is generic."
+ },
+ {
+  "id": "f242",
+  "verdict": "TARGET",
+  "quote": "HEMADY is indicated in combination with other anti-myeloma products for the treatment of adults with multiple myeloma (MM)",
+  "note": "Single-ingredient dexamethasone (HEMADY) is indicated for multiple myeloma."
+ },
+ {
+  "id": "f257",
+  "verdict": "TARGET",
+  "quote": "helpspreventanother heart attack or stroke",
+  "note": "Single-ingredient aspirin label covers secondary stroke prevention, independent of the aspirin/dipyridamole combination."
+ },
+ {
+  "id": "f283",
+  "verdict": "TARGET",
+  "quote": "the premenstrual and menstrual periods (dysmenorrhea)",
+  "note": "Single-ingredient acetaminophen OTC labels name dysmenorrhea."
+ },
+ {
+  "id": "f301",
+  "verdict": "TARGET",
+  "quote": "perennial or seasonal allergic rhinitis",
+  "note": "Only on the betamethasone sodium phosphate/betamethasone acetate injectable, whose 'combination' consists solely of two betamethasone salts, so the indication is attributable to betamethasone itself."
+ },
+ {
+  "id": "f322",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Single-ingredient ipratropium HFA label names chronic bronchitis."
+ },
+ {
+  "id": "f337",
+  "verdict": "TARGET",
+  "quote": "Chorioretinitis",
+  "note": "Single-ingredient prednisolone lists chorioretinitis among ophthalmic diseases."
+ },
+ {
+  "id": "f351",
+  "verdict": "TARGET",
+  "quote": "Acute rheumatic carditis",
+  "note": "Single-ingredient prednisone lists acute rheumatic carditis."
+ },
+ {
+  "id": "f361",
+  "verdict": "TARGET",
+  "quote": "In anaphylaxis as an adjunct to epinephrine and other standard measures after the acute symptoms have been controlled",
+  "note": "Single-ingredient promethazine is indicated adjunctively in anaphylaxis."
+ },
+ {
+  "id": "f378",
+  "verdict": "TARGET",
+  "quote": "Idiopathic pulmonary fibrosis",
+  "note": "Single-ingredient prednisone lists idiopathic pulmonary fibrosis, a subtype of pulmonary fibrosis."
+ },
+ {
+  "id": "f396",
+  "verdict": "TARGET",
+  "quote": "Treatment of Chronic Rhinosinusitis with Nasal Polyps",
+  "note": "Single-ingredient mometasone nasal spray is indicated for chronic rhinosinusitis with nasal polyps."
+ },
+ {
+  "id": "f423",
+  "verdict": "TARGET",
+  "quote": "Narcolepsy",
+  "note": "Single-ingredient amphetamine label lists narcolepsy (mixed amphetamine salts combination also has it, but those are all amphetamine salts)."
+ },
+ {
+  "id": "f444",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of bronchospasm in patients 2 to 12 years of age with asthma",
+  "note": "Single-ingredient albuterol is indicated for bronchospasm in asthma."
+ },
+ {
+  "id": "f452",
+  "verdict": "TARGET",
+  "quote": "To tide the patient over a critical period of the disease in regional enteritis (systemic therapy) and ulcerative colitis",
+  "note": "Single-ingredient hydrocortisone lists ulcerative colitis."
+ },
+ {
+  "id": "f471",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin",
+  "note": "Single-ingredient erythromycin label lists diphtheria."
+ },
+ {
+  "id": "f484",
+  "verdict": "TARGET",
+  "quote": "treatment of inflammatory papules and pustules of rosacea",
+  "note": "Single-ingredient topical metronidazole explicitly treats pustules of rosacea."
+ },
+ {
+  "id": "f504",
+  "verdict": "TARGET",
+  "quote": "intended for topical application in the following scaling dermatoses: seborrheic dermatitis and seborrhea sicca (dandruff)",
+  "note": "Single-ingredient sodium sulfacetamide wash is indicated for seborrheic dermatitis."
+ },
+ {
+  "id": "f518",
+  "verdict": "TARGET",
+  "quote": "dermatomyositis (polymyositis)",
+  "note": "Single-ingredient prednisone lists dermatomyositis."
+ },
+ {
+  "id": "f533",
+  "verdict": "TARGET",
+  "quote": "Helicobacter pylori eradication in adult patients to reduce the risk of duodenal ulcer recurrence",
+  "note": "Single-ingredient omeprazole labels cover duodenal ulcer (including active duodenal ulcer treatment)."
+ },
+ {
+  "id": "f554",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of elevated intraocular pressure (IOP) in patients with ocular hypertension or open-angle glaucoma",
+  "note": "Single-ingredient brinzolamide and EMA Azopt text both name ocular hypertension."
+ },
+ {
+  "id": "f560",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Single-ingredient pseudoephedrine OTC labels name nasal congestion."
+ },
+ {
+  "id": "f572",
+  "verdict": "TARGET",
+  "quote": "Exfoliative dermatitis",
+  "note": "Single-ingredient hydrocortisone lists exfoliative dermatitis under dermatologic diseases."
+ },
+ {
+  "id": "f619",
+  "verdict": "TARGET",
+  "quote": "Intra-abdominal Infections , including peritonitis caused by Escherichia coli, Klebsiella species",
+  "note": "Single-ingredient aztreonam label names peritonitis."
+ },
+ {
+  "id": "f633",
+  "verdict": "TARGET",
+  "quote": "Acute adrenocortical insufficiency (hydrocortisone or cortisone is the drug of choice",
+  "note": "Single-ingredient dexamethasone lists acute adrenocortical insufficiency."
+ },
+ {
+  "id": "f657",
+  "verdict": "TARGET",
+  "quote": "Uses for temporary relief of mild symptoms of intermittent asthma \u25a0 wheezing",
+  "note": "Single-ingredient OTC epinephrine inhaler lists wheezing."
+ },
+ {
+  "id": "f666",
+  "verdict": "TARGET",
+  "quote": "Syphilis caused by Treponema pallidum",
+  "note": "Single-ingredient doxycycline label lists syphilis."
+ },
+ {
+  "id": "f686",
+  "verdict": "TARGET",
+  "quote": "Fluoxetine capsules and Olanzapine in Combination are indicated for the treatment of: Treatment resistant depression",
+  "note": "Fluoxetine's own label carries TRD for co-use with olanzapine (monotherapy not indicated), and on Symbyax the antidepressant component is fluoxetine, so not a co-ingredient artifact."
+ },
+ {
+  "id": "f701",
+  "verdict": "TARGET",
+  "quote": "Minor pain of arthritis",
+  "note": "Single-ingredient acetaminophen relieves minor arthritis pain, which covers RA only symptomatically; the support is the same in single and combination text, so this is not a co-ingredient artifact."
+ },
+ {
+  "id": "f727",
+  "verdict": "TARGET",
+  "quote": "other inflammatory conditions of the anorectum, and pruritus ani",
+  "note": "Single-ingredient hydrocortisone acetate rectal products name pruritus ani."
+ },
+ {
+  "id": "f739",
+  "verdict": "TARGET",
+  "quote": "contact dermatitis; atopic dermatitis",
+  "note": "Single-ingredient prednisone lists several dermatitis types (contact, atopic, exfoliative, seborrheic)."
+ },
+ {
+  "id": "f768",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of the symptoms of seasonal allergic rhinitis in adults and pediatric patients 6 years of age and older",
+  "note": "Single-ingredient olopatadine nasal spray is indicated for seasonal allergic rhinitis."
+ },
+ {
+  "id": "f802",
+  "verdict": "TARGET",
+  "quote": "Septicemia, empyema, pneumonia, pericarditis, endocarditis, meningitis",
+  "note": "Single-ingredient penicillin G label lists pneumonia."
+ },
+ {
+  "id": "f812",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Single-ingredient liraglutide (Victoza) covers type 2 diabetes; XULTOPHY also contains liraglutide's own action, so not a co-ingredient artifact."
+ },
+ {
+  "id": "f825",
+  "verdict": "TARGET",
+  "quote": "Diffuse posterior uveitis and choroiditis",
+  "note": "Single-ingredient hydrocortisone lists uveitis among ophthalmic diseases."
+ },
+ {
+  "id": "f845",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Single-ingredient IR tramadol covers severe pain generally, including breakthrough pain episodes; it does not rely on tramadol/acetaminophen."
+ },
+ {
+  "id": "f851",
+  "verdict": "TARGET",
+  "quote": "asthma (as distinct from allergic asthma listed above under \"Allergic States\")",
+  "note": "Single-ingredient prednisone lists asthma."
+ },
+ {
+  "id": "f869",
+  "verdict": "TARGET",
+  "quote": "Severe seborrheic dermatitis",
+  "note": "Single-ingredient dexamethasone lists severe seborrheic dermatitis."
+ },
+ {
+  "id": "f888",
+  "verdict": "TARGET",
+  "quote": "indicated as an adjunct to a reduced-calorie diet and increased physical activity for chronic weight management",
+  "note": "Single-ingredient liraglutide (SAXENDA) is indicated for chronic weight management."
+ },
+ {
+  "id": "f897",
+  "verdict": "TARGET",
+  "quote": "Complicated Intra-Abdominal Infections",
+  "note": "Single-ingredient ciprofloxacin is indicated for complicated intra-abdominal infections."
+ }
+]

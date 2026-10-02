@@ -1,0 +1,308 @@
+[
+ {
+  "id": "f009",
+  "verdict": "TARGET",
+  "quote": "Acute gouty arthritis",
+  "note": "Single-ingredient dexamethasone label lists acute gouty arthritis, a manifestation of primary gout."
+ },
+ {
+  "id": "f027",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Single-ingredient ibuprofen is indicated for general mild-to-moderate pain, which covers pleuritic chest pain as a pain subtype; no co-ingredient attribution involved."
+ },
+ {
+  "id": "f057",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Single-ingredient dexamethasone label covers dermatomyositis, of which juvenile dermatomyositis is a subtype."
+ },
+ {
+  "id": "f071",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of hemodynamically stable patients with definite or suspected acute myocardial infarction",
+  "note": "Single-ingredient metoprolol tartrate labels cover acute MI, of which anterolateral MI is a subtype."
+ },
+ {
+  "id": "f089",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic",
+  "note": "Single-ingredient buprenorphine labels cover severe pain generally, which includes bone pain."
+ },
+ {
+  "id": "f097",
+  "verdict": "TARGET",
+  "quote": "BUDESONIDE AND FORMOTEROL FUMARATE DIHYDRATE INHALATION AEROSOL is indicated for the treatment of asthma",
+  "note": "Single-ingredient formoterol (Perforomist) is explicitly not indicated for asthma, but the ICS/LABA combination asthma indication relies on formoterol's own LABA bronchodilator role, so it is not purely co-ingredient-derived (borderline)."
+ },
+ {
+  "id": "f108",
+  "verdict": "TARGET",
+  "quote": "Psoriatic arthritis",
+  "note": "Single-ingredient corticotropin label lists psoriatic arthritis under rheumatic disorders."
+ },
+ {
+  "id": "f133",
+  "verdict": "TARGET",
+  "quote": "severe erythema multiforme (Stevens-Johnson syndrome)",
+  "note": "Single-ingredient prednisolone label lists severe erythema multiforme."
+ },
+ {
+  "id": "f149",
+  "verdict": "TARGET",
+  "quote": "infectious diarrhea caused by Escherichia coli (enterotoxigenic isolates), Campylobacter jejuni",
+  "note": "Single-ingredient ciprofloxacin label covers Campylobacter jejuni infectious diarrhea."
+ },
+ {
+  "id": "f166",
+  "verdict": "TARGET",
+  "quote": "Nonsuppurative thyroiditis",
+  "note": "Single-ingredient dexamethasone label lists nonsuppurative thyroiditis."
+ },
+ {
+  "id": "f209",
+  "verdict": "TARGET",
+  "quote": "mismatch repair deficient (dMMR) colorectal cancer (CRC) in combination with ipilimumab",
+  "note": "Single-ingredient nivolumab label covers MSI-H/dMMR colorectal cancer (co-administration regimen, not a fixed-dose combination)."
+ },
+ {
+  "id": "f222",
+  "verdict": "TARGET",
+  "quote": "Systemic lupus erythematosus",
+  "note": "Single-ingredient dexamethasone label lists SLE."
+ },
+ {
+  "id": "f231",
+  "verdict": "TARGET",
+  "quote": "Attention Deficit Hyperactivity Disorder (ADHD) in adults and pediatric patients 6 years and older",
+  "note": "Single-ingredient text covers ADHD, of which the inattentive type is a subtype."
+ },
+ {
+  "id": "f248",
+  "verdict": "TARGET",
+  "quote": "mycosis fungoides",
+  "note": "Single-ingredient prednisone label lists mycosis fungoides; refractory MF is a subtype."
+ },
+ {
+  "id": "f271",
+  "verdict": "TARGET",
+  "quote": "For the relief of symptoms of depression.",
+  "note": "Single-ingredient amitriptyline is indicated for depression, which covers perinatal depression as a subtype."
+ },
+ {
+  "id": "f284",
+  "verdict": "TARGET",
+  "quote": "Acetaminophen Injection is indicated for the management of mild to moderate pain",
+  "note": "Single-ingredient acetaminophen covers general pain including minor pain of arthritis, which encompasses inflammatory pain."
+ },
+ {
+  "id": "f307",
+  "verdict": "TARGET",
+  "quote": "pure red cell aplasia",
+  "note": "Single-ingredient dexamethasone label lists pure red cell aplasia."
+ },
+ {
+  "id": "f326",
+  "verdict": "TARGET",
+  "quote": "TIVICAY and TIVICAY PD are indicated in combination with other antiretroviral agents for the treatment of HIV‑1 infection",
+  "note": "Single-ingredient dolutegravir (Tivicay) and EMA text cover HIV-1 infection."
+ },
+ {
+  "id": "f344",
+  "verdict": "TARGET",
+  "quote": "FOLIC ACID oral solution is indicated for the treatment of megaloblastic anemias due to folic acid deficiency",
+  "note": "Single-ingredient folic acid label covers megaloblastic anemia."
+ },
+ {
+  "id": "f355",
+  "verdict": "TARGET",
+  "quote": "TRADJENTA is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Single-ingredient linagliptin label and EMA text cover T2DM."
+ },
+ {
+  "id": "f364",
+  "verdict": "TARGET",
+  "quote": "COLCRYS (colchicine, USP) tablets are indicated in adults and children 4 years or older for treatment of familial Mediterranean fever (FMF)",
+  "note": "Single-ingredient colchicine label covers FMF."
+ },
+ {
+  "id": "f388",
+  "verdict": "TARGET",
+  "quote": "Keratitis",
+  "note": "Single-ingredient hydrocortisone label lists keratitis under ophthalmic diseases."
+ },
+ {
+  "id": "f398",
+  "verdict": "TARGET",
+  "quote": "chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Single-ingredient formoterol label covers COPD including chronic bronchitis."
+ },
+ {
+  "id": "f425",
+  "verdict": "TARGET",
+  "quote": "Tadalafil Tablets are indicated for the treatment of erectile dysfunction (ED).",
+  "note": "Single-ingredient tadalafil label and EMA text cover ED."
+ },
+ {
+  "id": "f447",
+  "verdict": "TARGET",
+  "quote": "Optic neuritis",
+  "note": "Single-ingredient prednisone label lists optic neuritis."
+ },
+ {
+  "id": "f454",
+  "verdict": "TARGET",
+  "quote": "in the treatment or prevention of various types of euthyroid goiters, including thyroid nodules, subacute or chronic lymphocytic thyroiditis (Hashimoto’s)",
+  "note": "Only the thyroid-hormone (T4/T3) combination text supports it, via TSH suppression that levothyroxine itself provides, so not co-ingredient-derived; note the single-ingredient labels explicitly exclude transient hypothyroidism in subacute thyroiditis (borderline)."
+ },
+ {
+  "id": "f473",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis and treatment of venous thrombosis and pulmonary embolism",
+  "note": "Single-ingredient heparin label covers pulmonary embolism."
+ },
+ {
+  "id": "f489",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the symptoms of seasonal allergic rhinitis in adults and pediatric patients 5 years and older",
+  "note": "Single-ingredient azelastine label covers seasonal allergic rhinitis."
+ },
+ {
+  "id": "f505",
+  "verdict": "TARGET",
+  "quote": "iritis, cyclitis",
+  "note": "Single-ingredient loteprednol covers iritis/cyclitis (anterior uveitis forms), and the loteprednol/tobramycin label's 'chronic anterior uveitis' is a steroid indication attributable to loteprednol, not tobramycin."
+ },
+ {
+  "id": "f526",
+  "verdict": "TARGET",
+  "quote": "chronic obstructive pulmonary disease (COPD), including chronic bronchitis and/or emphysema",
+  "note": "Single-ingredient olodaterol (Striverdi) label covers COPD including chronic bronchitis."
+ },
+ {
+  "id": "f534",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections (UTI)",
+  "note": "Single-ingredient ciprofloxacin label covers urinary tract infections."
+ },
+ {
+  "id": "f557",
+  "verdict": "TARGET",
+  "quote": "Severe psoriasis.",
+  "note": "Single-ingredient corticotropin label lists severe psoriasis."
+ },
+ {
+  "id": "f561",
+  "verdict": "TARGET",
+  "quote": "Rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Single-ingredient dexamethasone label lists multiple arthritides (RA, psoriatic, osteoarthritis synovitis, gouty)."
+ },
+ {
+  "id": "f589",
+  "verdict": "TARGET",
+  "quote": "INBRIJA is indicated for the intermittent treatment of OFF episodes in patients with Parkinson's disease",
+  "note": "Single-ingredient levodopa (Inbrija) and EMA text cover Parkinson disease; levodopa is also the active component of the combinations."
+ },
+ {
+  "id": "f620",
+  "verdict": "TARGET",
+  "quote": "Seasonal or perennial allergic rhinitis",
+  "note": "Single-ingredient dexamethasone label lists allergic rhinitis, a subtype of rhinitis."
+ },
+ {
+  "id": "f635",
+  "verdict": "TARGET",
+  "quote": "For the treatment of most athlete's foot (tinea pedis), jock itch (tinea cruris), ringworm (tinea corporis)",
+  "note": "Single-ingredient miconazole OTC labels cover tinea infections."
+ },
+ {
+  "id": "f658",
+  "verdict": "TARGET",
+  "quote": "adult patients with advanced or metastatic gastric cancer, gastroesophageal junction cancer, and esophageal ade",
+  "note": "Single-ingredient nivolumab label covers GEJ cancer."
+ },
+ {
+  "id": "f676",
+  "verdict": "TARGET",
+  "quote": "Upper respiratory infections caused by Streptococcus pneumoniae",
+  "note": "Single-ingredient doxycycline label covers S. pneumoniae infections."
+ },
+ {
+  "id": "f690",
+  "verdict": "TARGET",
+  "quote": "reduces the rate of progression of nephropathy as measured by the occurrence of doubling of serum creatinine or end stage renal disease",
+  "note": "Single-ingredient losartan supports ESRD only as a prevented outcome of diabetic nephropathy (not treatment of ESRD), but nothing is co-ingredient-derived."
+ },
+ {
+  "id": "f718",
+  "verdict": "TARGET",
+  "quote": "Reduce elevated total-C, LDL-C, and Apo B in boys and postmenarchal girls, 10 to 17 years of age with heterozygous familial hypercholesterolemia",
+  "note": "Single-ingredient simvastatin label covers HeFH."
+ },
+ {
+  "id": "f733",
+  "verdict": "TARGET",
+  "quote": "Telmisartan tablets, USP are indicated for reduction of the risk of myocardial infarction, stroke, or death from cardiovascular causes",
+  "note": "Single-ingredient telmisartan label covers MI risk reduction."
+ },
+ {
+  "id": "f740",
+  "verdict": "TARGET",
+  "quote": "psoriatic arthritis; rheumatoid arthritis",
+  "note": "Single-ingredient prednisolone label lists psoriatic arthritis."
+ },
+ {
+  "id": "f770",
+  "verdict": "TARGET",
+  "quote": "damaged, ingrown and devitalized nails",
+  "note": "Single-ingredient urea label covers damaged/ingrown/devitalized nails."
+ },
+ {
+  "id": "f804",
+  "verdict": "TARGET",
+  "quote": "localized hypertrophic, infiltrated, inflammatory lesions of granuloma annulare",
+  "note": "Single-ingredient triamcinolone (Kenalog-10) label covers granuloma annulare."
+ },
+ {
+  "id": "f816",
+  "verdict": "TARGET",
+  "quote": "mild, uncomplicated allergic skin manifestations of urticaria and angioedema",
+  "note": "Single-ingredient diphenhydramine label covers urticaria."
+ },
+ {
+  "id": "f826",
+  "verdict": "TARGET",
+  "quote": "KEYTRUDA is indicated for the treatment of patients with high-risk early-stage triple-negative breast cancer (TNBC)",
+  "note": "Single-ingredient pembrolizumab label covers TNBC."
+ },
+ {
+  "id": "f848",
+  "verdict": "TARGET",
+  "quote": "mycosis fungoides",
+  "note": "Single-ingredient prednisolone label lists mycosis fungoides."
+ },
+ {
+  "id": "f852",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of ocular itching associated with allergic conjunctivitis",
+  "note": "Single-ingredient olopatadine ophthalmic label covers ocular itching (pruritus)."
+ },
+ {
+  "id": "f871",
+  "verdict": "TARGET",
+  "quote": "infections caused by Chlamydia trachomatis : conjunctivitis of the newborn",
+  "note": "Single-ingredient erythromycin label covers chlamydial conjunctivitis of the newborn (neonatal inclusion conjunctivitis)."
+ },
+ {
+  "id": "f889",
+  "verdict": "TARGET",
+  "quote": "Budesonide inhalation suspension is indicated for the maintenance treatment of asthma",
+  "note": "Single-ingredient budesonide label covers asthma."
+ },
+ {
+  "id": "f899",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Single-ingredient hydrocortisone label lists polymyositis."
+ }
+]

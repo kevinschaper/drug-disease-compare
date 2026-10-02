@@ -51,8 +51,9 @@ ul, ol { max-width: none; }
 
 ## Measured false-positive rate
 
-A **seeded random sample** of 150 edges per source (MEDIC indications; DAKP
-`approved_for_condition`), each judged against regulator text **we fetched ourselves** —
+A **seeded random sample** of 300 edges per source (MEDIC indications; DAKP
+`approved_for_condition`) **from each release** — latest and previous, 1,200 edges in all —
+each judged against regulator text **we fetched ourselves** —
 never a source's own snippet:
 
 - **FDA**: the openFDA bulk label export, matched by the drug's own UNII *or* any label of
@@ -78,13 +79,13 @@ const rows = ["medic", "dakp-approved"].flatMap((s) => [
     <h2>MEDIC — false-positive rate</h2>
     <span class="big">${S.sources.medic.fp_rate[0]}%</span>
     CI ${S.sources.medic.fp_rate[1]}–${S.sources.medic.fp_rate[2]} · n = ${S.sources.medic.judged}
-    · previous release ${S.previous_release.medic.fp_rate[0]}% (n = ${S.previous_release.medic.n})
+    · previous release ${S.previous_release.medic.fp_rate[0]}% (n = ${S.previous_release.medic.judged}, same protocol)
   </div>
   <div class="card">
     <h2>DAKP-approved — false-positive rate</h2>
     <span class="big">${S.sources["dakp-approved"].fp_rate[0]}%</span>
     CI ${S.sources["dakp-approved"].fp_rate[1]}–${S.sources["dakp-approved"].fp_rate[2]} · n = ${S.sources["dakp-approved"].judged}
-    · previous release ${S.previous_release["dakp-approved"].fp_rate[0]}% (n = ${S.previous_release["dakp-approved"].n})
+    · previous release ${S.previous_release["dakp-approved"].fp_rate[0]}% (n = ${S.previous_release["dakp-approved"].judged}, same protocol)
   </div>
 </div>
 
@@ -103,10 +104,10 @@ Plot.plot({
 })
 ```
 
-The latest rates are statistically indistinguishable from the previous releases' (the CIs
-overlap heavily). The audit itself also changed — EMA text, broader label matching, a
-co-ingredient check — so read the comparison as "no clear change", not a precise delta.
-By error type:
+Judged with the identical protocol — and blind to which release an edge came from — the
+latest rates are statistically indistinguishable from the previous releases'. What changed
+is the **kind** of error; see *Did MEDIC improve?* and *Did DAKP improve?* on
+[version changes](./changes). Latest releases, by error type:
 
 ```js
 const typeRows = ["medic", "dakp-approved"].flatMap((s) =>
@@ -162,8 +163,8 @@ rates gives MEDIC **${ci(P.medic.corrected_fp_rate)}** over ${fmt(P.medic.judged
 ## Can a fast decision model do this? (Jev)
 
 [Jev](https://docs.typesafe.ai) (TypeSafe AI's System One model) answers typed multiple-choice
-questions with calibrated probabilities at a tiny fraction of an LLM's cost. Every gold edge
-and all ${fmt(P.medic.screened + P["dakp-approved"].screened)} eligible edges were sent to `jev-1.13.0` with the same evidence the
+questions with calibrated probabilities at a tiny fraction of an LLM's cost. All
+${fmt(A.n)} reference edges (both releases) and all ${fmt(P.medic.screened + P["dakp-approved"].screened)} eligible latest-release edges were sent to `jev-1.13.0` with the same evidence the
 reviewers saw, asking the rubric as one 8-way choice plus three atomic yes/no questions. The
 full screen cost about **$2**.
 
@@ -201,10 +202,9 @@ Plot.plot({
 
 *Dashed line: reviewer ↔ reviewer agreement.* Where Jev falls short is the multi-hop calls
 its documentation warns about — **symptom swaps** and **over-broad parents** (it recovers
-${(A.jev_per_class.FP2_symptom_swap?.jev_binary * 100).toFixed(0)}% and ${(A.jev_per_class.FP4_overbroad?.jev_binary * 100).toFixed(0)}%), and it flags ${(100 - A.jev_per_class.TARGET.jev_binary * 100).toFixed(0)}% of genuine targets. It missed
-every co-ingredient error, but that one is on our setup: its question set had no such option
-and its evidence didn't separate combination labels. (Excluding those, binary agreement is
-still below the bar.) Asking it to decompose the call into yes/no questions did *not* help
+${(A.jev_per_class.FP2_symptom_swap?.jev_binary * 100).toFixed(0)}% and ${(A.jev_per_class.FP4_overbroad?.jev_binary * 100).toFixed(0)}%), and it flags ${(100 - A.jev_per_class.TARGET.jev_binary * 100).toFixed(0)}% of genuine targets. It caught only
+${(A.jev_per_class.FP6_coingredient?.jev_binary * 100).toFixed(0)}% of co-ingredient errors, partly on our setup: its question set had no such
+option and its evidence didn't separate combination labels. Asking it to decompose the call into yes/no questions did *not* help
 (${(A.decomposed_noul_vs_reference * 100).toFixed(1)}% vs ${(A.jev_binary * 100).toFixed(1)}%).
 
 **How it's used here:** only Jev verdicts at **confidence ≥ 0.9** are shown, as a
@@ -228,7 +228,7 @@ label phrase.
 | FP7 | Not in label | disease absent from the label — usually a term-mapping artifact |
 
 ```js
-const byType = d3.group(E.filter((e) => isFP(e.verdict)), (e) => e.verdict);
+const byType = d3.group(E.filter((e) => e.release === "new" && isFP(e.verdict)), (e) => e.verdict);
 display(html`<div>${[...Object.keys(LABEL)].filter((t) => byType.has(t)).map((t) => html`
   <h3>${t.split("_")[0]} — ${LABEL[t]} <span class="def">· ${byType.get(t).length} in the sample</span></h3>
   <ul class="ex">${byType.get(t).slice(0, 5).map((e) => html`<li>
@@ -242,21 +242,22 @@ display(html`<div>${[...Object.keys(LABEL)].filter((t) => byType.has(t)).map((t)
 
 ```js
 const srcSel = view(Inputs.radio(["all", "medic", "dakp-approved"], {label: "Source", value: "all", format: (v) => v === "all" ? "All" : SRC[v]}));
+const relSel = view(Inputs.radio(["new", "old", "both"], {label: "Release", value: "new", format: (v) => ({new: "Latest", old: "Previous", both: "Both"}[v])}));
 const fpOnly = view(Inputs.toggle({label: "Errors only"}));
 const disagree = view(Inputs.toggle({label: "Jev disagrees"}));
 ```
 
 ```js
 const shown = E.filter((r) =>
-  (srcSel === "all" || r.source === srcSel) && (!fpOnly || isFP(r.verdict)) &&
+  (srcSel === "all" || r.source === srcSel) && (relSel === "both" || r.release === relSel) && (!fpOnly || isFP(r.verdict)) &&
   (!disagree || (isFP(r.jev) !== isFP(r.verdict))));
 const vchip = (v) => html`<span class="${isFP(v) ? "verdict-fp" : v === "TARGET" ? "verdict-ok" : ""}">${v}</span>`;
 display(Inputs.table(shown, {
-  columns: ["source", "drug_label", "disease_label", "verdict", "claude", "claude_b", "jev", "jev_confidence", "judged_against", "note"],
-  header: {source: "Source", drug_label: "Drug", disease_label: "Disease", verdict: "Reference", claude: "Reviewer A",
+  columns: ["source", "release", "drug_label", "disease_label", "verdict", "claude", "claude_b", "jev", "jev_confidence", "judged_against", "note"],
+  header: {source: "Source", release: "Release", drug_label: "Drug", disease_label: "Disease", verdict: "Reference", claude: "Reviewer A",
            claude_b: "Reviewer B", jev: "Jev", jev_confidence: "Jev conf.", judged_against: "Judged vs", note: "Deciding reason"},
   format: {
-    source: (s) => SRC[s],
+    source: (s) => SRC[s], release: (r) => (r === "new" ? "latest" : "previous"),
     drug_label: (l, i, data) => html`<a href="drug?id=${encodeURIComponent(data[i].drug)}">${l}</a>`,
     disease_label: (l, i, data) => html`<a href="disease?id=${encodeURIComponent(data[i].disease)}">${l}</a>`,
     verdict: vchip, claude: vchip, claude_b: vchip, jev: vchip,
@@ -296,6 +297,14 @@ lecanemab → Alzheimer disease as off-label despite clear labels.
 - **Lenient on generic indications.** A narrower edge counts as a target (label "pain" →
   edge "neck pain"); reviewers flagged a handful of site-specific pain edges that pass only
   on this rule.
+- **Two review rounds, one protocol.** The first 150 latest-release edges per source were
+  reviewed first; the remaining 150 plus all previous-release edges were then shuffled
+  together, so reviewers couldn't tell source or release. Round-1 reviewers applied the
+  co-ingredient rule only via the follow-up check; round-2 reviewers saw it in the rubric —
+  the same co-ingredient check ran on both rounds.
+- **Previous releases** were sampled from pairs built from their own source files with the
+  same reconciler, and judged against today's label text (labels drift slowly; a few
+  indications added since could count against an older edge).
 - **Reviewers are one model family.** Both reviewers and the tie-breaker are Claude, so their
   agreement is an upper bound on independent agreement; correlated blind spots are possible.
 - **Evidence breadth matters.** A first round with narrower label matching (exact-UNII only,

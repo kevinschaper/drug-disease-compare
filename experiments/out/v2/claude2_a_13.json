@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f717",
+  "verdict": "FP1_setting",
+  "quote": "patients who are at higher risk independent of their hypertension (for example, patients with diabetes or hyperlipidemia)",
+  "note": "Hyperlipidemia only appears as a background risk population for hypertension treatment."
+ },
+ {
+  "id": "f642",
+  "verdict": "TARGET",
+  "quote": "in combination with prednisone is indicated for the treatment of patients with metastatic castration-resistant prostate cancer",
+  "note": "CRPC is an explicit indication."
+ },
+ {
+  "id": "f162",
+  "verdict": "TARGET",
+  "quote": "replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Congenital hypothyroidism explicitly indicated."
+ },
+ {
+  "id": "f892",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the following ringworm infections; tinea corporis (ringworm of the body)",
+  "note": "Tinea corporis listed as indication."
+ },
+ {
+  "id": "f871",
+  "verdict": "TARGET",
+  "quote": "infections caused by Chlamydia trachomatis : conjunctivitis of the newborn",
+  "note": "Neonatal (inclusion) conjunctivitis due to C. trachomatis is indicated."
+ },
+ {
+  "id": "f033",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with generalized myasthenia gravis (gMG) who are anti-acetylcholine receptor (AChR) antibody-positive",
+  "note": "gMG is a subtype-level indication of myasthenia gravis."
+ },
+ {
+  "id": "f582",
+  "verdict": "TARGET",
+  "quote": "treatment of adult and pediatric patients 1 year of age and older with CD55-deficient protein-losing enteropathy (PLE)",
+  "note": "PLE (CHAPLE) is the indication."
+ },
+ {
+  "id": "f156",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD)",
+  "note": "Only ADHD is indicated; 'atypical behavior' is a broad behavioral category."
+ },
+ {
+  "id": "f376",
+  "verdict": "TARGET",
+  "quote": "add-on maintenance treatment of adult and pediatric patients aged 12 years and older with severe asthma",
+  "note": "Severe asthma is indicated."
+ },
+ {
+  "id": "f490",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels cover general/procedural pain relief; scars or scar pain are not mentioned."
+ },
+ {
+  "id": "f174",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Temporarily relieves these symptoms due to the common cold",
+  "note": "Treats cold symptoms (nasal congestion), not the common cold itself."
+ },
+ {
+  "id": "f462",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of homocystinuria to decrease elevated homocysteine blood concentrations",
+  "note": "Homocystinuria is the indication."
+ },
+ {
+  "id": "f551",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of severe sickle cell disease (SCD) in patients 12 years of age and older with recurrent vaso occlusive crises",
+  "note": "SCD explicitly indicated."
+ },
+ {
+  "id": "f899",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Polymyositis listed among indications."
+ },
+ {
+  "id": "f265",
+  "verdict": "TARGET",
+  "quote": "Hematologic Disorders Idiopathic thrombocytopenic purpura in adults",
+  "note": "ITP (autoimmune thrombocytopenic purpura) listed as indication (IV only)."
+ },
+ {
+  "id": "f591",
+  "verdict": "TARGET",
+  "quote": "indicated for the initial treatment of advanced ovarian carcinoma in established combination with other approved chemotherapeutic agents",
+  "note": "Advanced ovarian carcinoma explicitly indicated."
+ },
+ {
+  "id": "f423",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of Attention Deficit Hyperactivity Disorder (ADHD) and Narcolepsy",
+  "note": "Narcolepsy explicitly indicated."
+ },
+ {
+  "id": "f377",
+  "verdict": "FP1_setting",
+  "quote": "many antihypertensive drugs have additional approved indications and effects (e.g., on angina, heart failure, or diabetic kidney disease)",
+  "note": "Mentioned only in generic class background text, not as telmisartan's indication."
+ },
+ {
+  "id": "f208",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only Muckle-Wells syndrome is mentioned; Wells syndrome (eosinophilic cellulitis) is a name collision."
+ },
+ {
+  "id": "f791",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD) (including emphysema and chronic bronchitis)",
+  "note": "COPD explicitly indicated."
+ },
+ {
+  "id": "f323",
+  "verdict": "TARGET",
+  "quote": "Meningitis due to Neisseria meningitidis .",
+  "note": "Meningococcal meningitis is listed; infectious meningitis is a near parent."
+ },
+ {
+  "id": "f119",
+  "verdict": "TARGET",
+  "quote": "OPDIVO, in combination with platinum-doublet chemotherapy, is indicated as neoadjuvant treatment of adult patients with resectable (tumors ≥4 cm or node positive) non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC explicitly indicated."
+ },
+ {
+  "id": "f840",
+  "verdict": "TARGET",
+  "quote": "Moxidectin Tablets are indicated for the treatment of onchocerciasis due to Onchocerca volvulus",
+  "note": "Onchocerciasis explicitly indicated."
+ },
+ {
+  "id": "f336",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of non-central nervous system (CNS) manifestations of Type 1 or Type 3 Gaucher disease",
+  "note": "Type 1 Gaucher disease explicitly indicated."
+ },
+ {
+  "id": "f773",
+  "verdict": "TARGET",
+  "quote": "Ivermectin tablets are indicated for the treatment of onchocerciasis due to the nematode parasite Onchocerca volvulus",
+  "note": "Onchocerciasis explicitly indicated."
+ },
+ {
+  "id": "f359",
+  "verdict": "FP1_setting",
+  "quote": "with hemodynamically significant congenital heart disease (CHD) and who are 24 months of age or younger at the beginning of RSV season",
+  "note": "CHD is the at-risk population for RSV prophylaxis, not the target."
+ },
+ {
+  "id": "f820",
+  "verdict": "TARGET",
+  "quote": "deleterious BRCA mutation (germline and/or somatic)-associated metastatic castration-resistant prostate cancer (mCRPC)",
+  "note": "Metastatic (stage IV) prostate cancer is indicated."
+ },
+ {
+  "id": "f034",
+  "verdict": "TARGET",
+  "quote": "Gram-negative sepsis caused by E. coli , Proteus mirabilis and Salmonella spp. responds to ampicillin.",
+  "note": "Sepsis/septicemia is indicated; neonatal sepsis is a narrower form."
+ },
+ {
+  "id": "f288",
+  "verdict": "TARGET",
+  "quote": "Ethambutol hydrochloride is indicated for the treatment of pulmonary tuberculosis.",
+  "note": "Pulmonary tuberculosis indicated; tuberculosis is a near parent."
+ },
+ {
+  "id": "f362",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with BCG-unresponsive non-muscle invasive bladder cancer (NMIBC) with carcinoma in situ (CIS)",
+  "note": "NMIBC equals superficial bladder carcinoma."
+ },
+ {
+  "id": "f108",
+  "verdict": "TARGET",
+  "quote": "Psoriatic arthritis; Rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Psoriatic arthritis listed among rheumatic indications."
+ },
+ {
+  "id": "f895",
+  "verdict": "TARGET",
+  "quote": "Actinomycosis caused by Actinomyces species,",
+  "note": "Actinomycosis listed as indication."
+ },
+ {
+  "id": "f699",
+  "verdict": "TARGET",
+  "quote": "atypical hemolytic uremic syndrome (aHUS) to inhibit complement-mediated thrombotic microangiopathy",
+  "note": "Inhibiting complement-mediated TMA is the stated aim."
+ },
+ {
+  "id": "f861",
+  "verdict": "FP1_setting",
+  "quote": "indicated for intravenous administration to infants for treatment of dehydration, acidosis, diarrhea, and burns",
+  "note": "Multi-electrolyte fluid is supportive replacement therapy; burns are the underlying setting."
+ },
+ {
+  "id": "f452",
+  "verdict": "TARGET",
+  "quote": "To tide the patient over a critical period of the disease in regional enteritis (systemic therapy) and ulcerative colitis.",
+  "note": "Ulcerative colitis is listed as an indication."
+ },
+ {
+  "id": "f065",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with refractory or relapsed follicular lymphoma (FL)",
+  "note": "FL indicated (with obinutuzumab)."
+ },
+ {
+  "id": "f766",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text only covers moisturizing dry nasal passages; salicylate poisoning is not mentioned."
+ },
+ {
+  "id": "f324",
+  "verdict": "FP4_overbroad",
+  "quote": "conditioning treatment prior to allogeneic haematopoietic stem cell transplantation (alloHSCT) in adult patients and in paediatric patients older than one month with malignant and non-malignant diseases",
+  "note": "Edge is the root class 'disease'; the indication is HSCT conditioning."
+ },
+ {
+  "id": "f828",
+  "verdict": "TARGET",
+  "quote": "LENVIMA is indicated for the first-line treatment of patients with unresectable hepatocellular carcinoma (HCC).",
+  "note": "HCC explicitly indicated."
+ },
+ {
+  "id": "f463",
+  "verdict": "TARGET",
+  "quote": "Complicated skin and soft tissue infections (cSSTI), excluding diabetic foot infections",
+  "note": "Skin infections (cSSTI) indicated."
+ },
+ {
+  "id": "f127",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with relapsed or refractory multiple myeloma",
+  "note": "Multiple myeloma equals plasma cell myeloma."
+ },
+ {
+  "id": "f264",
+  "verdict": "FP3_cross_section",
+  "quote": "potentiate the hypotensive effects of organic nitrates",
+  "note": "Hypotension appears as an effect/risk (and induced intraoperatively), never as a treated condition."
+ },
+ {
+  "id": "f186",
+  "verdict": "FP4_overbroad",
+  "quote": "for the treatment of adult patients with PSMA-positive metastatic androgen pathway modulation-resistant (mAPMR) prostate cancer",
+  "note": "Only PSMA-positive metastatic prostate cancer is indicated; 'cancer' is too broad."
+ },
+ {
+  "id": "f024",
+  "verdict": "FP2_symptom_swap",
+  "quote": "In OSA, modafinil tablets, USP are indicated to treat excessive sleepiness and not as treatment for the underlying obstruction.",
+  "note": "Treats the sleepiness symptom, not OSA itself."
+ },
+ {
+  "id": "f180",
+  "verdict": "TARGET",
+  "quote": "improve survival of stable adult patients with symptomatic heart failure with reduced ejection fraction (HFrEF) after an acute myocardial infarction",
+  "note": "Heart failure (HFrEF) is indicated; CHF is a near synonym."
+ }
+]

@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f177",
+  "verdict": "TARGET",
+  "quote": "indicated only in the treatment of serious infections caused by susceptible strains of Candida",
+  "note": "Candida septicemia is a serious Candida infection; label also cites septicemia responses."
+ },
+ {
+  "id": "f656",
+  "verdict": "TARGET",
+  "quote": "indicated to control ventricular rate in patients with atrial fibrillation and a rapid ventricular response",
+  "note": "Atrial fibrillation rate control is a named indication."
+ },
+ {
+  "id": "f642",
+  "verdict": "TARGET",
+  "quote": "in combination with prednisone is indicated for the treatment of patients with metastatic castration-resistant prostate cancer",
+  "note": "Metastatic CRPC is a named indication; edge is a near synonym."
+ },
+ {
+  "id": "f468",
+  "verdict": "TARGET",
+  "quote": "help restore normal serum potassium levels in patients who develop hypokalemia on the kaliuretic diuretic",
+  "note": "Hypokalemia (potassium deficiency) treatment and prevention is the indication."
+ },
+ {
+  "id": "f007",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "COVID-19 is not mentioned; seizure indications are restricted to epilepsy patients (seizure clusters / prolonged seizures), not COVID-related seizures."
+ },
+ {
+  "id": "f587",
+  "verdict": "FP1_setting",
+  "quote": "Genotype 1, 4, 5, or 6 infection without cirrhosis or with compensated cirrhosis",
+  "note": "Compensated cirrhosis is a patient subgroup for HCV treatment, not the treated disease."
+ },
+ {
+  "id": "f107",
+  "verdict": "FP4_overbroad",
+  "quote": "palliative treatment of patients with advanced metastatic colorectal cancer",
+  "note": "Label indicates metastatic colorectal cancer (and methotrexate rescue in osteosarcoma); generic cancer is overbroad."
+ },
+ {
+  "id": "f487",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Edge is an acronym collision with B ALL (B cell precursor acute lymphoblastic leukaemia); no device mentioned."
+ },
+ {
+  "id": "f088",
+  "verdict": "FP1_setting",
+  "quote": "mobilize hematopoietic stem cells to the peripheral blood for collection and subsequent autologous transplantation in patients with multiple myeloma",
+  "note": "Myeloma is the population; drug is a stem cell mobilizer, not myeloma treatment."
+ },
+ {
+  "id": "f813",
+  "verdict": "TARGET",
+  "quote": "Mild, uncomplicated allergic skin manifestations of urticaria and angioedema",
+  "note": "Angioedema is named in the indication list."
+ },
+ {
+  "id": "f555",
+  "verdict": "FP1_setting",
+  "quote": "significant underlying health problems that may compromise their ability to respond to their illness (including immunodeficiency or functional asplenia)",
+  "note": "Functional asplenia appears only as a risk-factor population in limitations of use."
+ },
+ {
+  "id": "f648",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of tinea pedis (athlete's foot), tinea cruris, and tinea corporis",
+  "note": "Cream labels indicate tinea pedis (solution label says unproven; texts are a union)."
+ },
+ {
+  "id": "f264",
+  "verdict": "FP1_setting",
+  "quote": "for induction of intraoperative hypotension",
+  "note": "Hypotension is a deliberately induced surgical effect, not a disorder being treated."
+ },
+ {
+  "id": "f886",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of symptoms of intermittent claudication",
+  "note": "Intermittent claudication is the indication."
+ },
+ {
+  "id": "f490",
+  "verdict": "TARGET",
+  "quote": "For the temporary relief of pain",
+  "note": "Generic topical pain relief; scar pain is a local pain subtype, though scar is not named."
+ },
+ {
+  "id": "f744",
+  "verdict": "TARGET",
+  "quote": "ELIQUIS is indicated for the treatment of deep vein thrombosis (DVT)",
+  "note": "DVT treatment and prophylaxis are named indications."
+ },
+ {
+  "id": "f717",
+  "verdict": "FP1_setting",
+  "quote": "patients who are at higher risk independent of their hypertension (for example, patients with diabetes or hyperlipidemia)",
+  "note": "Hyperlipidemia is cited only as a background risk factor in the hypertension indication."
+ },
+ {
+  "id": "f674",
+  "verdict": "TARGET",
+  "quote": "Aspiration pneumonitis",
+  "note": "Named in the respiratory diseases indication list."
+ },
+ {
+  "id": "f379",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of hypoglycemia due to hyperinsulinism",
+  "note": "Hypoglycemia (due to hyperinsulinism) is the indication."
+ },
+ {
+  "id": "f303",
+  "verdict": "TARGET",
+  "quote": "relief of moderate to severe pain such as that due to: surgery, cancer, trauma (soft tissue and bone), biliary colic",
+  "note": "Pain of biliary colic is a named indication."
+ },
+ {
+  "id": "f497",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of presbyopia in adults",
+  "note": "Exact match."
+ },
+ {
+  "id": "f155",
+  "verdict": "FP6_coingredient",
+  "quote": "Prevention of Postmenopausal Osteoporosis",
+  "note": "Only bone-related indication is on an estrogen plus progestin combination label (estrogen effect); BMD loss otherwise appears as a warning."
+ },
+ {
+  "id": "f764",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indication is only psoriasis; no CTCL/lymphoma mentioned."
+ },
+ {
+  "id": "f382",
+  "verdict": "TARGET",
+  "quote": "indicated for the preventive treatment of migraine in adults",
+  "note": "Migraine prevention is the indication."
+ },
+ {
+  "id": "f137",
+  "verdict": "TARGET",
+  "quote": "to ameliorate symptoms of hyperthyroidism in preparation for thyroidectomy or radioactive iodine therapy",
+  "note": "Hyperthyroidism (Graves, toxic multinodular goiter) is the indication."
+ },
+ {
+  "id": "f178",
+  "verdict": "TARGET",
+  "quote": "indicated preoperatively to prevent or attenuate the development of signs of malignant hyperthermia",
+  "note": "Malignant hyperthermia prevention/management is indicated."
+ },
+ {
+  "id": "f050",
+  "verdict": "TARGET",
+  "quote": "adults and pediatric patients aged 8 years and older with heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "HeFH is a named indication."
+ },
+ {
+  "id": "f832",
+  "verdict": "TARGET",
+  "quote": "predominantly classic subfoveal choroidal neovascularization (CNV) due to age-related macular degeneration (AMD)",
+  "note": "Neovascular AMD is the indicated condition; edge is a near parent."
+ },
+ {
+  "id": "f004",
+  "verdict": "TARGET",
+  "quote": "improve wakefulness in adult patients with excessive sleepiness associated with narcolepsy, obstructive sleep apnea, and shift work disorder",
+  "note": "Shift work disorder named; sleepiness is its core feature."
+ },
+ {
+  "id": "f549",
+  "verdict": "FP2_symptom_swap",
+  "quote": "spasticity caused by upper motor neuron disorders (such as cerebral palsy and paraplegia)",
+  "note": "Drug relieves spasticity, a manifestation; CP itself is not treated."
+ },
+ {
+  "id": "f142",
+  "verdict": "TARGET",
+  "quote": "Herpes zoster ophthalmicus",
+  "note": "Named in the ophthalmic diseases list."
+ },
+ {
+  "id": "f829",
+  "verdict": "TARGET",
+  "quote": "primary hypercholesterolemia (heterozygous familial and nonfamilial)",
+  "note": "Familial hypercholesterolemia is named in the indication."
+ },
+ {
+  "id": "f622",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Simple absence is defined as very brief clouding of the sensorium or loss of consciousness",
+  "note": "Loss of consciousness appears only as a feature in the definition of absence seizures, which are treated."
+ },
+ {
+  "id": "f100",
+  "verdict": "TARGET",
+  "quote": "indicated for the rapid conversion of atrial fibrillation or atrial flutter of recent onset to sinus rhythm",
+  "note": "AF conversion is the indication."
+ },
+ {
+  "id": "f660",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Edema is not mentioned in the supplied text."
+ },
+ {
+  "id": "f305",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Irritability is not mentioned; closest is menopausal mood swings, not a synonym."
+ },
+ {
+  "id": "f198",
+  "verdict": "FP5_negation",
+  "quote": "have not been found effective in the treatment of spasticity associated with cerebral or spinal cord disease",
+  "note": "Explicit negation for spinal cord disease."
+ },
+ {
+  "id": "f713",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of thrombocythemia, secondary to myeloproliferative neoplasms",
+  "note": "Thrombocythemia is the indication; thrombocytosis is a near synonym."
+ },
+ {
+  "id": "f454",
+  "verdict": "FP5_negation",
+  "quote": "not indicated for treatment of transient hypothyroidism during the recovery phase of subacute thyroiditis",
+  "note": "Explicitly not indicated."
+ },
+ {
+  "id": "f778",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated to decrease angina frequency and increase exercise tolerance in patients with angina pectoris",
+  "note": "Drug treats angina; coronary atherosclerosis is the underlying cause named only in the heading."
+ },
+ {
+  "id": "f761",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of cutaneous manifestations of cutaneous T-cell lymphoma",
+  "note": "CTCL (primary cutaneous) is the indication."
+ },
+ {
+  "id": "f242",
+  "verdict": "TARGET",
+  "quote": "indicated in combination with other anti-myeloma products for the treatment of adults with multiple myeloma (MM)",
+  "note": "Multiple myeloma is a named indication."
+ },
+ {
+  "id": "f712",
+  "verdict": "FP1_setting",
+  "quote": "idiopathic pulmonary fibrosis (IPF), combined pulmonary fibrosis and emphysema (CPFE) (25%)",
+  "note": "CPFE is a study-population etiology; the treated condition is pulmonary hypertension associated with ILD."
+ },
+ {
+  "id": "f337",
+  "verdict": "TARGET",
+  "quote": "Chorioretinitis",
+  "note": "Named in the ophthalmic diseases list."
+ },
+ {
+  "id": "f333",
+  "verdict": "FP1_setting",
+  "quote": "treatment of secondary hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on hemodialysis",
+  "note": "CKD is the population; secondary HPT is treated."
+ }
+]

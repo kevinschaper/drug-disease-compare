@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f247",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with advanced or metastatic breast cancer as a single agent",
+  "note": "Breast cancer is a labeled indication."
+ },
+ {
+  "id": "f069",
+  "verdict": "TARGET",
+  "quote": "improve wakefulness in adult patients with excessive sleepiness associated with obstructive sleep apnea (OSA), narcolepsy, or shift work disorder (SWD)",
+  "note": "Narcolepsy-associated sleepiness is managed; counts as disease management."
+ },
+ {
+  "id": "f268",
+  "verdict": "TARGET",
+  "quote": "chronic treatment of mild to moderate atopic dermatitis",
+  "note": "Atopic dermatitis is a synonym of atopic eczema."
+ },
+ {
+  "id": "f122",
+  "verdict": "TARGET",
+  "quote": "prolong the time to recurrence of paroxysmal supraventricular tachycardia (PSVT) associated with disabling symptoms",
+  "note": "PSVT explicitly indicated."
+ },
+ {
+  "id": "f311",
+  "verdict": "TARGET",
+  "quote": "metastatic ovarian carcinoma",
+  "note": "Stage IV ovarian cancer corresponds to the labeled metastatic ovarian carcinoma."
+ },
+ {
+  "id": "f554",
+  "verdict": "TARGET",
+  "quote": "treatment of elevated intraocular pressure (IOP) in patients with ocular hypertension or open-angle glaucoma",
+  "note": "Ocular hypertension is a labeled indication."
+ },
+ {
+  "id": "f730",
+  "verdict": "TARGET",
+  "quote": "Impetigo contagiosa, superficial folliculitis, ecthyma, furunculosis, sycosis barbae",
+  "note": "Furunculosis listed among primary skin infections."
+ },
+ {
+  "id": "f144",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of obsessions and compulsions in patients with Obsessive-Compulsive Disorder (OCD)",
+  "note": "OCD explicitly indicated."
+ },
+ {
+  "id": "f276",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy ... seizures associated with Lennox-Gastaut syndrome",
+  "note": "Seizures of LGS are labeled; counts as management of LGS."
+ },
+ {
+  "id": "f042",
+  "verdict": "TARGET",
+  "quote": "Adult patients with relapsed or refractory large B-cell lymphoma (LBCL)",
+  "note": "LBCL explicitly indicated."
+ },
+ {
+  "id": "f469",
+  "verdict": "TARGET",
+  "quote": "locally advanced, unresectable, or metastatic pheochromocytoma or paraganglioma (PPGL)",
+  "note": "Paraganglioma explicitly indicated."
+ },
+ {
+  "id": "f300",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of T-cell acute lymphoblastic leukemia (T-ALL) and T-cell lymphoblastic lymphoma (T-LBL)",
+  "note": "Label covers only relapsed T-ALL; 'leukemia' is a whole disease class."
+ },
+ {
+  "id": "f896",
+  "verdict": "TARGET",
+  "quote": "acute treatment of migraine with or without aura in adults",
+  "note": "Migraine without aura explicitly covered."
+ },
+ {
+  "id": "f520",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with moderately to severely active ulcerative colitis",
+  "note": "EMA indication for UC."
+ },
+ {
+  "id": "f391",
+  "verdict": "TARGET",
+  "quote": "treatment of Human Immunodeficiency Virus type 1 (HIV-1) infection",
+  "note": "HIV-1 treatment and PrEP indicated (EMA)."
+ },
+ {
+  "id": "f041",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of glucocorticoid-induced osteoporosis",
+  "note": "Glucocorticoid-induced = corticosteroid-induced osteoporosis."
+ },
+ {
+  "id": "f526",
+  "verdict": "TARGET",
+  "quote": "airflow obstruction in patients with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and/or emphysema",
+  "note": "Chronic bronchitis named; bronchitis is a near parent."
+ },
+ {
+  "id": "f475",
+  "verdict": "TARGET",
+  "quote": "Temporary control of rapid ventricular rate in atrial fibrillation or atrial flutter",
+  "note": "Rate control in AF is a labeled indication."
+ },
+ {
+  "id": "f425",
+  "verdict": "TARGET",
+  "quote": "Tadalafil Tablets are indicated for the treatment of erectile dysfunction (ED)",
+  "note": "ED explicitly indicated."
+ },
+ {
+  "id": "f431",
+  "verdict": "TARGET",
+  "quote": "As therapy for anaphylactic reactions adjunctive to epinephrine and other standard measures",
+  "note": "Adjunctive therapy of anaphylaxis is labeled."
+ },
+ {
+  "id": "f563",
+  "verdict": "TARGET",
+  "quote": "chlorthalidone tablets, USP are indicated in the management of hypertension",
+  "note": "Hypertension explicitly indicated."
+ },
+ {
+  "id": "f814",
+  "verdict": "FP5_negation",
+  "quote": "Not for the treatment of type 1 diabetes mellitus or diabetic ketoacidosis",
+  "note": "Label explicitly excludes DKA (also a contraindication)."
+ },
+ {
+  "id": "f350",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Local/regional anesthesia only; aspiration pneumonitis not mentioned."
+ },
+ {
+  "id": "f575",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of ocular hypertension and chronic open-angle glaucoma",
+  "note": "Glaucoma (open-angle) indicated."
+ },
+ {
+  "id": "f550",
+  "verdict": "FP2_symptom_swap",
+  "quote": "severe diarrhea-predominant irritable bowel syndrome ... frequent bowel urgency or fecal incontinence",
+  "note": "Drug treats IBS-D; fecal incontinence only appears as a severity-defining manifestation."
+ },
+ {
+  "id": "f453",
+  "verdict": "TARGET",
+  "quote": "EGATEN is indicated for the treatment of fascioliasis in patients 6 years of age and older",
+  "note": "Fascioliasis explicitly indicated."
+ },
+ {
+  "id": "f188",
+  "verdict": "FP1_setting",
+  "quote": "Definite Atherosclerotic Disease* ... * Coronary heart disease or peripheral vascular disease",
+  "note": "Indicated for hypercholesterolemia; CHD appears only as a risk category in the NCEP table."
+ },
+ {
+  "id": "f160",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases Pemphigus Severe erythema multiforme (Stevens-Johnson syndrome) Exfoliative dermatitis",
+  "note": "Exfoliative dermatitis listed among indicated dermatologic diseases."
+ },
+ {
+  "id": "f883",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate to severe acute pain, including postoperative pain, in adults",
+  "note": "Bone pain not named; read as a narrower acute pain type (low confidence)."
+ },
+ {
+  "id": "f318",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Label covers type 2 diabetes; ketosis-prone diabetes not mentioned (only DKA risk/exclusion)."
+ },
+ {
+  "id": "f091",
+  "verdict": "FP5_negation",
+  "quote": "not indicated for suppression of benign thyroid nodules and nontoxic diffuse goiter in iodine-sufficient patients",
+  "note": "Goiter appears only in a limitation of use."
+ },
+ {
+  "id": "f522",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+  "note": "OPTN-related OAG is a subtype of indicated open-angle glaucoma."
+ },
+ {
+  "id": "f150",
+  "verdict": "FP1_setting",
+  "quote": "secondary (post-polycythemia vera or post-essential thrombocythemia) myelofibrosis (MF)",
+  "note": "Indicated for myelofibrosis; ET is only the antecedent background."
+ },
+ {
+  "id": "f262",
+  "verdict": "FP1_setting",
+  "quote": "MI and stroke in adults with type 2 diabetes mellitus with multiple risk factors for CHD",
+  "note": "Diabetes is the population for CV risk reduction, not the target."
+ },
+ {
+  "id": "f860",
+  "verdict": "TARGET",
+  "quote": "treatment of tinea pedis, tinea cruris, and tinea corporis",
+  "note": "Tinea cruris = dermatophytosis of groin."
+ },
+ {
+  "id": "f492",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lupus/discoid lupus not mentioned in any lidocaine text."
+ },
+ {
+  "id": "f727",
+  "verdict": "TARGET",
+  "quote": "anogenital pruritus (vulvae, scroti, ani)",
+  "note": "Pruritus ani explicitly listed."
+ },
+ {
+  "id": "f070",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves these symptoms due to hay fever or other upper respiratory allergies: runny nose sneezing itchy, watery eyes",
+  "note": "Hay fever = allergic rhinitis; symptom relief is its management."
+ },
+ {
+  "id": "f076",
+  "verdict": "TARGET",
+  "quote": "Locally or regionally advanced squamous cell carcinoma of the head and neck in combination with radiation therapy",
+  "note": "SCCHN indicated."
+ },
+ {
+  "id": "f388",
+  "verdict": "TARGET",
+  "quote": "Allergic conjunctivitis Keratitis Allergic corneal marginal ulcers",
+  "note": "Keratitis listed among ophthalmic indications."
+ },
+ {
+  "id": "f853",
+  "verdict": "TARGET",
+  "quote": "the treatment of patients with atypical hemolytic uremic syndrome (aHUS)",
+  "note": "aHUS indicated (STEC-HUS excluded); HUS is a near parent."
+ },
+ {
+  "id": "f815",
+  "verdict": "TARGET",
+  "quote": "adjunctive treatment to levodopa/carbidopa in adult patients with Parkinson's disease (PD) experiencing \"off\" episodes",
+  "note": "Adjunctive PD treatment."
+ },
+ {
+  "id": "f471",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin",
+  "note": "Diphtheria explicitly indicated."
+ },
+ {
+  "id": "f152",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Back pain not mentioned; venlafaxine indicated for MDD/anxiety disorders."
+ },
+ {
+  "id": "f868",
+  "verdict": "TARGET",
+  "quote": "treatment of Acute Bacterial Exacerbation of Chronic Bronchitis (ABECB)",
+  "note": "ABECB explicitly indicated."
+ }
+]

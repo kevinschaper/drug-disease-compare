@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f659",
+  "verdict": "FP1_setting",
+  "quote": "genotype 1 infection with decompensated cirrhosis, in combination with ribavirin",
+  "note": "Decompensated cirrhosis is the patient population; the treated disease is chronic HCV."
+ },
+ {
+  "id": "f188",
+  "verdict": "FP1_setting",
+  "quote": "Definite Atherosclerotic Disease* ... * Coronary heart disease or peripheral vascular disease",
+  "note": "CHD appears only as a risk category in the LDL table; the indication is primary hypercholesterolemia."
+ },
+ {
+  "id": "f512",
+  "verdict": "TARGET",
+  "quote": "adjuvant treatment of adults with newly diagnosed anaplastic astrocytoma; treatment of adults with refractory anaplastic astrocytoma",
+  "note": "Named indication."
+ },
+ {
+  "id": "f182",
+  "verdict": "TARGET",
+  "quote": "Vemlidy is indicated for the treatment of chronic hepatitis B (CHB) in adults and paediatric patients 6 years of age and older",
+  "note": "EMA indication names chronic hepatitis B."
+ },
+ {
+  "id": "f115",
+  "verdict": "TARGET",
+  "quote": "indicated for the topical treatment of persistent facial erythema associated with rosacea in adults",
+  "note": "Erythema itself is the treated target."
+ },
+ {
+  "id": "f649",
+  "verdict": "TARGET",
+  "quote": "Diazepam is indicated for the management of anxiety disorders",
+  "note": "Named indication."
+ },
+ {
+  "id": "f875",
+  "verdict": "TARGET",
+  "quote": "for the treatment of seborrheic dermatitis of the scalp, dandruff and tinea versicolor",
+  "note": "Infantile seborrheic dermatitis is a subtype of indicated seborrheic dermatitis of the scalp."
+ },
+ {
+  "id": "f228",
+  "verdict": "FP1_setting",
+  "quote": "It can be used as a diagnostic aid in such conditions as panhypopituitarism, ... acromegaly, gigantism",
+  "note": "Diagnostic use only; gigantism is the setting, not treated."
+ },
+ {
+  "id": "f390",
+  "verdict": "TARGET",
+  "quote": "Sertraline hydrochloride is indicated for the treatment of panic disorder in adults, with or without agoraphobia",
+  "note": "Named indication."
+ },
+ {
+  "id": "f095",
+  "verdict": "TARGET",
+  "quote": "For symptomatic relief of anxiety and tension associated with psychoneurosis",
+  "note": "Anxiety is the treated condition."
+ },
+ {
+  "id": "f229",
+  "verdict": "TARGET",
+  "quote": "Uncomplicated skin and skin structure infections due to Staphylococcus aureus , or Streptococcus pyogenes",
+  "note": "Skin infections are indicated."
+ },
+ {
+  "id": "f426",
+  "verdict": "TARGET",
+  "quote": "1.6 Prevention of Postmenopausal Osteoporosis",
+  "note": "Named indication on single-ingredient conjugated estrogens labels."
+ },
+ {
+  "id": "f204",
+  "verdict": "FP5_negation",
+  "quote": "Lenalidomide capsules are not indicated and are not recommended for the treatment of patients with chronic lymphocytic leukemia (CLL) outside of controlled clinical trials",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f292",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy for the treatment of acute hyperammonemia and associated encephalopathy in patients with deficiencies in enzymes of the urea cycle",
+  "note": "Sodium benzoate is one of the two nitrogen-binding actives jointly responsible for the indication."
+ },
+ {
+  "id": "f231",
+  "verdict": "TARGET",
+  "quote": "Attention Deficit Hyperactivity Disorder (ADHD) in adults and pediatric patients 6 years and older",
+  "note": "Inattentive type is a subtype of indicated ADHD."
+ },
+ {
+  "id": "f048",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with unresectable or metastatic melanoma with a BRAF V600 mutation",
+  "note": "Named indication."
+ },
+ {
+  "id": "f378",
+  "verdict": "TARGET",
+  "quote": "1.10 Pulmonary Diseases ... Idiopathic pulmonary fibrosis",
+  "note": "IPF is listed; pulmonary fibrosis is a near parent, not a whole class."
+ },
+ {
+  "id": "f811",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Beryllium disease not mentioned; lidocaine labels are for minor pain/anesthesia."
+ },
+ {
+  "id": "f433",
+  "verdict": "TARGET",
+  "quote": "Acebutolol hydrochloride capsules, USP are indicated for the management of hypertension in adults",
+  "note": "Named indication."
+ },
+ {
+  "id": "f364",
+  "verdict": "TARGET",
+  "quote": "indicated in adults and children 4 years or older for treatment of familial Mediterranean fever (FMF)",
+  "note": "Named indication."
+ },
+ {
+  "id": "f511",
+  "verdict": "TARGET",
+  "quote": "advanced or metastatic RET fusion-positive thyroid cancer who require systemic therapy",
+  "note": "Thyroid cancer is named."
+ },
+ {
+  "id": "f672",
+  "verdict": "FP3_cross_section",
+  "quote": "Digitalis glycosides, such as digoxin, are contraindicated in ventricular fibrillation.",
+  "note": "Ventricular arrhythmia appears only in contraindications/warnings; indications are HF and AF rate control."
+ },
+ {
+  "id": "f695",
+  "verdict": "TARGET",
+  "quote": "Intravenous propranolol is indicated for the treatment of persistent premature ventricular extrasystoles",
+  "note": "PVCs named as indication."
+ },
+ {
+  "id": "f862",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Portal hypertension not mentioned; nadolol indicated for angina and systemic hypertension."
+ },
+ {
+  "id": "f078",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the prevention of angina pectoris due to coronary artery disease",
+  "note": "Arterial disorder is an organ-system category far broader than angina due to CAD."
+ },
+ {
+  "id": "f591",
+  "verdict": "TARGET",
+  "quote": "Carboplatin Injection is indicated for the initial treatment of advanced ovarian carcinoma",
+  "note": "Named indication."
+ },
+ {
+  "id": "f179",
+  "verdict": "FP5_negation",
+  "quote": "Complicated skin and skin structure infections, including diabetic foot infections, without concomitant osteomyelitis",
+  "note": "Osteomyelitis explicitly excluded."
+ },
+ {
+  "id": "f772",
+  "verdict": "TARGET",
+  "quote": "Vyjuvek is indicated for the treatment of wounds in patients with dystrophic epidermolysis bullosa (DEB)",
+  "note": "Wounds are the treated target."
+ },
+ {
+  "id": "f796",
+  "verdict": "TARGET",
+  "quote": "Relapsed or refractory, low grade or follicular, CD20-positive B-cell NHL as a single agent",
+  "note": "Low-grade B-cell NHL is indolent B-cell NHL."
+ },
+ {
+  "id": "f374",
+  "verdict": "TARGET",
+  "quote": "VYVGART HYTRULO is indicated for the treatment of adult patients with: ... chronic inflammatory demyelinating polyneuropathy (CIDP)",
+  "note": "Indication attributable to efgartigimod, the active component; hyaluronidase is a delivery enzyme."
+ },
+ {
+  "id": "f304",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only advanced RCC is indicated; Stage I RCC is not mentioned and is not a subtype of advanced RCC."
+ },
+ {
+  "id": "f650",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the induction of remission in adults and pediatric patients 1 year of age and older with acute promyelocytic leukemia (APL)",
+  "note": "Label indicates APL; edge \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f612",
+  "verdict": "TARGET",
+  "quote": "Guanfacine Tablets, USP are indicated in the management of hypertension.",
+  "note": "Named indication."
+ },
+ {
+  "id": "f049",
+  "verdict": "TARGET",
+  "quote": "Itvisma is indicated for the treatment of 5q spinal muscular atrophy (SMA)",
+  "note": "Named indication."
+ },
+ {
+  "id": "f265",
+  "verdict": "TARGET",
+  "quote": "Hematologic Disorders Idiopathic thrombocytopenic purpura in adults",
+  "note": "ITP is the synonym of autoimmune thrombocytopenic purpura."
+ },
+ {
+  "id": "f298",
+  "verdict": "TARGET",
+  "quote": "indicated, in combination with dabrafenib, for the treatment of patients with metastatic non-small cell lung cancer (NSCLC) with BRAF V600E mutation",
+  "note": "Named indication."
+ },
+ {
+  "id": "f503",
+  "verdict": "TARGET",
+  "quote": "indicated for the prophylaxis of malaria due to Plasmodium falciparum in short-term travelers",
+  "note": "Prevention counts."
+ },
+ {
+  "id": "f884",
+  "verdict": "FP5_negation",
+  "quote": "not recommended for the treatment of diabetic ketoacidosis",
+  "note": "Every mention of ketoacidosis is a limitation of use."
+ },
+ {
+  "id": "f285",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of partial seizures with complex symptomatology, generalized tonic-clonic seizures, and mixed seizures",
+  "note": "Generalized tonic-clonic seizures named."
+ },
+ {
+  "id": "f121",
+  "verdict": "TARGET",
+  "quote": "adjuvant treatment of patients with Stage III colon cancer",
+  "note": "Colon cancer named."
+ },
+ {
+  "id": "f408",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with RAS wild-type, HER2-positive unresectable or metastatic colorectal cancer",
+  "note": "Named indication."
+ },
+ {
+  "id": "f894",
+  "verdict": "TARGET",
+  "quote": "treatment of infections of the urinary tract, meninges, and bloodstream caused by susceptible strains of Ps. aeruginosa",
+  "note": "Bloodstream infection/bacteremia indicated, matching bacterial sepsis."
+ },
+ {
+  "id": "f563",
+  "verdict": "TARGET",
+  "quote": "Diuretics such as chlorthalidone are indicated in the management of hypertension",
+  "note": "Named indication."
+ },
+ {
+  "id": "f820",
+  "verdict": "TARGET",
+  "quote": "deleterious BRCA mutation (germline and/or somatic)-associated metastatic castration-resistant prostate cancer (mCRPC)",
+  "note": "Metastatic prostate cancer is stage IV."
+ },
+ {
+  "id": "f484",
+  "verdict": "TARGET",
+  "quote": "indicated for topical application in the treatment of inflammatory papules and pustules of rosacea",
+  "note": "Pustules are the treated target."
+ }
+]

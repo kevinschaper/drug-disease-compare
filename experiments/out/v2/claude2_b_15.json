@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f122",
+  "verdict": "TARGET",
+  "quote": "prolong the time to recurrence of paroxysmal supraventricular tachycardia (PSVT) associated with disabling symptoms in patients without structural heart disease",
+  "note": "IR propafenone tablets are indicated for PSVT (ER capsule note of non-evaluation does not negate)."
+ },
+ {
+  "id": "f754",
+  "verdict": "TARGET",
+  "quote": "Vinblastine sulfate has been shown to be one of the most effective single agents for the treatment of Hodgkin’s disease",
+  "note": "Classic Hodgkin lymphoma is a subtype of the indicated Hodgkin's disease."
+ },
+ {
+  "id": "f436",
+  "verdict": "FP2_symptom_swap",
+  "quote": "palpitations, pounding heart, or accelerated heart rate;",
+  "note": "Palpitations appear only as a panic-attack criterion; the drug treats panic disorder, not palpitations."
+ },
+ {
+  "id": "f581",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of acute pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Musculoskeletal pain is a narrower form of the indicated severe pain."
+ },
+ {
+  "id": "f350",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Aspiration pneumonitis is not mentioned anywhere in the bupivacaine texts."
+ },
+ {
+  "id": "f580",
+  "verdict": "TARGET",
+  "quote": "LIBTAYO in combination with platinum‐based chemotherapy is indicated for the first‐line treatment of adult patients with non-small cell lung cancer (NSCLC)",
+  "note": "Lung cancer is a near parent of indicated NSCLC, not a whole disease class."
+ },
+ {
+  "id": "f871",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of the following infections caused by Chlamydia trachomatis : conjunctivitis of the newborn",
+  "note": "Neonatal chlamydial (inclusion) conjunctivitis is explicitly listed."
+ },
+ {
+  "id": "f076",
+  "verdict": "TARGET",
+  "quote": "Head and Neck Cancer Locally or regionally advanced squamous cell carcinoma of the head and neck in combination with radiation therapy",
+  "note": "Head and neck cancer (SCCHN) is an indicated section."
+ },
+ {
+  "id": "f280",
+  "verdict": "TARGET",
+  "quote": "Treatment of Esophageal Candidiasis in adult and pediatric patients 4 months of age and older",
+  "note": "Esophageal candidiasis is explicitly indicated."
+ },
+ {
+  "id": "f412",
+  "verdict": "TARGET",
+  "quote": "Brukinsa&nbsp;as monotherapy is indicated for the treatment of adult patients with marginal zone lymphoma (MZL)",
+  "note": "MZL explicitly indicated in EMA text."
+ },
+ {
+  "id": "f469",
+  "verdict": "TARGET",
+  "quote": "WELIREG is indicated for the treatment of adult and pediatric patients 12 years and older with locally advanced, unresectable, or metastatic pheochromocytoma or paraganglioma (PPGL)",
+  "note": "Paraganglioma explicitly indicated."
+ },
+ {
+  "id": "f211",
+  "verdict": "TARGET",
+  "quote": "Tinidazole is indicated for the treatment of trichomoniasis caused by Trichomonas vaginalis",
+  "note": "Trichomoniasis explicitly indicated."
+ },
+ {
+  "id": "f286",
+  "verdict": "TARGET",
+  "quote": "weight management in adult patients with an initial Body Mass Index (BMI) of ≥ 30 kg/m² (obese)",
+  "note": "Chronic weight management in obesity is indicated (FDA and EMA)."
+ },
+ {
+  "id": "f835",
+  "verdict": "FP2_symptom_swap",
+  "quote": "monotherapy in the treatment of partial seizures, with or without secondary generalisation",
+  "note": "Indication treats partial seizures; edge is an EEG finding, not the treated clinical condition or an exact synonym."
+ },
+ {
+  "id": "f690",
+  "verdict": "FP1_setting",
+  "quote": "reduces the rate of progression of nephropathy as measured by the occurrence of doubling of serum creatinine or end stage renal disease",
+  "note": "Indication is diabetic nephropathy; ESRD appears only as an outcome endpoint, not a condition treated."
+ },
+ {
+  "id": "f313",
+  "verdict": "TARGET",
+  "quote": "ONGENTYS is indicated as adjunctive treatment to levodopa/carbidopa in patients with Parkinson’s disease (PD) experiencing “off” episodes",
+  "note": "Adjunctive PD therapy counts as management of PD."
+ },
+ {
+  "id": "f291",
+  "verdict": "TARGET",
+  "quote": "Pharyngitis/tonsillitis caused by Streptococcus pyogenes",
+  "note": "Pharyngitis explicitly listed."
+ },
+ {
+  "id": "f127",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with relapsed or refractory multiple myeloma",
+  "note": "Plasma cell myeloma = multiple myeloma."
+ },
+ {
+  "id": "f582",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult and pediatric patients 1 year of age and older with CD55-deficient protein-losing enteropathy (PLE), also known as CHAPLE disease",
+  "note": "Edge is a near parent of the indicated CD55-deficient PLE (not an organ-system class)."
+ },
+ {
+  "id": "f664",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is an in vitro RBC rejuvenation solution; leukemic leptomeningitis not mentioned."
+ },
+ {
+  "id": "f493",
+  "verdict": "FP1_setting",
+  "quote": "anorexia associated with weight loss in patients with Acquired Immune Deficiency Syndrome (AIDS)",
+  "note": "The treated condition is anorexia; weight loss is only a qualifier of the population."
+ },
+ {
+  "id": "f312",
+  "verdict": "TARGET",
+  "quote": "Cephalexin for oral suspension is indicated for the treatment of otitis media",
+  "note": "Otitis media explicitly indicated."
+ },
+ {
+  "id": "f809",
+  "verdict": "TARGET",
+  "quote": "indicated in adults for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "CRPS is a specific pain condition under the generic severe-pain indication."
+ },
+ {
+  "id": "f743",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No mention of thrombophilia or thrombin defect; only VTE/AF indications."
+ },
+ {
+  "id": "f172",
+  "verdict": "TARGET",
+  "quote": "Unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer",
+  "note": "Edge NSCLC is a near parent of the indicated non-squamous NSCLC."
+ },
+ {
+  "id": "f453",
+  "verdict": "TARGET",
+  "quote": "EGATEN ® is indicated for the treatment of fascioliasis in patients 6 years of age and older",
+  "note": "Fascioliasis explicitly indicated."
+ },
+ {
+  "id": "f633",
+  "verdict": "TARGET",
+  "quote": "Acute adrenocortical insufficiency (hydrocortisone or cortisone is the drug of choice",
+  "note": "Acute adrenocortical insufficiency is listed among endocrine indications."
+ },
+ {
+  "id": "f051",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated in the treatment of chronic lymphatic (lymphocytic) leukemia",
+  "note": "Only CLL is indicated; 'leukemia' as a whole disease class is overbroad."
+ },
+ {
+  "id": "f623",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Oral wound-cleansing OTC labels; seborrheic keratosis not mentioned."
+ },
+ {
+  "id": "f627",
+  "verdict": "FP1_setting",
+  "quote": "reduction in the duration of neutropenia and the incidence of febrile neutropenia in patients treated with cytotoxic chemotherapy for malignancy",
+  "note": "Cancer is the background setting; the target is chemotherapy-induced neutropenia."
+ },
+ {
+  "id": "f797",
+  "verdict": "TARGET",
+  "quote": "Nosocomial pneumonia in adult and pediatric patients 2 months of age and older ( 1.2 )",
+  "note": "Pneumonias are respiratory tract infections; antibacterial activity is piperacillin's own, not the partner's."
+ },
+ {
+  "id": "f438",
+  "verdict": "FP5_negation",
+  "quote": "Adenosine does not convert atrial flutter, atrial fibrillation, or ventricular tachycardia to normal sinus rhythm.",
+  "note": "Label explicitly states adenosine does not convert AF."
+ },
+ {
+  "id": "f619",
+  "verdict": "TARGET",
+  "quote": "Intra-abdominal Infections , including peritonitis caused by Escherichia coli",
+  "note": "Infectious peritonitis explicitly listed."
+ },
+ {
+  "id": "f238",
+  "verdict": "TARGET",
+  "quote": "Perennial and seasonal allergic rhinitis.",
+  "note": "Seasonal allergic rhinitis explicitly listed."
+ },
+ {
+  "id": "f030",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated as a treatment to improve walking in adult patients with multiple sclerosis (MS)",
+  "note": "Drug treats walking impairment, a symptom; MS itself is the background disease."
+ },
+ {
+  "id": "f383",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of: multiple myeloma, malignant lymphoma (Hodgkin, non-Hodgkin lymphoma), acute lymphoblastic and myeloblastic leukemia, childhood neuroblastoma, ovarian cancer",
+  "note": "Ovarian cancer explicitly listed in EMA indication."
+ },
+ {
+  "id": "f387",
+  "verdict": "FP1_setting",
+  "quote": "symptomatic heart failure (NYHA Class ≥ II)",
+  "note": "Heart failure is only a risk-factor qualifier for stroke prevention in NVAF."
+ },
+ {
+  "id": "f738",
+  "verdict": "TARGET",
+  "quote": "As replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Congenital hypothyroidism explicitly covered."
+ },
+ {
+  "id": "f210",
+  "verdict": "TARGET",
+  "quote": "Newly diagnosed adult and pediatric patients with Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase",
+  "note": "CML explicitly indicated."
+ },
+ {
+  "id": "f705",
+  "verdict": "TARGET",
+  "quote": "1.3 Epilepsy EQUETRO is indicated for the treatment of partial seizures with complex symptomatology (e.g., psychomotor, temporal lobe), generalized tonic-clonic seizures (grand mal)",
+  "note": "Generalized tonic-clonic seizures listed under epilepsy indication."
+ },
+ {
+  "id": "f444",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of bronchospasm in patients 2 to 12 years of age with asthma (reversible obstructive airway disease)",
+  "note": "Relief of asthmatic bronchospasm is management of asthma, on single-agent labels."
+ },
+ {
+  "id": "f804",
+  "verdict": "TARGET",
+  "quote": "inflammatory lesions of granuloma annulare",
+  "note": "Intralesional use for granuloma annulare lesions is listed."
+ },
+ {
+  "id": "f409",
+  "verdict": "TARGET",
+  "quote": "Felodipine extended-release tablets, USP are indicated for the treatment of hypertension, to lower blood pressure",
+  "note": "Hypertension explicitly indicated."
+ },
+ {
+  "id": "f002",
+  "verdict": "TARGET",
+  "quote": "PELVIC INFLAMMATORY DISEASE caused by Neisseria gonorrhoeae",
+  "note": "PID explicitly listed."
+ },
+ {
+  "id": "f197",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers only ventricular arrhythmias (VF/VT); no supraventricular arrhythmia mentioned."
+ }
+]

@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f445",
+  "verdict": "FP3_cross_section",
+  "quote": "Risks are increased in patients with a personal or family history of substance abuse (including drug or alcohol abuse or addiction)",
+  "note": "Substance abuse appears only as a risk/warning; indications are pain and cough."
+ },
+ {
+  "id": "f819",
+  "verdict": "TARGET",
+  "quote": "indicated for the temporary relief of cough and upper respiratory symptoms associated with allergy or the common cold",
+  "note": "Cough relief is attributable to codeine, the opioid antitussive component."
+ },
+ {
+  "id": "f047",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia, that in the judgment of the physician are life-threatening",
+  "note": "VF is a subtype of the indicated life-threatening ventricular arrhythmias."
+ },
+ {
+  "id": "f314",
+  "verdict": "FP5_negation",
+  "quote": "BREKIYA is not indicated for the management of hemiplegic migraine or migraine with brainstem aura.",
+  "note": "Hemiplegic migraine explicitly excluded in limitations of use."
+ },
+ {
+  "id": "f600",
+  "verdict": "TARGET",
+  "quote": "Allergic conjunctivitis.",
+  "note": "Atopic conjunctivitis is a form of the listed allergic conjunctivitis."
+ },
+ {
+  "id": "f420",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with intermittent claudication on the basis of chronic occlusive arterial disease of the limbs",
+  "note": "Intermittent claudication is named directly."
+ },
+ {
+  "id": "f684",
+  "verdict": "TARGET",
+  "quote": "1,25 - dihydroxy Vitamin D3 or one of its analogues to control the development of renal bone disease.",
+  "note": "EMA text frames Renagel use within an approach to control renal bone disease (renal osteodystrophy)."
+ },
+ {
+  "id": "f363",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of pediatric patients 2 years of age and older with central precocious puberty (CPP)",
+  "note": "CPP is a form of precocious puberty; edge is a near parent."
+ },
+ {
+  "id": "f028",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the acute treatment of migraine with or without aura in adults",
+  "note": "Label is migraine only (cluster headache explicitly excluded); generic headache is overbroad."
+ },
+ {
+  "id": "f168",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of CMV retinitis in patients with acquired immunodeficiency syndrome (AIDS)",
+  "note": "AIDS is the patient population; CMV retinitis is treated."
+ },
+ {
+  "id": "f610",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the diagnosis of bronchial airway hyperreactivity in adults and pediatric patients five years of age and older who do not have clinically apparent asthma",
+  "note": "Diagnostic agent; asthma only appears as population descriptor."
+ },
+ {
+  "id": "f584",
+  "verdict": "TARGET",
+  "quote": "topical treatment of the following dermal infections: tinea pedis, tinea cruris, and tinea corporis",
+  "note": "Tinea corporis named directly."
+ },
+ {
+  "id": "f302",
+  "verdict": "TARGET",
+  "quote": "Treatment of active duodenal ulcer in adults",
+  "note": "Duodenal and gastric ulcer indications cover ulcer disease."
+ },
+ {
+  "id": "f828",
+  "verdict": "TARGET",
+  "quote": "LENVIMA is indicated for the first-line treatment of patients with unresectable hepatocellular carcinoma (HCC).",
+  "note": "HCC named directly."
+ },
+ {
+  "id": "f592",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate-to-severe plaque psoriasis in adults who are candidates for systemic therapy or phototherapy",
+  "note": "Chronic small plaque psoriasis is a subtype of plaque psoriasis."
+ },
+ {
+  "id": "f413",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Amnesia is a procedural effect the drug induces; no amnestic disorder is treated."
+ },
+ {
+  "id": "f384",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of symptomatic orthostatic hypotension (OH)",
+  "note": "Orthostatic hypotension named directly."
+ },
+ {
+  "id": "f499",
+  "verdict": "TARGET",
+  "quote": "Paroxetine Tablets are indicated for the treatment of Posttraumatic Stress Disorder (PTSD).",
+  "note": "PTSD named directly."
+ },
+ {
+  "id": "f847",
+  "verdict": "TARGET",
+  "quote": "NUCALA is indicated for the treatment of adult patients with eosinophilic granulomatosis with polyangiitis (EGPA).",
+  "note": "EGPA named directly."
+ },
+ {
+  "id": "f542",
+  "verdict": "TARGET",
+  "quote": "indicated for the local treatment of vulvovaginal candidiasis (infections caused by Candida )",
+  "note": "VVC named directly."
+ },
+ {
+  "id": "f131",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL)",
+  "note": "CLL is B-cell CLL (synonym)."
+ },
+ {
+  "id": "f005",
+  "verdict": "TARGET",
+  "quote": "Acute Bacterial Exacerbation of Chronic Bronchitis caused by Streptococcus pneumoniae, Haemophilus influenzae",
+  "note": "Bacterial exacerbation of chronic bronchitis is a form of bronchitis."
+ },
+ {
+  "id": "f018",
+  "verdict": "TARGET",
+  "quote": "Acute treatment of manic or mixed episodes associated with bipolar I disorder",
+  "note": "Bipolar I episodes treated directly."
+ },
+ {
+  "id": "f785",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of thrombocytopenia in patients with chronic hepatitis C to allow the initiation and maintenance of interferon-based therapy",
+  "note": "Thrombocytopenia is treated; HCV is the setting."
+ },
+ {
+  "id": "f418",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only non-small cell lung cancer and pancreatic cancer are indicated; SCLC never mentioned."
+ },
+ {
+  "id": "f526",
+  "verdict": "TARGET",
+  "quote": "maintenance bronchodilator treatment of airflow obstruction in patients with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and/or emphysema",
+  "note": "Chronic bronchitis named as part of indicated COPD."
+ },
+ {
+  "id": "f655",
+  "verdict": "TARGET",
+  "quote": "Treatment of irritable bowel syndrome with diarrhea (IBS-D) in adults.",
+  "note": "IBS-D named directly."
+ },
+ {
+  "id": "f330",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of Rocky Mountain spotted fever, typhus fever and the typhus group",
+  "note": "RMSF named directly."
+ },
+ {
+  "id": "f792",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only renal dialysis nutritional supplement labels; heart failure not mentioned."
+ },
+ {
+  "id": "f666",
+  "verdict": "TARGET",
+  "quote": "Syphilis caused by Treponema pallidum .",
+  "note": "Syphilis listed as an indicated infection."
+ },
+ {
+  "id": "f888",
+  "verdict": "TARGET",
+  "quote": "indicated in combination with a reduced calorie diet and increased physical activity to reduce excess body weight and maintain weight reduction long term",
+  "note": "Excess body weight is the managed target."
+ },
+ {
+  "id": "f728",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with anaplastic lymphoma kinase (ALK)-positive metastatic non-small cell lung cancer (NSCLC)",
+  "note": "ALK+ NSCLC is a subtype; NSCLC is a near parent."
+ },
+ {
+  "id": "f183",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with advanced or metastatic breast cancer as a single agent",
+  "note": "Breast cancer named directly."
+ },
+ {
+  "id": "f069",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated to improve wakefulness in adult patients with excessive sleepiness associated with obstructive sleep apnea (OSA), narcolepsy, or shift work disorder (SWD)",
+  "note": "Treats excessive sleepiness, not narcolepsy itself."
+ },
+ {
+  "id": "f406",
+  "verdict": "TARGET",
+  "quote": "indicated, for the treatment of chronic gout in adult patients refractory to conventional therapy",
+  "note": "Chronic gout named directly."
+ },
+ {
+  "id": "f373",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate",
+  "note": "Mastalgia is a form of the indicated (unrestricted-site) pain."
+ },
+ {
+  "id": "f634",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with progressive neuroendocrine tumors of pancreatic origin (PNET)",
+  "note": "NETs of pancreatic, GI and lung origin indicated."
+ },
+ {
+  "id": "f481",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Iodine labels cover goiter and supplements; no B-cell neoplasm mentioned."
+ },
+ {
+  "id": "f576",
+  "verdict": "FP5_negation",
+  "quote": "cytotoxic chemotherapy for malignancy (with the exception of chronic myeloid leukaemia and myelodysplastic syndromes)",
+  "note": "MDS explicitly excepted from the indication."
+ },
+ {
+  "id": "f677",
+  "verdict": "FP1_setting",
+  "quote": "Hypoprothrombinemia secondary to factors limiting absorption or synthesis of vitamin K, e.g., obstructive jaundice, biliary fistula",
+  "note": "Biliary fistula is the cause/setting of the treated hypoprothrombinemia."
+ },
+ {
+  "id": "f675",
+  "verdict": "TARGET",
+  "quote": "Monoferric is indicated for the treatment of iron deficiency anemia (IDA) in adult patients",
+  "note": "IDA named directly."
+ },
+ {
+  "id": "f827",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia, that, in the judgment of the physician, are life-threatening",
+  "note": "Sustained VT named directly."
+ },
+ {
+  "id": "f522",
+  "verdict": "TARGET",
+  "quote": "reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+  "note": "OPTN-related OAG is a subtype of open-angle glaucoma."
+ },
+ {
+  "id": "f489",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the symptoms of seasonal allergic rhinitis in adults and pediatric patients 5 years and older",
+  "note": "SAR symptom management counts as treating SAR."
+ },
+ {
+  "id": "f414",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the acute treatment of agitation associated with schizophrenia or bipolar I disorder in adults",
+  "note": "Treats agitation, not bipolar I disorder."
+ }
+]

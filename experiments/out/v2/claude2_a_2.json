@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f606",
+  "verdict": "TARGET",
+  "quote": "Cimzia is indicated for the treatment of adult patients with severe active axial spondyloarthritis",
+  "note": "EMA indication names axial spondyloarthritis directly."
+ },
+ {
+  "id": "f622",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Simple absence is defined as very brief clouding of the sensorium or loss of consciousness accompanied by certain generalized epileptic discharges",
+  "note": "Loss of consciousness appears only as a manifestation of absence seizures, which are what is treated."
+ },
+ {
+  "id": "f753",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Multivitamin/fluoride supplementation labels; infection not mentioned."
+ },
+ {
+  "id": "f115",
+  "verdict": "TARGET",
+  "quote": "indicated for the topical treatment of persistent facial erythema associated with rosacea in adults",
+  "note": "Facial erythema is the explicit treatment target."
+ },
+ {
+  "id": "f646",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Relief of upper respiratory symptoms (nasal congestion) is the decongestant pseudoephedrine's own indication."
+ },
+ {
+  "id": "f584",
+  "verdict": "TARGET",
+  "quote": "tinea pedis, tinea cruris, and tinea corporis due to Trichophyton rubrum",
+  "note": "Tinea corporis is listed."
+ },
+ {
+  "id": "f845",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of acute pain severe enough to require an opioid analgesic",
+  "note": "Pain management indication; breakthrough pain is a subtype of pain, though not named explicitly."
+ },
+ {
+  "id": "f827",
+  "verdict": "TARGET",
+  "quote": "documented ventricular arrhythmias, such as sustained ventricular tachycardia, that, in the judgment of the physician, are life-threatening",
+  "note": "Sustained VT is named as an example indication."
+ },
+ {
+  "id": "f794",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Thrombophilia due to thrombin defect is not mentioned; indications are VTE, AF/valve thromboembolism, post-MI."
+ },
+ {
+  "id": "f700",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis of repetitive paroxysmal supraventricular tachycardia",
+  "note": "SVT prophylaxis and conversion are indicated."
+ },
+ {
+  "id": "f653",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment of acute lymphoblastic leukemia (ALL) and lymphoblastic lymphoma (LBL)",
+  "note": "Only ALL is indicated; leukemia is the whole disease class."
+ },
+ {
+  "id": "f888",
+  "verdict": "TARGET",
+  "quote": "to reduce excess body weight and maintain weight reduction long term",
+  "note": "Body weight reduction is the explicit target."
+ },
+ {
+  "id": "f567",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only seizures associated with Lennox-Gastaut syndrome are indicated; COVID-19-related seizure not mentioned."
+ },
+ {
+  "id": "f752",
+  "verdict": "TARGET",
+  "quote": "unresectable or metastatic HER2-negative gastric or gastroesophageal junction adenocarcinoma",
+  "note": "Gastric cancer is an indication section."
+ },
+ {
+  "id": "f601",
+  "verdict": "TARGET",
+  "quote": "treatment of neovascular (wet) age-related macular degeneration (AMD)",
+  "note": "Exact match."
+ },
+ {
+  "id": "f250",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura",
+  "note": "Migraine is the indication."
+ },
+ {
+  "id": "f413",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Midazolam induces amnesia for procedures; amnestic disorder is not a treated condition in the text."
+ },
+ {
+  "id": "f140",
+  "verdict": "TARGET",
+  "quote": "rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require low dose maintenance therapy)",
+  "note": "RA listed under rheumatic disorders."
+ },
+ {
+  "id": "f025",
+  "verdict": "TARGET",
+  "quote": "routine prophylaxis to prevent or reduce the frequency of bleeding episodes in adult and pediatric patients 12 years of age and older with: hemophilia A",
+  "note": "Bleeding prophylaxis in hemophilia A is disease management."
+ },
+ {
+  "id": "f066",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of acute bacterial sinusitis (ABS)",
+  "note": "Acute bacterial sinusitis is a form of sinusitis."
+ },
+ {
+  "id": "f720",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation",
+  "note": "Systemic embolism risk reduction is indicated."
+ },
+ {
+  "id": "f314",
+  "verdict": "FP5_negation",
+  "quote": "BREKIYA is not indicated for the management of hemiplegic migraine or migraine with brainstem aura",
+  "note": "Hemiplegic migraine explicitly excluded."
+ },
+ {
+  "id": "f466",
+  "verdict": "TARGET",
+  "quote": "indicated to reduce the risk of hospitalization for atrial fibrillation in patients in sinus rhythm with a history of paroxysmal or persistent atrial fibrillation",
+  "note": "AF management (maintenance of sinus rhythm) is indicated."
+ },
+ {
+  "id": "f674",
+  "verdict": "TARGET",
+  "quote": "Respiratory Diseases Symptomatic sarcoidosis ... Aspiration pneumonitis",
+  "note": "Aspiration pneumonitis listed under respiratory diseases."
+ },
+ {
+  "id": "f242",
+  "verdict": "TARGET",
+  "quote": "HEMADY is indicated in combination with other anti-myeloma products for the treatment of adults with multiple myeloma (MM)",
+  "note": "Multiple myeloma = plasma cell myeloma."
+ },
+ {
+  "id": "f821",
+  "verdict": "TARGET",
+  "quote": "Reduction in risk of invasive breast cancer in postmenopausal women at high risk for invasive breast cancer",
+  "note": "Risk reduction (prevention) of invasive breast cancer; ER+ is a narrower subtype."
+ },
+ {
+  "id": "f610",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the diagnosis of bronchial airway hyperreactivity in adults and pediatric patients five years of age and older who do not have clinically apparent asthma",
+  "note": "Diagnostic agent; asthma is not treated."
+ },
+ {
+  "id": "f758",
+  "verdict": "FP4_overbroad",
+  "quote": "inflammatory lesions of: lichen planus, psoriatic plaques, granuloma annulare and lichen simplex chronicus",
+  "note": "Only granuloma annulare is indicated; generic granuloma is a broad lesion class."
+ },
+ {
+  "id": "f279",
+  "verdict": "FP1_setting",
+  "quote": "Empirical Therapy for Febrile Neutropenic Patients",
+  "note": "Treats presumed infection in neutropenic patients; neutropenia is the setting."
+ },
+ {
+  "id": "f658",
+  "verdict": "TARGET",
+  "quote": "advanced or metastatic gastric cancer, gastroesophageal junction cancer, and esophageal adenocarcinoma",
+  "note": "GEJ cancer named."
+ },
+ {
+  "id": "f097",
+  "verdict": "TARGET",
+  "quote": "BUDESONIDE AND FORMOTEROL FUMARATE DIHYDRATE INHALATION AEROSOL is indicated for the treatment of asthma in patients 6 years of age and older",
+  "note": "ICS/LABA combos treat asthma with formoterol as active bronchodilator, though single-agent formoterol labels exclude asthma."
+ },
+ {
+  "id": "f817",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lupus/SLE arthritis not mentioned; indications are RA, JIA, PsA etc."
+ },
+ {
+  "id": "f031",
+  "verdict": "TARGET",
+  "quote": "Onychomycosis of the toenail, with or without fingernail involvement, due to dermatophytes (tinea unguium)",
+  "note": "Exact match."
+ },
+ {
+  "id": "f596",
+  "verdict": "TARGET",
+  "quote": "Mild, uncomplicated allergic skin manifestations of urticaria and angioedema",
+  "note": "Urticaria listed."
+ },
+ {
+  "id": "f543",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only opioid/acetaminophen combination labels for acute pain; pharyngitis not mentioned."
+ },
+ {
+  "id": "f819",
+  "verdict": "TARGET",
+  "quote": "indicated for the temporary relief of cough and upper respiratory symptoms",
+  "note": "Cough relief is attributable to codeine, the antitussive component."
+ },
+ {
+  "id": "f291",
+  "verdict": "TARGET",
+  "quote": "Pharyngitis/tonsillitis caused by Streptococcus pyogenes",
+  "note": "Listed indication."
+ },
+ {
+  "id": "f849",
+  "verdict": "TARGET",
+  "quote": "Rheumatic fever and/or chorea —Prophylaxis with penicillin G benzathine has proven effective in preventing recurrence of these conditions",
+  "note": "Rheumatic fever prophylaxis indicated."
+ },
+ {
+  "id": "f578",
+  "verdict": "FP5_negation",
+  "quote": "OZEMPIC is not indicated for use in patients with type 1 diabetes mellitus",
+  "note": "Explicit exclusion."
+ },
+ {
+  "id": "f001",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the control of serum phosphorus in patients with chronic kidney disease (CKD) on dialysis",
+  "note": "Treats hyperphosphatemia; kidney disease is the population."
+ },
+ {
+  "id": "f371",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of mild to moderate acute malaria",
+  "note": "Malaria treatment and prophylaxis."
+ },
+ {
+  "id": "f005",
+  "verdict": "TARGET",
+  "quote": "Acute Bacterial Exacerbation of Chronic Bronchitis caused by Streptococcus pneumoniae",
+  "note": "ABECB is a form of bronchitis."
+ },
+ {
+  "id": "f754",
+  "verdict": "TARGET",
+  "quote": "Generalized Hodgkin’s disease (Stages III and IV, Ann Arbor modification of Rye staging system)",
+  "note": "Hodgkin disease indicated; classic HL is a subtype."
+ },
+ {
+  "id": "f440",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the signs and symptoms of benign prostatic hyperplasia (BPH)",
+  "note": "Exact match."
+ },
+ {
+  "id": "f059",
+  "verdict": "TARGET",
+  "quote": "Infections caused by Chlamydia trachomatis such as uncomplicated urethral, endocervical or rectal infections",
+  "note": "Chlamydia infections indicated."
+ }
+]

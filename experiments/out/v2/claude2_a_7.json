@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f248",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases: pemphigus, bullous dermatitis herpetiformis, severe erythema multiforme (Stevens-Johnson syndrome), exfoliative dermatitis, mycosis fungoides",
+  "note": "Mycosis fungoides is listed; refractory form is a narrower subtype."
+ },
+ {
+  "id": "f128",
+  "verdict": "TARGET",
+  "quote": "symptomatic sarcoidosis",
+  "note": "Sarcoidosis listed among respiratory disease indications."
+ },
+ {
+  "id": "f811",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lidocaine labels cover pain relief/anesthesia; no beryllium disease mention."
+ },
+ {
+  "id": "f651",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of intestinal amebiasis and amebic liver abscess caused by Entamoeba histolytica",
+  "note": "Amebic liver abscess explicitly indicated."
+ },
+ {
+  "id": "f375",
+  "verdict": "FP1_setting",
+  "quote": "indicated for the treatment of panic disorder, with or without agoraphobia",
+  "note": "Target is panic disorder; agoraphobia is only a qualifier of the population."
+ },
+ {
+  "id": "f315",
+  "verdict": "TARGET",
+  "quote": "reduce the risk of acute urinary retention (AUR)",
+  "note": "Prevention of acute urinary retention is an explicit goal of the indication."
+ },
+ {
+  "id": "f179",
+  "verdict": "FP5_negation",
+  "quote": "complicated skin and skin structure infections, including diabetic foot infections, without concomitant osteomyelitis",
+  "note": "Osteomyelitis is explicitly excluded from the indication."
+ },
+ {
+  "id": "f488",
+  "verdict": "TARGET",
+  "quote": "Efficacy has been shown in a PAH population including idiopathic and heritable PAH",
+  "note": "PAH indicated; heritable PAH is a named subtype."
+ },
+ {
+  "id": "f718",
+  "verdict": "TARGET",
+  "quote": "Reduce elevated total-C, LDL-C, and Apo B in boys and postmenarchal girls, 10 to 17 years of age with heterozygous familial hypercholesterolemia",
+  "note": "HeFH explicitly indicated."
+ },
+ {
+  "id": "f361",
+  "verdict": "TARGET",
+  "quote": "In anaphylaxis as an adjunct to epinephrine and other standard measures after the acute symptoms have been controlled.",
+  "note": "Adjunctive treatment of anaphylaxis counts."
+ },
+ {
+  "id": "f890",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Labels indicate systemic hypertension and CV risk reduction; pulmonary hypertension not mentioned."
+ },
+ {
+  "id": "f501",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult and pediatric patients with rhabdomyosarcoma",
+  "note": "Alveolar rhabdomyosarcoma is a subtype of indicated rhabdomyosarcoma."
+ },
+ {
+  "id": "f765",
+  "verdict": "TARGET",
+  "quote": "in the treatment of primary generalised tonic-clonic seizures in adults, adolescents and children from 4 years of age with idiopathic generalised epilepsy",
+  "note": "Treats the seizures of IGE, i.e., manages the epilepsy."
+ },
+ {
+  "id": "f525",
+  "verdict": "TARGET",
+  "quote": "Zaleplon capsules are indicated for the short-term treatment of insomnia.",
+  "note": "Direct match."
+ },
+ {
+  "id": "f566",
+  "verdict": "TARGET",
+  "quote": "1.1 Prevention of Cardiovascular Disease In hypercholesterolemic patients without clinically evident coronary heart disease (CHD), pravastatin sodium tablets are indicated to",
+  "note": "Label explicitly frames indication as prevention of cardiovascular disease."
+ },
+ {
+  "id": "f538",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Epinephrine labels cover septic shock hypotension, anaphylaxis, anesthesia adjunct; no rhinitis."
+ },
+ {
+  "id": "f621",
+  "verdict": "TARGET",
+  "quote": "pemphigus vulgaris and bullous pemphigoid",
+  "note": "Pemphigus vulgaris listed in EMA indication."
+ },
+ {
+  "id": "f245",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with ... Pancreatic Adenocarcinoma ( 1.4 )",
+  "note": "Direct match."
+ },
+ {
+  "id": "f705",
+  "verdict": "TARGET",
+  "quote": "generalized tonic-clonic seizures (grand mal), and mixed seizure patterns",
+  "note": "GTC seizures explicitly indicated."
+ },
+ {
+  "id": "f411",
+  "verdict": "FP4_overbroad",
+  "quote": "Treatment of adults with breast cancer as part of a combination chemotherapy regimen",
+  "note": "Specific neoplasms are indicated; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f149",
+  "verdict": "TARGET",
+  "quote": "infectious diarrhea caused by Escherichia coli (enterotoxigenic isolates), Campylobacter jejuni",
+  "note": "Campylobacter infectious diarrhea is indicated."
+ },
+ {
+  "id": "f620",
+  "verdict": "TARGET",
+  "quote": "Seasonal or perennial allergic rhinitis",
+  "note": "Allergic rhinitis is a subtype of rhinitis; near parent."
+ },
+ {
+  "id": "f769",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with multiple myeloma and patients with documented bone metastases from solid tumors",
+  "note": "Multiple myeloma (plasma cell myeloma) named in indication."
+ },
+ {
+  "id": "f879",
+  "verdict": "FP1_setting",
+  "quote": "radioactive diagnostic agent indicated as an adjunct to other diagnostic evaluations ... suspected dementia with Lewy bodies (DLB)",
+  "note": "Diagnostic imaging agent; DLB is the setting, not treated."
+ },
+ {
+  "id": "f028",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the acute treatment of migraine with or without aura in adults",
+  "note": "Only migraine indicated; cluster headache explicitly excluded, so generic headache is overbroad."
+ },
+ {
+  "id": "f017",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of bursitis",
+  "note": "Direct match."
+ },
+ {
+  "id": "f175",
+  "verdict": "TARGET",
+  "quote": "treatment of patients with advanced or metastatic breast cancer as a single agent",
+  "note": "Breast cancer indicated."
+ },
+ {
+  "id": "f101",
+  "verdict": "TARGET",
+  "quote": "control of ventricular rate at rest and during stress in patients with chronic atrial flutter and/or atrial fibrillation",
+  "note": "Rate control in atrial flutter is indicated."
+ },
+ {
+  "id": "f142",
+  "verdict": "TARGET",
+  "quote": "Herpes zoster ophthalmicus",
+  "note": "Listed among ophthalmic disease indications."
+ },
+ {
+  "id": "f516",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Estradiol indications are menopausal symptoms, hypoestrogenism, osteoporosis; dysuria not mentioned."
+ },
+ {
+  "id": "f670",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lidocaine indications are ocular surface anesthesia and pain; no pemphigoid mention."
+ },
+ {
+  "id": "f661",
+  "verdict": "FP2_symptom_swap",
+  "quote": "irritability, muscle tension, and/or sleep disturbance",
+  "note": "Irritability appears only as a diagnostic symptom of indicated GAD (and as an adverse effect)."
+ },
+ {
+  "id": "f780",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of insomnia characterized by difficulty in falling asleep",
+  "note": "Direct match."
+ },
+ {
+  "id": "f151",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of myocardial infarction, stroke, or death from cardiovascular causes",
+  "note": "Stroke risk reduction is indicated."
+ },
+ {
+  "id": "f448",
+  "verdict": "TARGET",
+  "quote": "The long-term, once-daily, maintenance treatment of asthma in patients 6 years of age and older",
+  "note": "Spiriva Respimat indicated for asthma; late-onset asthma is a subtype."
+ },
+ {
+  "id": "f166",
+  "verdict": "TARGET",
+  "quote": "Nonsuppurative thyroiditis",
+  "note": "Nonsuppurative thyroiditis indicated; thyroiditis is near parent."
+ },
+ {
+  "id": "f641",
+  "verdict": "TARGET",
+  "quote": "To reduce the risk of stroke and systemic embolism in adult patients with non-valvular atrial fibrillation",
+  "note": "Stroke prevention indicated; ischemic stroke is the relevant subtype."
+ },
+ {
+  "id": "f757",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only systemic JIA (Still disease) indicated; psoriatic JIA not mentioned."
+ },
+ {
+  "id": "f806",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease mentioned only as a generic example of other antihypertensives' indications, not nadolol's."
+ },
+ {
+  "id": "f671",
+  "verdict": "TARGET",
+  "quote": "indicated in the treatment of serious infections caused by susceptible strains of the following microorganisms",
+  "note": "Label indicates treatment of serious bacterial infections."
+ },
+ {
+  "id": "f210",
+  "verdict": "TARGET",
+  "quote": "Newly diagnosed adult and pediatric patients with Philadelphia chromosome positive chronic myeloid leukemia (Ph+ CML) in chronic phase",
+  "note": "Direct match."
+ },
+ {
+  "id": "f222",
+  "verdict": "TARGET",
+  "quote": "Systemic lupus erythematosus Acute rheumatic carditis",
+  "note": "SLE listed among collagen disease indications."
+ },
+ {
+  "id": "f148",
+  "verdict": "FP1_setting",
+  "quote": "chronic heart failure with reduced left ventricular ejection fraction",
+  "note": "LVEF is a population qualifier/measurement; heart failure is treated."
+ },
+ {
+  "id": "f602",
+  "verdict": "TARGET",
+  "quote": "treatment of acute hyperammonemia due to N-acetylglutamate synthase (NAGS) deficiency",
+  "note": "Hyperammonemia is the treated condition."
+ },
+ {
+  "id": "f292",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy for the treatment of acute hyperammonemia and associated encephalopathy",
+  "note": "Sodium benzoate is an active nitrogen-binding component of the combination."
+ }
+]

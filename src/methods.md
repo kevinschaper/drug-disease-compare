@@ -143,9 +143,11 @@ a shift in head-to-head overlap to the source whose release moved it.
 ## Label audit & label check
 
 The [error taxonomy](./error-taxonomy) measures how often an asserted indication edge is
-*not* a genuine treatment target according to regulator text fetched independently — the
+*not* a genuine treatment target according to regulator text fetched independently, for the
+latest **and** the previous releases (300 edges each, judged blind to source and release, so
+[version changes](./changes) can say whether each source improved) — the
 openFDA bulk label export (matched by UNII or shared GSRS active moiety; homeopathic labels
-excluded) and EMA EPAR indications. A seeded sample of 150 edges per source (MEDIC;
+excluded) and EMA EPAR indications. A seeded sample per source and release (MEDIC;
 DAKP-approved) was judged blind by two Claude reviewers, a tie-breaker and a co-ingredient
 check, forming a reference. The Jev decision model (TypeSafe, `jev-1.13.0`) was scored
 against that reference with an acceptance bar set in advance; it didn't meet it as a

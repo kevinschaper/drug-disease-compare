@@ -1,0 +1,302 @@
+[
+ {
+  "id": "f014",
+  "verdict": "TARGET",
+  "quote": "to reduce LDL-C in adults with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "NEXLETOL single-ingredient label names HeFH directly."
+ },
+ {
+  "id": "f034",
+  "verdict": "TARGET",
+  "quote": "Septicemia and Endocarditis caused by susceptible Gram-positive organisms",
+  "note": "Single-ingredient ampicillin label covers septicemia/Gram-negative sepsis; neonatal sepsis is a subtype."
+ },
+ {
+  "id": "f059",
+  "verdict": "TARGET",
+  "quote": "Infections caused by Chlamydia trachomatis such as uncomplicated urethral, endocervical or rectal infections, inclusion conjunctivitis",
+  "note": "Single-ingredient tetracycline label covers chlamydial infections."
+ },
+ {
+  "id": "f075",
+  "verdict": "TARGET",
+  "quote": "lead poisoning (acute and chronic) and lead encephalopathy",
+  "note": "Edetate calcium disodium single-ingredient label names lead encephalopathy."
+ },
+ {
+  "id": "f090",
+  "verdict": "TARGET",
+  "quote": "reduce the risk of acute urinary retention (AUR)",
+  "note": "Single-ingredient dutasteride label names acute urinary retention."
+ },
+ {
+  "id": "f099",
+  "verdict": "TARGET",
+  "quote": "Treatment of Moderate to Severe Symptoms of Vulvar and Vaginal Atrophy due to Menopause",
+  "note": "Vulvar and vaginal atrophy due to menopause is the older name for GSM and is on single-ingredient estradiol labels."
+ },
+ {
+  "id": "f115",
+  "verdict": "TARGET",
+  "quote": "topical treatment of persistent facial erythema associated with rosacea in adults",
+  "note": "Single-ingredient oxymetazoline cream label names facial erythema."
+ },
+ {
+  "id": "f140",
+  "verdict": "TARGET",
+  "quote": "rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Listed on single-ingredient prednisone label."
+ },
+ {
+  "id": "f160",
+  "verdict": "TARGET",
+  "quote": "Exfoliative dermatitis",
+  "note": "Listed among dermatologic diseases on single-ingredient dexamethasone label."
+ },
+ {
+  "id": "f205",
+  "verdict": "TARGET",
+  "quote": "psoriatic arthritis; rheumatoid arthritis, including juvenile rheumatoid arthritis",
+  "note": "Single-ingredient prednisone label lists multiple arthritides (rheumatic disorders)."
+ },
+ {
+  "id": "f214",
+  "verdict": "TARGET",
+  "quote": "improve glycemic control in adults with type 2 diabetes mellitus",
+  "note": "Single-ingredient saxagliptin label."
+ },
+ {
+  "id": "f223",
+  "verdict": "TARGET",
+  "quote": "Intra-abdominal Infections, including peritonitis caused by Escherichia coli",
+  "note": "Single-ingredient ceftazidime label names intra-abdominal infections."
+ },
+ {
+  "id": "f238",
+  "verdict": "TARGET",
+  "quote": "Perennial and seasonal allergic rhinitis.",
+  "note": "Single-ingredient promethazine label."
+ },
+ {
+  "id": "f254",
+  "verdict": "TARGET",
+  "quote": "Ibuprofen Tablets, USP are indicated for relief of mild to moderate pain.",
+  "note": "Single-ingredient ibuprofen covers general mild-moderate pain; testicular pain is a specific pain type (weak but not a co-ingredient issue)."
+ },
+ {
+  "id": "f275",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, temporal arteritis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Single-ingredient hydrocortisone label."
+ },
+ {
+  "id": "f286",
+  "verdict": "TARGET",
+  "quote": "body weight greater than 60 kg and obesity",
+  "note": "Single-ingredient liraglutide (Saxenda) FDA and EMA labels cover chronic weight management in obesity."
+ },
+ {
+  "id": "f315",
+  "verdict": "TARGET",
+  "quote": "reduce the risk of acute urinary retention (AUR)",
+  "note": "Single-ingredient dutasteride label; acute urinary retention is a subtype of urinary retention."
+ },
+ {
+  "id": "f330",
+  "verdict": "TARGET",
+  "quote": "indicated for treatment of Rocky Mountain spotted fever, typhus fever and the typhus group",
+  "note": "Single-ingredient doxycycline label."
+ },
+ {
+  "id": "f345",
+  "verdict": "TARGET",
+  "quote": "psoriatic arthritis; rheumatoid arthritis",
+  "note": "Listed on single-ingredient prednisolone label."
+ },
+ {
+  "id": "f356",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections (complicated and uncomplicated), including pyelonephritis and cystitis",
+  "note": "Single-ingredient aztreonam label."
+ },
+ {
+  "id": "f370",
+  "verdict": "TARGET",
+  "quote": "Nicardipine hydrochloride capsules are indicated for the treatment of hypertension.",
+  "note": "Single-ingredient nicardipine label."
+ },
+ {
+  "id": "f393",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis",
+  "note": "Only on the 'combination' label, but that product is betamethasone sodium phosphate + betamethasone acetate (two salts of DRUG itself), so attributable to betamethasone."
+ },
+ {
+  "id": "f417",
+  "verdict": "TARGET",
+  "quote": "allergic conjunctivitis, keratitis, allergic corneal marginal ulcers",
+  "note": "Single-ingredient prednisolone label lists allergic conjunctivitis; atopic conjunctivitis is a subtype."
+ },
+ {
+  "id": "f426",
+  "verdict": "TARGET",
+  "quote": "Prevention of Postmenopausal Osteoporosis",
+  "note": "Single-ingredient conjugated estrogens label (prevention indication)."
+ },
+ {
+  "id": "f448",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of asthma in patients 6 years of age and older",
+  "note": "Single-ingredient SPIRIVA RESPIMAT label covers asthma; late-onset asthma is a subtype (the combo STIOLTO is explicitly not for asthma)."
+ },
+ {
+  "id": "f462",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of homocystinuria to decrease elevated homocysteine blood concentrations",
+  "note": "Single-ingredient betaine label."
+ },
+ {
+  "id": "f480",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of ocular pain and burning/stinging following corneal refractive surgery",
+  "note": "Single-ingredient ketorolac ophthalmic label (Acular LS) names ocular pain."
+ },
+ {
+  "id": "f490",
+  "verdict": "TARGET",
+  "quote": "Use Temporarily relieves minor pain",
+  "note": "Single-ingredient topical lidocaine covers local pain generally; scar pain not named but is a local pain subtype, and combo lidocaine/menthol pain claims also stem from lidocaine."
+ },
+ {
+  "id": "f507",
+  "verdict": "TARGET",
+  "quote": "indicated for use in the treatment of allergic symptoms by immunotherapy in patients with a history of grass pollen allergy",
+  "note": "No single-ingredient text; the mixed grass pollen extract's immunotherapy indication is attributable to each grass component including Phleum pratense (timothy), and SAR is the grass-pollen allergy symptom."
+ },
+ {
+  "id": "f527",
+  "verdict": "TARGET",
+  "quote": "Treatment of heart failure (NYHA class II-IV)",
+  "note": "Single-ingredient candesartan label."
+ },
+ {
+  "id": "f540",
+  "verdict": "TARGET",
+  "quote": "to reduce the risk of major adverse cardiovascular events (cardiovascular death, myocardial infarction, stroke, or coronary revascularization)",
+  "note": "Single-ingredient NEXLETOL label (risk reduction of MI)."
+ },
+ {
+  "id": "f558",
+  "verdict": "TARGET",
+  "quote": "for the treatment of patients with unresectable or metastatic MSI-H or dMMR colorectal cancer (CRC)",
+  "note": "Single-ingredient KEYTRUDA label."
+ },
+ {
+  "id": "f562",
+  "verdict": "TARGET",
+  "quote": "indicated for the acute treatment of migraine with or without aura",
+  "note": "Single-ingredient rizatriptan label."
+ },
+ {
+  "id": "f596",
+  "verdict": "TARGET",
+  "quote": "Mild, uncomplicated allergic skin manifestations of urticaria and angioedema.",
+  "note": "Single-ingredient promethazine label."
+ },
+ {
+  "id": "f624",
+  "verdict": "TARGET",
+  "quote": "For the management of edema and sodium retention when the patient is only partially responsive to, or is intolerant of, other therapeutic measures",
+  "note": "Single-ingredient spironolactone label covers edematous conditions."
+ },
+ {
+  "id": "f639",
+  "verdict": "TARGET",
+  "quote": "Gonorrhea, acute uncomplicated (ano-genital and urethral infections in males and females) - due to Neisseria gonorrhoeae",
+  "note": "Single-ingredient amoxicillin label (with resistance caveat)."
+ },
+ {
+  "id": "f662",
+  "verdict": "TARGET",
+  "quote": "Emergency treatment of allergic reactions (Type I), including anaphylaxis, which may result from allergic reactions to insect stings, biting insects, foods",
+  "note": "Single-ingredient epinephrine label names food-induced anaphylaxis."
+ },
+ {
+  "id": "f681",
+  "verdict": "TARGET",
+  "quote": "Haemophilus parainfluenzae, or Streptococcus pneumoniae",
+  "note": "Single-ingredient ciprofloxacin label covers S. pneumoniae (an alpha-hemolytic streptococcus) infections; match is loose but not a co-ingredient artifact."
+ },
+ {
+  "id": "f696",
+  "verdict": "TARGET",
+  "quote": "bronchospasm associated with chronic obstructive pulmonary disease (COPD) (including emphysema and chronic bronchitis)",
+  "note": "Single-ingredient SEREVENT label names emphysema."
+ },
+ {
+  "id": "f721",
+  "verdict": "TARGET",
+  "quote": "It has also been found useful in the treatment of acute non-lymphocytic leukemia and the blast phase of chronic myelocytic leukemia.",
+  "note": "Single-ingredient cytarabine label mentions CML blast phase."
+ },
+ {
+  "id": "f736",
+  "verdict": "TARGET",
+  "quote": "Treatment and prevention of osteoporosis in postmenopausal women",
+  "note": "Single-ingredient alendronate label."
+ },
+ {
+  "id": "f751",
+  "verdict": "TARGET",
+  "quote": "Included within the category of homocystinuria are Cystathionine beta-synthase (CBS) deficiency 5,10-methylenetetrahydrofolate reductase (MTHFR) deficiency Cobalamin cofactor metabolism (cbl) defect",
+  "note": "Single-ingredient betaine label names cbl defects."
+ },
+ {
+  "id": "f791",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD)",
+  "note": "Single-ingredient SEREVENT label."
+ },
+ {
+  "id": "f808",
+  "verdict": "TARGET",
+  "quote": "Atopic dermatitis",
+  "note": "Single-ingredient corticotropin (Purified Cortrophin Gel) label; atopic eczema = atopic dermatitis."
+ },
+ {
+  "id": "f819",
+  "verdict": "TARGET",
+  "quote": "indicated for the temporary relief of coughs and upper respiratory symptoms, including nasal congestion, associated with allergy or the common cold",
+  "note": "Only on combination labels (single codeine label is pain only), but codeine is the antitussive component of promethazine/phenylephrine/codeine, so attributable to DRUG."
+ },
+ {
+  "id": "f829",
+  "verdict": "TARGET",
+  "quote": "Reduce total-C and LDL-C in patients with homozygous familial hypercholesterolemia (HoFH)",
+  "note": "Single-ingredient atorvastatin label names HeFH and HoFH."
+ },
+ {
+  "id": "f849",
+  "verdict": "TARGET",
+  "quote": "Rheumatic fever and/or chorea \u2014Prophylaxis with penicillin G benzathine has proven effective in preventing recurrence",
+  "note": "Single-ingredient penicillin G label (prophylaxis)."
+ },
+ {
+  "id": "f856",
+  "verdict": "TARGET",
+  "quote": "complicated urinary tract infections (cUTI) and pyelonephritis due to Escherichia coli",
+  "note": "Single-ingredient ciprofloxacin label."
+ },
+ {
+  "id": "f875",
+  "verdict": "TARGET",
+  "quote": "useful for the treatment of seborrheic dermatitis of the scalp, dandruff and tinea versicolor",
+  "note": "Single-ingredient selenium sulfide label covers scalp seborrheic dermatitis; infantile form is a subtype."
+ },
+ {
+  "id": "f894",
+  "verdict": "TARGET",
+  "quote": "Klebsiella pneumoniae , specifically bacteremia.",
+  "note": "Single-ingredient polymyxin B label covers bacteremia/bloodstream infections."
+ }
+]

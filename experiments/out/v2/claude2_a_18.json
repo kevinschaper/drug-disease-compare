@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f775",
+  "verdict": "TARGET",
+  "quote": "Yaws caused by Treponema pallidum subspecies pertenue",
+  "note": "Yaws listed as an indicated infection."
+ },
+ {
+  "id": "f157",
+  "verdict": "TARGET",
+  "quote": "for acute intermittent porphyria",
+  "note": "AIP named in indication list."
+ },
+ {
+  "id": "f497",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of presbyopia in adults",
+  "note": "Presbyopia explicitly indicated."
+ },
+ {
+  "id": "f676",
+  "verdict": "TARGET",
+  "quote": "Upper respiratory infections caused by Streptococcus pneumoniae",
+  "note": "S. pneumoniae (pneumococcal) infections indicated."
+ },
+ {
+  "id": "f326",
+  "verdict": "TARGET",
+  "quote": "in combination with other antiretroviral agents for the treatment of HIV-1 infection",
+  "note": "HIV-1 infection is the indication."
+ },
+ {
+  "id": "f859",
+  "verdict": "FP2_symptom_swap",
+  "quote": "slowed thinking or impaired concentration, and a suicide attempt or suicidal ideation",
+  "note": "Suicidal ideation mentioned only as a symptom of MDD (and as a warning); drug treats MDD."
+ },
+ {
+  "id": "f464",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pain agnosia (inability to feel pain) is not mentioned; labels cover pain management."
+ },
+ {
+  "id": "f309",
+  "verdict": "TARGET",
+  "quote": "treatment of Still\u2019s disease, including Systemic Juvenile Idiopathic Arthritis (SJIA)",
+  "note": "SJIA explicitly indicated in EMA text."
+ },
+ {
+  "id": "f696",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD) (including emphysema and chronic bronchitis)",
+  "note": "Single-agent Serevent label includes emphysema."
+ },
+ {
+  "id": "f345",
+  "verdict": "TARGET",
+  "quote": "As adjunctive therapy for short term administration ... in: psoriatic arthritis",
+  "note": "Psoriatic arthritis listed among rheumatic disorders."
+ },
+ {
+  "id": "f631",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with metastatic RET fusion-positive non-small cell lung cancer (NSCLC)",
+  "note": "RET+ NSCLC is a subtype of NSCLC."
+ },
+ {
+  "id": "f113",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of relapsing forms of multiple sclerosis (MS)",
+  "note": "MS indicated."
+ },
+ {
+  "id": "f271",
+  "verdict": "TARGET",
+  "quote": "For the relief of symptoms of depression.",
+  "note": "Perinatal depression is a subtype of the indicated depression; not specifically mentioned."
+ },
+ {
+  "id": "f107",
+  "verdict": "FP4_overbroad",
+  "quote": "treatment of adults with metastatic colorectal cancer in combination with fluorouracil",
+  "note": "Label is specific colorectal cancer/osteosarcoma rescue; \"cancer\" is a whole disease class."
+ },
+ {
+  "id": "f474",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of oropharyngeal and esophageal candidiasis",
+  "note": "Esophageal candidiasis explicitly indicated."
+ },
+ {
+  "id": "f238",
+  "verdict": "TARGET",
+  "quote": "Perennial and seasonal allergic rhinitis.",
+  "note": "Seasonal allergic rhinitis listed."
+ },
+ {
+  "id": "f785",
+  "verdict": "FP1_setting",
+  "quote": "treatment of thrombocytopenia in patients with chronic hepatitis C",
+  "note": "HCV is the population; thrombocytopenia is treated."
+ },
+ {
+  "id": "f695",
+  "verdict": "TARGET",
+  "quote": "treatment of persistent premature ventricular extrasystoles that impair the well-being of the patient",
+  "note": "Premature ventricular extrasystoles = PVCs."
+ },
+ {
+  "id": "f112",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Treatment of agitation associated with dementia due to Alzheimer's disease",
+  "note": "Treats agitation, not Alzheimer disease itself."
+ },
+ {
+  "id": "f251",
+  "verdict": "TARGET",
+  "quote": "treatment of cutaneous manifestations in patients with cutaneous T-cell lymphoma (CTCL)",
+  "note": "CTCL is the indicated disease."
+ },
+ {
+  "id": "f772",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of wounds in patients with dystrophic epidermolysis bullosa (DEB)",
+  "note": "Wounds are the treated target (in DEB patients)."
+ },
+ {
+  "id": "f467",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only prevention of dental cavities; dentin sensitivity not mentioned."
+ },
+ {
+  "id": "f240",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indicated for gallstones and CTX; urinary stones not mentioned."
+ },
+ {
+  "id": "f694",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Transplant, RA, psoriasis indicated; atopic eczema/dermatitis not mentioned."
+ },
+ {
+  "id": "f672",
+  "verdict": "FP3_cross_section",
+  "quote": "Digitalis glycosides, such as digoxin, are contraindicated in ventricular fibrillation.",
+  "note": "Ventricular arrhythmia appears only in contraindications/warnings."
+ },
+ {
+  "id": "f094",
+  "verdict": "TARGET",
+  "quote": "management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Spinal pain is a specific form of the indicated severe pain; not named explicitly."
+ },
+ {
+  "id": "f736",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of osteoporosis in postmenopausal women",
+  "note": "Osteoporosis indicated."
+ },
+ {
+  "id": "f053",
+  "verdict": "TARGET",
+  "quote": "treatment of sucrase deficiency, which is part of congenital sucrase-isomaltase deficiency (CSID)",
+  "note": "CSID explicitly named."
+ },
+ {
+  "id": "f000",
+  "verdict": "TARGET",
+  "quote": "rapid conversion of atrial fibrillation or atrial flutter of recent onset to sinus rhythm",
+  "note": "AF indicated."
+ },
+ {
+  "id": "f147",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily controls cough due to minor throat and bronchial irritation",
+  "note": "Text treats cough (symptom) due to bronchial irritation, likely the antitussive co-ingredient's claim."
+ },
+ {
+  "id": "f611",
+  "verdict": "FP1_setting",
+  "quote": "protein requirements are substantially increased as with extensive burns",
+  "note": "Burns are the setting for parenteral nutrition, not the treated target."
+ },
+ {
+  "id": "f784",
+  "verdict": "FP2_symptom_swap",
+  "quote": "For relief of the signs and symptoms of rheumatoid arthritis. For relief of the signs and symptoms of osteoarthritis.",
+  "note": "Indicated for RA/OA; generic arthralgia symptom not itself indicated."
+ },
+ {
+  "id": "f681",
+  "verdict": "TARGET",
+  "quote": "acute sinusitis caused by Haemophilus influenzae, Streptococcus pneumoniae, or Moraxella catarrhalis",
+  "note": "S. pneumoniae (alpha-haemolytic streptococcus) infections indicated; mapping is a near parent."
+ },
+ {
+  "id": "f741",
+  "verdict": "TARGET",
+  "quote": "treatment of community-acquired bacterial pneumonia",
+  "note": "CABP is a form of bacterial pneumonia (HAP excluded)."
+ },
+ {
+  "id": "f092",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Homeopathic food-sensitivity symptoms; diabetes not mentioned."
+ },
+ {
+  "id": "f568",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of mild to moderately severe Alzheimer's dementia.",
+  "note": "Alzheimer dementia indicated."
+ },
+ {
+  "id": "f839",
+  "verdict": "FP1_setting",
+  "quote": "radioactive diagnostic agent indicated for positron emission tomography (PET) of prostate-specific membrane antigen (PSMA) positive lesions in men with prostate cancer",
+  "note": "Diagnostic imaging agent, not treatment."
+ },
+ {
+  "id": "f316",
+  "verdict": "TARGET",
+  "quote": "Lentocilin S is also indicated prophylactically in the following situations: - Rheumatic fever",
+  "note": "Prophylaxis of rheumatic fever indicated."
+ },
+ {
+  "id": "f783",
+  "verdict": "TARGET",
+  "quote": "Sympathetic ophthalmia, temporal arteritis, uveitis and ocular inflammatory conditions unresponsive to topical corticosteroids.",
+  "note": "Uveitis listed."
+ },
+ {
+  "id": "f090",
+  "verdict": "TARGET",
+  "quote": "reduce the risk of acute urinary retention (AUR)",
+  "note": "Prevention of AUR is an indicated goal."
+ },
+ {
+  "id": "f202",
+  "verdict": "FP1_setting",
+  "quote": "in the presence of at least one weight-related comorbid condition (e.g., hypertension, dyslipidaemia",
+  "note": "Hypertension only as a qualifying comorbidity for weight management."
+ },
+ {
+  "id": "f573",
+  "verdict": "TARGET",
+  "quote": "in combination with other approved chemotherapeutic agents as first line treatment in patients with small cell lung cancer",
+  "note": "SCLC indicated; recurrent subtype not specifically addressed."
+ },
+ {
+  "id": "f241",
+  "verdict": "TARGET",
+  "quote": "dries the oozing and weeping of poison ivy, poison oak, and poison sumac",
+  "note": "Poison ivy rash itching/oozing is managed."
+ },
+ {
+  "id": "f874",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of trichomoniasis caused by Trichomonas vaginalis",
+  "note": "Trichomoniasis indicated."
+ },
+ {
+  "id": "f223",
+  "verdict": "TARGET",
+  "quote": "Intra-abdominal Infections, including peritonitis caused by Escherichia coli",
+  "note": "Intra-abdominal infections indicated."
+ }
+]

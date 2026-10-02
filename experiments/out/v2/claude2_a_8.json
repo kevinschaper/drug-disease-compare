@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f239",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of patients with severe aplastic anemia who have had an insufficient response to immunosuppressive therapy",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f675",
+  "verdict": "TARGET",
+  "quote": "Monoferric is indicated for the treatment of iron deficiency anemia (IDA) in adult patients",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f689",
+  "verdict": "FP1_setting",
+  "quote": "E-Z-DISK is indicated for the evaluation of esophageal patency",
+  "note": "Diagnostic contrast agent; stricture is only the condition being imaged, not treated."
+ },
+ {
+  "id": "f680",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (i.e., Zollinger-Ellison Syndrome, systemic mastocytosis, multiple endocrine adenomas)",
+  "note": "Systemic mastocytosis named in list of indicated hypersecretory conditions."
+ },
+ {
+  "id": "f294",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "CAP here is community-acquired pneumonia; acronym collision with CAP myopathy."
+ },
+ {
+  "id": "f192",
+  "verdict": "FP3_cross_section",
+  "quote": "Because of the risks of addiction, abuse, and misuse with opioids",
+  "note": "Opioid dependence appears only as a risk/limitation, not an indication."
+ },
+ {
+  "id": "f320",
+  "verdict": "FP5_negation",
+  "quote": "Safety and effectiveness for the prevention or treatment of actinic keratoses, skin neoplasms, or lentigo maligna have not been established.",
+  "note": "Explicitly not established."
+ },
+ {
+  "id": "f074",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of urge incontinence and/or increased urinary frequency and urgency",
+  "note": "Pollakisuria = increased urinary frequency."
+ },
+ {
+  "id": "f408",
+  "verdict": "TARGET",
+  "quote": "indicated in combination with trastuzumab for the treatment of adult patients with RAS wild-type, HER2-positive unresectable or metastatic colorectal cancer",
+  "note": "Explicit indication (subtype of CRC)."
+ },
+ {
+  "id": "f171",
+  "verdict": "TARGET",
+  "quote": "advanced mycosis fungoides (cutaneous T cell lymphoma)",
+  "note": "Cutaneous T-cell lymphoma explicitly named."
+ },
+ {
+  "id": "f451",
+  "verdict": "TARGET",
+  "quote": "Lymphomas: Hodgkin's disease, non-Hodgkin's lymphoma.",
+  "note": "Hodgkin's disease listed; classic HL is a subtype."
+ },
+ {
+  "id": "f098",
+  "verdict": "FP1_setting",
+  "quote": "secondary (post-polycythemia vera or post-essential thrombocythemia) myelofibrosis (MF)",
+  "note": "Polycythemia vera is only the antecedent of the treated myelofibrosis."
+ },
+ {
+  "id": "f635",
+  "verdict": "TARGET",
+  "quote": "For the treatment of most athlete's foot (tinea pedis), jock itch (tinea cruris), ringworm (tinea corporis)",
+  "note": "Tinea infections explicitly indicated."
+ },
+ {
+  "id": "f857",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of severe and persistent pain that requires an extended treatment period with a daily opioid analgesic",
+  "note": "Facial pain is a narrower form of the indicated pain; weak but per granularity rule."
+ },
+ {
+  "id": "f665",
+  "verdict": "TARGET",
+  "quote": "acute gouty arthritis, acute and subacute bursitis, acute nonspecific tenosynovitis",
+  "note": "Subacute bursitis explicitly listed."
+ },
+ {
+  "id": "f067",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text covers SCLC and cervical cancer only; ovarian cancer not mentioned."
+ },
+ {
+  "id": "f518",
+  "verdict": "TARGET",
+  "quote": "For the treatment of systemic lupus erythematosus, dermatomyositis (polymyositis), polymyalgia rheumatica",
+  "note": "Explicitly listed."
+ },
+ {
+  "id": "f312",
+  "verdict": "TARGET",
+  "quote": "Cephalexin for oral suspension is indicated for the treatment of otitis media caused by susceptible isolates",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f746",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderate to severe vasomotor symptoms (VMS) due to menopause",
+  "note": "Menopausal symptom syndrome treated; artificial menopause is a narrower form."
+ },
+ {
+  "id": "f104",
+  "verdict": "TARGET",
+  "quote": "Treatment and prophylaxis of bleeding in patients with haemophilia B (congenital factor IX deficiency).",
+  "note": "Management of hemophilia B bleeding."
+ },
+ {
+  "id": "f521",
+  "verdict": "FP1_setting",
+  "quote": "prevention of bacterial endocarditis in penicillin-allergic patients with prosthetic cardiac valves",
+  "note": "MVP is the at-risk population for endocarditis prophylaxis."
+ },
+ {
+  "id": "f724",
+  "verdict": "TARGET",
+  "quote": "as an adjunct to diet to reduce TG levels in adult patients with severe (≥ 500 mg/dL) hypertriglyceridemia",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f064",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of thrombocytopenia in: Adult patients with immune thrombocytopenia (ITP)",
+  "note": "ITP = thrombocytopenia due to immune destruction."
+ },
+ {
+  "id": "f472",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Indicated for cold sores on face or lips; oropharyngeal pain not mentioned."
+ },
+ {
+  "id": "f086",
+  "verdict": "FP2_symptom_swap",
+  "quote": "(13) chills or hot flushes",
+  "note": "Hot flushes appear only as a panic-attack symptom in the description, not a treatment target."
+ },
+ {
+  "id": "f446",
+  "verdict": "TARGET",
+  "quote": "lower respiratory tract infections, including pneumonia and lung abscess",
+  "note": "Pneumonia explicitly named."
+ },
+ {
+  "id": "f004",
+  "verdict": "TARGET",
+  "quote": "excessive sleepiness associated with narcolepsy, obstructive sleep apnea, and shift work disorder",
+  "note": "Shift work disorder explicitly indicated."
+ },
+ {
+  "id": "f829",
+  "verdict": "TARGET",
+  "quote": "primary hypercholesterolemia (heterozygous familial and nonfamilial)",
+  "note": "Familial hypercholesterolemia indicated."
+ },
+ {
+  "id": "f615",
+  "verdict": "FP6_coingredient",
+  "quote": "The naproxen component of naproxen and esomeprazole magnesium delayed-release tablet is indicated for relief of signs and symptoms of: osteoarthritis",
+  "note": "OA indication belongs to naproxen, not esomeprazole."
+ },
+ {
+  "id": "f209",
+  "verdict": "TARGET",
+  "quote": "unresectable or metastatic microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) colorectal cancer (CRC)",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f735",
+  "verdict": "TARGET",
+  "quote": "Aggressive systemic mastocytosis (ASM), systemic mastocytosis with associated hematological neoplasm (SM-AHN), or mast cell leukemia",
+  "note": "SM subtypes indicated; near parent."
+ },
+ {
+  "id": "f280",
+  "verdict": "TARGET",
+  "quote": "Treatment of Esophageal Candidiasis in adult and pediatric patients 4 months of age and older",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f627",
+  "verdict": "FP1_setting",
+  "quote": "in patients treated with cytotoxic chemotherapy for malignancy",
+  "note": "Cancer is the background; neutropenia is treated."
+ },
+ {
+  "id": "f790",
+  "verdict": "TARGET",
+  "quote": "advanced hormone receptor-positive, HER2-negative breast cancer in combination with exemestane",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f403",
+  "verdict": "TARGET",
+  "quote": "uncomplicated skin and skin structure infections (mild to moderate) including abscesses, cellulitis, furuncles, impetigo, pyoderma",
+  "note": "Impetigo explicitly listed."
+ },
+ {
+  "id": "f855",
+  "verdict": "TARGET",
+  "quote": "The treatment of pathological hypersecretory conditions (i.e., Zollinger-Ellison Syndrome, systemic mastocytosis, multiple endocrine adenomas)",
+  "note": "Systemic mastocytosis named in list of indicated hypersecretory conditions."
+ },
+ {
+  "id": "f158",
+  "verdict": "TARGET",
+  "quote": "Alprazolam tablets, USP are indicated for the management of anxiety disorder",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f232",
+  "verdict": "FP1_setting",
+  "quote": "Assessment of left ventricular function (left ventricular ejection fraction and wall motion) in patients with known or suspected heart disease",
+  "note": "Diagnostic agent; heart disease is the population."
+ },
+ {
+  "id": "f085",
+  "verdict": "TARGET",
+  "quote": "Kerendia is indicated for the treatment of chronic kidney disease (with albuminuria) associated with type 2 diabetes in adults.",
+  "note": "Explicit indication."
+ },
+ {
+  "id": "f277",
+  "verdict": "TARGET",
+  "quote": "with prednisone in metastatic castration-resistant prostate cancer",
+  "note": "Prostate cancer subtype indicated."
+ },
+ {
+  "id": "f599",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of seizures associated with Dravet syndrome (DS) in patients taking clobazam",
+  "note": "Management of Dravet seizures."
+ },
+ {
+  "id": "f154",
+  "verdict": "TARGET",
+  "quote": "Impetigo contagiosa, superficial folliculitis, ecthyma, furunculosis",
+  "note": "Impetigo listed under primary skin infections."
+ },
+ {
+  "id": "f022",
+  "verdict": "FP5_negation",
+  "quote": "Not recommended for the treatment of type 1 diabetes mellitus or diabetic ketoacidosis.",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f461",
+  "verdict": "FP1_setting",
+  "quote": "to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation",
+  "note": "AF is the setting; stroke/embolism is prevented."
+ },
+ {
+  "id": "f338",
+  "verdict": "TARGET",
+  "quote": "anovulation (including polycystic ovarian disease, PCOD) in women who have been unresponsive to treatment with clomiphene citrate",
+  "note": "Anovulatory infertility and ART indicated; female infertility near parent."
+ }
+]

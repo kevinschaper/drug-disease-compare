@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f706",
+  "verdict": "FP6_coingredient",
+  "quote": "temporarily relieves these symptoms due to the common cold, hay fever (allergic rhinitis) or other upper respiratory allergies: runny nose sneezing",
+  "note": "Combination-only labels; the rhinitis symptoms (runny nose, sneezing, itchy eyes) belong to the antihistamine partner, clofedanol contributes only the cough relief."
+ },
+ {
+  "id": "f327",
+  "verdict": "TARGET",
+  "quote": "indicated ... for the treatment of community-acquired bacterial pneumonia (CABP)",
+  "note": "CABP is a specific form of pneumonia, and pneumonia is a close parent."
+ },
+ {
+  "id": "f133",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases Pemphigus; bullous dermatitis herpetiformis; severe erythema multiforme (Stevens-Johnson syndrome)",
+  "note": "Severe erythema multiforme is listed as an indication."
+ },
+ {
+  "id": "f346",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Pertussis (whooping cough) caused by Bordetella pertussis",
+  "note": "The label treats the pertussis infection; the edge names the symptom cough."
+ },
+ {
+  "id": "f035",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of invasive aspergillosis in adult and pediatric patients (3 months of age and older) who are refractory to or intolerant of other therapies",
+  "note": "Invasive aspergillosis is a form of aspergillosis."
+ },
+ {
+  "id": "f583",
+  "verdict": "TARGET",
+  "quote": "Noxafil oral suspension is indicated for the treatment of oropharyngeal candidiasis (OPC)",
+  "note": "Exact match."
+ },
+ {
+  "id": "f670",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lidocaine labels cover ocular surface anesthesia and minor pain; pemphigoid is never mentioned."
+ },
+ {
+  "id": "f865",
+  "verdict": "FP1_setting",
+  "quote": "PAH associated with congenital heart disease with repaired shunts (10%)",
+  "note": "Indicated for PAH; heart disease appears only as the background etiology of the study population."
+ },
+ {
+  "id": "f808",
+  "verdict": "TARGET",
+  "quote": "Atopic dermatitis Serum sickness.",
+  "note": "Atopic dermatitis is a synonym of atopic eczema, listed under allergic states."
+ },
+ {
+  "id": "f786",
+  "verdict": "TARGET",
+  "quote": "for the management of the temporary polyuria and polydipsia following head trauma or surgery in the pituitary region",
+  "note": "Polydipsia is explicitly managed. It is also a contraindication, but in the habitual/psychogenic sense."
+ },
+ {
+  "id": "f767",
+  "verdict": "FP5_negation",
+  "quote": "VIGIV is not indicated for postvaccinial encephalitis",
+  "note": "Explicitly not indicated."
+ },
+ {
+  "id": "f653",
+  "verdict": "FP4_overbroad",
+  "quote": "for the treatment of acute lymphoblastic leukemia (ALL) and lymphoblastic lymphoma (LBL)",
+  "note": "Only ALL is indicated; generic leukemia is a whole disease class."
+ },
+ {
+  "id": "f807",
+  "verdict": "FP1_setting",
+  "quote": "prevention and treatment of hyperuricaemia in adult patients undergoing chemotherapy for haematologic malignancies at intermediate to high risk of Tumor Lysis Syndrome (TLS)",
+  "note": "The target is hyperuricaemia; TLS risk only defines the population."
+ },
+ {
+  "id": "f618",
+  "verdict": "TARGET",
+  "quote": "indicated for intralesional use in alopecia areata, discoid lupus erythematosus, keloids",
+  "note": "Alopecia areata is listed."
+ },
+ {
+  "id": "f355",
+  "verdict": "TARGET",
+  "quote": "Trajenta is indicated in the treatment of type 2 diabetes mellitus to improve glycaemic control in adults",
+  "note": "A single-agent EMA indication."
+ },
+ {
+  "id": "f015",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of cytomegalovirus (CMV) retinitis in immunocompromised adult patients",
+  "note": "CMV retinitis is a form of retinitis; the parent is close."
+ },
+ {
+  "id": "f191",
+  "verdict": "TARGET",
+  "quote": "Nadolol tablets, USP are indicated for the treatment of hypertension, to lower blood pressure.",
+  "note": "Hypertension indication."
+ },
+ {
+  "id": "f254",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Testicular or scrotal pain is not mentioned; indications are generic minor aches and pains."
+ },
+ {
+  "id": "f054",
+  "verdict": "TARGET",
+  "quote": "Sorafenib tablets are indicated for the treatment of patients with unresectable hepatocellular carcinoma (HCC).",
+  "note": "Exact match."
+ },
+ {
+  "id": "f220",
+  "verdict": "TARGET",
+  "quote": "Orfadin is indicated for the treatment of adult patients with alkaptonuria (AKU).",
+  "note": "Exact match (EMA)."
+ },
+ {
+  "id": "f093",
+  "verdict": "TARGET",
+  "quote": "Adempas is indicated for the treatment of adults with pulmonary arterial hypertension (PAH), (WHO Group 1)",
+  "note": "PAH and CTEPH are subtypes of pulmonary hypertension. Only PH-IIP is contraindicated."
+ },
+ {
+  "id": "f405",
+  "verdict": "FP2_symptom_swap",
+  "quote": "includes at least five of the following nine symptoms: depressed mood, ... insomnia or hypersomnia",
+  "note": "Insomnia appears only as a diagnostic symptom of depression, which is what the drug treats."
+ },
+ {
+  "id": "f878",
+  "verdict": "FP1_setting",
+  "quote": "Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions.",
+  "note": "Indicated for hypertension; MI is mentioned only as class-level rationale for lowering BP, not as an irbesartan indication."
+ },
+ {
+  "id": "f516",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Dysuria is not mentioned; indications are menopausal symptoms, vulvovaginal atrophy, hypoestrogenism and osteoporosis."
+ },
+ {
+  "id": "f417",
+  "verdict": "TARGET",
+  "quote": "severe acute and chronic allergic and inflammatory processes involving the eye and its adnexa, such as: allergic conjunctivitis",
+  "note": "Atopic conjunctivitis is a subtype of allergic conjunctivitis."
+ },
+ {
+  "id": "f173",
+  "verdict": "TARGET",
+  "quote": "Sorafenib tablets are indicated for the treatment of patients with advanced renal cell carcinoma (RCC).",
+  "note": "Exact match."
+ },
+ {
+  "id": "f877",
+  "verdict": "TARGET",
+  "quote": "systemic fungal infections ... blastomycosis, coccidioidomycosis, histoplasmosis, chromomycosis, and paracoccidioidomycosis",
+  "note": "Coccidioidomycosis is listed."
+ },
+ {
+  "id": "f578",
+  "verdict": "FP5_negation",
+  "quote": "OZEMPIC is not indicated for use in patients with type 1 diabetes mellitus.",
+  "note": "Explicitly not indicated."
+ },
+ {
+  "id": "f525",
+  "verdict": "TARGET",
+  "quote": "Zaleplon is indicated for the short-term treatment of insomnia.",
+  "note": "Exact match."
+ },
+ {
+  "id": "f046",
+  "verdict": "FP5_negation",
+  "quote": "Not indicated for treatment of transient hypothyroidism during the recovery phase of subacute thyroiditis",
+  "note": "Explicit limitation of use."
+ },
+ {
+  "id": "f315",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of symptomatic benign prostatic hyperplasia (BPH) in men with an enlarged prostate to: improve symptoms, reduce the risk of acute urinary retention (AUR)",
+  "note": "Prevention of acute urinary retention is a stated goal."
+ },
+ {
+  "id": "f795",
+  "verdict": "FP5_negation",
+  "quote": "Alfuzosin hydrochloride extended-release tablets, USP are not indicated for the treatment of hypertension.",
+  "note": "Explicitly not indicated."
+ },
+ {
+  "id": "f256",
+  "verdict": "TARGET",
+  "quote": "Tobramycin for Injection is indicated for the treatment of bone infections caused by susceptible isolates",
+  "note": "Bacterial bone infection is osteomyelitis."
+ },
+ {
+  "id": "f537",
+  "verdict": "TARGET",
+  "quote": "MYLOTARG is indicated for the treatment of newly-diagnosed CD33-positive acute myeloid leukemia",
+  "note": "AML is a form of myeloid leukemia."
+ },
+ {
+  "id": "f086",
+  "verdict": "FP2_symptom_swap",
+  "quote": "(13) chills or hot flushes",
+  "note": "Hot flushes appear only as a diagnostic symptom of panic attacks; the drug treats panic and anxiety disorders."
+ },
+ {
+  "id": "f802",
+  "verdict": "TARGET",
+  "quote": "Septicemia, empyema, pneumonia, pericarditis, endocarditis, meningitis",
+  "note": "Pneumonia is listed as a clinical indication."
+ },
+ {
+  "id": "f657",
+  "verdict": "TARGET",
+  "quote": "Uses for temporary relief of mild symptoms of intermittent asthma \u25a0 wheezing \u25a0 tightness of chest \u25a0 shortness of breath",
+  "note": "Wheezing is named as a symptom relieved (OTC inhaler label)."
+ },
+ {
+  "id": "f011",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "All supplied labels are for galantamine, not benzgalantamine; none names the queried product."
+ },
+ {
+  "id": "f608",
+  "verdict": "FP2_symptom_swap",
+  "quote": "Gabapentin is indicated for: Management of postherpetic neuralgia in adults",
+  "note": "Treats neuropathic pain after herpes zoster, not the viral infection."
+ },
+ {
+  "id": "f817",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Lupus/SLE arthritis is never mentioned; indications are RA, JIA, PsA and others."
+ },
+ {
+  "id": "f734",
+  "verdict": "TARGET",
+  "quote": "Kevzara is indicated for the treatment of active polyarticular juvenile idiopathic arthritis (pJIA",
+  "note": "Exact match (EMA)."
+ },
+ {
+  "id": "f553",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema",
+  "note": "Single-agent tiotropium COPD indication."
+ },
+ {
+  "id": "f606",
+  "verdict": "TARGET",
+  "quote": "Cimzia is indicated for the treatment of adult patients with severe active axial spondyloarthritis",
+  "note": "Exact match (EMA)."
+ },
+ {
+  "id": "f896",
+  "verdict": "TARGET",
+  "quote": "REYVOW is indicated for the acute treatment of migraine with or without aura in adults.",
+  "note": "Migraine without aura is explicitly covered."
+ },
+ {
+  "id": "f139",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of adult patients with metastatic non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC is a form of lung cancer, a close parent. A durvalumab combination regimen, not a fixed-dose combination."
+ }
+]

@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f050",
+  "verdict": "TARGET",
+  "quote": "adults and pediatric patients aged 8 years and older with heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "HeFH explicitly listed as an LDL-C lowering indication."
+ },
+ {
+  "id": "f354",
+  "verdict": "TARGET",
+  "quote": "treatment of adult patients with unresectable or metastatic liposarcoma or leiomyosarcoma who received a prior anthracycline-containing regimen",
+  "note": "Leiomyosarcoma named as indicated."
+ },
+ {
+  "id": "f370",
+  "verdict": "TARGET",
+  "quote": "Nicardipine hydrochloride capsules are indicated for the treatment of hypertension.",
+  "note": "Hypertension is a direct indication."
+ },
+ {
+  "id": "f335",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of relapsing forms of multiple sclerosis (MS)",
+  "note": "Relapsing MS is a form of MS."
+ },
+ {
+  "id": "f460",
+  "verdict": "FP2_symptom_swap",
+  "quote": "for the temporary relief of these symptoms associated with menstrual periods: cramps bloating water-weight gain",
+  "note": "Text relieves menstrual symptoms, not menstruation itself."
+ },
+ {
+  "id": "f532",
+  "verdict": "TARGET",
+  "quote": "specifically intended to treat potentially life-threatening fungal infections: aspergillosis, cryptococcosis (torulosis)",
+  "note": "Cryptococcosis listed among treated infections."
+ },
+ {
+  "id": "f774",
+  "verdict": "FP5_negation",
+  "quote": "Not for treatment of type 1 diabetes or diabetic ketoacidosis.",
+  "note": "Label explicitly excludes type 1 diabetes."
+ },
+ {
+  "id": "f877",
+  "verdict": "TARGET",
+  "quote": "systemic fungal infections ... blastomycosis, coccidioidomycosis, histoplasmosis, chromomycosis, and paracoccidioidomycosis",
+  "note": "Coccidioidomycosis listed as indicated."
+ },
+ {
+  "id": "f598",
+  "verdict": "FP5_negation",
+  "quote": "abnormal uterine bleeding due to hormonal imbalance in the absence of organic pathology, such as fibroids or uterine cancer",
+  "note": "Uterine cancer appears only as an explicit exclusion."
+ },
+ {
+  "id": "f044",
+  "verdict": "TARGET",
+  "quote": "treatment of dysfunctions associated with hyperprolactinemia including amenorrhea with or without galactorrhea",
+  "note": "Galactorrhea named among treated hyperprolactinemia dysfunctions."
+ },
+ {
+  "id": "f418",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only non-small cell lung cancer is indicated; SCLC not mentioned."
+ },
+ {
+  "id": "f449",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of myocardial infarction (MI)",
+  "note": "MI prevention is a stated indication."
+ },
+ {
+  "id": "f807",
+  "verdict": "FP1_setting",
+  "quote": "prevention and treatment of hyperuricaemia in adult patients undergoing chemotherapy for haematologic malignancies at intermediate to high risk of Tumor Lysis Syndrome (TLS)",
+  "note": "Target is hyperuricaemia; TLS is the risk setting."
+ },
+ {
+  "id": "f609",
+  "verdict": "FP4_overbroad",
+  "quote": "Advanced testicular cancer ( 1.1 ) Advanced ovarian cancer ( 1.2 ) Advanced bladder cancer ( 1.3 )",
+  "note": "Label covers specific cancers; generic 'cancer' is overbroad."
+ },
+ {
+  "id": "f701",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: minor pain of arthritis",
+  "note": "Arthritis pain indicated; RA is a subtype of arthritis (pain management counts)."
+ },
+ {
+  "id": "f527",
+  "verdict": "TARGET",
+  "quote": "Candesartan cilexetil tablets are indicated for the treatment of heart failure (NYHA class II-IV)",
+  "note": "Heart failure is a direct indication."
+ },
+ {
+  "id": "f056",
+  "verdict": "TARGET",
+  "quote": "Prevention and treatment of postoperative nausea and vomiting in adults.",
+  "note": "Vomiting (CINV/PONV) is the treated condition."
+ },
+ {
+  "id": "f283",
+  "verdict": "TARGET",
+  "quote": "minor aches and pains associated with: ... the premenstrual and menstrual periods (dysmenorrhea)",
+  "note": "Dysmenorrhea named explicitly."
+ },
+ {
+  "id": "f204",
+  "verdict": "FP5_negation",
+  "quote": "not indicated and are not recommended for the treatment of patients with chronic lymphocytic leukemia (CLL) outside of controlled clinical trials",
+  "note": "Explicit limitation of use for CLL."
+ },
+ {
+  "id": "f628",
+  "verdict": "TARGET",
+  "quote": "treatment of adults with locally advanced or metastatic cholangiocarcinoma with a fibroblast growth factor receptor 2 (FGFR2) fusion or rearrangement",
+  "note": "Cholangiocarcinoma indicated (EMA)."
+ },
+ {
+  "id": "f569",
+  "verdict": "TARGET",
+  "quote": "metastatic soft tissue sarcoma, metastatic bone sarcomas",
+  "note": "Bone sarcoma listed among indicated cancers."
+ },
+ {
+  "id": "f494",
+  "verdict": "TARGET",
+  "quote": "indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE)",
+  "note": "HAE type 3 is a subtype of indicated HAE."
+ },
+ {
+  "id": "f583",
+  "verdict": "TARGET",
+  "quote": "Noxafil oral suspension is indicated for the treatment of oropharyngeal candidiasis (OPC)",
+  "note": "OPC is a direct indication."
+ },
+ {
+  "id": "f357",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of moderately to severely active ulcerative colitis in adult patients",
+  "note": "UC is a direct indication."
+ },
+ {
+  "id": "f862",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only systemic hypertension and angina indicated; portal hypertension not mentioned."
+ },
+ {
+  "id": "f898",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for short-term administration ... in acute gouty arthritis, acute and subacute bursitis",
+  "note": "Bursitis listed as indicated."
+ },
+ {
+  "id": "f353",
+  "verdict": "TARGET",
+  "quote": "Enjaymo is indicated for the treatment of haemolytic anaemia in adult patients with cold agglutinin disease (CAD).",
+  "note": "Haemolytic anaemia is the treated condition."
+ },
+ {
+  "id": "f470",
+  "verdict": "TARGET",
+  "quote": "relief of symptoms associated with allergic rhinitis such as sneezing, rhinorrhea, pruritus and lacrimation",
+  "note": "Rhinorrhea named as a relieved symptom."
+ },
+ {
+  "id": "f313",
+  "verdict": "TARGET",
+  "quote": "adjunctive treatment to levodopa/carbidopa in patients with Parkinson's disease (PD) experiencing \"off\" episodes",
+  "note": "Adjunctive PD treatment counts."
+ },
+ {
+  "id": "f372",
+  "verdict": "TARGET",
+  "quote": "adults and pediatric patients aged 10 years and older with heterozygous familial hypercholesterolemia (HeFH)",
+  "note": "Familial hypercholesterolemia (HeFH/HoFH) indicated."
+ },
+ {
+  "id": "f105",
+  "verdict": "TARGET",
+  "quote": "Nadolol is indicated for the long-term management of patients with angina pectoris",
+  "note": "Angina pectoris is a direct indication."
+ },
+ {
+  "id": "f809",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only generic opioid-requiring pain indicated; CRPS not mentioned."
+ },
+ {
+  "id": "f172",
+  "verdict": "TARGET",
+  "quote": "first-line treatment of patients with unresectable, locally advanced, recurrent or metastatic non-squamous non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC indicated."
+ },
+ {
+  "id": "f021",
+  "verdict": "TARGET",
+  "quote": "relief of the inflammatory and pruritic manifestations of atopic dermatitis",
+  "note": "Atopic dermatitis = atopic eczema."
+ },
+ {
+  "id": "f137",
+  "verdict": "TARGET",
+  "quote": "in patients with Graves' disease with hyperthyroidism or toxic multinodular goiter who are intolerant of methimazole",
+  "note": "Hyperthyroidism is the treated condition."
+ },
+ {
+  "id": "f193",
+  "verdict": "TARGET",
+  "quote": "Community-acquired pneumonia due to Chlamydophila pneumoniae, Haemophilus influenzae, Mycoplasma pneumoniae or Streptococcus pneumoniae",
+  "note": "CAP indicated; pneumonia near parent."
+ },
+ {
+  "id": "f574",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Hodgkin lymphoma not mentioned; only hepatosplenic T-cell lymphoma as an adverse event."
+ },
+ {
+  "id": "f664",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Text is an RBC rejuvenation solution; leptomeningitis not mentioned."
+ },
+ {
+  "id": "f830",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Diabetic kidney disease appears only in generic class boilerplate, not as an atenolol indication."
+ },
+ {
+  "id": "f414",
+  "verdict": "FP2_symptom_swap",
+  "quote": "acute treatment of agitation associated with schizophrenia or bipolar I disorder in adults",
+  "note": "Treats agitation, not bipolar I disorder itself."
+ },
+ {
+  "id": "f648",
+  "verdict": "TARGET",
+  "quote": "CREAM, 1.0% is an antifungal agent indicated for the treatment of tinea pedis (athlete's foot)",
+  "note": "Cream label indicates tinea pedis (solution excludes it; union applies)."
+ },
+ {
+  "id": "f870",
+  "verdict": "TARGET",
+  "quote": "indicated for use in combination with other antiretroviral agents for the treatment of HIV-1 infection",
+  "note": "HIV-1 infection indicated."
+ },
+ {
+  "id": "f342",
+  "verdict": "TARGET",
+  "quote": "indicated for the control of extrapyramidal disorders caused by central nervous system drugs",
+  "note": "Drug-induced extrapyramidal disorders indicated."
+ },
+ {
+  "id": "f234",
+  "verdict": "TARGET",
+  "quote": "induction of ovulation (OI) and pregnancy in anovulatory infertile patients",
+  "note": "Infertility treatment indicated."
+ },
+ {
+  "id": "f189",
+  "verdict": "FP5_negation",
+  "quote": "The efficacy of SAPHNELO has not been evaluated in patients with severe active lupus nephritis or severe active central nervous system lupus.",
+  "note": "CNS lupus explicitly excluded in limitations of use."
+ }
+]

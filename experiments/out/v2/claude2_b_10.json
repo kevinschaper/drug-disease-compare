@@ -1,0 +1,272 @@
+[
+ {
+  "id": "f017",
+  "verdict": "TARGET",
+  "quote": "For relief of the signs and symptoms of bursitis",
+  "note": "Bursitis named directly."
+ },
+ {
+  "id": "f308",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of primary hyperkalemic periodic paralysis, primary hypokalemic periodic paralysis, and related variants",
+  "note": "Label is specific periodic paralysis; generic \"Paralysis\" is far broader."
+ },
+ {
+  "id": "f510",
+  "verdict": "TARGET",
+  "quote": "The total management of anxiety, tension, and psychomotor agitation in conditions of emotional stress requires in most instances a combined approach of psychotherapy and chemotherapy",
+  "note": "IM label frames psychomotor agitation as the target of the drug-therapy phase; also acutely disturbed patients."
+ },
+ {
+  "id": "f461",
+  "verdict": "FP1_setting",
+  "quote": "to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation",
+  "note": "AF is the population; stroke/embolism is the target."
+ },
+ {
+  "id": "f572",
+  "verdict": "TARGET",
+  "quote": "Exfoliative dermatitis",
+  "note": "Listed under dermatologic diseases."
+ },
+ {
+  "id": "f162",
+  "verdict": "TARGET",
+  "quote": "replacement therapy in primary (thyroidal), secondary (pituitary), and tertiary (hypothalamic) congenital or acquired hypothyroidism",
+  "note": "Congenital hypothyroidism named."
+ },
+ {
+  "id": "f016",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment of patients with advanced gastric adenocarcinoma, including adenocarcinoma of the gastroesophageal junction",
+  "note": "Only gastric adenocarcinoma indicated; generic adenocarcinoma is a whole histologic class."
+ },
+ {
+  "id": "f599",
+  "verdict": "TARGET",
+  "quote": "DIACOMIT is indicated for the treatment of seizures associated with Dravet syndrome (DS) in patients taking clobazam",
+  "note": "Seizures of Dravet syndrome are its management."
+ },
+ {
+  "id": "f890",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only systemic hypertension indicated; pulmonary hypertension not mentioned."
+ },
+ {
+  "id": "f471",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin",
+  "note": "Diphtheria named as indication."
+ },
+ {
+  "id": "f568",
+  "verdict": "TARGET",
+  "quote": "Symptomatic treatment of mild to moderately severe Alzheimer's dementia.",
+  "note": "EMA indication names Alzheimer dementia."
+ },
+ {
+  "id": "f339",
+  "verdict": "TARGET",
+  "quote": "indicated for the first-line treatment of locally advanced or metastatic non-small cell lung cancer, in combination with carboplatin",
+  "note": "NSCLC indicated."
+ },
+ {
+  "id": "f567",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Only LGS seizures indicated; COVID-19-related seizures never mentioned."
+ },
+ {
+  "id": "f369",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of chronic hepatitis C (CHC) virus infection in combination with PEGASYS",
+  "note": "CHC named (combination therapy counts)."
+ },
+ {
+  "id": "f818",
+  "verdict": "FP1_setting",
+  "quote": "indicated to reduce serum phosphorus in adults with chronic kidney disease (CKD) on dialysis",
+  "note": "CKD is the population; hyperphosphatemia is the target."
+ },
+ {
+  "id": "f268",
+  "verdict": "TARGET",
+  "quote": "chronic treatment of mild to moderate atopic dermatitis in non-immunocompromised adults and children 2 years of age and older",
+  "note": "Atopic eczema = atopic dermatitis."
+ },
+ {
+  "id": "f752",
+  "verdict": "TARGET",
+  "quote": "Gastric Cancer in combination with platinum and fluoropyrimidine-based chemotherapy ... HER2-negative gastric or gastroesophageal junction adenocarcinoma",
+  "note": "Gastric cancer indicated."
+ },
+ {
+  "id": "f276",
+  "verdict": "TARGET",
+  "quote": "adjunctive therapy for the treatment of partial-onset, primary generalized tonic-clonic seizures, or seizures associated with Lennox-Gastaut syndrome (LGS)",
+  "note": "LGS seizures indicated."
+ },
+ {
+  "id": "f602",
+  "verdict": "TARGET",
+  "quote": "Adjunctive therapy to standard of care for the treatment of acute hyperammonemia due to N-acetylglutamate synthase (NAGS) deficiency",
+  "note": "Hyperammonemia is the treated condition."
+ },
+ {
+  "id": "f559",
+  "verdict": "TARGET",
+  "quote": "Post-traumatic osteoarthritis Synovitis of osteoarthritis",
+  "note": "Listed among rheumatic disorders."
+ },
+ {
+  "id": "f020",
+  "verdict": "TARGET",
+  "quote": "ELFABRIO is indicated for the treatment of adults with confirmed Fabry disease.",
+  "note": "Fabry disease named."
+ },
+ {
+  "id": "f356",
+  "verdict": "TARGET",
+  "quote": "Urinary Tract Infections (complicated and uncomplicated), including pyelonephritis and cystitis",
+  "note": "UTI named."
+ },
+ {
+  "id": "f196",
+  "verdict": "TARGET",
+  "quote": "Thiotepa for Injection has been effective against other lymphomas, such as lymphosarcoma and Hodgkin's disease.",
+  "note": "Hodgkin disease in indications text; classic HL is a subtype."
+ },
+ {
+  "id": "f207",
+  "verdict": "TARGET",
+  "quote": "indicated for the management of patients with chronic stable angina (effort-associated angina)",
+  "note": "Effort-associated angina = exercise-induced angina."
+ },
+ {
+  "id": "f157",
+  "verdict": "TARGET",
+  "quote": "for acute intermittent porphyria",
+  "note": "Named in indication list."
+ },
+ {
+  "id": "f793",
+  "verdict": "TARGET",
+  "quote": "relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease",
+  "note": "Active SPMS included."
+ },
+ {
+  "id": "f620",
+  "verdict": "TARGET",
+  "quote": "Seasonal or perennial allergic rhinitis",
+  "note": "Allergic rhinitis indicated; rhinitis is a near parent."
+ },
+ {
+  "id": "f114",
+  "verdict": "TARGET",
+  "quote": "MAYZENT is indicated for the treatment of relapsing forms of multiple sclerosis (MS)",
+  "note": "Relapsing MS is a form of MS."
+ },
+ {
+  "id": "f040",
+  "verdict": "TARGET",
+  "quote": "chronic simple (open-angle) glaucoma, secondary glaucoma, and preoperatively in acute angle-closure glaucoma",
+  "note": "Glaucoma types indicated."
+ },
+ {
+  "id": "f858",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Iodine text covers goiter/thyroid; pemphigus not mentioned."
+ },
+ {
+  "id": "f134",
+  "verdict": "TARGET",
+  "quote": "The total management of anxiety, tension, and psychomotor agitation in conditions of emotional stress requires in most instances a combined approach of psychotherapy and chemotherapy",
+  "note": "IM label frames psychomotor agitation as the target of the drug-therapy phase; also acutely disturbed patients."
+ },
+ {
+  "id": "f119",
+  "verdict": "TARGET",
+  "quote": "adult patients with resectable (tumors >=4 cm or node positive) non-small cell lung cancer in the neoadjuvant setting",
+  "note": "NSCLC indicated."
+ },
+ {
+  "id": "f473",
+  "verdict": "TARGET",
+  "quote": "Prophylaxis and treatment of venous thrombosis and pulmonary embolism",
+  "note": "PE named."
+ },
+ {
+  "id": "f621",
+  "verdict": "TARGET",
+  "quote": "pemphigus vulgaris and bullous pemphigoid",
+  "note": "Listed in EMA indication."
+ },
+ {
+  "id": "f351",
+  "verdict": "TARGET",
+  "quote": "Collagen Diseases : during an exacerbation or as maintenance therapy in selected cases of: systemic lupus erythematosus, acute rheumatic carditis",
+  "note": "Named in list."
+ },
+ {
+  "id": "f343",
+  "verdict": "FP1_setting",
+  "quote": "for control of heart failure in the setting of acute myocardial infarction",
+  "note": "MI is the setting; heart failure is treated."
+ },
+ {
+  "id": "f789",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Pain management indicated; pain agnosia (insensitivity to pain) not mentioned."
+ },
+ {
+  "id": "f098",
+  "verdict": "FP1_setting",
+  "quote": "primary or secondary (post-polycythemia vera or post-essential thrombocythemia) myelofibrosis (MF)",
+  "note": "Polycythemia vera appears only as antecedent of the treated myelofibrosis."
+ },
+ {
+  "id": "f716",
+  "verdict": "TARGET",
+  "quote": "Replacement therapy in adults with pronounced growth hormone deficiency.",
+  "note": "GH deficiency = reduced circulating GH."
+ },
+ {
+  "id": "f102",
+  "verdict": "TARGET",
+  "quote": "relieves heartburn associated with acid indigestion and sour stomach",
+  "note": "OTC use relieves/prevents heartburn of acid indigestion."
+ },
+ {
+  "id": "f277",
+  "verdict": "TARGET",
+  "quote": "Castration-Resistant Prostate Cancer (CRPC): with prednisone in metastatic castration-resistant prostate cancer",
+  "note": "CRPC is prostate cancer subtype."
+ },
+ {
+  "id": "f679",
+  "verdict": "TARGET",
+  "quote": "Sertraline hydrochloride tablets USP are indicated for the treatment of premenstrual dysphoric disorder (PMDD) in adults.",
+  "note": "PMDD named."
+ },
+ {
+  "id": "f714",
+  "verdict": "TARGET",
+  "quote": "RETACRIT is indicated for the treatment of anemia due to chronic kidney disease (CKD)",
+  "note": "Anemia due to CKD is anemia due to a chronic disorder."
+ },
+ {
+  "id": "f144",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of obsessions and compulsions in patients with Obsessive-Compulsive Disorder (OCD)",
+  "note": "OCD named."
+ },
+ {
+  "id": "f840",
+  "verdict": "TARGET",
+  "quote": "Moxidectin Tablets are indicated for the treatment of onchocerciasis due to Onchocerca volvulus",
+  "note": "Onchocerciasis named."
+ }
+]
