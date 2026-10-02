@@ -3,7 +3,10 @@
 ## What is compared
 
 Three LLM-assisted drug→disease edge sets, each at its latest release (the previous
-releases are kept to characterize [version changes](./changes)):
+releases are kept to characterize [version changes](./changes)). **The MEDIC and DAKP
+updates are being evaluated as in-progress work:** the MeDIC redesign is a local build
+ahead of any release, and DAKP 1.16.0 is a recent iteration of an actively developed KP.
+Results here are feedback on work in progress, not a final assessment of either source.
 
 | | MEDIC (MeDIC redesign) | Drug Approvals KP (`dakp`) | dismech |
 |---|---|---|---|

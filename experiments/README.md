@@ -3,7 +3,9 @@
 Two rounds, each measuring how often an asserted drug→disease *indication* edge is **not** a
 genuine treatment target according to regulator text.
 
-- **v2 (current, 2026-10-02)** — latest releases (MeDIC redesign, DAKP 1.16.0); FDA + EMA
+- **v2 (current, 2026-10-02)** — latest releases (MeDIC redesign, DAKP 1.16.0), both
+  **evaluated as in-progress work**, so these rates are a snapshot to inform the next
+  iteration, not a final verdict on either source; FDA + EMA
   evidence; two Claude reviewers + tie-breaker as a Jev-free reference; Jev (TypeSafe System
   One) validated against it and run over the full population. Below.
 - **v1 (2026-06-23)** — previous releases; FDA only. Kept further down for comparison.

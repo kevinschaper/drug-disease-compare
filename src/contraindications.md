@@ -1,5 +1,12 @@
 # Contraindications
 
+<div class="note">
+  <b>In-progress work.</b> The MEDIC (MeDIC redesign, a local, unreleased build) and DAKP
+  (1.16.0) updates compared here are both under active development. Treat every number on
+  this page as a snapshot of work in progress, to inform the next iteration of each source —
+  not as a final characterization of either resource.
+</div>
+
 `contraindicated_in` is the **opposite** of a treatment relation, so it is held entirely
 apart from the indication overlap on the other pages. Since the MeDIC redesign, **both
 MEDIC and DAKP** export contraindications mined from the label's contraindications

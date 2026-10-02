@@ -18,6 +18,9 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
   FAERS + DailyMed + EMA including off-label use), and dismech
   (`monarch-initiative/dismech`, curated/mechanism-driven — its CHEBI drug→disease
   subset). Adding a source is one entry in `SOURCE_ORDER` plus a loader.
+- **In-progress work.** The MEDIC (MeDIC redesign, local unreleased build) and DAKP
+  (1.16.0) updates are evaluated as work in progress: the comparison and audit are feedback
+  for the next iteration of each source, not a final characterization.
 - **Versioned.** Each source is pinned at a previous and a latest release
   (`data/MANIFEST.yaml`); the head-to-head uses the latest, and a version-changes view
   characterizes how each source moved and which release moved each overlap.
