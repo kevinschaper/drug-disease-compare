@@ -26,6 +26,7 @@ genuine treatment target according to regulator text.
 | 7. report | `audit_report.py` (deterministic): latest rates, like-for-like previous-release and previous-build rates and the changes, Jev validation on all reference edges | `audit_results.json`, `src/data/fp_audit.json`, `src/data/label_check.parquet` |
 | 8b. issue worklists | `medic_issue_worklists.py` (export-derived) + the load-tier / audit tables | `medic_issues/*.tsv` (linked from the issues drafted for the medic repo) |
 | 8. load tiers | `audit_tiers.py` (deterministic): per-pair MEDIC features + cross-source membership + label check, scored against the reference | `tiers.json`, `medic_load_tiers.tsv`, `src/data/tiers.json`, `src/data/medic_tiers.parquet` |
+| 9. regression scorer | `medic_regression.py build` freezes the audit gold sets (38 setting errors, 216 correct, 18 wrong contraindications, negated, self-clash, ion/metabolite, vaccine, cut-text, 121 dropped-but-correct, stub and unresolvable-id nodes) into one file; `medic_regression.py score GOLD EXPORT_DIR` is stdlib-only and scores any MeDIC export against them by id or by label, so the medic maintainers can run it on an unpublished build | `medic_regression_gold.json`; `<export_dir>/medic_regression_score.json` |
 
 Run steps 1–2 and 6–7 with `PYTHONPATH=pipeline:. uv run [--with openpyxl|typesafe-sdk] python -m experiments.<script>`.
 
