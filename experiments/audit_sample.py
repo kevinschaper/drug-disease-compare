@@ -274,6 +274,9 @@ def main() -> None:
     ap.add_argument("--n", type=int, default=150, help="gold sample size per source")
     ap.add_argument("--release", choices=("new", "old"), default="new",
                     help="latest releases (site pairs) or the previous releases (source files)")
+    ap.add_argument("--keep", action="append", default=[], choices=SOURCES, metavar="SOURCE",
+                    help="reuse this source's rows from the existing sample file verbatim (its "
+                         "release didn't change, so its already-judged draw stays valid)")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     old = args.release == "old"
@@ -307,18 +310,31 @@ def main() -> None:
     # Two-stage draw so a larger --n *extends* an earlier sample instead of redrawing it:
     # stage 1 reproduces the original 150-per-source draw (one stream across sources, as
     # first run); stage 2 tops each source up from its remaining pool with its own stream.
+    # Kept sources are copied from the existing file (their draw was already judged); the
+    # rest are redrawn. A redrawn source whose earlier draw was judged must have had those
+    # rows archived under another sid prefix first (see README: build b1001).
+    kept = {}
+    if args.keep and (OUT / f"sample{sfx}.jsonl").exists():
+        for line in open(OUT / f"sample{sfx}.jsonl"):
+            r = json.loads(line)
+            if r["source"] in args.keep:
+                kept.setdefault(r["source"], []).append(r)
     BASE = 150
     rng = random.Random(seed)
     pools = {src: sorted((r for r in pop if r["source"] == src), key=lambda r: r["id"])
              for src in SOURCES}
-    drawn = {src: rng.sample(pools[src], min(BASE, args.n, len(pools[src]))) for src in SOURCES}
-    for src in SOURCES:
+    drawn = {src: rng.sample(pools[src], min(BASE, args.n, len(pools[src])))
+             for src in SOURCES if src not in kept}
+    for src in drawn:
         taken = {r["id"] for r in drawn[src]}
         rest = [r for r in pools[src] if r["id"] not in taken]
         extra = max(0, min(args.n, len(pools[src])) - len(drawn[src]))
         drawn[src] += random.Random(f"{seed}-extend-{src}").sample(rest, extra)
     sample = []
     for src in SOURCES:
+        if src in kept:
+            sample += kept[src]
+            continue
         for j, r in enumerate(drawn[src]):
             sample.append({**r, "sid": f"{idp}{src}-{j}", "release": args.release,
                            **attach_text(r, ev._cache[r["drug"]])})

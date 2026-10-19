@@ -1,0 +1,182 @@
+[
+ {
+  "id": "g003",
+  "verdict": "TARGET",
+  "quote": "Dermatologic Diseases: pemphigus, bullous dermatitis herpetiformis, severe erythema multiforme (Stevens-Johnson syndrome), exfoliative dermatitis, mycosis fungoides, severe psoriasis",
+  "note": "Single-ingredient prednisone labels list severe psoriasis under dermatologic diseases; no combination evidence needed."
+ },
+ {
+  "id": "g014",
+  "verdict": "TARGET",
+  "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin, to prevent establishment of carriers and to eradicate the organism in carriers.",
+  "note": "Single-ingredient erythromycin label names diphtheria as an indication."
+ },
+ {
+  "id": "g019",
+  "verdict": "TARGET",
+  "quote": "Severe seborrheic dermatitis Severe psoriasis Mycosis fungoides",
+  "note": "Single-ingredient dexamethasone labels list mycosis fungoides under dermatologic diseases."
+ },
+ {
+  "id": "g036",
+  "verdict": "TARGET",
+  "quote": "ankylosing spondylitis; acute and subacute bursitis; acute nonspecific tenosynovitis",
+  "note": "Single-ingredient prednisolone labels list acute and subacute bursitis under rheumatic disorders."
+ },
+ {
+  "id": "g042",
+  "verdict": "TARGET",
+  "quote": "Reduce the risk of MI, stroke, revascularization procedures, and angina in adult patients without CHD, but with multiple risk factors",
+  "note": "Single-ingredient atorvastatin label carries the stroke risk-reduction indication itself; the amlodipine/atorvastatin combination merely repeats it."
+ },
+ {
+  "id": "g050",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves these symptoms due to hay fever or other upper respiratory allergies: runny nose itchy, watery eyes sneezing itching of the nose or throat",
+  "note": "Single-ingredient loratadine labels treat the symptoms of hay fever/upper respiratory allergies (allergic rhinitis); the decongestant combination adds nothing relevant."
+ },
+ {
+  "id": "g053",
+  "verdict": "TARGET",
+  "quote": "Hematologic Disorders Acquired (autoimmune) hemolytic anemia, Diamond-Blackfan anemia, pure red cell aplasia, selected cases of secondary thrombocytopenia.",
+  "note": "The 'combination' is betamethasone sodium phosphate + betamethasone acetate, i.e. two salts of betamethasone itself, so the pure red cell aplasia indication belongs to betamethasone's own component."
+ },
+ {
+  "id": "g061",
+  "verdict": "TARGET",
+  "quote": "ASMANEX TWISTHALER is indicated for the maintenance treatment of asthma as prophylactic therapy in adult and pediatric patients 4 years of age and older.",
+  "note": "Single-ingredient mometasone inhaler labels carry the asthma indication independently of the mometasone/formoterol combination."
+ },
+ {
+  "id": "g075",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Single-ingredient pseudoephedrine labels relieve nasal congestion of hay fever (seasonal allergic rhinitis), and the Clarinex-D combination text attributes the nasal decongestant properties for SAR to pseudoephedrine."
+ },
+ {
+  "id": "g089",
+  "verdict": "TARGET",
+  "quote": "Bacterial Septicemia caused by Pseudomonas aeruginosa , Klebsiella spp., Haemophilus influenzae , Escherichia coli",
+  "note": "Single-ingredient ceftazidime labels name bacterial septicemia/sepsis as an indication."
+ },
+ {
+  "id": "g097",
+  "verdict": "TARGET",
+  "quote": "helps decongest sinus openings and passages; temporarily relieves sinus congestion and pressure",
+  "note": "Single-ingredient phenylephrine labels relieve sinus congestion directly."
+ },
+ {
+  "id": "g103",
+  "verdict": "TARGET",
+  "quote": "Tobramycin for Injection is indicated for the treatment of intra-abdominal infections, including peritonitis, caused by susceptible isolates of E. coli, Klebsiella spp., and Enterobacter spp.",
+  "note": "Single-ingredient tobramycin label names peritonitis."
+ },
+ {
+  "id": "g116",
+  "verdict": "TARGET",
+  "quote": "Community-acquired pneumonia in adults ( 1.5 )",
+  "note": "Evidence is only the piperacillin/tazobactam label, but the antibacterial indications of that product belong to piperacillin, the penicillin component; tazobactam is a beta-lactamase inhibitor partner that extends piperacillin's spectrum rather than treating pneumonia itself."
+ },
+ {
+  "id": "g122",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves minor aches and pains due to: Headache.",
+  "note": "The migraine-specific text ('treats migraine') is combination-only (acetaminophen/aspirin/caffeine-type OTC products) and unattributed, but acetaminophen is a co-equal analgesic in those products rather than a bystander, and single-ingredient labels cover headache pain, of which migraine is a subtype; attribution borderline."
+ },
+ {
+  "id": "g132",
+  "verdict": "TARGET",
+  "quote": "Myocardial Infarction, to reduce the risk of cardiovascular mortality",
+  "note": "Single-ingredient metoprolol labels carry the myocardial infarction indication; the HCTZ combination is hypertension only."
+ },
+ {
+  "id": "g138",
+  "verdict": "TARGET",
+  "quote": "Ryeqo is indicated in adult women of reproductive age for: treatment of moderate to severe symptoms of uterine fibroids, symptomatic treatment of endometriosis",
+  "note": "EMA text supports endometriosis, and the Myfembree text names relugolix as the GnRH receptor antagonist with estradiol/norethindrone as hormonal add-back partners; note that both FDA and EMA evidence are the relugolix/E2/NETA combination, single-ingredient Orgovyx is prostate cancer only."
+ },
+ {
+  "id": "g147",
+  "verdict": "TARGET",
+  "quote": "Trachoma caused by Chlamydia trachomatis , although the infectious agent is not always eliminated as judged by immunofluorescence.",
+  "note": "Single-ingredient doxycycline labels name trachoma."
+ },
+ {
+  "id": "g157",
+  "verdict": "TARGET",
+  "quote": "Ciprofloxacin tablets are indicated in adult patients for treatment of lower respiratory tract infections caused by Escherichia coli, Klebsiella pneumoniae",
+  "note": "Single-ingredient ciprofloxacin labels carry lower respiratory tract infections; the combination (otic/ophthalmic) text is irrelevant."
+ },
+ {
+  "id": "g170",
+  "verdict": "TARGET",
+  "quote": "Short term treatment of gastroesophageal reflux disease (GERD).",
+  "note": "Single-ingredient famotidine labels name GERD."
+ },
+ {
+  "id": "g176",
+  "verdict": "TARGET",
+  "quote": "Budesonide inhalation suspension is indicated for the maintenance treatment of asthma and as prophylactic therapy in children 12 months to 8 years of age.",
+  "note": "Single-ingredient budesonide inhalation labels carry asthma independently of the budesonide/formoterol combinations."
+ },
+ {
+  "id": "g187",
+  "verdict": "TARGET",
+  "quote": "maintenance treatment of bronchospasm associated with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and emphysema.",
+  "note": "Single-ingredient Spiriva labels name chronic bronchitis within COPD."
+ },
+ {
+  "id": "g203",
+  "verdict": "TARGET",
+  "quote": "It has also been found useful in the treatment of acute lymphocytic leukemia and the blast phase of chronic myelocytic leukemia.",
+  "note": "Single-ingredient cytarabine labels name blast-phase chronic myelocytic leukemia (a form of CML); the Vyxeos combination is AML only and not needed."
+ },
+ {
+  "id": "g218",
+  "verdict": "TARGET",
+  "quote": "KALYDECO is indicated for the treatment of cystic fibrosis (CF) in patients aged 1 month and older who have at least one mutation in the CFTR gene",
+  "note": "Single-ingredient ivacaftor (Kalydeco) and EMA monotherapy text both carry cystic fibrosis."
+ },
+ {
+  "id": "g230",
+  "verdict": "TARGET",
+  "quote": "For the treatment of systemic lupus erythematosus, dermatomyositis (polymyositis), polymyalgia rheumatica",
+  "note": "Single-ingredient prednisone labels name dermatomyositis."
+ },
+ {
+  "id": "g253",
+  "verdict": "FP6_coingredient",
+  "quote": "relieves symptoms of diarrhea plus bloating, pressure and cramps, commonly referred to as gas",
+  "note": "Single-ingredient loperamide labels cover diarrhea only; the bloating/pressure/cramps (gas) relief appears solely on the loperamide/simethicone combination and belongs to the anti-gas partner, not loperamide."
+ },
+ {
+  "id": "g256",
+  "verdict": "TARGET",
+  "quote": "de novo and secondary MDS of all French-American-British subtypes (refractory anemia, refractory anemia with ringed sideroblasts",
+  "note": "Single-ingredient decitabine label lists refractory anemia with ringed sideroblasts (MDS-RS) among indicated MDS subtypes."
+ },
+ {
+  "id": "g267",
+  "verdict": "TARGET",
+  "quote": "STRIVERDI RESPIMAT is a long-acting beta 2 -agonist indicated for long-term, once-daily maintenance bronchodilator treatment of airflow obstruction in patients with chronic obstructive pulmonary disea",
+  "note": "Single-ingredient olodaterol (Striverdi) label carries COPD."
+ },
+ {
+  "id": "g281",
+  "verdict": "FP6_coingredient",
+  "quote": "for the temporary relief of these symptoms associated with menstrual periods: cramps bloating water-weight gain headache backache breast tenderness fatigue",
+  "note": "Fatigue appears only on multi-ingredient menstrual/cold products; single-ingredient acetaminophen labels relieve pain and fever and never fatigue, so the fatigue claim belongs to the stimulant/other partner ingredients, not acetaminophen."
+ },
+ {
+  "id": "g290",
+  "verdict": "TARGET",
+  "quote": "asthma (as distinct from allergic asthma listed above under \"Allergic States\"), hypersensitivity pneumonitis",
+  "note": "Single-ingredient prednisone labels name asthma under both allergic states and respiratory diseases."
+ },
+ {
+  "id": "g294",
+  "verdict": "TARGET",
+  "quote": "May also be useful as adjunctive therapy in the treatment of duodenal ulcer. IT HAS NOT BEEN SHOWN CONCLUSIVELY WHETHER ANTICHOLINERGIC/ANTISPASMODIC DRUGS AID IN THE HEALING OF A DUODENAL ULCER",
+  "note": "Duodenal ulcer appears only on the phenobarbital/hyoscyamine/atropine/scopolamine combination, but that text attributes the adjunctive use to the anticholinergic/antispasmodic drugs, which includes atropine (whose single-ingredient label covers GI spastic conditions), not to the phenobarbital partner; the 'not shown conclusively' hedge is an FP5 question outside this check."
+ }
+]

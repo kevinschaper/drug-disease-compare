@@ -1,0 +1,176 @@
+[
+ {
+  "id": "g013",
+  "verdict": "TARGET",
+  "quote": "seasonal or perennial allergic rhinitis; asthma; contact dermatitis; atopic dermatitis",
+  "note": "Single-ingredient prednisolone labels list contact dermatitis under Allergic States; the sulfacetamide/prednisolone ophthalmic combo is irrelevant."
+ },
+ {
+  "id": "g016",
+  "verdict": "TARGET",
+  "quote": "AVYCAZ is a combination of ceftazidime, a cephalosporin, and avibactam, a beta-lactamase inhibitor, indicated for the treatment of the following infections",
+  "note": "No single-ingredient text exists (avibactam is only marketed in combination); the combination labels name avibactam as an active beta-lactamase-inhibitor component of the product indicated for cIAI, so the indication is attributable to it rather than belonging to a partner alone - borderline policy call for beta-lactamase inhibitors."
+ },
+ {
+  "id": "g027",
+  "verdict": "TARGET",
+  "quote": "Bartonellosis due to Bartonella bacilliformis .",
+  "note": "Single-ingredient doxycycline label names bartonellosis directly."
+ },
+ {
+  "id": "g041",
+  "verdict": "TARGET",
+  "quote": "Valsartan tablets are indicated for the treatment of hypertension, to lower blood pressure in adults and pediatric patients six years of age and older",
+  "note": "Single-ingredient valsartan text indicates hypertension (essential hypertension is a subtype); EMA text also says 'Treatment of essential hypertension'; amlodipine/HCTZ combos are not needed."
+ },
+ {
+  "id": "g049",
+  "verdict": "FP6_coingredient",
+  "quote": "Ergotamine tartrate and caffeine tablets are indicated as therapy to abort or prevent vascular headache; e.g., migraine",
+  "note": "Migraine appears only on combination labels (ergotamine/caffeine; aspirin-acetaminophen-caffeine 'treats migraine'); caffeine's single-ingredient labels cover apnea of prematurity and alertness only, so the migraine indication belongs to the partner ingredients."
+ },
+ {
+  "id": "g051",
+  "verdict": "TARGET",
+  "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis",
+  "note": "Single-ingredient triamcinolone text lists atopic dermatitis (= atopic eczema); nystatin/triamcinolone combo not needed."
+ },
+ {
+  "id": "g059",
+  "verdict": "TARGET",
+  "quote": "Latanoprost ophthalmic solution is indicated for the reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension.",
+  "note": "Single-ingredient latanoprost labels carry ocular hypertension; Rocklatan combo not needed."
+ },
+ {
+  "id": "g070",
+  "verdict": "TARGET",
+  "quote": "Botulism (adjunctive therapy to antitoxin), gas gangrene, and tetanus (adjunctive therapy to human tetanus immune globulin) Clostridium species",
+  "note": "Single-ingredient penicillin G label lists gas gangrene."
+ },
+ {
+  "id": "g082",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: headache muscle pain toothache",
+  "note": "Single-ingredient aspirin OTC labels list toothache."
+ },
+ {
+  "id": "g091",
+  "verdict": "UNSURE",
+  "quote": "Cirrhosis of the liver accompanied by edema and/or ascites:",
+  "note": "The word ascites appears only on the spironolactone/hydrochlorothiazide combination label (wording from spironolactone's edematous-conditions indication); HCTZ's own labels cover 'edema associated with hepatic cirrhosis', which is closely related but does not name ascites, so attribution to HCTZ is uncertain."
+ },
+ {
+  "id": "g099",
+  "verdict": "TARGET",
+  "quote": "Iritis, iridocyclitis Chorioretinitis Diffuse posterior uveitis and choroiditis",
+  "note": "Single-ingredient dexamethasone labels list iritis/iridocyclitis (= anterior uveitis) and uveitis; the ophthalmic antibiotic/dexamethasone combos are not needed."
+ },
+ {
+  "id": "g108",
+  "verdict": "TARGET",
+  "quote": "Ciprofloxacin 0.3% and dexamethasone 0.1% otic suspension is a combination of ciprofloxacin, a fluoroquinolone antibacterial and dexamethasone, a corticosteroid, indicated for the treatment of infecti",
+  "note": "Acute otitis externa appears only on otic combination labels, but they frame the indication as treatment of infections caused by designated bacteria, which is the ciprofloxacin (antibacterial) component's role, not the steroid's."
+ },
+ {
+  "id": "g118",
+  "verdict": "TARGET",
+  "quote": "Actinomycosis (cervicofacial disease and thoracic and abdominal disease) Actinomyces Israelil",
+  "note": "Single-ingredient penicillin G label lists actinomycosis."
+ },
+ {
+  "id": "g130",
+  "verdict": "TARGET",
+  "quote": "Anthrax Bacillus anthracis",
+  "note": "Single-ingredient penicillin G label lists anthrax."
+ },
+ {
+  "id": "g135",
+  "verdict": "TARGET",
+  "quote": "Acute gouty arthritis Psoriatic arthritis Ankylosing spondylitis",
+  "note": "Single-ingredient dexamethasone labels list ankylosing spondylitis under rheumatic disorders."
+ },
+ {
+  "id": "g139",
+  "verdict": "TARGET",
+  "quote": "serious gynecological infections including endometritis, nongonococcal tubo-ovarian abscess",
+  "note": "Single-ingredient clindamycin injection label names endometritis."
+ },
+ {
+  "id": "g148",
+  "verdict": "TARGET",
+  "quote": "Septicemia, empyema, pneumonia, pericarditis, endocarditis, meningitis Streptococcus pyogenes",
+  "note": "Single-ingredient penicillin G label lists empyema."
+ },
+ {
+  "id": "g160",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves runny nose and alleviates sneezing, itching of the nose or throat, and itchy, watery eyes due to hay fever or other upper respiratory allergies.",
+  "note": "Single-ingredient mepyramine (pyrilamine) OTC label covers hay fever (= allergic rhinitis) symptoms; combination labels are not needed."
+ },
+ {
+  "id": "g173",
+  "verdict": "TARGET",
+  "quote": "Cytarabine Injection in combination with other approved anti-cancer drugs is indicated for remission induction in acute non-lymphocytic leukemia",
+  "note": "Single-ingredient cytarabine labels indicate acute non-lymphocytic leukemia (= AML); Vyxeos combo not needed."
+ },
+ {
+  "id": "g184",
+  "verdict": "TARGET",
+  "quote": "indicated for the relief of the pain of osteoarthritis of joints amenable to topical treatment",
+  "note": "Single-ingredient diclofenac labels cover osteoarthritis of the joints / signs and symptoms of osteoarthritis; diclofenac/misoprostol combo not needed."
+ },
+ {
+  "id": "g199",
+  "verdict": "TARGET",
+  "quote": "a combination of imipenem, a penem antibacterial, and cilastatin, a renal dehydropeptidase inhibitor, indicated for the treatment of the following serious infections ... Lower respiratory tract infect",
+  "note": "Only combination text exists, but cilastatin is a dehydropeptidase inhibitor with no antibacterial role, so the lower respiratory tract infection indication is attributable to the imipenem component."
+ },
+ {
+  "id": "g216",
+  "verdict": "TARGET",
+  "quote": "Moderately severe pneumonia and otitis media due to susceptible Streptococcus pneumoniae .",
+  "note": "Otitis media appears only on Bicillin C-R, but that product combines two benzylpenicillin salts (benzathine + procaine penicillin G), so the indication belongs to the drug's own component."
+ },
+ {
+  "id": "g222",
+  "verdict": "TARGET",
+  "quote": "Upper respiratory tract infections of mild to moderate degree caused by Streptococcus pyogenes",
+  "note": "Single-ingredient erythromycin labels indicate upper respiratory tract infections; erythromycin/benzoyl peroxide combo is acne only and irrelevant."
+ },
+ {
+  "id": "g240",
+  "verdict": "TARGET",
+  "quote": "Captopril decreases the rate of progression of renal insufficiency and development of serious adverse clinical outcomes (death or need for renal transplantation or dialysis)",
+  "note": "The renal (diabetic nephropathy / progression of renal insufficiency) indication is in captopril's single-ingredient text; the captopril/HCTZ combination is hypertension only."
+ },
+ {
+  "id": "g255",
+  "verdict": "TARGET",
+  "quote": "For the management of primary dysmenorrhea",
+  "note": "Single-ingredient naproxen labels list primary dysmenorrhea."
+ },
+ {
+  "id": "g259",
+  "verdict": "TARGET",
+  "quote": "For the temporary relief of minor aches and pains of muscles and joints associated with arthritis, muscle strains, sprains, bruises",
+  "note": "Single-ingredient capsaicin OTC labels list (muscle) strains."
+ },
+ {
+  "id": "g274",
+  "verdict": "TARGET",
+  "quote": "Buprenorphine Sublingual Tablets are indicated for the treatment of opioid dependence and are preferred for induction.",
+  "note": "Single-ingredient buprenorphine and EMA texts indicate opioid dependence; buprenorphine/naloxone combos not needed."
+ },
+ {
+  "id": "g285",
+  "verdict": "TARGET",
+  "quote": "in asthma, atopic dermatitis, contact dermatitis, drug hypersensitivity reactions, perennial or seasonal allergic rhinitis, serum sickness, transfusion reactions.",
+  "note": "Single-ingredient hydrocortisone text lists transfusion reactions under allergic states."
+ },
+ {
+  "id": "g293",
+  "verdict": "FP6_coingredient",
+  "quote": "Uses relieves symptoms of diarrhea plus bloating, pressure and cramps, commonly referred to as gas",
+  "note": "Bloating/distention appears only on the loperamide/simethicone combination label and is the simethicone (anti-gas) component's claim; loperamide's own labels cover diarrhea and ileostomy output only."
+ }
+]

@@ -1,0 +1,224 @@
+[
+ {
+  "id": "g051",
+  "verdict": "TARGET",
+  "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis",
+  "note": "Atopic dermatitis (= atopic eczema) is a named member of the list of allergic conditions the drug controls, not merely a setting."
+ },
+ {
+  "id": "g242",
+  "verdict": "TARGET",
+  "quote": "INCRELEX (mecasermin) injection is indicated for the treatment of growth failure in pediatric patients 2 years of age and older with severe primary IGF- 1 deficiency",
+  "note": "Growth failure is the thing treated (IGF-1 deficiency is the population) and growth delay is a standard synonym of growth failure; the negation only excludes secondary IGFD."
+ },
+ {
+  "id": "g240",
+  "verdict": "TARGET",
+  "quote": "Captopril decreases the rate of progression of renal insufficiency and development of serious adverse clinical outcomes (death or need for renal transplantation or dialysis).",
+  "note": "The diabetic-nephropathy indication explicitly includes slowing progression of renal insufficiency and preventing dialysis/transplant, i.e. management/prevention of kidney failure rather than a mere setting."
+ },
+ {
+  "id": "g088",
+  "verdict": "TARGET",
+  "quote": "LUMAKRAS, in combination with panitumumab, is indicated for the treatment of adult patients with KRAS G12C -mutated metastatic colorectal cancer (mCRC)",
+  "note": "KRAS G12C-mutated metastatic colorectal cancer is a subtype of colorectal carcinoma and the indication belongs to sotorasib itself (panitumumab is a co-administered drug, not a co-ingredient)."
+ },
+ {
+  "id": "g177",
+  "verdict": "TARGET",
+  "quote": "Topotecan is indicated for the treatment of patients with metastatic carcinoma of the ovary after failure of first-line or subsequent therapy.",
+  "note": "Metastatic carcinoma of the ovary is an exact synonym of the edge disease."
+ },
+ {
+  "id": "g151",
+  "verdict": "TARGET",
+  "quote": "Rolufta is indicated as a maintenance bronchodilator treatment to relieve symptoms in adult patients with chronic obstructive pulmonary disease (COPD).",
+  "note": "Maintenance bronchodilator treatment of COPD is management of the disease itself; the bronchodilator indication is attributable to umeclidinium and appears on a single-ingredient product as well as combinations."
+ },
+ {
+  "id": "g007",
+  "verdict": "FP6_coingredient",
+  "quote": "reduces swelling of nasal passages temporarily relieves sinus congestion and pressure temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+  "note": "Nasal congestion appears only in the decongestant-style label texts (nasal swelling, sinus pressure, freer breathing), while every plain loratadine use lists sneezing, runny nose and itchy eyes without congestion, so the claim belongs to a decongestant partner ingredient."
+ },
+ {
+  "id": "g115",
+  "verdict": "FP1_setting",
+  "quote": "There are no controlled trials demonstrating risk reduction with nebivolol tablets.",
+  "note": "The only indication is hypertension; myocardial infarction appears in generic class background text about blood-pressure lowering (with an explicit disclaimer that nebivolol has not shown risk reduction) and in warnings, not as a target."
+ },
+ {
+  "id": "g099",
+  "verdict": "TARGET",
+  "quote": "They are also indicated in chronic anterior uveitis and corneal injury from chemical, radiation or thermal burns, or penetration of foreign bodies.",
+  "note": "Chronic anterior uveitis is named directly as an indication, and iritis/iridocyclitis (anterior uveitis) is listed on the systemic labels."
+ },
+ {
+  "id": "g163",
+  "verdict": "TARGET",
+  "quote": "Candida: Septicemia, endocarditis and urinary system infections have been effectively treated with flucytosine.",
+  "note": "Candida septicemia is a specific form of sepsis listed among the serious infections the drug treats; sepsis is a near parent, not a whole disease class."
+ },
+ {
+  "id": "g126",
+  "verdict": "FP6_coingredient",
+  "quote": "Warnings Liver warning: This product contains acetaminophen.",
+  "note": "Headache appears only on the menstrual-symptom products, which the supplied warnings identify as acetaminophen-containing combinations; the plain antihistamine labels do not claim headache relief, so the indication belongs to the analgesic partner."
+ },
+ {
+  "id": "g232",
+  "verdict": "FP1_setting",
+  "quote": "Gliolan is indicated in adult patients for visualisation of malignant tissue during surgery for malignant glioma (World Health Organization grade III and IV).",
+  "note": "The product is a surgical visualisation (diagnostic) agent; malignant glioma/glioblastoma is the setting of use, not something the drug treats, prevents or manages."
+ },
+ {
+  "id": "g207",
+  "verdict": "FP1_setting",
+  "quote": "Paricalcitol capsules are indicated in adults for the prevention and treatment of secondary hyperparathyroidism associated with Chronic Kidney Disease (CKD) Stages 3 and 4.",
+  "note": "The thing treated is secondary hyperparathyroidism; chronic kidney disease is only the underlying condition/population."
+ },
+ {
+  "id": "g046",
+  "verdict": "TARGET",
+  "quote": "Vigabatrin tablets are indicated as adjunctive therapy for adults and pediatric patients 2 years of age and older with refractory complex partial seizures",
+  "note": "Refractory complex partial seizures are a form of complex partial epilepsy; the 'not a first line agent' statement limits line of therapy rather than negating the indication."
+ },
+ {
+  "id": "g017",
+  "verdict": "TARGET",
+  "quote": "complicated skin and skin structure infections, including diabetic foot infections without osteomyelitis",
+  "note": "Diabetic foot infection is a named item within the indicated cSSSI list (and the EMA text lists diabetic foot infections of the skin and soft tissue); the osteomyelitis exclusion only narrows it."
+ },
+ {
+  "id": "g005",
+  "verdict": "TARGET",
+  "quote": "ILUMYA is an interleukin-23 antagonist indicated for the treatment of moderate-to-severe plaque psoriasis in adults who are candidates for systemic therapy or phototherapy.",
+  "note": "Chronic small plaque psoriasis is a more specific form of plaque psoriasis, and narrower edges count as TARGET."
+ },
+ {
+  "id": "g120",
+  "verdict": "TARGET",
+  "quote": "POTELIGEO is indicated for the treatment of adult patients with relapsed or refractory mycosis fungoides (MF) or Sézary syndrome (SS) after at least one prior systemic therapy.",
+  "note": "Sezary syndrome is named directly as a treated condition in both FDA and EMA text."
+ },
+ {
+  "id": "g066",
+  "verdict": "TARGET",
+  "quote": "Tapentadol tablets are indicated for the management of acute pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate in adults",
+  "note": "Pain is exactly what is managed; the severity/opioid-requirement qualifiers narrow the population but pain remains the target rather than an over-broad class."
+ },
+ {
+  "id": "g008",
+  "verdict": "TARGET",
+  "quote": "Cabometyx is indicated as monotherapy for the treatment of hepatocellular carcinoma (HCC) in adults who have previously been treated with sorafenib.",
+  "note": "Hepatocellular carcinoma is named directly as a treated condition."
+ },
+ {
+  "id": "g015",
+  "verdict": "TARGET",
+  "quote": "ELIQUIS is indicated for the treatment of venous thromboembolism (VTE) and reduction in the risk of recurrent VTE in pediatric patients",
+  "note": "Venous thromboembolism is named directly as treated (pediatric VTE, plus adult DVT/PE which are its subtypes)."
+ },
+ {
+  "id": "g259",
+  "verdict": "TARGET",
+  "quote": "Temporarily relieves minor pain associated with: arthritis simple backache bursitis tendonitis muscle strains bruises cramps",
+  "note": "Relief of the pain of muscle strains counts as management of the strain under the rubric's osteoarthritis-pain rule, so this is not a symptom swap."
+ },
+ {
+  "id": "g247",
+  "verdict": "TARGET",
+  "quote": "Rebif is indicated for the treatment of: patients with a single demyelinating event with an active inflammatory process, if alternative diagnoses have been excluded",
+  "note": "The label treats relapsing multiple sclerosis and a first demyelinating event, so demyelinating disease is a near parent that still essentially describes what is indicated rather than a misleading whole-class claim."
+ },
+ {
+  "id": "g229",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Every indication is Parkinson's disease or parkinsonism; attention deficit hyperactivity disorder is not mentioned anywhere in the supplied text."
+ },
+ {
+  "id": "g113",
+  "verdict": "TARGET",
+  "quote": "multiple myeloma, malignant lymphoma (Hodgkin, non-Hodgkin lymphoma), acute lymphoblastic and myeloblastic leukemia, childhood neuroblastoma, ovarian cancer, mammary adenocarcinoma.",
+  "note": "Acute myeloblastic leukemia is a synonym of acute myeloid leukemia and is listed as a treated condition for high-dose melphalan."
+ },
+ {
+  "id": "g175",
+  "verdict": "TARGET",
+  "quote": "Paroxetine Tablets are indicated for the treatment of social anxiety disorder, also known as social phobia, as defined in DSM-IV (300.23).",
+  "note": "Social phobia is named explicitly as an indication."
+ },
+ {
+  "id": "g178",
+  "verdict": "TARGET",
+  "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+  "note": "Dermatomyositis is named directly as a treated condition."
+ },
+ {
+  "id": "g041",
+  "verdict": "TARGET",
+  "quote": "Valsartan tablets are indicated for the treatment of hypertension, to lower blood pressure in adults and pediatric patients six years of age and older.",
+  "note": "Single-ingredient valsartan is indicated for hypertension, of which essential hypertension is a subtype, and the EMA text names essential hypertension explicitly."
+ },
+ {
+  "id": "g272",
+  "verdict": "TARGET",
+  "quote": "Treatment of major depressive episodes in adults.",
+  "note": "Treatment of major depressive episodes is treatment of major depressive disorder by standard synonymy."
+ },
+ {
+  "id": "g277",
+  "verdict": "TARGET",
+  "quote": "For control of severe nausea and vomiting.",
+  "note": "Nausea and vomiting is named directly as the condition controlled."
+ },
+ {
+  "id": "g200",
+  "verdict": "TARGET",
+  "quote": "Rivaroxaban tablets are indicated to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation.",
+  "note": "Stroke is the event prevented (atrial fibrillation is the population), and prevention counts as a target under the rubric."
+ },
+ {
+  "id": "g166",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "The supplied text covers dietary vitamin supplementation and vitamin A deficiency; wasting syndromes are not mentioned anywhere."
+ },
+ {
+  "id": "g089",
+  "verdict": "TARGET",
+  "quote": "Bacterial Septicemia caused by Pseudomonas aeruginosa , Klebsiella spp., Haemophilus influenzae , Escherichia coli , Serratia spp., Streptococcus pneumoniae , and Staphylococcus aureus",
+  "note": "Bacterial septicemia is named as a treated disease and the label adds that ceftazidime may be used alone in confirmed or suspected sepsis."
+ },
+ {
+  "id": "g031",
+  "verdict": "FP1_setting",
+  "quote": "The parenteral route is indicated when oral administration is not feasible as in anorexia, nausea and vomiting, and preoperative and postoperative conditions.",
+  "note": "Anorexia appears only as a circumstance justifying parenteral dosing for pyridoxine deficiency, not as a treated condition, and the symptom anorexia is not the disorder anorexia nervosa."
+ },
+ {
+  "id": "g278",
+  "verdict": "TARGET",
+  "quote": "1.4 Treatment of Pulmonary Embolism ELIQUIS is indicated for the treatment of adults with pulmonary embolism (PE).",
+  "note": "Pulmonary embolism is named directly as a treated condition."
+ },
+ {
+  "id": "g114",
+  "verdict": "FP6_coingredient",
+  "quote": "Also for the treatment of conditions in which iron deficiency and vitamin C deficiency occur together, along with a deficient intake or increased need for B-Complex vitamins",
+  "note": "Scurvy (vitamin C deficiency) appears only on multi-ingredient iron/vitamin C/B-complex products and belongs to the vitamin C component; folic acid's own indication is folate deficiency."
+ },
+ {
+  "id": "g244",
+  "verdict": "FP1_setting",
+  "quote": "TrophAmine® is indicated for the nutritional support of infants (including those of low birth weight) and young pediatric patients requiring TPN",
+  "note": "Low-birth-weight/small-for-gestational-age infants are the population receiving parenteral nutritional support, not a condition the amino acid treats; SGA itself appears only in warnings."
+ },
+ {
+  "id": "g156",
+  "verdict": "TARGET",
+  "quote": "Phendimetrazine tartrate extended-release capsules are indicated in the management of exogenous obesity as a short term adjunct (a few weeks) in a regimen of weight reduction",
+  "note": "Exogenous obesity is named directly as the condition managed."
+ }
+]

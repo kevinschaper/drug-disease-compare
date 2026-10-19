@@ -1,0 +1,224 @@
+[
+  {
+    "id": "g266",
+    "verdict": "TARGET",
+    "quote": "STIVARGA is indicated for the treatment of adult patients with metastatic colorectal cancer (CRC)",
+    "note": "Metastatic colorectal cancer is named directly as a treatment target in both FDA and EMA text; the edge is an exact synonym."
+  },
+  {
+    "id": "g162",
+    "verdict": "TARGET",
+    "quote": "itching of the nose or throat nasal congestion reduces swelling of nasal passages temporarily relieves sinus congestion and pressure",
+    "note": "OTC label text lists nasal congestion as a symptom the product relieves; the supplied text does not identify these fragments as combination products, so judged on the text as given."
+  },
+  {
+    "id": "g004",
+    "verdict": "TARGET",
+    "quote": "systemic mastocytosis with an associated haematological neoplasm (SM-AHN)",
+    "note": "EMA indication names SM-AHN, the standard synonym for systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease."
+  },
+  {
+    "id": "g005",
+    "verdict": "TARGET",
+    "quote": "ILUMYA is an interleukin-23 antagonist indicated for the treatment of moderate-to-severe plaque psoriasis in adults who are candidates for systemic therapy or phototherapy.",
+    "note": "Chronic small plaque psoriasis is a more specific form of plaque psoriasis, which is the indicated condition, so the narrower edge is TARGET."
+  },
+  {
+    "id": "g220",
+    "verdict": "FP1_setting",
+    "quote": "indicated for the treatment of CMV retinitis in patients with acquired immunodeficiency syndrome (AIDS)",
+    "note": "AIDS appears only as the patient population; the thing treated is CMV retinitis."
+  },
+  {
+    "id": "g015",
+    "verdict": "TARGET",
+    "quote": "ELIQUIS is indicated for the treatment of venous thromboembolism (VTE) and reduction in the risk of recurrent VTE in pediatric patients",
+    "note": "VTE is named as a treatment target (pediatric VTE; adult DVT/PE are VTE subtypes) in both FDA and EMA text."
+  },
+  {
+    "id": "g129",
+    "verdict": "FP1_setting",
+    "quote": "in the brains of adult patients with cognitive impairment who are being evaluated for Alzheimer’s disease (AD) and other causes of cognitive impairment",
+    "note": "Diagnostic imaging agent; Alzheimer disease is the condition being evaluated, not something the drug treats, prevents or manages."
+  },
+  {
+    "id": "g088",
+    "verdict": "TARGET",
+    "quote": "LUMAKRAS, in combination with panitumumab, is indicated for the treatment of adult patients with KRAS G12C -mutated metastatic colorectal cancer (mCRC)",
+    "note": "KRAS G12C-mutated metastatic colorectal cancer is a subtype of colorectal carcinoma; the edge is a near parent that still describes what is indicated."
+  },
+  {
+    "id": "g249",
+    "verdict": "FP1_setting",
+    "quote": "or greater than or equal to 27 kg/m 2 in the presence of other risk factors (e.g., controlled hypertension, diabetes, hyperlipidemia)",
+    "note": "Diabetes is listed only as a comorbid risk factor defining the eligible obese population; the indication is exogenous obesity, and diabetes otherwise appears only in warnings."
+  },
+  {
+    "id": "g095",
+    "verdict": "TARGET",
+    "quote": "indicated for the first-line treatment of adult patients with recurrent, not amenable to surgery or radiotherapy, or metastatic nasopharyngeal carcinoma",
+    "note": "EMA text names nasopharyngeal carcinoma directly as a treatment target."
+  },
+  {
+    "id": "g178",
+    "verdict": "TARGET",
+    "quote": "For the treatment of dermatomyositis, polymyositis, and systemic lupus erythematosus.",
+    "note": "Dermatomyositis is named explicitly as a treatment indication."
+  },
+  {
+    "id": "g191",
+    "verdict": "TARGET",
+    "quote": "Infections caused by Clostridium species.",
+    "note": "The indication list names infections caused by Clostridium species, an exact match for Clostridium infectious disease."
+  },
+  {
+    "id": "g277",
+    "verdict": "TARGET",
+    "quote": "For control of severe nausea and vomiting.",
+    "note": "Nausea and vomiting is the condition controlled; severe nausea and vomiting is a narrower form of the edge."
+  },
+  {
+    "id": "g080",
+    "verdict": "TARGET",
+    "quote": "other CD30-expressing peripheral T-cell lymphomas (PTCL), including angioimmunoblastic T-cell lymphoma and PTCL not otherwise specified (NOS)",
+    "note": "Angioimmunoblastic T-cell lymphoma is a named item in the list of indicated PTCL subtypes (combination therapy still counts)."
+  },
+  {
+    "id": "g008",
+    "verdict": "TARGET",
+    "quote": "Cabometyx is indicated as monotherapy for the treatment of hepatocellular carcinoma (HCC) in adults who have previously been treated with sorafenib.",
+    "note": "EMA text names hepatocellular carcinoma directly as a treatment target."
+  },
+  {
+    "id": "g141",
+    "verdict": "TARGET",
+    "quote": "is indicated for the treatment of adult patients with BRAF V600 mutation-positive unresectable or metastatic melanoma",
+    "note": "BRAF V600-mutant unresectable/metastatic melanoma is a subtype of melanoma; the edge is a near parent that still describes the indication."
+  },
+  {
+    "id": "g014",
+    "verdict": "TARGET",
+    "quote": "Diphtheria: Infections due to Corynebacterium diphtheriae , as an adjunct to antitoxin, to prevent establishment of carriers and to eradicate the organism in carriers.",
+    "note": "Diphtheria is a named indication (adjunctive to antitoxin and carrier eradication); adjunctive indications count as TARGET."
+  },
+  {
+    "id": "g170",
+    "verdict": "TARGET",
+    "quote": "Short term treatment of gastroesophageal reflux disease (GERD).",
+    "note": "GERD is named directly as a treatment target on multiple famotidine labels."
+  },
+  {
+    "id": "g216",
+    "verdict": "TARGET",
+    "quote": "Moderately severe pneumonia and otitis media due to susceptible Streptococcus pneumoniae .",
+    "note": "Otitis media is named as an indicated infection; the Bicillin C-R product combines two salts of penicillin G, so the indication is attributable to benzylpenicillin itself."
+  },
+  {
+    "id": "g270",
+    "verdict": "TARGET",
+    "quote": "As an adjunct to diet and exercise to improve glycemic control in adults and pediatric patients 10 years of age and older with type 2 diabetes mellitus.",
+    "note": "Type 2 diabetes mellitus is the disease whose glycemic control is managed; named directly in FDA and EMA text."
+  },
+  {
+    "id": "g280",
+    "verdict": "TARGET",
+    "quote": "Reduction of elevated intraocular pressure in chronic open-angle glaucoma and ocular hypertension",
+    "note": "Lowering intraocular pressure is the management of open-angle glaucoma itself (as with pain of osteoarthritis), so the disease is the target rather than mere setting."
+  },
+  {
+    "id": "g063",
+    "verdict": "TARGET",
+    "quote": "Reblozyl is indicated in adults for the treatment of transfusion-dependent anaemia due to very low, low and intermediate-risk myelodysplastic syndromes (MDS).",
+    "note": "The drug treats MDS-associated anemia (section titled 'Myelodysplastic Syndromes Associated Anemia'; EMA 'anaemia due to ... MDS'), the defining manifestation of low-risk MDS, which counts as management of the disease."
+  },
+  {
+    "id": "g257",
+    "verdict": "TARGET",
+    "quote": "Treatment of osteoporosis in postmenopausal women and in men at increased risk of fracture",
+    "note": "EMA text names osteoporosis directly as a treatment target."
+  },
+  {
+    "id": "g176",
+    "verdict": "TARGET",
+    "quote": "PULMICORT RESPULES is indicated for the maintenance treatment of asthma and as prophylactic therapy in children 12 months to 8 years of age.",
+    "note": "Single-ingredient budesonide labels name asthma as the treated condition, independent of the budesonide/formoterol combination labels."
+  },
+  {
+    "id": "g052",
+    "verdict": "TARGET",
+    "quote": "To reduce TG and the risk of acute pancreatitis in adults with severe hypertriglyceridemia",
+    "note": "Acute pancreatitis is the event whose risk the drug reduces, i.e. a prevention target (the population is severe hypertriglyceridemia)."
+  },
+  {
+    "id": "g051",
+    "verdict": "TARGET",
+    "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis",
+    "note": "Atopic dermatitis (synonym of atopic eczema) is a named item in the list of allergic conditions the drug controls."
+  },
+  {
+    "id": "g100",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "The supplied text covers only antibacterial hand soap ('decrease bacteria on the skin'); dental caries or any dental condition is not mentioned anywhere."
+  },
+  {
+    "id": "g252",
+    "verdict": "FP6_coingredient",
+    "quote": "Ocular steroids are indicated in inflammatory conditions of the palpebral and bulbar conjunctiva, cornea and anterior segment of the globe such as allergic conjunctivitis, acne rosacea",
+    "note": "Cyclitis appears only on a steroid/tobramycin combination label and is attributed to the steroid component ('Ocular steroids are indicated...'); tobramycin's role is the anti-infective cover, not treatment of cyclitis."
+  },
+  {
+    "id": "g110",
+    "verdict": "TARGET",
+    "quote": "SYMPROIC is indicated for the treatment of opioid-induced constipation (OIC) in adult patients with chronic non-cancer pain",
+    "note": "Opioid-induced constipation is named directly as the treatment target in FDA and EMA text."
+  },
+  {
+    "id": "g238",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "The supplied EMA biosimilar text lists breast, non-small cell lung, renal cell, and ovarian/fallopian/peritoneal cancers only; colorectal cancer is not mentioned anywhere in the supplied text."
+  },
+  {
+    "id": "g236",
+    "verdict": "TARGET",
+    "quote": "Adjunctive treatment of focal-onset seizures with or without secondary generalisation in adult patients with epilepsy",
+    "note": "Treating focal-onset seizures in patients with epilepsy is treatment of (focal) epilepsy, a subtype of the edge disease; adjunctive use counts."
+  },
+  {
+    "id": "g007",
+    "verdict": "TARGET",
+    "quote": "temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+    "note": "OTC label text names nasal congestion as a symptom the product relieves; the supplied text does not identify these fragments as combination products, so judged on the text as given."
+  },
+  {
+    "id": "g275",
+    "verdict": "TARGET",
+    "quote": "For relief of the signs and symptoms of juvenile rheumatoid arthritis",
+    "note": "Juvenile rheumatoid arthritis is the standard older synonym for juvenile idiopathic arthritis; relief of its signs and symptoms is management of the disease."
+  },
+  {
+    "id": "g106",
+    "verdict": "TARGET",
+    "quote": "indicated for the complete or partial reversal of opioid drug effects, including respiratory depression, induced by either natural or synthetic opioids",
+    "note": "Opioid-induced respiratory depression (a form of hypoventilation) is explicitly what the injection reverses, and the nasal sprays treat overdose manifested by respiratory depression."
+  },
+  {
+    "id": "g204",
+    "verdict": "TARGET",
+    "quote": "indicated for the relief of symptoms of depression. Endogenous depressions are more likely to be alleviated than are other depressive states.",
+    "note": "Depression is the indicated condition and endogenous depression is explicitly named as the subtype most likely to respond."
+  },
+  {
+    "id": "g103",
+    "verdict": "TARGET",
+    "quote": "Tobramycin for Injection is indicated for the treatment of intra-abdominal infections, including peritonitis, caused by susceptible isolates of E. coli",
+    "note": "Peritonitis is named explicitly as an indicated infection on single-ingredient tobramycin injection labels."
+  },
+  {
+    "id": "g032",
+    "verdict": "TARGET",
+    "quote": "indicated for the reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+    "note": "Ocular hypertension is elevated intraocular pressure, which is exactly what the drug reduces, so it is the treatment target rather than mere setting."
+  }
+]

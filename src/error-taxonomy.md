@@ -52,7 +52,8 @@ ul, ol { max-width: none; }
 ## Measured false-positive rate
 
 A **seeded random sample** of 300 edges per source (MEDIC indications; DAKP
-`approved_for_condition`) **from each release** — latest and previous, 1,200 edges in all —
+`approved_for_condition`) **from each release** — latest and previous, plus the intermediate
+MEDIC build of 2026-10-01 that was audited before the 2026-10-13 rebuild: 1,500 edges in all —
 each judged against regulator text **we fetched ourselves** —
 never a source's own snippet:
 
@@ -70,7 +71,8 @@ otherwise it might live in text we don't have (e.g. a PMDA-only approval).
 ```js
 const rows = ["medic", "dakp-approved"].flatMap((s) => [
   {source: SRC[s], release: "latest", n: S.sources[s].judged, p: S.sources[s].fp_rate[0], lo: S.sources[s].fp_rate[1], hi: S.sources[s].fp_rate[2]},
-  ...(S.previous_release[s] ? [{source: SRC[s], release: "previous", n: S.previous_release[s].n, p: S.previous_release[s].fp_rate[0], lo: S.previous_release[s].fp_rate[1], hi: S.previous_release[s].fp_rate[2]}] : []),
+  ...(S.previous_build?.[s] ? [{source: SRC[s], release: "build 2026-10-01", n: S.previous_build[s].judged, p: S.previous_build[s].fp_rate[0], lo: S.previous_build[s].fp_rate[1], hi: S.previous_build[s].fp_rate[2]}] : []),
+  ...(S.previous_release[s] ? [{source: SRC[s], release: "previous", n: S.previous_release[s].judged, p: S.previous_release[s].fp_rate[0], lo: S.previous_release[s].fp_rate[1], hi: S.previous_release[s].fp_rate[2]}] : []),
 ]);
 ```
 
@@ -79,7 +81,7 @@ const rows = ["medic", "dakp-approved"].flatMap((s) => [
     <h2>MEDIC — false-positive rate</h2>
     <span class="big">${S.sources.medic.fp_rate[0]}%</span>
     CI ${S.sources.medic.fp_rate[1]}–${S.sources.medic.fp_rate[2]} · n = ${S.sources.medic.judged}
-    · previous release ${S.previous_release.medic.fp_rate[0]}% (n = ${S.previous_release.medic.judged}, same protocol)
+    · previous release ${S.previous_release.medic.fp_rate[0]}% (n = ${S.previous_release.medic.judged}) · build 2026-10-01 ${S.previous_build.medic.fp_rate[0]}% (n = ${S.previous_build.medic.judged}), same protocol
   </div>
   <div class="card">
     <h2>DAKP-approved — false-positive rate</h2>
@@ -91,10 +93,10 @@ const rows = ["medic", "dakp-approved"].flatMap((s) => [
 
 ```js
 Plot.plot({
-  width, height: 170, marginLeft: 150, marginRight: 40,
+  width, height: 200, marginLeft: 200, marginRight: 40,
   x: {label: "false-positive rate (%) with 95% CI", domain: [0, 60], grid: true},
-  y: {label: null, domain: ["MEDIC · latest", "MEDIC · previous", "DAKP-approved · latest", "DAKP-approved · previous"]},
-  color: {domain: ["latest", "previous"], range: ["var(--theme-foreground-focus, #2a78d6)", "#9498a0"], legend: true},
+  y: {label: null, domain: ["MEDIC · latest", "MEDIC · build 2026-10-01", "MEDIC · previous", "DAKP-approved · latest", "DAKP-approved · previous"]},
+  color: {domain: ["latest", "build 2026-10-01", "previous"], range: ["var(--theme-foreground-focus, #2a78d6)", "#6fa3e0", "#9498a0"], legend: true},
   marks: [
     Plot.ruleY(rows, {y: (d) => `${d.source} · ${d.release}`, x1: "lo", x2: "hi", stroke: "release", strokeWidth: 2}),
     Plot.dot(rows, {y: (d) => `${d.source} · ${d.release}`, x: "p", fill: "release", r: 5, tip: true,
@@ -105,8 +107,11 @@ Plot.plot({
 ```
 
 Judged with the identical protocol — and blind to which release an edge came from — the
-latest rates are statistically indistinguishable from the previous releases'. What changed
-is the **kind** of error; see *Did MEDIC improve?* and *Did DAKP improve?* on
+latest rates are statistically indistinguishable from the previous releases', and MEDIC's
+2026-10-13 rebuild (after the negation-scoping and verbatim re-extraction work) is
+indistinguishable from the 2026-10-01 build it replaced
+(${S.change_vs_build.medic.fp_rate_pts[0] > 0 ? "+" : ""}${S.change_vs_build.medic.fp_rate_pts[0]} pts, CI ${S.change_vs_build.medic.fp_rate_pts[1]} to ${S.change_vs_build.medic.fp_rate_pts[2]}).
+What changed is the **kind** of error; see *Did MEDIC improve?* and *Did DAKP improve?* on
 [version changes](./changes). Latest releases, by error type:
 
 ```js
@@ -128,14 +133,15 @@ display(Plot.plot({
 
 What stands out:
 
-- **MEDIC's errors are mostly about *how* a label is read, not invented claims.** Its largest
-  type is **setting-as-target** (the disease is the population, e.g. "reduce the risk of MI
-  *in patients with* CHD"), then **co-ingredient attribution** — every one of the
-  ${S.sources.medic.by_type.FP6_coingredient?.[0] ?? 0} co-ingredient errors in the sample is MEDIC's: it credits each
-  ingredient of a combination product with the whole product's indications
-  (atorvastatin → hypertension via amlodipine/atorvastatin; caffeine → back pain via
-  analgesic combinations). Its rate of outright "not in any label" mappings is low
-  (${S.sources.medic.by_type.FP7_notintext?.[1] ?? 0}%).
+- **MEDIC's errors are mostly about *how* a label is read, not invented claims.** Half of
+  them are now **setting-as-target** (${S.sources.medic.by_type.FP1_setting?.[1] ?? 0}% of edges: the disease is the
+  population or background — eplerenone → acute MI, basiliximab → kidney transplantation,
+  posaconazole → AML, bosentan → congenital heart disease), then **not in label**
+  (${S.sources.medic.by_type.FP7_notintext?.[1] ?? 0}%, largely multivitamin, antiseptic and OTC labels attached to the wrong
+  "drug") and **co-ingredient attribution** (${S.sources.medic.by_type.FP6_coingredient?.[1] ?? 0}%; every one of the
+  ${S.sources.medic.by_type.FP6_coingredient?.[0] ?? 0} in the sample is MEDIC's: cetirizine and loratadine → nasal congestion from
+  decongestant combinations, esomeprazole → osteoarthritis from naproxen/esomeprazole).
+  Negated indications, the old export's main problem, are gone from the sample.
 - **DAKP's dominant error is still "not in any label"** (${S.sources["dakp-approved"].by_type.FP7_notintext?.[1] ?? 0}%): term-mapping artifacts
   such as acronym/synonym collisions, then **over-broad** parents (label "large B-cell
   lymphoma" → edge "B-cell non-Hodgkin lymphoma").
@@ -152,9 +158,11 @@ Inputs.table(["medic", "dakp-approved"].flatMap((s) => [
 ```
 
 **MEDIC's reliability tier** (HIGH / MEDIUM / LOW) is a data-quality score, not a claim of
-evidence strength — but it does track errors: across the full population, Jev flags
-${P.medic.jev_fp_share_by_reliability.HIGH}% of HIGH, ${P.medic.jev_fp_share_by_reliability.MEDIUM}% of MEDIUM and
-${P.medic.jev_fp_share_by_reliability.LOW}% of LOW pairs (the sample alone is too small per tier to say much).
+evidence strength, and it does not separate the errors measured here: HIGH-tier edges
+(${S.sources.medic.by_reliability.HIGH.n} of the ${S.sources.medic.judged} judged) are ${S.sources.medic.by_reliability.HIGH.fp_rate[0]}% wrong, the
+same as the whole; across the full population Jev flags ${P.medic.jev_fp_share_by_reliability.HIGH}% of HIGH,
+${P.medic.jev_fp_share_by_reliability.MEDIUM}% of MEDIUM and ${P.medic.jev_fp_share_by_reliability.LOW}% of LOW pairs. What *does* separate them is
+the label check itself — see [what to load](./load).
 
 **Population estimate.** Correcting the full-population screen (below) by its measured error
 rates gives MEDIC **${ci(P.medic.corrected_fp_rate)}** over ${fmt(P.medic.judged)} edges and DAKP-approved
@@ -242,7 +250,7 @@ display(html`<div>${[...Object.keys(LABEL)].filter((t) => byType.has(t)).map((t)
 
 ```js
 const srcSel = view(Inputs.radio(["all", "medic", "dakp-approved"], {label: "Source", value: "all", format: (v) => v === "all" ? "All" : SRC[v]}));
-const relSel = view(Inputs.radio(["new", "old", "both"], {label: "Release", value: "new", format: (v) => ({new: "Latest", old: "Previous", both: "Both"}[v])}));
+const relSel = view(Inputs.radio(["new", "b1001", "old", "both"], {label: "Release", value: "new", format: (v) => ({new: "Latest", b1001: "MEDIC build 2026-10-01", old: "Previous release", both: "All"}[v])}));
 const fpOnly = view(Inputs.toggle({label: "Errors only"}));
 const disagree = view(Inputs.toggle({label: "Jev disagrees"}));
 ```
@@ -257,7 +265,7 @@ display(Inputs.table(shown, {
   header: {source: "Source", release: "Release", drug_label: "Drug", disease_label: "Disease", verdict: "Reference", claude: "Reviewer A",
            claude_b: "Reviewer B", jev: "Jev", jev_confidence: "Jev conf.", judged_against: "Judged vs", note: "Deciding reason"},
   format: {
-    source: (s) => SRC[s], release: (r) => (r === "new" ? "latest" : "previous"),
+    source: (s) => SRC[s], release: (r) => ({new: "latest", b1001: "build 2026-10-01", old: "previous"}[r] ?? r),
     drug_label: (l, i, data) => html`<a href="drug?id=${encodeURIComponent(data[i].drug)}">${l}</a>`,
     disease_label: (l, i, data) => html`<a href="disease?id=${encodeURIComponent(data[i].disease)}">${l}</a>`,
     verdict: vchip, claude: vchip, claude_b: vchip, jev: vchip,
@@ -291,17 +299,19 @@ lecanemab → Alzheimer disease as off-label despite clear labels.
 ## Method notes & caveats
 
 - **Precision only.** These are false-positive rates of *asserted* edges, not recall.
-- **Eligibility.** ${fmt(P.medic.screened)} of 7,237 MEDIC and ${fmt(P["dakp-approved"].screened)} of 14,287 DAKP-approved pairs had
+- **Eligibility.** ${fmt(P.medic.screened)} of 7,790 MEDIC and ${fmt(P["dakp-approved"].screened)} of 14,287 DAKP-approved pairs had
   independently fetchable FDA/EMA text. MEDIC pairs backed only by PMDA or CDSCO (Japan,
   India) can't be judged this way and are excluded.
 - **Lenient on generic indications.** A narrower edge counts as a target (label "pain" →
   edge "neck pain"); reviewers flagged a handful of site-specific pain edges that pass only
   on this rule.
-- **Two review rounds, one protocol.** The first 150 latest-release edges per source were
-  reviewed first; the remaining 150 plus all previous-release edges were then shuffled
-  together, so reviewers couldn't tell source or release. Round-1 reviewers applied the
-  co-ingredient rule only via the follow-up check; round-2 reviewers saw it in the rubric —
-  the same co-ingredient check ran on both rounds.
+- **Three review rounds, one protocol.** The first 150 edges per source of the 2026-10-01
+  MEDIC build and DAKP 1.16.0 were reviewed first; the remaining 150 plus all previous-release
+  edges were then shuffled together, so reviewers couldn't tell source or release; a third
+  round judged a fresh 300-edge sample of the 2026-10-13 MEDIC rebuild (DAKP unchanged, its
+  draw kept). Round-1 reviewers applied the co-ingredient rule only via the follow-up check;
+  later rounds saw it in the rubric — the same co-ingredient check ran on every round. 20 MEDIC
+  pairs happened to be drawn in two rounds; all 20 got the same verdict both times.
 - **Previous releases** were sampled from pairs built from their own source files with the
   same reconciler, and judged against today's label text (labels drift slowly; a few
   indications added since could count against an older edge).

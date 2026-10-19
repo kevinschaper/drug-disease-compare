@@ -1,0 +1,230 @@
+[
+  {
+    "id": "g194",
+    "verdict": "FP2_symptom_swap",
+    "quote": "reduces severity of symptoms associated with the common cold and throat, nasal, bronchial irritations: cough, headache, hoarseness, sore throat",
+    "note": "The homeopathic labels relieve the symptom 'sore throat' (and throat irritation) as part of cold/sinus symptom relief; no label names pharyngitis as a disease treated, so the edge swaps a symptom for the disease."
+  },
+  {
+    "id": "g244",
+    "verdict": "FP1_setting",
+    "quote": "indicated for the nutritional support of infants (including those of low birth weight) and young pediatric patients requiring TPN",
+    "note": "The amino-acid solutions provide parenteral nutritional support; low-birth-weight infants are the population and 'small for gestational age' itself appears only in a warning about lipid clearance, never as a condition treated."
+  },
+  {
+    "id": "g087",
+    "verdict": "FP1_setting",
+    "quote": "Treatment of hereditary transthyretin-mediated amyloidosis (hATTR amyloidosis) in adult patients with stage 1 or stage 2 polyneuropathy.",
+    "note": "The thing treated is hATTR amyloidosis; polyneuropathy is the 'in patients with' stage qualifier defining the population, not the named target."
+  },
+  {
+    "id": "g251",
+    "verdict": "FP1_setting",
+    "quote": "In patients with concomitant HIV infection, the physician should be aware of current recommendation of CDC. It is possible these patients may require a longer course of treatment",
+    "note": "Pyrazinamide is indicated for active tuberculosis; HIV infection is mentioned only as a concomitant condition affecting TB treatment duration."
+  },
+  {
+    "id": "g101",
+    "verdict": "TARGET",
+    "quote": "PHOTOFRIN is indicated for the palliation of patients with completely obstructing esophageal cancer, or of patients with partially obstructing esophageal cancer",
+    "note": "Palliative management of esophageal cancer is a named indication, which counts as management of the disease."
+  },
+  {
+    "id": "g108",
+    "verdict": "TARGET",
+    "quote": "CIPRO HC OTIC is indicated for the treatment of acute otitis externa in adult and pediatric patients, one year and older, due to susceptible strains of Pseudomonas aeruginosa",
+    "note": "Acute otitis externa is named directly as the infection treated; the otic products pair ciprofloxacin (the antibacterial) with a steroid, so the anti-infective indication is attributable to ciprofloxacin."
+  },
+  {
+    "id": "g256",
+    "verdict": "TARGET",
+    "quote": "de novo and secondary MDS of all French-American-British subtypes (refractory anemia, refractory anemia with ringed sideroblasts, refractory anemia with excess blasts",
+    "note": "MDS with ring sideroblasts is the WHO name for the FAB subtype 'refractory anemia with ringed sideroblasts', which is explicitly listed among indicated MDS subtypes."
+  },
+  {
+    "id": "g225",
+    "verdict": "TARGET",
+    "quote": "Clobazam tablets are indicated for the adjunctive treatment of seizures associated with Lennox-Gastaut syndrome (LGS) in patients 2 years of age or older.",
+    "note": "Adjunctive treatment of the seizures of LGS is management of the named syndrome, analogous to the rubric's pain-of-osteoarthritis example."
+  },
+  {
+    "id": "g294",
+    "verdict": "TARGET",
+    "quote": "May also be useful as adjunctive therapy in the treatment of duodenal ulcer.",
+    "note": "Duodenal ulcer is named as an adjunctive-therapy indication (with a hedge that healing benefit is unproven, not an explicit non-indication); the anticholinergic/antispasmodic effect is atropine's own."
+  },
+  {
+    "id": "g109",
+    "verdict": "TARGET",
+    "quote": "SYNAREL is indicated for treatment of central precocious puberty (CPP) (gonadotropin-dependent precocious puberty) in children of both sexes.",
+    "note": "Central precocious puberty is named verbatim as the condition treated."
+  },
+  {
+    "id": "g067",
+    "verdict": "FP1_setting",
+    "quote": "PARSABIV is indicated for the treatment of secondary hyperparathyroidism (HPT) in adult patients with chronic kidney disease (CKD) on hemodialysis.",
+    "note": "Secondary hyperparathyroidism is the target; CKD on hemodialysis is the population in which it is treated."
+  },
+  {
+    "id": "g053",
+    "verdict": "TARGET",
+    "quote": "Hematologic Disorders Acquired (autoimmune) hemolytic anemia, Diamond-Blackfan anemia, pure red cell aplasia, selected cases of secondary thrombocytopenia.",
+    "note": "Pure red cell aplasia is listed by name among the hematologic disorders for which the injectable betamethasone is indicated."
+  },
+  {
+    "id": "g118",
+    "verdict": "TARGET",
+    "quote": "Actinomycosis (cervicofacial disease and thoracic and abdominal disease) Actinomyces Israelil",
+    "note": "Actinomycosis is a named clinical indication in the penicillin G indication/organism table."
+  },
+  {
+    "id": "g116",
+    "verdict": "TARGET",
+    "quote": "indicated in adults for the treatment of community-acquired pneumonia (moderate severity only) caused by beta-lactamase producing isolates of Haemophilus influenzae",
+    "note": "Only combination (piperacillin/tazobactam) labels are present, but piperacillin is the antibacterial component and tazobactam only a beta-lactamase inhibitor, so the CAP indication is attributable to piperacillin."
+  },
+  {
+    "id": "g049",
+    "verdict": "TARGET",
+    "quote": "Ergotamine tartrate and caffeine tablets are indicated as therapy to abort or prevent vascular headache; e.g., migraine, migraine variants",
+    "note": "Migraine is named as the indication on the ergotamine/caffeine labels and additional non-combination entries state 'treats migraine', so the text supports the edge; caffeine's adjuvant role in the combination is a possible counter-reading."
+  },
+  {
+    "id": "g078",
+    "verdict": "TARGET",
+    "quote": "treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome",
+    "note": "Nephrotic syndrome is named and its edema is managed by furosemide, which the rubric treats as management of the named disease (like pain of osteoarthritis)."
+  },
+  {
+    "id": "g247",
+    "verdict": "TARGET",
+    "quote": "Rebif is indicated for the treatment of: patients with a single demyelinating event with an active inflammatory process",
+    "note": "The EMA text indicates treatment of a single demyelinating event (CIS) and relapsing multiple sclerosis, both demyelinating diseases, so 'demyelinating disease' is a near parent that still describes what is indicated."
+  },
+  {
+    "id": "g206",
+    "verdict": "TARGET",
+    "quote": "adjunctive therapy of refractory generalized tonic-clonic seizures in patients with severe myoclonic epilepsy in infancy (SMEI, Dravet's syndrome)",
+    "note": "Bilateral tonic-clonic seizure is the current ILAE term for generalized tonic-clonic seizure, which is the named target of adjunctive therapy."
+  },
+  {
+    "id": "g016",
+    "verdict": "FP6_coingredient",
+    "quote": "AVYCAZ is a combination of ceftazidime, a cephalosporin, and avibactam, a beta-lactamase inhibitor, indicated for the treatment of the following infections",
+    "note": "cIAI is indicated only on combination labels (ceftazidime/avibactam, aztreonam/avibactam) where the antibacterial activity belongs to the partner beta-lactam and avibactam is the enzyme-inhibitor adjunct, so the indication cannot be attributed to avibactam alone."
+  },
+  {
+    "id": "g284",
+    "verdict": "TARGET",
+    "quote": "ZEVTERA is indicated for the treatment of adult patients with Staphylococcus aureus bloodstream infection (bacteremia) (SAB), including those with right-sided infective endocarditis",
+    "note": "Right-sided S. aureus infective endocarditis is a subtype of bacterial endocarditis and is explicitly included within the treated SAB indication, though the 'including those with' phrasing could be read as population."
+  },
+  {
+    "id": "g221",
+    "verdict": "TARGET",
+    "quote": "Moderate to severe osteoarthritis",
+    "note": "Osteoarthritis is listed by name among the indications for indomethacin capsules and suppositories."
+  },
+  {
+    "id": "g218",
+    "verdict": "TARGET",
+    "quote": "KALYDECO is indicated for the treatment of cystic fibrosis (CF) in patients aged 1 month and older who have at least one mutation in the CFTR gene that is responsive to ivacaftor",
+    "note": "Cystic fibrosis is named verbatim as the disease treated on single-ingredient ivacaftor labels and EMA text."
+  },
+  {
+    "id": "g175",
+    "verdict": "TARGET",
+    "quote": "Paroxetine Tablets are indicated for the treatment of social anxiety disorder, also known as social phobia, as defined in DSM-IV (300.23).",
+    "note": "Social phobia is named as an exact synonym of the indicated social anxiety disorder."
+  },
+  {
+    "id": "g046",
+    "verdict": "TARGET",
+    "quote": "Vigabatrin tablets are indicated as adjunctive therapy for adults and pediatric patients 2 years of age and older with refractory complex partial seizures",
+    "note": "Refractory complex partial seizures are the indicated condition; complex partial epilepsy is the same disorder, and 'not a first line agent' is a restriction, not a negation."
+  },
+  {
+    "id": "g031",
+    "verdict": "FP1_setting",
+    "quote": "The parenteral route is indicated when oral administration is not feasible as in anorexia, nausea and vomiting, and preoperative and postoperative conditions.",
+    "note": "The only 'anorexia' mention is the symptom (loss of appetite) as a circumstance justifying parenteral pyridoxine; the deficiency is what is treated and anorexia nervosa is never named."
+  },
+  {
+    "id": "g156",
+    "verdict": "TARGET",
+    "quote": "Phendimetrazine tartrate tablets are indicated in the management of exogenous obesity as a short term adjunct (a few weeks) in a regimen of weight reduction",
+    "note": "Exogenous obesity is named verbatim as the condition managed."
+  },
+  {
+    "id": "g250",
+    "verdict": "TARGET",
+    "quote": "Avastin, in combination with carboplatin and paclitaxel, followed by Avastin as a single agent, is indicated for the treatment of patients with stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer",
+    "note": "Epithelial ovarian cancer is ovarian carcinoma and is a named indication in both FDA and EMA text."
+  },
+  {
+    "id": "g099",
+    "verdict": "TARGET",
+    "quote": "They are also indicated in chronic anterior uveitis and corneal injury from chemical, radiation or thermal burns",
+    "note": "Chronic anterior uveitis is named directly, and iritis/iridocyclitis (synonyms for anterior uveitis) are listed among ophthalmic indications."
+  },
+  {
+    "id": "g274",
+    "verdict": "TARGET",
+    "quote": "Buprenorphine Sublingual Tablets are indicated for the treatment of opioid dependence and are preferred for induction.",
+    "note": "Opioid dependence (opiate dependence) is the named indication on single-ingredient buprenorphine labels and EMA text."
+  },
+  {
+    "id": "g196",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "The supplied multivitamin/iron labels address vitamin supplementation, caries prophylaxis and iron/folate deficiency anemia; marasmus or protein-energy malnutrition is never mentioned."
+  },
+  {
+    "id": "g186",
+    "verdict": "TARGET",
+    "quote": "treatment of adult patients with unresectable, well or moderately differentiated, locally advanced or metastatic gastroenteropancreatic neuroendocrine tumors (GEP-NETs)",
+    "note": "Well or moderately differentiated GEP-NETs are grade 1/2 digestive-system neuroendocrine tumors, matching the edge at the same granularity."
+  },
+  {
+    "id": "g096",
+    "verdict": "TARGET",
+    "quote": "Heart failure Jardiance is indicated in adults for the treatment of symptomatic chronic heart failure.",
+    "note": "Symptomatic chronic heart failure is named as a treated condition in the EMA text, which covers congestive heart failure."
+  },
+  {
+    "id": "g092",
+    "verdict": "TARGET",
+    "quote": "EPKINLY is indicated as monotherapy for the treatment of adult patients with relapsed or refractory FL after two or more lines of systemic therapy.",
+    "note": "Relapsed/refractory follicular lymphoma is a named indication in both FDA and EMA text."
+  },
+  {
+    "id": "g233",
+    "verdict": "FP6_coingredient",
+    "quote": "Dapagliflozin, when used as a component of dapagliflozin and metformin hydrochloride extended-release tablets, is indicated in adults with type 2 diabetes mellitus to reduce the risk of:",
+    "note": "Heart-failure outcomes appear only on SGLT2-inhibitor/metformin combination labels and are explicitly attributed to the dapagliflozin or empagliflozin component; metformin's own indication is glycemic control and heart failure otherwise appears only in warnings."
+  },
+  {
+    "id": "g115",
+    "verdict": "FP1_setting",
+    "quote": "Lowering blood pressure reduces the risk of fatal and nonfatal cardiovascular events, primarily strokes and myocardial infarctions.",
+    "note": "Nebivolol is indicated only for hypertension; myocardial infarction appears as class-wide background on blood-pressure benefit, with the label adding that no controlled trials demonstrate risk reduction with nebivolol, and otherwise only in warnings."
+  },
+  {
+    "id": "g077",
+    "verdict": "TARGET",
+    "quote": "ACTEMRA (tocilizumab) is indicated for the treatment of adult patients with moderately to severely active rheumatoid arthritis who have had an inadequate response to one or more Disease-Modifying Anti-Rheumatic Drugs",
+    "note": "Rheumatoid arthritis is named verbatim as a treated condition in FDA and EMA text."
+  },
+  {
+    "id": "g189",
+    "verdict": "TARGET",
+    "quote": "DIURIL is indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy.",
+    "note": "Hepatic cirrhosis is named and its edema is managed adjunctively by chlorothiazide, which the rubric treats as management of the named disease rather than a symptom swap."
+  },
+  {
+    "id": "g264",
+    "verdict": "TARGET",
+    "quote": "Useful in the management of pruritus due to allergic conditions such as chronic urticaria and atopic and contact dermatoses, and in histamine-mediated pruritus.",
+    "note": "Atopic dermatosis is atopic eczema and is named as a condition whose pruritus hydroxyzine manages, analogous to the rubric's pain-of-osteoarthritis TARGET example."
+  }
+]

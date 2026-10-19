@@ -130,16 +130,19 @@ def main() -> None:
     # latest-release sample (300/source) + previous-release sample (300/source); two review
     # rounds (round 1: the first 150 latest edges per source; round 2: everything else,
     # shuffled together across releases so reviewers never saw source or release)
+    # "b1001": the 2026-10-01 local MeDIC build audited before the 2026-10-13 rebuild (MEDIC
+    # only; its DAKP draw is unchanged and lives in sample.jsonl)
     sample = {}
-    for fname, rel in (("sample.jsonl", "new"), ("sample_old.jsonl", "old")):
+    for fname, rel in (("sample.jsonl", "new"), ("sample_old.jsonl", "old"),
+                       ("sample_b1001.jsonl", "b1001")):
         if (OUT / fname).exists():
             for line in open(OUT / fname):
                 r = json.loads(line)
                 r["release"] = rel
                 sample[r["sid"]] = r
     key = json.load(open(OUT / "blind_key.json"))           # blind id -> sid
-    if (OUT / "blind_key_2.json").exists():
-        key.update(json.load(open(OUT / "blind_key_2.json")))
+    for extra in sorted(OUT.glob("blind_key_[0-9].json")):
+        key.update(json.load(open(extra)))
 
     def by_sid(*patterns):
         out = {}
@@ -147,12 +150,13 @@ def main() -> None:
             out.update({key[i]: r for i, r in load_json_list(pat).items()})
         return out
 
-    claude = by_sid("claude_a_*.json", "claude2_a_*.json")
-    claude_b = by_sid("claude_b_*.json", "claude2_b_*.json")
-    tiebreak = by_sid("tiebreak_[0-9]*.json", "tiebreak2_[0-9].json")
+    # review rounds 1-3 (round 3: the 2026-10-13 MeDIC rebuild's fresh sample)
+    claude = by_sid("claude_a_*.json", "claude[0-9]_a_*.json")
+    claude_b = by_sid("claude_b_*.json", "claude[0-9]_b_*.json")
+    tiebreak = by_sid("tiebreak_[0-9]*.json", "tiebreak[0-9]_[0-9]*.json")
     # co-ingredient check: every reference TARGET whose evidence included combination labels
     # was re-judged with single-ingredient and combination text separated (rubric FP6)
-    combo = by_sid("combo_check_*.json", "combo2_check_*.json")
+    combo = by_sid("combo_check_*.json", "combo[0-9]_check_*.json")
     jev_by_pid = {r["id"]: r for r in (json.loads(line) for line in open(OUT / "jev_sample.jsonl"))}
     jev = {sid: jev_by_pid[r["id"]] for sid, r in sample.items() if r["id"] in jev_by_pid}
 
@@ -196,13 +200,20 @@ def main() -> None:
 
     results = source_results("new")
     previous = source_results("old")
-    change = {src: {
-        "fp_rate_pts": newcombe(previous[src]["fp"], previous[src]["judged"],
-                                results[src]["fp"], results[src]["judged"]),
-        "by_type_pts": {t: newcombe(previous[src]["by_type"].get(t, [0])[0], previous[src]["judged"],
-                                    results[src]["by_type"].get(t, [0])[0], results[src]["judged"])
-                        for t in FP if t in results[src]["by_type"] or t in previous[src]["by_type"]},
-    } for src in SOURCES if previous[src]["judged"]}
+
+    def change_from(base):
+        return {src: {
+            "fp_rate_pts": newcombe(base[src]["fp"], base[src]["judged"],
+                                    results[src]["fp"], results[src]["judged"]),
+            "by_type_pts": {t: newcombe(base[src]["by_type"].get(t, [0])[0], base[src]["judged"],
+                                        results[src]["by_type"].get(t, [0])[0], results[src]["judged"])
+                            for t in FP if t in results[src]["by_type"] or t in base[src]["by_type"]},
+        } for src in SOURCES if base[src]["judged"]}
+
+    change = change_from(previous)
+    # the intermediate local build (MEDIC only): did the rebuild move anything?
+    previous_build = {k: v for k, v in source_results("b1001").items() if v["judged"]}
+    change_vs_build = change_from(source_results("b1001"))
 
 
     # --- inter-rater ceiling (Claude A<->B), then Jev scored against the reference ---
@@ -308,6 +319,7 @@ def main() -> None:
     summary = {"sources": results, "agreement": agreement, "population": population,
                # like-for-like: the previous releases judged with this exact protocol
                "previous_release": previous, "change": change,
+               "previous_build": previous_build, "change_vs_build": change_vs_build,
                # the earlier (v1, FDA-only, different protocol) audit, for reference only
                "v1_audit": {s: {"n": v1[s]["n_judged"], "fp_rate": v1[s]["fp_rate_consensus"]}
                             for s in v1}}

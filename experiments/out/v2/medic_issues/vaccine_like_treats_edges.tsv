@@ -1,0 +1,47 @@
+subject	drug	object	disease	authority
+CHEBI:753475	hepatitis b immune globulin	MONDO:0005344	Hepatitis b virus infection	EMA
+CHEBI:753690	rho (d) immune globulin	MONDO:0000755	Ectopic pregnancy	FDA
+CHEBI:753690	rho (d) immune globulin	MONDO:0005918	Placenta praevia	FDA
+CHEBI:753690	rho (d) immune globulin	UMLS:C0015959	Fetomaternal Transfusion	FDA
+CHEBI:753690	rho (d) immune globulin	UMLS:C0687675	Pregnancy Loss	FDA
+CHEBI:754106	pertussis vaccine	MONDO:0005077	Pertussis	EMA
+CHEBI:757403	hepatitis b virus hbsag surface protein antigen	MONDO:0005344	Hepatitis b virus infection	EMA
+CHEBI:757403	hepatitis b virus hbsag surface protein antigen	MONDO:0005789	Hepatitis d virus infection	EMA
+CHEBI:760403	streptococcus pneumoniae polysaccharide conjugated to corynebacterium diphtheriae crm197	MONDO:0005114	Pneumococcal infection	FDA
+CHEBI:760403	streptococcus pneumoniae polysaccharide conjugated to corynebacterium diphtheriae crm197	MONDO:0005249	Pneumonia	FDA
+DRON:00012199	ROTAVIRUS VACCINE, LIVE	UMLS:C0343363	Rotaviral Enteritis	EMA
+DRON:00012199	ROTAVIRUS VACCINE, LIVE	UMLS:C0343363	Rotaviral Enteritis	EMA
+DRON:00013575	Cholera Vaccine	MONDO:0015766	Cholera	EMA
+DRON:00017209	Hepatitis B Vaccine	HP:0000083	Renal insufficiency	EMA
+DRON:00017209	Hepatitis B Vaccine	MONDO:0005344	Hepatitis b virus infection	EMA
+DRON:00017209	Hepatitis B Vaccine	MONDO:0005344	Hepatitis b virus infection	EMA
+DRON:00017209	Hepatitis B Vaccine	MONDO:0005789	Hepatitis d virus infection	EMA
+DRON:00019411	Streptococcus pneumoniae type 1 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019412	Streptococcus pneumoniae type 10A capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019413	Streptococcus pneumoniae type 11A capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019414	Streptococcus pneumoniae type 12F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019415	Streptococcus pneumoniae type 14 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019416	Streptococcus pneumoniae type 15B capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019417	Streptococcus pneumoniae type 17F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019418	Streptococcus pneumoniae type 18C capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019419	Streptococcus pneumoniae type 19A capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019420	Streptococcus pneumoniae type 19F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019421	Streptococcus pneumoniae type 2 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019422	Streptococcus pneumoniae type 20 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019423	Streptococcus pneumoniae type 22F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019424	Streptococcus pneumoniae type 23F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019425	Streptococcus pneumoniae type 3 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019426	Streptococcus pneumoniae type 33F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019427	Streptococcus pneumoniae type 4 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019428	Streptococcus pneumoniae type 5 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019429	Streptococcus pneumoniae type 6B capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019430	Streptococcus pneumoniae type 7F capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019431	Streptococcus pneumoniae type 8 capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019432	Streptococcus pneumoniae type 9N capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00019433	Streptococcus pneumoniae type 9V capsular polysaccharide antigen	MONDO:0005114	Pneumococcal infection	FDA
+DRON:00750829	meningococcal group B vaccine	MONDO:0005373	Meningococcal infection	EMA
+DRON:00750829	meningococcal group B vaccine	UMLS:C3873491	Invasive meningococcal disease	EMA
+DRON:00870309	Bacillus anthracis strain V770-NP1-R antigens	MONDO:0005119	Anthrax infection	FDA
+DRON:00870309	Bacillus anthracis strain V770-NP1-R antigens	MONDO:0016595	Inhalational anthrax	FDA
+DRON:00870310	Vibrio cholerae CVD 103-HGR strain live antigen	UMLS:C0008359	Vaccine, Cholera	FDA
+DRON:00965874	tick-borne encephalitis purified antigen	MONDO:0017572	Tick-borne encephalitis	FDA

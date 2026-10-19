@@ -1,0 +1,224 @@
+[
+  {
+    "id": "g024",
+    "verdict": "TARGET",
+    "quote": "Imcivree is indicated for the treatment of obesity and the control of hunger associated with genetically confirmed Bardet Biedl syndrome (BBS)",
+    "note": "Adversarial reading is FP2 (treats the obesity/hunger manifestation, not the syndrome), but the rubric counts management of a disease's manifestation ('pain of osteoarthritis' -> osteoarthritis) as TARGET, and obesity is the defining treated feature of BBS here."
+  },
+  {
+    "id": "g052",
+    "verdict": "TARGET",
+    "quote": "To reduce TG and the risk of acute pancreatitis in adults with severe hypertriglyceridemia",
+    "note": "Acute pancreatitis is the prevention target (risk reduction), not the population; sHTG is the setting, so prevention of acute pancreatitis counts as TARGET."
+  },
+  {
+    "id": "g071",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "The benzoate text covers acute hyperammonemia in urea-cycle disorders plus unrelated Uribel/homeopathic labels; no dystonia, paroxysmal movement disorder or synonym appears anywhere."
+  },
+  {
+    "id": "g003",
+    "verdict": "TARGET",
+    "quote": "Dermatologic Diseases Pemphigus Bullous dermatitis herpetiformis Severe erythema multiforme (Stevens-Johnson syndrome) Exfoliative dermatitis Mycosis fungoides Severe psoriasis",
+    "note": "Severe psoriasis is a named item in the dermatologic indications list; 'psoriasis' is a near parent that still describes what is indicated, not an FP4-level class."
+  },
+  {
+    "id": "g058",
+    "verdict": "TARGET",
+    "quote": "IMBRUVICA is indicated for the treatment of adult and pediatric patients age 1 year and older with chronic graft-versus-host disease (cGVHD) after failure of one or more lines of systemic therapy.",
+    "note": "Exact named indication 1.4; the prior-therapy qualifier restricts the population but cGVHD is the thing treated."
+  },
+  {
+    "id": "g190",
+    "verdict": "TARGET",
+    "quote": "Buspirone hydrochloride tablets, USP are indicated for the management of anxiety disorders or the short-term relief of the symptoms of anxiety.",
+    "note": "'Management of anxiety disorders' names the edge disease directly; the GAD narrative only narrows the evidence base, it does not negate the indication."
+  },
+  {
+    "id": "g196",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "Supplied text is multivitamin/fluoride and iron-folate labels (caries prophylaxis, vitamin deficiency, iron deficiency anemia); marasmus or protein-energy malnutrition is never mentioned and vitamin deficiency is not a reasonable parent of it."
+  },
+  {
+    "id": "g208",
+    "verdict": "TARGET",
+    "quote": "Anastrozole is indicated for the treatment of advanced breast cancer in postmenopausal women with disease progression following tamoxifen therapy.",
+    "note": "Indication 1.3 names advanced breast cancer verbatim as the treated disease; postmenopausal/post-tamoxifen is only the population qualifier."
+  },
+  {
+    "id": "g246",
+    "verdict": "TARGET",
+    "quote": "Tinidazole is indicated for the treatment of trichomoniasis caused by Trichomonas vaginalis.",
+    "note": "Exact named indication 1.1."
+  },
+  {
+    "id": "g093",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "Thyroid tablets are indicated for hypothyroidism and TSH suppression in goiter/thyroid cancer; bipolar disorder or any mood disorder is absent from indications, contraindications and warnings."
+  },
+  {
+    "id": "g252",
+    "verdict": "FP6_coingredient",
+    "quote": "Ocular steroids are indicated in inflammatory conditions of the palpebral and bulbar conjunctiva, cornea and anterior segment of the globe such as allergic conjunctivitis ... iritis, cyclitis",
+    "note": "Cyclitis appears only on the tobramycin+steroid combination ophthalmic labels and the sentence itself attributes it to 'ocular steroids'; tobramycin's own role is the anti-infective component and its single-ingredient labels list only bacterial infections."
+  },
+  {
+    "id": "g233",
+    "verdict": "FP6_coingredient",
+    "quote": "Dapagliflozin, when used as a component of dapagliflozin and metformin hydrochloride extended-release tablets, is indicated in adults with type 2 diabetes mellitus to reduce the risk of:",
+    "note": "Every heart-failure mention in the indications is explicitly the dapagliflozin or empagliflozin component's risk-reduction indication on combination labels; metformin's own indication is glycemic control in T2DM, and heart failure otherwise appears only in warnings."
+  },
+  {
+    "id": "g266",
+    "verdict": "TARGET",
+    "quote": "STIVARGA is indicated for the treatment of adult patients with metastatic colorectal cancer (CRC) who have been previously treated with fluoropyrimidine-, oxaliplatin- and irinotecan-based",
+    "note": "Metastatic colorectal cancer is the edge disease under a different name; prior-therapy requirements qualify the population only (EMA concurs)."
+  },
+  {
+    "id": "g084",
+    "verdict": "TARGET",
+    "quote": "Chenodiol is indicated for patients with radiolucent stones in well-opacifying gallbladders, in whom selective surgery would be undertaken except for the presence of increased surgical risk",
+    "note": "Although phrased as 'patients with', the drug's purpose is dissolution of the gallstones themselves ('likelihood of successful dissolution'), so radiolucent gallstones (a subtype of cholelithiasis) is the treated target, not a setting."
+  },
+  {
+    "id": "g040",
+    "verdict": "TARGET",
+    "quote": "Tryngolza is indicated as an adjunct to diet in adult patients for the treatment of genetically confirmed familial chylomicronemia syndrome (FCS).",
+    "note": "EMA names FCS as the treated disease outright; FDA's 'reduce TG in adults with FCS' is also management of the disease's defining feature."
+  },
+  {
+    "id": "g141",
+    "verdict": "TARGET",
+    "quote": "TECENTRIQ, in combination with cobimetinib and vemurafenib, is indicated for the treatment of adult patients with BRAF V600 mutation-positive unresectable or metastatic melanoma",
+    "note": "Combination-therapy indication for a molecular/stage subtype of melanoma; edge 'melanoma' is a near parent that still describes what is indicated, and atezolizumab is itself the indicated agent (not a fixed-dose partner issue)."
+  },
+  {
+    "id": "g023",
+    "verdict": "TARGET",
+    "quote": "visual impairment due to myopic choroidal neovascularisation (myopic CNV)",
+    "note": "Adversarial FP2 reading (treats the visual impairment, not the CNV) fails under the rubric's osteoarthritis-pain precedent: managing the disease's manifestation counts, and myopic CNV is named as the indicated condition on multiple EMA labels."
+  },
+  {
+    "id": "g299",
+    "verdict": "TARGET",
+    "quote": "Treatment of chronic heart failure Ivabradine is indicated in chronic heart failure NYHA II to IV class with systolic dysfunction, in patients in sinus rhythm",
+    "note": "Chronic heart failure with systolic dysfunction is heart failure under standard synonymy with 'congestive heart failure'; the sinus-rhythm/heart-rate criteria only restrict the population."
+  },
+  {
+    "id": "g025",
+    "verdict": "TARGET",
+    "quote": "Pentoxifylline Extended-Release Tablets are indicated for the treatment of patients with intermittent claudication on the basis of chronic occlusive arterial disease of the limbs.",
+    "note": "Adversarial FP2 reading (claudication symptom vs PVD) is undercut by the label itself, which frames the use as 'when treating peripheral vascular disease' with surgery as the definitive therapy; symptom management of the disease counts per rubric."
+  },
+  {
+    "id": "g239",
+    "verdict": "TARGET",
+    "quote": "Lamotrigine tablets are indicated as adjunctive therapy for the following seizure types in patients aged 2 years and older: partial-onset seizures. primary generalized tonic-clonic (PGTC) seizures.",
+    "note": "'Bilateral tonic-clonic seizure with generalized onset' is the current ILAE name for primary generalized tonic-clonic seizures, a named indicated seizure type."
+  },
+  {
+    "id": "g064",
+    "verdict": "FP1_setting",
+    "quote": "treatment of chronic iron overload due to blood transfusions when deferoxamine therapy is contraindicated or inadequate ... in adult and paediatric patients with other anaemias",
+    "note": "Anaemia is only the population whose transfusions cause the iron overload; the thing treated is chronic iron overload, so anemia is setting, not target."
+  },
+  {
+    "id": "g211",
+    "verdict": "TARGET",
+    "quote": "Levofloxacin tablets are indicated for the treatment of acute bacterial exacerbation of chronic bronchitis (ABECB) due to methicillin-susceptible Staphylococcus aureus",
+    "note": "Acute bacterial exacerbation of chronic bronchitis is a subtype (bacterial) of the edge's acute exacerbation of chronic bronchitis; edge narrower-or-equal reading favours TARGET."
+  },
+  {
+    "id": "g068",
+    "verdict": "FP6_coingredient",
+    "quote": "(1) patients with moderate to severe anxiety and/or agitation and depressed mood, (2) patients with depression in whom anxiety and/or agitation are severe",
+    "note": "Agitation appears only on the perphenazine/amitriptyline and chlordiazepoxide/amitriptyline combination labels, where the text itself assigns the anxiety/agitation component to the tranquilizer partner; amitriptyline's single-ingredient indication is 'relief of symptoms of depression' only (agitation otherwise appears as an adverse-event warning)."
+  },
+  {
+    "id": "g076",
+    "verdict": "FP1_setting",
+    "quote": "the absolute benefit is greater in patients who are at higher risk independent of their hypertension (for example, patients with diabetes or hyperlipidemia)",
+    "note": "Hyperlipidemia appears only in the generic antihypertensive boilerplate as a high-risk background population for blood-pressure lowering; valsartan is indicated for hypertension, never for lipid disorders."
+  },
+  {
+    "id": "g016",
+    "verdict": "TARGET",
+    "quote": "AVYCAZ (ceftazidime and avibactam) in combination with metronidazole, is indicated for the treatment of complicated intra-abdominal infections (cIAI) in adult and pediatric patients",
+    "note": "All avibactam text is combination (ceftazidime/avibactam and aztreonam/avibactam), but the cIAI indication is granted to the beta-lactam/beta-lactamase-inhibitor pair as a single antibacterial and recurs across two different partners, so it cannot be assigned to the partner alone; adversarial FP6 reading noted but not supported by the text."
+  },
+  {
+    "id": "g065",
+    "verdict": "TARGET",
+    "quote": "ADBRY is indicated for the treatment of moderate-to-severe atopic dermatitis in adults and pediatric patients 12 years of age and older",
+    "note": "Atopic eczema is a standard synonym of atopic dermatitis; both FDA and EMA name it as the treated disease."
+  },
+  {
+    "id": "g256",
+    "verdict": "TARGET",
+    "quote": "myelodysplastic syndromes (MDS) including previously treated and untreated, de novo and secondary MDS of all French-American-British subtypes (refractory anemia, refractory anemia with ringed",
+    "note": "Refractory anemia with ringed sideroblasts is the FAB name for the WHO entity MDS with ring sideroblasts, explicitly listed among indicated subtypes."
+  },
+  {
+    "id": "g281",
+    "verdict": "TARGET",
+    "quote": "Uses for the temporary relief of these symptoms associated with menstrual periods: cramps bloating water-weight gain headache backache muscle aches fatigue",
+    "note": "Multiple OTC labels list fatigue as a symptom the product relieves; the supplied text does not identify any partner ingredient to which fatigue relief could be assigned, so a co-ingredient call cannot be made from the text, though these menstrual-relief products are plausibly multi-ingredient."
+  },
+  {
+    "id": "g222",
+    "verdict": "TARGET",
+    "quote": "Upper respiratory tract infections of mild to moderate degree caused by Streptococcus pyogenes",
+    "note": "Recurrent URTI is a narrower form of the indicated upper respiratory tract infections, and the label also covers long-term prophylaxis of streptococcal pharyngitis; narrower edge favours TARGET."
+  },
+  {
+    "id": "g125",
+    "verdict": "FP3_cross_section",
+    "quote": "Nadolol tablets are contraindicated in bronchial asthma, sinus bradycardia and greater than first degree conduction block, cardiogenic shock, and overt cardiac failure",
+    "note": "Nadolol is indicated only for angina and hypertension; heart failure appears as a contraindication and warning, and the sole mention inside the indications section is generic class boilerplate ('many antihypertensive drugs have additional approved indications... heart failure'), not a nadolol indication."
+  },
+  {
+    "id": "g085",
+    "verdict": "TARGET",
+    "quote": "Terazosin capsules, USP are indicated for the treatment of symptomatic benign prostatic hyperplasia (BPH).",
+    "note": "Direct named indication; 'signs and symptoms of BPH' is management of the disease, not a symptom swap."
+  },
+  {
+    "id": "g053",
+    "verdict": "TARGET",
+    "quote": "Hematologic Disorders Acquired (autoimmune) hemolytic anemia, Diamond-Blackfan anemia, pure red cell aplasia, selected cases of secondary thrombocytopenia.",
+    "note": "Pure red cell aplasia is a named item in the hematologic indications list of the betamethasone injectable label."
+  },
+  {
+    "id": "g090",
+    "verdict": "FP1_setting",
+    "quote": "is indicated for the prevention of atherothrombotic events in adult patients after an acute coronary syndrome (ACS) with elevated cardiac biomarkers",
+    "note": "Mirrors the rubric's FP1 example exactly: the prevented outcome is atherothrombotic events and ACS is the population/setting ('after an ACS'), not the condition treated."
+  },
+  {
+    "id": "g268",
+    "verdict": "TARGET",
+    "quote": "Acute painful shoulder (Acute subacromial bursitis/supraspinatus tendinitis)",
+    "note": "Supraspinatus tendinitis is explicitly named as an indicated condition for relief of signs and symptoms."
+  },
+  {
+    "id": "g077",
+    "verdict": "TARGET",
+    "quote": "is indicated for the treatment of adult patients with moderately to severely active rheumatoid arthritis who have had an inadequate response to one or more Disease-Modifying Anti-Rheumatic Drugs",
+    "note": "Direct named indication on FDA and EMA labels; severity and prior-DMARD qualifiers restrict the population only."
+  },
+  {
+    "id": "g144",
+    "verdict": "TARGET",
+    "quote": "Effentora is indicated for the treatment of breakthrough pain (BTP) in adults with cancer who are already receiving maintenance opioid therapy for chronic cancer pain.",
+    "note": "Breakthrough pain is the thing treated; cancer and maintenance opioid therapy are the setting."
+  },
+  {
+    "id": "g091",
+    "verdict": "TARGET",
+    "quote": "Cirrhosis of the liver accompanied by edema and/or ascites:",
+    "note": "On the spironolactone/hydrochlorothiazide label ascites is listed among the edematous conditions the diuretic combination manages; the diuretic indication is shared by both diuretic components rather than belonging to spironolactone alone, so neither FP6 nor FP1 (ascites is the fluid state treated, not a background) displaces TARGET."
+  }
+]

@@ -1,0 +1,92 @@
+id	edges	source_literals
+UMLS:C0948807	76	Hepatic impairment; Moderate or severe hepatic impairment; Severe hepatic impairment; hepatic impairment; severe hepatic impairment
+UMLS:C1868885	43	Uncontrolled hypertension; uncontrolled hypertension
+UMLS:C0278488	41	Metastatic breast cancer; metastatic breast cancer
+UMLS:C2363741	36	HIV-1 infection
+UMLS:C0856633	18	extensive burns
+UMLS:C4552431	15	Complicated urinary tract infection; complicated urinary tract infection; complicated urinary tract infections
+UMLS:C4524048	14	Complicated intra-abdominal infection; Complicated intra-abdominal infections; complicated intra-abdominal infection; complicated intra-abdominal infections
+UMLS:C5400523	12	systemic embolism
+UMLS:C4524092	11	Chronic rhinosinusitis with nasal polyps; chronic rhinosinusitis with nasal polyps
+UMLS:C0024303	10	lymphocytic lymphoma
+UMLS:C0948109	10	Idiopathic neutropenia; idiopathic neutropenia
+UMLS:C1142276	10	renal anaemia; renal anemia
+UMLS:C4552481	10	Acute bacterial skin and skin structure infections; acute bacterial skin and skin structure infections
+UMLS:C0858004	9	influenza A virus infection
+UMLS:C0851989	8	Bone and joint infection; Bone and joint infections; bone and joint infection; bone and joint infections
+UMLS:C1868976	8	motor fluctuations
+UMLS:C2363890	8	Intestinal atony; intestinal atony
+UMLS:C4552480	8	Complicated skin and skin structure infections; complicated skin and skin structure infections
+UMLS:C0858005	7	influenza B virus infection
+UMLS:C5243916	7	Primary immune thrombocytopenia; primary immune thrombocytopenia
+UMLS:C0235304	6	acid indigestion
+UMLS:C0860277	6	sour stomach
+UMLS:C1735365	6	Acute bacterial exacerbation of chronic bronchitis; acute bacterial exacerbation of chronic bronchitis; acute bacterial exacerbations of chronic bronchitis
+UMLS:C3203466	6	acute enterocolitis
+UMLS:C4728082	6	severe hypoglycaemia; severe hypoglycemia
+UMLS:C1262234	5	Gynecological infections; acute gynecological infection; gynecological infection; gynecological infections
+UMLS:C3495917	5	Advanced breast cancer; advanced breast cancer
+UMLS:C3537442	5	pathologic myopia
+UMLS:C4268639	5	irritable bowel syndrome with constipation
+UMLS:C0744130	4	diabetic foot infection; diabetic foot infections
+UMLS:C1394798	4	Hepatic decompensation; hepatic decompensation
+UMLS:C1739382	4	chronic iron overload
+UMLS:C1963916	4	diabetic peripheral neuropathic pain
+UMLS:C0740304	3	Acute COPD exacerbation
+UMLS:C1306878	3	climacteric disturbance
+UMLS:C1883018	3	severe aplastic anemia
+UMLS:C2189270	3	Ventilator-associated bacterial pneumonia; ventilator-associated bacterial pneumonia
+UMLS:C4727977	3	Hospital-acquired bacterial pneumonia; hospital-acquired bacterial pneumonia
+UMLS:C4727978	3	Complicated skin and soft tissue infection; complicated skin and soft tissue infections
+UMLS:C4760993	3	episodic migraine
+UMLS:C0542052	2	Coronary insufficiency; coronary insufficiency
+UMLS:C0857841	2	vaccinia virus infection
+UMLS:C1306762	2	aortoiliac occlusive disease
+UMLS:C1608421	2	Antibody-mediated rejection; antibody-mediated rejection
+UMLS:C1609524	2	Acute decompensated heart failure; acute decompensated heart failure
+UMLS:C2242528	2	non-erosive reflux disease
+UMLS:C2718087	2	Vitamin K deficiency bleeding
+UMLS:C3160887	2	node-positive breast cancer
+UMLS:C3160889	2	node-negative breast cancer
+UMLS:C3805211	2	Hypoxic respiratory failure; hypoxic respiratory failure
+UMLS:C4049572	2	extended oligoarthritis
+UMLS:C4087506	2	central neuropathic pain
+UMLS:C5243752	2	non-cystic fibrosis bronchiectasis
+UMLS:C0235575	1	hemolytic reactions
+UMLS:C0275879	1	swine dysentery
+UMLS:C0848232	1	nocturnal polyuria
+UMLS:C0852702	1	traumatic delivery
+UMLS:C0852757	1	diabetic neuropathic ulcers
+UMLS:C0854217	1	jaw inflammation
+UMLS:C0856120	1	relapsing multiple sclerosis
+UMLS:C0858320	1	Plasmodium ovale infection
+UMLS:C0858321	1	Plasmodium vivax infection
+UMLS:C0861154	1	allergic rhinoconjunctivitis
+UMLS:C0872355	1	nicotine craving
+UMLS:C0877267	1	peritonsillitis
+UMLS:C0948599	1	candida pneumonia
+UMLS:C0948852	1	acute lumbago
+UMLS:C0949075	1	chronic lumbago
+UMLS:C1112157	1	intrauterine infection
+UMLS:C1141927	1	Wound sepsis
+UMLS:C1142357	1	Symptomatic hyperlactatemia/lactic acidosis
+UMLS:C1262211	1	diarrhea-predominant irritable bowel syndrome
+UMLS:C1536221	1	non-ST segment elevation myocardial infarction
+UMLS:C1611174	1	post-traumatic pain
+UMLS:C1963943	1	atherothrombosis
+UMLS:C2242623	1	premature ovulation
+UMLS:C3160886	1	non-ST segment elevation acute coronary syndrome
+UMLS:C3267019	1	Central nervous system hemorrhage
+UMLS:C3495798	1	periodontal inflammation
+UMLS:C3805119	1	Parkinson's disease psychosis
+UMLS:C3805143	1	non-transfusion-dependent thalassemia
+UMLS:C4523850	1	multidrug-resistant pulmonary tuberculosis
+UMLS:C4524093	1	Euglycemic diabetic ketoacidosis
+UMLS:C4552187	1	cardiac iron overload
+UMLS:C4552318	1	gastrointestinal adenocarcinoma
+UMLS:C4744554	1	High-grade dysplasia
+UMLS:C5244082	1	transthyretin-mediated amyloidosis
+UMLS:C5400195	1	gastroesophageal junction cancer
+UMLS:C5400417	1	allergic fungal rhinosinusitis
+UMLS:C5400441	1	vasodilatory shock
+UMLS:C5400467	1	HER2-mutant non-small cell lung cancer

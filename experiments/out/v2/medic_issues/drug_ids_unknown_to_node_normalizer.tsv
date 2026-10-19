@@ -1,0 +1,718 @@
+id	name	treats_assertions	prefix
+CHEBI:749494	adalimumab	143	CHEBI
+CHEBI:749681	denosumab	109	CHEBI
+DRON:00013042	rituximab	89	DRON
+CHEBI:750062	aflibercept	87	CHEBI
+CHEBI:749495	bevacizumab	84	CHEBI
+CHEBI:749461	filgrastim	66	CHEBI
+CHEBI:749609	ustekinumab	56	CHEBI
+CHEBI:749571	infliximab	52	CHEBI
+CHEBI:749601	ranibizumab	46	CHEBI
+DRON:00019607	tocilizumab	38	DRON
+CHEBI:749426	pegfilgrastim	37	CHEBI
+CHEBI:755540	docetaxel	30	CHEBI
+CHEBI:755740	atezolizumab	28	CHEBI
+DRON:00750819	pembrolizumab	28	DRON
+CHEBI:749607	golimumab	24	CHEBI
+CHEBI:749530	hyaluronidase (human recombinant)	22	CHEBI
+CHEBI:753623	dupilumab	22	CHEBI
+CHEBI:755270	durvalumab	22	CHEBI
+DRON:00018785	Human normal immunoglobulin	22	DRON
+CHEBI:750387	fludeoxyglucose f 18	21	CHEBI
+CHEBI:749378	decitabine	20	CHEBI
+CHEBI:750112	ixekizumab	20	CHEBI
+CHEBI:749425	epoetin alfa	18	CHEBI
+CHEBI:750145	secukinumab	18	CHEBI
+CHEBI:759086	polymyxin b	18	CHEBI
+CHEBI:747960	chlorpheniramine	17	CHEBI
+CHEBI:749436	insulin glargine	17	CHEBI
+CHEBI:749604	eculizumab	17	CHEBI
+CHEBI:750074	brentuximab vedotin	17	CHEBI
+CHEBI:750139	ramucirumab	17	CHEBI
+DRON:00019228	certolizumab pegol	17	DRON
+CHEBI:749497	omalizumab	16	CHEBI
+CHEBI:749608	canakinumab	16	CHEBI
+CHEBI:756742	lisocabtagene maraleucel	16	CHEBI
+CHEBI:749409	chlophedianol	15	CHEBI
+CHEBI:749556	somatropin	15	CHEBI
+CHEBI:754996	guselkumab	15	CHEBI
+CHEBI:755661	upadacitinib	15	CHEBI
+CHEBI:756510	risankizumab	15	CHEBI
+CHEBI:749496	palivizumab	14	CHEBI
+CHEBI:749498	human immunoglobulin g	14	CHEBI
+CHEBI:750399	canagliflozin anhydrous	14	CHEBI
+CHEBI:754310	alirocumab	14	CHEBI
+CHEBI:755001	evolocumab	14	CHEBI
+CHEBI:755996	zanubrutinib	14	CHEBI
+CHEBI:757155	bimekizumab	14	CHEBI
+CHEBI:757286	trastuzumab deruxtecan	14	CHEBI
+CHEBI:749583	follitropin alfa	13	CHEBI
+CHEBI:754405	cyanocobalamin	13	CHEBI
+CHEBI:757730	belzutifan	13	CHEBI
+CHEBI:749465	insulin aspart	12	CHEBI
+CHEBI:753401	mepolizumab	12	CHEBI
+CHEBI:756469	ravulizumab	12	CHEBI
+CHEBI:760534	ferrous cation	12	CHEBI
+CHEBI:749501	cholestyramine	11	CHEBI
+CHEBI:749524	insulin human	11	CHEBI
+CHEBI:749599	abatacept	11	CHEBI
+CHEBI:750198	relugolix	11	CHEBI
+CHEBI:750415	vonoprazan fumarate	11	CHEBI
+CHEBI:756628	avapritinib	11	CHEBI
+CHEBI:758284	epcoritamab	11	CHEBI
+CHEBI:759924	lascufloxacin	11	CHEBI
+CHEBI:749447	albumin human	10	CHEBI
+CHEBI:749550	cetuximab	10	CHEBI
+CHEBI:750362	pertuzumab	10	CHEBI
+CHEBI:752911	insulin degludec	10	CHEBI
+CHEBI:754827	rimegepant	10	CHEBI
+CHEBI:755294	encorafenib	10	CHEBI
+CHEBI:756751	donanemab	10	CHEBI
+CHEBI:757282	tislelizumab	10	CHEBI
+DRON:00723869	Anhydrous Dextrose	10	DRON
+CHEBI:748218	vinblastine	9	CHEBI
+CHEBI:750076	brodalumab	9	CHEBI
+CHEBI:750119	mogamulizumab	9	CHEBI
+CHEBI:750126	obinutuzumab	9	CHEBI
+CHEBI:750163	vedolizumab	9	CHEBI
+CHEBI:752900	metreleptin	9	CHEBI
+CHEBI:753547	epoetin zeta	9	CHEBI
+CHEBI:755086	luspatercept	9	CHEBI
+CHEBI:755952	avelumab	9	CHEBI
+CHEBI:756472	axicabtagene ciloleucel	9	CHEBI
+CHEBI:757176	cemiplimab	9	CHEBI
+CHEBI:757714	selpercatinib	9	CHEBI
+CHEBI:748037	cefaclor anhydrous	8	CHEBI
+CHEBI:749476	enoxaparin sodium	8	CHEBI
+CHEBI:749587	bendamustine hydrochloride	8	CHEBI
+CHEBI:750086	daratumumab	8	CHEBI
+CHEBI:753315	eptacog alfa (activated)	8	CHEBI
+CHEBI:755595	glecaprevir	8	CHEBI
+CHEBI:757201	faricimab	8	CHEBI
+CHEBI:749411	glycopyrronium	7	CHEBI
+CHEBI:749442	imiglucerase	7	CHEBI
+CHEBI:749518	interferon beta-1a	7	CHEBI
+CHEBI:749533	peginterferon alfa-2a	7	CHEBI
+CHEBI:749693	letermovir	7	CHEBI
+CHEBI:750071	benralizumab	7	CHEBI
+CHEBI:750192	belimumab	7	CHEBI
+CHEBI:753668	sarilumab	7	CHEBI
+CHEBI:755235	cedazuridine	7	CHEBI
+CHEBI:755258	tisagenlecleucel	7	CHEBI
+CHEBI:755470	pibrentasvir	7	CHEBI
+CHEBI:755778	somapacitan	7	CHEBI
+CHEBI:755824	brolucizumab	7	CHEBI
+CHEBI:755918	lecanemab	7	CHEBI
+CHEBI:755960	emicizumab	7	CHEBI
+CHEBI:756989	baloxavir marboxil	7	CHEBI
+CHEBI:757063	odevixibat	7	CHEBI
+CHEBI:757240	nemolizumab	7	CHEBI
+CHEBI:759768	protein c concentrate (human)	7	CHEBI
+CHEBI:759798	upadacitinib hemihydrate	7	CHEBI
+DRON:00016889	activated charcoal	7	DRON
+DRON:00750823	dulaglutide	7	DRON
+CHEBI:233561	risdiplam	6	CHEBI
+CHEBI:747652	Velaglucerase alfa	6	CHEBI
+CHEBI:747999	maralixibat chloride	6	CHEBI
+CHEBI:748105	imipenem anhydrous	6	CHEBI
+CHEBI:748790	exenatide	6	CHEBI
+CHEBI:749439	rasburicase	6	CHEBI
+CHEBI:749544	sargramostim	6	CHEBI
+CHEBI:749606	romiplostim	6	CHEBI
+CHEBI:749610	ofatumumab	6	CHEBI
+CHEBI:750159	trastuzumab emtansine	6	CHEBI
+CHEBI:750510	avatrombopag	6	CHEBI
+CHEBI:751573	selumetinib sulfate	6	CHEBI
+CHEBI:753057	ocrelizumab	6	CHEBI
+CHEBI:753608	tremelimumab	6	CHEBI
+CHEBI:753896	asparaginase	6	CHEBI
+CHEBI:754971	aftobetin	6	CHEBI
+CHEBI:757026	efgartigimod alfa	6	CHEBI
+CHEBI:757617	pegcetacoplan	6	CHEBI
+CHEBI:757668	deucravacitinib	6	CHEBI
+CHEBI:759083	sevelamer carbonate	6	CHEBI
+CHEBI:759084	sevelamer	6	CHEBI
+DRON:01045078	aprocitentan	6	DRON
+DRON:01061505	enoxaparin	6	DRON
+CHEBI:55346	anidulafungin	5	CHEBI
+CHEBI:749082	flutemetamol	5	CHEBI
+CHEBI:749403	isosulfan blue inner salt	5	CHEBI
+CHEBI:749444	laronidase	5	CHEBI
+CHEBI:749459	alteplase	5	CHEBI
+CHEBI:749500	natalizumab	5	CHEBI
+CHEBI:749506	gramicidin	5	CHEBI
+CHEBI:749551	alemtuzumab	5	CHEBI
+CHEBI:749605	rilonacept	5	CHEBI
+CHEBI:749735	tecovirimat	5	CHEBI
+CHEBI:750449	lanthanum carbonate	5	CHEBI
+CHEBI:750468	anamorelin hydrochloride	5	CHEBI
+CHEBI:750813	insulin detemir	5	CHEBI
+CHEBI:752916	romosozumab	5	CHEBI
+CHEBI:753184	human coagulation factor viii	5	CHEBI
+CHEBI:753718	tenecteplase	5	CHEBI
+CHEBI:753844	crisantaspase	5	CHEBI
+CHEBI:754094	coagulation factor ix recombinant human	5	CHEBI
+CHEBI:754166	inebilizumab	5	CHEBI
+CHEBI:754224	zolbetuximab	5	CHEBI
+CHEBI:754951	siponimod	5	CHEBI
+CHEBI:755266	polatuzumab vedotin	5	CHEBI
+CHEBI:755477	mirvetuximab soravtansine	5	CHEBI
+CHEBI:755541	flortaucipir f 18	5	CHEBI
+CHEBI:755802	burosumab	5	CHEBI
+CHEBI:756375	avacopan	5	CHEBI
+CHEBI:756389	tacrolimus	5	CHEBI
+CHEBI:756460	emapalumab	5	CHEBI
+CHEBI:756496	mirikizumab	5	CHEBI
+CHEBI:757002	pemigatinib	5	CHEBI
+CHEBI:757222	amivantamab	5	CHEBI
+CHEBI:757226	loncastuximab tesirine	5	CHEBI
+CHEBI:757370	datopotamab deruxtecan	5	CHEBI
+CHEBI:757830	donislecel	5	CHEBI
+CHEBI:759035	exagamglogene autotemcel	5	CHEBI
+CHEBI:759752	damoctocog alfa pegol	5	CHEBI
+DRON:00016911	dalteparin	5	DRON
+DRON:00831738	duvelisib	5	DRON
+DRON:01049442	mavorixafor	5	DRON
+CHEBI:29693	thiostrepton	4	CHEBI
+CHEBI:748104	cycloserine	4	CHEBI
+CHEBI:748213	lbq-657	4	CHEBI
+CHEBI:748780	pretomanid	4	CHEBI
+CHEBI:748997	leucovorin	4	CHEBI
+CHEBI:749000	nalfurafine hydrochloride	4	CHEBI
+CHEBI:749017	hydroxychloroquine sulfate	4	CHEBI
+CHEBI:749277	lactic acid	4	CHEBI
+CHEBI:749380	lubiprostone	4	CHEBI
+CHEBI:749391	lanreotide acetate	4	CHEBI
+CHEBI:749503	darbepoetin alfa	4	CHEBI
+CHEBI:749593	fesoterodine fumarate	4	CHEBI
+CHEBI:750089	elotuzumab	4	CHEBI
+CHEBI:750271	florbetapir	4	CHEBI
+CHEBI:752899	imetelstat	4	CHEBI
+CHEBI:752973	poison oak extract	4	CHEBI
+CHEBI:753206	dimethicone	4	CHEBI
+CHEBI:753281	epoetin theta	4	CHEBI
+CHEBI:753306	simoctocog alfa	4	CHEBI
+CHEBI:753332	ublituximab	4	CHEBI
+CHEBI:753505	pegaspargase	4	CHEBI
+CHEBI:753564	inotuzumab ozogamicin	4	CHEBI
+CHEBI:753625	peginterferon beta-1a	4	CHEBI
+CHEBI:753652	collagenase clostridium histolyticum	4	CHEBI
+CHEBI:753690	rho (d) immune globulin	4	CHEBI
+CHEBI:753833	chamomile	4	CHEBI
+CHEBI:753987	epoetin beta	4	CHEBI
+CHEBI:755243	resmetirom	4	CHEBI
+CHEBI:755301	setmelanotide	4	CHEBI
+CHEBI:755476	isatuximab	4	CHEBI
+CHEBI:755742	tezepelumab	4	CHEBI
+CHEBI:755804	galcanezumab	4	CHEBI
+CHEBI:755931	amyl nitrite	4	CHEBI
+CHEBI:756179	phytate sodium	4	CHEBI
+CHEBI:756519	marstacimab	4	CHEBI
+CHEBI:756658	vorasidenib	4	CHEBI
+CHEBI:756710	bixalomer	4	CHEBI
+CHEBI:757090	solriamfetol	4	CHEBI
+CHEBI:757091	evocalcet	4	CHEBI
+CHEBI:757127	omidenepag isopropyl	4	CHEBI
+CHEBI:757254	elranatamab	4	CHEBI
+CHEBI:757276	sutimlimab	4	CHEBI
+CHEBI:757317	.alpha.1-proteinase inhibitor human	4	CHEBI
+CHEBI:757376	efmoroctocog alfa	4	CHEBI
+CHEBI:757381	coagulation factor x human	4	CHEBI
+CHEBI:757383	anti-inhibitor coagulant complex	4	CHEBI
+CHEBI:757460	retifanlimab	4	CHEBI
+CHEBI:757758	netarsudil	4	CHEBI
+CHEBI:757895	lutetium lu-177 vipivotide tetraxetan	4	CHEBI
+CHEBI:758057	antihemophilic factor, pegylated (mw 20000) human sequence recombinant	4	CHEBI
+CHEBI:758090	brexucabtagene autoleucel	4	CHEBI
+CHEBI:758316	tozinameran	4	CHEBI
+CHEBI:758324	olezarsen	4	CHEBI
+CHEBI:759420	berahyaluronidase alfa	4	CHEBI
+CHEBI:759800	tecovirimat monohydrate	4	CHEBI
+DRON:00017209	Hepatitis B Vaccine	4	DRON
+DRON:00723494	skim milk	4	DRON
+DRON:00750797	sucroferric oxyhydroxide	4	DRON
+DRON:00862672	fedratinib	4	DRON
+DRON:00975437	tapinarof	4	DRON
+DRON:01068078	mirdametinib	4	DRON
+CHEBI:48432	angiotensin II	3	CHEBI
+CHEBI:747921	isoproterenol	3	CHEBI
+CHEBI:748720	maralixibat	3	CHEBI
+CHEBI:749006	maribavir	3	CHEBI
+CHEBI:749251	valganciclovir hydrochloride	3	CHEBI
+CHEBI:749258	octreotide acetate	3	CHEBI
+CHEBI:749427	denileukin diftitox	3	CHEBI
+CHEBI:749430	teriparatide acetate	3	CHEBI
+CHEBI:749511	choriogonadotropin alfa	3	CHEBI
+CHEBI:749545	dornase alfa	3	CHEBI
+CHEBI:749555	insulin glulisine	3	CHEBI
+CHEBI:749567	thyrotropin alfa	3	CHEBI
+CHEBI:749589	nilotinib hydrochloride monohydrate	3	CHEBI
+CHEBI:749600	alglucosidase alfa	3	CHEBI
+CHEBI:749603	panitumumab	3	CHEBI
+CHEBI:750113	lebrikizumab	3	CHEBI
+CHEBI:750150	sotatercept	3	CHEBI
+CHEBI:750156	teprotumumab	3	CHEBI
+CHEBI:751540	delafloxacin	3	CHEBI
+CHEBI:751611	avatrombopag maleate	3	CHEBI
+CHEBI:752915	vonicog alfa	3	CHEBI
+CHEBI:752954	ox bile	3	CHEBI
+CHEBI:752961	nux vomica extract	3	CHEBI
+CHEBI:753096	trafermin	3	CHEBI
+CHEBI:753278	turoctocog alfa	3	CHEBI
+CHEBI:753299	asfotase alfa	3	CHEBI
+CHEBI:753329	conestat alfa	3	CHEBI
+CHEBI:753399	menotropins	3	CHEBI
+CHEBI:753575	milk thistle	3	CHEBI
+CHEBI:753618	bezlotoxumab	3	CHEBI
+CHEBI:753624	elosulfase alfa	3	CHEBI
+CHEBI:753629	tildrakizumab	3	CHEBI
+CHEBI:753807	agalsidase beta	3	CHEBI
+CHEBI:753879	goldenseal	3	CHEBI
+CHEBI:754365	caplacizumab	3	CHEBI
+CHEBI:754975	doravirine	3	CHEBI
+CHEBI:755079	sebelipase alfa	3	CHEBI
+CHEBI:755118	osilodrostat	3	CHEBI
+CHEBI:755155	deutetrabenazine	3	CHEBI
+CHEBI:755199	apalutamide	3	CHEBI
+CHEBI:755265	abaloparatide	3	CHEBI
+CHEBI:755275	sodium zirconium cyclosilicate	3	CHEBI
+CHEBI:755280	ferric citrate	3	CHEBI
+CHEBI:755350	tepotinib	3	CHEBI
+CHEBI:755374	cerliponase alfa	3	CHEBI
+CHEBI:755506	evinacumab	3	CHEBI
+CHEBI:755547	sacituzumab govitecan	3	CHEBI
+CHEBI:755642	gozetotide	3	CHEBI
+CHEBI:755674	vadadustat	3	CHEBI
+CHEBI:755715	futibatinib	3	CHEBI
+CHEBI:755767	vosoritide	3	CHEBI
+CHEBI:755792	methoxy polyethylene glycol-epoetin beta	3	CHEBI
+CHEBI:755907	satralizumab	3	CHEBI
+CHEBI:755933	nusinersen sodium	3	CHEBI
+CHEBI:755937	tofersen	3	CHEBI
+CHEBI:756998	mavacamten	3	CHEBI
+CHEBI:757020	lutetium oxodotreotide lu-177	3	CHEBI
+CHEBI:757024	human c1-esterase inhibitor	3	CHEBI
+CHEBI:757182	concizumab	3	CHEBI
+CHEBI:757206	fremanezumab	3	CHEBI
+CHEBI:757234	mosunetuzumab	3	CHEBI
+CHEBI:757248	pegzilarginase	3	CHEBI
+CHEBI:757263	ropeginterferon alfa-2b	3	CHEBI
+CHEBI:757264	rozanolixizumab	3	CHEBI
+CHEBI:757274	somatrogon	3	CHEBI
+CHEBI:757283	tisotumab vedotin	3	CHEBI
+CHEBI:757285	toripalimab	3	CHEBI
+CHEBI:757294	cenegermin	3	CHEBI
+CHEBI:757312	octocog alfa	3	CHEBI
+CHEBI:757347	spesolimab	3	CHEBI
+CHEBI:757380	efbemalenograstim alfa	3	CHEBI
+CHEBI:757385	follitropin	3	CHEBI
+CHEBI:757417	tebentafusp	3	CHEBI
+CHEBI:757449	zenocutuzumab	3	CHEBI
+CHEBI:757470	tafasitamab	3	CHEBI
+CHEBI:757488	omega-3 fatty acids	3	CHEBI
+CHEBI:757538	dostarlimab	3	CHEBI
+CHEBI:757592	lonapegsomatropin	3	CHEBI
+CHEBI:757615	belantamab mafodotin	3	CHEBI
+CHEBI:757809	nipocalimab	3	CHEBI
+CHEBI:757819	avalglucosidase alfa	3	CHEBI
+CHEBI:757827	cipaglucosidase alfa	3	CHEBI
+CHEBI:757831	elivaldogene autotemcel	3	CHEBI
+CHEBI:757979	talquetamab	3	CHEBI
+CHEBI:757981	teclistamab	3	CHEBI
+CHEBI:758079	apadamtase alfa	3	CHEBI
+CHEBI:758122	inavolisib	3	CHEBI
+CHEBI:759012	etranacogene dezaparvovec	3	CHEBI
+CHEBI:759097	pasireotide pamoate	3	CHEBI
+CHEBI:759297	tirabrutinib hydrochloride	3	CHEBI
+CHEBI:759758	susoctocog alfa	3	CHEBI
+CHEBI:759804	follitropin beta	3	CHEBI
+CHEBI:759843	arsenic trioxide	3	CHEBI
+CHEBI:760245	nogapendekin alfa inbakicept	3	CHEBI
+DRON:00012842	corticorelin ovine	3	DRON
+DRON:00016914	glatiramer	3	DRON
+DRON:00019004	levocetirizine	3	DRON
+DRON:00750821	Coccidioides immitis spherule	3	DRON
+DRON:01034798	croscarmellose	3	DRON
+CHEBI:747793	elafibranor	2	CHEBI
+CHEBI:748011	macimorelin	2	CHEBI
+CHEBI:748220	cyclosporine	2	CHEBI
+CHEBI:748425	desvenlafaxine	2	CHEBI
+CHEBI:748939	raltegravir potassium	2	CHEBI
+CHEBI:749220	escitalopram oxalate	2	CHEBI
+CHEBI:749238	amlodipine besylate	2	CHEBI
+CHEBI:749363	proguanil hydrochloride	2	CHEBI
+CHEBI:749377	darunavir ethanolate	2	CHEBI
+CHEBI:749396	benztropine	2	CHEBI
+CHEBI:749407	indocyanine green acid form	2	CHEBI
+CHEBI:749414	methylergonovine	2	CHEBI
+CHEBI:749438	rimabotulinumtoxinb	2	CHEBI
+CHEBI:749454	pegaptanib sodium	2	CHEBI
+CHEBI:749457	pentosan polysulfate sodium	2	CHEBI
+CHEBI:749464	ibritumomab tiuxetan	2	CHEBI
+CHEBI:749488	pegvisomant	2	CHEBI
+CHEBI:749520	gemtuzumab ozogamicin	2	CHEBI
+CHEBI:749536	poractant alfa	2	CHEBI
+CHEBI:749558	synthetic conjugated estrogens, b	2	CHEBI
+CHEBI:749561	sacrosidase	2	CHEBI
+CHEBI:749581	mecasermin	2	CHEBI
+CHEBI:749598	galsulfase	2	CHEBI
+CHEBI:749602	idursulfase	2	CHEBI
+CHEBI:749683	pegloticase	2	CHEBI
+CHEBI:749728	fenspiride hydrochloride	2	CHEBI
+CHEBI:749764	octisalate	2	CHEBI
+CHEBI:749790	homosalate	2	CHEBI
+CHEBI:749857	histamine dihydrochloride	2	CHEBI
+CHEBI:749946	plazomicin	2	CHEBI
+CHEBI:750147	siltuximab	2	CHEBI
+CHEBI:750155	teplizumab	2	CHEBI
+CHEBI:750158	tralokinumab	2	CHEBI
+CHEBI:750223	glucarpidase	2	CHEBI
+CHEBI:750263	levoleucovorin calcium	2	CHEBI
+CHEBI:750266	levoleucovorin	2	CHEBI
+CHEBI:750267	gadofosveset	2	CHEBI
+CHEBI:750270	florbetaben	2	CHEBI
+CHEBI:750382	degarelix acetate	2	CHEBI
+CHEBI:750411	grazoprevir anhydrous	2	CHEBI
+CHEBI:750504	plecanatide	2	CHEBI
+CHEBI:751588	quizartinib dihydrochloride	2	CHEBI
+CHEBI:751608	naldemedine	2	CHEBI
+CHEBI:752585	migalastat hydrochloride	2	CHEBI
+CHEBI:752873	talaporfin sodium	2	CHEBI
+CHEBI:752927	reteplase	2	CHEBI
+CHEBI:753119	tocofersolan	2	CHEBI
+CHEBI:753270	epoetin kappa	2	CHEBI
+CHEBI:753470	interferon alfa	2	CHEBI
+CHEBI:753474	interferon gamma-1a	2	CHEBI
+CHEBI:753535	catumaxomab	2	CHEBI
+CHEBI:753589	raxibacumab	2	CHEBI
+CHEBI:753665	talimogene laherparepvec	2	CHEBI
+CHEBI:753799	thyroid	2	CHEBI
+CHEBI:754062	dibotermin alfa	2	CHEBI
+CHEBI:755000	anifrolumab	2	CHEBI
+CHEBI:755149	talazoparib tosylate	2	CHEBI
+CHEBI:755182	simeprevir sodium	2	CHEBI
+CHEBI:755290	filgotinib	2	CHEBI
+CHEBI:755293	amifampridine phosphate	2	CHEBI
+CHEBI:755304	tenapanor hydrochloride	2	CHEBI
+CHEBI:755318	vaborbactam	2	CHEBI
+CHEBI:755379	obiltoxaximab	2	CHEBI
+CHEBI:755410	volanesorsen	2	CHEBI
+CHEBI:755412	idarucizumab	2	CHEBI
+CHEBI:755504	lanadelumab	2	CHEBI
+CHEBI:755598	lemborexant	2	CHEBI
+CHEBI:755649	clascoterone	2	CHEBI
+CHEBI:755682	abrocitinib	2	CHEBI
+CHEBI:755717	rilzabrutinib	2	CHEBI
+CHEBI:755750	omidenepag	2	CHEBI
+CHEBI:755791	trifarotene	2	CHEBI
+CHEBI:755825	olipudase alfa	2	CHEBI
+CHEBI:755830	voxilaprevir	2	CHEBI
+CHEBI:755838	vestronidase alfa	2	CHEBI
+CHEBI:755917	eptinezumab	2	CHEBI
+CHEBI:755924	erenumab	2	CHEBI
+CHEBI:755968	brensocatib	2	CHEBI
+CHEBI:756000	acoramidis	2	CHEBI
+CHEBI:756152	ibandronate sodium	2	CHEBI
+CHEBI:756373	tucatinib	2	CHEBI
+CHEBI:756521	nadofaragene firadenovec	2	CHEBI
+CHEBI:756647	ripretinib	2	CHEBI
+CHEBI:756746	onasemnogene abeparvovec	2	CHEBI
+CHEBI:756904	antimony cation (5+)	2	CHEBI
+CHEBI:757048	tagraxofusp	2	CHEBI
+CHEBI:757050	nirsevimab	2	CHEBI
+CHEBI:757054	valoctocogene roxaparvovec	2	CHEBI
+CHEBI:757067	amenamevir	2	CHEBI
+CHEBI:757102	sepetaprost	2	CHEBI
+CHEBI:757121	ipragliflozin l-proline	2	CHEBI
+CHEBI:757181	cosibelimab	2	CHEBI
+CHEBI:757186	crizanlizumab	2	CHEBI
+CHEBI:757192	dasiglucagon	2	CHEBI
+CHEBI:757209	givosiran	2	CHEBI
+CHEBI:757219	inotersen	2	CHEBI
+CHEBI:757247	pegunigalsidase alfa	2	CHEBI
+CHEBI:757327	avacincaptad pegol sodium	2	CHEBI
+CHEBI:757403	hepatitis b virus hbsag surface protein antigen	2	CHEBI
+CHEBI:757413	coagulation factor ix human	2	CHEBI
+CHEBI:757435	velmanase alfa	2	CHEBI
+CHEBI:757485	viltolarsen	2	CHEBI
+CHEBI:757503	odronextamab	2	CHEBI
+CHEBI:757511	glofitamab	2	CHEBI
+CHEBI:757580	linzagolix choline	2	CHEBI
+CHEBI:757594	ferric derisomaltose	2	CHEBI
+CHEBI:757597	omidubicel	2	CHEBI
+CHEBI:757606	idecabtagene vicleucel	2	CHEBI
+CHEBI:757728	pralsetinib	2	CHEBI
+CHEBI:757732	ziconotide	2	CHEBI
+CHEBI:757744	lipegfilgrastim	2	CHEBI
+CHEBI:757803	remimazolam besylate	2	CHEBI
+CHEBI:757815	crovalimab	2	CHEBI
+CHEBI:757826	beremagene geperpavec	2	CHEBI
+CHEBI:757894	valemetostat tosylate	2	CHEBI
+CHEBI:757931	dotinurad	2	CHEBI
+CHEBI:757939	antithrombin gamma	2	CHEBI
+CHEBI:758054	insulin icodec	2	CHEBI
+CHEBI:758070	eftrenonacog alfa	2	CHEBI
+CHEBI:758075	lonoctocog alfa	2	CHEBI
+CHEBI:758152	birch triterpenes	2	CHEBI
+CHEBI:758294	lerodalcibep	2	CHEBI
+CHEBI:758351	depemokimab	2	CHEBI
+CHEBI:758372	elasomeran	2	CHEBI
+CHEBI:758570	ciltacabtagene autoleucel	2	CHEBI
+CHEBI:758637	inclisiran sodium	2	CHEBI
+CHEBI:758781	vimseltinib	2	CHEBI
+CHEBI:758825	sebetralstat	2	CHEBI
+CHEBI:758851	efanesoctocog alfa	2	CHEBI
+CHEBI:758866	tarlatamab	2	CHEBI
+CHEBI:758940	linvoseltamab	2	CHEBI
+CHEBI:759036	palopegteriparatide	2	CHEBI
+CHEBI:759202	zongertinib	2	CHEBI
+CHEBI:759233	nerandomilast	2	CHEBI
+CHEBI:759701	sipavibart	2	CHEBI
+CHEBI:759759	albutrepenonacog alfa	2	CHEBI
+CHEBI:759780	ex vivo expanded autologous human corneal epithelial cells containing stem cells	2	CHEBI
+CHEBI:759903	beclabuvir hydrochloride	2	CHEBI
+CHEBI:760249	pemetrexed disodium hemipentahydrate	2	CHEBI
+CHEBI:760400	respiratory syncytial virus pre-fusion glycoprotein f	2	CHEBI
+CHEBI:760401	coagulation factor vii human	2	CHEBI
+CHEBI:760402	protein s human	2	CHEBI
+CHEBI:760403	streptococcus pneumoniae polysaccharide conjugated to corynebacterium diphtheriae crm197	2	CHEBI
+CHEBI:760407	omidubicel non-cultured fraction	2	CHEBI
+DRON:00010126	isocarboxazid	2	DRON
+DRON:00012199	ROTAVIRUS VACCINE, LIVE	2	DRON
+DRON:00015413	nitazoxanide	2	DRON
+DRON:00018794	ramelteon	2	DRON
+DRON:00019944	incobotulinumtoxin A	2	DRON
+DRON:00750829	meningococcal group B vaccine	2	DRON
+DRON:00870309	Bacillus anthracis strain V770-NP1-R antigens	2	DRON
+CHEBI:747900	edotreotide	1	CHEBI
+CHEBI:748283	carbamoylcholine	1	CHEBI
+CHEBI:748327	viloxazine	1	CHEBI
+CHEBI:748702	methylene blue cation	1	CHEBI
+CHEBI:748751	vinblastine sulfate	1	CHEBI
+CHEBI:748755	saxagliptin anhydrous	1	CHEBI
+CHEBI:748784	seladelpar	1	CHEBI
+CHEBI:748860	hydroxyamphetamine	1	CHEBI
+CHEBI:748977	spiramycin	1	CHEBI
+CHEBI:749070	forodesine hydrochloride	1	CHEBI
+CHEBI:749255	pyrithione zinc	1	CHEBI
+CHEBI:749262	goserelin acetate	1	CHEBI
+CHEBI:749278	caffeine citrate	1	CHEBI
+CHEBI:749290	indium in 111 pentetreotide	1	CHEBI
+CHEBI:749298	sodium oxybate	1	CHEBI
+CHEBI:749306	omega-3-acid ethyl esters	1	CHEBI
+CHEBI:749334	thonzonium bromide	1	CHEBI
+CHEBI:749382	ibuprofen lysine	1	CHEBI
+CHEBI:749390	lisdexamfetamine dimesylate	1	CHEBI
+CHEBI:749399	methylhomatropine	1	CHEBI
+CHEBI:749423	moexiprilat	1	CHEBI
+CHEBI:749433	becaplermin	1	CHEBI
+CHEBI:749466	calfactant	1	CHEBI
+CHEBI:749515	urokinase	1	CHEBI
+CHEBI:749563	amino acids	1	CHEBI
+CHEBI:749565	glatiramer acetate	1	CHEBI
+CHEBI:749574	estrogens, conjugated	1	CHEBI
+CHEBI:749579	sinecatechins	1	CHEBI
+CHEBI:749594	methylnaltrexone bromide	1	CHEBI
+CHEBI:749595	tapentadol hydrochloride	1	CHEBI
+CHEBI:749597	palifermin	1	CHEBI
+CHEBI:749611	ecallantide	1	CHEBI
+CHEBI:749682	sipuleucel-t	1	CHEBI
+CHEBI:749938	fexinidazole	1	CHEBI
+CHEBI:749951	piperaquine tetraphosphate	1	CHEBI
+CHEBI:750070	belatacept	1	CHEBI
+CHEBI:750072	blinatumomab	1	CHEBI
+CHEBI:750125	necitumumab	1	CHEBI
+CHEBI:750322	taliglucerase alfa	1	CHEBI
+CHEBI:750486	fostamatinib	1	CHEBI
+CHEBI:751580	telotristat ethyl	1	CHEBI
+CHEBI:751607	trelagliptin succinate	1	CHEBI
+CHEBI:751609	tivozanib hydrochloride	1	CHEBI
+CHEBI:752113	bazedoxifene acetate	1	CHEBI
+CHEBI:752331	polihexanide	1	CHEBI
+CHEBI:752603	vernakalant hydrochloride	1	CHEBI
+CHEBI:752897	thrombin alfa	1	CHEBI
+CHEBI:752917	patiromer	1	CHEBI
+CHEBI:752918	condoliase	1	CHEBI
+CHEBI:752926	reslizumab	1	CHEBI
+CHEBI:752933	tasonermin	1	CHEBI
+CHEBI:753039	besilesomab	1	CHEBI
+CHEBI:753090	pancrelipase	1	CHEBI
+CHEBI:753193	corifollitropin alfa	1	CHEBI
+CHEBI:753217	agalsidase alfa	1	CHEBI
+CHEBI:753271	eteplirsen	1	CHEBI
+CHEBI:753327	nonacog beta pegol	1	CHEBI
+CHEBI:753370	defibrotide	1	CHEBI
+CHEBI:753400	mentha oil	1	CHEBI
+CHEBI:753473	interferon beta	1	CHEBI
+CHEBI:753475	hepatitis b immune globulin	1	CHEBI
+CHEBI:753551	ferric carboxymaltose	1	CHEBI
+CHEBI:753666	calaspargase pegol	1	CHEBI
+CHEBI:753709	polyethylene glycol 4000	1	CHEBI
+CHEBI:753967	fibrinogen, human	1	CHEBI
+CHEBI:753993	factor ix complex	1	CHEBI
+CHEBI:754020	lenograstim	1	CHEBI
+CHEBI:754029	moroctocog alfa	1	CHEBI
+CHEBI:754106	pertussis vaccine	1	CHEBI
+CHEBI:754373	vilobelimab	1	CHEBI
+CHEBI:754402	indium pentetreotide	1	CHEBI
+CHEBI:754404	samarium lexidronam pentasodium	1	CHEBI
+CHEBI:754965	mecobalamin	1	CHEBI
+CHEBI:754990	sarecycline	1	CHEBI
+CHEBI:755043	acoltremon	1	CHEBI
+CHEBI:755061	naldemedine tosylate	1	CHEBI
+CHEBI:755066	elobixibat	1	CHEBI
+CHEBI:755069	lasmiditan	1	CHEBI
+CHEBI:755158	peficitinib hydrobromide	1	CHEBI
+CHEBI:755192	ethambutol hydrochloride	1	CHEBI
+CHEBI:755252	lefamulin	1	CHEBI
+CHEBI:755256	nusinersen	1	CHEBI
+CHEBI:755272	enfortumab vedotin	1	CHEBI
+CHEBI:755277	fostemsavir	1	CHEBI
+CHEBI:755286	gilteritinib fumarate	1	CHEBI
+CHEBI:755300	temsavir	1	CHEBI
+CHEBI:755312	tenapanor	1	CHEBI
+CHEBI:755501	etelcalcetide hydrochloride	1	CHEBI
+CHEBI:755542	mirogabalin besylate	1	CHEBI
+CHEBI:755615	xl550	1	CHEBI
+CHEBI:755704	e-7090	1	CHEBI
+CHEBI:755739	defibrotide sodium	1	CHEBI
+CHEBI:755751	ozanimod hydrochloride	1	CHEBI
+CHEBI:755766	voretigene neparvovec	1	CHEBI
+CHEBI:755846	osilodrostat phosphate	1	CHEBI
+CHEBI:755863	gefapixant	1	CHEBI
+CHEBI:755916	revefenacin	1	CHEBI
+CHEBI:755923	inosine pranobex	1	CHEBI
+CHEBI:755956	eflapegrastim	1	CHEBI
+CHEBI:755964	larotrectinib	1	CHEBI
+CHEBI:755992	molidustat sodium	1	CHEBI
+CHEBI:756118	fostamatinib disodium	1	CHEBI
+CHEBI:756415	niraparib tosylate monohydrate	1	CHEBI
+CHEBI:756426	capmatinib hydrochloride	1	CHEBI
+CHEBI:756432	diroximel fumarate	1	CHEBI
+CHEBI:756444	seladelpar lysine	1	CHEBI
+CHEBI:756452	difamilast	1	CHEBI
+CHEBI:756470	patisiran	1	CHEBI
+CHEBI:756508	elapegademase	1	CHEBI
+CHEBI:756513	telisotuzumab vedotin	1	CHEBI
+CHEBI:756524	relatlimab	1	CHEBI
+CHEBI:756602	voxelotor	1	CHEBI
+CHEBI:756638	asciminib	1	CHEBI
+CHEBI:756639	amikacin sulfate	1	CHEBI
+CHEBI:756718	cefiderocol sulfate tosylate	1	CHEBI
+CHEBI:756721	baloxavir	1	CHEBI
+CHEBI:756722	fedratinib hydrochloride	1	CHEBI
+CHEBI:756726	asciminib hydrochloride	1	CHEBI
+CHEBI:756738	diclofenac etalhyaluronate sodium	1	CHEBI
+CHEBI:756830	piflufolastat f18	1	CHEBI
+CHEBI:756835	edotreotide gallium ga-68	1	CHEBI
+CHEBI:756996	imeglimin	1	CHEBI
+CHEBI:757041	casimersen	1	CHEBI
+CHEBI:757046	penpulimab	1	CHEBI
+CHEBI:757065	daridorexant	1	CHEBI
+CHEBI:757077	deutivacaftor	1	CHEBI
+CHEBI:757082	olutasidenib	1	CHEBI
+CHEBI:757089	enarodustat	1	CHEBI
+CHEBI:757120	indacaterol acetate	1	CHEBI
+CHEBI:757183	copper histidine	1	CHEBI
+CHEBI:757211	golodirsen	1	CHEBI
+CHEBI:757227	lumasiran	1	CHEBI
+CHEBI:757415	idursulfase beta	1	CHEBI
+CHEBI:757505	pozelimab	1	CHEBI
+CHEBI:757507	cetuximab sarotalocan	1	CHEBI
+CHEBI:757527	ferric maltol	1	CHEBI
+CHEBI:757560	siponimod fumaric acid	1	CHEBI
+CHEBI:757576	filgotinib maleate	1	CHEBI
+CHEBI:757596	eladocagene exuparvovec	1	CHEBI
+CHEBI:757607	lifileucel	1	CHEBI
+CHEBI:757622	mitapivat	1	CHEBI
+CHEBI:757647	melphalan flufenamide	1	CHEBI
+CHEBI:757712	lazertinib	1	CHEBI
+CHEBI:757787	padeliporfin	1	CHEBI
+CHEBI:757790	ensifentrine	1	CHEBI
+CHEBI:757794	tepotinib hydrochloride	1	CHEBI
+CHEBI:757811	prademagene zamikeracel	1	CHEBI
+CHEBI:757832	eplontersen	1	CHEBI
+CHEBI:757870	deuruxolitinib	1	CHEBI
+CHEBI:757877	ansuvimab	1	CHEBI
+CHEBI:757889	gumarontinib	1	CHEBI
+CHEBI:757985	vutrisiran	1	CHEBI
+CHEBI:758009	sugemalimab	1	CHEBI
+CHEBI:758023	serplulimab	1	CHEBI
+CHEBI:758038	pabinafusp alfa	1	CHEBI
+CHEBI:758080	axatilimab	1	CHEBI
+CHEBI:758123	daridorexant hydrochloride	1	CHEBI
+CHEBI:758132	acoramidis hydrochloride	1	CHEBI
+CHEBI:758141	donidalorsen	1	CHEBI
+CHEBI:758147	delandistrogene moxeparvovec	1	CHEBI
+CHEBI:758164	cilgavimab	1	CHEBI
+CHEBI:758171	tixagevimab	1	CHEBI
+CHEBI:758175	lovotibeglogene autotemcel	1	CHEBI
+CHEBI:758256	taletrectinib adipate	1	CHEBI
+CHEBI:758431	aumolertinib	1	CHEBI
+CHEBI:758454	belumosudil mesylate	1	CHEBI
+CHEBI:758561	afamitresgene autoleucel	1	CHEBI
+CHEBI:758569	atidarsagene autotemcel	1	CHEBI
+CHEBI:758624	ziftomenib	1	CHEBI
+CHEBI:758625	gallium ga 68 gozetotide	1	CHEBI
+CHEBI:758876	vutrisiran sodium	1	CHEBI
+CHEBI:759033	cinaxadamtase alfa	1	CHEBI
+CHEBI:759066	berotralstat	1	CHEBI
+CHEBI:759245	tegomil fumarate	1	CHEBI
+CHEBI:759332	revakinagene taroretcel	1	CHEBI
+CHEBI:759493	andusomeran	1	CHEBI
+CHEBI:759736	sitagliptin fumarate	1	CHEBI
+CHEBI:759741	nalmefene hydrochloride dihydrate	1	CHEBI
+CHEBI:759751	dinutuximab beta	1	CHEBI
+CHEBI:759754	turoctocog alfa pegol	1	CHEBI
+CHEBI:759764	patiromer sorbitex calcium	1	CHEBI
+CHEBI:759770	defatted powder of arachis hypogaea l., semen (peanuts)	1	CHEBI
+CHEBI:759794	spheroids of human autologous matrix-associated chondrocytes	1	CHEBI
+CHEBI:759802	difelikefalin acetate	1	CHEBI
+CHEBI:759913	berotralstat hydrochloride	1	CHEBI
+CHEBI:759992	sevabertinib	1	CHEBI
+CHEBI:760111	zopapogene imadenovec	1	CHEBI
+CHEBI:760248	sitagliptin hydrochloride monohydrate	1	CHEBI
+CHEBI:760250	momelotinib dihydrochloride monohydrate	1	CHEBI
+CHEBI:760389	lazertinib mesylate	1	CHEBI
+CHEBI:760406	respiratory syncytial virus pre-fusion glycoprotein f mrna	1	CHEBI
+CHEBI:760409	neisseria meningitidis factor h binding protein	1	CHEBI
+CHEBI:760410	fecal microbiota spores, live	1	CHEBI
+CHEBI:760420	fexuprazan hydrochloride	1	CHEBI
+DRON:00012997	basiliximab	1	DRON
+DRON:00013433	factor XIII	1	DRON
+DRON:00013575	Cholera Vaccine	1	DRON
+DRON:00016704	pentosan polysulfate	1	DRON
+DRON:00016952	peginterferon alfa-2b	1	DRON
+DRON:00019411	Streptococcus pneumoniae type 1 capsular polysaccharide antigen	1	DRON
+DRON:00019412	Streptococcus pneumoniae type 10A capsular polysaccharide antigen	1	DRON
+DRON:00019413	Streptococcus pneumoniae type 11A capsular polysaccharide antigen	1	DRON
+DRON:00019414	Streptococcus pneumoniae type 12F capsular polysaccharide antigen	1	DRON
+DRON:00019415	Streptococcus pneumoniae type 14 capsular polysaccharide antigen	1	DRON
+DRON:00019416	Streptococcus pneumoniae type 15B capsular polysaccharide antigen	1	DRON
+DRON:00019417	Streptococcus pneumoniae type 17F capsular polysaccharide antigen	1	DRON
+DRON:00019418	Streptococcus pneumoniae type 18C capsular polysaccharide antigen	1	DRON
+DRON:00019419	Streptococcus pneumoniae type 19A capsular polysaccharide antigen	1	DRON
+DRON:00019420	Streptococcus pneumoniae type 19F capsular polysaccharide antigen	1	DRON
+DRON:00019421	Streptococcus pneumoniae type 2 capsular polysaccharide antigen	1	DRON
+DRON:00019422	Streptococcus pneumoniae type 20 capsular polysaccharide antigen	1	DRON
+DRON:00019423	Streptococcus pneumoniae type 22F capsular polysaccharide antigen	1	DRON
+DRON:00019424	Streptococcus pneumoniae type 23F capsular polysaccharide antigen	1	DRON
+DRON:00019425	Streptococcus pneumoniae type 3 capsular polysaccharide antigen	1	DRON
+DRON:00019426	Streptococcus pneumoniae type 33F capsular polysaccharide antigen	1	DRON
+DRON:00019427	Streptococcus pneumoniae type 4 capsular polysaccharide antigen	1	DRON
+DRON:00019428	Streptococcus pneumoniae type 5 capsular polysaccharide antigen	1	DRON
+DRON:00019429	Streptococcus pneumoniae type 6B capsular polysaccharide antigen	1	DRON
+DRON:00019430	Streptococcus pneumoniae type 7F capsular polysaccharide antigen	1	DRON
+DRON:00019431	Streptococcus pneumoniae type 8 capsular polysaccharide antigen	1	DRON
+DRON:00019432	Streptococcus pneumoniae type 9N capsular polysaccharide antigen	1	DRON
+DRON:00019433	Streptococcus pneumoniae type 9V capsular polysaccharide antigen	1	DRON
+DRON:00019756	velaglucerase alfa	1	DRON
+DRON:00750785	parathyroid hormone	1	DRON
+DRON:00870310	Vibrio cholerae CVD 103-HGR strain live antigen	1	DRON
+DRON:00873125	hydroxyethyl cellulose (5500 MPA.S at 2%)	1	DRON
+DRON:00947301	plasminogen	1	DRON
+DRON:00965862	3-iodobenzylguanidine	1	DRON
+DRON:00965874	tick-borne encephalitis purified antigen	1	DRON
+DRON:01002938	dexpanthenol	1	DRON
+DRON:01002958	botulinum toxin type B	1	DRON
+DRON:01063379	crinecerfont	1	DRON
