@@ -1,0 +1,230 @@
+[
+ {
+  "id": "g029",
+  "verdict": "TARGET",
+  "quote": "Alprazolam extended-release tablets are indicated for the treatment of panic disorder with or without agoraphobia, in adults.",
+  "note": "Panic disorder is named directly as the treated condition."
+ },
+ {
+  "id": "g242",
+  "verdict": "TARGET",
+  "quote": "INCRELEX (mecasermin) injection is indicated for the treatment of growth failure in pediatric patients 2 years of age and older with severe primary IGF- 1 deficiency",
+  "note": "Growth failure (growth delay) is the condition treated; the IGF-1 deficiency is the qualifying cause."
+ },
+ {
+  "id": "g006",
+  "verdict": "TARGET",
+  "quote": "prevention of postoperative nausea and vomiting (PONV), either alone or in combination with an antiemetic of a different class. treatment of PONV",
+  "note": "PONV is named as both a prevention and a treatment target."
+ },
+ {
+  "id": "g045",
+  "verdict": "TARGET",
+  "quote": "Ductal Carcinoma in Situ (DCIS): In women with DCIS, following breast surgery and radiation, tamoxifen citrate tablets are indicated to reduce the risk of invasive breast cancer",
+  "note": "DCIS is listed as a named indication heading and tamoxifen is given as adjuvant management of DCIS after surgery/radiation to prevent progression to invasive cancer."
+ },
+ {
+  "id": "g069",
+  "verdict": "FP1_setting",
+  "quote": "indicated to reduce the risk of stroke in patients with hypertension and left ventricular hypertrophy",
+  "note": "LVH is only the patient population; the thing prevented is stroke, not the hypertrophy."
+ },
+ {
+  "id": "g224",
+  "verdict": "TARGET",
+  "quote": "SILIQ (brodalumab) is indicated for the treatment of moderate to severe plaque psoriasis in adult patients",
+  "note": "Chronic small plaque psoriasis is a morphological subtype of plaque psoriasis, which is the indicated condition (FDA and EMA)."
+ },
+ {
+  "id": "g148",
+  "verdict": "TARGET",
+  "quote": "Septicemia, empyema, pneumonia, pericarditis, endocarditis, meningitis Streptococcus pyogenes",
+  "note": "Empyema is a named item in the list of indicated conditions."
+ },
+ {
+  "id": "g273",
+  "verdict": "TARGET",
+  "quote": "Bone and Joint Infections caused by Staphylococcus aureus (methicillin susceptible)*.",
+  "note": "Bone and joint infections are explicitly listed as a treatment indication."
+ },
+ {
+  "id": "g254",
+  "verdict": "TARGET",
+  "quote": "Treatment of multiple myeloma.",
+  "note": "Multiple myeloma is an exact synonym of plasma cell myeloma, named in the EMA indication."
+ },
+ {
+  "id": "g138",
+  "verdict": "TARGET",
+  "quote": "symptomatic treatment of endometriosis in women with a history of previous medical or surgical treatment for their endometriosis",
+  "note": "EMA names symptomatic treatment of endometriosis and FDA names management of endometriosis-associated pain; relugolix (the GnRH antagonist) is the active component for this indication."
+ },
+ {
+  "id": "g114",
+  "verdict": "FP6_coingredient",
+  "quote": "Also for the treatment of the condition in which iron deficiency and vitamin C deficiency occur together",
+  "note": "Vitamin C deficiency (scurvy) appears only on multi-ingredient iron/vitamin C/folate labels and is attributable to the vitamin C component, not folic acid."
+ },
+ {
+  "id": "g062",
+  "verdict": "UNSURE",
+  "quote": "",
+  "note": "The disease is an unresolved UMLS identifier (C2363741) with no name; the only indicated condition is HIV-1 infection, and the text cannot establish what the identifier denotes."
+ },
+ {
+  "id": "g152",
+  "verdict": "FP6_coingredient",
+  "quote": "The naproxen component of naproxen and esomeprazole magnesium delayed-release tablet is indicated for relief of signs and symptoms of: osteoarthritis",
+  "note": "Osteoarthritis is indicated only on the naproxen/esomeprazole combination label and is explicitly attributed to the naproxen component; esomeprazole's role is gastric-ulcer risk reduction."
+ },
+ {
+  "id": "g054",
+  "verdict": "FP2_symptom_swap",
+  "quote": "temporarily relieves nasal decongestion due to: common cold hay fever or other upper respiratory allergies (allergic rhinitis)",
+  "note": "The text treats the symptom (nasal congestion) due to allergic rhinitis, not the rhinitis itself, matching the rubric's common-cold example."
+ },
+ {
+  "id": "g027",
+  "verdict": "TARGET",
+  "quote": "Bartonellosis due to Bartonella bacilliformis .",
+  "note": "Bartonellosis is named directly as an indication."
+ },
+ {
+  "id": "g084",
+  "verdict": "TARGET",
+  "quote": "Chenodiol is indicated for patients with radiolucent stones in well-opacifying gallbladders",
+  "note": "Dissolution of radiolucent gallstones is treatment of cholelithiasis."
+ },
+ {
+  "id": "g222",
+  "verdict": "TARGET",
+  "quote": "Upper respiratory tract infections of mild to moderate degree caused by Streptococcus pyogenes",
+  "note": "Upper respiratory tract infection is indicated; recurrent URTI is a narrower form of it, and long-term prophylaxis of recurrent streptococcal pharyngitis is also named."
+ },
+ {
+  "id": "g059",
+  "verdict": "TARGET",
+  "quote": "indicated for the reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+  "note": "Reducing elevated IOP in ocular hypertension is treatment of ocular hypertension itself, not merely a setting."
+ },
+ {
+  "id": "g134",
+  "verdict": "TARGET",
+  "quote": "growth failure due to inadequate secretion of endogenous growth hormone (GH). Replacement of endogenous growth hormone in adults with growth hormone deficiency (GHD).",
+  "note": "Inadequate endogenous GH secretion / GH deficiency is the condition treated by replacement, matching reduced circulating growth hormone."
+ },
+ {
+  "id": "g180",
+  "verdict": "TARGET",
+  "quote": "LIVDELZI is indicated for the treatment of primary biliary cholangitis (PBC) in combination with ursodeoxycholic acid (UDCA)",
+  "note": "PBC is named directly as the treated disease."
+ },
+ {
+  "id": "g262",
+  "verdict": "FP1_setting",
+  "quote": "Treatment of secondary hyperparathyroidism (HPT) in adult patients with end-stage renal disease (ESRD) on maintenance dialysis therapy.",
+  "note": "ESRD is only the patient population; the treated condition is secondary hyperparathyroidism."
+ },
+ {
+  "id": "g246",
+  "verdict": "TARGET",
+  "quote": "Tinidazole is indicated for the treatment of trichomoniasis caused by Trichomonas vaginalis.",
+  "note": "Trichomoniasis is named directly as an indication."
+ },
+ {
+  "id": "g197",
+  "verdict": "TARGET",
+  "quote": "Acitretin Capsules, USP are indicated for the treatment of severe psoriasis in adults.",
+  "note": "Severe psoriasis is a narrower form of psoriasis, so the edge is TARGET."
+ },
+ {
+  "id": "g133",
+  "verdict": "TARGET",
+  "quote": "refractory anemia with excess blasts (RAEB), refractory anemia with excess blasts in transformation (RAEB-T), and chronic myelomonocytic leukemia (CMMoL).",
+  "note": "RAEB-T is explicitly listed among the indicated MDS subtypes."
+ },
+ {
+  "id": "g150",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the temporary relief of coughs and upper respiratory symptoms associated with allergy or the common cold",
+  "note": "The text relieves cough and upper respiratory symptoms of the common cold rather than treating the cold, the rubric's own FP2 example."
+ },
+ {
+  "id": "g185",
+  "verdict": "TARGET",
+  "quote": "SOTYKTU is indicated for the treatment of active psoriatic arthritis in adults.",
+  "note": "Psoriatic arthritis is named directly as an indication."
+ },
+ {
+  "id": "g166",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "No wasting syndrome, cachexia or weight loss appears anywhere in the supplied text; indications are dietary supplementation and vitamin A deficiency."
+ },
+ {
+  "id": "g145",
+  "verdict": "TARGET",
+  "quote": "Useful in the management of pruritus due to allergic conditions such as chronic urticaria and atopic and contact dermatoses",
+  "note": "Chronic urticaria is named as a condition whose pruritus is managed and also as an allergic condition for adjunctive therapy, so management of the disease counts."
+ },
+ {
+  "id": "g126",
+  "verdict": "FP6_coingredient",
+  "quote": "for the temporary relief of these symptoms associated with menstrual periods: cramps bloating water-weight gain headache",
+  "note": "Headache appears only on multi-ingredient menstrual-relief labels containing acetaminophen (per the warnings), to which the analgesic claim belongs; single-ingredient mepyramine labels list only allergy symptoms."
+ },
+ {
+  "id": "g111",
+  "verdict": "FP7_notintext",
+  "quote": "",
+  "note": "Fever or any febrile disorder is not mentioned anywhere in the supplied text; indications are vitamin supplementation and folate/iron deficiency."
+ },
+ {
+  "id": "g037",
+  "verdict": "FP1_setting",
+  "quote": "indicated for Positron Emission Tomography (PET) imaging of somatostatin receptor overexpression in adult patients with confirmed or suspected well-differentiated",
+  "note": "Edotreotide is a diagnostic imaging agent only (\"for diagnostic use only\"); GEP-NET is the population imaged, not a condition treated."
+ },
+ {
+  "id": "g203",
+  "verdict": "TARGET",
+  "quote": "It has also been found useful in the treatment of acute non-lymphocytic leukemia and the blast phase of chronic myelocytic leukemia.",
+  "note": "Blast phase CML is a phase of chronic myeloid leukemia, a near parent that still describes what is indicated."
+ },
+ {
+  "id": "g041",
+  "verdict": "TARGET",
+  "quote": "Treatment of essential hypertension.",
+  "note": "EMA names essential hypertension directly, and single-ingredient valsartan is indicated for hypertension."
+ },
+ {
+  "id": "g283",
+  "verdict": "TARGET",
+  "quote": "RITUXAN, in combination with glucocorticoids, is indicated for the treatment of adult and pediatric patients 2 years of age and older with Granulomatosis with Polyangiitis (GPA)",
+  "note": "GPA is named directly as an indication in both FDA and EMA text."
+ },
+ {
+  "id": "g228",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of OAB in adult patients with symptoms of urge urinary incontinence, urgency, and urinary frequency",
+  "note": "Urge urinary incontinence is explicitly named as a symptom of OAB that the drug treats, so it is a managed manifestation rather than a mere setting."
+ },
+ {
+  "id": "g140",
+  "verdict": "TARGET",
+  "quote": "indicated to decrease the incidence of infection, as manifested by febrile neutropenia, in adult patients with non-myeloid malignancies receiving myelosuppressive anti-cancer drugs",
+  "note": "Prevention of febrile neutropenia is the stated purpose of the drug."
+ },
+ {
+  "id": "g278",
+  "verdict": "TARGET",
+  "quote": "1.4 Treatment of Pulmonary Embolism ELIQUIS is indicated for the treatment of adults with pulmonary embolism (PE).",
+  "note": "Pulmonary embolism is named directly as a treatment indication."
+ },
+ {
+  "id": "g130",
+  "verdict": "TARGET",
+  "quote": "Anthrax Bacillus anthracis",
+  "note": "Anthrax is a named item in the list of indicated infections."
+ }
+]

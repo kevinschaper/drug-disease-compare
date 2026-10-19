@@ -1,0 +1,1589 @@
+drug	drug_label	disease	disease_label	medic_has_drug	dismech_has_pair
+UNII:G6UF363ECX	177Lu-PSMA-617	MONDO:0850353	castration-resistant prostate carcinoma	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0855088	Hodgkin's disease nodular sclerosis stage IV	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0855081	Hodgkin's disease mixed cellularity stage IV	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0854850	Mycosis fungoides refractory	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0278695	Neuroblastoma recurrent	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0278573	Mycosis fungoides stage IV	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0153792	Stage III Hodgkin Lymphoma	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0855095	Small Lymphocytic Lymphoma	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0677954	Stage IV Hodgkin Lymphoma	True	False
+CHEBI:1864	4-hydroxycyclophosphamide	UMLS:C0855109	Stage IV Burkitt Lymphoma	True	False
+CHEBI:27690	Acetazolamide	MONDO:0005041	glaucoma	True	False
+CHEBI:27690	Acetazolamide	MONDO:0005338	open-angle glaucoma	True	False
+CHEBI:15365	Acetylsalicylic acid	MONDO:0005542	acute coronary syndrome	True	False
+UNII:FYS6T7F842	Adalimumab	UMLS:C3888502	Acute haemorrhagic ulcerative colitis	True	False
+UNII:FYS6T7F842	Adalimumab	MONDO:0031012	autoimmune uveitis	True	False
+UNII:FYS6T7F842	Adalimumab	MONDO:0006806	intermediate uveitis	True	False
+CHEBI:16335	Adenosine	HP:0004755	Supraventricular tachycardia	True	False
+UNII:DTI67O9503	Alglucosidase alfa	MONDO:0009290	glycogen storage disease II	True	False
+UNII:DTI67O9503	Alglucosidase alfa	MONDO:0017694	glycogen storage disease due to acid maltase deficiency, infantile onset	True	False
+CHEBI:40279	Allopurinol	MONDO:0005393	gout	True	False
+CHEBI:15544	Alprostadil	MONDO:0005362	erectile dysfunction	True	False
+CHEBI:2618	Amantadine	HP:0100660	Dyskinesia	True	False
+CHEBI:2663	Amiodarone	MONDO:0000190	ventricular fibrillation	True	False
+CHEBI:2663	Amiodarone	MONDO:0005477	ventricular tachycardia	True	False
+CHEBI:2668	Amlodipine	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:2668	Amlodipine	UMLS:C0221155	Systolic Hypertension	True	False
+CHEBI:2676	Amoxicillin	HP:0000371	Acute otitis media	True	False
+CHEBI:2676	Amoxicillin	UMLS:C3887532	Ulceration	True	False
+CHEBI:2676	Amoxicillin	HP:0000255	Acute sinusitis	True	False
+CHEBI:2676	Amoxicillin	MONDO:0005249	pneumonia	True	False
+CHEBI:132233	Amphetamine	MONDO:0011122	obesity disorder	True	False
+CHEBI:132233	Amphetamine	MONDO:0021107	narcolepsy	True	False
+CHEBI:2682	Amphotericin B	MONDO:0011989	leishmaniasis	True	False
+CHEBI:2682	Amphotericin B	MONDO:0005445	visceral leishmaniasis	True	False
+CHEBI:2682	Amphotericin B	MONDO:0005724	cryptococcosis	True	False
+CHEBI:2704	Anastrozole	MONDO:0007254	breast cancer	True	False
+CHEBI:72296	Apixaban	MONDO:0004981	atrial fibrillation	True	True
+CHEBI:72296	Apixaban	UMLS:C0340708	Deep vein thrombosis of lower limb	True	False
+CHEBI:72296	Apixaban	UMLS:C0589110	Postoperative deep vein thrombosis	True	False
+CHEBI:72296	Apixaban	UMLS:C5942805	Nonvalvular atrial fibrillation	True	False
+PUBCHEM.COMPOUND:135413536	Aprepitant	UMLS:C1262038	Post procedural nausea	True	False
+PUBCHEM.COMPOUND:135413536	Aprepitant	UMLS:C0520905	Vomiting, Postoperative	True	False
+CHEBI:31236	Aripiprazole	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:63918	Artesunate	MONDO:0005136	malaria	True	False
+CHEBI:71255	Asenapine	MONDO:0001484	paranoid schizophrenia	True	False
+CHEBI:37924	Atazanavir	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:2904	Atenolol	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:2904	Atenolol	UMLS:C0221155	Systolic Hypertension	True	False
+CHEBI:2904	Atenolol	UMLS:C0021308	Infarction	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0855036	Alveolar soft part sarcoma metastatic	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0854698	Malignant melanoma stage IV	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0278505	Non-small cell lung cancer stage II	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0278987	Metastatic non-small cell lung cancer	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0746087	Small cell lung cancer metastatic	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0278983	Non-small cell lung cancer stage IIIA	True	False
+UNII:52CMI0WC3Y	Atezolizumab	UMLS:C0278726	Small cell lung cancer extensive stage	True	False
+UNII:52CMI0WC3Y	Atezolizumab	MONDO:0004986	urinary bladder carcinoma	True	False
+UNII:EO144CP0X9	Avalglucosidase alfa	MONDO:0017694	glycogen storage disease due to acid maltase deficiency, infantile onset	True	False
+CHEBI:2948	Azathioprine	NCIT:C200353	Graft Rejection	True	False
+CHEBI:2950	Azelastine	HP:0025095	Sneeze	True	False
+CHEBI:2955	Azithromycin	MONDO:0005867	Mycoplasma pneumoniae pneumonia	True	True
+CHEBI:2955	Azithromycin	UMLS:C1412002	Atypical pneumonia	True	False
+CHEBI:2955	Azithromycin	UMLS:C1278807	Chlamydial urethritis	True	False
+CHEBI:2955	Azithromycin	MONDO:0004652	bacterial pneumonia	True	False
+CHEBI:2955	Azithromycin	MONDO:0005441	otitis media	True	False
+CHEBI:2955	Azithromycin	MONDO:0005961	sinusitis	True	False
+CHEBI:2955	Azithromycin	MONDO:0005249	pneumonia	True	False
+CHEBI:2955	Azithromycin	MONDO:0005972	streptococcal pneumonia	True	False
+CHEBI:95341	Baricitinib	MONDO:0100096	COVID-19	True	False
+UNII:9927MT646M	Basiliximab	NCIT:C200353	Graft Rejection	True	False
+CHEBI:135947	Bazedoxifene	NCIT:C3852	Menopausal Symptom	True	False
+UNII:E3B2GI648A	Belatacept	NCIT:C200353	Graft Rejection	True	False
+CHEBI:82405	Benzoyl peroxide	MONDO:0006604	rosacea	True	False
+CHEBI:3044	Benzphetamine	MONDO:0011122	obesity disorder	True	False
+CHEBI:3077	Betamethasone	MONDO:0004907	alopecia	True	False
+CHEBI:3077	Betamethasone	MONDO:0001875	epicondylitis	True	False
+CHEBI:3077	Betamethasone	MONDO:0002400	synovitis	True	False
+CHEBI:3077	Betamethasone	MONDO:0005083	psoriasis	True	False
+UNII:2S9ZZM9Q9V	Bevacizumab	MONDO:0007256	hepatocellular carcinoma	True	False
+UNII:09495UIM6V	Bimekizumab	MONDO:0005083	psoriasis	True	False
+CHEBI:3127	Bisoprolol	UMLS:C0221155	Systolic Hypertension	True	False
+CHEBI:3181	Bromocriptine	MONDO:0005148	type 2 diabetes mellitus	True	False
+CHEBI:3181	Bromocriptine	MONDO:0005015	diabetes mellitus	True	False
+UNII:1M698F4H4E	CEFPROZIL ANHYDROUS	MONDO:0005961	sinusitis	True	False
+CHEMBL.COMPOUND:CHEMBL6068331	COLESEVELAM	MONDO:0005015	diabetes mellitus	True	False
+CHEBI:50749	Calcipotriol	MONDO:0005083	psoriasis	True	False
+CHEBI:17823	Calcitriol	MONDO:0019992	pseudohypoparathyroidism	True	True
+CHEBI:17823	Calcitriol	MONDO:0005083	psoriasis	True	False
+CHEBI:3347	Candesartan	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+CHEBI:3347	Candesartan	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:31348	Capecitabine	UMLS:C0677949	Colorectal cancer stage III	True	False
+CHEBI:31348	Capecitabine	UMLS:C0854750	Colorectal cancer recurrent	True	False
+CHEBI:31348	Capecitabine	UMLS:C0677950	Colorectal cancer stage IV	True	False
+CHEBI:31348	Capecitabine	MONDO:0006244	HER2 positive breast carcinoma	True	False
+CHEBI:31348	Capecitabine	UMLS:C4528561	Anatomic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:31348	Capecitabine	UMLS:C0278484	Malignant neoplasm of colon stage IV	True	False
+CHEBI:31348	Capecitabine	UMLS:C4528592	Prognostic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:31348	Capecitabine	UMLS:C4520898	Stage IV Breast Cancer AJCC v6 and v7	True	False
+CHEBI:31348	Capecitabine	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+CHEBI:3374	Capsaicin	MONDO:0021667	neuralgia	True	False
+CHEBI:3387	Carbamazepine	HP:0007359	Focal-onset seizure	True	False
+CHEBI:3387	Carbamazepine	MONDO:0001866	bipolar I disorder	True	False
+CHEBI:3387	Carbamazepine	MONDO:0005115	temporal lobe epilepsy	True	False
+CHEBI:71028	Carglumic acid	NCIT:C98950	Hyperammonemia	True	False
+CHEBI:3441	Carvedilol	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+CHEBI:478164	Cefepime	MONDO:0000265	aspiration pneumonia	True	False
+CHEBI:472657	Cefixime	HP:0000371	Acute otitis media	True	False
+PUBCHEM.COMPOUND:9852982	Ceftaroline	MONDO:0005249	pneumonia	True	False
+CHEBI:70718	Ceftaroline fosamil	MONDO:0005249	pneumonia	True	False
+CHEBI:3508	Ceftazidime	UMLS:C0243026	Sepsis	True	False
+CHEBI:140407	Ceftobiprole	MONDO:0005249	pneumonia	True	False
+CHEBI:29007	Ceftriaxone	UMLS:C1141920	Shunt infection	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0006670	bacterial meningitis	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0000889	haemophilus meningitis	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0021108	meningitis	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0004796	infectious meningitis	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0005441	otitis media	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0006913	pneumococcal meningitis	True	False
+CHEBI:29007	Ceftriaxone	MONDO:0018059	meningococcal meningitis	True	False
+CHEBI:3515	Cefuroxime	UMLS:C0243026	Sepsis	True	False
+CHEBI:3515	Cefuroxime	MONDO:0005441	otitis media	True	False
+CHEBI:3515	Cefuroxime	MONDO:0005249	pneumonia	True	False
+CHEBI:41423	Celecoxib	UMLS:C0409962	Localized osteoarthrosis	True	False
+CHEBI:41423	Celecoxib	UMLS:C0853844	Nodal osteoarthritis	True	False
+UNII:6QVL057INT	Cemiplimab	MONDO:0020804	basal cell carcinoma	True	False
+UNII:6QVL057INT	Cemiplimab	UMLS:C0278984	Non-small cell lung cancer stage IIIB	True	False
+UNII:6QVL057INT	Cemiplimab	UMLS:C0278517	Non-small cell lung cancer recurrent	True	False
+UNII:6QVL057INT	Cemiplimab	UMLS:C0278987	Metastatic non-small cell lung cancer	True	False
+CHEBI:3534	Cephalexin	MONDO:0005280	prostatitis	True	False
+CHEBI:3561	Cetirizine	MONDO:0005492	urticaria	True	False
+UNII:PQX0D8J21J	Cetuximab	UMLS:C0677950	Colorectal cancer stage IV	True	False
+CHEBI:3647	Chlorpromazine	MESH:D006606	Hiccup	True	False
+CHEBI:3647	Chlorpromazine	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:3647	Chlorpromazine	HP:0002013	Vomiting	True	False
+CHEBI:453011	Ciclopirox	MONDO:0001628	tinea unguium	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C1167792	Bacterial pyelonephritis	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C0748023	Bacterial prostatitis	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C3804988	Escherichia pyelonephritis	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C0948344	Escherichia urinary tract infection	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C0343404	Morganella infection	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C0854506	Urinary tract infection enterococcal	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C1262104	Urinary tract infection pseudomonal	True	False
+CHEBI:100241	Ciprofloxacin	MONDO:0003799	conjunctivitis	True	False
+CHEBI:100241	Ciprofloxacin	MONDO:0006032	cystitis	True	False
+CHEBI:100241	Ciprofloxacin	MONDO:0004277	gonorrhea	True	False
+CHEBI:100241	Ciprofloxacin	UMLS:C1167766	Wound infection pseudomonas	True	False
+CHEBI:100241	Ciprofloxacin	MONDO:0005961	sinusitis	True	False
+CHEBI:100241	Ciprofloxacin	MONDO:0021201	skin infection	True	False
+CHEBI:100241	Ciprofloxacin	MONDO:0005280	prostatitis	True	False
+CHEBI:3757	Clonidine	MONDO:0005302	attention deficit hyperactivity disorder, inattentive type	True	False
+CHEBI:3757	Clonidine	MONDO:0007743	attention deficit-hyperactivity disorder	True	False
+CHEBI:3764	Clotrimazole	MONDO:0005886	oral candidiasis	True	False
+CHEBI:3764	Clotrimazole	MONDO:0002026	candidiasis	True	False
+CHEBI:3766	Clozapine	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:27882	Colchicine	MONDO:0005393	gout	True	False
+CHEBI:3892	Corticotropin	MONDO:0018097	infantile spasms	True	True
+CHEBI:3892	Corticotropin	UMLS:C1112365	Allergic keratitis	True	False
+CHEBI:3892	Corticotropin	UMLS:C3805067	Noninfective chorioretinitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0018229	Stevens-Johnson syndrome	True	False
+CHEBI:3892	Corticotropin	MONDO:0001907	adult dermatomyositis	True	False
+CHEBI:3892	Corticotropin	MONDO:0006545	erythema multiforme	True	False
+CHEBI:3892	Corticotropin	MONDO:0004902	interstitial keratitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0004773	iridocyclitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0005377	nephrotic syndrome	True	False
+CHEBI:3892	Corticotropin	MONDO:0004794	exposure keratitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0016367	dermatomyositis	True	False
+CHEBI:3892	Corticotropin	MONDO:0005885	optic neuritis	True	False
+CHEBI:3892	Corticotropin	MONDO:0003085	keratitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0019127	polymyositis	True	False
+CHEBI:3892	Corticotropin	MONDO:0006814	iritis	True	False
+CHEBI:3892	Corticotropin	MONDO:0004674	chorioretinitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0008383	rheumatoid arthritis	True	False
+CHEBI:3892	Corticotropin	MONDO:0020283	uveitis	True	False
+CHEBI:3892	Corticotropin	MONDO:0007915	systemic lupus erythematosus	True	False
+CHEBI:64310	Crizotinib	MONDO:0020325	anaplastic large cell lymphoma	True	True
+CHEBI:59773	Cromoglicic acid	MONDO:0004979	asthma	True	False
+CHEBI:3996	Cyclobenzaprine	MONDO:0005546	fibromyalgia	True	False
+CHEBI:4031	Cyclosporine	MONDO:0005083	psoriasis	True	False
+CHEBI:4031	Cyclosporine	MONDO:0008383	rheumatoid arthritis	True	False
+CHEBI:70752	Dabigatran	UMLS:C0340708	Deep vein thrombosis of lower limb	True	False
+CHEBI:70746	Dabigatran etexilate	MONDO:0005399	venous thromboembolism	True	False
+CHEBI:75045	Dabrafenib	UMLS:C4722099	High grade glioma	True	False
+CHEBI:177836	Dacarbazine	UMLS:C0153767	Hodgkin's disease, nodular sclerosis of lymph nodes of multiple sites	True	False
+CHEBI:177836	Dacarbazine	UMLS:C0746341	Recurrent Hodgkin Lymphoma	True	False
+CHEBI:177836	Dacarbazine	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+CHEBI:177836	Dacarbazine	MONDO:0005105	melanoma	True	False
+CHEBI:177836	Dacarbazine	MONDO:0004952	Hodgkins lymphoma	True	False
+CHEBI:177836	Dacarbazine	UMLS:C0855088	Hodgkin's disease nodular sclerosis stage IV	True	False
+CHEBI:4325	Dapsone	MONDO:0005124	leprosy	True	True
+CHEBI:4325	Dapsone	MONDO:0015614	dermatitis herpetiformis	True	False
+CHEBI:4325	Dapsone	MONDO:0005126	tuberculoid leprosy	True	False
+CHEBI:4325	Dapsone	MONDO:0005127	lepromatous leprosy	True	False
+UNII:4Z63YK6E0E	Daratumumab	MONDO:0019065	amyloidosis	True	False
+UNII:LMQ24G57E9	Daridorexant	HP:0031354	Sleep onset insomnia	True	False
+CHEBI:49375	Dasatinib	MONDO:0004967	acute lymphoblastic leukemia	True	False
+CHEBI:49005	Deferasirox	UMLS:C0282193	Iron Overload	True	False
+UNII:6315412YVF	Delafloxacin	MONDO:0005249	pneumonia	True	False
+UNII:25E79B5CTM	Denileukin diftitox	MONDO:0000607	primary cutaneous T-cell non-Hodgkin lymphoma	True	False
+CHEBI:4450	Desmopressin	MONDO:0024574	von Willebrand disease (hereditary or acquired)	True	True
+CHEBI:4450	Desmopressin	HP:0000132	Menorrhagia	True	False
+CHEBI:4450	Desmopressin	MONDO:0024290	enuresis	True	False
+CHEBI:4450	Desmopressin	MONDO:0004782	diabetes insipidus	True	False
+PUBCHEM.COMPOUND:16051933	Desmopressin	MONDO:0024290	enuresis	True	False
+PUBCHEM.COMPOUND:16051933	Desmopressin	MONDO:0019565	hereditary von Willebrand disease	True	False
+PUBCHEM.COMPOUND:16051933	Desmopressin	MONDO:0004782	diabetes insipidus	True	False
+PUBCHEM.COMPOUND:16051933	Desmopressin	MONDO:0024574	von Willebrand disease (hereditary or acquired)	True	False
+CHEBI:4450	Desmopressin	MONDO:0019565	hereditary von Willebrand disease	True	False
+UNII:P341G6W9NB	Deutetrabenazine	HP:0100660	Dyskinesia	True	False
+CHEBI:41879	Dexamethasone	HP:0031273	Shock	True	False
+CHEBI:41879	Dexamethasone	MONDO:0006585	neurodermatitis	True	False
+CHEBI:50223	Dexrazoxane	UMLS:C0015379	Extravasation of Diagnostic and Therapeutic Materials	True	False
+CHEBI:4469	Dextroamphetamine	MONDO:0021107	narcolepsy	True	False
+CHEBI:49575	Diazepam	UMLS:C3203523	Acute repetitive seizure	True	False
+CHEBI:47381	Diclofenac	HP:0003418	Back pain	True	False
+CHEBI:47381	Diclofenac	MONDO:0005173	actinic keratosis	True	False
+CHEBI:47381	Diclofenac	MONDO:0100431	migraine without aura	True	False
+CHEBI:47381	Diclofenac	MONDO:0005475	migraine with aura	True	False
+CHEBI:47381	Diclofenac	MONDO:0005277	migraine disorder	True	False
+CHEBI:4551	Digoxin	MONDO:0004981	atrial fibrillation	True	True
+CHEBI:4562	Dihydroergotamine	MONDO:0043537	cluster headache syndrome	True	False
+CHEBI:76004	Dimethyl fumarate	MONDO:0005083	psoriasis	True	False
+CHEBI:4636	Diphenhydramine	MONDO:0005492	urticaria	True	False
+CHEBI:4636	Diphenhydramine	MONDO:0010481	angioedema	True	False
+CHEBI:4657	Disopyramide	MONDO:0005477	ventricular tachycardia	True	False
+CHEBI:4659	Disulfiram	MONDO:0002046	alcohol abuse	True	False
+CHEBI:145499	Donepezil	UMLS:C0854732	Dementia of the Alzheimer's type, uncomplicated	True	False
+CHEBI:18243	Dopamine	HP:0031273	Shock	True	False
+CHEBI:18243	Dopamine	UMLS:C0857353	Hypotensive	True	False
+UNII:913P6LK81M	Doravirine	MONDO:0005109	HIV infectious disease	True	False
+UNII:P0GVQ9A4S5	Dostarlimab	UMLS:C0278801	Endometrial neoplasm malignant metastatic	True	False
+UNII:P0GVQ9A4S5	Dostarlimab	UMLS:C0278802	Recurrent Endometrial Cancer	True	False
+CHEBI:4710	Doxepin	MONDO:0011918	anxiety	True	False
+CHEBI:4710	Doxepin	MONDO:0013600	insomnia	True	False
+CHEBI:4710	Doxepin	HP:0031355	Maintenance insomnia	True	False
+CHEBI:66964	Dronabinol	HP:0002018	Nausea	True	False
+UNII:WTT295HSY5	Dulaglutide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEBI:36795	Duloxetine	HP:0003418	Back pain	True	False
+CHEBI:36795	Duloxetine	MESH:D059352	Musculoskeletal Pain	True	False
+CHEBI:36795	Duloxetine	HP:0010992	Stress urinary incontinence	True	False
+CHEBI:36795	Duloxetine	MONDO:0001942	generalized anxiety disorder	True	False
+CHEBI:36795	Duloxetine	MONDO:0002009	major depressive disorder	True	False
+UNII:420K487FSG	Dupilumab	UMLS:C0264413	Late onset asthma	True	False
+UNII:28X28X9OKV	Durvalumab	UMLS:C0278505	Non-small cell lung cancer stage II	True	False
+UNII:28X28X9OKV	Durvalumab	UMLS:C0278984	Non-small cell lung cancer stage IIIB	True	False
+UNII:28X28X9OKV	Durvalumab	UMLS:C0278802	Recurrent Endometrial Cancer	True	False
+UNII:28X28X9OKV	Durvalumab	UMLS:C0278983	Non-small cell lung cancer stage IIIA	True	False
+CHEBI:41948	Eflornithine	HP:0001007	Hirsutism	True	False
+CHEBI:31536	Emtricitabine	MONDO:0005109	HIV infectious disease	True	False
+UNII:DLE8519RWM	Enfortumab vedotin	MONDO:0001187	urinary bladder cancer	True	False
+UNII:DLE8519RWM	Enfortumab vedotin	MONDO:0004986	urinary bladder carcinoma	True	False
+CHEBI:608828	Enfuvirtide	MONDO:0005109	HIV infectious disease	True	False
+UNII:8NZ41MIK1O	Enoxaparin	UMLS:C0013922	Embolism	True	False
+UNII:8NZ41MIK1O	Enoxaparin	UMLS:C0340708	Deep vein thrombosis of lower limb	True	False
+CHEBI:195558	Entrectinib	MONDO:0005233	non-small cell lung carcinoma	True	False
+UNII:D6OMY2L0WA	Epcoritamab	UMLS:C5205060	High grade B-cell lymphoma refractory	True	False
+UNII:D6OMY2L0WA	Epcoritamab	UMLS:C5205056	High grade B-cell lymphoma recurrent	True	False
+CHEBI:15552	Epoprostenol	MONDO:0017148	heritable pulmonary arterial hypertension	True	False
+CHEBI:15552	Epoprostenol	MONDO:0001999	idiopathic pulmonary arterial hypertension	True	False
+CHEBI:27300	Ergocalciferol	UMLS:C4552253	Post procedural hypoparathyroidism	True	False
+CHEBI:63587	Eribulin	MONDO:0005060	liposarcoma	True	True
+CHEBI:4856	Esmolol	MESH:D013610	Tachycardia	True	False
+CHEBI:4856	Esmolol	HP:0011703	Sinus tachycardia	True	False
+CHEBI:4856	Esmolol	NCIT:C38029	Tachycardia	True	False
+CHEBI:50275	Esomeprazole	UMLS:C0948036	Gastric ulcer helicobacter	True	False
+CHEBI:4875	Etanercept	UMLS:C3203547	Axial Spondyloarthritis	True	False
+CHEBI:4875	Etanercept	MONDO:0005083	psoriasis	True	False
+CHEBI:4911	Etoposide	UMLS:C0278725	Small cell lung cancer limited stage	True	False
+CHEBI:4911	Etoposide	UMLS:C0278726	Small cell lung cancer extensive stage	True	False
+CHEBI:4911	Etoposide	UMLS:C0746087	Small cell lung cancer metastatic	True	False
+CHEBI:63589	Etravirine	MONDO:0005109	HIV infectious disease	True	False
+PUBCHEM.COMPOUND:6442177	Everolimus	MONDO:0002603	angiomyolipoma	True	False
+HMDB:HMDB0015529	Everolimus	MONDO:0002603	angiomyolipoma	True	False
+DRUGBANK:DB15572	Exagamglogene autotemcel	MONDO:0019402	beta thalassemia	True	False
+CHEBI:4953	Exemestane	MONDO:0007254	breast cancer	True	False
+PUBCHEM.COMPOUND:45588096	Exenatide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEBI:64073	Exenatide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEBI:585948	Felodipine	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:5062	Finasteride	MONDO:0005339	androgenetic alopecia	True	True
+CHEBI:5062	Finasteride	MONDO:0004907	alopecia	True	False
+CHEBI:747008	Finerenone	MONDO:0005252	heart failure	True	True
+CHEBI:46081	Fluconazole	UMLS:C0401013	Fungal peritonitis	True	False
+CHEBI:46081	Fluconazole	UMLS:C0948599	Candida pneumonia	True	False
+CHEBI:5100	Flucytosine	MONDO:0021108	meningitis	True	False
+CHEBI:5100	Flucytosine	MONDO:0005025	endocarditis	True	False
+CHEBI:5100	Flucytosine	MONDO:0004796	infectious meningitis	True	False
+CHEBI:5108	Fluocinolone	MONDO:0005083	psoriasis	True	False
+CHEBI:5108	Fluocinolone	MONDO:0020283	uveitis	True	False
+CHEBI:46345	Fluorouracil	MONDO:0005173	actinic keratosis	True	False
+CHEBI:5134	Fluticasone	UMLS:C5400439	Chronic rhinosinusitis without nasal polyps	True	False
+CHEBI:5134	Fluticasone	UMLS:C4524092	Chronic rhinosinusitis with multiple nasal polyps	True	False
+CHEBI:47426	Furosemide	HP:0000969	Edema	True	False
+CHEBI:47426	Furosemide	MONDO:0005044	hypertensive disorder	True	False
+CHEBI:47426	Furosemide	MONDO:0001134	essential hypertension	True	False
+CHEBI:42797	Gabapentin	HP:0002349	Focal aware seizure	True	False
+CHEBI:175901	Gemcitabine	UMLS:C0278987	Metastatic non-small cell lung cancer	True	False
+CHEBI:175901	Gemcitabine	UMLS:C0278984	Non-small cell lung cancer stage IIIB	True	False
+CHEBI:175901	Gemcitabine	UMLS:C0278506	Non-small cell lung cancer stage III	True	False
+CHEBI:175901	Gemcitabine	UMLS:C0278983	Non-small cell lung cancer stage IIIA	True	False
+CHEBI:175901	Gemcitabine	MONDO:0001187	urinary bladder cancer	True	False
+UNII:06P3KLK2J8	Glofitamab	UMLS:C0855111	Diffuse large B-cell lymphoma recurrent	True	False
+UNII:91X1KLU43E	Golimumab	UMLS:C3203547	Axial Spondyloarthritis	True	False
+CHEMBL.COMPOUND:CHEMBL2103737	HYDROXOCOBALAMIN	MONDO:0020696	vitamin B12 deficiency	True	False
+PUBCHEM.COMPOUND:78383862	Halobetasol	MONDO:0005083	psoriasis	True	False
+CHEBI:5613	Haloperidol	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:5613	Haloperidol	MONDO:0007661	Tourette syndrome	True	False
+CHEBI:28304	Heparin	UMLS:C0013922	Embolism	True	False
+CHEBI:28304	Heparin	UMLS:C1535887	Post procedural pulmonary embolism	True	False
+CHEBI:17650	Hydrocortisone	UMLS:C0854355	Adrenocortical insufficiency neonatal	True	False
+CHEBI:17650	Hydrocortisone	MONDO:0005885	optic neuritis	True	False
+CHEBI:17650	Hydrocortisone	MONDO:0004126	thyroiditis	True	False
+CHEBI:17650	Hydrocortisone	MONDO:0005538	proctitis	True	False
+CHEBI:5790	Hydromorphone	HP:0012531	Pain	True	False
+CHEBI:5801	Hydroxychloroquine	MONDO:0005136	malaria	True	False
+CHEBI:5818	Hydroxyzine	HP:0002018	Nausea	True	False
+CHEMBL.COMPOUND:CHEMBL6067487	IVERMECTIN	MONDO:0006604	rosacea	True	False
+CHEMBL.COMPOUND:CHEMBL6067487	IVERMECTIN	MONDO:0017137	onchocerciasis	True	False
+CHEMBL.COMPOUND:CHEMBL6067487	IVERMECTIN	MONDO:0005974	strongyloidiasis	True	False
+CHEBI:5855	Ibuprofen	HP:0002315	Headache	True	False
+CHEBI:5855	Ibuprofen	NCIT:C78509	Oral Pain	True	False
+CHEBI:5855	Ibuprofen	HP:0012531	Pain	True	False
+CHEBI:5855	Ibuprofen	MONDO:0005178	osteoarthritis	True	False
+CHEBI:5855	Ibuprofen	MONDO:0006630	osteoarthritis, spine	True	False
+CHEBI:5855	Ibuprofen	EFO:0010072	toothache	True	False
+CHEBI:45783	Imatinib	UMLS:C0023474	Leukemia, Myeloid, Chronic-Phase	True	False
+CHEBI:45783	Imatinib	MONDO:0007950	mastocytosis	True	False
+CHEBI:45783	Imatinib	MONDO:0020077	myelodysplastic/myeloproliferative disease	True	False
+CHEBI:45783	Imatinib	MONDO:0016586	systemic mastocytosis	True	False
+CHEBI:45783	Imatinib	UMLS:C3665732	Metastatic Dermatofibrosarcoma Protuberans	True	False
+CHEBI:47499	Imipramine	MONDO:0024290	enuresis	True	False
+CHEBI:36704	Imiquimod	UMLS:C0497580	Condylomata acuminata in men	True	False
+CHEBI:36704	Imiquimod	UMLS:C0497573	Condylomata acuminata in women	True	False
+UNII:P93RUU11P7	Inotuzumab ozogamicin	MONDO:0004967	acute lymphoblastic leukemia	True	False
+UNII:XRO4566Q4R	Interferon beta-1a	MONDO:0005301	multiple sclerosis	True	False
+PUBCHEM.COMPOUND:21937662	Isavuconazole	MONDO:0005657	aspergillosis	True	False
+CHEBI:6030	Isoniazid	UMLS:C6022345	Disseminated tuberculosis	True	False
+CHEBI:6076	Itraconazole	UMLS:C0343899	Chronic pulmonary histoplasmosis	True	False
+CHEBI:6076	Itraconazole	UMLS:C0343921	Disseminated blastomycosis	True	False
+CHEBI:6076	Itraconazole	HP:0032258	Pulmonary histoplasmosis	True	False
+CHEBI:6076	Itraconazole	UMLS:C0343922	Cutaneous blastomycosis	True	False
+CHEBI:6076	Itraconazole	HP:0032257	Disseminated histoplasmosis	True	False
+CHEBI:6076	Itraconazole	MONDO:0018312	histoplasmosis	True	False
+CHEBI:6076	Itraconazole	UMLS:C0339964	Pulmonary blastomycosis	True	False
+CHEBI:6076	Itraconazole	MONDO:0005672	blastomycosis	True	False
+CHEBI:85966	Ivabradine	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+UNII:BTY153760O	Ixekizumab	UMLS:C3203547	Axial Spondyloarthritis	True	False
+CHEBI:47519	Ketoconazole	UMLS:C0032024	Pityriasis	True	False
+CHEBI:47519	Ketoconazole	MONDO:0005984	tinea pedis	True	False
+CHEBI:47519	Ketoconazole	MONDO:0005706	coccidioidomycosis	True	False
+CHEBI:6129	Ketorolac	HP:0200026	Ocular pain	True	False
+CHEBI:6367	Lamotrigine	HP:0002349	Focal aware seizure	True	False
+CHEBI:6375	Lansoprazole	UMLS:C0151966	Duodenal ulcer with hemorrhage	True	False
+UNII:21904A5386	Lefamulin	MONDO:0005249	pneumonia	True	False
+UNII:0K5743G68X	Lemborexant	HP:0031354	Sleep onset insomnia	True	False
+UNII:0K5743G68X	Lemborexant	HP:0031355	Maintenance insomnia	True	False
+CHEBI:234519	Lenacapavir	NCIT:C129253	Human Immunodeficiency Virus 1 Positive	True	False
+CHEBI:63791	Lenalidomide	UMLS:C1335701	Follicular lymphoma recurrent	True	False
+CHEBI:63791	Lenalidomide	UMLS:C0855123	Follicle centre lymphoma, follicular grade I, II, III stage IV	True	False
+CHEBI:63791	Lenalidomide	UMLS:C1336247	Follicular lymphoma stage III	True	False
+CHEBI:63791	Lenalidomide	UMLS:C1336286	Follicular lymphoma stage II	True	False
+CHEBI:63791	Lenalidomide	UMLS:C0855138	Mantle cell lymphoma refractory	True	False
+CHEBI:63791	Lenalidomide	UMLS:C0677725	Mantle cell lymphoma recurrent	True	False
+CHEBI:63791	Lenalidomide	UMLS:C1541269	Marginal zone lymphoma stage III	True	False
+CHEBI:63791	Lenalidomide	UMLS:C0856024	Splenic marginal zone lymphoma stage I	True	False
+CHEBI:63791	Lenalidomide	UMLS:C0677721	Mantle cell lymphoma stage IV	True	False
+CHEBI:63791	Lenalidomide	UMLS:C1541270	Marginal zone lymphoma stage IV	True	False
+CHEBI:63791	Lenalidomide	UMLS:C4087393	Marginal zone lymphoma refractory	True	False
+CHEBI:85994	Lenvatinib	UMLS:C4721698	Metastatic Renal Cell Carcinoma	True	False
+CHEBI:85994	Lenvatinib	UMLS:C0278679	Renal cell carcinoma recurrent	True	False
+CHEBI:85994	Lenvatinib	UMLS:C0862448	Stage IV Renal Cell Cancer	True	False
+CHEBI:85994	Lenvatinib	MONDO:0005086	renal cell carcinoma	True	False
+CHEBI:85994	Lenvatinib	MONDO:0006196	endometrial serous adenocarcinoma	True	False
+CHEBI:85994	Lenvatinib	MONDO:0005005	clear cell renal carcinoma	True	False
+CHEBI:85994	Lenvatinib	UMLS:C3146249	Stage IV Renal Cell Cancer AJCC v7	True	False
+CHEBI:63598	Levofloxacin	UMLS:C0748023	Bacterial prostatitis	True	False
+CHEBI:63598	Levofloxacin	UMLS:C0155860	Pneumonia caused by Pseudomonas	True	False
+CHEBI:63598	Levofloxacin	UMLS:C0032300	Lobar Pneumonia	True	False
+CHEBI:63598	Levofloxacin	MONDO:0005280	prostatitis	True	False
+CHEBI:63598	Levofloxacin	MONDO:0005961	sinusitis	True	False
+CHEBI:63598	Levofloxacin	MONDO:0005230	cellulitis	True	False
+CHEBI:18332	Levothyroxine	UMLS:C0342158	Hypothyroidism, Autoimmune	True	False
+CHEBI:18332	Levothyroxine	HP:0000832	Primary hypothyroidism	True	False
+CHEBI:18332	Levothyroxine	MONDO:0016410	central congenital hypothyroidism	True	False
+CHEBI:6456	Lidocaine	HP:0003418	Back pain	True	False
+CHEBI:6456	Lidocaine	MONDO:0002471	bursitis	True	False
+CHEBI:6456	Lidocaine	MONDO:0019369	complex regional pain syndrome	True	False
+CHEBI:6456	Lidocaine	MONDO:0041052	postherpetic neuralgia	True	False
+CHEBI:68551	Linaclotide	MONDO:0005052	irritable bowel syndrome	True	False
+CHEBI:18258	Liothyronine	HP:0000832	Primary hypothyroidism	True	False
+CHEBI:18258	Liothyronine	MONDO:0016410	central congenital hypothyroidism	True	False
+CHEBI:71193	Liraglutide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEBI:43755	Lisinopril	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:6538	Loratadine	HP:0025095	Sneeze	True	False
+CHEBI:6541	Losartan	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:50848	Loteprednol	MONDO:0006733	dry eye syndrome	True	False
+CHEBI:229657	Lotilaner	UMLS:C5780078	Demodex Blepharitis	True	False
+PUBCHEM.COMPOUND:46244682	Lotilaner	MONDO:0004785	blepharitis	True	False
+CHEBI:229657	Lotilaner	MONDO:0004785	blepharitis	True	False
+PUBCHEM.COMPOUND:46244682	Lotilaner	UMLS:C5780078	Demodex Blepharitis	True	False
+CHEBI:34825	Luliconazole	MONDO:0005984	tinea pedis	True	False
+CHEBI:70735	Lurasidone	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:6704	Mebendazole	MONDO:0005654	ascariasis	True	False
+CHEBI:6704	Mebendazole	MONDO:0005996	trichuriasis	True	False
+CHEBI:28925	Mechlorethamine	MONDO:0015758	primary cutaneous T-cell lymphoma	True	False
+CHEBI:6709	Meclizine	MONDO:0008015	motion sickness	True	False
+CHEBI:6741	Meloxicam	UMLS:C0409962	Localized osteoarthrosis	True	False
+CHEBI:28876	Melphalan	MONDO:0005072	neuroblastoma	True	False
+CHEBI:6775	Mesalazine	UMLS:C5779507	Ulcerative proctitis (disorder)	True	False
+CHEBI:6775	Mesalazine	UMLS:C2937222	Chronic ulcerative proctitis	True	False
+CHEBI:6775	Mesalazine	MONDO:0005538	proctitis	True	False
+CHEBI:167309	Methadone	HP:0012531	Pain	True	False
+CHEBI:44185	Methotrexate	MONDO:0009807	osteosarcoma	True	True
+CHEBI:44185	Methotrexate	MONDO:0005207	choriocarcinoma	True	True
+CHEBI:44185	Methotrexate	UMLS:C4528561	Anatomic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:44185	Methotrexate	UMLS:C0278486	Breast cancer stage II	True	False
+CHEBI:44185	Methotrexate	UMLS:C0278488	Carcinoma breast stage IV	True	False
+CHEBI:44185	Methotrexate	UMLS:C0278493	Breast cancer recurrent	True	False
+CHEBI:44185	Methotrexate	UMLS:C0235653	Malignant neoplasm of female breast	True	False
+CHEBI:44185	Methotrexate	UMLS:C3203634	Non-Hodgkin's lymphoma metastatic	True	False
+CHEBI:44185	Methotrexate	UMLS:C4528592	Prognostic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:44185	Methotrexate	UMLS:C1535886	Non-Hodgkin's lymphoma unspecified histology aggressive	True	False
+CHEBI:44185	Methotrexate	UMLS:C0854867	Non-Hodgkin's lymphoma refractory	True	False
+CHEBI:44185	Methotrexate	UMLS:C0852469	Non-Hodgkin's lymphomas unspecified histology aggressive	True	False
+CHEBI:44185	Methotrexate	UMLS:C0854866	Recurrent Non-Hodgkin Lymphoma	True	False
+CHEBI:44185	Methotrexate	UMLS:C0677957	Stage III Non-Hodgkin Lymphoma	True	False
+CHEBI:44185	Methotrexate	UMLS:C0677958	Stage IV Non-Hodgkin Lymphoma	True	False
+CHEBI:44185	Methotrexate	UMLS:C0677955	Stage I Non-Hodgkin Lymphoma	True	False
+CHEBI:44185	Methotrexate	UMLS:C0278779	Osteosarcoma recurrent	True	False
+CHEBI:44185	Methotrexate	MONDO:0007254	breast cancer	True	False
+CHEBI:44185	Methotrexate	UMLS:C0677956	Stage II Non-Hodgkin Lymphoma	True	False
+CHEBI:44185	Methotrexate	MONDO:0004379	female breast carcinoma	True	False
+CHEBI:44185	Methotrexate	MONDO:0010150	head and neck squamous cell carcinoma	True	False
+CHEBI:44185	Methotrexate	MONDO:0005595	laryngeal squamous cell carcinoma	True	False
+CHEBI:44185	Methotrexate	MONDO:0020549	invasive hydatidiform mole	True	False
+CHEBI:44185	Methotrexate	MONDO:0006248	hydatidiform mole	True	False
+CHEBI:44185	Methotrexate	MONDO:0044638	hypopharynx squamous cell carcinoma	True	False
+CHEBI:44185	Methotrexate	MONDO:0004958	oral cavity squamous cell carcinoma	True	False
+CHEBI:44185	Methotrexate	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+CHEBI:44185	Methotrexate	MONDO:0005097	squamous cell lung carcinoma	True	False
+CHEBI:6887	Methylphenidate	MONDO:0021107	narcolepsy	True	False
+CHEBI:6888	Methylprednisolone	MONDO:0005340	alopecia areata	True	False
+CHEBI:6888	Methylprednisolone	MONDO:0005393	gout	True	False
+CHEBI:6888	Methylprednisolone	MONDO:0002400	synovitis	True	False
+CHEBI:6888	Methylprednisolone	MONDO:0004855	tenosynovitis	True	False
+CHEBI:6888	Methylprednisolone	MONDO:0004126	thyroiditis	True	False
+CHEBI:107736	Metoclopramide	HP:0002018	Nausea	True	False
+CHEBI:107736	Metoclopramide	HP:0002013	Vomiting	True	False
+CHEBI:6904	Metoprolol	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+CHEBI:6904	Metoprolol	UMLS:C0021308	Infarction	True	False
+CHEBI:6909	Metronidazole	UMLS:C0275550	Acute bacterial peritonitis	True	False
+CHEBI:6909	Metronidazole	HP:0030049	Brain abscess	True	False
+CHEBI:6909	Metronidazole	UMLS:C1622505	Gardnerella vaginitis	True	False
+CHEBI:6909	Metronidazole	MONDO:0000265	aspiration pneumonia	True	False
+CHEBI:6909	Metronidazole	MONDO:0005242	empyema	True	False
+CHEBI:6909	Metronidazole	MONDO:0005025	endocarditis	True	False
+CHEBI:6909	Metronidazole	MONDO:0005249	pneumonia	True	False
+CHEBI:6909	Metronidazole	MONDO:0021108	meningitis	True	False
+CHEBI:6909	Metronidazole	MONDO:0000744	lung abscess	True	False
+CHEBI:6909	Metronidazole	MONDO:0002154	trichomoniasis	True	False
+CHEBI:6916	Mexiletine	MONDO:0005477	ventricular tachycardia	True	False
+CHEBI:6931	Midazolam	UMLS:C3203523	Acute repetitive seizure	True	False
+PUBCHEM.COMPOUND:54675783	Minocycline	MONDO:0011438	acne	True	False
+PUBCHEM.COMPOUND:54675783	Minocycline	MONDO:0006604	rosacea	True	False
+UNII:98DE7VN88D	Mirvetuximab soravtansine	UMLS:C5706080	Primary Peritoneal Cancer	True	False
+CHEBI:50729	Mitoxantrone	MONDO:0005314	relapsing-remitting multiple sclerosis	True	False
+CHEBI:31859	Modafinil	UMLS:C4087539	Shift work disorder	True	False
+CHEBI:91407	Momelotinib	HP:0001744	Splenomegaly	True	False
+CHEBI:6970	Mometasone	UMLS:C4524092	Chronic rhinosinusitis with multiple nasal polyps	True	False
+CHEBI:6970	Mometasone	MONDO:0006314	nasal cavity polyp	True	False
+CHEBI:17303	Morphine	HP:0012531	Pain	True	False
+CHEBI:8764	Mycophenolate mofetil	NCIT:C200353	Graft Rejection	True	False
+CHEBI:93305	Naftifine	MONDO:0005984	tinea pedis	True	False
+CHEBI:7459	Naloxone	UMLS:C0151821	Accidental overdose	True	False
+CHEBI:7476	Naproxen	MONDO:0005277	migraine disorder	True	False
+CHEBI:7476	Naproxen	MONDO:0100431	migraine without aura	True	False
+CHEBI:63613	Nevirapine	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:7565	Nifedipine	UMLS:C0221155	Systolic Hypertension	True	False
+CHEBI:16480	Nitric Oxide	UMLS:C4012212	Neonatal pulmonary hypertension	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0855016	Acral lentiginous melanoma stage II	True	False
+CHEBI:231614	Nivolumab	UMLS:C0855018	Acral lentiginous melanoma stage IV	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0855017	Acral lentiginous melanoma stage III	True	False
+CHEBI:231614	Nivolumab	UMLS:C0855017	Acral lentiginous melanoma stage III	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0855018	Acral lentiginous melanoma stage IV	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0004952	Hodgkins lymphoma	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0855027	Malignant melanoma stage III	True	False
+CHEBI:231614	Nivolumab	UMLS:C0855027	Malignant melanoma stage III	True	False
+CHEBI:231614	Nivolumab	UMLS:C0278884	Melanoma recurrent	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0854698	Malignant melanoma stage IV	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0278517	Non-small cell lung cancer recurrent	True	False
+CHEBI:231614	Nivolumab	UMLS:C0278517	Non-small cell lung cancer recurrent	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0278884	Melanoma recurrent	True	False
+CHEBI:231614	Nivolumab	UMLS:C0854698	Malignant melanoma stage IV	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0278983	Non-small cell lung cancer stage IIIA	True	False
+CHEBI:231614	Nivolumab	UMLS:C0278506	Non-small cell lung cancer stage III	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0278506	Non-small cell lung cancer stage III	True	False
+CHEBI:231614	Nivolumab	UMLS:C0278679	Renal cell carcinoma recurrent	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0278679	Renal cell carcinoma recurrent	True	False
+CHEBI:231614	Nivolumab	UMLS:C0862448	Stage IV Renal Cell Cancer	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C3146249	Stage IV Renal Cell Cancer AJCC v7	True	False
+CHEBI:231614	Nivolumab	UMLS:C0855033	Superficial spreading melanoma stage IV	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0862448	Stage IV Renal Cell Cancer	True	False
+CHEBI:231614	Nivolumab	UMLS:C3146249	Stage IV Renal Cell Cancer AJCC v7	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0855032	Superficial spreading melanoma stage III	True	False
+CHEBI:231614	Nivolumab	UMLS:C0855032	Superficial spreading melanoma stage III	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0855033	Superficial spreading melanoma stage IV	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0005005	clear cell renal carcinoma	True	False
+CHEBI:231614	Nivolumab	MONDO:0007256	hepatocellular carcinoma	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0007256	hepatocellular carcinoma	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0005065	mesothelioma	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0000930	nodular malignant melanoma	True	False
+CHEBI:231614	Nivolumab	UMLS:C0278502	recurrent gastric cancer	True	False
+UNII:31YO63LBSN	Nivolumab	UMLS:C0278502	recurrent gastric cancer	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0020638	superficial spreading melanoma	True	False
+UNII:31YO63LBSN	Nivolumab	MONDO:0006474	transitional cell carcinoma	True	False
+CHEBI:18357	Norepinephrine	MONDO:0000745	cardiac arrest	True	False
+DRUGBANK:DB17362	Obecabtagene autoleucel	UMLS:C0023485	Precursor B-Cell Lymphoblastic Leukemia-Lymphoma	True	False
+UNII:O43472U9X8	Obinutuzumab	UMLS:C0855123	Follicle centre lymphoma, follicular grade I, II, III stage IV	True	False
+UNII:O43472U9X8	Obinutuzumab	UMLS:C1335701	Follicular lymphoma recurrent	True	False
+UNII:O43472U9X8	Obinutuzumab	UMLS:C1335723	Follicular lymphoma refractory	True	False
+UNII:O43472U9X8	Obinutuzumab	UMLS:C1336286	Follicular lymphoma stage II	True	False
+UNII:O43472U9X8	Obinutuzumab	UMLS:C1336247	Follicular lymphoma stage III	True	False
+CHEBI:194135	Ofloxacin	MONDO:0004795	otitis externa	True	False
+CHEBI:194135	Ofloxacin	UMLS:C0497209	Infective conjunctivitis	True	False
+CHEBI:194135	Ofloxacin	MONDO:0005441	otitis media	True	False
+CHEBI:7735	Olanzapine	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:7735	Olanzapine	UMLS:C0392322	Undifferentiated schizophrenia	True	False
+CHEBI:83766	Olaparib	UMLS:C5400469	Homologous recombination deficiency positive advanced ovarian cancer	True	False
+CHEBI:83766	Olaparib	UMLS:C2216695	malignant neoplasm of breast stage I	True	False
+CHEBI:83766	Olaparib	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+CHEBI:31933	Olopatadine hydrochloride	UMLS:C0339164	Seasonal allergic conjunctivitis	True	False
+UNII:2P471X1Z11	Omalizumab	MONDO:0006314	nasal cavity polyp	True	False
+CHEBI:77260	Omeprazole	UMLS:C0948036	Gastric ulcer helicobacter	True	False
+CHEBI:77260	Omeprazole	MONDO:0016586	systemic mastocytosis	True	False
+CHEBI:77260	Omeprazole	MONDO:0007950	mastocytosis	True	False
+CHEBI:7823	Oxazepam	HP:0000713	Agitation	True	False
+CHEBI:7824	Oxcarbazepine	HP:0002349	Focal aware seizure	True	False
+CHEBI:144551	Oxybutynin	EFO:0006865	urgency urinary incontinence	True	False
+UNII:0LB9J2797D	PATIROMER SORBITEX CALCIUM	MESH:D006947	Hyperkalemia	True	False
+CHEMBL.COMPOUND:CHEMBL5315081	PATIROMER SORBITEX CALCIUM	MESH:D006947	Hyperkalemia	True	False
+UNII:R581OT55EA	PEG-uricase	MONDO:0005393	gout	True	False
+UNII:914032762Y	PENTOSAN POLYSULFATE SODIUM	UMLS:C1720830	Painful Bladder Syndrome	True	False
+CHEBI:83804	Paliperidone	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:83804	Paliperidone	MONDO:1060152	schizoaffective depressive disorder	True	False
+CHEBI:7936	Paroxetine	MONDO:0008114	obsessive-compulsive disorder	True	False
+UNII:1FQ2RY5YHH	Patiromer	MESH:D006947	Hyperkalemia	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855017	Acral lentiginous melanoma stage III	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855018	Acral lentiginous melanoma stage IV	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855026	Malignant melanoma stage II	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855027	Malignant melanoma stage III	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0278987	Metastatic non-small cell lung cancer	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0854698	Malignant melanoma stage IV	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0278505	Non-small cell lung cancer stage II	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0278689	Recurrent ovarian cancer	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0278983	Non-small cell lung cancer stage IIIA	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C4721779	Ovarian cancer stage IV	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855031	Superficial spreading melanoma stage II	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0862448	Stage IV Renal Cell Cancer	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855033	Superficial spreading melanoma stage IV	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C0855032	Superficial spreading melanoma stage III	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C3146249	Stage IV Renal Cell Cancer AJCC v7	True	False
+UNII:DPT0O3T46P	Pembrolizumab	UMLS:C4745063	carcinoma of biliary tract	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0007256	hepatocellular carcinoma	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0005575	colorectal cancer	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0004647	in situ carcinoma	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0020323	primary mediastinal large B-cell lymphoma	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0008170	ovarian cancer	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0005494	triple-negative breast carcinoma	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0004986	urinary bladder carcinoma	True	False
+UNII:DPT0O3T46P	Pembrolizumab	MONDO:0004987	urinary bladder neoplasm	True	False
+CHEBI:8028	Perphenazine	HP:0002018	Nausea	True	False
+CHEBI:8059	Phendimetrazine	MONDO:0011122	obesity disorder	True	False
+CHEBI:27446	Phenoxymethylpenicillin	MONDO:0002258	pharyngitis	True	False
+CHEBI:41500	Phenylbutyric acid	MONDO:0009376	carbamoyl phosphate synthetase I deficiency disease	True	False
+CHEBI:8207	Pilocarpine	MONDO:0001744	angle-closure glaucoma	True	False
+CHEBI:8207	Pilocarpine	MONDO:0005041	glaucoma	True	False
+CHEBI:8207	Pilocarpine	MONDO:0005338	open-angle glaucoma	True	False
+CHEBI:8228	Pioglitazone	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:70693500	Plecanatide	MONDO:0005052	irritable bowel syndrome	True	False
+CHEBI:46859	Polidocanol	UMLS:C5906718	Reticular veins	True	False
+UNII:KE3U2023NP	Poractant alfa	MONDO:0700081	newborn respiratory distress syndrome	True	False
+PUBCHEM.COMPOUND:147912	Posaconazole	MONDO:0005657	aspergillosis	True	False
+CHEBI:28689	Prasterone	NCIT:C2997	Dyspareunia	True	False
+CHEBI:28689	Prasterone	UMLS:C0241616	Atrophy of vagina	True	False
+CHEBI:8378	Prednisolone	MONDO:0016367	dermatomyositis	True	True
+CHEBI:8378	Prednisolone	UMLS:C0264413	Late onset asthma	True	False
+CHEBI:8378	Prednisolone	MONDO:0001907	adult dermatomyositis	True	False
+CHEBI:8378	Prednisolone	UMLS:C0747733	Polychondritis	True	False
+CHEBI:8378	Prednisolone	MONDO:0010030	Sjogren syndrome	True	False
+CHEBI:8378	Prednisolone	MONDO:0005393	gout	True	False
+CHEBI:8378	Prednisolone	MONDO:0043579	enteritis	True	False
+CHEBI:8378	Prednisolone	MONDO:0019735	polymyalgia rheumatica	True	False
+CHEBI:8378	Prednisolone	MONDO:0002771	pulmonary fibrosis	True	False
+CHEBI:8378	Prednisolone	MONDO:0006604	rosacea	True	False
+CHEBI:8378	Prednisolone	MONDO:0003014	rhinitis	True	False
+CHEBI:8382	Prednisone	UMLS:C3888502	Acute haemorrhagic ulcerative colitis	True	False
+CHEBI:8382	Prednisone	UMLS:C0264413	Late onset asthma	True	False
+CHEBI:8382	Prednisone	UMLS:C0278573	Mycosis fungoides stage IV	True	False
+CHEBI:8382	Prednisone	UMLS:C0854850	Mycosis fungoides refractory	True	False
+CHEBI:8382	Prednisone	MONDO:0010030	Sjogren syndrome	True	False
+CHEBI:8382	Prednisone	MONDO:0001280	choroiditis	True	False
+CHEBI:8382	Prednisone	MONDO:0015614	dermatitis herpetiformis	True	False
+CHEBI:8382	Prednisone	MONDO:0043579	enteritis	True	False
+CHEBI:8382	Prednisone	MONDO:0005393	gout	True	False
+CHEBI:8382	Prednisone	MONDO:0003014	rhinitis	True	False
+CHEBI:8382	Prednisone	MONDO:0004855	tenosynovitis	True	False
+CHEBI:8382	Prednisone	MONDO:0018076	tuberculosis	True	False
+CHEBI:8412	Primidone	HP:0007359	Focal-onset seizure	True	False
+CHEBI:8412	Primidone	HP:0002349	Focal aware seizure	True	False
+CHEBI:17026	Progesterone	UMLS:C3650625	Abnormal uterine bleeding	True	False
+CHEBI:17026	Progesterone	HP:0040298	Hyperplasia of the endometrium	True	False
+CHEBI:8461	Promethazine	HP:0002018	Nausea	True	False
+CHEBI:63619	Propafenone	HP:0004755	Supraventricular tachycardia	True	False
+CHEBI:63619	Propafenone	MONDO:0005477	ventricular tachycardia	True	False
+CHEBI:8499	Propranolol	HP:0004755	Supraventricular tachycardia	True	False
+CHEBI:8499	Propranolol	MONDO:0006500	hemangioma	True	False
+CHEBI:8665	Pyridostigmine	UMLS:C5704584	Immune-mediated myasthenia gravis	True	False
+CHEBI:8707	Quetiapine	HP:0100754	Mania	True	False
+CHEBI:8707	Quetiapine	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:28593	Quinidine	MONDO:0005477	ventricular tachycardia	True	False
+UNII:ZL1R02VT79	Ranibizumab	MONDO:0003005	macular retinal edema	True	False
+UNII:P76B05O5V6	Relugolix	MONDO:0008315	prostate cancer	True	False
+PUBCHEM.COMPOUND:51397021	Remodulin	MONDO:0001999	idiopathic pulmonary arterial hypertension	True	False
+UNII:35A26E427H	Reslizumab	MONDO:0004979	asthma	True	False
+UNII:RE0V0T1ES0	Resmetirom	MONDO:0007027	metabolic dysfunction-associated steatohepatitis	True	False
+CHEBI:28077	Rifampin	MONDO:0018076	tuberculosis	True	True
+HMDB:HMDB0015179	Rifampin	UMLS:C3203357	Bone Tuberculosis	True	False
+CHEBI:28077	Rifampin	UMLS:C0022415	Joint Tuberculosis	True	False
+CHEBI:28077	Rifampin	UMLS:C6022345	Disseminated tuberculosis	True	False
+CHEBI:28077	Rifampin	UMLS:C0152889	Tuberculosis of adrenal glands	True	False
+CHEBI:28077	Rifampin	UMLS:C3203357	Bone Tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	UMLS:C0152627	Tuberculosis of intrathoracic lymph nodes	True	False
+CHEBI:28077	Rifampin	UMLS:C0152861	Tuberculosis of peripheral lymph nodes	True	False
+HMDB:HMDB0015179	Rifampin	UMLS:C0152889	Tuberculosis of adrenal glands	True	False
+CHEBI:28077	Rifampin	MONDO:0005696	central nervous system tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0021948	cutaneous tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0005696	central nervous system tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0000368	extrapulmonary tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	UMLS:C0152861	Tuberculosis of peripheral lymph nodes	True	False
+CHEBI:28077	Rifampin	MONDO:0005768	gastrointestinal tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0005768	gastrointestinal tuberculosis	True	False
+CHEBI:28077	Rifampin	UMLS:C0152627	Tuberculosis of intrathoracic lymph nodes	True	False
+HMDB:HMDB0015179	Rifampin	UMLS:C6022345	Disseminated tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0021948	cutaneous tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0005787	hepatic tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0001678	intestinal tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0001678	intestinal tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0000368	extrapulmonary tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0005831	lymph node tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0005787	hepatic tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0006052	pulmonary tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0006052	pulmonary tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0005938	renal tuberculosis	True	False
+CHEBI:28077	Rifampin	MONDO:0005967	splenic tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0005938	renal tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0005967	splenic tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0018076	tuberculosis	True	False
+HMDB:HMDB0015179	Rifampin	MONDO:0006000	tuberculous peritonitis	True	False
+CHEBI:28077	Rifampin	MONDO:0005831	lymph node tuberculosis	True	False
+HMDB:HMDB0015332	Rifapentine	MONDO:0018076	tuberculosis	True	False
+UNII:8K80YB5GMG	Rilonacept	MONDO:0005904	pericarditis	True	False
+CHEBI:68606	Rilpivirine	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:8871	Risperidone	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:8871	Risperidone	UMLS:C0392322	Undifferentiated schizophrenia	True	False
+CHEBI:8871	Risperidone	UMLS:C0221520	Simple schizophrenia	True	False
+UNII:4F4X42SYQ6	Rituximab	UMLS:C0854867	Non-Hodgkin's lymphoma refractory	True	False
+UNII:4F4X42SYQ6	Rituximab	UMLS:C0677958	Stage IV Non-Hodgkin Lymphoma	True	False
+CHEBI:8888	Ropinirole	MONDO:0005391	restless legs syndrome	True	False
+CHEBI:134689	Rucaparib	MONDO:0004956	metastatic prostate carcinoma	True	False
+CHEBI:134689	Rucaparib	MONDO:0850353	castration-resistant prostate carcinoma	True	False
+CHEBI:134689	Rucaparib	UMLS:C0278689	Recurrent ovarian cancer	True	False
+CHEBI:134689	Rucaparib	UMLS:C5706080	Primary Peritoneal Cancer	True	False
+PUBCHEM.COMPOUND:638340	Scopolamine	HP:0002018	Nausea	True	False
+PUBCHEM.COMPOUND:638340	Scopolamine	HP:0002013	Vomiting	True	False
+PUBCHEM.COMPOUND:638340	Scopolamine	UMLS:C1262038	Post procedural nausea	True	False
+PUBCHEM.COMPOUND:638340	Scopolamine	UMLS:C0520905	Vomiting, Postoperative	True	False
+UNII:DLG4EML025	Secukinumab	UMLS:C3203547	Axial Spondyloarthritis	True	False
+CHEBI:167574	Semaglutide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEBI:167574	Semaglutide	MESH:D050177	Overweight	True	False
+UNII:N7T15V1FUY	Setmelanotide	UMLS:C0271885	Hypothalamic obesity	True	False
+PUBCHEM.COMPOUND:5284616	Sirolimus	NCIT:C200353	Graft Rejection	True	False
+UNII:NQX9KB6PCL	Somatotropin	UMLS:C3897061	Congenital growth hormone deficiency	True	False
+CHEBI:63622	Sotalol	MONDO:0005477	ventricular tachycardia	True	False
+CHEBI:9241	Spironolactone	HP:0000969	Edema	True	False
+CHEBI:9241	Spironolactone	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+CHEBI:9241	Spironolactone	UMLS:C0220656	Malignant ascites	True	False
+CHEBI:63845	Sulfacetamide	MONDO:0003799	conjunctivitis	True	False
+CHEBI:9334	Sulfasalazine	MONDO:0008383	rheumatoid arthritis	True	False
+CHEBI:82698	Suvorexant	HP:0031354	Sleep onset insomnia	True	False
+CHEMBL.COMPOUND:CHEMBL3301574	TISAGENLECLEUCEL	UMLS:C0023485	Precursor B-Cell Lymphoblastic Leukemia-Lymphoma	True	False
+CHEBI:32184	Tazarotene	MONDO:0005083	psoriasis	True	False
+UNII:F925RR824R	Tecovirimat	UMLS:C1401717	cowpox; smallpox	True	False
+CHEBI:9434	Telmisartan	UMLS:C0221155	Systolic Hypertension	True	False
+PUBCHEM.COMPOUND:6918289	Temsirolimus	MONDO:0018876	mantle cell lymphoma	True	False
+UNII:WGD229O42W	Tenecteplase	MONDO:0005098	stroke disorder	True	False
+CHEBI:90926	Tenofovir alafenamide	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:63717	Tenofovir disoproxil	MONDO:0005109	HIV infectious disease	True	False
+UNII:Y64GQ0KC0A	Teprotumumab	MONDO:0018756	euthyroid Graves orbitopathy	True	False
+CHEBI:9448	Terbinafine	MONDO:0001628	tinea unguium	True	False
+PUBCHEM.COMPOUND:16133850	Teriparatide	MONDO:0008159	postmenopausal osteoporosis	True	False
+CHEBI:17347	Testosterone	UMLS:C0432474	Klinefelter's syndrome - male with more than two X chromosomes	True	False
+PUBCHEM.COMPOUND:54675776	Tetracycline	MONDO:0011438	acne	True	False
+PUBCHEM.COMPOUND:54675776	Tetracycline	MONDO:0005683	brucellosis	True	False
+UNII:RJ1IW3B4QX	Tezepelumab	MONDO:0004979	asthma	True	False
+UNII:RJ1IW3B4QX	Tezepelumab	MONDO:0006314	nasal cavity polyp	True	False
+PUBCHEM.COMPOUND:54686904	Tigecycline	UMLS:C1112209	Abdominal Infection	True	False
+UNII:DEW6X41BEK	Tildrakizumab	MONDO:0005083	psoriasis	True	False
+CHEBI:9599	Timolol	MONDO:0005277	migraine disorder	True	False
+CHEBI:9599	Timolol	MONDO:0005044	hypertensive disorder	True	False
+PUBCHEM.COMPOUND:156588324	Tirzepatide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEBI:194186	Tirzepatide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:156588324	Tirzepatide	MONDO:0005015	diabetes mellitus	True	False
+DRUGBANK:DB13881	Tisagenlecleucel	UMLS:C0023485	Precursor B-Cell Lymphoblastic Leukemia-Lymphoma	True	False
+CHEBI:91327	Tivozanib	MONDO:0005086	renal cell carcinoma	True	False
+CHEBI:63631	Topiramate	HP:0002349	Focal aware seizure	True	False
+CHEBI:75998	Trametinib	MONDO:0006468	thyroid gland undifferentiated (anaplastic) carcinoma	True	True
+CHEBI:75998	Trametinib	UMLS:C4722099	High grade glioma	True	False
+CHEBI:9667	Triamcinolone	UMLS:C0392445	Necrobiosis Lipoidica Diabeticorum	True	False
+CHEBI:9667	Triamcinolone	MONDO:0004907	alopecia	True	False
+CHEBI:9667	Triamcinolone	MONDO:0005340	alopecia areata	True	False
+CHEBI:9667	Triamcinolone	MONDO:0001907	adult dermatomyositis	True	False
+CHEBI:9667	Triamcinolone	MONDO:0004979	asthma	True	False
+CHEBI:9667	Triamcinolone	MONDO:0006545	erythema multiforme	True	False
+CHEBI:9667	Triamcinolone	MONDO:0031012	autoimmune uveitis	True	False
+CHEBI:9667	Triamcinolone	MONDO:0016367	dermatomyositis	True	False
+CHEBI:9667	Triamcinolone	MONDO:0005393	gout	True	False
+CHEBI:9667	Triamcinolone	MONDO:0006554	granuloma annulare	True	False
+CHEBI:9667	Triamcinolone	MONDO:0006585	neurodermatitis	True	False
+CHEBI:9667	Triamcinolone	MONDO:0019338	sarcoidosis	True	False
+CHEBI:9667	Triamcinolone	MONDO:0006572	lichen planus	True	False
+CHEBI:9667	Triamcinolone	MONDO:0003937	spondylitis	True	False
+CHEBI:9667	Triamcinolone	MONDO:0007915	systemic lupus erythematosus	True	False
+CHEBI:9667	Triamcinolone	MONDO:0020283	uveitis	True	False
+UNII:234248D0HH	Tucatinib	MONDO:0005575	colorectal cancer	True	False
+UNII:U59UGK3IPC	Ublituximab	MONDO:0005314	relapsing-remitting multiple sclerosis	True	False
+UNII:U59UGK3IPC	Ublituximab	MONDO:0005301	multiple sclerosis	True	False
+UNII:FU77B4U5Z0	Ustekinumab	MONDO:0005083	psoriasis	True	False
+CHEBI:39867	Valproic acid	HP:0100754	Mania	True	False
+CHEBI:77733	Verapamil	MONDO:0006021	Prinzmetal angina	True	False
+CHEBI:77733	Verapamil	HP:0001681	Angina pectoris	True	False
+CHEBI:77733	Verapamil	HP:0004755	Supraventricular tachycardia	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0854812	Hodgkin's disease lymphocyte depletion type stage IV	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0855081	Hodgkin's disease mixed cellularity stage IV	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0153767	Hodgkin's disease, nodular sclerosis of lymph nodes of multiple sites	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0004952	Hodgkins lymphoma	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0004633	Hodgkin's lymphoma, mixed cellularity	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C1336303	Hodgkin's disease nodular sclerosis stage II	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0278695	Neuroblastoma recurrent	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0009994	alveolar rhabdomyosarcoma	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0855088	Hodgkin's disease nodular sclerosis stage IV	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0002900	cerebral neuroblastoma	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0746341	Recurrent Hodgkin Lymphoma	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0859597	cns neuroblastoma with FOXR2 activation	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0004665	nodular sclerosis classical Hodgkin lymphoma	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0677954	Stage IV Hodgkin Lymphoma	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0153792	Stage III Hodgkin Lymphoma	True	False
+UNII:5J49Q6B70F	Vincristine	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+UNII:5J49Q6B70F	Vincristine	MONDO:0009993	embryonal rhabdomyosarcoma	True	False
+CHEBI:66903	Vismodegib	MONDO:0005341	skin basal cell carcinoma	True	True
+CHEBI:66903	Vismodegib	MONDO:0020804	basal cell carcinoma	True	False
+CHEBI:76016	Vortioxetine	EFO:0007634	major depressive episode	True	False
+CHEBI:76016	Vortioxetine	MONDO:0002009	major depressive disorder	True	False
+CHEBI:10033	Warfarin	UMLS:C0013922	Embolism	True	False
+CHEBI:10033	Warfarin	UMLS:C1535887	Post procedural pulmonary embolism	True	False
+CHEBI:10033	Warfarin	UMLS:C0853347	Venous thrombosis (limbs)	True	False
+CHEBI:10110	Zidovudine	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:10119	Ziprasidone	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:46557	Zoledronic acid	MONDO:0021165	Paget disease	True	False
+CHEBI:10125	Zolpidem	HP:0031354	Sleep onset insomnia	True	False
+PUBCHEM.COMPOUND:71226663	acalabrutinib	UMLS:C0855101	B-cell small lymphocytic lymphoma stage IV	True	False
+CHEBI:50172	acitretin	UMLS:C0748052	Erythrodermic psoriasis	True	False
+PUBCHEM.COMPOUND:155321704	adagrasib	UMLS:C0278987	Metastatic non-small cell lung cancer	True	False
+PUBCHEM.COMPOUND:155321704	adagrasib	MONDO:0005575	colorectal cancer	True	False
+PUBCHEM.COMPOUND:155321704	adagrasib	UMLS:C4721579	Metastasis from malignant neoplasm of colon and/or rectum	True	False
+CHEBI:91400	afatinib	MONDO:0005233	non-small cell lung carcinoma	True	False
+CHEBI:231324	alpelisib	MONDO:1040002	PIK3CA-related overgrowth spectrum	True	False
+PUBCHEM.COMPOUND:2171	amoxicillin	HP:0000371	Acute otitis media	True	False
+PUBCHEM.COMPOUND:2171	amoxicillin	HP:0000255	Acute sinusitis	True	False
+PUBCHEM.COMPOUND:2171	amoxicillin	MONDO:0005249	pneumonia	True	False
+CHEMBL.COMPOUND:CHEMBL4785395	amphotericin B	MONDO:0011989	leishmaniasis	True	False
+CHEMBL.COMPOUND:CHEMBL4785395	amphotericin B	MONDO:0005724	cryptococcosis	True	False
+CHEMBL.COMPOUND:CHEMBL4785395	amphotericin B	MONDO:0005445	visceral leishmaniasis	True	False
+CHEBI:94334	ampicillin	UMLS:C0243026	Sepsis	True	False
+CHEBI:94334	ampicillin	MONDO:0006669	bacterial endocarditis	True	False
+CHEBI:94334	ampicillin	MONDO:0004796	infectious meningitis	True	False
+CHEBI:94334	ampicillin	MONDO:0021108	meningitis	True	False
+CHEBI:94334	ampicillin	UMLS:C0853398	Endocarditis enterococcal	True	False
+PUBCHEM.COMPOUND:25476	angiotensin II	HP:0031273	Shock	True	False
+PUBCHEM.COMPOUND:135761774	aprepitant	UMLS:C1262038	Post procedural nausea	True	False
+PUBCHEM.COMPOUND:135761774	aprepitant	UMLS:C0520905	Vomiting, Postoperative	True	False
+PUBCHEM.COMPOUND:21696352	atazanavir	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:104243	atropine	NCIT:C37920	Bradycardia	True	False
+CHEBI:104243	atropine	MONDO:0005555	cycloplegia	True	False
+CHEBI:104243	atropine	MONDO:0001020	amblyopia	True	False
+CHEBI:104243	atropine	HP:0011499	Mydriasis	True	False
+CHEBI:104243	atropine	MESH:D001919	Bradycardia	True	False
+PUBCHEM.COMPOUND:9838180	avibactam	UMLS:C0949083	Hospital acquired pneumonia	True	False
+PUBCHEM.COMPOUND:9838180	avibactam	UMLS:C1443237	Healthcare associated pneumonia	True	False
+PUBCHEM.COMPOUND:9838180	avibactam	MONDO:0100338	urinary tract infection	True	False
+PUBCHEM.COMPOUND:1805	azacitidine	MONDO:0011908	juvenile myelomonocytic leukemia	True	False
+PUBCHEM.COMPOUND:2269	azithromycin	MONDO:0005867	Mycoplasma pneumoniae pneumonia	True	False
+PUBCHEM.COMPOUND:2269	azithromycin	UMLS:C1412002	Atypical pneumonia	True	False
+PUBCHEM.COMPOUND:2269	azithromycin	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:2269	azithromycin	MONDO:0005961	sinusitis	True	False
+PUBCHEM.COMPOUND:135462586	aztreonam	UMLS:C0275550	Acute bacterial peritonitis	True	False
+PUBCHEM.COMPOUND:135462586	aztreonam	UMLS:C1167792	Bacterial pyelonephritis	True	False
+PUBCHEM.COMPOUND:135462586	aztreonam	UMLS:C3804988	Escherichia pyelonephritis	True	False
+PUBCHEM.COMPOUND:135462586	aztreonam	UMLS:C0155860	Pneumonia caused by Pseudomonas	True	False
+PUBCHEM.COMPOUND:135462586	aztreonam	MONDO:0003529	acute pyelonephritis	True	False
+PUBCHEM.COMPOUND:135462586	aztreonam	MONDO:0005195	septic peritonitis	True	False
+PUBCHEM.COMPOUND:2307	beclometasone dipropionate	MONDO:0004979	asthma	True	False
+PUBCHEM.COMPOUND:2307	beclometasone dipropionate	MONDO:0005002	chronic obstructive pulmonary disease	True	False
+PUBCHEM.COMPOUND:10475845	benazeprilat	MONDO:0001134	essential hypertension	True	False
+PUBCHEM.COMPOUND:74405966	bexagliflozin	MONDO:0005148	type 2 diabetes mellitus	True	False
+UMLS:C0973231	bicarbonate ion	MONDO:0000440	metabolic acidosis	True	False
+UMLS:C0973231	bicarbonate ion	MONDO:0006040	lactic acidosis	True	False
+PUBCHEM.COMPOUND:129130827	bictegravir	MONDO:0005109	HIV infectious disease	True	False
+PUBCHEM.COMPOUND:53393954	bimatoprost	MONDO:0005041	glaucoma	True	False
+PUBCHEM.COMPOUND:53393954	bimatoprost	UMLS:C0857070	Chronic open angle glaucoma	True	False
+PUBCHEM.COMPOUND:53393954	bimatoprost	MONDO:0003037	hypotrichosis	True	False
+CHEBI:3139	bleomycin	MONDO:0003508	choriocarcinoma of testis	True	False
+CHEBI:3139	bleomycin	UMLS:C1298201	Choriocarcinoma, metastatic	True	False
+CHEBI:3139	bleomycin	MONDO:0004952	Hodgkins lymphoma	True	False
+CHEBI:3139	bleomycin	MONDO:0005062	lymphoma	True	False
+CHEBI:93759	bortezomib	UMLS:C0855138	Mantle cell lymphoma refractory	True	False
+CHEBI:93759	bortezomib	UMLS:C0677725	Mantle cell lymphoma recurrent	True	False
+CHEBI:93759	bortezomib	UMLS:C0677721	Mantle cell lymphoma stage IV	True	False
+CHEBI:93759	bortezomib	UMLS:C0677714	Mantle cell lymphoma stage III	True	False
+CHEBI:3160	botulinum toxin type A	MONDO:0011728	benign essential blepharospasm	True	False
+UMLS:C0006050	botulinum toxin type A	MONDO:0011728	benign essential blepharospasm	True	False
+UMLS:C0006050	botulinum toxin type A	MONDO:0005277	migraine disorder	True	False
+CHEBI:3160	botulinum toxin type A	MONDO:0005277	migraine disorder	True	False
+PUBCHEM.COMPOUND:123465614	brensocatib	MONDO:0004822	bronchiectasis	True	False
+PUBCHEM.COMPOUND:66799609	cabotegravir	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:73274	canagliflozin	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:73152436	cangrelor	UMLS:C1536081	Vascular stent thrombosis	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C0677949	Colorectal cancer stage III	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C4528561	Anatomic Stage IV Breast Cancer AJCC v8	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C0677950	Colorectal cancer stage IV	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C0854750	Colorectal cancer recurrent	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	MONDO:0006244	HER2 positive breast carcinoma	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C4520898	Stage IV Breast Cancer AJCC v6 and v7	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C4528592	Prognostic Stage IV Breast Cancer AJCC v8	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C0278484	Malignant neoplasm of colon stage IV	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	MONDO:0004379	female breast carcinoma	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+PUBCHEM.COMPOUND:400633	capecitabine	MONDO:0002032	colon carcinoma	True	False
+PUBCHEM.COMPOUND:11154555	cariprazine	MONDO:0001866	bipolar I disorder	True	False
+PUBCHEM.COMPOUND:11154555	cariprazine	MONDO:0002009	major depressive disorder	True	False
+CHEBI:94418	cefazolin	UMLS:C0948279	Beta haemolytic streptococcal infection	True	False
+CHEBI:94418	cefazolin	UMLS:C0340359	Prosthetic valve endocarditis	True	False
+CHEBI:94418	cefazolin	UMLS:C0520767	Staphylococcal endocarditis	True	False
+CHEBI:94418	cefazolin	MONDO:0021201	skin infection	True	False
+CHEBI:94418	cefazolin	MONDO:0100338	urinary tract infection	True	False
+PUBCHEM.COMPOUND:6803597	cefdinir	MONDO:0005441	otitis media	True	False
+PUBCHEM.COMPOUND:6803597	cefdinir	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:2622	cefepime	MONDO:0030602	Klebsiella pneumonia	True	False
+PUBCHEM.COMPOUND:2622	cefepime	MONDO:0004652	bacterial pneumonia	True	False
+CHEBI:3506	cefprozil	MONDO:0005961	sinusitis	True	False
+CHEBI:70729	ceftaroline	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:72562361	ceftaroline fosamil	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:139595999	ceftobiprole	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:139595999	ceftobiprole	MONDO:0005025	endocarditis	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0006670	bacterial meningitis	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0004796	infectious meningitis	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	UMLS:C1141920	Shunt infection	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0000889	haemophilus meningitis	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0021108	meningitis	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0005441	otitis media	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0018059	meningococcal meningitis	True	False
+PUBCHEM.COMPOUND:2657	ceftriaxone	MONDO:0006913	pneumococcal meningitis	True	False
+CHEBI:103836	cefuroxime	MONDO:0005441	otitis media	True	False
+CHEBI:103836	cefuroxime	UMLS:C0243026	Sepsis	True	False
+CHEBI:103836	cefuroxime	MONDO:0005249	pneumonia	True	False
+CHEBI:3697	cilastatin	UMLS:C0520767	Staphylococcal endocarditis	True	False
+PUBCHEM.COMPOUND:4663848	clarithromycin	MONDO:0005441	otitis media	True	False
+PUBCHEM.COMPOUND:4663848	clarithromycin	MONDO:0005249	pneumonia	True	False
+CHEBI:95137	clindamycin	UMLS:C1622505	Gardnerella vaginitis	True	False
+CHEBI:95137	clindamycin	UMLS:C0275550	Acute bacterial peritonitis	True	False
+CHEBI:95137	clindamycin	HP:0034493	Tubo-ovarian abscess	True	False
+CHEBI:95137	clindamycin	MONDO:0005316	bacterial vaginosis	True	False
+CHEBI:95137	clindamycin	MONDO:0043905	pneumonitis	True	False
+CHEBI:95137	clindamycin	MONDO:0005195	septic peritonitis	True	False
+CHEBI:95137	clindamycin	MONDO:0005227	abscess	True	False
+CHEBI:23359	colchicine	MONDO:0005393	gout	True	False
+CHEBI:4305	dacarbazine	UMLS:C0153767	Hodgkin's disease, nodular sclerosis of lymph nodes of multiple sites	True	False
+CHEBI:4305	dacarbazine	UMLS:C0746341	Recurrent Hodgkin Lymphoma	True	False
+CHEBI:4305	dacarbazine	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:23560495	dapagliflozin	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+PUBCHEM.COMPOUND:23560495	dapagliflozin	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:16129688	daptomycin	NCIT:C102993	Bacteremia	True	False
+CHEBI:600103	daptomycin	NCIT:C102993	Bacteremia	True	False
+PUBCHEM.COMPOUND:118116862	daridorexant	HP:0031354	Sleep onset insomnia	True	False
+GTOPDB:14305	depemokimab	MONDO:0004979	asthma	True	False
+PUBCHEM.COMPOUND:45255840	deutetrabenazine	HP:0100660	Dyskinesia	True	False
+CHEBI:93851	dexamethasone	HP:0031273	Shock	True	False
+CHEBI:93851	dexamethasone	MONDO:0001907	adult dermatomyositis	True	False
+CHEBI:93851	dexamethasone	MONDO:0002471	bursitis	True	False
+CHEBI:93851	dexamethasone	MONDO:0000004	adrenocortical insufficiency	True	False
+CHEBI:93851	dexamethasone	MONDO:0003799	conjunctivitis	True	False
+CHEBI:93851	dexamethasone	MONDO:0005377	nephrotic syndrome	True	False
+CHEBI:93851	dexamethasone	MONDO:0006585	neurodermatitis	True	False
+CHEBI:93851	dexamethasone	MONDO:0003014	rhinitis	True	False
+CHEBI:93851	dexamethasone	MONDO:0003937	spondylitis	True	False
+CHEBI:93851	dexamethasone	MONDO:0002049	thrombocytopenia	True	False
+CHEBI:93851	dexamethasone	MONDO:0043768	thrombocytopenic purpura	True	False
+CHEBI:93851	dexamethasone	MONDO:0018076	tuberculosis	True	False
+CHEBI:82814	diltiazem	HP:0004755	Supraventricular tachycardia	True	False
+CHEBI:82814	diltiazem	MONDO:0004981	atrial fibrillation	True	False
+CHEBI:82814	diltiazem	MONDO:0001134	essential hypertension	True	False
+CHEBI:82814	diltiazem	MONDO:0005310	atrial flutter	True	False
+CHEBI:82814	diltiazem	MONDO:0001133	malignant essential hypertension	True	False
+PUBCHEM.COMPOUND:12215	dimethyl fumarate	MONDO:0005083	psoriasis	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C4528561	Anatomic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C0278493	Breast cancer recurrent	True	False
+CHEBI:59809	docetaxel trihydrate	MONDO:0006244	HER2 positive breast carcinoma	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C0278517	Non-small cell lung cancer recurrent	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C0278506	Non-small cell lung cancer stage III	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C0278984	Non-small cell lung cancer stage IIIB	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C4528592	Prognostic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C0235653	Malignant neoplasm of female breast	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C4520898	Stage IV Breast Cancer AJCC v6 and v7	True	False
+CHEBI:59809	docetaxel trihydrate	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+CHEBI:59809	docetaxel trihydrate	MONDO:0700078	triple-positive breast carcinoma	True	False
+CHEBI:59809	docetaxel trihydrate	MONDO:0005494	triple-negative breast carcinoma	True	False
+GTOPDB:13610	donidalorsen	MONDO:0033946	hereditary angioedema with C1Inh deficiency	True	False
+CHEBI:91872	doxorubicin	UMLS:C0855088	Hodgkin's disease nodular sclerosis stage IV	True	False
+CHEBI:91872	doxorubicin	MONDO:0004633	Hodgkin's lymphoma, mixed cellularity	True	False
+CHEBI:91872	doxorubicin	UMLS:C0855085	Hodgkin's disease nodular sclerosis recurrent	True	False
+CHEBI:91872	doxorubicin	MONDO:0004952	Hodgkins lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0854879	Malignant lymphoma unclassifiable high grade	True	False
+CHEBI:91872	doxorubicin	UMLS:C3203634	Non-Hodgkin's lymphoma metastatic	True	False
+CHEBI:91872	doxorubicin	UMLS:C0748505	Metastatic sarcoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0854867	Non-Hodgkin's lymphoma refractory	True	False
+CHEBI:91872	doxorubicin	UMLS:C1535886	Non-Hodgkin's lymphoma unspecified histology aggressive	True	False
+CHEBI:91872	doxorubicin	UMLS:C0852469	Non-Hodgkin's lymphomas unspecified histology aggressive	True	False
+CHEBI:91872	doxorubicin	UMLS:C4721779	Ovarian cancer stage IV	True	False
+CHEBI:91872	doxorubicin	UMLS:C0854866	Recurrent Non-Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0677956	Stage II Non-Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0278689	Recurrent ovarian cancer	True	False
+CHEBI:91872	doxorubicin	UMLS:C0677954	Stage IV Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0677958	Stage IV Non-Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0677957	Stage III Non-Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0153792	Stage III Hodgkin Lymphoma	True	False
+CHEBI:91872	doxorubicin	MONDO:0004953	invasive ductal breast carcinoma	True	False
+CHEBI:91872	doxorubicin	MONDO:0005051	invasive lobular breast carcinoma	True	False
+CHEBI:91872	doxorubicin	MONDO:0009348	classic Hodgkin lymphoma	True	False
+CHEBI:91872	doxorubicin	UMLS:C0854878	Non-Hodgkin's lymphoma unspecified histology indolent stage IV	True	False
+CHEBI:91872	doxorubicin	MONDO:0005072	neuroblastoma	True	False
+CHEBI:91872	doxorubicin	MONDO:0018908	non-Hodgkin lymphoma	True	False
+CHEBI:91872	doxorubicin	MONDO:0004665	nodular sclerosis classical Hodgkin lymphoma	True	False
+CHEBI:91872	doxorubicin	MONDO:0044778	nodular lymphocyte predominant Hodgkin lymphoma	True	False
+CHEBI:50845	doxycycline	MONDO:0011438	acne	True	True
+CHEBI:50845	doxycycline	MONDO:0005976	syphilis	True	True
+CHEBI:50845	doxycycline	MONDO:0006604	rosacea	True	True
+CHEBI:50845	doxycycline	UMLS:C0276108	Chlamydia psittaci infection	True	False
+PUBCHEM.COMPOUND:54681536	doxycycline	MONDO:0011438	acne	True	False
+CHEBI:50845	doxycycline	MONDO:0005631	actinomycosis	True	False
+PUBCHEM.COMPOUND:54681536	doxycycline	MONDO:0005631	actinomycosis	True	False
+CHEBI:50845	doxycycline	MONDO:0005076	periodontitis	True	False
+PUBCHEM.COMPOUND:54681536	doxycycline	MONDO:0005136	malaria	True	False
+PUBCHEM.COMPOUND:54681536	doxycycline	MONDO:0005976	syphilis	True	False
+CHEBI:50845	doxycycline	MONDO:0005136	malaria	True	False
+PUBCHEM.COMPOUND:11635624	edoxaban	UMLS:C0340708	Deep vein thrombosis of lower limb	True	False
+PUBCHEM.COMPOUND:156850	eletriptan	MONDO:0005277	migraine disorder	True	False
+PUBCHEM.COMPOUND:23083982	elvitegravir	MONDO:0005109	HIV infectious disease	True	False
+PUBCHEM.COMPOUND:73151030	empagliflozin	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:70311789	encorafenib	UMLS:C0855033	Superficial spreading melanoma stage IV	True	False
+PUBCHEM.COMPOUND:70311789	encorafenib	UMLS:C0854698	Malignant melanoma stage IV	True	False
+PUBCHEM.COMPOUND:70311789	encorafenib	UMLS:C0677950	Colorectal cancer stage IV	True	False
+PUBCHEM.COMPOUND:70311789	encorafenib	MONDO:0005105	melanoma	True	False
+PUBCHEM.COMPOUND:6331630	eribulin	UMLS:C0855061	Liposarcoma recurrent	True	False
+PUBCHEM.COMPOUND:53320414	eribulin	MONDO:0020563	dedifferentiated liposarcoma	True	False
+PUBCHEM.COMPOUND:6331630	eribulin	MONDO:0005060	liposarcoma	True	False
+PUBCHEM.COMPOUND:53320414	eribulin	MONDO:0005060	liposarcoma	True	False
+PUBCHEM.COMPOUND:6331630	eribulin	MONDO:0020563	dedifferentiated liposarcoma	True	False
+PUBCHEM.COMPOUND:53320414	eribulin	MONDO:0020562	pleomorphic liposarcoma	True	False
+PUBCHEM.COMPOUND:6331630	eribulin	MONDO:0020562	pleomorphic liposarcoma	True	False
+PUBCHEM.COMPOUND:53320414	eribulin	UMLS:C0855061	Liposarcoma recurrent	True	False
+PUBCHEM.COMPOUND:53320414	eribulin	MONDO:0013280	myxoid liposarcoma	True	False
+CHEBI:404903	ertapenem	UMLS:C0744130	Diabetic foot infection	True	False
+PUBCHEM.COMPOUND:9912811	ertapenem	MONDO:0003529	acute pyelonephritis	True	False
+PUBCHEM.COMPOUND:9912811	ertapenem	UMLS:C0206172	Diabetic Foot	True	False
+PUBCHEM.COMPOUND:9912811	ertapenem	UMLS:C3804988	Escherichia pyelonephritis	True	False
+PUBCHEM.COMPOUND:9912811	ertapenem	UMLS:C1167792	Bacterial pyelonephritis	True	False
+CHEBI:404903	ertapenem	MONDO:0004652	bacterial pneumonia	True	False
+PUBCHEM.COMPOUND:9912811	ertapenem	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	UMLS:C1096186	Inclusion conjunctivitis neonatal	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0004854	ophthalmia neonatorum	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0005867	Mycoplasma pneumoniae pneumonia	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0025598	pneumonia caused by chlamydia	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0021783	streptococcal sore throat	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0001039	tonsillitis	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0002258	pharyngitis	True	False
+PUBCHEM.COMPOUND:3255	erythromycin	MONDO:0005249	pneumonia	True	False
+CHEBI:23965	estradiol	MONDO:0005298	osteoporosis	True	False
+CHEBI:94436	ethambutol	MONDO:0018076	tuberculosis	True	False
+CHEBI:93764	etoposide	UMLS:C0278726	Small cell lung cancer extensive stage	True	False
+CHEBI:93764	etoposide	UMLS:C0278725	Small cell lung cancer limited stage	True	False
+CHEBI:93764	etoposide	UMLS:C0746087	Small cell lung cancer metastatic	True	False
+PUBCHEM.COMPOUND:4460995	exemestane	MONDO:0007254	breast cancer	True	False
+PUBCHEM.COMPOUND:3350	finasteride	MONDO:0005339	androgenetic alopecia	True	False
+PUBCHEM.COMPOUND:541123	fludrocortisone	MONDO:0100480	autoimmune primary adrenal insufficiency	True	False
+PUBCHEM.COMPOUND:17854871	fondaparinux	UMLS:C0340708	Deep vein thrombosis of lower limb	True	False
+PUBCHEM.COMPOUND:17854871	fondaparinux	UMLS:C0013922	Embolism	True	False
+PUBCHEM.COMPOUND:78137072	futibatinib	MONDO:0019087	cholangiocarcinoma	True	False
+CHEBI:93766	gemcitabine	MONDO:0004647	in situ carcinoma	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	UMLS:C0497209	Infective conjunctivitis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0006668	bacterial conjunctivitis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0004785	blepharitis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	UMLS:C0243026	Sepsis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0003799	conjunctivitis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0005025	endocarditis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0004796	infectious meningitis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0021108	meningitis	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	UMLS:C3898765	Keratitis caused by infection	True	False
+PUBCHEM.COMPOUND:3467	gentamicin	MONDO:0006552	folliculitis	True	False
+GTOPDB:13614	givosiran	MONDO:0002520	hepatic porphyria	True	False
+PUBCHEM.COMPOUND:47725	goserelin	MONDO:0007254	breast cancer	True	False
+PUBCHEM.COMPOUND:25078009	histrelin	MONDO:0000088	precocious puberty	True	False
+CHEBI:182788	hydromorphone	HP:0012531	Pain	True	False
+CHEBI:91397	ibrutinib	UMLS:C0855098	B-cell small lymphocytic lymphoma stage I	True	False
+CHEBI:91397	ibrutinib	UMLS:C0855101	B-cell small lymphocytic lymphoma stage IV	True	False
+CHEBI:91397	ibrutinib	UMLS:C0855099	B-cell small lymphocytic lymphoma stage II	True	False
+CHEBI:91397	ibrutinib	MONDO:0013730	graft versus host disease	True	False
+PUBCHEM.COMPOUND:14724482	icatibant	MONDO:0033946	hereditary angioedema with C1Inh deficiency	True	False
+CHEBI:231679	ipilimumab	UMLS:C0854698	Malignant melanoma stage IV	True	False
+CHEBI:231679	ipilimumab	UMLS:C0855018	Acral lentiginous melanoma stage IV	True	False
+CHEBI:231679	ipilimumab	UMLS:C0855027	Malignant melanoma stage III	True	False
+CHEBI:231679	ipilimumab	UMLS:C0278987	Metastatic non-small cell lung cancer	True	False
+CHEBI:231679	ipilimumab	UMLS:C0278679	Renal cell carcinoma recurrent	True	False
+CHEBI:231679	ipilimumab	UMLS:C0278884	Melanoma recurrent	True	False
+CHEBI:231679	ipilimumab	UMLS:C3146249	Stage IV Renal Cell Cancer AJCC v7	True	False
+CHEBI:231679	ipilimumab	UMLS:C0855032	Superficial spreading melanoma stage III	True	False
+CHEBI:231679	ipilimumab	UMLS:C0855033	Superficial spreading melanoma stage IV	True	False
+CHEBI:231679	ipilimumab	UMLS:C0862448	Stage IV Renal Cell Cancer	True	False
+CHEBI:91495	ipratropium	MONDO:0003781	bronchitis	True	False
+CHEBI:94366	itraconazole	UMLS:C0343899	Chronic pulmonary histoplasmosis	True	False
+CHEBI:94366	itraconazole	UMLS:C0339964	Pulmonary blastomycosis	True	False
+CHEBI:94366	itraconazole	UMLS:C0343921	Disseminated blastomycosis	True	False
+CHEBI:94366	itraconazole	MONDO:0001628	tinea unguium	True	False
+CHEBI:94366	itraconazole	MONDO:0018312	histoplasmosis	True	False
+CHEBI:94366	itraconazole	MONDO:0005672	blastomycosis	True	False
+CHEBI:94366	itraconazole	HP:0032258	Pulmonary histoplasmosis	True	False
+CHEBI:94366	itraconazole	UMLS:C0343922	Cutaneous blastomycosis	True	False
+CHEBI:94366	itraconazole	HP:0032257	Disseminated histoplasmosis	True	False
+CHEBI:94366	itraconazole	MONDO:0005657	aspergillosis	True	False
+PUBCHEM.COMPOUND:3877	lamivudine	MONDO:0005344	hepatitis B virus infection	True	False
+PUBCHEM.COMPOUND:66621102	ledipasvir	MONDO:0005354	chronic hepatitis C virus infection	True	False
+DrugCentral:4899	ledipasvir	MONDO:0005354	chronic hepatitis C virus infection	True	False
+PUBCHEM.COMPOUND:76469283	lemborexant	HP:0031354	Sleep onset insomnia	True	False
+PUBCHEM.COMPOUND:3911	leuprolide	MONDO:0000088	precocious puberty	True	False
+DrugCentral:4622	linaclotide	MONDO:0005052	irritable bowel syndrome	True	False
+PUBCHEM.COMPOUND:57458936	linaclotide	MONDO:0005052	irritable bowel syndrome	True	False
+PUBCHEM.COMPOUND:91978180	liraglutide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:91978180	liraglutide	MONDO:0005015	diabetes mellitus	True	False
+PUBCHEM.COMPOUND:21954928	lisdexamfetamine	MONDO:0005302	attention deficit hyperactivity disorder, inattentive type	True	False
+PUBCHEM.COMPOUND:118984969	lisinopril	MONDO:0001134	essential hypertension	True	False
+PUBCHEM.COMPOUND:78162481	lorlatinib	MONDO:0005233	non-small cell lung carcinoma	True	False
+PUBCHEM.COMPOUND:22227703	loteprednol etabonate	MONDO:0020283	uveitis	True	False
+PUBCHEM.COMPOUND:53394969	luliconazole	MONDO:0005984	tinea pedis	True	False
+PUBCHEM.COMPOUND:44210114	lurasidone	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:6715	medroxyprogesterone	MONDO:0005043	hyperplasia	True	False
+PUBCHEM.COMPOUND:541103	medroxyprogesterone	MONDO:0005043	hyperplasia	True	False
+CHEBI:43968	meropenem	MONDO:0005649	appendicitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0005340	alopecia areata	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0001907	adult dermatomyositis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0005292	colitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0005405	childhood onset asthma	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0002471	bursitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0005393	gout	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0043905	pneumonitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0003014	rhinitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0003937	spondylitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0004855	tenosynovitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0004126	thyroiditis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0002400	synovitis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0018076	tuberculosis	True	False
+PUBCHEM.COMPOUND:4159	methylprednisolone	MONDO:0043768	thrombocytopenic purpura	True	False
+PUBCHEM.COMPOUND:78357831	micafungin	MONDO:0042233	disseminated candidiasis	True	False
+PUBCHEM.COMPOUND:78357831	micafungin	MONDO:1010128	peritonitis	True	False
+PUBCHEM.COMPOUND:5150939	miglustat	MONDO:0018150	Gaucher disease	True	False
+PUBCHEM.COMPOUND:54687237	minocycline	MONDO:0006604	rosacea	True	False
+PUBCHEM.COMPOUND:54687237	minocycline	MONDO:0011438	acne	True	False
+PUBCHEM.COMPOUND:4659388	mometasone	UMLS:C4524092	Chronic rhinosinusitis with multiple nasal polyps	True	False
+PUBCHEM.COMPOUND:4659388	mometasone	MONDO:0006314	nasal cavity polyp	True	False
+CHEBI:94358	montelukast	UMLS:C0264413	Late onset asthma	True	False
+CHEBI:94358	montelukast	MONDO:0005405	childhood onset asthma	True	False
+CHEBI:94358	montelukast	UMLS:C1322281	Rhinitis seasonal	True	False
+CHEBI:94358	montelukast	MONDO:0003014	rhinitis	True	False
+PUBCHEM.COMPOUND:4253	morphine	HP:0012531	Pain	True	False
+PUBCHEM.COMPOUND:4259	moxifloxacin	MONDO:0005227	abscess	True	False
+PUBCHEM.COMPOUND:4259	moxifloxacin	MONDO:0003799	conjunctivitis	True	False
+PUBCHEM.COMPOUND:4259	moxifloxacin	MONDO:0005961	sinusitis	True	False
+PUBCHEM.COMPOUND:4259	moxifloxacin	MONDO:0005249	pneumonia	True	False
+CHEBI:93612	mycophenolate mofetil	NCIT:C200353	Graft Rejection	True	False
+PUBCHEM.COMPOUND:25077649	nafarelin	MONDO:0000088	precocious puberty	True	False
+CHEBI:7451	naftifine	MONDO:0005984	tinea pedis	True	False
+CHEBI:91663	naloxone	UMLS:C0151821	Accidental overdose	True	False
+CHEBI:181991	nelfinavir	NCIT:C15175	Human Immunodeficiency Virus Positive	True	False
+CHEBI:181991	nelfinavir	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:95222	nitrofurantoin	MONDO:0006032	cystitis	True	False
+CHEBI:94534	olanzapine	HP:0100754	Mania	True	False
+CHEBI:94534	olanzapine	UMLS:C0036347	Schizophrenia, Disorganized	True	False
+CHEBI:94534	olanzapine	UMLS:C0392322	Undifferentiated schizophrenia	True	False
+CHEBI:94534	olanzapine	MONDO:0011552	schizophrenia 10	True	False
+CHEBI:94534	olanzapine	MONDO:0001484	paranoid schizophrenia	True	False
+PUBCHEM.COMPOUND:25110515	ozanimod	MONDO:0005301	multiple sclerosis	True	False
+CHEBI:94410	paroxetine	MONDO:0008114	obsessive-compulsive disorder	True	False
+CHEBI:94410	paroxetine	MONDO:0044144	panic disorder with agoraphobia	True	False
+PUBCHEM.COMPOUND:56841596	pasireotide	MONDO:0020528	ACTH-dependent Cushing syndrome	True	False
+GTOPDB:13826	pegcetacoplan	UMLS:C5849428	Immune-complex membranoproliferative glomerulonephritis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0005631	actinomycosis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	UMLS:C3665800	Streptococcal endocarditis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0005025	endocarditis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0005504	diphtheria	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0004944	neurosyphilis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0017767	rheumatic fever	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0006669	bacterial endocarditis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0005441	otitis media	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0004796	infectious meningitis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0021108	meningitis	True	False
+PUBCHEM.COMPOUND:2349	penicillin G	MONDO:0005249	pneumonia	True	False
+PUBCHEM.COMPOUND:74821141	plazomicin	MONDO:0003529	acute pyelonephritis	True	False
+DrugCentral:5208	plecanatide	MONDO:0005052	irritable bowel syndrome	True	False
+GTOPDB:9320	ponesimod	MONDO:0005314	relapsing-remitting multiple sclerosis	True	False
+DrugCentral:5446	ponesimod	MONDO:0005314	relapsing-remitting multiple sclerosis	True	False
+PUBCHEM.COMPOUND:21910730	posaconazole	MONDO:0005657	aspergillosis	True	False
+CHEBI:181020	prednisolone	UMLS:C0747733	Polychondritis	True	False
+CHEBI:181020	prednisolone	MONDO:0010030	Sjogren syndrome	True	False
+CHEBI:181020	prednisolone	UMLS:C0264413	Late onset asthma	True	False
+CHEBI:181020	prednisolone	MONDO:0001907	adult dermatomyositis	True	False
+CHEBI:181020	prednisolone	MONDO:0002471	bursitis	True	False
+CHEBI:181020	prednisolone	MONDO:0019098	autoimmune thrombocytopenia	True	False
+CHEBI:181020	prednisolone	MONDO:0001280	choroiditis	True	False
+CHEBI:181020	prednisolone	MONDO:0043579	enteritis	True	False
+CHEBI:181020	prednisolone	MONDO:0005393	gout	True	False
+CHEBI:181020	prednisolone	MONDO:0016367	dermatomyositis	True	False
+CHEBI:181020	prednisolone	MONDO:0004773	iridocyclitis	True	False
+CHEBI:181020	prednisolone	MONDO:0003799	conjunctivitis	True	False
+CHEBI:181020	prednisolone	MONDO:0043905	pneumonitis	True	False
+CHEBI:181020	prednisolone	MONDO:0019735	polymyalgia rheumatica	True	False
+CHEBI:181020	prednisolone	MONDO:0006604	rosacea	True	False
+CHEBI:181020	prednisolone	MONDO:0002771	pulmonary fibrosis	True	False
+CHEBI:181020	prednisolone	MONDO:0003937	spondylitis	True	False
+CHEBI:181020	prednisolone	MONDO:0043768	thrombocytopenic purpura	True	False
+CHEBI:181020	prednisolone	MONDO:0003014	rhinitis	True	False
+CHEBI:181020	prednisolone	MONDO:0004126	thyroiditis	True	False
+CHEBI:181020	prednisolone	MONDO:0018882	vasculitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	UMLS:C3888502	Acute haemorrhagic ulcerative colitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	UMLS:C0854850	Mycosis fungoides refractory	True	False
+PUBCHEM.COMPOUND:4900	prednisone	UMLS:C0278573	Mycosis fungoides stage IV	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0010030	Sjogren syndrome	True	False
+PUBCHEM.COMPOUND:4900	prednisone	UMLS:C0264413	Late onset asthma	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0001907	adult dermatomyositis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0002471	bursitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0001280	choroiditis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0019098	autoimmune thrombocytopenia	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0003799	conjunctivitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0043579	enteritis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0015614	dermatitis herpetiformis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0005393	gout	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0016367	dermatomyositis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0004773	iridocyclitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0043905	pneumonitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0003937	spondylitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0003014	rhinitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0004855	tenosynovitis	True	False
+PUBCHEM.COMPOUND:4900	prednisone	MONDO:0043768	thrombocytopenic purpura	True	False
+CHEBI:181131	progesterone	HP:0040298	Hyperplasia of the endometrium	True	False
+CHEBI:181131	progesterone	UMLS:C3650625	Abnormal uterine bleeding	True	False
+PUBCHEM.COMPOUND:5005	quinapril	MONDO:0001134	essential hypertension	True	False
+PUBCHEM.COMPOUND:13041183	quinaprilat	MONDO:0001134	essential hypertension	True	False
+CHEBI:94416	quinidine	MONDO:0005477	ventricular tachycardia	True	False
+PUBCHEM.COMPOUND:9881626	ramelteon	HP:0031354	Sleep onset insomnia	True	False
+PUBCHEM.COMPOUND:5038	ramipril	MONDO:0001134	essential hypertension	True	False
+PUBCHEM.COMPOUND:171114838	ramiprilat	UMLS:C0235222	Diastolic hypertension	True	False
+CHEBI:94463	ribavirin	MONDO:0005231	hepatitis C virus infection	True	False
+PUBCHEM.COMPOUND:135448133	rifapentine	MONDO:0018076	tuberculosis	True	False
+PUBCHEM.COMPOUND:137154396	rifapentine	MONDO:0018076	tuberculosis	True	False
+DrugCentral:2379	rifaximin	MONDO:0005052	irritable bowel syndrome	True	False
+PUBCHEM.COMPOUND:53395233	rifaximin	MONDO:0005052	irritable bowel syndrome	True	False
+PUBCHEM.COMPOUND:3006171	rilpivirine	MONDO:0005109	HIV infectious disease	True	False
+PUBCHEM.COMPOUND:3425	romidepsin	UMLS:C0862204	Cutaneous T-cell lymphoma refractory	True	False
+PUBCHEM.COMPOUND:3425	romidepsin	UMLS:C0278572	Cutaneous T-cell lymphoma stage IV	True	False
+PUBCHEM.COMPOUND:3425	romidepsin	MONDO:0019476	primary cutaneous peripheral T-cell lymphoma not otherwise specified	True	False
+PUBCHEM.COMPOUND:3425	romidepsin	MONDO:0015758	primary cutaneous T-cell lymphoma	True	False
+PUBCHEM.COMPOUND:58391580	saxagliptin	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+CHEMBL.COMPOUND:CHEMBL1256744	scopolamine	UMLS:C0520905	Vomiting, Postoperative	True	False
+CHEMBL.COMPOUND:CHEMBL1256744	scopolamine	HP:0002018	Nausea	True	False
+CHEMBL.COMPOUND:CHEMBL1256744	scopolamine	HP:0002013	Vomiting	True	False
+CHEMBL.COMPOUND:CHEMBL1256744	scopolamine	UMLS:C1262038	Post procedural nausea	True	False
+PUBCHEM.COMPOUND:139600673	semaglutide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:139600673	semaglutide	MESH:D050177	Overweight	True	False
+PUBCHEM.COMPOUND:139600673	semaglutide	MONDO:0005015	diabetes mellitus	True	False
+PUBCHEM.COMPOUND:5203	sertraline	MONDO:0044144	panic disorder with agoraphobia	True	False
+PUBCHEM.COMPOUND:5203	sertraline	MONDO:0044141	panic disorder without agoraphobia	True	False
+PUBCHEM.COMPOUND:73172139	setmelanotide	UMLS:C0271885	Hypothalamic obesity	True	False
+PUBCHEM.COMPOUND:72959169	siponimod	MONDO:0005301	multiple sclerosis	True	False
+CHEBI:95199	spironolactone	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+CHEBI:95199	spironolactone	UMLS:C0220656	Malignant ascites	True	False
+CHEBI:95199	spironolactone	MONDO:0005252	heart failure	True	False
+CHEBI:95199	spironolactone	HP:0000969	Edema	True	False
+CHEBI:95199	spironolactone	MONDO:0005044	hypertensive disorder	True	False
+CHEBI:95199	spironolactone	MONDO:0003009	hyperaldosteronism	True	False
+CHEBI:95199	spironolactone	MONDO:0001133	malignant essential hypertension	True	False
+PUBCHEM.COMPOUND:5297	streptomycin	MONDO:0018076	tuberculosis	True	False
+GTOPDB:4840	sulfasalazine	MONDO:0008383	rheumatoid arthritis	True	False
+CHEBI:91430	sunitinib	MONDO:0005086	renal cell carcinoma	True	False
+PUBCHEM.COMPOUND:5372	tacrolimus	NCIT:C200353	Graft Rejection	True	False
+PUBCHEM.COMPOUND:71668407	tacrolimus	NCIT:C200353	Graft Rejection	True	False
+GTOPDB:8313	talazoparib	UMLS:C0278488	Carcinoma breast stage IV	True	False
+GTOPDB:8313	talazoparib	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+CHEBI:92766	tamoxifen	UMLS:C4528592	Prognostic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:92766	tamoxifen	UMLS:C4528561	Anatomic Stage IV Breast Cancer AJCC v8	True	False
+CHEBI:92766	tamoxifen	UMLS:C4520898	Stage IV Breast Cancer AJCC v6 and v7	True	False
+CHEBI:92766	tamoxifen	MONDO:0005628	male breast carcinoma	True	False
+CHEBI:92766	tamoxifen	UMLS:C2216695	malignant neoplasm of breast stage I	True	False
+CHEBI:92766	tamoxifen	MONDO:0004658	breast carcinoma in situ	True	False
+CHEBI:92766	tamoxifen	MONDO:0004379	female breast carcinoma	True	False
+CHEBI:92766	tamoxifen	UMLS:C2216701	malignant neoplasm of breast stage IV	True	False
+PUBCHEM.COMPOUND:133191	tapinarof	MONDO:0005083	psoriasis	True	False
+PUBCHEM.COMPOUND:72370618	tenofovir alafenamide	MONDO:0005109	HIV infectious disease	True	False
+PUBCHEM.COMPOUND:54677977	teriflunomide	MONDO:0005301	multiple sclerosis	True	False
+PUBCHEM.COMPOUND:170850185	teriparatide	MONDO:0008159	postmenopausal osteoporosis	True	False
+CHEBI:94444	testosterone	UMLS:C0432474	Klinefelter's syndrome - male with more than two X chromosomes	True	False
+CHEBI:94444	testosterone	MONDO:0015770	congenital hypogonadotropic hypogonadism	True	False
+CHEBI:94444	testosterone	MONDO:0009421	hypogonadism, male	True	False
+PUBCHEM.COMPOUND:54685734	tetracycline	MONDO:0011438	acne	True	False
+PUBCHEM.COMPOUND:54685734	tetracycline	MONDO:0005683	brucellosis	True	False
+PUBCHEM.COMPOUND:22052291	ticagrelor	MONDO:1060198	ischemic stroke	True	False
+PUBCHEM.COMPOUND:54681041	tigecycline	UMLS:C1112209	Abdominal Infection	True	False
+PUBCHEM.COMPOUND:54684452	tipranavir	MONDO:0005109	HIV infectious disease	True	False
+PUBCHEM.COMPOUND:168322922	tirzepatide	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	True	False
+PUBCHEM.COMPOUND:168322922	tirzepatide	MONDO:0005015	diabetes mellitus	True	False
+PUBCHEM.COMPOUND:5496	tobramycin	UMLS:C0392164	Pulmonary Cystic Fibrosis	True	False
+PUBCHEM.COMPOUND:5496	tobramycin	MONDO:0021108	meningitis	True	False
+PUBCHEM.COMPOUND:9818231	tofacitinib	MONDO:0011429	juvenile idiopathic arthritis	True	False
+PUBCHEM.COMPOUND:9818231	tofacitinib	MONDO:0003937	spondylitis	True	False
+PUBCHEM.COMPOUND:5514	topiramate	HP:0002349	Focal aware seizure	True	False
+PUBCHEM.COMPOUND:5514	topiramate	MONDO:0006710	complex partial epilepsy	True	False
+PUBCHEM.COMPOUND:5514	topiramate	MONDO:0005475	migraine with aura	True	False
+PUBCHEM.COMPOUND:5514	topiramate	MONDO:0100431	migraine without aura	True	False
+PUBCHEM.COMPOUND:3199	trabectedin	UMLS:C0855058	Leiomyosarcoma recurrent	True	False
+PUBCHEM.COMPOUND:3199	trabectedin	MONDO:0016262	leiomyosarcoma of the corpus uteri	True	False
+PUBCHEM.COMPOUND:11246284	treprostinil	MONDO:0017148	heritable pulmonary arterial hypertension	True	False
+PUBCHEM.COMPOUND:11246284	treprostinil	MONDO:0001999	idiopathic pulmonary arterial hypertension	True	False
+PUBCHEM.COMPOUND:76829165	upadacitinib	UMLS:C3203547	Axial Spondyloarthritis	True	False
+PUBCHEM.COMPOUND:76829165	upadacitinib	MONDO:0005340	alopecia areata	True	False
+PUBCHEM.COMPOUND:76829165	upadacitinib	MONDO:0018456	polyarticular juvenile idiopathic arthritis	True	False
+PUBCHEM.COMPOUND:76829165	upadacitinib	MONDO:0011429	juvenile idiopathic arthritis	True	False
+PUBCHEM.COMPOUND:76829165	upadacitinib	MONDO:0008661	vitiligo	True	False
+PUBCHEM.COMPOUND:72671402	vaborbactam	UMLS:C1701940	Pneumonia, Ventilator-Associated	True	False
+PUBCHEM.COMPOUND:135483437	valacyclovir	UMLS:C0848570	Herpes simplex, genital, Male	True	False
+PUBCHEM.COMPOUND:135483437	valacyclovir	UMLS:C0848568	Herpes simplex, genital, Female	True	False
+PUBCHEM.COMPOUND:135483437	valacyclovir	UMLS:C4552405	Herpes zoster reactivation	True	False
+CHEBI:94331	valsartan	UMLS:C3839346	Heart failure with reduced ejection fraction	True	False
+PUBCHEM.COMPOUND:5651	vancomycin	MONDO:0000705	Clostridium difficile colitis	True	False
+PUBCHEM.COMPOUND:5651	vancomycin	MONDO:0005025	endocarditis	True	False
+PUBCHEM.COMPOUND:5651	vancomycin	UMLS:C0340359	Prosthetic valve endocarditis	True	False
+GTOPDB:11346	vilobelimab	MONDO:0100130	adult acute respiratory distress syndrome	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0855081	Hodgkin's disease mixed cellularity stage IV	True	False
+CHEBI:28445	vincristine	UMLS:C0854812	Hodgkin's disease lymphocyte depletion type stage IV	True	False
+CHEBI:28445	vincristine	UMLS:C0855088	Hodgkin's disease nodular sclerosis stage IV	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C1336303	Hodgkin's disease nodular sclerosis stage II	True	False
+CHEBI:28445	vincristine	UMLS:C0153767	Hodgkin's disease, nodular sclerosis of lymph nodes of multiple sites	True	False
+CHEBI:28445	vincristine	UMLS:C1336303	Hodgkin's disease nodular sclerosis stage II	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0153767	Hodgkin's disease, nodular sclerosis of lymph nodes of multiple sites	True	False
+CHEBI:28445	vincristine	UMLS:C0855081	Hodgkin's disease mixed cellularity stage IV	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0004952	Hodgkins lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0004633	Hodgkin's lymphoma, mixed cellularity	True	False
+CHEBI:28445	vincristine	UMLS:C0153792	Stage III Hodgkin Lymphoma	True	False
+CHEBI:28445	vincristine	UMLS:C0746341	Recurrent Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0153792	Stage III Hodgkin Lymphoma	True	False
+CHEBI:28445	vincristine	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0854812	Hodgkin's disease lymphocyte depletion type stage IV	True	False
+CHEBI:28445	vincristine	UMLS:C0278695	Neuroblastoma recurrent	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0855088	Hodgkin's disease nodular sclerosis stage IV	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0009994	alveolar rhabdomyosarcoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0677952	Stage II Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0278695	Neuroblastoma recurrent	True	False
+CHEBI:28445	vincristine	UMLS:C0677954	Stage IV Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0746341	Recurrent Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0859597	cns neuroblastoma with FOXR2 activation	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0002900	cerebral neuroblastoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	UMLS:C0677954	Stage IV Hodgkin Lymphoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0009993	embryonal rhabdomyosarcoma	True	False
+PUBCHEM.COMPOUND:3717450	vincristine	MONDO:0004665	nodular sclerosis classical Hodgkin lymphoma	True	False
+PUBCHEM.COMPOUND:117817435	vorasidenib	MONDO:0016695	oligodendroglioma	True	False
+PUBCHEM.COMPOUND:117817435	vorasidenib	MONDO:0019781	astrocytoma (excluding glioblastoma)	True	False
+PUBCHEM.COMPOUND:66604960	zavegepant	MONDO:0005277	migraine disorder	True	False
+PUBCHEM.COMPOUND:5726	zidovudine	MONDO:0005109	HIV infectious disease	True	False
+CHEBI:181552	zolmitriptan	MONDO:0005277	migraine disorder	True	False
+CHEMBL.COMPOUND:CHEMBL5315076	ALBUTREPENONACOG ALFA	MONDO:0010604	hemophilia B	False	False
+UMLS:C5420908	Acalabrutinib maleate	MONDO:0004948	B-cell chronic lymphocytic leukemia	False	False
+CHEBI:28939	Acetylcysteine	MONDO:0004652	bacterial pneumonia	False	False
+CHEBI:28939	Acetylcysteine	MONDO:0004849	pulmonary emphysema	False	False
+CHEBI:28939	Acetylcysteine	MONDO:0004822	bronchiectasis	False	False
+CHEBI:28939	Acetylcysteine	MONDO:0003781	bronchitis	False	False
+CHEBI:28939	Acetylcysteine	MONDO:0005249	pneumonia	False	False
+CHEBI:134990	Agomelatine	MONDO:0002009	major depressive disorder	False	False
+CHEBI:134990	Agomelatine	EFO:0007634	major depressive episode	False	False
+CHEBI:16664	Albendazole	UMLS:C0338437	Neurocysticercosis	False	False
+UNII:M89N0Q7EQR	Aldesleukin	MONDO:0005086	renal cell carcinoma	False	False
+UNII:M89N0Q7EQR	Aldesleukin	UMLS:C4721698	Metastatic Renal Cell Carcinoma	False	False
+PUBCHEM.COMPOUND:166548	Anidulafungin	MONDO:0044067	candidiasis, invasive	False	False
+PUBCHEM.COMPOUND:166548	Anidulafungin	UMLS:C0243001	Abdominal Abscess	False	False
+PUBCHEM.COMPOUND:166548	Anidulafungin	MONDO:1010128	peritonitis	False	False
+PUBCHEM.COMPOUND:166548	Anidulafungin	MONDO:0004522	infectious peritonitis	False	False
+PUBCHEM.COMPOUND:166548	Anidulafungin	MONDO:0005227	abscess	False	False
+PUBCHEM.COMPOUND:518740	Arsenic trioxide	MONDO:0012883	acute promyelocytic leukemia	False	False
+CHEBI:48131	Azelaic acid	MONDO:0006604	rosacea	False	False
+CHEBI:48131	Azelaic acid	UMLS:C1449853	Papulopustular Rosacea	False	False
+CHEBI:48131	Azelaic acid	MONDO:0011438	acne	False	False
+CHEMBL.COMPOUND:CHEMBL5315080	BULEVIRTIDE ACETATE	UMLS:C0524911	Hepatitis D, Chronic	False	False
+UNII:LLM855Y3S3	BULEVIRTIDE ACETATE	UMLS:C0524911	Hepatitis D, Chronic	False	False
+CHEBI:3002	Beclomethasone	MONDO:0004979	asthma	False	False
+CHEBI:3084	Bethanechol	MESH:D016055	Urinary Retention	False	False
+UMLS:C6049161	Brensocatib Monohydrate	MONDO:0004822	bronchiectasis	False	False
+UMLS:C5699554	Bulevirtide acetate	UMLS:C0524911	Hepatitis D, Chronic	False	False
+CHEBI:204928	Cefotaxime	MONDO:0005249	pneumonia	False	False
+CHEBI:3504	Cefpodoxime	MONDO:0005249	pneumonia	False	False
+CHEBI:3504	Cefpodoxime	MONDO:0005961	sinusitis	False	False
+CHEBI:3504	Cefpodoxime	MONDO:0006032	cystitis	False	False
+CHEBI:3504	Cefpodoxime	MONDO:0002258	pharyngitis	False	False
+CHEBI:3504	Cefpodoxime	MONDO:0001039	tonsillitis	False	False
+CHEBI:28830	Chlorambucil	MONDO:0005062	lymphoma	False	False
+CHEBI:3614	Chlorhexidine	MONDO:0002508	gingivitis	False	False
+CHEBI:3638	Chloroquine	MONDO:0005136	malaria	False	False
+CHEBI:30769	Citric acid	MONDO:0001909	renal tubular acidosis	False	False
+UMLS:C3273104	Clopidogrel Hydrochloride	MONDO:0005542	acute coronary syndrome	False	False
+UMLS:C3273104	Clopidogrel Hydrochloride	MONDO:0005068	myocardial infarction	False	False
+UMLS:C3273104	Clopidogrel Hydrochloride	MONDO:0005294	peripheral vascular disease	False	False
+UMLS:C3273104	Clopidogrel Hydrochloride	MONDO:1060198	ischemic stroke	False	False
+UMLS:C3273104	Clopidogrel Hydrochloride	MONDO:0004981	atrial fibrillation	False	False
+CHEBI:183909	Colchiceine	MONDO:0018088	familial Mediterranean fever	False	False
+PUBCHEM.COMPOUND:10156	Colchiceine	MONDO:0018088	familial Mediterranean fever	False	False
+PUBCHEM.COMPOUND:10156	Colchiceine	MONDO:0005393	gout	False	False
+CHEBI:183909	Colchiceine	MONDO:0005393	gout	False	False
+CHEMBL.COMPOUND:CHEMBL5315068	DINUTUXIMAB BETA	MONDO:0005072	neuroblastoma	False	False
+UMLS:C5547721	Dacomitinib monohydrate	MONDO:0005233	non-small cell lung carcinoma	False	False
+UMLS:C5190808	Dapagliflozin propanediol monohydrate	MONDO:0005252	heart failure	False	False
+UMLS:C5190808	Dapagliflozin propanediol monohydrate	MONDO:0005300	chronic kidney disease	False	False
+UMLS:C5190808	Dapagliflozin propanediol monohydrate	MONDO:0005147	type 1 diabetes mellitus	False	False
+UMLS:C5190808	Dapagliflozin propanediol monohydrate	MONDO:0005148	type 2 diabetes mellitus	False	False
+UMLS:C5190808	Dapagliflozin propanediol monohydrate	MONDO:0009100	type 1 diabetes mellitus 1	False	False
+UMLS:C5207053	Dasatinib monohydrate	MONDO:0011996	chronic myeloid leukemia	False	False
+UMLS:C5207053	Dasatinib monohydrate	MONDO:0004967	acute lymphoblastic leukemia	False	False
+CHEBI:691037	Desoximetasone	MONDO:0005083	psoriasis	False	False
+UNII:T472P45MG6	Dibotermin alfa	HP:0041143	Fractured tibia	False	False
+CHEBI:4514	Dicyclomine	MONDO:0005052	irritable bowel syndrome	False	False
+UNII:7SQY4ZUD30	Dinutuximab	MONDO:0005072	neuroblastoma	False	False
+CHEMBL.COMPOUND:CHEMBL5315099	EX VIVO EXPANDED AUTOLOGOUS HUMAN CORNEAL EPITHELIAL CELLS CONTAINING STEM CELLS	MONDO:0025667	limbal stem cell deficiency	False	False
+UNII:PX665RAA3H	Ensitrelvir	MONDO:0100096	COVID-19	False	False
+CHEBI:473990	Entecavir	MONDO:0005344	hepatitis B virus infection	False	False
+CHEBI:473990	Entecavir	MONDO:0005366	chronic hepatitis B virus infection	False	False
+UMLS:C4511449	Entecavir monohydrate	MONDO:0005344	hepatitis B virus infection	False	False
+UNII:VV3HN9ZPB5	FOLLITROPIN ALFA	UMLS:C0342386	Follicle stimulating hormone deficiency	False	False
+UNII:VV3HN9ZPB5	FOLLITROPIN ALFA	MONDO:0002775	anovulation	False	False
+UMLS:C5419370	Filgotinib maleate	MONDO:0008383	rheumatoid arthritis	False	False
+UMLS:C5419370	Filgotinib maleate	MONDO:0005101	ulcerative colitis	False	False
+CHEBI:5130	Flurbiprofen	MONDO:0008383	rheumatoid arthritis	False	False
+UNII:97IQ273H4L	Fostemsavir	MONDO:0005109	HIV infectious disease	False	False
+UMLS:C6064666	Givinostat hydrochloride monohydrate	MONDO:0010679	Duchenne muscular dystrophy	False	False
+CHEMBL.COMPOUND:CHEMBL2108175	HUMAN COAGULATION FACTOR VIII	MONDO:0019565	hereditary von Willebrand disease	False	False
+CHEMBL.COMPOUND:CHEMBL2108175	HUMAN COAGULATION FACTOR VIII	MONDO:0024574	von Willebrand disease (hereditary or acquired)	False	False
+CHEMBL.COMPOUND:CHEMBL2108175	HUMAN COAGULATION FACTOR VIII	MONDO:0010602	hemophilia A	False	False
+CHEMBL.COMPOUND:CHEMBL1201564	INTERFERON GAMMA-1B	MONDO:0017198	osteopetrosis	False	False
+UNII:21K6M2I7AG	INTERFERON GAMMA-1B	MONDO:0017198	osteopetrosis	False	False
+UNII:21K6M2I7AG	INTERFERON GAMMA-1B	MONDO:0018305	chronic granulomatous disease	False	False
+CHEMBL.COMPOUND:CHEMBL1201564	INTERFERON GAMMA-1B	MONDO:0018305	chronic granulomatous disease	False	False
+UMLS:C6053532	Icotrokinra Hydrochloride	MONDO:0005083	psoriasis	False	False
+UMLS:C5433054	Indacaterol acetate	MONDO:0004979	asthma	False	False
+CHEBI:5893	Indapamide	MONDO:0005044	hypertensive disorder	False	False
+CHEBI:5893	Indapamide	UMLS:C0235222	Diastolic hypertension	False	False
+CHEBI:5893	Indapamide	MONDO:0001134	essential hypertension	False	False
+HMDB:HMDB0253501	Insulin degludec	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	False	False
+HMDB:HMDB0253501	Insulin degludec	MONDO:0005015	diabetes mellitus	False	False
+HMDB:HMDB0253501	Insulin degludec	MONDO:0005148	type 2 diabetes mellitus	False	False
+CHEBI:5939	Interferon gamma-1b	MONDO:0018305	chronic granulomatous disease	False	True
+CHEBI:5939	Interferon gamma-1b	MONDO:0017198	osteopetrosis	False	False
+UMLS:C6062747	Iptacopan hydrochloride monohydrate	MONDO:0018013	complement 3 glomerulopathy	False	False
+UMLS:C6062747	Iptacopan hydrochloride monohydrate	MONDO:0100244	paroxysmal nocturnal hemoglobinuria	False	False
+UMLS:C4543153	Irbesartan hydrochloride	MONDO:0005044	hypertensive disorder	False	False
+UMLS:C4543153	Irbesartan hydrochloride	MONDO:0001134	essential hypertension	False	False
+CHEBI:6067	Isotretinoin	MONDO:0011438	acne	False	False
+UNII:9U7D5QH5AE	LACTULOSE	MONDO:0002203	constipation disorder	False	False
+UNII:70BSQ12069	Lumateperone	MONDO:0002009	major depressive disorder	False	False
+UNII:70BSQ12069	Lumateperone	MONDO:0005090	schizophrenia	False	False
+CHEBI:63681	Mefloquine	MONDO:0005136	malaria	False	False
+UMLS:C4082280	Meropenem trihydrate	UMLS:C1701940	Pneumonia, Ventilator-Associated	False	False
+UMLS:C4082280	Meropenem trihydrate	MONDO:0006939	pyelonephritis	False	False
+CHEBI:27436	Methyltestosterone	MONDO:0002146	hypogonadism	False	False
+CHEBI:6933	Midodrine	MONDO:0005469	orthostatic hypotension	False	False
+CHEBI:183811	Moxidectin	MONDO:0017137	onchocerciasis	False	False
+CHEMBL.COMPOUND:CHEMBL2108348	NONACOG BETA PEGOL	MONDO:0010604	hemophilia B	False	False
+UNII:27Y83O992Q	NONACOG BETA PEGOL	MONDO:0010604	hemophilia B	False	False
+UNII:4CHB7QQU1Q	NUSINERSEN SODIUM	MONDO:0001516	spinal muscular atrophy	False	False
+CHEBI:7478	Naratriptan	MONDO:0100431	migraine without aura	False	False
+CHEBI:7478	Naratriptan	MONDO:0005277	migraine disorder	False	False
+UNII:9K8GNJ2874	Naxitamab	MONDO:0005072	neuroblastoma	False	False
+UMLS:C4306786	Nusinersen sodium	MONDO:0001516	spinal muscular atrophy	False	False
+UMLS:C5418482	Octreotide Hydrochloride	MONDO:0019933	acromegaly	False	False
+CHEBI:177758	Omadacycline	MONDO:0005249	pneumonia	False	False
+CHEMBL.COMPOUND:CHEMBL4297803	PEGZILARGINASE	HP:0500153	Hyperargininemia	False	False
+UNII:4YV4KW88GD	PEGZILARGINASE	HP:0500153	Hyperargininemia	False	False
+UNII:4YV4KW88GD	PEGZILARGINASE	MONDO:0008814	arginase deficiency	False	False
+CHEMBL.COMPOUND:CHEMBL4297803	PEGZILARGINASE	MONDO:0008814	arginase deficiency	False	False
+UNII:F2IBD1GMD3	Paltusotine	MONDO:0019933	acromegaly	False	False
+UNII:FQ3DRG0N5K	Pancrelipase	MONDO:0001684	exocrine pancreatic insufficiency	False	False
+CHEBI:7959	Penicillamine	MONDO:0009067	cystinuria	False	True
+CHEBI:7959	Penicillamine	MONDO:0008383	rheumatoid arthritis	False	False
+UMLS:C1579413	Pramipexole dihydrochloride monohydrate	MONDO:0005180	Parkinson disease	False	False
+UMLS:C1579413	Pramipexole dihydrochloride monohydrate	MONDO:0005391	restless legs syndrome	False	False
+CHEBI:8673	Pyrimethamine	MONDO:0005989	toxoplasmosis	False	True
+UNII:Y8JXJ39EE9	RECOMBINANT HUMAN NERVE GROWTH FACTOR	MONDO:0015290	neurotrophic keratopathy	False	False
+CHEBI:92246	Ranitidine	UMLS:C0151966	Duodenal ulcer with hemorrhage	False	False
+CHEBI:92246	Ranitidine	MONDO:0001126	gastric ulcer	False	False
+CHEBI:92246	Ranitidine	MONDO:0007950	mastocytosis	False	False
+CHEBI:92246	Ranitidine	MONDO:0016586	systemic mastocytosis	False	False
+CHEBI:92246	Ranitidine	MONDO:0005412	duodenal ulcer	False	False
+UMLS:C3273585	Rasagiline tartrate	MONDO:0005180	Parkinson disease	False	False
+PUBCHEM.COMPOUND:86278357	Rurioctocog Alfa Pegol	MONDO:0010602	hemophilia A	False	False
+PUBCHEM.COMPOUND:156963654	Sacituzumab govitecan	MONDO:0005494	triple-negative breast carcinoma	False	False
+PUBCHEM.COMPOUND:54681908	Sarecycline	MONDO:0011438	acne	False	False
+CHEBI:140628	Secnidazole	MONDO:0005316	bacterial vaginosis	False	True
+CHEBI:140628	Secnidazole	MONDO:0002154	trichomoniasis	False	False
+UMLS:C6024485	Seladelpar lysine dihydrate	MONDO:0005388	primary biliary cholangitis	False	False
+CHEBI:82866	Sertaconazole	MONDO:0005984	tinea pedis	False	False
+UMLS:C5710438	Sitagliptin fumarate	MONDO:0005148	type 2 diabetes mellitus	False	False
+UMLS:C5922701	Sitagliptin hydrochloride monohydrate	MONDO:0005148	type 2 diabetes mellitus	False	False
+UNII:MXD6KMG2ZP	TEGOMIL FUMARATE	MONDO:0005314	relapsing-remitting multiple sclerosis	False	False
+CHEMBL.COMPOUND:CHEMBL5315071	TUROCTOCOG ALFA PEGOL	MONDO:0010602	hemophilia A	False	False
+CHEBI:231598	Tazemetostat	MONDO:0018906	follicular lymphoma	False	True
+CHEBI:231598	Tazemetostat	MONDO:0017387	epithelioid sarcoma	False	False
+PUBCHEM.COMPOUND:6850811	Tenofovir disoproxil	MONDO:0005109	HIV infectious disease	False	False
+PUBCHEM.COMPOUND:6850811	Tenofovir disoproxil	MONDO:0005344	hepatitis B virus infection	False	False
+UMLS:C4306784	Tenofovir disoproxil maleate	MONDO:0005109	HIV infectious disease	False	False
+UMLS:C4519879	Tenofovir disoproxil phosphate	MONDO:0005109	HIV infectious disease	False	False
+UNII:S4M959U2IJ	Teplizumab	MONDO:0005147	type 1 diabetes mellitus	False	False
+CHEBI:32229	Tiopronin	MONDO:0009067	cystinuria	False	False
+CHEBI:94759	Triclabendazole	MONDO:0004668	fascioliasis	False	False
+UNII:9Y9727LS4D	Turoctocog alfa pegol	MONDO:0010602	hemophilia A	False	False
+UNII:QB16J1T2PC	VANZACAFTOR CALCIUM DIHYDRATE	MONDO:0009061	cystic fibrosis	False	False
+UNII:54K37P50KH	Valbenazine	MONDO:0010096	tardive dyskinesia	False	False
+UMLS:C5971446	Vanzacaftor calcium dihydrate	MONDO:0009061	cystic fibrosis	False	False
+UMLS:C5982465	Vimseltinib Dihydrate	MONDO:0002522	tenosynovial giant cell tumor	False	False
+PUBCHEM.COMPOUND:21874242	Vinflunine	MONDO:0006474	transitional cell carcinoma	False	False
+CHEBI:90241	Vinflunine	MONDO:0006474	transitional cell carcinoma	False	False
+CHEBI:480999	Vinorelbine	MONDO:0005233	non-small cell lung carcinoma	False	False
+PUBCHEM.COMPOUND:44424639	Vinorelbine	MONDO:0005233	non-small cell lung carcinoma	False	False
+CHEBI:93913	adenosine	HP:0004755	Supraventricular tachycardia	False	False
+UNII:N5UK68MGDZ	apremilast	MONDO:0005083	psoriasis	False	False
+UNII:N5UK68MGDZ	apremilast	MONDO:0011849	psoriatic arthritis	False	False
+PUBCHEM.COMPOUND:105031	artesunate	MONDO:0005136	malaria	False	False
+CHEBI:32660	asparaginase	MONDO:0004967	acute lymphoblastic leukemia	False	False
+CHEBI:32660	asparaginase	MONDO:0003537	T lymphoblastic leukemia/lymphoma	False	False
+PUBCHEM.COMPOUND:22743624	besifloxacin	MONDO:0003799	conjunctivitis	False	False
+CHEBI:3242	butorphanol	HP:0012531	Pain	False	False
+PUBCHEM.COMPOUND:2487	butorphanol	HP:0012531	Pain	False	False
+GTOPDB:7385	catumaxomab	HP:0001541	Ascites	False	False
+GTOPDB:7385	catumaxomab	UMLS:C0220656	Malignant ascites	False	False
+PUBCHEM.COMPOUND:2610	cefadroxil	MONDO:0002258	pharyngitis	False	False
+CHEBI:3479	cefadroxil	MONDO:0021783	streptococcal sore throat	False	False
+CHEBI:3479	cefadroxil	MONDO:0002258	pharyngitis	False	False
+CHEBI:94427	cefotaxime	MONDO:0005249	pneumonia	False	False
+PUBCHEM.COMPOUND:54547	cefpodoxime	MONDO:0006032	cystitis	False	False
+PUBCHEM.COMPOUND:54547	cefpodoxime	MONDO:0002258	pharyngitis	False	False
+PUBCHEM.COMPOUND:54547	cefpodoxime	MONDO:0001039	tonsillitis	False	False
+PUBCHEM.COMPOUND:54547	cefpodoxime	MONDO:0005961	sinusitis	False	False
+PUBCHEM.COMPOUND:54547	cefpodoxime	MONDO:0005249	pneumonia	False	False
+PUBCHEM.COMPOUND:5645	chenodeoxycholic acid	MONDO:0008948	cerebrotendinous xanthomatosis	False	False
+UNII:D959AE5USF	clofazimine	MONDO:0005127	lepromatous leprosy	False	False
+CHEBI:103977	clopidogrel	MONDO:0004981	atrial fibrillation	False	False
+CHEBI:103977	clopidogrel	MONDO:0005542	acute coronary syndrome	False	False
+CHEBI:103977	clopidogrel	MONDO:0005294	peripheral vascular disease	False	False
+CHEBI:103977	clopidogrel	MONDO:0005068	myocardial infarction	False	False
+CHEBI:103977	clopidogrel	MONDO:1060198	ischemic stroke	False	False
+GTOPDB:6803	dalteparin	MONDO:0005279	pulmonary embolism	False	False
+GTOPDB:13304	datopotamab deruxtecan	MONDO:0005233	non-small cell lung carcinoma	False	False
+GTOPDB:13304	datopotamab deruxtecan	MONDO:0005494	triple-negative breast carcinoma	False	False
+PUBCHEM.COMPOUND:11756905	delamanid	MONDO:0005861	multidrug-resistant tuberculosis	False	False
+PUBCHEM.COMPOUND:3000	desoximetasone	MONDO:0005083	psoriasis	False	False
+UNII:YXP9JDK7R7	efavirenz	MONDO:0005109	HIV infectious disease	False	False
+PUBCHEM.COMPOUND:74079935	enmetazobactam	MONDO:0006939	pyelonephritis	False	False
+PUBCHEM.COMPOUND:74079935	enmetazobactam	UMLS:C1443237	Healthcare associated pneumonia	False	False
+PUBCHEM.COMPOUND:74079935	enmetazobactam	UMLS:C1701940	Pneumonia, Ventilator-Associated	False	False
+CHEMBL.COMPOUND:CHEMBL2108290	epoetin theta	MONDO:0002280	anemia	False	False
+DrugCentral:5170	epoetin zeta	MONDO:0002280	anemia	False	False
+UNII:BGW27L7CAA	finerenone	MONDO:0005300	chronic kidney disease	False	False
+UNII:BGW27L7CAA	finerenone	MONDO:0005252	heart failure	False	False
+GTOPDB:13402	garadacimab	MONDO:0033946	hereditary angioedema with C1Inh deficiency	False	False
+GTOPDB:13402	garadacimab	MONDO:0019623	hereditary angioedema	False	False
+PUBCHEM.COMPOUND:72535808	grazoprevir	MONDO:0005354	chronic hepatitis C virus infection	False	False
+PUBCHEM.COMPOUND:172875473	icotrokinra	MONDO:0005083	psoriasis	False	False
+PUBCHEM.COMPOUND:137795660	inavolisib	MONDO:0007254	breast cancer	False	False
+GTOPDB:13624	inclisiran	HP:0003124	Hypercholesterolemia	False	False
+GTOPDB:13624	inclisiran	UMLS:C0342879	Primary hypercholesterolemia	False	False
+PUBCHEM.COMPOUND:6433117	indacaterol	MONDO:0004979	asthma	False	False
+PUBCHEM.COMPOUND:6433117	indacaterol	MONDO:0005002	chronic obstructive pulmonary disease	False	False
+PUBCHEM.COMPOUND:6433117	indacaterol	MONDO:0011751	COPD, severe early onset	False	False
+PUBCHEM.COMPOUND:139600551	insulin glargine	MONDO:0005015	diabetes mellitus	False	False
+PUBCHEM.COMPOUND:139600551	insulin glargine	UMLS:C0877302	Insulin-requiring type 2 diabetes mellitus	False	False
+PUBCHEM.COMPOUND:139600551	insulin glargine	MONDO:0005147	type 1 diabetes mellitus	False	False
+PUBCHEM.COMPOUND:139600551	insulin glargine	MONDO:0005148	type 2 diabetes mellitus	False	False
+PUBCHEM.COMPOUND:139600551	insulin glargine	MONDO:0009100	type 1 diabetes mellitus 1	False	False
+UMLS:C0021741	interferon gamma-1b	MONDO:0017198	osteopetrosis	False	False
+UMLS:C0021741	interferon gamma-1b	MONDO:0018305	chronic granulomatous disease	False	False
+UNII:C8ADC441ME	ivabradine	MONDO:0005009	congestive heart failure	False	False
+UNII:C8ADC441ME	ivabradine	HP:0001681	Angina pectoris	False	False
+UNII:C8ADC441ME	ivabradine	MONDO:0005252	heart failure	False	False
+PUBCHEM.COMPOUND:122173797	lactulose	MONDO:0002203	constipation disorder	False	False
+GTOPDB:7684	lebrikizumab	MONDO:0004980	atopic eczema	False	False
+GTOPDB:13305	linvoseltamab	MONDO:0009693	plasma cell myeloma	False	False
+PUBCHEM.COMPOUND:9821941	lumateperone	MONDO:0005090	schizophrenia	False	False
+PUBCHEM.COMPOUND:9821941	lumateperone	MONDO:0002009	major depressive disorder	False	False
+UNII:A3C7SRV8DV	maraviroc	MONDO:0005109	HIV infectious disease	False	False
+UNII:49VRS39N4U	mavacamten	MONDO:0005045	hypertrophic cardiomyopathy	False	False
+CHEBI:63609	mefloquine	MONDO:0005136	malaria	False	False
+CHEBI:125362	methyltestosterone	MONDO:0002146	hypogonadism	False	False
+CHEBI:135906	mifamurtide	MONDO:0009807	osteosarcoma	False	False
+PUBCHEM.COMPOUND:21891368	mifamurtide	MONDO:0009807	osteosarcoma	False	False
+PUBCHEM.COMPOUND:4264	mupirocin	MONDO:0004592	impetigo	False	False
+CHEBI:135574	nabilone	HP:0002018	Nausea	False	False
+GTOPDB:13615	nedosiran	MONDO:0002474	primary hyperoxaluria	False	False
+PUBCHEM.COMPOUND:71278111	nerandomilast	MONDO:0800504	idiopathic pulmonary fibrosis	False	False
+PUBCHEM.COMPOUND:71278111	nerandomilast	UMLS:C6025453	Progressive pulmonary fibrosis	False	False
+CHEBI:91335	neratinib	MONDO:0006244	HER2 positive breast carcinoma	False	False
+GTOPDB:13876	nipocalimab	MONDO:0009688	myasthenia gravis	False	False
+PUBCHEM.COMPOUND:168313675	nusinersen	MONDO:0001516	spinal muscular atrophy	False	False
+UNII:BDF1O1C72E	nystatin	MONDO:0005886	oral candidiasis	False	False
+UNII:BDF1O1C72E	nystatin	MONDO:0002026	candidiasis	False	False
+UNII:BDF1O1C72E	nystatin	UMLS:C0343886	Gastrointestinal candidiasis	False	False
+UNII:BDF1O1C72E	nystatin	UMLS:C0919659	Oropharyngeal candidiasis	False	False
+GTOPDB:12690	odronextamab	MONDO:0018906	follicular lymphoma	False	False
+PUBCHEM.COMPOUND:54681072	omadacycline	MONDO:0005249	pneumonia	False	False
+PUBCHEM.COMPOUND:155369852	orforglipron	MONDO:0011122	obesity disorder	False	False
+PUBCHEM.COMPOUND:155369852	orforglipron	MESH:D050177	Overweight	False	False
+PUBCHEM.COMPOUND:73354318	pacritinib	MONDO:0044903	myelofibrosis	False	False
+PUBCHEM.COMPOUND:73354318	pacritinib	MONDO:0009692	primary myelofibrosis	False	False
+UMLS:C0070476	pertussis toxoid	MONDO:0005077	pertussis	False	False
+CHEBI:45267	praziquantel	MONDO:0015254	schistosomiasis	False	True
+CHEBI:45267	praziquantel	MONDO:0005705	clonorchiasis	False	False
+CHEBI:45267	praziquantel	MONDO:0005884	opisthorchiasis	False	False
+CHEBI:45267	praziquantel	MONDO:0006001	urinary schistosomiasis	False	False
+UNII:HG6X3838RD	pregabalin	MONDO:0001942	generalized anxiety disorder	False	False
+UNII:HG6X3838RD	pregabalin	EFO:0005762	neuropathic pain	False	False
+UNII:HG6X3838RD	pregabalin	MONDO:0005027	epilepsy	False	False
+UNII:HG6X3838RD	pregabalin	MONDO:0005618	anxiety disorder	False	False
+PUBCHEM.COMPOUND:21062558	pretomanid	MONDO:0006052	pulmonary tuberculosis	False	False
+PUBCHEM.COMPOUND:21062558	pretomanid	MONDO:0018076	tuberculosis	False	False
+PUBCHEM.COMPOUND:21062558	pretomanid	MONDO:0005861	multidrug-resistant tuberculosis	False	False
+UMLS:C3700396	radium (223Ra) dichloride	UMLS:C3658266	Prostatic Cancer, Castration-Resistant	False	False
+CHEBI:33325	radium atom	MONDO:0008315	prostate cancer	False	False
+CHEBI:8776	ranitidine	UMLS:C0151966	Duodenal ulcer with hemorrhage	False	False
+CHEBI:8776	ranitidine	MONDO:0005412	duodenal ulcer	False	False
+CHEBI:8776	ranitidine	MONDO:0001126	gastric ulcer	False	False
+CHEBI:8776	ranitidine	MONDO:0016586	systemic mastocytosis	False	False
+CHEBI:8776	ranitidine	MONDO:0007950	mastocytosis	False	False
+UNII:UZ2TR4YN26	rasagiline	MONDO:0005180	Parkinson disease	False	False
+PUBCHEM.COMPOUND:138108790	rilzabrutinib	MONDO:0019098	autoimmune thrombocytopenia	False	False
+PUBCHEM.COMPOUND:138108790	rilzabrutinib	MONDO:0008558	autoimmune thrombocytopenic purpura	False	False
+UNII:ESP6837WVA	rivaroxaban	UMLS:C5400523	Systemic embolism	False	False
+UNII:ESP6837WVA	rivaroxaban	UMLS:C0340708	Deep vein thrombosis of lower limb	False	False
+UNII:ESP6837WVA	rivaroxaban	UMLS:C0013922	Embolism	False	False
+UNII:ESP6837WVA	rivaroxaban	MONDO:0005399	venous thromboembolism	False	False
+UNII:ESP6837WVA	rivaroxaban	MONDO:0005279	pulmonary embolism	False	False
+CHEBI:184910	rotigotine	MONDO:0005391	restless legs syndrome	False	False
+CHEBI:184910	rotigotine	MONDO:0005180	Parkinson disease	False	False
+CHEBI:91405	ruxolitinib	MONDO:0008661	vitiligo	False	False
+GTOPDB:12921	sarecycline	MONDO:0011438	acne	False	False
+GTOPDB:13796	serplulimab	MONDO:0005580	esophageal squamous cell carcinoma	False	False
+GTOPDB:13796	serplulimab	MONDO:0005233	non-small cell lung carcinoma	False	False
+GTOPDB:13905	sipavibart	MONDO:0100096	COVID-19	False	False
+UNII:X9M873A9NG	sitagliptin	MONDO:0005148	type 2 diabetes mellitus	False	False
+CHEBI:28741	sodium fluoride	MONDO:0002508	gingivitis	False	False
+GTOPDB:12342	sugemalimab	MONDO:0005233	non-small cell lung carcinoma	False	False
+UNII:8M3RFQ55BE	tedizolid	UMLS:C4552483	ABSSSI	False	False
+PUBCHEM.COMPOUND:9920035	terlipressin	MONDO:0001382	hepatorenal syndrome	False	False
+GTOPDB:9592	tislelizumab	MONDO:0001056	gastric cancer	False	False
+GTOPDB:9592	tislelizumab	MONDO:0005580	esophageal squamous cell carcinoma	False	False
+GTOPDB:9592	tislelizumab	MONDO:0005233	non-small cell lung carcinoma	False	False
+GTOPDB:9592	tislelizumab	MONDO:0008433	small cell lung carcinoma	False	False
+GTOPDB:9592	tislelizumab	MONDO:0015459	nasopharyngeal carcinoma	False	False
+GTOPDB:12989	toripalimab	MONDO:0015459	nasopharyngeal carcinoma	False	False
+GTOPDB:12989	toripalimab	MONDO:0005580	esophageal squamous cell carcinoma	False	False
+PUBCHEM.COMPOUND:24984318	valbenazine	MONDO:0010096	tardive dyskinesia	False	False
+PUBCHEM.COMPOUND:5251896	vildagliptin	MONDO:0005148	type 2 diabetes mellitus	False	False

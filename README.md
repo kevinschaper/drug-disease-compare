@@ -18,9 +18,12 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
   FAERS + DailyMed + EMA including off-label use), and dismech
   (`monarch-initiative/dismech`, curated/mechanism-driven — its drug→disease
   subset). Adding a source is one entry in `SOURCE_ORDER` plus a loader.
-- **In-progress work.** The MEDIC (MeDIC redesign, local unreleased build) and DAKP
-  (1.16.0) updates are evaluated as work in progress: the comparison and audit are feedback
-  for the next iteration of each source, not a final characterization.
+- **In-progress work.** The MEDIC (MeDIC redesign, local unreleased build of 2026-10-13)
+  and DAKP (1.16.0) updates are evaluated as work in progress: the comparison and audit are
+  feedback for the next iteration of each source, not a final characterization.
+- **Load guidance.** The *What to load* page scores candidate rules for which MEDIC
+  indication edges are ready for monarch-kg, against the label audit
+  (`experiments/audit_tiers.py`).
 - **Versioned.** Each source is pinned at a previous and a latest release
   (`data/MANIFEST.yaml`); the head-to-head uses the latest, and a version-changes view
   characterizes how each source moved and which release moved each overlap.
@@ -44,6 +47,7 @@ data/MANIFEST.yaml              pinned inputs + checksums
 data/inputs/<source>/{old,new}/ downloaded sources, two releases each (gitignored)
 pipeline/drug_edge_compare/     load -> nodenorm -> reconcile -> mondo -> compare -> cli
 pipeline/tests/                 pytest unit tests
+experiments/                    label audit: sampling, blind batching, Jev screen, report, load tiers
 src/                            Observable Framework site (pages + generated data/)
 src/data/pairs.parquet          per-pair table, queried client-side via DuckDB-WASM
 .github/workflows/deploy.yml    GitHub Pages deploy (renders committed src/data/)

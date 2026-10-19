@@ -1,0 +1,230 @@
+[
+ {
+  "id": "g230",
+  "verdict": "TARGET",
+  "quote": "In addition to the above indications, prednisone tablets are indicated for systemic dermatomyositis (polymyositis).",
+  "note": "Dermatomyositis is named directly as a treated collagen disease on the prednisone label."
+ },
+ {
+  "id": "g047",
+  "verdict": "TARGET",
+  "quote": "SKYSONA is indicated to slow the progression of neurologic dysfunction in boys 4-17 years of age with early, active cerebral adrenoleukodystrophy (CALD)",
+  "note": "Slowing progression of CALD is management of the disease itself, so CALD is the treatment target."
+ },
+ {
+  "id": "g070",
+  "verdict": "TARGET",
+  "quote": "Botulism (adjunctive therapy to antitoxin), gas gangrene, and tetanus (adjunctive therapy to human tetanus immune globulin) Clostridium species",
+  "note": "Gas gangrene is a named clinical indication in the penicillin G indication table."
+ },
+ {
+  "id": "g201",
+  "verdict": "TARGET",
+  "quote": "for the symptomatic treatment of: Seasonal and perennial allergic rhinitis",
+  "note": "Seasonal and perennial allergic rhinitis are subtypes of allergic rhinitis and are listed as indications."
+ },
+ {
+  "id": "g219",
+  "verdict": "TARGET",
+  "quote": "1.3 Non-Small Cell Lung Cancer LIBTAYO in combination with platinum‐based chemotherapy is indicated for the first‐line treatment of adult patients with non-small cell lung cancer (NSCLC)",
+  "note": "NSCLC is explicitly indicated on both FDA and EMA text."
+ },
+ {
+  "id": "g239",
+  "verdict": "TARGET",
+  "quote": "indicated as adjunctive therapy for the following seizure types in patients aged 2 years and older: partial-onset seizures. primary generalized tonic-clonic (PGTC) seizures.",
+  "note": "Primary generalized tonic-clonic seizures are the standard synonym for bilateral tonic-clonic seizures with generalized onset, an indicated seizure type."
+ },
+ {
+  "id": "g171",
+  "verdict": "TARGET",
+  "quote": "Capecitabine tablets are indicated for the adjuvant treatment of adults with pancreatic adenocarcinoma as a component of a combination chemotherapy regimen.",
+  "note": "Pancreatic adenocarcinoma is named directly as an adjuvant combination-therapy indication."
+ },
+ {
+  "id": "g117",
+  "verdict": "TARGET",
+  "quote": "Acute gouty arthritis Indomethacin is a nonsteroidal anti-inflammatory drug indicated for:",
+  "note": "Acute gouty arthritis is the acute form of gout, a narrower form of the edge disease, and is listed as an indication on most indomethacin labels."
+ },
+ {
+  "id": "g035",
+  "verdict": "FP7_notintext",
+  "quote": "Use Aids in the prevention of dental cavities",
+  "note": "The only text is a dental-caries prevention claim; muscle weakness is not mentioned anywhere."
+ },
+ {
+  "id": "g292",
+  "verdict": "FP1_setting",
+  "quote": "Bowel rest is needed because of gastrointestinal surgery or its complications such as ileus, fistulae or anastomotic leaks",
+  "note": "Ileus appears only as a circumstance requiring parenteral nutrition; the amino acid product is a nutrition source, not a treatment for ileus."
+ },
+ {
+  "id": "g161",
+  "verdict": "UNSURE",
+  "quote": "Krx Aesthetics PD-13 Therapy, which includes 13% of Methyl Aminolevulinate HCI, is developed to maximize the client’s satisfaction for PDT(Photo Dynamic Therapy).",
+  "note": "The only text is a cosmetic PDT product blurb with no indication statement, so the actinic keratosis claim cannot be judged from it."
+ },
+ {
+  "id": "g073",
+  "verdict": "TARGET",
+  "quote": "Oxazepam capsules are indicated for the management of anxiety disorders or for the short-term relief of the symptoms of anxiety.",
+  "note": "Anxiety disorders and symptoms of anxiety are the named treatment target."
+ },
+ {
+  "id": "g165",
+  "verdict": "TARGET",
+  "quote": "adult and paediatric patients with newly diagnosed Philadelphia chromosome positive chronic myelogenous leukaemia (CML) in the chronic phase",
+  "note": "EMA text names Ph+ CML, a subtype of chronic myeloid leukemia, as the treatment target."
+ },
+ {
+  "id": "g215",
+  "verdict": "FP7_notintext",
+  "quote": "INDICATIONS AND USAGE Collagenase Santyl ◊ Ointment is indicated for debriding chronic dermal ulcers",
+  "note": "The supplied texts cover a debriding ointment and a cosmetic cream; Peyronie disease is not mentioned anywhere."
+ },
+ {
+  "id": "g098",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of tinea cruris and tinea corporis caused by Trichophyton rubrum, Trichophyton mentagrophytes, Epidermophyton floccosum, and Microsporum canis",
+  "note": "Tinea cruris is the standard synonym for dermatophytosis of the groin/perianal area and is an indication."
+ },
+ {
+  "id": "g017",
+  "verdict": "TARGET",
+  "quote": "Complicated skin and skin structure infections, including diabetic foot infections without osteomyelitis.",
+  "note": "Diabetic foot infection is explicitly named as an indicated infection on FDA and EMA text."
+ },
+ {
+  "id": "g104",
+  "verdict": "FP1_setting",
+  "quote": "Patients receiving remission-induction chemotherapy for acute myelogenous leukemia (AML) or myelodysplastic syndromes (MDS) expected to result in prolonged neutropenia",
+  "note": "AML is the population receiving antifungal prophylaxis; the thing prevented is invasive fungal infection, not the leukemia."
+ },
+ {
+  "id": "g147",
+  "verdict": "TARGET",
+  "quote": "Doxycycline is indicated in the treatment of trachoma, although the infectious agent is not always eliminated, as judged by immunofluorescence.",
+  "note": "Trachoma is named directly as a treatment indication."
+ },
+ {
+  "id": "g248",
+  "verdict": "TARGET",
+  "quote": "Vizimpro, as monotherapy, is indicated for the first-line treatment of adult patients with locally advanced or metastatic non small cell lung cancer (NSCLC)",
+  "note": "EMA text indicates NSCLC (EGFR-mutant subtype) as the treatment target."
+ },
+ {
+  "id": "g038",
+  "verdict": "TARGET",
+  "quote": "for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer",
+  "note": "Label indicates HR+/HER2- breast cancer; the edge 'breast cancer' is a near parent that still essentially describes what is indicated."
+ },
+ {
+  "id": "g265",
+  "verdict": "TARGET",
+  "quote": "Tevimbra, in combination with etoposide and platinum chemotherapy, is indicated for the first-line treatment of adult patients with extensive-stage SCLC.",
+  "note": "Extensive-stage SCLC is a subtype of small cell lung carcinoma and is an EMA indication."
+ },
+ {
+  "id": "g287",
+  "verdict": "TARGET",
+  "quote": "The treatment of paediatric patients (age 1 to &lt;18 years) with relapsed or refractory systemic anaplastic lymphoma kinase (ALK) positive anaplastic large cell lymphoma (ALCL)",
+  "note": "ALK-positive ALCL, a subtype of anaplastic large cell lymphoma, is an EMA indication."
+ },
+ {
+  "id": "g276",
+  "verdict": "TARGET",
+  "quote": "Nitazoxanide tablets (patients 12 years and older) are indicated for the treatment of diarrhea caused by Giardia lamblia or Cryptosporidium parvum",
+  "note": "Treating diarrhea caused by Giardia lamblia is treating giardiasis; the infection, not a separate symptom, is the target."
+ },
+ {
+  "id": "g200",
+  "verdict": "TARGET",
+  "quote": "Rivaroxaban tablets are indicated to reduce the risk of stroke and systemic embolism in adult patients with nonvalvular atrial fibrillation.",
+  "note": "Stroke is the event being prevented, so stroke is a prevention target of the drug."
+ },
+ {
+  "id": "g002",
+  "verdict": "UNSURE",
+  "quote": "RUKOBIA, in combination with other antiretroviral(s), is indicated for the treatment of human immunodeficiency virus type 1 (HIV-1) infection",
+  "note": "The edge disease is an unresolved identifier (UMLS:C2363741) with no name, so it cannot be matched against the HIV-1 infection indication."
+ },
+ {
+  "id": "g245",
+  "verdict": "TARGET",
+  "quote": "Jakavi is indicated for the treatment of adults and paediatric patients aged 6 months and older with chronic graft versus host disease who have inadequate response to corticosteroids",
+  "note": "Chronic GvHD is named directly as an EMA treatment indication."
+ },
+ {
+  "id": "g042",
+  "verdict": "TARGET",
+  "quote": "In adult patients with clinically evident coronary heart disease, atorvastatin is indicated to: Reduce the risk of non-fatal myocardial infarction Reduce the risk of fatal and non-fatal stroke",
+  "note": "Single-ingredient atorvastatin labels indicate reduction of stroke risk, so stroke is a prevention target."
+ },
+ {
+  "id": "g285",
+  "verdict": "TARGET",
+  "quote": "Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis, drug hypersensitivity reactions,",
+  "note": "Transfusion reactions are a named item in the list of allergic states hydrocortisone is indicated to control."
+ },
+ {
+  "id": "g289",
+  "verdict": "FP7_notintext",
+  "quote": "Cryptococcus: Meningitis and pulmonary infections have been treated effectively.",
+  "note": "Only Candida/Cryptococcus pulmonary infections are mentioned; 'recurrent pneumonia' or any reasonable-granularity equivalent is not supported by the text."
+ },
+ {
+  "id": "g158",
+  "verdict": "FP1_setting",
+  "quote": "because of a history of coronary artery disease, stroke, peripheral vascular disease, or diabetes that is accompanied by at least one other cardiovascular risk factor",
+  "note": "Diabetes is a risk-factor population for cardiovascular event reduction, not a condition ramipril treats."
+ },
+ {
+  "id": "g131",
+  "verdict": "TARGET",
+  "quote": "Kaposi’s sarcoma",
+  "note": "Kaposi's sarcoma appears as a listed item in the vinblastine indications text (palliative treatment of responsive malignancies)."
+ },
+ {
+  "id": "g093",
+  "verdict": "FP7_notintext",
+  "quote": "As replacement or supplemental therapy in patients with hypothyroidism of any etiology",
+  "note": "Only hypothyroidism, goiter and thyroid cancer are indicated; bipolar disorder is not mentioned anywhere."
+ },
+ {
+  "id": "g057",
+  "verdict": "FP1_setting",
+  "quote": "Bowel rest is needed because of gastrointestinal surgery or its complications such as ileus, fistulae or anastomotic leaks",
+  "note": "Anastomotic leak is only a circumstance that makes parenteral nutrition appropriate; the amino acid product does not treat it."
+ },
+ {
+  "id": "g124",
+  "verdict": "TARGET",
+  "quote": "Maviret is indicated for the treatment of acute and chronic hepatitis C virus (HCV) infection in adults and children aged 3 years and older.",
+  "note": "Chronic HCV infection is named directly as an EMA indication."
+ },
+ {
+  "id": "g217",
+  "verdict": "FP4_overbroad",
+  "quote": "indicated for the treatment or prevention of bronchospasm in adult and pediatric patients aged 4 years and older with reversible obstructive airway disease",
+  "note": "Labels indicate bronchospasm/reversible obstructive airway disease; 'bronchial disorder' is a whole organ-level category far broader than what is indicated."
+ },
+ {
+  "id": "g172",
+  "verdict": "TARGET",
+  "quote": "Enthesitis-related arthritis Hefiya is indicated for the treatment of active enthesitis-related arthritis in patients, 6 years of age and older",
+  "note": "Enthesitis-related arthritis is listed under the juvenile idiopathic arthritis heading as an EMA indication."
+ },
+ {
+  "id": "g132",
+  "verdict": "TARGET",
+  "quote": "Metoprolol tartrate tablets are indicated in the treatment of hemodynamically stable patients with definite or suspected acute myocardial infarction to reduce cardiovascular mortality",
+  "note": "Acute myocardial infarction is named directly as a treatment indication."
+ },
+ {
+  "id": "g234",
+  "verdict": "FP1_setting",
+  "quote": "in the presence of at least one weight-related comorbid condition (e.g., hypertension, dyslipidaemia, obstructive sleep apnoea, cardiovascular disease, prediabetes, or type 2 diabetes mellitus).",
+  "note": "Prediabetes appears only as a qualifying comorbidity for the weight-management population, not as a condition treated."
+ }
+]

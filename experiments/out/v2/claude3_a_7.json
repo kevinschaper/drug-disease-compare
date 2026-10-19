@@ -1,0 +1,224 @@
+[
+  {
+    "id": "g190",
+    "verdict": "TARGET",
+    "quote": "Buspirone hydrochloride tablets, USP are indicated for the management of anxiety disorders or the short-term relief of the symptoms of anxiety.",
+    "note": "Anxiety disorders are named directly as the condition managed."
+  },
+  {
+    "id": "g026",
+    "verdict": "TARGET",
+    "quote": "reducing neurologic disability and/or the frequency of clinical relapses in patients with secondary (chronic) progressive, progressive relapsing, or worsening relapsing-remitting multiple sclerosis",
+    "note": "Several MS subtypes are indicated (the primary-progressive negation covers only one subtype), so the parent edge 'multiple sclerosis' is a target."
+  },
+  {
+    "id": "g169",
+    "verdict": "TARGET",
+    "quote": "Tivicay is indicated in combination with other anti-retroviral medicinal products for the treatment of Human Immunodeficiency Virus (HIV) infected adults, adolescents and children",
+    "note": "EMA text indicates treatment of HIV infection; combination antiretroviral therapy still counts."
+  },
+  {
+    "id": "g119",
+    "verdict": "TARGET",
+    "quote": "indicated for the treatment of documented ventricular arrhythmias, such as sustained ventricular tachycardia, that in the judgment of the physician are life-threatening.",
+    "note": "Life-threatening ventricular arrhythmias are the named treatment target; the edge is a near-exact match."
+  },
+  {
+    "id": "g018",
+    "verdict": "TARGET",
+    "quote": "indicated for the treatment of adult and paediatric patients 12 years of age and older with solid tumours expressing a neurotrophic tyrosine receptor kinase (NTRK) gene fusion",
+    "note": "EMA indication names NTRK gene-fusion solid tumours, an exact synonym of the edge disease."
+  },
+  {
+    "id": "g282",
+    "verdict": "TARGET",
+    "quote": "monotherapy for the maintenance treatment of adult patients with germline BRCA1/2-mutations who have metastatic adenocarcinoma of the pancreas",
+    "note": "Metastatic BRCA-mutated pancreatic adenocarcinoma is a more specific form of pancreatic adenocarcinoma, so the edge is a target."
+  },
+  {
+    "id": "g179",
+    "verdict": "FP7_notintext",
+    "quote": "RENOVA (tretinoin cream) 0.02% has NOT DEMONSTRATED A MITIGATING EFFECT on significant signs of chronic sunlight exposure such as coarse or deep wrinkling, tactile roughness, mottled hyperpigmentation",
+    "note": "Dyschromatosis universalis hereditaria is not mentioned anywhere; the only pigmentation references are photoaging-related hyperpigmentation that the label says is not mitigated and melasma on a combination product, neither of which is this hereditary disorder."
+  },
+  {
+    "id": "g085",
+    "verdict": "TARGET",
+    "quote": "Terazosin capsules, USP are indicated for the treatment of symptomatic benign prostatic hyperplasia (BPH).",
+    "note": "BPH is named directly as the treated condition."
+  },
+  {
+    "id": "g209",
+    "verdict": "FP1_setting",
+    "quote": "Ezmekly as monotherapy is indicated for the treatment of symptomatic, inoperable plexiform neurofibromas (PN) in paediatric and adult patients with neurofibromatosis type 1 (NF1)",
+    "note": "The treated target is plexiform neurofibromas; NF1 appears only as the patient population in which they occur."
+  },
+  {
+    "id": "g142",
+    "verdict": "TARGET",
+    "quote": "including diffuse large B-cell lymphoma (DLBCL) not otherwise specified, primary mediastinal large B-cell lymphoma, high grade B-cell lymphoma",
+    "note": "Primary mediastinal large B-cell lymphoma is explicitly listed among the indicated large B-cell lymphomas in both FDA and EMA text."
+  },
+  {
+    "id": "g168",
+    "verdict": "TARGET",
+    "quote": "Kinpeygo is indicated for the treatment of adults with primary immunoglobulin A nephropathy (IgAN) with a urine protein excretion ≥1.0 g/day",
+    "note": "IgA nephropathy is the standard synonym of IgA glomerulonephritis and is an indication on the EMA single-ingredient budesonide product."
+  },
+  {
+    "id": "g060",
+    "verdict": "TARGET",
+    "quote": "Ilaris is indicated for the treatment of active Still’s disease including adult-onset Still’s disease (AOSD) and systemic juvenile idiopathic arthritis (SJIA)",
+    "note": "Adult-onset Still's disease is named explicitly as an indication."
+  },
+  {
+    "id": "g290",
+    "verdict": "TARGET",
+    "quote": "fulminating or disseminated pulmonary tuberculosis when used concurrently with appropriate antituberculous chemotherapy; asthma",
+    "note": "Asthma is a named item in the list of indicated respiratory and allergic conditions."
+  },
+  {
+    "id": "g214",
+    "verdict": "TARGET",
+    "quote": "Adult patients with relapsed or refractory Philadelphia chromosome positive acute lymphoblastic leukemia (Ph+ ALL).",
+    "note": "Ph+ ALL is a more specific form of acute lymphoblastic leukemia, so the edge is a target under the subtype rule."
+  },
+  {
+    "id": "g177",
+    "verdict": "TARGET",
+    "quote": "Topotecan is indicated for the treatment of patients with metastatic carcinoma of the ovary after failure of first-line or subsequent therapy.",
+    "note": "Metastatic carcinoma of the ovary is an exact synonym of the edge disease."
+  },
+  {
+    "id": "g102",
+    "verdict": "TARGET",
+    "quote": "Vardenafil hydrochloride tablets are indicated for the treatment of erectile dysfunction.",
+    "note": "Erectile dysfunction is named directly as the treated condition in FDA and EMA text."
+  },
+  {
+    "id": "g020",
+    "verdict": "TARGET",
+    "quote": "Lyrica is indicated for the treatment of peripheral and central neuropathic pain in adults.",
+    "note": "Peripheral and central neuropathic pain together constitute neuropathic pain, which is named as the treatment target."
+  },
+  {
+    "id": "g241",
+    "verdict": "FP1_setting",
+    "quote": "In disorders requiring parenteral administration of vitamins, i.e. pre- and post-operative treatment, when requirements are increased as in fever, severe burns, increased metabolism",
+    "note": "Fever is cited only as a circumstance that raises vitamin requirements; the product supplies vitamins and does not treat febrile disorders."
+  },
+  {
+    "id": "g144",
+    "verdict": "TARGET",
+    "quote": "Effentora is indicated for the treatment of breakthrough pain (BTP) in adults with cancer who are already receiving maintenance opioid therapy for chronic cancer pain.",
+    "note": "Breakthrough pain is named directly as the treated condition."
+  },
+  {
+    "id": "g000",
+    "verdict": "TARGET",
+    "quote": "Perennial and seasonal allergic rhinitis Vasomotor rhinitis Allergic conjunctivitis due to inhalant allergens and foods",
+    "note": "Atopic conjunctivitis is a form of allergic conjunctivitis, which is a named indication."
+  },
+  {
+    "id": "g122",
+    "verdict": "TARGET",
+    "quote": "Uses treats migraine",
+    "note": "The OTC acetaminophen label text states the product treats migraine; the text is terse but names the disease as the treatment target."
+  },
+  {
+    "id": "g021",
+    "verdict": "TARGET",
+    "quote": "CONTEPO is indicated for the treatment of patients 18 years and older with complicated urinary tract infections (cUTI), including acute pyelonephritis",
+    "note": "Complicated urinary tract infection is named directly as an indication on the CONTEPO label."
+  },
+  {
+    "id": "g205",
+    "verdict": "FP1_setting",
+    "quote": "indicated for the management of hypoglycemia due to hyperinsulinism associated with the following conditions",
+    "note": "The treated condition is hypoglycemia; islet cell adenoma/carcinoma is the underlying cause and setting, not what diazoxide treats."
+  },
+  {
+    "id": "g229",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "Attention deficit hyperactivity disorder is not mentioned anywhere in the supplied text; the indications are Parkinson's disease and parkinsonism only."
+  },
+  {
+    "id": "g296",
+    "verdict": "TARGET",
+    "quote": "treatment of adults with unresectable or metastatic gastric, esophageal, or gastroesophageal junction cancer as a component of a combination chemotherapy regimen.",
+    "note": "Esophageal cancer is named explicitly as an indication."
+  },
+  {
+    "id": "g212",
+    "verdict": "TARGET",
+    "quote": "indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid responsive dermatoses in patients 12 years of age or older",
+    "note": "Atopic dermatitis is a corticosteroid-responsive dermatosis (a subtype of the indicated class), and the label's own clinical data describe use in adult and pediatric atopic dermatitis patients."
+  },
+  {
+    "id": "g159",
+    "verdict": "TARGET",
+    "quote": "indicated for the treatment of acute manic or mixed episodes associated with bipolar disorder, with or without psychotic features.",
+    "note": "Treating the manic and mixed episodes of bipolar disorder is management of the disease itself, so bipolar disorder is the target."
+  },
+  {
+    "id": "g291",
+    "verdict": "TARGET",
+    "quote": "Treatment of Wilson's disease.",
+    "note": "EMA text names Wilson's disease directly as the indication."
+  },
+  {
+    "id": "g083",
+    "verdict": "FP3_cross_section",
+    "quote": "patients with renal artery stenosis, chronic kidney disease, severe congestive heart failure, or volume depletion) may be at particular risk of developing acute renal failure",
+    "note": "Olmesartan is indicated only for hypertension; congestive heart failure appears as an at-risk population in warnings and as a generic remark about other antihypertensives, never as an indication."
+  },
+  {
+    "id": "g267",
+    "verdict": "TARGET",
+    "quote": "maintenance bronchodilator treatment of airflow obstruction in patients with chronic obstructive pulmonary disease (COPD), including chronic bronchitis and/or emphysema.",
+    "note": "Maintenance bronchodilator treatment of COPD airflow obstruction is management of COPD itself, on the single-ingredient label."
+  },
+  {
+    "id": "g151",
+    "verdict": "TARGET",
+    "quote": "Rolufta is indicated as a maintenance bronchodilator treatment to relieve symptoms in adult patients with chronic obstructive pulmonary disease (COPD).",
+    "note": "COPD is the indicated condition on the EMA umeclidinium products, including the single-agent bronchodilator."
+  },
+  {
+    "id": "g263",
+    "verdict": "FP7_notintext",
+    "quote": "",
+    "note": "ADHD is not mentioned anywhere in the supplied text; thyroid tablets are indicated for hypothyroidism, euthyroid goiters and thyroid cancer only."
+  },
+  {
+    "id": "g223",
+    "verdict": "TARGET",
+    "quote": "indicated for the treatment of generalized tonic-clonic (grand mal) and complex partial (psychomotor, temporal lobe) seizures",
+    "note": "Treatment of complex partial seizures is treatment of complex partial epilepsy."
+  },
+  {
+    "id": "g034",
+    "verdict": "TARGET",
+    "quote": "Uses For temporary relief of temporary water retention bloat swelling full feeling fatigue minor aches and pains associated with the premenstrual and menstrual periods.",
+    "note": "An OTC label in the union lists fatigue among the symptoms the product relieves; the text does not allow attribution to a partner ingredient, so it is judged a target from the text as supplied."
+  },
+  {
+    "id": "g199",
+    "verdict": "TARGET",
+    "quote": "Imipenem and Cilastatin for Injection, USP (I.V.) for intravenous use is indicated for the treatment of lower respiratory tract infections caused by susceptible strains of Staphylococcus aureus",
+    "note": "Recurrent LRTI is a narrower form of the indicated lower respiratory tract infections, and the label attributes antibacterial activity to imipenem (cilastatin is only a dehydropeptidase inhibitor)."
+  },
+  {
+    "id": "g255",
+    "verdict": "TARGET",
+    "quote": "For the management of primary dysmenorrhea",
+    "note": "Primary dysmenorrhea is a more specific form of dysmenorrhea and is a named indication."
+  },
+  {
+    "id": "g120",
+    "verdict": "TARGET",
+    "quote": "POTELIGEO is indicated for the treatment of adult patients with relapsed or refractory mycosis fungoides (MF) or Sézary syndrome (SS) after at least one prior systemic therapy.",
+    "note": "Sézary syndrome is named directly as an indication in FDA and EMA text."
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "g045",
+    "verdict": "TARGET",
+    "quote": "Ductal Carcinoma in Situ (DCIS): In women with DCIS, following breast surgery and radiation, tamoxifen citrate tablets are indicated to reduce the risk of invasive breast cancer",
+    "note": "DCIS is one of the label's named indication headings and tamoxifen is given as adjuvant therapy after local treatment of the DCIS to prevent its progression to invasive disease, the same structure as the 'adjuvant treatment of breast cancer ... following mastectomy' indication, so this is management of DCIS rather than DCIS as a mere background population."
+  },
+  {
+    "id": "g145",
+    "verdict": "TARGET",
+    "quote": "adjunctive therapy in alcoholism and allergic conditions with strong emotional overlay, such as in asthma, chronic urticaria, and pruritus",
+    "note": "Chronic urticaria is named directly as an allergic condition for which hydroxyzine is adjunctive therapy, and separately its pruritus (the defining manifestation of urticaria) is managed, which the rubric's 'pain of osteoarthritis' rule counts as management of the disease."
+  },
+  {
+    "id": "g049",
+    "verdict": "TARGET",
+    "quote": "Ergotamine tartrate and caffeine tablets are indicated as therapy to abort or prevent vascular headache; e.g., migraine, migraine variants",
+    "note": "Migraine is named as the indication of the ergotamine/caffeine product, where the text gives no basis to assign the indication to ergotamine alone, and three further stand-alone entries read simply 'treats migraine' without being identifiable as combination products, so FP6's 'only on a combination label belonging to the partner' condition is not met."
+  },
+  {
+    "id": "g078",
+    "verdict": "TARGET",
+    "quote": "treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome",
+    "note": "Edema is a defining component of nephrotic syndrome and the label names nephrotic syndrome explicitly as a condition whose edema furosemide treats, which under the rubric's 'pain of osteoarthritis' rule is management of the named disease rather than a symptom swap."
+  },
+  {
+    "id": "g016",
+    "verdict": "TARGET",
+    "quote": "AVYCAZ (ceftazidime and avibactam) in combination with metronidazole, is indicated for the treatment of complicated intra-abdominal infections (cIAI)",
+    "note": "cIAI is indicated for two different avibactam pairings (ceftazidime/avibactam and aztreonam/avibactam) as single antibacterial products in which avibactam is a named active component, and the text never assigns the indication to the partner alone the way amlodipine owns hypertension, so it is attributable to avibactam's own contribution rather than a co-ingredient artefact."
+  },
+  {
+    "id": "g189",
+    "verdict": "TARGET",
+    "quote": "indicated as adjunctive therapy in edema associated with congestive heart failure, hepatic cirrhosis, and corticosteroid and estrogen therapy",
+    "note": "Hepatic cirrhosis is named as a condition whose edema chlorothiazide manages adjunctively; edema/fluid retention is a cardinal manifestation of cirrhosis, so by the rubric's 'pain of osteoarthritis' rule this is management of the named disease, though it is the closest of the diuretic calls."
+  },
+  {
+    "id": "g264",
+    "verdict": "TARGET",
+    "quote": "Useful in the management of pruritus due to allergic conditions such as chronic urticaria and atopic and contact dermatoses, and in histamine-mediated pruritus.",
+    "note": "Atopic dermatosis is atopic eczema and is named as a condition whose pruritus (its defining symptom) hydroxyzine manages, which the rubric's 'pain of osteoarthritis' example treats as TARGET rather than a symptom swap."
+  },
+  {
+    "id": "g030",
+    "verdict": "FP2_symptom_swap",
+    "quote": "For the temporary relief of general anxiety, sleeplessness, depression, muscle and joint pain and digestive discomfort",
+    "note": "Every mention is of anxiety as a transient symptom ('symptoms associated with performance anxiety', 'associated symptoms such as ... anxiety', 'temporary relief of general anxiety' listed beside sleeplessness and joint pain) on unidentified OTC products, never an anxiety disorder as a condition treated, so the edge swaps the symptom for the disorder."
+  },
+  {
+    "id": "g162",
+    "verdict": "FP6_coingredient",
+    "quote": "nasal congestion reduces swelling of nasal passages temporarily relieves sinus congestion and pressure temporarily restores freer breathing through the nose",
+    "note": "Every cetirizine-only text (Rx and OTC) lists sneezing, rhinorrhea, itching and watery eyes and omits congestion; congestion appears only in texts carrying the standard nasal-decongestant claims (swelling of nasal passages, sinus pressure, freer breathing), which belong to a decongestant partner ingredient, not cetirizine."
+  },
+  {
+    "id": "g007",
+    "verdict": "FP6_coingredient",
+    "quote": "reduces swelling of nasal passages temporarily relieves sinus congestion and pressure temporarily relieves nasal congestion due to the common cold, hay fever or other upper respiratory allergies",
+    "note": "The two dozen plain loratadine uses list runny nose, sneezing, itchy eyes and itching of the nose or throat without congestion; congestion appears only alongside decongestant claims (nasal swelling, sinus pressure, common cold, freer breathing) that belong to a decongestant partner ingredient."
+  },
+  {
+    "id": "g068",
+    "verdict": "FP2_symptom_swap",
+    "quote": "For the relief of symptoms of depression. Endogenous depression is more likely to be alleviated than are other depressive states.",
+    "note": "Amitriptyline's own indication is depression, with agitation listed only as a depressive symptom 'likely to respond'; on the combination labels the text itself assigns the anxiety/agitation component to the tranquilizer partner, and agitation otherwise appears only as a warning, so the edge names a symptom of the indicated disease rather than a target in its own right (FP2 preferred over FP6 because the mention is not combination-only)."
+  },
+  {
+    "id": "g205",
+    "verdict": "FP2_symptom_swap",
+    "quote": "indicated for the management of hypoglycemia due to hyperinsulinism associated with the following conditions",
+    "note": "Diazoxide manages hypoglycemia, the manifestation, and the inoperable islet cell adenoma/carcinoma is named only as its underlying cause, mirroring the rubric's 'nasal congestion due to the common cold' pattern; it is not antitumour treatment of the neoplasm."
+  },
+  {
+    "id": "g034",
+    "verdict": "UNSURE",
+    "quote": "Uses For temporary relief of temporary water retention bloat swelling full feeling fatigue minor aches and pains associated with the premenstrual and menstrual periods.",
+    "note": "The supplied union is visibly about other products (salicylic acid acne and wart removers, methyl salicylate rubs, a Choline C-11 PET diagnostic) and the lone 'fatigue' mention is in an unidentified multi-ingredient menstrual OTC product that cannot be attributed to choline, so the text is too fragmentary to decide."
+  }
+]

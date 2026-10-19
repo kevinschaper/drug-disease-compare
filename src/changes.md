@@ -267,21 +267,38 @@ const mc = audit.change.medic.by_type_pts;
 
 **Precision: unchanged overall, but the kinds of error moved.**
 
-- **Better — negated indications are nearly gone** (${pts(mc.FP5_negation)}). The old
-  export asserted pairs the label explicitly rules out ("not indicated for…"); the redesign's
-  negation handling has largely fixed this.
+- **Better — negated indications are gone** (${pts(mc.FP5_negation)}). The old export
+  asserted pairs the label explicitly rules out ("not indicated for…"); the redesign's
+  negation screen has fixed this (none in the latest sample).
+- **Worse — population mistaken for the treated disease** (${pts(mc.FP1_setting)}), now
+  the largest error type: "reduce the risk of MI *in patients with* coronary heart disease" →
+  CHD; eplerenone → acute MI; basiliximab → kidney transplantation.
 - **New problem — combination products** (${pts(mc.FP6_coingredient)}). The redesign credits
   each ingredient of a fixed-dose combination with the whole product's indications
-  (atorvastatin → hypertension via amlodipine/atorvastatin).
-- **Worse — population mistaken for the treated disease** (${pts(mc.FP1_setting)}): e.g.
-  "reduce the risk of MI *in patients with* coronary heart disease" → CHD.
+  (cetirizine → nasal congestion via decongestant combinations; esomeprazole → osteoarthritis
+  via naproxen/esomeprazole).
 - "Not in label" mappings moved ${pts(mc.FP7_notintext)} — not a significant change.
+
+```js
+const mb = audit.change_vs_build.medic;
+```
+
+**The 2026-10-13 rebuild vs the 2026-10-01 build it replaced** (negation-scoping fix,
+verbatim re-extraction; 300 fresh edges judged with the same protocol): ${pts(mb.fp_rate_pts)} overall —
+no change. By type, setting-as-target ${pts(mb.by_type_pts.FP1_setting)}, co-ingredient
+${pts(mb.by_type_pts.FP6_coingredient)}, not-in-label ${pts(mb.by_type_pts.FP7_notintext)}; nothing significant.
+Of the 76 errors found in the 2026-10-01 sample, 56 are still asserted by the rebuild (of
+221 correct pairs, 184 are) — the re-extraction churned pairs without preferentially removing
+wrong ones.
 
 **Volume:** at the measured precision, the redesign carries roughly
 **${fmt(mv.new)}** correct indication pairs vs **${fmt(mv.old)}** before — a smaller set at the
-same precision. What improved most is structure and provenance: contraindications, a fourth
-regulator, the authority and verbatim label text on every edge, and a reliability tier that
-tracks error (see the [error taxonomy](./error-taxonomy)).
+same precision; 112 of the 222 audited-correct medic-ingest pairs are no longer asserted
+(lisdexamfetamine → ADHD, bexarotene → cutaneous T-cell lymphoma, doxorubicin → bone
+sarcoma…). What improved most is structure and provenance: contraindications, a fourth
+regulator, and the authority and verbatim label text on every edge. The reliability tier
+does not track the errors measured here (see the [error taxonomy](./error-taxonomy)); for
+which subset is loadable anyway, see [what to load](./load).
 
 ## DAKP — ${ch.sources.dakp.versions.old} → ${ch.sources.dakp.versions.new}
 

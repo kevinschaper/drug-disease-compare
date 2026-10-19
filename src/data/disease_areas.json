@@ -2,219 +2,219 @@
   {
     "area": "(non-MONDO disease)",
     "label": "(non-MONDO disease)",
-    "shared": 472,
-    "diseases": 3602,
-    "medic": 2256,
+    "shared": 446,
+    "diseases": 3506,
+    "medic": 2083,
     "dakp": 35440,
     "dismech": 5,
-    "jaccard": 0.0125
+    "jaccard": 0.0119
   },
   {
     "area": "MONDO:0045024",
     "label": "cancer or benign tumor",
-    "shared": 784,
-    "diseases": 788,
-    "medic": 987,
+    "shared": 844,
+    "diseases": 783,
+    "medic": 1122,
     "dakp": 15839,
     "dismech": 785,
-    "jaccard": 0.0445
+    "jaccard": 0.0476
   },
   {
     "area": "MONDO:0005071",
     "label": "nervous system disorder",
-    "shared": 590,
+    "shared": 630,
     "diseases": 838,
-    "medic": 755,
+    "medic": 848,
     "dakp": 10720,
     "dismech": 1004,
-    "jaccard": 0.0473
+    "jaccard": 0.0501
   },
   {
     "area": "MONDO:0021166",
     "label": "inflammatory disease",
-    "shared": 607,
-    "diseases": 469,
-    "medic": 1073,
+    "shared": 636,
+    "diseases": 467,
+    "medic": 1179,
     "dakp": 10872,
     "dismech": 358,
-    "jaccard": 0.0493
+    "jaccard": 0.0513
   },
   {
     "area": "MONDO:0005046",
     "label": "immune system disorder",
-    "shared": 620,
-    "diseases": 430,
-    "medic": 809,
+    "shared": 634,
+    "diseases": 429,
+    "medic": 863,
     "dakp": 9194,
     "dismech": 628,
-    "jaccard": 0.0583
+    "jaccard": 0.0593
   },
   {
     "area": "MONDO:0003847",
     "label": "hereditary disease",
-    "shared": 548,
-    "diseases": 1221,
-    "medic": 674,
+    "shared": 566,
+    "diseases": 1220,
+    "medic": 715,
     "dakp": 5871,
     "dismech": 2025,
-    "jaccard": 0.0639
+    "jaccard": 0.0657
   },
   {
     "area": "MONDO:0005570",
     "label": "hematologic disorder",
-    "shared": 411,
-    "diseases": 348,
-    "medic": 556,
+    "shared": 425,
+    "diseases": 349,
+    "medic": 607,
     "dakp": 7239,
     "dismech": 414,
-    "jaccard": 0.0501
+    "jaccard": 0.0515
   },
   {
     "area": "MONDO:0004995",
     "label": "cardiovascular disorder",
-    "shared": 486,
-    "diseases": 395,
-    "medic": 702,
+    "shared": 534,
+    "diseases": 396,
+    "medic": 802,
     "dakp": 7008,
     "dismech": 422,
-    "jaccard": 0.0598
+    "jaccard": 0.0649
   },
   {
     "area": "MONDO:0005550",
     "label": "infectious disease",
-    "shared": 296,
+    "shared": 325,
     "diseases": 414,
-    "medic": 620,
+    "medic": 680,
     "dakp": 6333,
     "dismech": 271,
-    "jaccard": 0.041
+    "jaccard": 0.0446
   },
   {
     "area": "MONDO:0004335",
     "label": "digestive system disorder",
-    "shared": 295,
-    "diseases": 307,
-    "medic": 532,
+    "shared": 325,
+    "diseases": 308,
+    "medic": 678,
     "dakp": 6149,
     "dismech": 247,
-    "jaccard": 0.0426
+    "jaccard": 0.0459
   },
   {
     "area": "MONDO:0002081",
     "label": "musculoskeletal system disorder",
-    "shared": 329,
-    "diseases": 358,
-    "medic": 430,
+    "shared": 345,
+    "diseases": 359,
+    "medic": 451,
     "dakp": 5565,
     "dismech": 442,
-    "jaccard": 0.0511
+    "jaccard": 0.0534
   },
   {
     "area": "MONDO:0005087",
     "label": "respiratory system disorder",
-    "shared": 249,
-    "diseases": 198,
-    "medic": 467,
+    "shared": 265,
+    "diseases": 196,
+    "medic": 513,
     "dakp": 5614,
     "dismech": 120,
-    "jaccard": 0.0402
+    "jaccard": 0.0424
   },
   {
     "area": "MONDO:0005151",
     "label": "endocrine system disorder",
-    "shared": 262,
-    "diseases": 367,
-    "medic": 441,
+    "shared": 291,
+    "diseases": 370,
+    "medic": 528,
     "dakp": 4424,
     "dismech": 382,
-    "jaccard": 0.0499
+    "jaccard": 0.0546
   },
   {
     "area": "MONDO:0002051",
     "label": "integumentary system disorder",
-    "shared": 243,
-    "diseases": 289,
-    "medic": 354,
+    "shared": 253,
+    "diseases": 287,
+    "medic": 380,
     "dakp": 4165,
     "dismech": 270,
-    "jaccard": 0.0507
+    "jaccard": 0.0525
   },
   {
     "area": "MONDO:0003900",
     "label": "connective tissue disorder",
-    "shared": 287,
+    "shared": 281,
     "diseases": 165,
-    "medic": 314,
+    "medic": 307,
     "dakp": 3853,
     "dismech": 246,
-    "jaccard": 0.065
+    "jaccard": 0.0638
   },
   {
     "area": "MONDO:0002025",
     "label": "psychiatric disorder",
-    "shared": 180,
-    "diseases": 133,
-    "medic": 264,
+    "shared": 189,
+    "diseases": 131,
+    "medic": 311,
     "dakp": 3950,
     "dismech": 122,
-    "jaccard": 0.0415
+    "jaccard": 0.0431
   },
   {
     "area": "MONDO:0002254",
     "label": "syndromic disease",
-    "shared": 259,
-    "diseases": 388,
-    "medic": 265,
+    "shared": 262,
+    "diseases": 390,
+    "medic": 271,
     "dakp": 3268,
     "dismech": 648,
-    "jaccard": 0.0619
+    "jaccard": 0.0626
   },
   {
     "area": "MONDO:0005066",
     "label": "metabolic disease",
-    "shared": 244,
-    "diseases": 455,
-    "medic": 371,
+    "shared": 275,
+    "diseases": 457,
+    "medic": 464,
     "dakp": 2227,
     "dismech": 698,
-    "jaccard": 0.074
+    "jaccard": 0.0811
   },
   {
     "area": "MONDO:0005039",
     "label": "reproductive system disorder",
-    "shared": 172,
-    "diseases": 255,
-    "medic": 343,
+    "shared": 191,
+    "diseases": 254,
+    "medic": 374,
     "dakp": 2515,
     "dismech": 210,
-    "jaccard": 0.0561
+    "jaccard": 0.0616
   },
   {
     "area": "MONDO:0002118",
     "label": "urinary system disorder",
-    "shared": 129,
-    "diseases": 134,
-    "medic": 222,
+    "shared": 141,
+    "diseases": 135,
+    "medic": 277,
     "dakp": 2527,
     "dismech": 105,
-    "jaccard": 0.0452
+    "jaccard": 0.0485
   },
   {
     "area": "MONDO:0024458",
     "label": "disorder of visual system",
-    "shared": 150,
-    "diseases": 227,
-    "medic": 241,
+    "shared": 151,
+    "diseases": 230,
+    "medic": 257,
     "dakp": 2113,
     "dismech": 161,
-    "jaccard": 0.0596
+    "jaccard": 0.0597
   },
   {
     "area": "MONDO:0002022",
     "label": "disorder of orbital region",
-    "shared": 150,
-    "diseases": 215,
-    "medic": 241,
+    "shared": 151,
+    "diseases": 218,
+    "medic": 257,
     "dakp": 1941,
     "dismech": 153,
     "jaccard": 0.0642
@@ -222,89 +222,89 @@
   {
     "area": "MONDO:0021147",
     "label": "disorder of development or morphogenesis",
-    "shared": 109,
-    "diseases": 317,
-    "medic": 127,
+    "shared": 122,
+    "diseases": 319,
+    "medic": 147,
     "dakp": 1132,
     "dismech": 459,
-    "jaccard": 0.0634
+    "jaccard": 0.0702
   },
   {
     "area": "MONDO:0024623",
     "label": "otorhinolaryngologic disease",
-    "shared": 51,
+    "shared": 62,
     "diseases": 59,
-    "medic": 147,
+    "medic": 182,
     "dakp": 1220,
     "dismech": 37,
-    "jaccard": 0.0363
+    "jaccard": 0.0431
   },
   {
     "area": "MONDO:0700007",
     "label": "idiopathic disease",
-    "shared": 83,
-    "diseases": 35,
-    "medic": 97,
+    "shared": 77,
+    "diseases": 34,
+    "medic": 75,
     "dakp": 953,
     "dismech": 70,
-    "jaccard": 0.0741
+    "jaccard": 0.0701
   },
   {
     "area": "MONDO:0002657",
     "label": "breast disorder",
-    "shared": 34,
+    "shared": 44,
     "diseases": 37,
-    "medic": 53,
+    "medic": 73,
     "dakp": 960,
     "dismech": 21,
-    "jaccard": 0.0329
+    "jaccard": 0.0417
   },
   {
     "area": "MONDO:0021669",
     "label": "post-infectious disorder",
     "shared": 41,
     "diseases": 44,
-    "medic": 53,
+    "medic": 54,
     "dakp": 887,
     "dismech": 61,
-    "jaccard": 0.041
+    "jaccard": 0.0409
   },
   {
     "area": "MONDO:0100081",
     "label": "sleep disorder",
     "shared": 35,
-    "diseases": 24,
-    "medic": 58,
+    "diseases": 23,
+    "medic": 95,
     "dakp": 723,
     "dismech": 18,
-    "jaccard": 0.0438
+    "jaccard": 0.0419
   },
   {
     "area": "MONDO:0005137",
     "label": "nutritional disorder",
-    "shared": 26,
-    "diseases": 51,
-    "medic": 71,
+    "shared": 29,
+    "diseases": 53,
+    "medic": 112,
     "dakp": 394,
     "dismech": 64,
-    "jaccard": 0.0491
+    "jaccard": 0.0509
   },
   {
     "area": "MONDO:0700220",
     "label": "disease related to transplantation",
     "shared": 10,
     "diseases": 7,
-    "medic": 16,
+    "medic": 19,
     "dakp": 369,
     "dismech": 0,
-    "jaccard": 0.026
+    "jaccard": 0.0258
   },
   {
     "area": "MONDO:0006858",
     "label": "mouth disorder",
     "shared": 5,
     "diseases": 36,
-    "medic": 15,
+    "medic": 17,
     "dakp": 326,
     "dismech": 15,
     "jaccard": 0.014
@@ -312,12 +312,12 @@
   {
     "area": "MONDO:0700003",
     "label": "obstetric disorder",
-    "shared": 12,
+    "shared": 13,
     "diseases": 26,
-    "medic": 13,
+    "medic": 15,
     "dakp": 176,
     "dismech": 39,
-    "jaccard": 0.0526
+    "jaccard": 0.0565
   },
   {
     "area": "MONDO:0021179",
@@ -333,18 +333,18 @@
     "area": "MONDO:0043839",
     "label": "ulcer disease",
     "shared": 15,
-    "diseases": 6,
-    "medic": 49,
+    "diseases": 8,
+    "medic": 56,
     "dakp": 135,
     "dismech": 0,
-    "jaccard": 0.0815
+    "jaccard": 0.0785
   },
   {
     "area": "(unclassified)",
     "label": "(unclassified)",
     "shared": 0,
-    "diseases": 27,
-    "medic": 28,
+    "diseases": 30,
+    "medic": 27,
     "dakp": 135,
     "dismech": 13,
     "jaccard": 0.0
@@ -352,22 +352,22 @@
   {
     "area": "MONDO:0002409",
     "label": "auditory system disorder",
-    "shared": 7,
+    "shared": 9,
     "diseases": 23,
-    "medic": 19,
+    "medic": 21,
     "dakp": 124,
     "dismech": 21,
-    "jaccard": 0.0427
+    "jaccard": 0.0542
   },
   {
     "area": "MONDO:0044970",
     "label": "mitochondrial disease",
     "shared": 5,
-    "diseases": 63,
-    "medic": 4,
+    "diseases": 62,
+    "medic": 3,
     "dakp": 23,
     "dismech": 128,
-    "jaccard": 0.0323
+    "jaccard": 0.0325
   },
   {
     "area": "MONDO:0019303",
@@ -382,12 +382,12 @@
   {
     "area": "MONDO:0029000",
     "label": "poisoning",
-    "shared": 5,
-    "diseases": 33,
-    "medic": 10,
+    "shared": 6,
+    "diseases": 34,
+    "medic": 15,
     "dakp": 5,
     "dismech": 81,
-    "jaccard": 0.0521
+    "jaccard": 0.0594
   },
   {
     "area": "MONDO:0005574",
@@ -442,22 +442,22 @@
   {
     "area": "MONDO:0021060",
     "label": "RASopathy",
-    "shared": 1,
+    "shared": 2,
     "diseases": 5,
-    "medic": 3,
+    "medic": 4,
     "dakp": 7,
     "dismech": 7,
-    "jaccard": 0.0588
+    "jaccard": 0.1111
   },
   {
     "area": "MONDO:0043459",
     "label": "radiation-induced disorder",
     "shared": 1,
-    "diseases": 4,
-    "medic": 1,
+    "diseases": 5,
+    "medic": 2,
     "dakp": 13,
     "dismech": 3,
-    "jaccard": 0.0588
+    "jaccard": 0.0556
   },
   {
     "area": "MONDO:0005308",

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "g248",
+    "verdict": "TARGET",
+    "quote": "indicated for the first-line treatment of adult patients with locally advanced or metastatic non small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) activating mutations",
+    "note": "EMA names NSCLC itself as the treated disease; the EGFR-mutant/advanced qualifiers make the label narrower than the edge, not a different target, so this is not over-broad."
+  },
+  {
+    "id": "g203",
+    "verdict": "TARGET",
+    "quote": "It has also been found useful in the treatment of acute non-lymphocytic leukemia and the blast phase of chronic myelocytic leukemia.",
+    "note": "Blast phase of chronic myelocytic leukemia is a phase/subtype of CML and is listed in the indications section as something cytarabine treats; the hedged 'found useful' wording is still an indication statement."
+  },
+  {
+    "id": "g132",
+    "verdict": "TARGET",
+    "quote": "Metoprolol tartrate tablets are indicated in the treatment of hemodynamically stable patients with definite or suspected acute myocardial infarction to reduce cardiovascular mortality",
+    "note": "MI is not merely the population: the label says 'in the treatment of ... acute myocardial infarction', so metoprolol is a treatment of MI (to reduce mortality), not a risk-reduction in an MI background."
+  },
+  {
+    "id": "g258",
+    "verdict": "TARGET",
+    "quote": "Mild, uncomplicated allergic skin manifestations of urticaria and angioedema.",
+    "note": "Angioedema is named directly in the indication list as a treated condition (qualified as mild/uncomplicated allergic), which is a narrower form, not a setting."
+  },
+  {
+    "id": "g293",
+    "verdict": "TARGET",
+    "quote": "Uses relieves symptoms of diarrhea plus bloating, pressure and cramps, commonly referred to as gas",
+    "note": "Bloating is a standard synonym of abdominal distention and one OTC indication claims relief of it; adversarial caveats: the same labels list abdominal distention as a reason to discontinue, and the gas-relief claim comes from a single multi-symptom label whose ingredients the text does not identify."
+  },
+  {
+    "id": "g057",
+    "verdict": "FP1_setting",
+    "quote": "Bowel rest is needed because of gastrointestinal surgery or its complications such as ileus, fistulae or anastomotic leaks",
+    "note": "Anastomotic leak appears only as a circumstance under which parenteral nutrition is appropriate; the amino acid product supplies nutrition and does not treat the leak (and the text is combination-only parenteral nutrition)."
+  },
+  {
+    "id": "g212",
+    "verdict": "TARGET",
+    "quote": "indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid responsive dermatoses in patients 12 years of age or older",
+    "note": "Atopic dermatitis is a specific member of the indicated class 'corticosteroid-responsive dermatoses', and the label's own warnings describe use in adult and pediatric atopic dermatitis patients, so the subtype rule applies rather than FP3."
+  },
+  {
+    "id": "g152",
+    "verdict": "FP6_coingredient",
+    "quote": "The naproxen component of naproxen and esomeprazole magnesium delayed-release tablet is indicated for relief of signs and symptoms of: osteoarthritis, rheumatoid arthritis and ankylosing spondylitis",
+    "note": "Osteoarthritis appears only on the naproxen/esomeprazole combination label and is explicitly attributed to the naproxen component; esomeprazole's component is indicated only to reduce naproxen-associated gastric ulcers."
+  },
+  {
+    "id": "g194",
+    "verdict": "FP2_symptom_swap",
+    "quote": "Shortens duration and reduces severity of symptoms associated with the common cold and throat, nasal, bronchial irritations: cough, headache, hoarseness, sore throat",
+    "note": "The labels claim relief of 'sore throat' only as a symptom of the common cold or throat irritation, not treatment of pharyngitis as a disease, and these are multi-ingredient OTC/homeopathic products whose claims cannot be attributed to silicon dioxide."
+  },
+  {
+    "id": "g167",
+    "verdict": "TARGET",
+    "quote": "KYMRIAH is indicated for treatment of adult patients with relapsed or refractory (r/r) follicular lymphoma (FL) after two or more lines of systemic therapy.",
+    "note": "Follicular lymphoma is named directly as the treated disease in both FDA and EMA text; the relapsed/refractory qualifier only narrows it."
+  },
+  {
+    "id": "g102",
+    "verdict": "TARGET",
+    "quote": "Vardenafil hydrochloride tablets are indicated for the treatment of erectile dysfunction.",
+    "note": "Erectile dysfunction is the stated treatment target on every label and in the EMA text."
+  },
+  {
+    "id": "g056",
+    "verdict": "TARGET",
+    "quote": "The reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension.",
+    "note": "OPTN-related open angle glaucoma is a subtype of the indicated open-angle glaucoma, and lowering IOP is the management of glaucoma itself (the label also says 'management of' glaucoma), so glaucoma is not a mere setting."
+  },
+  {
+    "id": "g143",
+    "verdict": "TARGET",
+    "quote": "As adjunctive therapy for short-term administration (to tide the patient over an acute episode or exacerbation) in acute gouty arthritis; acute rheumatic carditis; ankylosing spondylitis",
+    "note": "Ankylosing spondylitis is a named item in the rheumatic-disorder indication list; adjunctive short-term use still counts as an indication."
+  },
+  {
+    "id": "g285",
+    "verdict": "TARGET",
+    "quote": "allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis, drug hypersensitivity reactions, serum sickness, transfusion reactions.",
+    "note": "Transfusion reactions are listed as one of the allergic conditions the drug controls, i.e. a treated condition rather than a background."
+  },
+  {
+    "id": "g225",
+    "verdict": "TARGET",
+    "quote": "Clobazam tablets are indicated for the adjunctive treatment of seizures associated with Lennox-Gastaut syndrome (LGS) in patients 2 years of age or older.",
+    "note": "Seizures are the defining manifestation of LGS, so adjunctive treatment of LGS seizures is management of the syndrome itself (same logic as pain of osteoarthritis -> osteoarthritis), not a symptom swap."
+  },
+  {
+    "id": "g191",
+    "verdict": "TARGET",
+    "quote": "Infections caused by Clostridium species.",
+    "note": "The indication text lists infections caused by Clostridium species as a treated infection; the C. difficile diarrhea mentions in the warnings are separate adverse-reaction text and do not override the explicit indication."
+  },
+  {
+    "id": "g198",
+    "verdict": "FP1_setting",
+    "quote": "Dabigatran etexilate capsules are indicated to reduce the risk of stroke and systemic embolism in adult patients with non-valvular atrial fibrillation.",
+    "note": "Atrial fibrillation is only the population in which the drug is given; what it prevents is stroke and systemic embolism, exactly the rubric's 'reduce the risk of X in patients with Y' pattern."
+  },
+  {
+    "id": "g042",
+    "verdict": "TARGET",
+    "quote": "In adult patients with clinically evident coronary heart disease, atorvastatin is indicated to: Reduce the risk of non-fatal myocardial infarction Reduce the risk of fatal and non-fatal stroke",
+    "note": "Stroke is the event the drug is indicated to prevent on atorvastatin's own single-ingredient labels, and prevention counts; the hemorrhagic stroke warning does not negate the indication."
+  },
+  {
+    "id": "g013",
+    "verdict": "TARGET",
+    "quote": "allergic conditions intractable to adequate trials of conventional treatment in adult and pediatric populations with: seasonal or perennial allergic rhinitis; asthma; contact dermatitis",
+    "note": "Contact dermatitis is named directly under both Allergic States and Dermatologic Diseases as a condition prednisolone treats."
+  },
+  {
+    "id": "g032",
+    "verdict": "TARGET",
+    "quote": "indicated for the reduction of elevated intraocular pressure (IOP) in patients with open-angle glaucoma or ocular hypertension",
+    "note": "Ocular hypertension is elevated IOP, so reducing elevated IOP in patients with ocular hypertension is treatment of the named condition itself, not a background."
+  },
+  {
+    "id": "g036",
+    "verdict": "TARGET",
+    "quote": "ankylosing spondylitis; acute and subacute bursitis; acute nonspecific tenosynovitis; acute gouty arthritis; epicondylitis.",
+    "note": "Acute and subacute bursitis are listed subtypes of bursitis in the rheumatic-disorder indications; adjunctive short-term use still counts."
+  },
+  {
+    "id": "g294",
+    "verdict": "TARGET",
+    "quote": "May also be useful as adjunctive therapy in the treatment of duodenal ulcer.",
+    "note": "Duodenal ulcer is listed as an adjunctive treatment target for the anticholinergic/antispasmodic (atropine's own class); the appended DESI caveat that healing has not been shown conclusively hedges efficacy but does not state the drug is not indicated, so FP5 does not fit."
+  },
+  {
+    "id": "g134",
+    "verdict": "TARGET",
+    "quote": "Replacement of endogenous growth hormone in adults with growth hormone deficiency (GHD).",
+    "note": "Reduced circulating growth hormone is growth hormone deficiency, and GH replacement directly corrects that deficiency (the pediatric indication likewise targets inadequate GH secretion), so it is the treated condition, not just a setting."
+  },
+  {
+    "id": "g227",
+    "verdict": "TARGET",
+    "quote": "Inductos is indicated for the treatment of acute tibia fractures in adults, as an adjunct to standard care using open fracture reduction and intramedullary unreamed nail fixation.",
+    "note": "Tibia fracture is named directly as the treated condition in the EMA indication; adjunct-to-surgery use still counts."
+  },
+  {
+    "id": "g292",
+    "verdict": "FP1_setting",
+    "quote": "Bowel rest is needed because of gastrointestinal surgery or its complications such as ileus, fistulae or anastomotic leaks",
+    "note": "Ileus appears only as a reason the enteral route is unavailable and parenteral nutrition is appropriate; the amino acid product does not treat the ileus (combination-only parenteral nutrition text)."
+  },
+  {
+    "id": "g157",
+    "verdict": "TARGET",
+    "quote": "Ciprofloxacin tablets are indicated in adult patients for treatment of lower respiratory tract infections caused by Escherichia coli, Klebsiella pneumoniae",
+    "note": "Recurrent lower respiratory tract infection is a narrower form of the indicated 'lower respiratory tract infections' (the label also lists acute exacerbation of chronic bronchitis), so the subtype rule gives TARGET."
+  },
+  {
+    "id": "g213",
+    "verdict": "FP1_setting",
+    "quote": "indicated for the prophylaxis of acute organ rejection in patients receiving renal transplantation",
+    "note": "Kidney transplantation is the procedure/population in which basiliximab is used; the thing prevented is acute organ rejection, so the edge names the setting rather than the target."
+  },
+  {
+    "id": "g129",
+    "verdict": "FP1_setting",
+    "quote": "imaging of ? amyloid neuritic plaque density in the brains of adult patients with cognitive impairment who are being evaluated for Alzheimer’s disease (AD)",
+    "note": "Flutemetamol is a diagnostic imaging agent ('for diagnostic use only') used in patients being evaluated for Alzheimer disease; the rubric treats diagnostic agents for a disease as setting, not treatment."
+  },
+  {
+    "id": "g048",
+    "verdict": "TARGET",
+    "quote": "QULIPTA is indicated for the preventive treatment of migraine in adults.",
+    "note": "Migraine is named directly as the condition prevented/treated in both FDA and EMA text."
+  },
+  {
+    "id": "g045",
+    "verdict": "FP1_setting",
+    "quote": "In women with DCIS, following breast surgery and radiation, tamoxifen citrate tablets are indicated to reduce the risk of invasive breast cancer",
+    "note": "DCIS is the population ('in women with DCIS, following breast surgery and radiation') and the stated aim is risk reduction of invasive breast cancer; the contraindication text's 'after treatment of DCIS' confirms the label frames DCIS as already treated, so the edge names the setting (an alternative reading of adjuvant DCIS therapy as TARGET was considered)."
+  },
+  {
+    "id": "g181",
+    "verdict": "TARGET",
+    "quote": "Prophylaxis of transplant rejection in adult and paediatric, kidney, liver or heart allograft recipients. Treatment of allograft rejection resistant to treatment",
+    "note": "EMA text names transplant rejection as both the condition prevented and the condition treated."
+  },
+  {
+    "id": "g063",
+    "verdict": "TARGET",
+    "quote": "indicated for the treatment of anemia without previous erythropoiesis stimulating agent use (ESA-naïve) in adult patients with very low- to intermediate-risk myelodysplastic syndromes (MDS)",
+    "note": "The drug treats the anemia of MDS, the defining manifestation of low-risk MDS (label heading 'Myelodysplastic Syndromes Associated Anemia'; EMA 'anaemia due to ... MDS'), which the rubric treats as managing the disease, as with pain of osteoarthritis; the FP1/FP2 reading was considered."
+  },
+  {
+    "id": "g004",
+    "verdict": "TARGET",
+    "quote": "treatment of adult patients with aggressive systemic mastocytosis (ASM), systemic mastocytosis with an associated haematological neoplasm (SM-AHN) or mast cell leukaemia (MCL)",
+    "note": "Systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease is the older name for SM-AHN, which the EMA indication names directly."
+  },
+  {
+    "id": "g206",
+    "verdict": "TARGET",
+    "quote": "adjunctive therapy of refractory generalized tonic-clonic seizures in patients with severe myoclonic epilepsy in infancy (SMEI, Dravet's syndrome)",
+    "note": "Generalized tonic-clonic seizures (bilateral tonic-clonic seizures in current terminology) are the thing treated; Dravet syndrome is the setting but the edge names the seizures, not the syndrome."
+  },
+  {
+    "id": "g192",
+    "verdict": "FP1_setting",
+    "quote": "Bowel rest is needed because of gastrointestinal surgery or its complications such as ileus, fistulae or anastomotic leaks",
+    "note": "Anastomotic leak is only a circumstance in which parenteral nutrition is appropriate; the amino acid product does not treat the leak (combination-only parenteral nutrition text)."
+  },
+  {
+    "id": "g183",
+    "verdict": "FP1_setting",
+    "quote": "Captopril tablets, USP are indicated for the treatment of diabetic nephropathy (proteinuria ˃500 mg/day) in patients with type I insulin-dependent diabetes mellitus and retinopathy.",
+    "note": "Type 1 diabetes is the population; the condition treated is diabetic nephropathy, so the edge names the background disease rather than the target."
+  },
+  {
+    "id": "g219",
+    "verdict": "TARGET",
+    "quote": "LIBTAYO in combination with platinum‐based chemotherapy is indicated for the first‐line treatment of adult patients with non-small cell lung cancer (NSCLC) with no EGFR, ALK or ROS1 aberrations",
+    "note": "NSCLC is named directly as the treated disease (FDA and EMA); the biomarker and stage qualifiers only narrow it."
+  },
+  {
+    "id": "g221",
+    "verdict": "TARGET",
+    "quote": "Moderate to severe osteoarthritis",
+    "note": "Osteoarthritis is listed directly as an indicated condition on multiple indomethacin labels; the moderate-to-severe qualifier narrows rather than changes the target."
+  }
+]

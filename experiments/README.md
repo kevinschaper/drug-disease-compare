@@ -3,11 +3,12 @@
 Two rounds, each measuring how often an asserted drug→disease *indication* edge is **not** a
 genuine treatment target according to regulator text.
 
-- **v2 (current, 2026-10-02)** — latest releases (MeDIC redesign, DAKP 1.16.0), both
-  **evaluated as in-progress work**, so these rates are a snapshot to inform the next
-  iteration, not a final verdict on either source; FDA + EMA
-  evidence; two Claude reviewers + tie-breaker as a Jev-free reference; Jev (TypeSafe System
-  One) validated against it and run over the full population. Below.
+- **v2 (current; rounds 1–2 on 2026-10-02, round 3 on 2026-10-13)** — latest releases (MeDIC
+  redesign local builds of 2026-10-01 and 2026-10-13, DAKP 1.16.0), both **evaluated as
+  in-progress work**, so these rates are a snapshot to inform the next iteration, not a final
+  verdict on either source; FDA + EMA evidence; two Claude reviewers + tie-breaker as a
+  Jev-free reference; Jev (TypeSafe System One) validated against it and run over the full
+  population. Below.
 - **v1 (2026-06-23)** — previous releases; FDA only. Kept further down for comparison.
 
 ## v2 pipeline
@@ -16,12 +17,15 @@ genuine treatment target according to regulator text.
 |---|---|---|
 | 1. index regulator text | `label_index.py` (openFDA bulk export + EMA medicines report, homeopathic labels dropped) | `data/inputs/labels/*_index.json.gz` |
 | 1b. moieties for label UNIIs | `label_moieties.py` (GSRS, cached in `data/drug_groups_cache.json`) | — |
-| 2. evidence + sample | `audit_sample.py --n 300` (latest; seed 20261002, two-stage so it extends the first 150) and `--release old` (previous releases, built from their source files) | `sample.jsonl`, `sample_old.jsonl`, `population*.jsonl`, `evidence*.json.gz` |
-| 3. reviewer A, reviewer B (adversarial) | round 1: 16 blind Claude subagents (first 150 latest/source; `blind_key.json`); round 2: 40 more over the other 900 edges, latest and previous shuffled together (`blind_key_2.json`) | `claude_{a,b}_*.json`, `claude2_{a,b}_*.json` |
-| 4. tie-break A≠B | 1 + 2 Claude subagents | `tiebreak_0.json`, `tiebreak2_*.json` |
-| 5. co-ingredient check | 2 + 4 Claude subagents, every TARGET whose evidence included combination labels, single vs combination text separated | `combo_check_*.json`, `combo2_check_*.json` |
+| 2. evidence + sample | `audit_sample.py --n 300` (latest; seed 20261002, two-stage so it extends the first 150; `--keep dakp-approved` re-draws only MEDIC when DAKP didn't change) and `--release old` (previous releases, built from their source files) | `sample.jsonl`, `sample_old.jsonl`, `sample_b1001.jsonl` (the 2026-10-01 MEDIC build, archived under sid prefix `b1001:`), `population*.jsonl`, `evidence*.json.gz` |
+| 2b. blind + batch | `audit_batches.py prepare/tiebreak/combo --round N` (deterministic; reviewer instructions in `audit_reviewer_instructions.md`) | `blind_key*.json`, `batch<N>_{a,b}_*.json`, `tiebreak<N>_input_*.json`, `combo<N>_input_*.json` |
+| 3. reviewer A, reviewer B (adversarial) | round 1: 16 blind Claude subagents (first 150 latest/source; `blind_key.json`); round 2: 40 more over the other 900 edges, latest and previous shuffled together (`blind_key_2.json`); round 3: 16 over a fresh 300-edge sample of the 2026-10-13 MEDIC rebuild (`blind_key_3.json`) | `claude_{a,b}_*.json`, `claude2_{a,b}_*.json`, `claude3_{a,b}_*.json` |
+| 4. tie-break A≠B | 1 + 2 + 1 Claude subagents | `tiebreak_0.json`, `tiebreak2_*.json`, `tiebreak3_0.json` |
+| 5. co-ingredient check | 2 + 4 + 2 Claude subagents, every TARGET whose evidence included combination labels, single vs combination text separated | `combo_check_*.json`, `combo2_check_*.json`, `combo3_check_*.json` |
 | 6. Jev | `audit_jev.py --sample` / `--population` (`jev-1.13.0`, needs `TYPESAFE_API_KEY`) | `jev_sample.jsonl`, `jev_population.jsonl` |
-| 7. report | `audit_report.py` (deterministic): latest rates, like-for-like previous rates and the change, Jev validation on all reference edges | `audit_results.json`, `src/data/fp_audit.json`, `src/data/label_check.parquet` |
+| 7. report | `audit_report.py` (deterministic): latest rates, like-for-like previous-release and previous-build rates and the changes, Jev validation on all reference edges | `audit_results.json`, `src/data/fp_audit.json`, `src/data/label_check.parquet` |
+| 8b. issue worklists | `medic_issue_worklists.py` (export-derived) + the load-tier / audit tables | `medic_issues/*.tsv` (linked from the issues drafted for the medic repo) |
+| 8. load tiers | `audit_tiers.py` (deterministic): per-pair MEDIC features + cross-source membership + label check, scored against the reference | `tiers.json`, `medic_load_tiers.tsv`, `src/data/tiers.json`, `src/data/medic_tiers.parquet` |
 
 Run steps 1–2 and 6–7 with `PYTHONPATH=pipeline:. uv run [--with openpyxl|typesafe-sdk] python -m experiments.<script>`.
 
@@ -37,31 +41,46 @@ tie-breaker; co-ingredient overrides applied to TARGETs. Jev is scored against i
 accepted for stand-alone use only if binary agreement is within 5 pts of the A↔B ceiling and
 κ ≥ 0.6. Otherwise only its confidence ≥ 0.9 verdicts are used.
 
-### v2 results (2026-10-02; 300 edges per source per release)
+### v2 results (round 3, 2026-10-13; 300 edges per source per release/build)
 
-| source | previous release | latest release | change (95% CI) |
-|---|---|---|---|
-| MEDIC | 25.8% (n=299) | 25.6% (n=297) | −0.2 pts (−7.1 to +6.8) |
-| DAKP-approved | 35.0% (n=300) | 32.6% (n=298) | −2.4 pts (−10.0 to +5.2) |
+| source | previous release | build 2026-10-01 | latest (2026-10-13) | change vs previous release (95% CI) | change vs 2026-10-01 build |
+|---|---|---|---|---|---|
+| MEDIC | 25.8% (n=299) | 25.6% (n=297) | **25.8%** (n=291) | 0.0 pts (−7.0 to +7.1) | +0.2 pts (−6.8 to +7.2) |
+| DAKP-approved | 35.0% (n=300) | — | 32.6% (n=298) | −2.4 pts (−10.0 to +5.2) | — |
 
-Neither source's precision changed significantly; the *kinds* of error did:
-- **MEDIC** — negated indications nearly eliminated (−5.3 pts, CI −8.6 to −2.5); new
-  co-ingredient attribution errors (+5.1, CI 2.7 to 8.2); more setting-as-target (+4.7, CI 0.6
-  to 9.0).
+Neither source's precision changed; MEDIC's rebuild (negation-scoping fix + verbatim
+re-extraction) did not move it either. The *kinds* of MEDIC error, latest vs medic-ingest:
+- **setting-as-target** is now the largest type at 13.1% of edges (+8.4 pts, CI 3.9 to 13.1);
+- **negated indications** are gone (−6.0 pts, CI −9.3 to −3.4; none in the latest sample);
+- **co-ingredient attribution** is new (+3.8 pts, CI 1.7 to 6.6; 11 edges, all MEDIC's);
+- not-in-label 5.8%, symptom swap 2.1%; nothing else moved significantly.
+Versus the 2026-10-01 build nothing is significant (setting +3.7, CI −1.5 to 8.8; co-ingredient
+−1.3, CI −4.8 to 2.1). 56 of the 76 errors found in the 2026-10-01 sample are still asserted
+by the rebuild (184 of 221 correct pairs are).
 - **DAKP** — "not in label" mappings up (+9.4, CI 4.3 to 14.7), concentrated in the newly used
-  UMLS disease terms (24% of those edges); setting, symptom-swap and over-broad errors each
-  trend down (not individually significant).
+  UMLS disease terms; setting, symptom-swap and over-broad errors each trend down (not
+  individually significant). (Unchanged from round 2; DAKP 1.16.0 was not re-sampled.)
 
-Population (Jev screen corrected by its latest-release PPV/NPV): MEDIC 25.7% (22.3–29.2),
-DAKP-approved 32.2% (27.8–36.6). (The v1 audit, FDA-only and a different protocol, measured
-20.3% / 33.0% on the previous releases; kept for reference.)
+Population (Jev screen corrected by its latest PPV/NPV): MEDIC 27.6% (24.5–30.9) over 5,579
+screened edges, DAKP-approved 32.2% (27.8–36.6).
 
-**Jev** (validated on all 1,194 reference edges): reviewer A↔B binary agreement 96.3% (κ 0.91);
-Jev vs reference 88.3% (κ 0.72) — **does not meet the acceptance bar**. At confidence ≥ 0.9
-(55% of edges) agreement is 97.5%, flag precision 92.2%, target precision 98.7%; those
+**Load tiers** (`audit_tiers.py`, fresh-sample error rate; details on the site's *What to
+load* page): label-confirmed (Jev ≥ 0.9 TARGET, no suspect feature) **2,641 pairs at 0.7%**
+(CI 0.1–3.6, n=152); corroborated but label check inconclusive 824 at 35%; unscreened (no
+FDA/EMA text held, mostly PMDA/CDSCO-only) 1,797, unmeasured; unconfirmed single-source 694 at
+47%; flagged/suspect 1,834 at 68%. MEDIC's HIGH reliability tier is 26.7% wrong, the same as
+the whole; cross-source agreement alone 15% (n=166). By disease class (monarch-kg is
+disease-centric): MONDO rare-disease pairs 2,718 at 18.7% fresh (the cleanest slice), other
+MONDO 2,989 at 29.7%, HP-phenotype targets (OTC symptom relief) 827 at 39.3%, UMLS/other
+1,256 at 23.7%; label-confirmed ∩ MONDO = 2,138 pairs, ∩ rare = 1,286 (449 rare diseases).
+
+**Jev** (validated on all 1,485 reference edges): reviewer A↔B binary agreement 96.3% (κ 0.91);
+Jev vs reference 88.9% (κ 0.73) — **does not meet the acceptance bar**. At confidence ≥ 0.9
+(57% of edges) agreement is 97.7%, flag precision 93.6%, target precision 98.6%; those
 verdicts back the site's "label check" column. Weakest on symptom swaps (50%), over-broad
 parents (70%) and co-ingredient cases (19%). Decomposing into yes/no questions did not help
-(84.1%). Cost: ≈ $2.10 for the full screen plus all gold edges.
+(84.1%). Cost: ≈ $2.10 for the full screen plus all gold edges; the round-3 top-up (300 sample
++ 1,421 new population edges) cost $0.18.
 
 **Round 0** (`round0_narrow_evidence/`): a first reviewer pass on narrower evidence
 (exact-UNII labels only, no combination labels, whole-text truncation) produced visibly more

@@ -1,0 +1,1274 @@
+{
+  "medic_pairs": 7790,
+  "labeled_fresh": 291,
+  "labeled_pooled": 638,
+  "by_axis": {
+    "MONDO rare": {
+      "pairs": 2718,
+      "diseases": 754,
+      "fresh_n": 107,
+      "fresh_fp": [
+        18.7,
+        12.4,
+        27.1
+      ],
+      "pooled_n": 228,
+      "pooled_fp": [
+        12.7,
+        9.0,
+        17.7
+      ]
+    },
+    "MONDO other": {
+      "pairs": 2989,
+      "diseases": 484,
+      "fresh_n": 118,
+      "fresh_fp": [
+        29.7,
+        22.2,
+        38.4
+      ],
+      "pooled_n": 251,
+      "pooled_fp": [
+        28.3,
+        23.1,
+        34.2
+      ]
+    },
+    "HP phenotype": {
+      "pairs": 827,
+      "diseases": 193,
+      "fresh_n": 28,
+      "fresh_fp": [
+        39.3,
+        23.6,
+        57.6
+      ],
+      "pooled_n": 57,
+      "pooled_fp": [
+        29.8,
+        19.5,
+        42.7
+      ]
+    },
+    "UMLS/other": {
+      "pairs": 1256,
+      "diseases": 449,
+      "fresh_n": 38,
+      "fresh_fp": [
+        23.7,
+        13.0,
+        39.2
+      ],
+      "pooled_n": 102,
+      "pooled_fp": [
+        25.5,
+        18.0,
+        34.7
+      ]
+    }
+  },
+  "tier_by_axis": {
+    "T1 label-confirmed": {
+      "MONDO rare": {
+        "pairs": 1286,
+        "pooled_n": 162,
+        "pooled_fp": [
+          1.2,
+          0.3,
+          4.4
+        ]
+      },
+      "MONDO other": {
+        "pairs": 852,
+        "pooled_n": 117,
+        "pooled_fp": [
+          1.7,
+          0.5,
+          6.0
+        ]
+      },
+      "HP phenotype": {
+        "pairs": 150,
+        "pooled_n": 20,
+        "pooled_fp": [
+          0.0,
+          -0.0,
+          16.1
+        ]
+      },
+      "UMLS/other": {
+        "pairs": 353,
+        "pooled_n": 48,
+        "pooled_fp": [
+          0.0,
+          0.0,
+          7.4
+        ]
+      }
+    },
+    "T2 corroborated, label check inconclusive": {
+      "MONDO rare": {
+        "pairs": 234,
+        "pooled_n": 19,
+        "pooled_fp": [
+          21.1,
+          8.5,
+          43.3
+        ]
+      },
+      "MONDO other": {
+        "pairs": 417,
+        "pooled_n": 52,
+        "pooled_fp": [
+          44.2,
+          31.6,
+          57.7
+        ]
+      },
+      "HP phenotype": {
+        "pairs": 104,
+        "pooled_n": 14,
+        "pooled_fp": [
+          21.4,
+          7.6,
+          47.6
+        ]
+      },
+      "UMLS/other": {
+        "pairs": 69,
+        "pooled_n": 7,
+        "pooled_fp": [
+          28.6,
+          8.2,
+          64.1
+        ]
+      }
+    },
+    "T3 unscreened (no FDA/EMA text held)": {
+      "MONDO rare": {
+        "pairs": 646,
+        "pooled_n": 3,
+        "pooled_fp": [
+          33.3,
+          6.1,
+          79.2
+        ]
+      },
+      "MONDO other": {
+        "pairs": 692,
+        "pooled_n": 1,
+        "pooled_fp": [
+          0.0,
+          0.0,
+          79.3
+        ]
+      },
+      "HP phenotype": {
+        "pairs": 178,
+        "pooled_n": 0,
+        "pooled_fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "UMLS/other": {
+        "pairs": 281,
+        "pooled_n": 0,
+        "pooled_fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "T4 unconfirmed single-source": {
+      "MONDO rare": {
+        "pairs": 165,
+        "pooled_n": 18,
+        "pooled_fp": [
+          66.7,
+          43.7,
+          83.7
+        ]
+      },
+      "MONDO other": {
+        "pairs": 273,
+        "pooled_n": 33,
+        "pooled_fp": [
+          42.4,
+          27.2,
+          59.2
+        ]
+      },
+      "HP phenotype": {
+        "pairs": 93,
+        "pooled_n": 7,
+        "pooled_fp": [
+          14.3,
+          2.6,
+          51.3
+        ]
+      },
+      "UMLS/other": {
+        "pairs": 163,
+        "pooled_n": 15,
+        "pooled_fp": [
+          33.3,
+          15.2,
+          58.3
+        ]
+      }
+    },
+    "T5 flagged/suspect": {
+      "MONDO rare": {
+        "pairs": 387,
+        "pooled_n": 26,
+        "pooled_fp": [
+          38.5,
+          22.4,
+          57.5
+        ]
+      },
+      "MONDO other": {
+        "pairs": 755,
+        "pooled_n": 48,
+        "pooled_fp": [
+          66.7,
+          52.5,
+          78.3
+        ]
+      },
+      "HP phenotype": {
+        "pairs": 302,
+        "pooled_n": 16,
+        "pooled_fp": [
+          81.2,
+          57.0,
+          93.4
+        ]
+      },
+      "UMLS/other": {
+        "pairs": 390,
+        "pooled_n": 32,
+        "pooled_fp": [
+          59.4,
+          42.3,
+          74.5
+        ]
+      }
+    }
+  },
+  "t1_rare": {
+    "pairs": 1286,
+    "diseases": 449,
+    "drugs": 634
+  },
+  "rare_diseases_covered": 754,
+  "rules": {
+    "all MEDIC indication pairs": {
+      "pairs": 7790,
+      "share": 100.0,
+      "fresh_n": 291,
+      "fresh_fp": [
+        25.8,
+        21.1,
+        31.1
+      ],
+      "pooled_n": 638,
+      "pooled_fp": [
+        22.4,
+        19.3,
+        25.8
+      ]
+    },
+    "exact in DAKP-approved": {
+      "pairs": 1843,
+      "share": 23.7,
+      "fresh_n": 99,
+      "fresh_fp": [
+        10.1,
+        5.6,
+        17.6
+      ],
+      "pooled_n": 234,
+      "pooled_fp": [
+        10.3,
+        7.0,
+        14.8
+      ]
+    },
+    "exact in DAKP (approved or off-label)": {
+      "pairs": 3315,
+      "share": 42.6,
+      "fresh_n": 153,
+      "fresh_fp": [
+        14.4,
+        9.7,
+        20.8
+      ],
+      "pooled_n": 357,
+      "pooled_fp": [
+        14.0,
+        10.8,
+        18.0
+      ]
+    },
+    "exact in dismech": {
+      "pairs": 298,
+      "share": 3.8,
+      "fresh_n": 12,
+      "fresh_fp": [
+        8.3,
+        1.5,
+        35.4
+      ],
+      "pooled_n": 31,
+      "pooled_fp": [
+        3.2,
+        0.6,
+        16.2
+      ]
+    },
+    "same-moiety agreement with any source": {
+      "pairs": 3912,
+      "share": 50.2,
+      "fresh_n": 166,
+      "fresh_fp": [
+        15.1,
+        10.4,
+        21.3
+      ],
+      "pooled_n": 381,
+      "pooled_fp": [
+        14.4,
+        11.3,
+        18.3
+      ]
+    },
+    "any exact/moiety agreement": {
+      "pairs": 3912,
+      "share": 50.2,
+      "fresh_n": 166,
+      "fresh_fp": [
+        15.1,
+        10.4,
+        21.3
+      ],
+      "pooled_n": 381,
+      "pooled_fp": [
+        14.4,
+        11.3,
+        18.3
+      ]
+    },
+    "any agreement incl. related (<=2 MONDO hops)": {
+      "pairs": 4511,
+      "share": 57.9,
+      "fresh_n": 196,
+      "fresh_fp": [
+        16.8,
+        12.2,
+        22.7
+      ],
+      "pooled_n": 438,
+      "pooled_fp": [
+        15.8,
+        12.6,
+        19.5
+      ]
+    },
+    "no agreement of any kind": {
+      "pairs": 3279,
+      "share": 42.1,
+      "fresh_n": 95,
+      "fresh_fp": [
+        44.2,
+        34.6,
+        54.2
+      ],
+      "pooled_n": 200,
+      "pooled_fp": [
+        37.0,
+        30.6,
+        43.9
+      ]
+    },
+    ">=2 regulators": {
+      "pairs": 1188,
+      "share": 15.3,
+      "fresh_n": 69,
+      "fresh_fp": [
+        7.2,
+        3.1,
+        15.9
+      ],
+      "pooled_n": 147,
+      "pooled_fp": [
+        8.2,
+        4.7,
+        13.7
+      ]
+    },
+    "FDA + EMA both": {
+      "pairs": 781,
+      "share": 10.0,
+      "fresh_n": 50,
+      "fresh_fp": [
+        6.0,
+        2.1,
+        16.2
+      ],
+      "pooled_n": 107,
+      "pooled_fp": [
+        7.5,
+        3.8,
+        14.1
+      ]
+    },
+    "single regulator": {
+      "pairs": 6602,
+      "share": 84.7,
+      "fresh_n": 222,
+      "fresh_fp": [
+        31.5,
+        25.8,
+        37.9
+      ],
+      "pooled_n": 491,
+      "pooled_fp": [
+        26.7,
+        23.0,
+        30.8
+      ]
+    },
+    "reliability HIGH": {
+      "pairs": 7235,
+      "share": 92.9,
+      "fresh_n": 277,
+      "fresh_fp": [
+        26.7,
+        21.8,
+        32.2
+      ],
+      "pooled_n": 613,
+      "pooled_fp": [
+        22.8,
+        19.7,
+        26.3
+      ]
+    },
+    "reliability MEDIUM": {
+      "pairs": 281,
+      "share": 3.6,
+      "fresh_n": 8,
+      "fresh_fp": [
+        12.5,
+        2.2,
+        47.1
+      ],
+      "pooled_n": 12,
+      "pooled_fp": [
+        16.7,
+        4.7,
+        44.8
+      ]
+    },
+    "reliability LOW/EXCLUDED": {
+      "pairs": 274,
+      "share": 3.5,
+      "fresh_n": 6,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        39.0
+      ],
+      "pooled_n": 13,
+      "pooled_fp": [
+        7.7,
+        1.4,
+        33.3
+      ]
+    },
+    "object grounding lexical_exact only": {
+      "pairs": 7208,
+      "share": 92.5,
+      "fresh_n": 260,
+      "fresh_fp": [
+        27.7,
+        22.6,
+        33.4
+      ],
+      "pooled_n": 586,
+      "pooled_fp": [
+        23.5,
+        20.3,
+        27.2
+      ]
+    },
+    "object grounding not lexical_exact": {
+      "pairs": 582,
+      "share": 7.5,
+      "fresh_n": 31,
+      "fresh_fp": [
+        9.7,
+        3.3,
+        24.9
+      ],
+      "pooled_n": 52,
+      "pooled_fp": [
+        9.6,
+        4.2,
+        20.6
+      ]
+    },
+    "MeDIC flags on object/assertion": {
+      "pairs": 488,
+      "share": 6.3,
+      "fresh_n": 17,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        18.4
+      ],
+      "pooled_n": 32,
+      "pooled_fp": [
+        6.2,
+        1.7,
+        20.1
+      ]
+    },
+    "combination-label-only support": {
+      "pairs": 1101,
+      "share": 14.1,
+      "fresh_n": 40,
+      "fresh_fp": [
+        65.0,
+        49.5,
+        77.9
+      ],
+      "pooled_n": 77,
+      "pooled_fp": [
+        58.4,
+        47.3,
+        68.8
+      ]
+    },
+    "any combination-label support": {
+      "pairs": 1351,
+      "share": 17.3,
+      "fresh_n": 55,
+      "fresh_fp": [
+        52.7,
+        39.8,
+        65.3
+      ],
+      "pooled_n": 112,
+      "pooled_fp": [
+        49.1,
+        40.0,
+        58.2
+      ]
+    },
+    "no combination-label support": {
+      "pairs": 6439,
+      "share": 82.7,
+      "fresh_n": 236,
+      "fresh_fp": [
+        19.5,
+        14.9,
+        25.0
+      ],
+      "pooled_n": 526,
+      "pooled_fp": [
+        16.7,
+        13.8,
+        20.2
+      ]
+    },
+    "homeopathic label": {
+      "pairs": 235,
+      "share": 3.0,
+      "fresh_n": 7,
+      "fresh_fp": [
+        100.0,
+        64.6,
+        100.0
+      ],
+      "pooled_n": 7,
+      "pooled_fp": [
+        100.0,
+        64.6,
+        100.0
+      ]
+    },
+    "drug is a counter-ion / electrolyte": {
+      "pairs": 252,
+      "share": 3.2,
+      "fresh_n": 3,
+      "fresh_fp": [
+        66.7,
+        20.8,
+        93.9
+      ],
+      "pooled_n": 5,
+      "pooled_fp": [
+        60.0,
+        23.1,
+        88.2
+      ]
+    },
+    "drug is an active metabolite": {
+      "pairs": 52,
+      "share": 0.7,
+      "fresh_n": 1,
+      "fresh_fp": [
+        100.0,
+        20.7,
+        100.0
+      ],
+      "pooled_n": 3,
+      "pooled_fp": [
+        66.7,
+        20.8,
+        93.9
+      ]
+    },
+    "drug id unknown to Node Normalizer": {
+      "pairs": 1819,
+      "share": 23.4,
+      "fresh_n": 58,
+      "fresh_fp": [
+        15.5,
+        8.4,
+        26.9
+      ],
+      "pooled_n": 126,
+      "pooled_fp": [
+        13.5,
+        8.6,
+        20.5
+      ]
+    },
+    "negation detected by MeDIC": {
+      "pairs": 11,
+      "share": 0.1,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 0,
+      "pooled_fp": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "disease id is MONDO": {
+      "pairs": 5707,
+      "share": 73.3,
+      "fresh_n": 225,
+      "fresh_fp": [
+        24.4,
+        19.3,
+        30.5
+      ],
+      "pooled_n": 479,
+      "pooled_fp": [
+        20.9,
+        17.5,
+        24.7
+      ]
+    },
+    "disease id is HP": {
+      "pairs": 827,
+      "share": 10.6,
+      "fresh_n": 28,
+      "fresh_fp": [
+        39.3,
+        23.6,
+        57.6
+      ],
+      "pooled_n": 57,
+      "pooled_fp": [
+        29.8,
+        19.5,
+        42.7
+      ]
+    },
+    "disease id is UMLS/other": {
+      "pairs": 1256,
+      "share": 16.1,
+      "fresh_n": 38,
+      "fresh_fp": [
+        23.7,
+        13.0,
+        39.2
+      ],
+      "pooled_n": 102,
+      "pooled_fp": [
+        25.5,
+        18.0,
+        34.7
+      ]
+    },
+    "disease axis: MONDO rare disease": {
+      "pairs": 2718,
+      "share": 34.9,
+      "fresh_n": 107,
+      "fresh_fp": [
+        18.7,
+        12.4,
+        27.1
+      ],
+      "pooled_n": 228,
+      "pooled_fp": [
+        12.7,
+        9.0,
+        17.7
+      ]
+    },
+    "disease axis: MONDO other disease": {
+      "pairs": 2989,
+      "share": 38.4,
+      "fresh_n": 118,
+      "fresh_fp": [
+        29.7,
+        22.2,
+        38.4
+      ],
+      "pooled_n": 251,
+      "pooled_fp": [
+        28.3,
+        23.1,
+        34.2
+      ]
+    },
+    "disease axis: HP phenotype (symptom-relief claims)": {
+      "pairs": 827,
+      "share": 10.6,
+      "fresh_n": 28,
+      "fresh_fp": [
+        39.3,
+        23.6,
+        57.6
+      ],
+      "pooled_n": 57,
+      "pooled_fp": [
+        29.8,
+        19.5,
+        42.7
+      ]
+    },
+    "disease axis: UMLS/other": {
+      "pairs": 1256,
+      "share": 16.1,
+      "fresh_n": 38,
+      "fresh_fp": [
+        23.7,
+        13.0,
+        39.2
+      ],
+      "pooled_n": 102,
+      "pooled_fp": [
+        25.5,
+        18.0,
+        34.7
+      ]
+    },
+    "T1 restricted to MONDO diseases": {
+      "pairs": 2138,
+      "share": 27.4,
+      "fresh_n": 125,
+      "fresh_fp": [
+        0.8,
+        0.1,
+        4.4
+      ],
+      "pooled_n": 279,
+      "pooled_fp": [
+        1.4,
+        0.6,
+        3.6
+      ]
+    },
+    "T1 restricted to MONDO rare diseases": {
+      "pairs": 1286,
+      "share": 16.5,
+      "fresh_n": 70,
+      "fresh_fp": [
+        1.4,
+        0.3,
+        7.7
+      ],
+      "pooled_n": 162,
+      "pooled_fp": [
+        1.2,
+        0.3,
+        4.4
+      ]
+    },
+    "rare disease, unscreened (no FDA/EMA text; mostly PMDA)": {
+      "pairs": 646,
+      "share": 8.3,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 3,
+      "pooled_fp": [
+        33.3,
+        6.1,
+        79.2
+      ]
+    },
+    "rare disease, unscreened but corroborated": {
+      "pairs": 359,
+      "share": 4.6,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 2,
+      "pooled_fp": [
+        50.0,
+        9.5,
+        90.5
+      ]
+    },
+    "Jev confident TARGET (>=0.9)": {
+      "pairs": 3004,
+      "share": 38.6,
+      "fresh_n": 164,
+      "fresh_fp": [
+        1.2,
+        0.3,
+        4.3
+      ],
+      "pooled_n": 376,
+      "pooled_fp": [
+        1.3,
+        0.6,
+        3.1
+      ]
+    },
+    "Jev confident flag (>=0.9)": {
+      "pairs": 434,
+      "share": 5.6,
+      "fresh_n": 25,
+      "fresh_fp": [
+        100.0,
+        86.7,
+        100.0
+      ],
+      "pooled_n": 39,
+      "pooled_fp": [
+        97.4,
+        86.8,
+        99.5
+      ]
+    },
+    "Jev not confident / not screened": {
+      "pairs": 4352,
+      "share": 55.9,
+      "fresh_n": 102,
+      "fresh_fp": [
+        47.1,
+        37.7,
+        56.7
+      ],
+      "pooled_n": 223,
+      "pooled_fp": [
+        44.8,
+        38.5,
+        51.4
+      ]
+    },
+    "agreement-first A: any exact/moiety agreement, not suspect": {
+      "pairs": 3484,
+      "share": 44.7,
+      "fresh_n": 147,
+      "fresh_fp": [
+        10.9,
+        6.8,
+        16.9
+      ],
+      "pooled_n": 343,
+      "pooled_fp": [
+        11.4,
+        8.4,
+        15.2
+      ]
+    },
+    "agreement-first B: no agreement; >=2 regulators or Jev confident TARGET; not suspect": {
+      "pairs": 886,
+      "share": 11.4,
+      "fresh_n": 48,
+      "fresh_fp": [
+        4.2,
+        1.2,
+        14.0
+      ],
+      "pooled_n": 106,
+      "pooled_fp": [
+        3.8,
+        1.5,
+        9.3
+      ]
+    },
+    "agreement-first C: single regulator, no agreement, no Jev support, not suspect": {
+      "pairs": 1836,
+      "share": 23.6,
+      "fresh_n": 47,
+      "fresh_fp": [
+        61.7,
+        47.4,
+        74.2
+      ],
+      "pooled_n": 93,
+      "pooled_fp": [
+        54.8,
+        44.7,
+        64.6
+      ]
+    },
+    "T1 label-confirmed: Jev confident TARGET, not suspect": {
+      "pairs": 2641,
+      "share": 33.9,
+      "fresh_n": 152,
+      "fresh_fp": [
+        0.7,
+        0.1,
+        3.6
+      ],
+      "pooled_n": 347,
+      "pooled_fp": [
+        1.2,
+        0.4,
+        2.9
+      ]
+    },
+    "T2 corroborated, label check inconclusive (screened <0.9; agreement or >=2 regulators)": {
+      "pairs": 824,
+      "share": 10.6,
+      "fresh_n": 40,
+      "fresh_fp": [
+        35.0,
+        22.1,
+        50.5
+      ],
+      "pooled_n": 92,
+      "pooled_fp": [
+        34.8,
+        25.8,
+        44.9
+      ]
+    },
+    "T3 unscreened: no FDA/EMA label text held for the drug (mostly PMDA/CDSCO-only), so no label check possible": {
+      "pairs": 1797,
+      "share": 23.1,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 4,
+      "pooled_fp": [
+        25.0,
+        4.6,
+        69.9
+      ]
+    },
+    "T3 split: unscreened but corroborated (agreement or >=2 regulators)": {
+      "pairs": 837,
+      "share": 10.7,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 3,
+      "pooled_fp": [
+        33.3,
+        6.1,
+        79.2
+      ]
+    },
+    "T3 split: unscreened, single-source": {
+      "pairs": 960,
+      "share": 12.3,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 1,
+      "pooled_fp": [
+        0.0,
+        0.0,
+        79.3
+      ]
+    },
+    "T4 unconfirmed single-source (screened <0.9; no agreement, one regulator)": {
+      "pairs": 694,
+      "share": 8.9,
+      "fresh_n": 34,
+      "fresh_fp": [
+        47.1,
+        31.5,
+        63.3
+      ],
+      "pooled_n": 73,
+      "pooled_fp": [
+        43.8,
+        33.0,
+        55.2
+      ]
+    },
+    "T5 flagged/suspect: Jev confident flag, or combo-only / homeopathic / ion / metabolite / negation / diagnostic / LOW": {
+      "pairs": 1834,
+      "share": 23.5,
+      "fresh_n": 65,
+      "fresh_fp": [
+        67.7,
+        55.6,
+        77.8
+      ],
+      "pooled_n": 122,
+      "pooled_fp": [
+        60.7,
+        51.8,
+        68.9
+      ]
+    },
+    "T1 + T2": {
+      "pairs": 3465,
+      "share": 44.5,
+      "fresh_n": 192,
+      "fresh_fp": [
+        7.8,
+        4.8,
+        12.5
+      ],
+      "pooled_n": 439,
+      "pooled_fp": [
+        8.2,
+        6.0,
+        11.1
+      ]
+    },
+    "T1 + T3-corroborated (a load set that includes unscreened PMDA/CDSCO pairs with agreement)": {
+      "pairs": 3478,
+      "share": 44.6,
+      "fresh_n": 152,
+      "fresh_fp": [
+        0.7,
+        0.1,
+        3.6
+      ],
+      "pooled_n": 350,
+      "pooled_fp": [
+        1.4,
+        0.6,
+        3.3
+      ]
+    },
+    "T2 split: agreement only (one regulator)": {
+      "pairs": 596,
+      "share": 7.7,
+      "fresh_n": 29,
+      "fresh_fp": [
+        37.9,
+        22.7,
+        56.0
+      ],
+      "pooled_n": 68,
+      "pooled_fp": [
+        35.3,
+        25.0,
+        47.2
+      ]
+    },
+    "T2 split: >=2 regulators only (no agreement)": {
+      "pairs": 54,
+      "share": 0.7,
+      "fresh_n": 2,
+      "fresh_fp": [
+        50.0,
+        9.5,
+        90.5
+      ],
+      "pooled_n": 5,
+      "pooled_fp": [
+        60.0,
+        23.1,
+        88.2
+      ]
+    },
+    "T2 split: agreement and >=2 regulators": {
+      "pairs": 174,
+      "share": 2.2,
+      "fresh_n": 9,
+      "fresh_fp": [
+        22.2,
+        6.3,
+        54.7
+      ],
+      "pooled_n": 19,
+      "pooled_fp": [
+        26.3,
+        11.8,
+        48.8
+      ]
+    }
+  },
+  "tiers": {
+    "T1 label-confirmed": {
+      "pairs": 2641,
+      "share": 33.9,
+      "fresh_n": 152,
+      "fresh_fp": [
+        0.7,
+        0.1,
+        3.6
+      ],
+      "pooled_n": 347,
+      "pooled_fp": [
+        1.2,
+        0.4,
+        2.9
+      ]
+    },
+    "T2 corroborated, label check inconclusive": {
+      "pairs": 824,
+      "share": 10.6,
+      "fresh_n": 40,
+      "fresh_fp": [
+        35.0,
+        22.1,
+        50.5
+      ],
+      "pooled_n": 92,
+      "pooled_fp": [
+        34.8,
+        25.8,
+        44.9
+      ]
+    },
+    "T3 unscreened (no FDA/EMA text held)": {
+      "pairs": 1797,
+      "share": 23.1,
+      "fresh_n": 0,
+      "fresh_fp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pooled_n": 4,
+      "pooled_fp": [
+        25.0,
+        4.6,
+        69.9
+      ]
+    },
+    "T4 unconfirmed single-source": {
+      "pairs": 694,
+      "share": 8.9,
+      "fresh_n": 34,
+      "fresh_fp": [
+        47.1,
+        31.5,
+        63.3
+      ],
+      "pooled_n": 73,
+      "pooled_fp": [
+        43.8,
+        33.0,
+        55.2
+      ]
+    },
+    "T5 flagged/suspect": {
+      "pairs": 1834,
+      "share": 23.5,
+      "fresh_n": 65,
+      "fresh_fp": [
+        67.7,
+        55.6,
+        77.8
+      ],
+      "pooled_n": 122,
+      "pooled_fp": [
+        60.7,
+        51.8,
+        68.9
+      ]
+    }
+  },
+  "consistency": {
+    "pairs_judged_twice": 20,
+    "same_verdict": 20
+  },
+  "tier_by_regulator": {
+    "T1 label-confirmed": {
+      "FDA": 1447,
+      "EMA": 390,
+      "EMA+FDA": 320,
+      "EMA+FDA+PMDA": 245,
+      "EMA+PMDA": 108,
+      "FDA+PMDA": 95,
+      "CDSCO+FDA": 14,
+      "CDSCO+EMA+FDA": 7
+    },
+    "T2 corroborated, label check inconclusive": {
+      "FDA": 433,
+      "EMA": 163,
+      "EMA+FDA": 91,
+      "FDA+PMDA": 51,
+      "EMA+PMDA": 39,
+      "EMA+FDA+PMDA": 36,
+      "CDSCO+EMA": 6,
+      "CDSCO+FDA": 3
+    },
+    "T3 unscreened (no FDA/EMA text held)": {
+      "PMDA": 1236,
+      "FDA": 372,
+      "EMA": 96,
+      "CDSCO": 55,
+      "EMA+PMDA": 16,
+      "CDSCO+PMDA": 13,
+      "FDA+PMDA": 6,
+      "EMA+FDA": 3
+    },
+    "T4 unconfirmed single-source": {
+      "FDA": 565,
+      "EMA": 129
+    },
+    "T5 flagged/suspect": {
+      "FDA": 1517,
+      "PMDA": 124,
+      "EMA": 59,
+      "EMA+FDA": 45,
+      "FDA+PMDA": 33,
+      "EMA+FDA+PMDA": 24,
+      "CDSCO": 16,
+      "EMA+PMDA": 11
+    }
+  },
+  "tier_jev_flagged": {
+    "T1 label-confirmed": 0,
+    "T2 corroborated, label check inconclusive": 0,
+    "T3 unscreened (no FDA/EMA text held)": 0,
+    "T4 unconfirmed single-source": 0,
+    "T5 flagged/suspect": 434
+  }
+}

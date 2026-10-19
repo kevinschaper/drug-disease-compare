@@ -20,6 +20,7 @@ export default {
     {name: "dismech lens", path: "/dismech"},
     {name: "Disagreements", path: "/diff"},
     {name: "Error taxonomy", path: "/error-taxonomy"},
+    {name: "What to load", path: "/load"},
     {name: "Off-label (FAERS)", path: "/offlabel"},
     {name: "Contraindications", path: "/contraindications"},
     {name: "Methods", path: "/methods"},

@@ -4,7 +4,7 @@
       "source": "medic",
       "versions": {
         "old": "2026-06-19",
-        "new": "2026-10-01 local (medic2@0453fd8)"
+        "new": "2026-10-13 local (medic2@47dd0b7)"
       },
       "raw": {
         "old": {
@@ -44,72 +44,73 @@
           "reliability": {}
         },
         "new": {
-          "edges": 14665,
-          "triples": 10142,
+          "edges": 15462,
+          "triples": 10543,
           "predicates": {
-            "biolink:treats": 11360,
-            "biolink:contraindicated_in": 3305
+            "biolink:treats": 12448,
+            "biolink:contraindicated_in": 3014
           },
-          "subjects": 2175,
-          "objects": 2425,
+          "subjects": 2252,
+          "objects": 2355,
           "subject_prefixes": {
-            "CHEBI": 14320,
-            "DRON": 345
+            "CHEBI": 15100,
+            "DRON": 362
           },
           "object_prefixes": {
-            "MONDO": 9587,
-            "UMLS": 3726,
-            "HP": 1352
+            "MONDO": 10406,
+            "UMLS": 3214,
+            "HP": 1842
           },
           "approval_status": {},
           "agencies": {
-            "FDA": 8859,
-            "EMA": 3054,
-            "PMDA": 2620,
-            "CDSCO": 132
+            "FDA": 9341,
+            "EMA": 3257,
+            "PMDA": 2728,
+            "CDSCO": 136
           },
           "reliability": {
-            "HIGH": 12775,
-            "MEDIUM": 1135,
-            "LOW": 755
+            "HIGH": 14270,
+            "MEDIUM": 720,
+            "LOW": 459,
+            "EXCLUDED": 13
           }
         }
       },
       "lenses": {
         "treats": {
           "old": 10903,
-          "new": 7237,
-          "kept": 3505,
-          "added": 3732,
-          "removed": 7398,
-          "jaccard": 0.2395,
+          "new": 7790,
+          "kept": 3605,
+          "added": 4185,
+          "removed": 7298,
+          "jaccard": 0.2389,
           "reasons": {
             "added": {
-              "changed": 1837,
-              "drug new": 1129,
-              "re-grounded": 402,
-              "re-grained": 364
+              "changed": 1853,
+              "drug new": 1426,
+              "re-grained": 463,
+              "re-grounded": 443
             },
             "removed": {
-              "changed": 3774,
-              "drug dropped": 2471,
-              "re-grained": 862,
-              "re-grounded": 291
+              "changed": 3666,
+              "drug dropped": 2366,
+              "re-grained": 962,
+              "re-grounded": 304
             }
           },
           "drugs": {
             "old": 2293,
-            "new": 1982,
-            "kept": 1340,
-            "added": 642,
-            "removed": 953
+            "new": 2070,
+            "kept": 1383,
+            "added": 687,
+            "removed": 910
           },
           "diseases": {
             "old": 2668,
-            "new": 1949,
-            "kept": 1384,
-            "added": 565,
-            "removed": 1284
+            "new": 1880,
+            "kept": 1376,
+            "added": 504,
+            "removed": 1292
           },
           "disease_prefixes": {
             "old": {
@@ -121,16 +122,15 @@
               "DOID": 4
             },
             "new": {
-              "MONDO": 4981,
-              "UMLS": 1493,
-              "HP": 693,
-              "NCIT": 34,
-              "EFO": 22,
-              "NCBITaxon": 7,
-              "GO": 3,
+              "MONDO": 5707,
+              "UMLS": 1180,
+              "HP": 827,
+              "NCIT": 38,
+              "EFO": 32,
               "CHEBI": 2,
-              "DOID": 1,
-              "MESH": 1
+              "NCBITaxon": 2,
+              "MESH": 1,
+              "DOID": 1
             }
           },
           "top_churn_drugs": [
@@ -138,7 +138,19 @@
               "drug": "CHEBI:6456",
               "drug_label": "Lidocaine",
               "added": 3,
-              "removed": 123
+              "removed": 122
+            },
+            {
+              "drug": "CHEBI:17650",
+              "drug_label": "Hydrocortisone",
+              "added": 12,
+              "removed": 82
+            },
+            {
+              "drug": "CHEBI:41879",
+              "drug_label": "Dexamethasone",
+              "added": 18,
+              "removed": 73
             },
             {
               "drug": "CHEBI:17606",
@@ -147,33 +159,33 @@
               "removed": 83
             },
             {
-              "drug": "CHEBI:17650",
-              "drug_label": "Hydrocortisone",
-              "added": 12,
-              "removed": 69
-            },
-            {
-              "drug": "CHEBI:41879",
-              "drug_label": "Dexamethasone",
-              "added": 14,
-              "removed": 59
-            },
-            {
               "drug": "CHEBI:8378",
               "drug_label": "Prednisolone",
-              "added": 10,
-              "removed": 55
+              "added": 13,
+              "removed": 68
             },
             {
-              "drug": "CHEBI:16962",
-              "drug_label": "Cortisone",
-              "added": 2,
-              "removed": 62
+              "drug": "CHEBI:6888",
+              "drug_label": "Methylprednisolone",
+              "added": 11,
+              "removed": 61
             },
             {
               "drug": "CHEBI:9667",
               "drug_label": "Triamcinolone",
-              "added": 7,
+              "added": 11,
+              "removed": 54
+            },
+            {
+              "drug": "CHEBI:16962",
+              "drug_label": "Cortisone",
+              "added": 3,
+              "removed": 62
+            },
+            {
+              "drug": "CHEBI:8382",
+              "drug_label": "Prednisone",
+              "added": 9,
               "removed": 55
             },
             {
@@ -183,22 +195,16 @@
               "removed": 59
             },
             {
-              "drug": "CHEBI:6888",
-              "drug_label": "Methylprednisolone",
-              "added": 8,
-              "removed": 47
+              "drug": "CHEBI:3077",
+              "drug_label": "Betamethasone",
+              "added": 16,
+              "removed": 41
             },
             {
               "drug": "CHEBI:17833",
               "drug_label": "gentamycin",
               "added": 0,
               "removed": 50
-            },
-            {
-              "drug": "CHEBI:8382",
-              "drug_label": "Prednisone",
-              "added": 9,
-              "removed": 38
             },
             {
               "drug": "CHEBI:27902",
@@ -209,14 +215,8 @@
             {
               "drug": "CHEBI:50845",
               "drug_label": "doxycycline",
-              "added": 0,
-              "removed": 46
-            },
-            {
-              "drug": "CHEBI:3077",
-              "drug_label": "Betamethasone",
-              "added": 14,
-              "removed": 28
+              "added": 1,
+              "removed": 38
             },
             {
               "drug": "CHEBI:133011",
@@ -237,22 +237,16 @@
               "removed": 37
             },
             {
-              "drug": "UNII:DPT0O3T46P",
-              "drug_label": "Pembrolizumab",
-              "added": 16,
-              "removed": 20
-            },
-            {
-              "drug": "CHEBI:29101",
-              "drug_label": "Sodium cation",
-              "added": 9,
-              "removed": 23
-            },
-            {
               "drug": "CHEBI:28918",
               "drug_label": "Epinephrine",
-              "added": 1,
+              "added": 5,
               "removed": 31
+            },
+            {
+              "drug": "CHEBI:3892",
+              "drug_label": "Corticotropin",
+              "added": 5,
+              "removed": 28
             },
             {
               "drug": "CHEBI:16914",
@@ -261,28 +255,16 @@
               "removed": 32
             },
             {
-              "drug": "CHEBI:6909",
-              "drug_label": "Metronidazole",
-              "added": 5,
-              "removed": 26
+              "drug": "CHEBI:29101",
+              "drug_label": "Sodium cation",
+              "added": 8,
+              "removed": 23
             },
             {
-              "drug": "CHEBI:3892",
-              "drug_label": "Corticotropin",
-              "added": 3,
-              "removed": 28
-            },
-            {
-              "drug": "CHEBI:47381",
-              "drug_label": "Diclofenac",
-              "added": 2,
-              "removed": 29
-            },
-            {
-              "drug": "CHEBI:8499",
-              "drug_label": "Propranolol",
-              "added": 4,
-              "removed": 27
+              "drug": "CHEBI:8232",
+              "drug_label": "piperacillin",
+              "added": 13,
+              "removed": 18
             },
             {
               "drug": "CHEBI:28748",
@@ -291,77 +273,90 @@
               "removed": 30
             },
             {
-              "drug": "CHEBI:231614",
-              "drug_label": "Nivolumab",
-              "added": 28,
-              "removed": 0
+              "drug": "CHEBI:28864",
+              "drug_label": "tobramycin",
+              "added": 19,
+              "removed": 11
             },
             {
-              "drug": "CHEBI:8232",
-              "drug_label": "piperacillin",
-              "added": 10,
+              "drug": "CHEBI:6909",
+              "drug_label": "Metronidazole",
+              "added": 5,
+              "removed": 25
+            },
+            {
+              "drug": "CHEBI:29103",
+              "drug_label": "Potassium cation",
+              "added": 11,
               "removed": 18
             },
             {
-              "drug": "CHEBI:50694",
-              "drug_label": "Minocycline",
-              "added": 5,
-              "removed": 23
+              "drug": "CHEBI:100241",
+              "drug_label": "Ciprofloxacin",
+              "added": 8,
+              "removed": 21
             },
             {
-              "drug": "CHEBI:17334",
-              "drug_label": "Benzylpenicillin",
-              "added": 7,
-              "removed": 21
+              "drug": "CHEBI:8499",
+              "drug_label": "Propranolol",
+              "added": 3,
+              "removed": 26
+            },
+            {
+              "drug": "CHEBI:39127",
+              "drug_label": "magnesium cation",
+              "added": 27,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:15365",
+              "drug_label": "Acetylsalicylic acid",
+              "added": 26,
+              "removed": 1
             }
           ]
         },
         "contraindicated": {
           "old": 0,
-          "new": 2617,
+          "new": 2422,
           "kept": 0,
-          "added": 2617,
+          "added": 2422,
           "removed": 0,
           "jaccard": 0.0,
           "reasons": {
             "added": {
-              "drug new": 2617
+              "drug new": 2422
             },
             "removed": {}
           },
           "drugs": {
             "old": 0,
-            "new": 658,
+            "new": 665,
             "kept": 0,
-            "added": 658,
+            "added": 665,
             "removed": 0
           },
           "diseases": {
             "old": 0,
-            "new": 537,
+            "new": 513,
             "kept": 0,
-            "added": 537,
+            "added": 513,
             "removed": 0
           },
           "disease_prefixes": {
             "old": {},
             "new": {
-              "MONDO": 1865,
-              "UMLS": 482,
-              "HP": 248,
-              "EFO": 15,
-              "NCBITaxon": 3,
+              "MONDO": 1703,
+              "UMLS": 448,
+              "HP": 246,
+              "EFO": 12,
+              "NCBITaxon": 8,
               "NCIT": 3,
-              "GO": 1
+              "GO": 1,
+              "CHEBI": 1
             }
           },
           "top_churn_drugs": [
-            {
-              "drug": "CHEBI:29101",
-              "drug_label": "Sodium cation",
-              "added": 31,
-              "removed": 0
-            },
             {
               "drug": "CHEBI:27732",
               "drug_label": "Caffeine",
@@ -372,12 +367,6 @@
               "drug": "CHEBI:4903",
               "drug_label": "Ethinylestradiol",
               "added": 28,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:17996",
-              "drug_label": "Chloride ion",
-              "added": 24,
               "removed": 0
             },
             {
@@ -395,72 +384,78 @@
             {
               "drug": "CHEBI:16469",
               "drug_label": "Estradiol",
-              "added": 21,
+              "added": 20,
               "removed": 0
             },
             {
               "drug": "CHEBI:16714",
               "drug_label": "Codeine",
-              "added": 21,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:39127",
-              "drug_label": "magnesium cation",
               "added": 20,
               "removed": 0
             },
             {
-              "drug": "CHEBI:29103",
-              "drug_label": "Potassium cation",
+              "drug": "CHEBI:29101",
+              "drug_label": "Sodium cation",
               "added": 20,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:5778",
-              "drug_label": "Hydrochlorothiazide",
-              "added": 19,
               "removed": 0
             },
             {
               "drug": "CHEBI:50838",
               "drug_label": "Drospirenone",
-              "added": 18,
+              "added": 19,
               "removed": 0
             },
             {
-              "drug": "CHEBI:75275",
-              "drug_label": "sodium tetradecyl sulfate",
-              "added": 15,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:39123",
-              "drug_label": "calcium cation",
-              "added": 15,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:102524",
-              "drug_label": "Butalbital",
-              "added": 14,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:30089",
-              "drug_label": "acetate",
-              "added": 14,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:253342",
-              "drug_label": "Alosetron",
-              "added": 14,
+              "drug": "CHEBI:5778",
+              "drug_label": "Hydrochlorothiazide",
+              "added": 17,
               "removed": 0
             },
             {
               "drug": "CHEBI:142773",
               "drug_label": "estetrol",
+              "added": 15,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:50922",
+              "drug_label": "Eletriptan",
+              "added": 14,
+              "removed": 0
+            },
+            {
+              "drug": "UNII:P76B05O5V6",
+              "drug_label": "Relugolix",
+              "added": 13,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:17996",
+              "drug_label": "Chloride ion",
+              "added": 13,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:43415",
+              "drug_label": "Dexibuprofen",
+              "added": 13,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:253342",
+              "drug_label": "Alosetron",
+              "added": 13,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:75275",
+              "drug_label": "sodium tetradecyl sulfate",
+              "added": 13,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:135398",
+              "drug_label": "norelgestromin",
               "added": 13,
               "removed": 0
             },
@@ -471,69 +466,75 @@
               "removed": 0
             },
             {
-              "drug": "CHEBI:10650",
-              "drug_label": "Sumatriptan",
-              "added": 13,
+              "drug": "CHEBI:3084",
+              "drug_label": "Bethanechol",
+              "added": 12,
               "removed": 0
             },
             {
               "drug": "CHEBI:135563",
               "drug_label": "Segesterone acetate",
-              "added": 13,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:16828",
-              "drug_label": "L-tryptophan",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:17203",
-              "drug_label": "L-proline",
+              "drug": "CHEBI:7630",
+              "drug_label": "norgestrel",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:15971",
-              "drug_label": "L-histidine",
+              "drug": "CHEBI:2676",
+              "drug_label": "Amoxicillin",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "UNII:P76B05O5V6",
-              "drug_label": "Relugolix",
+              "drug": "CHEBI:10124",
+              "drug_label": "Zolmitriptan",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:15603",
-              "drug_label": "L-leucine",
+              "drug": "CHEBI:17486",
+              "drug_label": "Hyoscyamine",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:17115",
-              "drug_label": "L-serine",
+              "drug": "CHEBI:50815",
+              "drug_label": "norgestimate",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:17295",
-              "drug_label": "L-phenylalanine",
+              "drug": "CHEBI:4562",
+              "drug_label": "Dihydroergotamine",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:25094",
-              "drug_label": "lysine",
+              "drug": "CHEBI:102524",
+              "drug_label": "Butalbital",
               "added": 12,
               "removed": 0
             },
             {
-              "drug": "CHEBI:16414",
-              "drug_label": "L-valine",
+              "drug": "CHEBI:50777",
+              "drug_label": "etonogestrel",
               "added": 12,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:10650",
+              "drug_label": "Sumatriptan",
+              "added": 11,
+              "removed": 0
+            },
+            {
+              "drug": "CHEBI:29103",
+              "drug_label": "Potassium cation",
+              "added": 11,
               "removed": 0
             }
           ]
@@ -761,28 +762,28 @@
               "removed": 31
             },
             {
-              "drug": "CHEBI:17303",
-              "drug_label": "Morphine",
-              "added": 65,
-              "removed": 10
-            },
-            {
               "drug": "CHEBI:119915",
               "drug_label": "Fentanyl",
               "added": 74,
               "removed": 1
             },
             {
-              "drug": "CHEBI:41423",
-              "drug_label": "Celecoxib",
-              "added": 72,
-              "removed": 1
+              "drug": "CHEBI:17303",
+              "drug_label": "Morphine",
+              "added": 65,
+              "removed": 10
             },
             {
               "drug": "PUBCHEM.COMPOUND:4159",
               "drug_label": "methylprednisolone",
               "added": 73,
               "removed": 0
+            },
+            {
+              "drug": "CHEBI:41423",
+              "drug_label": "Celecoxib",
+              "added": 72,
+              "removed": 1
             },
             {
               "drug": "CHEBI:8378",
@@ -815,28 +816,28 @@
               "removed": 0
             },
             {
-              "drug": "CHEBI:41879",
-              "drug_label": "Dexamethasone",
-              "added": 24,
-              "removed": 41
-            },
-            {
               "drug": "CHEBI:93851",
               "drug_label": "dexamethasone",
               "added": 65,
               "removed": 0
             },
             {
-              "drug": "CHEBI:231679",
-              "drug_label": "ipilimumab",
-              "added": 62,
-              "removed": 0
+              "drug": "CHEBI:41879",
+              "drug_label": "Dexamethasone",
+              "added": 24,
+              "removed": 41
             },
             {
               "drug": "CHEBI:6888",
               "drug_label": "Methylprednisolone",
               "added": 26,
               "removed": 36
+            },
+            {
+              "drug": "CHEBI:231679",
+              "drug_label": "ipilimumab",
+              "added": 62,
+              "removed": 0
             },
             {
               "drug": "CHEBI:36796",
@@ -1199,16 +1200,16 @@
               "removed": 5
             },
             {
-              "drug": "CHEBI:23965",
-              "drug_label": "estradiol",
-              "added": 48,
-              "removed": 0
-            },
-            {
               "drug": "CHEBI:5855",
               "drug_label": "Ibuprofen",
               "added": 47,
               "removed": 1
+            },
+            {
+              "drug": "CHEBI:23965",
+              "drug_label": "estradiol",
+              "added": 48,
+              "removed": 0
             },
             {
               "drug": "CHEBI:6443",
@@ -1259,14 +1260,8 @@
               "removed": 0
             },
             {
-              "drug": "PUBCHEM.COMPOUND:45039692",
-              "drug_label": "(+/-)-Menthol",
-              "added": 42,
-              "removed": 0
-            },
-            {
-              "drug": "PUBCHEM.COMPOUND:4419",
-              "drug_label": "nalbuphine",
+              "drug": "PUBCHEM.COMPOUND:12285346",
+              "drug_label": "(+) Menthol",
               "added": 42,
               "removed": 0
             },
@@ -1277,8 +1272,14 @@
               "removed": 2
             },
             {
-              "drug": "PUBCHEM.COMPOUND:12285346",
-              "drug_label": "(+) Menthol",
+              "drug": "PUBCHEM.COMPOUND:45039692",
+              "drug_label": "(+/-)-Menthol",
+              "added": 42,
+              "removed": 0
+            },
+            {
+              "drug": "PUBCHEM.COMPOUND:4419",
+              "drug_label": "nalbuphine",
               "added": 42,
               "removed": 0
             },
@@ -1301,6 +1302,12 @@
               "removed": 2
             },
             {
+              "drug": "CHEBI:91939",
+              "drug_label": "naproxen",
+              "added": 39,
+              "removed": 0
+            },
+            {
               "drug": "CHEBI:30879",
               "drug_label": "alcohol",
               "added": 39,
@@ -1309,12 +1316,6 @@
             {
               "drug": "CHEBI:47519",
               "drug_label": "Ketoconazole",
-              "added": 39,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:91939",
-              "drug_label": "naproxen",
               "added": 39,
               "removed": 0
             },
@@ -1459,16 +1460,16 @@
               "removed": 0
             },
             {
-              "drug": "UMLS:C0169964",
-              "drug_label": "somatropin",
-              "added": 29,
-              "removed": 0
-            },
-            {
               "drug": "CHEBI:9168",
               "drug_label": "Sirolimus",
               "added": 28,
               "removed": 1
+            },
+            {
+              "drug": "UMLS:C0169964",
+              "drug_label": "somatropin",
+              "added": 29,
+              "removed": 0
             },
             {
               "drug": "CHEBI:8382",
@@ -1483,8 +1484,8 @@
               "removed": 1
             },
             {
-              "drug": "CHEBI:44185",
-              "drug_label": "Methotrexate",
+              "drug": "CHEBI:48669",
+              "drug_label": "tranexamic acid",
               "added": 20,
               "removed": 0
             },
@@ -1495,15 +1496,9 @@
               "removed": 2
             },
             {
-              "drug": "CHEBI:48669",
-              "drug_label": "tranexamic acid",
+              "drug": "CHEBI:44185",
+              "drug_label": "Methotrexate",
               "added": 20,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:50845",
-              "drug_label": "doxycycline",
-              "added": 19,
               "removed": 0
             },
             {
@@ -1513,10 +1508,22 @@
               "removed": 0
             },
             {
+              "drug": "CHEBI:50845",
+              "drug_label": "doxycycline",
+              "added": 19,
+              "removed": 0
+            },
+            {
               "drug": "CHEBI:8378",
               "drug_label": "Prednisolone",
               "added": 18,
               "removed": 0
+            },
+            {
+              "drug": "CHEBI:4027",
+              "drug_label": "Cyclophosphamide",
+              "added": 17,
+              "removed": 1
             },
             {
               "drug": "CHEBI:3387",
@@ -1531,34 +1538,10 @@
               "removed": 0
             },
             {
-              "drug": "CHEBI:4027",
-              "drug_label": "Cyclophosphamide",
-              "added": 17,
-              "removed": 1
-            },
-            {
               "drug": "CHEBI:41879",
               "drug_label": "Dexamethasone",
               "added": 16,
               "removed": 0
-            },
-            {
-              "drug": "CHEBI:63631",
-              "drug_label": "Topiramate",
-              "added": 15,
-              "removed": 0
-            },
-            {
-              "drug": "CHEBI:27899",
-              "drug_label": "cisplatin",
-              "added": 15,
-              "removed": 0
-            },
-            {
-              "drug": "UMLS:C1609165",
-              "drug_label": "tocilizumab",
-              "added": 14,
-              "removed": 1
             },
             {
               "drug": "UMLS:C0003250",
@@ -1567,10 +1550,28 @@
               "removed": 1
             },
             {
+              "drug": "UMLS:C1609165",
+              "drug_label": "tocilizumab",
+              "added": 14,
+              "removed": 1
+            },
+            {
+              "drug": "CHEBI:27899",
+              "drug_label": "cisplatin",
+              "added": 15,
+              "removed": 0
+            },
+            {
               "drug": "CHEBI:15365",
               "drug_label": "Acetylsalicylic acid",
               "added": 13,
               "removed": 2
+            },
+            {
+              "drug": "CHEBI:63631",
+              "drug_label": "Topiramate",
+              "added": 15,
+              "removed": 0
             },
             {
               "drug": "CHEBI:2948",
@@ -1579,14 +1580,14 @@
               "removed": 2
             },
             {
-              "drug": "CHEBI:8764",
-              "drug_label": "Mycophenolate mofetil",
-              "added": 13,
-              "removed": 1
+              "drug": "CHEBI:27306",
+              "drug_label": "vitamin B6",
+              "added": 14,
+              "removed": 0
             },
             {
-              "drug": "CHEBI:15765",
-              "drug_label": "Levodopa",
+              "drug": "UMLS:C0796392",
+              "drug_label": "bevacizumab",
               "added": 14,
               "removed": 0
             },
@@ -1597,14 +1598,14 @@
               "removed": 0
             },
             {
-              "drug": "UMLS:C0245109",
-              "drug_label": "anakinra",
-              "added": 14,
-              "removed": 0
+              "drug": "CHEBI:8764",
+              "drug_label": "Mycophenolate mofetil",
+              "added": 13,
+              "removed": 1
             },
             {
-              "drug": "CHEBI:27306",
-              "drug_label": "vitamin B6",
+              "drug": "UMLS:C0245109",
+              "drug_label": "anakinra",
               "added": 14,
               "removed": 0
             }
@@ -1627,12 +1628,12 @@
         "jaccard": 0.0957
       },
       "new_old": {
-        "shared": 1705,
-        "jaccard": 0.1614
+        "shared": 1837,
+        "jaccard": 0.1673
       },
       "new_new": {
-        "shared": 1721,
-        "jaccard": 0.0869
+        "shared": 1843,
+        "jaccard": 0.0911
       }
     },
     {
@@ -1648,11 +1649,11 @@
         "jaccard": 0.0227
       },
       "new_old": {
-        "shared": 150,
-        "jaccard": 0.0177
+        "shared": 156,
+        "jaccard": 0.0173
       },
       "new_new": {
-        "shared": 284,
+        "shared": 298,
         "jaccard": 0.0259
       }
     },
@@ -1678,5 +1679,5 @@
       }
     }
   ],
-  "repaired_drugs": 619
+  "repaired_drugs": 644
 }

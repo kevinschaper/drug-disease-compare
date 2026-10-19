@@ -2,30 +2,30 @@
   "sources": {
     "medic": {
       "sampled": 300,
-      "judged": 297,
-      "fp": 76,
+      "judged": 291,
+      "fp": 75,
       "excluded": {
-        "UNSURE": 2,
-        "UNVERIFIABLE": 1
+        "UNSURE": 7,
+        "UNVERIFIABLE": 2
       },
       "fp_rate": [
-        25.6,
-        21.0,
-        30.8
+        25.8,
+        21.1,
+        31.1
       ],
       "precision": [
-        74.4,
-        69.2,
-        79.0
+        74.2,
+        68.9,
+        78.9
       ],
       "by_type": {
         "FP1_setting": [
-          28,
-          9.4
+          38,
+          13.1
         ],
         "FP2_symptom_swap": [
-          11,
-          3.7
+          6,
+          2.1
         ],
         "FP3_cross_section": [
           2,
@@ -35,109 +35,105 @@
           1,
           0.3
         ],
-        "FP5_negation": [
-          2,
-          0.7
-        ],
         "FP6_coingredient": [
-          15,
-          5.1
+          11,
+          3.8
         ],
         "FP7_notintext": [
           17,
-          5.7
+          5.8
         ]
       },
       "by_regulator": {
         "FDA only": {
-          "n": 218,
+          "n": 193,
           "fp_rate": [
-            29.8,
-            24.1,
-            36.2
+            31.1,
+            25.0,
+            37.9
           ]
         },
         "EMA only": {
-          "n": 53,
+          "n": 55,
           "fp_rate": [
-            17.0,
-            9.2,
-            29.2
+            23.6,
+            14.4,
+            36.3
           ]
         },
         "FDA + EMA": {
-          "n": 26,
+          "n": 43,
           "fp_rate": [
-            7.7,
-            2.1,
-            24.1
+            4.7,
+            1.3,
+            15.5
           ]
         }
       },
       "by_disease_vocab": {
         "MONDO": {
-          "n": 199,
+          "n": 225,
           "fp_rate": [
-            22.1,
-            16.9,
-            28.4
+            24.4,
+            19.3,
+            30.5
           ],
           "not_in_label": [
-            4.0,
-            2.1,
-            7.7
+            5.8,
+            3.4,
+            9.6
           ]
         },
         "UMLS": {
-          "n": 70,
+          "n": 36,
           "fp_rate": [
-            38.6,
-            28.0,
-            50.3
+            25.0,
+            13.8,
+            41.1
           ],
           "not_in_label": [
-            11.4,
-            5.9,
-            21.0
+            5.6,
+            1.5,
+            18.1
           ]
         },
         "HP": {
-          "n": 25,
+          "n": 28,
           "fp_rate": [
-            16.0,
-            6.4,
-            34.7
+            39.3,
+            23.6,
+            57.6
           ],
           "not_in_label": [
-            4.0,
-            0.7,
-            19.5
+            7.1,
+            2.0,
+            22.6
           ]
         }
       },
       "by_reliability": {
         "HIGH": {
-          "n": 258,
+          "n": 277,
           "fp_rate": [
-            25.2,
-            20.3,
-            30.8
+            26.7,
+            21.8,
+            32.2
           ]
         },
         "MEDIUM": {
-          "n": 18,
+          "n": 8,
           "fp_rate": [
-            16.7,
-            5.8,
-            39.2
+            12.5,
+            2.2,
+            47.1
           ]
         },
         "LOW": {
-          "n": 21,
+          "n": 6,
           "fp_rate": [
-            38.1,
-            20.8,
-            59.1
+            0.0,
+            0.0,
+            39.0
           ]
         }
       }
@@ -268,42 +264,42 @@
     }
   },
   "agreement": {
-    "n": 1200,
-    "n_reference": 1194,
-    "claude_ab_exact_8way": 0.946,
-    "claude_ab_kappa_8way": 0.887,
+    "n": 1500,
+    "n_reference": 1485,
+    "claude_ab_exact_8way": 0.948,
+    "claude_ab_kappa_8way": 0.891,
     "claude_ab_binary": 0.963,
     "claude_ab_kappa_binary": 0.912,
-    "tiebroken": 65,
-    "jev_exact_8way": 0.852,
-    "jev_kappa_8way": 0.693,
-    "jev_binary": 0.883,
-    "jev_kappa_binary": 0.718,
+    "tiebroken": 77,
+    "jev_exact_8way": 0.861,
+    "jev_kappa_8way": 0.702,
+    "jev_binary": 0.889,
+    "jev_kappa_binary": 0.726,
     "jev_per_class": {
       "TARGET": {
-        "n": 839,
-        "jev_exact": 0.92,
-        "jev_binary": 0.92
+        "n": 1055,
+        "jev_exact": 0.932,
+        "jev_binary": 0.932
       },
       "FP1_setting": {
-        "n": 84,
-        "jev_exact": 0.75,
-        "jev_binary": 0.833
+        "n": 122,
+        "jev_exact": 0.754,
+        "jev_binary": 0.836
       },
       "FP2_symptom_swap": {
-        "n": 50,
-        "jev_exact": 0.36,
-        "jev_binary": 0.5
+        "n": 56,
+        "jev_exact": 0.357,
+        "jev_binary": 0.482
       },
       "FP3_cross_section": {
-        "n": 14,
-        "jev_exact": 0.786,
-        "jev_binary": 0.929
+        "n": 16,
+        "jev_exact": 0.812,
+        "jev_binary": 0.938
       },
       "FP4_overbroad": {
-        "n": 46,
-        "jev_exact": 0.609,
-        "jev_binary": 0.696
+        "n": 47,
+        "jev_exact": 0.617,
+        "jev_binary": 0.702
       },
       "FP5_negation": {
         "n": 32,
@@ -311,25 +307,25 @@
         "jev_binary": 1.0
       },
       "FP6_coingredient": {
-        "n": 16,
+        "n": 27,
         "jev_exact": 0.0,
-        "jev_binary": 0.188
+        "jev_binary": 0.185
       },
       "FP7_notintext": {
-        "n": 113,
-        "jev_exact": 0.85,
-        "jev_binary": 0.947
+        "n": 130,
+        "jev_exact": 0.862,
+        "jev_binary": 0.946
       }
     },
-    "claude_a_vs_reference_binary": 0.968,
-    "claude_b_vs_reference_binary": 0.977,
+    "claude_a_vs_reference_binary": 0.97,
+    "claude_b_vs_reference_binary": 0.976,
     "acceptance": {
       "ceiling_binary": 0.966,
-      "jev_binary": 0.883,
+      "jev_binary": 0.889,
       "within_5pts": false,
       "kappa_ok": true
     },
-    "decomposed_noul_vs_reference": 0.841,
+    "decomposed_noul_vs_reference": 0.844,
     "jev_calibration": [
       {
         "conf_bin": "0.0-0.2",
@@ -338,75 +334,75 @@
       },
       {
         "conf_bin": "0.2-0.4",
-        "n": 50,
-        "acc": 0.62
+        "n": 55,
+        "acc": 0.6
       },
       {
         "conf_bin": "0.4-0.6",
-        "n": 150,
-        "acc": 0.687
+        "n": 176,
+        "acc": 0.693
       },
       {
         "conf_bin": "0.6-0.8",
-        "n": 180,
-        "acc": 0.828
+        "n": 218,
+        "acc": 0.821
       },
       {
         "conf_bin": "0.8-1.0",
-        "n": 812,
-        "acc": 0.947
+        "n": 1034,
+        "acc": 0.952
       }
     ],
     "confusion_binary": {
-      "FP|jev:FP": 282,
-      "FP|jev:TARGET": 73,
-      "TARGET|jev:FP": 67,
-      "TARGET|jev:TARGET": 772
+      "FP|jev:FP": 337,
+      "FP|jev:TARGET": 93,
+      "TARGET|jev:FP": 72,
+      "TARGET|jev:TARGET": 983
     },
     "jev_accepted": false,
     "jev_high_confidence": {
       "0.6": {
-        "coverage": 0.831,
-        "binary_acc": 0.925,
-        "flag_precision": 0.864,
-        "target_precision": 0.944
+        "coverage": 0.843,
+        "binary_acc": 0.929,
+        "flag_precision": 0.883,
+        "target_precision": 0.942
       },
       "0.8": {
-        "coverage": 0.68,
-        "binary_acc": 0.947,
-        "flag_precision": 0.874,
-        "target_precision": 0.965
+        "coverage": 0.696,
+        "binary_acc": 0.952,
+        "flag_precision": 0.895,
+        "target_precision": 0.964
       },
       "0.9": {
-        "coverage": 0.545,
-        "binary_acc": 0.975,
-        "flag_precision": 0.922,
-        "target_precision": 0.987
+        "coverage": 0.567,
+        "binary_acc": 0.977,
+        "flag_precision": 0.936,
+        "target_precision": 0.986
       }
     }
   },
   "population": {
     "medic": {
-      "screened": 5118,
-      "judged": 5106,
-      "jev_fp_share": 18.3,
+      "screened": 5594,
+      "judged": 5579,
+      "jev_fp_share": 22.8,
       "corrected_fp_rate": [
-        25.7,
-        22.3,
-        29.2
+        27.6,
+        24.5,
+        30.9
       ],
       "jev_by_type": {
-        "FP1_setting": 376,
-        "FP7_notintext": 357,
-        "FP2_symptom_swap": 88,
-        "FP4_overbroad": 42,
-        "FP5_negation": 39,
-        "FP3_cross_section": 32
+        "FP1_setting": 504,
+        "FP7_notintext": 465,
+        "FP2_symptom_swap": 126,
+        "FP3_cross_section": 71,
+        "FP4_overbroad": 53,
+        "FP5_negation": 53
       },
       "jev_fp_share_by_reliability": {
-        "HIGH": 17.6,
-        "MEDIUM": 21.9,
-        "LOW": 27.2
+        "HIGH": 22.2,
+        "MEDIUM": 29.3,
+        "LOW": 33.7
       }
     },
     "dakp-approved": {
@@ -416,7 +412,7 @@
       "corrected_fp_rate": [
         32.2,
         27.8,
-        36.6
+        36.7
       ],
       "jev_by_type": {
         "FP7_notintext": 3047,
@@ -629,25 +625,25 @@
   "change": {
     "medic": {
       "fp_rate_pts": [
-        -0.2,
-        -7.1,
-        6.8
+        0.0,
+        -7.0,
+        7.1
       ],
       "by_type_pts": {
         "FP1_setting": [
-          4.7,
-          0.6,
-          9.0
+          8.4,
+          3.9,
+          13.1
         ],
         "FP2_symptom_swap": [
-          0.0,
-          -3.2,
-          3.2
+          -1.6,
+          -4.6,
+          1.2
         ],
         "FP3_cross_section": [
           -1.0,
           -3.3,
-          1.0
+          1.1
         ],
         "FP4_overbroad": [
           -0.7,
@@ -655,19 +651,19 @@
           1.0
         ],
         "FP5_negation": [
-          -5.3,
-          -8.6,
-          -2.5
+          -6.0,
+          -9.3,
+          -3.4
         ],
         "FP6_coingredient": [
-          5.1,
-          2.7,
-          8.2
+          3.8,
+          1.7,
+          6.6
         ],
         "FP7_notintext": [
-          -3.0,
-          -7.3,
-          1.3
+          -2.9,
+          -7.2,
+          1.4
         ]
       }
     },
@@ -712,6 +708,196 @@
           9.4,
           4.3,
           14.7
+        ]
+      }
+    }
+  },
+  "previous_build": {
+    "medic": {
+      "sampled": 300,
+      "judged": 297,
+      "fp": 76,
+      "excluded": {
+        "UNSURE": 2,
+        "UNVERIFIABLE": 1
+      },
+      "fp_rate": [
+        25.6,
+        21.0,
+        30.8
+      ],
+      "precision": [
+        74.4,
+        69.2,
+        79.0
+      ],
+      "by_type": {
+        "FP1_setting": [
+          28,
+          9.4
+        ],
+        "FP2_symptom_swap": [
+          11,
+          3.7
+        ],
+        "FP3_cross_section": [
+          2,
+          0.7
+        ],
+        "FP4_overbroad": [
+          1,
+          0.3
+        ],
+        "FP5_negation": [
+          2,
+          0.7
+        ],
+        "FP6_coingredient": [
+          15,
+          5.1
+        ],
+        "FP7_notintext": [
+          17,
+          5.7
+        ]
+      },
+      "by_regulator": {
+        "FDA only": {
+          "n": 218,
+          "fp_rate": [
+            29.8,
+            24.1,
+            36.2
+          ]
+        },
+        "EMA only": {
+          "n": 53,
+          "fp_rate": [
+            17.0,
+            9.2,
+            29.2
+          ]
+        },
+        "FDA + EMA": {
+          "n": 26,
+          "fp_rate": [
+            7.7,
+            2.1,
+            24.1
+          ]
+        }
+      },
+      "by_disease_vocab": {
+        "MONDO": {
+          "n": 199,
+          "fp_rate": [
+            22.1,
+            16.9,
+            28.4
+          ],
+          "not_in_label": [
+            4.0,
+            2.1,
+            7.7
+          ]
+        },
+        "UMLS": {
+          "n": 70,
+          "fp_rate": [
+            38.6,
+            28.0,
+            50.3
+          ],
+          "not_in_label": [
+            11.4,
+            5.9,
+            21.0
+          ]
+        },
+        "HP": {
+          "n": 25,
+          "fp_rate": [
+            16.0,
+            6.4,
+            34.7
+          ],
+          "not_in_label": [
+            4.0,
+            0.7,
+            19.5
+          ]
+        }
+      },
+      "by_reliability": {
+        "HIGH": {
+          "n": 258,
+          "fp_rate": [
+            25.2,
+            20.3,
+            30.8
+          ]
+        },
+        "MEDIUM": {
+          "n": 18,
+          "fp_rate": [
+            16.7,
+            5.8,
+            39.2
+          ]
+        },
+        "LOW": {
+          "n": 21,
+          "fp_rate": [
+            38.1,
+            20.8,
+            59.1
+          ]
+        }
+      }
+    }
+  },
+  "change_vs_build": {
+    "medic": {
+      "fp_rate_pts": [
+        0.2,
+        -6.8,
+        7.2
+      ],
+      "by_type_pts": {
+        "FP1_setting": [
+          3.7,
+          -1.5,
+          8.8
+        ],
+        "FP2_symptom_swap": [
+          -1.6,
+          -4.6,
+          1.2
+        ],
+        "FP3_cross_section": [
+          0.0,
+          -1.8,
+          1.9
+        ],
+        "FP4_overbroad": [
+          0.0,
+          -1.6,
+          1.6
+        ],
+        "FP5_negation": [
+          -0.7,
+          -2.4,
+          0.7
+        ],
+        "FP6_coingredient": [
+          -1.3,
+          -4.8,
+          2.1
+        ],
+        "FP7_notintext": [
+          0.1,
+          -3.8,
+          4.1
         ]
       }
     }

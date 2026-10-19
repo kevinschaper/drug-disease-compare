@@ -209,4 +209,5 @@ exact RxNorm name — see [methods](./methods).
 Dig in: [version changes](./changes) for how each source moved, [drug coverage](./drugs) and [disease coverage](./diseases) for per-entity
 rollups, [disagreements](./diff) for the triage queue, the [off-label view](./offlabel)
 for FAERS observations, the [error taxonomy](./error-taxonomy) for the label-grounded
-audit, and [methods](./methods).
+audit, [what to load](./load) for which MEDIC subset is ready for monarch-kg, and
+[methods](./methods).

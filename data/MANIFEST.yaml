@@ -23,18 +23,19 @@ inputs:
     new:
       description: >-
         MeDIC redesign (monarch-initiative/medic, branch medic2), built locally --
-        not yet a published release. One edge per regulator *assertion* (14,674 edges,
-        10,151 distinct triples): biolink:treats (11,360) + biolink:contraindicated_in
-        (3,305), plus 9 research edges we skip. Each edge names its authority
-        (medic_authority: FDA/EMA/PMDA/CDSCO), carries the label's verbatim section
-        text, and a pair-level reliability tier (medic_pair_reliability HIGH/MEDIUM/LOW).
+        not yet a published release. One edge per regulator *assertion* (15,471 edges):
+        biolink:treats (12,448) + biolink:contraindicated_in (3,014), plus 9 research
+        edges we skip. Each edge names its authority (medic_authority:
+        FDA/EMA/PMDA/CDSCO), carries the label's verbatim section text, and a pair-level
+        reliability tier (medic_pair_reliability HIGH/MEDIUM/LOW/EXCLUDED). This build
+        follows the fix/59 negation-scoping and verbatim re-extraction work (PR #63).
         Copied from the local build via `just sync-medic`.
       local_path: /home/kschaper/Monarch/medic-redesign/medic/exports/medic_edges.jsonl
       filename: medic/new/medic_edges.jsonl
-      release: "2026-10-01 local (medic2@0453fd8)"
+      release: "2026-10-13 local (medic2@47dd0b7)"
       medic_version: "1.0.1"
       biolink_version: "4.3.7"
-      sha256: 9b9585ca626c3b79992326a8de062378d6f8372a4d8c3834074c4e4518f8d029
+      sha256: 90f2824886189f76a99564032a67fb3ed8f3e0f48686d5b176dcf861174617ba
 
   dakp_edges:
     description: >-

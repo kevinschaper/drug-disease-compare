@@ -1,0 +1,224 @@
+[
+ {
+  "id": "g049",
+  "verdict": "FP6_coingredient",
+  "quote": "Ergotamine tartrate and caffeine tablets are indicated as therapy to abort or prevent vascular headache; e.g., migraine",
+  "note": "Migraine appears only on the ergotamine/caffeine combination label (plus unattributed 'treats migraine' fragments); the abortive indication belongs to ergotamine and the caffeine-only butalbital combos cover tension headache, not migraine."
+ },
+ {
+  "id": "g081",
+  "verdict": "TARGET",
+  "quote": "Erosive esophagitis diagnosed by endoscopy.",
+  "note": "Erosive esophagitis / erosive GERD healing of lesions is a specific form of esophagitis named as the treated condition."
+ },
+ {
+  "id": "g136",
+  "verdict": "FP7_notintext",
+  "quote": "Uses for hand washing to decrease bacteria on the skin.",
+  "note": "Only antibacterial hand-soap text is supplied; gingivitis, gums or oral use are never mentioned."
+ },
+ {
+  "id": "g169",
+  "verdict": "TARGET",
+  "quote": "Tivicay is indicated in combination with other anti-retroviral medicinal products for the treatment of Human Immunodeficiency Virus (HIV) infected adults, adolescents and children",
+  "note": "EMA text names treatment of HIV infection directly; combination antiretroviral use still counts."
+ },
+ {
+  "id": "g121",
+  "verdict": "TARGET",
+  "quote": "VYEPTI is indicated for the preventive treatment of migraine in adults.",
+  "note": "Migraine is explicitly the prevented condition in both FDA and EMA text."
+ },
+ {
+  "id": "g000",
+  "verdict": "TARGET",
+  "quote": "Allergic conjunctivitis due to inhalant allergens and foods",
+  "note": "Atopic conjunctivitis is a standard synonym for allergic conjunctivitis, which is a listed indication."
+ },
+ {
+  "id": "g173",
+  "verdict": "TARGET",
+  "quote": "Cytarabine Injection in combination with other approved anti-cancer drugs is indicated for remission induction in acute non-lymphocytic leukemia of adults and pediatric patients.",
+  "note": "Acute non-lymphocytic leukemia is the standard synonym for AML and is indicated on single-ingredient cytarabine labels, independent of the VYXEOS combination."
+ },
+ {
+  "id": "g105",
+  "verdict": "TARGET",
+  "quote": "As a single agent, for the treatment of adult patients with deleterious or suspected deleterious germline BRCA -mutated (g BRCA m) HER2-negative locally advanced or metastatic breast cancer.",
+  "note": "Edge 'breast cancer' is a near parent of the gBRCAm HER2-negative advanced breast cancer indication, not a whole disease class, so it is TARGET rather than FP4."
+ },
+ {
+  "id": "g288",
+  "verdict": "TARGET",
+  "quote": "Leflunomide is indicated for the treatment of adult patients with: active rheumatoid arthritis as a 'disease-modifying antirheumatic drug' (DMARD); active psoriatic arthritis.",
+  "note": "EMA text lists active psoriatic arthritis as a treated indication."
+ },
+ {
+  "id": "g297",
+  "verdict": "UNSURE",
+  "quote": "Regul Oil Serum indications",
+  "note": "The supplied text is an empty section header for a cosmetic serum with no indication content; fatigue is not mentioned and nothing can be judged."
+ },
+ {
+  "id": "g022",
+  "verdict": "TARGET",
+  "quote": "treatment of endoscopically diagnosed esophagitis, including erosive and ulcerative esophagitis, and associated heartburn due to GERD",
+  "note": "Healing GERD esophagitis and its heartburn is management of GERD itself (its lesions and cardinal symptom), not a mere symptom swap, so GERD counts as the treated disease."
+ },
+ {
+  "id": "g075",
+  "verdict": "TARGET",
+  "quote": "CLARINEX-D ® 12 HOUR Extended Release Tablets is indicated for the relief of the nasal and non-nasal symptoms of seasonal allergic rhinitis, including nasal congestion",
+  "note": "Relief of the symptoms of seasonal allergic rhinitis is management of the disease; the combination label attributes nasal congestion to pseudoephedrine's decongestant role and single-ingredient OTC text covers nasal congestion due to hay fever."
+ },
+ {
+  "id": "g276",
+  "verdict": "TARGET",
+  "quote": "Nitazoxanide tablets (patients 12 years and older) are indicated for the treatment of diarrhea caused by Giardia lamblia or Cryptosporidium parvum",
+  "note": "Antiprotozoal treatment of Giardia lamblia infection (diarrhea caused by Giardia) is giardiasis; the pathogen, not just a symptom, is targeted."
+ },
+ {
+  "id": "g127",
+  "verdict": "TARGET",
+  "quote": "indicated for the treatment of the signs and symptoms of benign prostatic hyperplasia (BPH)",
+  "note": "Treating the signs and symptoms of BPH is management of BPH; the only negation is for hypertension, not BPH."
+ },
+ {
+  "id": "g104",
+  "verdict": "FP1_setting",
+  "quote": "Patients receiving remission-induction chemotherapy for acute myelogenous leukemia (AML) or myelodysplastic syndromes (MDS) expected to result in prolonged neutropenia",
+  "note": "AML names the patient population receiving antifungal prophylaxis; the thing prevented is invasive fungal infection, not AML."
+ },
+ {
+  "id": "g286",
+  "verdict": "FP1_setting",
+  "quote": "Gastrointestinal absorption is impaired by obstruction, inflammatory disease or its complications, or antineoplastic therapy",
+  "note": "GI obstruction is a circumstance under which parenteral amino acid nutrition is appropriate, not a condition the product treats."
+ },
+ {
+  "id": "g101",
+  "verdict": "TARGET",
+  "quote": "PHOTOFRIN ® is indicated for the palliation of patients with completely obstructing esophageal cancer, or of patients with partially obstructing esophageal cancer",
+  "note": "Photodynamic palliation of obstructing esophageal cancer is tumor-directed management of the disease under a dedicated 'Esophageal Cancer' indication heading."
+ },
+ {
+  "id": "g295",
+  "verdict": "TARGET",
+  "quote": "LITFULO is a kinase inhibitor indicated for the treatment of severe alopecia areata in adults and adolescents 12 years and older.",
+  "note": "Alopecia areata (severe form) is the explicitly treated condition in FDA and EMA text."
+ },
+ {
+  "id": "g251",
+  "verdict": "FP1_setting",
+  "quote": "In patients with concomitant HIV infection, the physician should be aware of current recommendation of CDC. It is possible these patients may require a longer course of treatment",
+  "note": "HIV infection is mentioned only as a comorbid population affecting tuberculosis treatment duration; the drug treats tuberculosis."
+ },
+ {
+  "id": "g269",
+  "verdict": "TARGET",
+  "quote": "tinea cruris (ringworm of the groin and thigh)",
+  "note": "Tinea cruris is dermatophytosis of the groin/perianal region and is a named item in the list of indicated ringworm infections."
+ },
+ {
+  "id": "g133",
+  "verdict": "TARGET",
+  "quote": "refractory anemia with excess blasts in transformation (RAEB-T)",
+  "note": "RAEB-T is explicitly listed among the indicated FAB MDS subtypes."
+ },
+ {
+  "id": "g283",
+  "verdict": "TARGET",
+  "quote": "RITUXAN, in combination with glucocorticoids, is indicated for the treatment of adult and pediatric patients 2 years of age and older with Granulomatosis with Polyangiitis (GPA)",
+  "note": "GPA is explicitly the treated disease; combination with glucocorticoids still counts."
+ },
+ {
+  "id": "g176",
+  "verdict": "TARGET",
+  "quote": "Budesonide inhalation suspension is indicated for the maintenance treatment of asthma and as prophylactic therapy in children 12 months to 8 years of age.",
+  "note": "Single-ingredient budesonide labels indicate maintenance treatment of asthma, so the combination ICS/LABA labels are not needed; the negation covers acute bronchospasm only."
+ },
+ {
+  "id": "g086",
+  "verdict": "TARGET",
+  "quote": "Paclitaxel Injection, USP, in combination with cisplatin, is indicated for the first-line treatment of non-small cell lung cancer",
+  "note": "NSCLC is directly indicated on single-ingredient paclitaxel and Abraxane labels and in EMA text."
+ },
+ {
+  "id": "g182",
+  "verdict": "TARGET",
+  "quote": "In combination with paclitaxel for first-line treatment of HER2-overexpressing metastatic breast cancer",
+  "note": "HER2-overexpressing/HER2-positive metastatic breast cancer is explicitly indicated in FDA and EMA text, matching the edge exactly."
+ },
+ {
+  "id": "g171",
+  "verdict": "TARGET",
+  "quote": "Capecitabine tablets USP are indicated for the adjuvant treatment of adults with pancreatic adenocarcinoma as a component of a combination chemotherapy regimen.",
+  "note": "Pancreatic adenocarcinoma is explicitly the treated disease; adjuvant/combination use still counts."
+ },
+ {
+  "id": "g027",
+  "verdict": "TARGET",
+  "quote": "Bartonellosis due to Bartonella bacilliformis .",
+  "note": "Bartonellosis appears as an indicated specific bacterial infection fragment in the indications text; it is not in contraindications or warnings."
+ },
+ {
+  "id": "g131",
+  "verdict": "TARGET",
+  "quote": "Kaposi’s sarcoma",
+  "note": "Kaposi's sarcoma appears as an indication-section fragment for vinblastine, consistent with its palliative-treatment malignancy list; nothing in the text negates it."
+ },
+ {
+  "id": "g162",
+  "verdict": "FP6_coingredient",
+  "quote": "Symptoms treated effectively include sneezing, rhinorrhea, postnasal discharge, nasal pruritus, ocular pruritus, and tearing.",
+  "note": "Every cetirizine-only text lists runny nose, sneezing and itching but omits nasal congestion; congestion appears only in texts with decongestant claims (reduces swelling of nasal passages, sinus congestion and pressure) that belong to a decongestant partner ingredient and cannot be attributed to cetirizine."
+ },
+ {
+  "id": "g235",
+  "verdict": "TARGET",
+  "quote": "Esmolol hydrochloride in sodium chloride injection is also indicated in non-compensatory sinus tachycardia where, in the physician’s judgment, the rapid heart rate requires specific intervention.",
+  "note": "Non-compensatory sinus tachycardia is a specific form of sinus tachycardia named as the treated condition."
+ },
+ {
+  "id": "g150",
+  "verdict": "FP2_symptom_swap",
+  "quote": "indicated for the temporary relief of coughs and upper respiratory symptoms associated with allergy or the common cold",
+  "note": "The text relieves cough and upper respiratory symptoms associated with the common cold (and only on combination cough/cold products); the cold itself is not treated, matching the rubric's FP2 example."
+ },
+ {
+  "id": "g123",
+  "verdict": "TARGET",
+  "quote": "severe active anti-neutrophil cytoplasmic autoantibody (ANCA)-associated vasculitis (granulomatosis with polyangiitis [GPA] and microscopic polyangiitis [MPA])",
+  "note": "GPA is explicitly named as a treated form of ANCA-associated vasculitis; adjunctive use still counts."
+ },
+ {
+  "id": "g082",
+  "verdict": "TARGET",
+  "quote": "temporarily relieves minor aches and pains due to: headache muscle pain toothache menstrual pain colds minor pain of arthritis",
+  "note": "Toothache is itself a pain condition and is a named item in the list of indicated aches and pains, so relieving it is treating the edge's disease."
+ },
+ {
+  "id": "g095",
+  "verdict": "TARGET",
+  "quote": "indicated for the first-line treatment of adult patients with recurrent, not amenable to surgery or radiotherapy, or metastatic nasopharyngeal carcinoma.",
+  "note": "EMA text indicates treatment of nasopharyngeal carcinoma; combination use still counts."
+ },
+ {
+  "id": "g043",
+  "verdict": "FP1_setting",
+  "quote": "It is indicated for depression accompanied by anxiety or agitation.",
+  "note": "Anxiety describes the depressed population treated, not the target; the indication is depression, and anxiety otherwise appears only in warnings as an adverse symptom."
+ },
+ {
+  "id": "g172",
+  "verdict": "TARGET",
+  "quote": "Hefiya is indicated for the treatment of active enthesitis-related arthritis in patients, 6 years of age and older",
+  "note": "Enthesitis-related arthritis is listed under the Juvenile idiopathic arthritis heading as a treated indication, matching enthesitis-related JIA."
+ },
+ {
+  "id": "g250",
+  "verdict": "TARGET",
+  "quote": "is indicated for the treatment of patients with stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer",
+  "note": "Epithelial ovarian cancer is ovarian carcinoma and is explicitly indicated in FDA and EMA text."
+ }
+]
