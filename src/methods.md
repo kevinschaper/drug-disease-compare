@@ -10,12 +10,12 @@ Results here are feedback on work in progress, not a final assessment of either 
 
 | | MEDIC (MeDIC redesign) | Drug Approvals KP (`dakp`) | dismech |
 |---|---|---|---|
-| Release | local build 2026-10-13 (`medic2@47dd0b7`, MeDIC 1.0.1; supersedes the 2026-10-01 build `medic2@0453fd8` audited earlier) — was medic-ingest 2026-06-19 | 1.16.0 (Hugging Face) — was rtx.ai 2026_04_21 | v0.1.42 — was v0.1.30 |
+| Release | local v2 release candidate of 2026-10-23 (`medic2@1aebf63`, MeDIC 1.0.1; supersedes the 2026-10-13 build `medic2@47dd0b7` and the 2026-10-01 build `medic2@0453fd8` audited earlier) — was medic-ingest 2026-06-19 | 1.16.0 (Hugging Face) — was rtx.ai 2026_04_21 | v0.1.42 — was v0.1.30 |
 | Source material | regulatory labels: FDA DailyMed, EMA, PMDA, CDSCO | FAERS reports + DailyMed + EMA/EPAR | curated literature, mechanism-driven |
 | Edge meaning | approved **indication** / **contraindication** | observed **application** (incl. off-label) / contraindication | curated **treatment** |
-| Predicate(s) | `treats`, `contraindicated_in` | `applied_to_treat`, `treats`, `contraindicated_in` | `treats_or_applied_or_studied_to_treat` |
-| Provenance per edge | one edge per regulator assertion: authority, verbatim label text, reliability tier | `clinical_approval_status`, `number_of_cases`, SPL setids, application numbers | real per-edge PMIDs + `supporting_text` |
-| Comparable edges | ~15.5k (12.4k `treats` + 3.0k `contraindicated_in` assertions) | ~132k | ~4.2k (drug-typed subset: ~3.4k CHEBI + ~0.8k NCIT drug concepts) |
+| Predicate(s) | `treats`, `preventative_for_condition` (new: vaccines, risk reduction, prophylaxis — counted with `treats` here), `contraindicated_in`; `diagnoses` (diagnostic agents) is not compared | `applied_to_treat`, `treats`, `contraindicated_in` | `treats_or_applied_or_studied_to_treat` |
+| Provenance per edge | one edge per regulator assertion: authority, verbatim label text, reliability tier; since this build also Biolink context qualifiers (disease / population / sex / temporal) and the extracted claim relation | `clinical_approval_status`, `number_of_cases`, SPL setids, application numbers | real per-edge PMIDs + `supporting_text` |
+| Comparable edges | ~69.7k (43.2k `treats` + 6.6k `preventative_for_condition` + 19.9k `contraindicated_in` assertions; one edge per assertion, several per pair) | ~132k | ~4.2k (drug-typed subset: ~3.4k CHEBI + ~0.8k NCIT drug concepts) |
 
 MeDIC is described in DeLuca *et al.*, *Nucleic Acids Research* 2026;54(D1):D1477–D1487;
 the redesign is not yet a published release. dismech ships ~105k KGX edges; of its

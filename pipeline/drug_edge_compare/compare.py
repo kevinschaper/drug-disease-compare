@@ -125,6 +125,9 @@ def build_pairs(edges: list[dict], rec: Reconciler):
             for agency, text in (e.get("agency_text") or {}).items():
                 if not ev.get(agency):
                     ev[agency] = text
+            # which biolink predicate(s) MeDIC used for this pair (treats and/or
+            # preventative_for_condition since the 2026-10-23 release candidate)
+            row.setdefault("predicates", set()).add(e["predicate"].split(":", 1)[1])
             # best reliability tier across the pair's edges (redesign only)
             rel = e.get("reliability")
             if rel and _RELIABILITY_RANK.get(rel, 0) > _RELIABILITY_RANK.get(row.get("reliability"), 0):
@@ -273,6 +276,7 @@ def compare(edges: list[dict], rec: Reconciler, mondo: MondoGraph,
             ensure_ascii=False) if dk and (dk.get("setids") or dk.get("fda_approvals")) else ""
         mm = treat["medic"].get(key) if "medic" in present else None
         row["medic_reliability"] = (mm or {}).get("reliability") or ""
+        row["medic_predicates"] = ";".join(sorted((mm or {}).get("predicates") or []))
         dm = treat["dismech"].get(key) if "dismech" in present else None
         row["dismech_pubs"] = dm["pubs"] if dm else 0
         row["dismech_evidence"] = json.dumps(

@@ -265,40 +265,54 @@ const mv = correctVolume("medic", "treats");
 const mc = audit.change.medic.by_type_pts;
 ```
 
-**Precision: unchanged overall, but the kinds of error moved.**
+**Precision: unchanged overall, but the kinds of error moved.** (Latest = the 2026-10-23 release
+candidate; "previous" = medic-ingest 2026-06-19.)
 
 - **Better — negated indications are gone** (${pts(mc.FP5_negation)}). The old export
   asserted pairs the label explicitly rules out ("not indicated for…"); the redesign's
-  negation screen has fixed this (none in the latest sample).
-- **Worse — population mistaken for the treated disease** (${pts(mc.FP1_setting)}), now
-  the largest error type: "reduce the risk of MI *in patients with* coronary heart disease" →
-  CHD; eplerenone → acute MI; basiliximab → kidney transplantation.
-- **New problem — combination products** (${pts(mc.FP6_coingredient)}). The redesign credits
-  each ingredient of a fixed-dose combination with the whole product's indications
-  (cetirizine → nasal congestion via decongestant combinations; esomeprazole → osteoarthritis
-  via naproxen/esomeprazole).
-- "Not in label" mappings moved ${pts(mc.FP7_notintext)} — not a significant change.
+  negation screen fixed this and it has stayed fixed.
+- **Better — population mistaken for the treated disease** (${pts(mc.FP1_setting)}): the
+  largest error type of the 2026-10-01 and 2026-10-13 builds (13.1% of edges — "reduce the
+  risk of MI *in patients with* coronary heart disease" → CHD; eplerenone → acute MI;
+  basiliximab → kidney transplantation) is down to ${audit.sources.medic.by_type.FP1_setting?.[1] ?? 0}% now that the
+  extraction returns the context as qualifiers instead of promoting it to the object.
+- **Worse — combination products** (${pts(mc.FP6_coingredient)}). The redesign credits
+  each ingredient of a fixed-dose combination with the product's indications (cetirizine →
+  nasal congestion via decongestant combinations); the enabler-partner gate catches one
+  class of these, not the OTC and multivitamin combinations that dominate the sample.
+- **Worse — "not in label"** (${pts(mc.FP7_notintext)}), concentrated in LOW-tier edges
+  from OTC, excipient and combination labels (phenylephrine → abdominal pain, isopropyl
+  alcohol → rheumatoid arthritis, lidocaine → Crohn disease).
 
 ```js
 const mb = audit.change_vs_build.medic;
 ```
 
-**The 2026-10-13 rebuild vs the 2026-10-01 build it replaced** (negation-scoping fix,
-verbatim re-extraction; 300 fresh edges judged with the same protocol): ${pts(mb.fp_rate_pts)} overall —
-no change. By type, setting-as-target ${pts(mb.by_type_pts.FP1_setting)}, co-ingredient
-${pts(mb.by_type_pts.FP6_coingredient)}, not-in-label ${pts(mb.by_type_pts.FP7_notintext)}; nothing significant.
-Of the 76 errors found in the 2026-10-01 sample, 56 are still asserted by the rebuild (of
-221 correct pairs, 184 are) — the re-extraction churned pairs without preferentially removing
-wrong ones.
+**The 2026-10-23 release candidate vs the 2026-10-13 build it replaced** (300 fresh edges
+judged with the same protocol): ${pts(mb.fp_rate_pts)} overall — not significant. By type,
+setting-as-target ${pts(mb.by_type_pts.FP1_setting)}, co-ingredient
+${pts(mb.by_type_pts.FP6_coingredient)}, not-in-label ${pts(mb.by_type_pts.FP7_notintext)}.
+Pair by pair (same reconciler and moiety grouping as the rest of this page), the candidate
+kept 4,396 of the 2026-10-13 build's 7,837 indication pairs, dropped 3,441 and added 5,301
+(9,697 now). The churn was selective this time: of the 291 pairs judged in the 2026-10-13
+audit, the candidate dropped 60 of the 76 errors and 40 of the 215 correct ones. The drops
+have three causes we could trace: the intended salt → parent-moiety collapse (#95), a
+DailyMed document-type filter that no longer fetches vaccine, plasma-derivative or
+cell-therapy labels, and a disease grounder that cannot place 22.6% of the new extraction's
+target phrases ("acute organ rejection", "partial-onset seizures") — 1,167 labels with
+extracted claims contribute nothing because of it. The adds are led by OTC and
+combination-label ingredients, including excipients read as drugs (saccharin, croscarmellose).
 
 **Volume:** at the measured precision, the redesign carries roughly
 **${fmt(mv.new)}** correct indication pairs vs **${fmt(mv.old)}** before — a smaller set at the
-same precision; 112 of the 222 audited-correct medic-ingest pairs are no longer asserted
-(lisdexamfetamine → ADHD, bexarotene → cutaneous T-cell lymphoma, doxorubicin → bone
-sarcoma…). What improved most is structure and provenance: contraindications, a fourth
-regulator, and the authority and verbatim label text on every edge. The reliability tier
-does not track the errors measured here (see the [error taxonomy](./error-taxonomy)); for
-which subset is loadable anyway, see [what to load](./load).
+same precision; of the 121 audited-correct medic-ingest pairs the 2026-10-13 build had
+dropped, 42 are back (37 as `treats`, 5 as `preventative_for_condition`) and 79 are still
+missing (bexarotene → cutaneous T-cell lymphoma, doxorubicin → bone sarcoma…). What improved
+most is structure and provenance: contraindications, a fourth regulator, the authority and
+verbatim label text on every edge, and now Biolink context qualifiers on 27k assertions. The
+reliability tier has started to track the errors measured here (HIGH ${audit.sources.medic.by_reliability.HIGH.fp_rate[0]}% vs LOW ${audit.sources.medic.by_reliability.LOW.fp_rate[0]}%; see
+the [error taxonomy](./error-taxonomy)); for which subset is loadable, see
+[what to load](./load).
 
 ## DAKP — ${ch.sources.dakp.versions.old} → ${ch.sources.dakp.versions.new}
 

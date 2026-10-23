@@ -52,8 +52,8 @@ ul, ol { max-width: none; }
 ## Measured false-positive rate
 
 A **seeded random sample** of 300 edges per source (MEDIC indications; DAKP
-`approved_for_condition`) **from each release** — latest and previous, plus the intermediate
-MEDIC build of 2026-10-01 that was audited before the 2026-10-13 rebuild: 1,500 edges in all —
+`approved_for_condition`) **from each release** — latest and previous, plus the two earlier
+MEDIC builds (2026-10-01 and 2026-10-13) audited before the 2026-10-23 release candidate: 1,800 edges in all —
 each judged against regulator text **we fetched ourselves** —
 never a source's own snippet:
 
@@ -69,9 +69,10 @@ the label" call only counts where we hold text for **every** regulator the edge 
 otherwise it might live in text we don't have (e.g. a PMDA-only approval).
 
 ```js
+const BUILD = {b1001: "build 2026-10-01", b1013: "build 2026-10-13"};
 const rows = ["medic", "dakp-approved"].flatMap((s) => [
   {source: SRC[s], release: "latest", n: S.sources[s].judged, p: S.sources[s].fp_rate[0], lo: S.sources[s].fp_rate[1], hi: S.sources[s].fp_rate[2]},
-  ...(S.previous_build?.[s] ? [{source: SRC[s], release: "build 2026-10-01", n: S.previous_build[s].judged, p: S.previous_build[s].fp_rate[0], lo: S.previous_build[s].fp_rate[1], hi: S.previous_build[s].fp_rate[2]}] : []),
+  ...Object.entries(S.previous_builds ?? {}).flatMap(([b, pb]) => pb[s] ? [{source: SRC[s], release: BUILD[b] ?? b, n: pb[s].judged, p: pb[s].fp_rate[0], lo: pb[s].fp_rate[1], hi: pb[s].fp_rate[2]}] : []),
   ...(S.previous_release[s] ? [{source: SRC[s], release: "previous", n: S.previous_release[s].judged, p: S.previous_release[s].fp_rate[0], lo: S.previous_release[s].fp_rate[1], hi: S.previous_release[s].fp_rate[2]}] : []),
 ]);
 ```
@@ -81,7 +82,7 @@ const rows = ["medic", "dakp-approved"].flatMap((s) => [
     <h2>MEDIC — false-positive rate</h2>
     <span class="big">${S.sources.medic.fp_rate[0]}%</span>
     CI ${S.sources.medic.fp_rate[1]}–${S.sources.medic.fp_rate[2]} · n = ${S.sources.medic.judged}
-    · previous release ${S.previous_release.medic.fp_rate[0]}% (n = ${S.previous_release.medic.judged}) · build 2026-10-01 ${S.previous_build.medic.fp_rate[0]}% (n = ${S.previous_build.medic.judged}), same protocol
+    · previous release ${S.previous_release.medic.fp_rate[0]}% (n = ${S.previous_release.medic.judged}) · build 2026-10-13 ${S.previous_builds.b1013.medic.fp_rate[0]}% (n = ${S.previous_builds.b1013.medic.judged}) · build 2026-10-01 ${S.previous_builds.b1001.medic.fp_rate[0]}% (n = ${S.previous_builds.b1001.medic.judged}), same protocol
   </div>
   <div class="card">
     <h2>DAKP-approved — false-positive rate</h2>
@@ -95,8 +96,8 @@ const rows = ["medic", "dakp-approved"].flatMap((s) => [
 Plot.plot({
   width, height: 200, marginLeft: 200, marginRight: 40,
   x: {label: "false-positive rate (%) with 95% CI", domain: [0, 60], grid: true},
-  y: {label: null, domain: ["MEDIC · latest", "MEDIC · build 2026-10-01", "MEDIC · previous", "DAKP-approved · latest", "DAKP-approved · previous"]},
-  color: {domain: ["latest", "build 2026-10-01", "previous"], range: ["var(--theme-foreground-focus, #2a78d6)", "#6fa3e0", "#9498a0"], legend: true},
+  y: {label: null, domain: ["MEDIC · latest", "MEDIC · build 2026-10-13", "MEDIC · build 2026-10-01", "MEDIC · previous", "DAKP-approved · latest", "DAKP-approved · previous"]},
+  color: {domain: ["latest", "build 2026-10-13", "build 2026-10-01", "previous"], range: ["var(--theme-foreground-focus, #2a78d6)", "#6fa3e0", "#a9c6ea", "#9498a0"], legend: true},
   marks: [
     Plot.ruleY(rows, {y: (d) => `${d.source} · ${d.release}`, x1: "lo", x2: "hi", stroke: "release", strokeWidth: 2}),
     Plot.dot(rows, {y: (d) => `${d.source} · ${d.release}`, x: "p", fill: "release", r: 5, tip: true,
@@ -107,11 +108,17 @@ Plot.plot({
 ```
 
 Judged with the identical protocol — and blind to which release an edge came from — the
-latest rates are statistically indistinguishable from the previous releases', and MEDIC's
-2026-10-13 rebuild (after the negation-scoping and verbatim re-extraction work) is
-indistinguishable from the 2026-10-01 build it replaced
-(${S.change_vs_build.medic.fp_rate_pts[0] > 0 ? "+" : ""}${S.change_vs_build.medic.fp_rate_pts[0]} pts, CI ${S.change_vs_build.medic.fp_rate_pts[1]} to ${S.change_vs_build.medic.fp_rate_pts[2]}).
-What changed is the **kind** of error; see *Did MEDIC improve?* and *Did DAKP improve?* on
+latest rates are statistically indistinguishable from the previous releases'. MEDIC's
+2026-10-23 release candidate (structured extraction with context qualifiers, the four
+drug-disease-compare PRs, a re-acquired DailyMed corpus) moved
+${S.change_vs_build.medic.fp_rate_pts[0] > 0 ? "+" : ""}${S.change_vs_build.medic.fp_rate_pts[0]} pts against the
+2026-10-13 build (CI ${S.change_vs_build.medic.fp_rate_pts[1]} to ${S.change_vs_build.medic.fp_rate_pts[2]}) — not significant overall, but
+two things did change: **setting-as-target**, the largest error type of the last two builds,
+fell to ${S.sources.medic.by_type.FP1_setting?.[1] ?? 0}% (${S.change_vs_build.medic.by_type_pts.FP1_setting[0]} pts, CI ${S.change_vs_build.medic.by_type_pts.FP1_setting[1]} to ${S.change_vs_build.medic.by_type_pts.FP1_setting[2]}), and MEDIC's **reliability tier now
+separates** the errors: HIGH ${S.sources.medic.by_reliability.HIGH.fp_rate[0]}% wrong (n = ${S.sources.medic.by_reliability.HIGH.n}) vs LOW
+${S.sources.medic.by_reliability.LOW.fp_rate[0]}% (n = ${S.sources.medic.by_reliability.LOW.n}), where the 2026-10-13 build's HIGH tier was 26.7%, the same as the whole.
+What grew is "not in label" (${S.sources.medic.by_type.FP7_notintext?.[1] ?? 0}%, mostly LOW-tier OTC and
+combination-label edges) and co-ingredient attribution. See *Did MEDIC improve?* and *Did DAKP improve?* on
 [version changes](./changes). Latest releases, by error type:
 
 ```js
@@ -250,7 +257,7 @@ display(html`<div>${[...Object.keys(LABEL)].filter((t) => byType.has(t)).map((t)
 
 ```js
 const srcSel = view(Inputs.radio(["all", "medic", "dakp-approved"], {label: "Source", value: "all", format: (v) => v === "all" ? "All" : SRC[v]}));
-const relSel = view(Inputs.radio(["new", "b1001", "old", "both"], {label: "Release", value: "new", format: (v) => ({new: "Latest", b1001: "MEDIC build 2026-10-01", old: "Previous release", both: "All"}[v])}));
+const relSel = view(Inputs.radio(["new", "b1013", "b1001", "old", "both"], {label: "Release", value: "new", format: (v) => ({new: "Latest", b1013: "MEDIC build 2026-10-13", b1001: "MEDIC build 2026-10-01", old: "Previous release", both: "All"}[v])}));
 const fpOnly = view(Inputs.toggle({label: "Errors only"}));
 const disagree = view(Inputs.toggle({label: "Jev disagrees"}));
 ```
@@ -265,7 +272,7 @@ display(Inputs.table(shown, {
   header: {source: "Source", release: "Release", drug_label: "Drug", disease_label: "Disease", verdict: "Reference", claude: "Reviewer A",
            claude_b: "Reviewer B", jev: "Jev", jev_confidence: "Jev conf.", judged_against: "Judged vs", note: "Deciding reason"},
   format: {
-    source: (s) => SRC[s], release: (r) => ({new: "latest", b1001: "build 2026-10-01", old: "previous"}[r] ?? r),
+    source: (s) => SRC[s], release: (r) => ({new: "latest", b1013: "build 2026-10-13", b1001: "build 2026-10-01", old: "previous"}[r] ?? r),
     drug_label: (l, i, data) => html`<a href="drug?id=${encodeURIComponent(data[i].drug)}">${l}</a>`,
     disease_label: (l, i, data) => html`<a href="disease?id=${encodeURIComponent(data[i].disease)}">${l}</a>`,
     verdict: vchip, claude: vchip, claude_b: vchip, jev: vchip,
@@ -299,17 +306,18 @@ lecanemab → Alzheimer disease as off-label despite clear labels.
 ## Method notes & caveats
 
 - **Precision only.** These are false-positive rates of *asserted* edges, not recall.
-- **Eligibility.** ${fmt(P.medic.screened)} of 7,790 MEDIC and ${fmt(P["dakp-approved"].screened)} of 14,287 DAKP-approved pairs had
+- **Eligibility.** ${fmt(P.medic.screened)} of 9,697 MEDIC and ${fmt(P["dakp-approved"].screened)} of 14,287 DAKP-approved pairs had
   independently fetchable FDA/EMA text. MEDIC pairs backed only by PMDA or CDSCO (Japan,
   India) can't be judged this way and are excluded.
 - **Lenient on generic indications.** A narrower edge counts as a target (label "pain" →
   edge "neck pain"); reviewers flagged a handful of site-specific pain edges that pass only
   on this rule.
-- **Three review rounds, one protocol.** The first 150 edges per source of the 2026-10-01
+- **Four review rounds, one protocol.** The first 150 edges per source of the 2026-10-01
   MEDIC build and DAKP 1.16.0 were reviewed first; the remaining 150 plus all previous-release
   edges were then shuffled together, so reviewers couldn't tell source or release; a third
-  round judged a fresh 300-edge sample of the 2026-10-13 MEDIC rebuild (DAKP unchanged, its
-  draw kept). Round-1 reviewers applied the co-ingredient rule only via the follow-up check;
+  round judged a fresh 300-edge sample of the 2026-10-13 MEDIC rebuild and a fourth a fresh
+  300-edge sample of the 2026-10-23 release candidate (DAKP unchanged, its draw kept).
+  Round-1 reviewers applied the co-ingredient rule only via the follow-up check;
   later rounds saw it in the rubric — the same co-ingredient check ran on every round. 20 MEDIC
   pairs happened to be drawn in two rounds; all 20 got the same verdict both times.
 - **Previous releases** were sampled from pairs built from their own source files with the

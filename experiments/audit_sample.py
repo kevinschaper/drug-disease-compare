@@ -211,7 +211,7 @@ def candidates() -> list[dict]:
     t = pq.read_table(DATA / "pairs.parquet", columns=[
         "drug", "drug_label", "disease", "disease_label", "disease_prefix", "medic", "dakp",
         "dakp_status", "dakp_evidence", "drug_group", "drug_group_label",
-        "medic_reliability"]).to_pylist()
+        "medic_reliability", "medic_predicates"]).to_pylist()
     me = {(r["drug"], r["disease"]): [e["agency"] for e in json.loads(r["evidence"])]
           for r in pq.read_table(DATA / "medic_evidence.parquet").to_pylist()}
     rows = []
@@ -220,7 +220,8 @@ def candidates() -> list[dict]:
                                   "disease_prefix", "drug_group", "drug_group_label")}
         if r["medic"] == "exact":
             rows.append({**base, "source": "medic", "cited": sorted(me.get((r["drug"], r["disease"]), [])),
-                         "medic_reliability": r["medic_reliability"]})
+                         "medic_reliability": r["medic_reliability"],
+                         "medic_predicates": r.get("medic_predicates") or ""})
         if r["dakp"] == "exact" and r["dakp_status"] == "approved_for_condition":
             rows.append({**base, "source": "dakp-approved",
                          "cited": sorted(_dakp_regulators(r["dakp_evidence"]))})

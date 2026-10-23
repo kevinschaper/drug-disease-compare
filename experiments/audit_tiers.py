@@ -73,7 +73,7 @@ def medic_features() -> dict[tuple[str, str], dict]:
     from drug_edge_compare.nodenorm import NodeNorm
 
     raw = [json.loads(line) for line in open(INP / "medic/new/medic_edges.jsonl")]
-    treats = [e for e in raw if e["predicate"] == "biolink:treats"]
+    treats = [e for e in raw if e["predicate"] in ("biolink:treats", "biolink:preventative_for_condition")]
     nodes = {}
     for line in open(INP / "medic/new/medic_nodes.jsonl"):
         n = json.loads(line)
@@ -190,7 +190,7 @@ def main() -> None:
         lab[k][e["release"]] = e["verdict"]
     L = []
     for k, vs in lab.items():
-        v = vs.get("new") or vs.get("b1001") or vs.get("old")
+        v = vs.get("new") or vs.get("b1013") or vs.get("b1001") or vs.get("old")
         L.append({"drug": k[0], "disease": k[1], "fp": v in FP, "verdict": v,
                   "fresh": "new" in vs, "agree_across_rounds": len(set(vs.values())) == 1 if len(vs) > 1 else None})
     L = pd.DataFrame(L).set_index(["drug", "disease"])

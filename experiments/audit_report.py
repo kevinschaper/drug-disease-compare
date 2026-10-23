@@ -133,8 +133,10 @@ def main() -> None:
     # "b1001": the 2026-10-01 local MeDIC build audited before the 2026-10-13 rebuild (MEDIC
     # only; its DAKP draw is unchanged and lives in sample.jsonl)
     sample = {}
+    # "b1013": the 2026-10-13 build (medic2@47dd0b7) audited in round 3, archived when the
+    # 2026-10-23 release candidate replaced it
     for fname, rel in (("sample.jsonl", "new"), ("sample_old.jsonl", "old"),
-                       ("sample_b1001.jsonl", "b1001")):
+                       ("sample_b1001.jsonl", "b1001"), ("sample_b1013.jsonl", "b1013")):
         if (OUT / fname).exists():
             for line in open(OUT / fname):
                 r = json.loads(line)
@@ -211,9 +213,16 @@ def main() -> None:
         } for src in SOURCES if base[src]["judged"]}
 
     change = change_from(previous)
-    # the intermediate local build (MEDIC only): did the rebuild move anything?
-    previous_build = {k: v for k, v in source_results("b1001").items() if v["judged"]}
-    change_vs_build = change_from(source_results("b1001"))
+    # the earlier local builds (MEDIC only), each judged with this protocol: did a rebuild
+    # move anything? ``previous_build`` / ``change_vs_build`` are the build immediately
+    # before the latest; ``previous_builds`` / ``change_vs_builds`` hold every archived one.
+    BUILDS = ("b1001", "b1013")
+    previous_builds = {b: {k: v for k, v in source_results(b).items() if v["judged"]} for b in BUILDS}
+    previous_builds = {b: v for b, v in previous_builds.items() if v}
+    change_vs_builds = {b: change_from(source_results(b)) for b in previous_builds}
+    latest_prev = list(previous_builds)[-1] if previous_builds else None
+    previous_build = previous_builds.get(latest_prev, {})
+    change_vs_build = change_vs_builds.get(latest_prev, {})
 
 
     # --- inter-rater ceiling (Claude A<->B), then Jev scored against the reference ---
@@ -320,6 +329,8 @@ def main() -> None:
                # like-for-like: the previous releases judged with this exact protocol
                "previous_release": previous, "change": change,
                "previous_build": previous_build, "change_vs_build": change_vs_build,
+               "previous_build_id": latest_prev,
+               "previous_builds": previous_builds, "change_vs_builds": change_vs_builds,
                # the earlier (v1, FDA-only, different protocol) audit, for reference only
                "v1_audit": {s: {"n": v1[s]["n_judged"], "fp_rate": v1[s]["fp_rate_consensus"]}
                             for s in v1}}

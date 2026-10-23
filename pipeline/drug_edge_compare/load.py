@@ -32,6 +32,14 @@ RELATION = {
     "biolink:contraindicated_in": "contraindicated_in",
     # the medic redesign names its contraindications with the older biolink slot
     "biolink:contraindicated_for": "contraindicated_in",
+    # MeDIC 2026-10-23 release candidate: vaccines and risk-reduction / prophylaxis
+    # indications moved from treats to this predicate (medic #99). Earlier MeDIC builds,
+    # DAKP and dismech all carry prevention under treats, and the audit rubric counts
+    # prevention as a genuine target, so it stays in the "treats" bucket for the
+    # comparison; the pair keeps its predicate(s) in ``medic_predicates``.
+    "biolink:preventative_for_condition": "treats",
+    # MeDIC's diagnostic-agent edges (iohexol -> ...) are not treatment claims and have
+    # no counterpart in the other sources; they are counted but not compared.
 }
 
 # MEDIC redesign: per-edge ``primary_knowledge_source`` names the regulator(s)

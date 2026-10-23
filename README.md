@@ -18,7 +18,7 @@ Sibling project, same frontend stack: [hpoa-compare](https://github.com/kevinsch
   FAERS + DailyMed + EMA including off-label use), and dismech
   (`monarch-initiative/dismech`, curated/mechanism-driven — its drug→disease
   subset). Adding a source is one entry in `SOURCE_ORDER` plus a loader.
-- **In-progress work.** The MEDIC (MeDIC redesign, local unreleased build of 2026-10-13)
+- **In-progress work.** The MEDIC (MeDIC redesign, local unreleased v2 release candidate of 2026-10-23)
   and DAKP (1.16.0) updates are evaluated as work in progress: the comparison and audit are
   feedback for the next iteration of each source, not a final characterization.
 - **Load guidance.** The *What to load* page scores candidate rules for which MEDIC

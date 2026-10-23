@@ -22,20 +22,29 @@ inputs:
       sha256: 8d92b96da800dac9e537558fb3767934d0df3836ebb250eb72ea945087fa319d
     new:
       description: >-
-        MeDIC redesign (monarch-initiative/medic, branch medic2), built locally --
-        not yet a published release. One edge per regulator *assertion* (15,471 edges):
-        biolink:treats (12,448) + biolink:contraindicated_in (3,014), plus 9 research
-        edges we skip. Each edge names its authority (medic_authority:
-        FDA/EMA/PMDA/CDSCO), carries the label's verbatim section text, and a pair-level
-        reliability tier (medic_pair_reliability HIGH/MEDIUM/LOW/EXCLUDED). This build
-        follows the fix/59 negation-scoping and verbatim re-extraction work (PR #63).
-        Copied from the local build via `just sync-medic`.
-      local_path: /home/kschaper/Monarch/medic-redesign/medic/exports/medic_edges.jsonl
+        MeDIC redesign (monarch-initiative/medic, branch medic2) v2 release candidate,
+        built locally 2026-10-23 -- not yet a published release. One edge per regulator
+        *assertion* (70,363 edges): biolink:treats (43,182), biolink:contraindicated_in
+        (19,907), biolink:preventative_for_condition (6,589; vaccines and risk-reduction
+        indications, formerly treats), biolink:diagnoses (676; diagnostic agents, not
+        compared), plus 9 research edges we skip. Each edge names its authority
+        (medic_authority: FDA/EMA/PMDA/CDSCO), carries the label's verbatim section text,
+        a pair-level reliability tier (medic_pair_reliability HIGH/MEDIUM/LOW) and, new in
+        this build, Biolink context qualifiers (disease/population/sex/temporal) and
+        medic_claim_relation. This build merges drug-disease-compare's four PRs (#101-#104)
+        and the structured-extraction rebuild; the DailyMed corpus was re-acquired under the
+        ranked, human-doctype-filtered selection. Copied from the local checkout
+        /home/kschaper/Monarch/medic-redesign/medic-release-candidate/exports via
+        `MEDIC_EXPORTS=... just sync-medic`. The previous input (2026-10-13, medic2@47dd0b7)
+        is kept at data/inputs/medic/b1013/ for the audit's build-over-build comparison.
+      local_path: /home/kschaper/Monarch/medic-redesign/medic-release-candidate/exports/medic_edges.jsonl
       filename: medic/new/medic_edges.jsonl
-      release: "2026-10-13 local (medic2@47dd0b7)"
+      nodes_filename: medic/new/medic_nodes.jsonl
+      release: "2026-10-23 local (medic2@1aebf63, v2 release candidate)"
       medic_version: "1.0.1"
       biolink_version: "4.3.7"
-      sha256: 90f2824886189f76a99564032a67fb3ed8f3e0f48686d5b176dcf861174617ba
+      sha256: aa6e6ae24ee74f2c10dfd0bd7e6a17b76172bc6308aa6cc0c49da2832be49da1
+      nodes_sha256: 859babe4aa8eaf34c97cdb7d5dc6132d4cf2d8391bed64b83711ab0180493015
 
   dakp_edges:
     description: >-

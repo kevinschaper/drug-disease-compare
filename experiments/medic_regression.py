@@ -135,7 +135,9 @@ def score(gold_path: Path, export_dir: Path) -> dict:
         p = e["predicate"]
         by_id.setdefault((e["subject"], e["object"], p), []).append(e)
         by_label.setdefault((name(e["subject"]), name(e["object"]), p), []).append(e)
-    drug_edges = Counter(name(e["subject"]) for e in E if e["predicate"] == "biolink:treats")
+    # a drug counts as "gone" only when it has no edge under any predicate
+    drug_edges = Counter(name(e["subject"]) for e in E)
+    OTHER_INDICATION = ("biolink:preventative_for_condition", "biolink:diagnoses")  # split out of treats since 2026-10-23
 
     def find(pair, pred):
         preds = ["biolink:treats", "biolink:contraindicated_in"] if pred == "both" else \
@@ -165,14 +167,20 @@ def score(gold_path: Path, export_dir: Path) -> dict:
                 how = "id" if h1 and h2 else None
             if k == "text_cut_unflagged":  # present only if the text is still cut and unflagged
                 how = how if any((e.get("supporting_text") or "").rstrip().endswith("[see") and not e.get("medic_supporting_text_truncated") for e in hits) else None
+            # a treats pair that is absent may have moved to another indication predicate
+            other = ""
+            if not how and s.get("predicate", "biolink:treats") in ("biolink:treats", "both"):
+                other = next((p.split(":")[1] for p in OTHER_INDICATION if find(pair, p)[0]), "")
             rows.append({**{x: pair[x] for x in ("drug_label", "disease_label", "medic_subject", "medic_object")},
-                         "present": bool(how), "matched_by": how,
+                         "present": bool(how), "matched_by": how, "present_other_predicate": other,
                          "drug_still_has_edges": drug_edges.get(pair["drug_label"], 0) > 0})
         n = len(rows); present = sum(r["present"] for r in rows)
         good = present if s["want"] == "present" else n - present
         lost_drugs = sum(1 for r in rows if not r["present"] and not r["drug_still_has_edges"])
+        moved = dict(Counter(r["present_other_predicate"] for r in rows if r["present_other_predicate"]))
         result["sets"][k] = {"issue": s["issue"], "description": s["description"], "want": s["want"], "n": n,
-                             "present": present, "as_wanted": good, "pairs_absent_with_drug_gone": lost_drugs, "rows": rows}
+                             "present": present, "as_wanted": good, "pairs_absent_with_drug_gone": lost_drugs,
+                             "moved_to_other_predicate": moved, "rows": rows}
     for k, s in gold["node_sets"].items():
         ids = s["ids"]
         if k == "unnamed_stub_diseases":
@@ -195,6 +203,10 @@ def score(gold_path: Path, export_dir: Path) -> dict:
     return result
 
 
+def drug_has_any(r: dict, drug: str) -> bool:
+    return any(row["drug_still_has_edges"] for row in r["sets"]["setting_as_target"]["rows"] if row["drug_label"] == drug)
+
+
 def report(r: dict) -> str:
     L = [f"MeDIC export: {r['export']}  edges {r['edges']}  nodes {r['nodes']}",
          "predicates: " + ", ".join(f"{k.split(':')[1]} {v}" for k, v in sorted(r["predicates"].items())),
@@ -203,8 +215,14 @@ def report(r: dict) -> str:
          f"{'set':30s} {'issue':6s} {'n':>4s} {'present':>8s} {'as wanted':>10s}  note"]
     for k, s in r["sets"].items():
         if "present" in s:
-            note = "" if s["want"] == "present" else f"{s['pairs_absent_with_drug_gone']} absent because the drug has no edges at all"
-            L.append(f"{k:30s} {s['issue']:6s} {s['n']:4d} {s['present']:8d} {s['as_wanted']:10d}  {note}")
+            notes = []
+            if s["want"] == "absent" and s["pairs_absent_with_drug_gone"]:
+                notes.append(f"{s['pairs_absent_with_drug_gone']} absent because the drug has no edges under any predicate")
+            if s["want"] == "present" and s["pairs_absent_with_drug_gone"]:
+                notes.append(f"{s['pairs_absent_with_drug_gone']} missing with the drug gone entirely")
+            for pred, c in s.get("moved_to_other_predicate", {}).items():
+                notes.append(f"{c} now under {pred}")
+            L.append(f"{k:30s} {s['issue']:6s} {s['n']:4d} {s['present']:8d} {s['as_wanted']:10d}  {'; '.join(notes)}")
         elif "still_unnamed" in s:
             L.append(f"{k:30s} {s['issue']:6s} {s['n']:4d} {'':8s} {s['n']-s['still_unnamed']:10d}  {s['still_unnamed']} still unnamed, {s['gone']} gone")
         else:
@@ -213,7 +231,7 @@ def report(r: dict) -> str:
     L.append("the six #89 examples (audited setting-as-target pairs for these drugs):")
     for d, x in r["examples_89"].items():
         if x["n_objects"] == 0:
-            state = "drug has no treats edges"
+            state = "drug has no treats edges" + ("" if drug_has_any(r, d) else " (no edges at all)")
         elif any(p for _, p in x["wrong_pairs"]):
             state = "still present: " + ", ".join(dis for dis, p in x["wrong_pairs"] if p)
         else:
