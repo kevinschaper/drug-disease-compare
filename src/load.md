@@ -6,7 +6,7 @@ toc: true
 # Which MEDIC indications are ready for monarch-kg?
 
 <div class="note">
-  <b>In-progress work.</b> This page scores the latest local MeDIC build (2026-10-13, see
+  <b>In-progress work.</b> This page scores the latest local MeDIC build (the 2026-10-23 v2 release candidate, see
   <a href="./methods">methods</a>) against the label audit and against the other sources, to
   say which of its indication edges are ready to load and which should wait for an upstream
   fix. It is advice for one consumer (monarch-kg), not a verdict on the source.
@@ -19,8 +19,10 @@ const T0 = await FileAttachment("data/tiers.json").json();
 **Short version:** the one signal that separates clean from wrong is whether the
 independently fetched label text supports the edge. ${T0.tiers["T1 label-confirmed"].pairs.toLocaleString()} pairs
 (${T0.tiers["T1 label-confirmed"].share}% of MEDIC) pass that check with high confidence and are
-${T0.tiers["T1 label-confirmed"].fresh_fp[0]}% wrong in the audit; everything else is 35–70% wrong or unmeasurable.
-Cross-source agreement and MEDIC's own reliability tier do not substitute for it. For a
+${T0.tiers["T1 label-confirmed"].fresh_fp[0]}% wrong in the audit; everything else is 19–62% wrong or unmeasurable.
+Cross-source agreement does not substitute for it; MEDIC's own reliability tier, flat at 26.7% in
+the 2026-10-13 build, now separates (HIGH ${T0.rules["reliability HIGH"].fresh_fp[0]}% vs LOW ${T0.rules["reliability LOW/EXCLUDED"].fresh_fp[0]}%) but is still an order of magnitude
+behind the label check. For a
 disease-centric graph the cut is sharper still: restrict to MONDO diseases and the
 label-confirmed set is ${T0.rules["T1 restricted to MONDO diseases"].pairs.toLocaleString()} pairs,
 ${T0.t1_rare.pairs.toLocaleString()} of them on ${T0.t1_rare.diseases} rare diseases.
@@ -151,9 +153,11 @@ const t3c = R["T3 split: unscreened but corroborated (agreement or >=2 regulator
   label them as such); checking the rest needs PMDA label text, which the audit doesn't hold.
 - **Don't load T5** (${fmt(t5.pairs)} pairs, ${ci(t5.fresh_fp)}): every feature in it is a known MeDIC mechanism
   with a fix path (see the issues list in `medic-feedback/issues/`).
-- **Don't use MEDIC's reliability tier as the gate**: HIGH is ${ci(R["reliability HIGH"].fresh_fp)}, the
-  same as the whole. A cheap label-entailment screen like the one here (≈ $0.15 for 1,400
-  edges) is what separates the tiers, and belongs in the MeDIC pipeline itself.
+- **MEDIC's reliability tier is a fallback, not the gate**: HIGH is ${ci(R["reliability HIGH"].fresh_fp)}
+  in this build (it was 26.7%, the same as the whole, in the 2026-10-13 build — the merged
+  reliability-gate work made the difference), so it is usable where no label check exists
+  (T3), but it is still ten times the label-confirmed error rate. A cheap label-entailment
+  screen like the one here (≈ $0.15 for 1,400 edges) belongs in the MeDIC pipeline itself.
 
 *Dot size ∝ √pairs. The per-pair tier assignment is in `src/data/medic_tiers.parquet` (canonical
 ids) and `experiments/out/v2/medic_load_tiers.tsv` (MeDIC's own subject/object ids), each row
